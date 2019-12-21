@@ -1,0 +1,60 @@
+.testimonial-item {
+
+  margin-bottom: 0;
+
+  .content {
+    font-family: $header-font-weight;
+    font-weight: 700;
+    font-size: rem-calc(24);
+    font-style: italic;
+    margin-bottom: rem-calc(30);
+  }
+
+  .profile-img {
+    margin-bottom: rem-calc(10);
+  }
+
+  .profile-name {
+    font-weight: bold;
+  }
+}
+
+.testimonial-card {
+  color: $white;
+  background: $blue;
+  padding: $global-padding;
+}
+
+#testimonial {
+  position: relative;
+  .icon-wrapper{
+    position:absolute;
+    width: 100%;
+    top:- rem-calc(50);
+    text-align: center;
+
+    @include breakpoint(small only){
+      top:- rem-calc(25);
+    }
+
+    @include breakpoint(medium only){
+      top:- rem-calc(30);
+    }
+
+    img {
+      max-width: 100px;
+
+      @include breakpoint(small){
+        width: 50px;
+      }
+
+      @include breakpoint(medium){
+        width: 60px;
+      }
+
+      @include breakpoint(large){
+        width: 100px;
+      }
+    }
+  }
+}

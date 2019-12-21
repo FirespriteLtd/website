@@ -1,0 +1,190 @@
+.sub-card {
+  header {
+    h2{
+      margin-bottom: 0;
+    }
+    h4{
+      color: $primary-color;
+    }
+  }
+}
+
+
+.block {
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(50);
+
+
+
+  &.header{
+    h1{
+      color: $white;
+    }
+  }
+
+  @include breakpoint(large){
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(100);
+  }
+
+  .section-heading{
+    p{
+      font-size: rem-calc(22);
+      @extend .m-b-50;
+    }
+  }
+
+  &.block-image {
+    header{
+      h2{
+        color: $primary-color;
+      }
+    }
+
+    .content{
+      &:not(.sub){
+        p{
+          font-size: rem-calc(20);
+          font-family: $header-font-family;
+
+          @include breakpoint(small only) {
+            font-size: rem-calc(24);
+          }
+        }
+      }
+      &.sub {
+        @extend .sub-card;
+      }
+    }
+  }
+}
+
+#block-twitter {
+  #tweet-post {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  > div {
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(60);
+
+    > div {
+      position: relative;
+      z-index: 11;
+    }
+  }
+
+  .follow {
+    font-family: $header-font-family;
+    font-weight: 700;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    svg{
+      width: 40px;
+      height: 40px;
+      margin-right: rem-calc(20);
+    }
+
+    .bt {
+      @extend button;
+      background: rgba($white, 0.5);
+      color: $white;
+      font-size: rem-calc(10);
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      padding: 12px 15px;
+    }
+  }
+
+  .tweet {
+    font-size: rem-calc(24);
+    font-weight: 700;
+    font-style: italic;
+
+    @include breakpoint(small only){
+      font-size: rem-calc(20);
+    }
+  }
+
+  #tweet-post {
+    .interact{
+      display: none;
+    }
+    .tweet {
+      margin-bottom: 0;
+    }
+    ul {
+      @extend .no-bullet;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.block-icon-list {
+
+  img {
+    margin-bottom: rem-calc(25);
+  }
+
+  li {
+    margin-bottom: rem-calc(50);
+  }
+
+}
+
+#block-contact {
+  background: url('/images/lightning-contact.png') no-repeat center center;
+  background-size: contain;
+  margin-top: $global-margin;
+
+  @include breakpoint(small only){
+    background-size: 160% auto;
+  }
+}
+
+#block-services {
+  .block {
+    padding: rem-calc(50);
+
+    img{
+      margin-bottom: $global-margin;
+    }
+
+    @include breakpoint(large){
+      padding: rem-calc(100);
+    }
+  }
+
+
+
+  .cell:nth-child(1n+0) {
+    .block {
+      background-color: #d3d9e6;
+    }
+  }
+
+  .cell:nth-child(2n+0) {
+    .block {
+      background-color: $white;
+    }
+  }
+
+  .cell:nth-child(3n+0) {
+    .block {
+      background-color: #ddf1db;
+    }
+  }
+
+  .cell:nth-child(4n+0) {
+    .block {
+      background-color: #cde2e1;
+    }
+  }
+}
+

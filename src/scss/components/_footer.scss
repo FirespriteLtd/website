@@ -1,0 +1,56 @@
+#footer {
+  background: $primary-color;
+  padding-top: rem-calc(95);
+  padding-bottom: rem-calc(30);
+  color: $white;
+  text-align: center;
+  font-family: open-sans, sans-serif;
+  font-weight: 300;
+
+  @include breakpoint(small only){
+    padding-top: rem-calc(60);
+  }
+
+  ul{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: open-sans, sans-serif;
+    a{
+      color: $white;
+    }
+  }
+
+  ul{
+    &.menu{
+      justify-content: center;
+    }
+  }
+}
+
+.registation {
+  text-transform: uppercase;
+  font-size: rem-calc(15);
+  a{
+    color: white;
+    text-decoration: underline;
+    margin-left: rem-calc(5);
+
+    &:hover{
+      color:$secondary-color;
+    }
+  }
+}
+
+.secondary {
+  .menu{
+    ul{
+      display: inline-block;
+    }
+    li:first-child {
+      a{
+        padding-left: 0;
+      }
+    }
+  }
+}

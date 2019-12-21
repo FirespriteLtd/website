@@ -1,0 +1,379 @@
+#games-list {
+  @include breakpoint(small only){
+    > .grid-container{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .card-section {
+    padding: 0;
+  }
+
+  .card-content{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buy {
+    //background: white;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.monopoly-schema {
+  &.card {
+    background: $monopoly-color;
+  }
+  .button {
+    font-family: josefin-sans, sans-serif;
+    @include background-gradient($monopoly-color, darken($monopoly-color,20), 'vertical');
+  }
+
+
+}
+
+.life-vacation-schema {
+  &.card {
+
+    .card-content {
+      background: #e71e8c;
+    }
+
+    .card-image-overlay {
+      img {
+        width: 43%;
+        transform: translateX(189%) translateY(-11%);
+      }
+    }
+  }
+}
+
+.life-the-game-schema {
+  &.card {
+    .card-content {
+      background: #9fcc2a;
+    }
+
+    .card-image-overlay {
+      img {
+        width: 36%;
+        transform: translateX(217%) translateY(-27%);
+      }
+    }
+  }
+}
+
+.cluedo-schema {
+  &.card {
+    .card-content {
+      background: #28abdd;
+    }
+
+    .card-video{
+      background: #e71e8c;
+    }
+
+    .card-image-overlay {
+      img {
+        width: 50%;
+        transform: translateX(-9%) translateY(-12%);
+      }
+    }
+  }
+}
+
+.battleship-schema {
+  &.card {
+
+    .card-content {
+      background: #2e3691;
+    }
+
+    .card-image-overlay {
+      img {
+        transform: translateX(-45%) translateY(-37%);
+      }
+    }
+  }
+}
+
+.card.game{
+  .card-section{
+    //padding-bottom: rem-calc(20);
+   // margin-bottom: rem-calc(30);
+  }
+}
+
+
+.summary-block {
+  padding: rem-calc(80) 0;
+  p{
+    font-family: museo-sans, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: rem-calc(30);
+    padding: rem-calc(30) rem-calc(0);
+  }
+
+  &.monopoly-schema {
+
+    h2{
+      font-family: $body-font-family;
+      font-size: rem-calc(45);
+    }
+    &.col-1 {
+      > .grid-container {
+        position: relative;
+
+        &:before {
+          @include pseudo();
+          width: 55%;
+          height: 30%;
+          background: url("/images/summary-dice.png") no-repeat center center;
+          background-size: contain;
+          top: -150px;
+          right: -20%;
+          z-index: 100;
+
+          @include breakpoint(small only){
+            top: -100px;
+          }
+
+          @include breakpoint(large){
+            height: 55%;
+          }
+        }
+
+        &:after {
+          @include pseudo();
+          width: 55%;
+          height: 30%;
+          background: url("/images/summary-house.png") no-repeat center center;
+          background-size: contain;
+          bottom: -150px;
+          left: -20%;
+          z-index: 100;
+          @include breakpoint(small only){
+            bottom: -100px;
+          }
+          @include breakpoint(large){
+            height: 55%;
+          }
+        }
+      }
+    }
+
+    &.col-2 {
+      position: relative;
+      .buy-img{
+        position: absolute;
+        top: 50%;
+        left: -9%;
+        transform: translateX(50%) translateY(-50%);
+      }
+    }
+  }
+
+  margin-bottom: rem-calc(100);
+}
+
+.monopoly{
+
+  h1, h2, h3, h4{
+    color: $monopoly-color !important;
+    font-family: josefin-sans, sans-serif !important;
+
+    &.f-c-black{
+      color: black!important;
+    }
+  }
+
+  .button {
+    font-family: josefin-sans, sans-serif;
+    @include background-gradient($monopoly-color, darken($monopoly-color,20), 'vertical');
+  }
+
+  .summary-block{
+    margin-bottom: 0;
+  }
+
+
+  #about{
+
+    .image-wrapper{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+  }
+
+  #features{
+    h3{
+      margin-bottom: 0;
+    }
+
+    &.grid-container{
+      position: relative;
+      &:before {
+        @include pseudo();
+        background: url("/images/monopoly-t-rex.png") no-repeat center center;
+        background-size: contain;
+        width: 40%;
+        height: 100%;
+        max-width: 606px;
+        overflow: visible;
+        z-index: 10;
+        top: -417px;
+        right: -400px;
+      }
+
+      &:after {
+        @include pseudo();
+        background: url("/images/monopoly-dog.png") no-repeat center center;
+        background-size: contain;
+        width: 30%;
+        height: 100%;
+        max-width: 419px;
+        overflow: visible;
+        z-index: 10;
+        bottom: -417px;
+        left: -200px;
+
+      }
+    }
+  }
+
+  #partners {
+    .image-char{
+      position: relative;
+      width: 100%;
+      img{
+        position: absolute;
+        min-width: 180px;
+        bottom: -90px;
+        @include breakpoint(small only){
+          right: 0%;
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .game-buy, #newsletter{
+    h2 {
+      font-size: rem-calc(65);
+      margin-bottom: 15px;
+      @include breakpoint(small only){
+        font-size: rem-calc(33);
+      }
+      strong{
+        color: $monopoly-color;
+        font-size: rem-calc(80);
+        @include breakpoint(small only){
+          font-size: rem-calc(40);
+        }
+      }
+    }
+
+    .buy-img{
+      @include breakpoint(small only){
+        display: none;
+      }
+    }
+  }
+
+  #newsletter {
+    h2{
+      margin-bottom: rem-calc(60);
+    }
+
+    @include breakpoint(large){
+      h2{
+        font-size: 65px;
+        strong{
+          font-size: 90px;
+        }
+      }
+    }
+
+    [type='email'] {
+      border-color: $monopoly-color;
+      text-align: center;
+      border-radius: 50px;
+      font-size: rem-calc(25);
+      padding: rem-calc(40);
+      max-width: 660px;
+      margin:rem-calc(20) auto;
+    }
+  }
+
+  #footer {
+    background: $monopoly-color;
+  }
+
+  .top-bar.sticky.is-stuck{
+    background: $monopoly-color;
+  }
+
+  .title-bar{
+    background: $monopoly-color;
+  }
+
+  .top-bar{
+    .menu li{
+      &.active {
+        a{
+          color: white;
+        }
+      }
+      a{
+        &:after{
+          background: $monopoly-color !important;
+        }
+        &:hover {
+          &:after {
+            background: $monopoly-color;
+          }
+        }
+      }
+    }
+  }
+
+  #video{
+    .video{
+      background: black;
+      padding: rem-calc(10);
+      > div{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #screenshots {
+    background: $monopoly-color;
+    img{
+      border: 10px solid $black;
+    }
+  }
+
+  #features{
+      .icon{
+        max-width: 250px;
+        margin-bottom: rem-calc(30);
+      }
+  }
+}
+
+#thanks, #sending, #error {
+  p{
+    text-align: center;
+  }
+}

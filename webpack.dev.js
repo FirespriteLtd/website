@@ -1,0 +1,66 @@
+const merge = require("webpack-merge");
+const path = require("path");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+const common = require("./webpack.common");
+
+module.exports = merge(common, {
+  mode: "development",
+  devtool: 'source-map',
+  output: {
+    filename: "[name].js",
+    chunkFilename: "[id].css"
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        exclude: /node_modules/,
+        use: ["style-loader",  {
+          loader: "css-loader", options: {
+            sourceMap: true,
+          }
+        },
+        {
+            loader: "postcss-loader",options: {
+            sourceMap: true,
+          }
+        },
+        {
+          loader: "sass-loader", options: {
+            sourceMap: true
+          }}]
+      }
+    ]
+  },
+
+  devServer: {
+    port: process.env.PORT || 3000,
+    contentBase: path.join(process.cwd(), "./dist"),
+    watchContentBase: true,
+    quiet: false,
+    open: true,
+    historyApiFallback: {
+      rewrites: [{from: /./, to: "404.html"}]
+    }
+  },
+
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [
+        "dist/**/*.js",
+        "dist/**/*.css",
+        "site/content/webpack.json"
+      ]}),
+
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
+
+    new BundleAnalyzerPlugin()
+  ]
+});

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+{{ block "head" . }}{{ partial "head" . }}{{end}}
+{{ $currentPage := .Parent }}
+<body class="default {{ if .IsHome }}home{{else}}{{.Section}}{{end}} {{ if .InSection $currentPage}} {{.Title | urlize }} {{end}}" data-animation="true">
+
+{{ partial "old-browser.html" . }}
+
+
+<div class="off-canvas-wrapper">
+
+  <div class="off-canvas-content" data-off-canvas-content>
+
+      {{ block "navigation" . }}{{ partial "navigation" . }}{{end}}
+
+
+        <main>
+          <div class="grid-container full"  id="root" >
+              {{ block "header" . }}{{ partial "header" . }}{{end}}
+              {{ block "main" . }}{{end}}
+          </div>
+        </main>
+
+        {{ block "pusher" . }}{{end}}
+
+        {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+        {{ block "foot" . }}{{ partial "foot" . }}{{end}}
+  </div>
+</div>
+</body>
+</html>

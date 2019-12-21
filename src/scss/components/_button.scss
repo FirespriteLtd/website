@@ -1,0 +1,298 @@
+// Button
+
+.button {
+  text-transform: uppercase;
+  font-weight: 800;
+  @include background-gradient($primary-color, darken($primary-color,10), 'vertical');
+  box-shadow: 0 10px 10px rgba($black, 0.2);
+
+  &.small{
+    padding: 20px 30px;
+  }
+}
+
+.icon-bottom{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: $primary-color;
+    color: $white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
+}
+
+
+// social buttons
+.social {
+  text-align: center;
+  ul {
+    margin: rem-calc(10) 0;
+    text-align: center;
+    display: inline-block;
+    li {
+      width: 100%;
+      max-width: 40px;
+      text-align: center;
+      display: inline-block;
+      margin: rem-calc(5) rem-calc(8);
+      a img {
+        display: block;
+        transition: all 250ms ease;
+      }
+      a {
+        position: relative;
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        &:hover {
+          transform: scale(0.9);
+          transition: all 250ms ease;
+          img {
+            transform: translateY(-50%) scale(0.9);
+            transition: all 150ms ease;
+          }
+        }
+        img {
+          @include vertical-center;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// social icon contact
+
+.social-icon{
+  background-color: $white;
+  transition: all 0.25s ease;
+  @include breakpoint(small){
+    margin-bottom: rem-calc(12);
+  }
+  @include breakpoint(medium){
+    margin-bottom: rem-calc(16);
+  }
+  @include breakpoint(large){
+    margin-bottom: rem-calc(10);
+  }
+  .icon{
+    position: relative;
+    text-align: center;
+    color: $white;
+    @include breakpoint(small){
+      width:80px;
+    }
+    @include breakpoint(medium){
+      width: auto;
+    }
+    i{
+      @include vertical-center();
+      left:0;
+      right:0;
+      margin: 0 auto;
+      @include breakpoint(small){
+        font-size: rem-calc(20);
+      }
+      @include breakpoint(medium){
+        font-size: rem-calc(20);
+      }
+    }
+    &.icon-small{
+      width:50px;
+      height:50px;
+    }
+    &.icon-large{
+      width:100px;
+      height:100px;
+    }
+
+  }
+  .icon-text{
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $black;
+    @include breakpoint(small){
+      padding: rem-calc(10) rem-calc(16);
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(medium){
+      padding: rem-calc(10) rem-calc(16);
+      font-size: rem-calc(14);
+    }
+    i{
+      @include vertical-center();
+      font-weight: bold;
+      right:16px;
+      font-size: rem-calc(20);
+    }
+  }
+  &.facebook{
+    .icon{
+      background-color: $sc-facebook;
+    }
+    &:hover{
+      background-color: $sc-facebook;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+  &.twitter{
+    .icon{
+      background-color: $sc-twitter;
+    }
+    &:hover{
+      background-color: $sc-twitter;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+  &.linkedin{
+    .icon{
+      background-color: $sc-linkedin
+    }
+    &:hover{
+      background-color: $sc-linkedin;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+  &.instagram{
+    .icon{
+      background-color: $sc-instagram
+    }
+    &:hover{
+      background-color: $sc-instagram;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+  &.vimeo{
+    .icon{
+      background-color: $sc-vimeo
+    }
+    &:hover{
+      background-color: $sc-vimeo;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+  &.youtube{
+    .icon{
+      background-color: $sc-youtube
+    }
+    &:hover{
+      background-color: $sc-youtube;
+      .icon-text{
+        color: $white;
+      }
+    }
+  }
+}
+
+// social block icon
+
+.footer-social-media {
+  ul {
+    display: flex;
+    max-width: 530px;
+    padding: 0 rem-calc(50);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    li {
+    }
+  }
+}
+
+.social-block{
+
+
+  .icon,.icon-text{
+    color: $white;
+  }
+  .icon{
+
+    @include breakpoint(small only){
+      font-size: 8vw;
+    }
+
+    @include breakpoint(medium){
+      font-size: rem-calc(70);
+    }
+  }
+  .icon-text{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $white;
+  }
+
+
+  &.facebook{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-facebook;
+      }
+    }
+  }
+  &.twitter{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-twitter;
+      }
+    }
+  }
+  &.linkedin{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-linkedin;
+      }
+    }
+  }
+  &.instagram{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-instagram;
+      }
+    }
+  }
+  &.vimeo{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-vimeo;
+      }
+    }
+  }
+  &.youtube{
+    a:hover {
+      .icon,.icon-text {
+        color: $sc-youtube;
+      }
+    }
+  }
+
+
+}
+

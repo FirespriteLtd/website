@@ -1,0 +1,45 @@
+
+<div class="{{.Params.class}} card game">
+        {{ with .Params.overlay_image }}
+        <div class="card-image-overlay">
+            <img src="{{ . }}" alt="{{.}}">
+        </div>
+        {{end}}
+        <div class="card-section">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="images/list-header-spacer.png" alt="">
+                        <header>
+                            {{if .Params.header.logo}}
+                            <div class="logo">
+                                <img src="{{.Params.header.logo}}" alt="{{ .Title }}">
+                            </div>
+                            {{else}}
+                            <h3>{{ .Title }}</h3>
+                            {{end}}
+                        </header>
+                </div>
+
+            <div class="card-video">
+              {{partial "youtube" (dict "media" .Params)}}
+            </div>
+            </div>
+            <div class="buy">
+                {{with .Params.buy}}
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-y align-center-middle text-center">
+                        {{ range .links}}
+                        <div class="cell small-6">
+                            <a href="{{.url}}"><img src="/images/img-{{.type}}.png" alt="{{.type}}"></a>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+
+</div>
+
+
+

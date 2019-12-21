@@ -1,0 +1,15 @@
+<div class="summary-block grid-container full {{ .Params.class}} col-1" style="background: url('{{.Params.bgImage | safeHTML}}')" >
+<div class="grid-container">
+  <div class="grid-x align-center-middle text-center">
+    <div>
+      <header>
+        <h2>AVAILABLE NOW</h2>
+        <p>
+          {{.Params.short | markdownify }}
+        </p>
+      </header>
+      <a href='{{ .Permalink }}' class="button">Find out more!</a>
+    </div>
+  </div>
+</div>
+</div>

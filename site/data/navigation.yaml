@@ -1,0 +1,11 @@
+items:
+  - link: /games/monopoly
+    name: Monopoly
+  - link: /games
+    name: Games
+  - link: /about
+    name: About
+  - link: /careers
+    name: Careers
+  - link: /contact
+    name: Contact

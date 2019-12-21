@@ -1,0 +1,67 @@
+{{ "<!-- Footer -->" | safeHTML }}
+<footer>
+    <div id="footer" class="grid-container full">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-margin-y">
+                <div class="cell footer-menu">
+                    <ul class="menu" data-smooth-scroll>
+
+                        {{ if not (.Site.Params.custom_navbar) }}
+                        {{ if not (.Site.Params.cms_navbar) }}
+                        <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ .Site.BaseURL | absLangURL }}">
+                            {{ i18n "home" }} </a>
+                            {{ if .Site.Menus.home}}
+                            <ul class="menu submenu" data-smooth-scroll>
+                                {{ range .Site.Menus.home }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                {{end}}
+                            </ul>
+                            {{ end}}
+                        </li>
+                        {{end}}
+                        {{end}}
+
+                        {{ if .Site.Params.cms_navbar }}
+
+                        {{ range $.Site.Data.navigation.items}}
+                        <li><a href="{{ .link }}">
+                            {{ .name | markdownify}}
+                        </a></li>
+                        {{ end }}
+
+                        {{end}}
+
+
+                        {{ if .Site.Params.custom_navbar }}
+                        {{ range .Site.Menus.navbar }}
+                        <li>
+                            <a href="{{.URL}}">
+                                {{ .Name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                        {{end}}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+       {{ partial "block-social-page" .}}
+        <div class="grid-container m-t-60">
+            <div class="grid-x registation">
+                <div class="cell small-12" class="small-12">
+                    {{$.Site.Data.contact.registration | markdownify}}
+                </div>
+                <div class="cell small-12" class="small-12">
+                    {{$.Site.Data.contact.legal | markdownify}} -
+                    {{ range .Site.Menus.secondary }}
+                        <a href="{{.URL}}">
+                            {{ .Name }}
+                        </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{{ "<!-- / Footer -->" | safeHTML }}

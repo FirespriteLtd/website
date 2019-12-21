@@ -1,0 +1,204 @@
+backend:
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
+media_folder: "site/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+# publish_mode: editorial_workflow
+site_url: https://infallible-franklin-e50f20.netlify.com
+
+collections:
+  - name: "games"
+    label: "Games"
+    label_singular: "Game"
+    editor:
+      preview: false
+    folder: "site/content/games"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Short", name: "short", widget: "markdown", required: false}
+      - {label: "Class", name: "class", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "number"}
+      - {label: "Show on other list", name: "other", required: false,  widget: "boolean"}
+      - {label: "Background", name: "bgImage", widget: "image" , required: false}
+      - {label: "overlay", name: "overlay_image", widget: "image"}
+      - {label: "Hero Header", name: header, widget: object, fields: [
+          {label: "Logo", name: "logo", widget: "image", required: true},
+          {label: "Image", name: "image", widget: "image", required: false},
+          {label: "Video", name: "video", widget: string , required: false},
+          {label: "Video Banner Active", name: "video_active", required: false,  widget: "boolean"}
+        ]}
+      - {label: "About", name: "about", widget: object, fields: [
+          {label: "Image", name: "image", widget: "image" , required: false},
+          {label: "Heading", name: "heading", widget: "string" , required: false},
+          {label: "Text", name: "text", widget: "markdown",  required: false}
+        ]}
+      - {label: "Buy", name: "buy", widget: object,  required: false, fields: [
+          {label: "Title", name: "title", widget: "markdown" , required: false},
+          {label: "Alt-Title", name: "alt_title", widget: "markdown", required: false},
+          {label: "Background", name: "bgImage", widget: "image", required: false},
+          {label: "Image", name: "image", widget: "image" , required: false},
+          {label: "Links", name: "links",  widget: "list", fields: [
+              {label: "Type", name: "type", widget: "select", options: [
+                {label: "App Store", value: "apple" },
+                {label: "Google play", value: "google" },
+                {label: "Steam", value: "steam" },
+                {label: "Nintendo Switch", value: "nintendo" }
+              ]},
+              {label: "url", name: "url", widget: string}
+          ]}
+        ]}
+      - {label: "Video", name: "video", widget: string}
+      - {label: "Features", name: "features", widget: "list", fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Body", name: "body", widget: string},
+            {label: "Icon", name: "icon", widget: "image"}
+        ]}
+      - {label: "Screenshots", name: "screenshots", widget: "list", fields: [
+          {label: "Screenshot", name: "screenshot", widget: "image"},
+          {label: "Alt Text", name: "alt_text", widget: string}
+        ]}
+      - {label: "Partners", name: "partners", widget: "list", fields: [
+          {label: "Logo", name: "logo", widget: "image"},
+          {label: "Name", name: "name", widget: string}
+        ]}
+  - name: "careers"
+    label: "Careers"
+    label_singular: "Careers"
+    editor:
+      preview: false
+    folder: "site/content/careers"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Location", name: "location", widget: "select" , options: [
+          {label: "London", value: "london" },
+          {label: "Lisbon", value: "lisbon" },
+      ]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Hero Header", name: header, widget: object, fields: [
+          {label: "Image", name: "image", widget: "image"},
+          {label: "Logo", name: "logo", widget: "image"}
+      ]}
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "Hero Header", name: header, widget: object, fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Logo", name: "logo", widget: "image"},
+              {label: "title", name: "title", widget: "string"},
+              {label: "Link", name: "link", widget: "string"},
+              {label: "Video", name: "video", widget: string},
+              {label: "Video Banner Active", name: "video_active", widget: "boolean"}
+            ]}
+      - file: "site/content/contact/_index.md"
+        label: "Contact Page"
+        name: "contact"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+      - file: "site/content/privacy/_index.md"
+        label: "Privacy Page"
+        name: "privacy"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "site/content/terms_conditions/_index.md"
+        label: "Terms & Conditions Page"
+        name: "terms"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "site/data/navigation.yaml"
+        fields:
+          - label: "Small Menu on/off"
+            name: "active"
+            widget: "boolean"
+            default: false
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+      - label: "GDPR"
+        name: "gdpr"
+        file: "site/data/gdpr.yaml"
+        fields:
+          - label: "Use Osana Cookie Content"
+            name: "osana"
+            widget: object
+            fields:
+              - {label: "Osana on/off", name: "active", widget: "boolean", default: false}
+              - {label: Script , name: script, widget: string}
+          - label: "Simple Cookie Consent"
+            name: "consent"
+            widget: object
+            fields:
+              - {label: Message, name: message, widget: string, default: "This website uses cookies to ensure you get the best experience on our website."}
+              - {label: Dismiss, name: dismiss, widget: string, default: "Got it!"}
+              - {label: Link, name: link, widget: string, default: "Privacy Policy"}
+              - {label: Url, name: url, widget: string}
+      - label: "Contact"
+        name: "contact"
+        file: "site/data/contact.yaml"
+        fields:
+          - label: "Emails"
+            name: "email"
+            widget: "list"
+          - label: "Address"
+            name: "address"
+            widget: "markdown"
+          - label: "Legal"
+            name: "legal"
+            widget: "markdown"
+          - label: "Registration"
+            name: "registration"
+            widget: "markdown"
+      - label: "Social Media"
+        name: "socialmedia"
+        file: "site/data/socialmedia.yaml"
+        fields:
+          - label: "Twitter Feed"
+            name: "twitter"
+            widget: object
+            fields:
+              - label: "On/Off"
+                name: "active"
+                widget: "boolean"
+                default: false
+              - label: "Feed Url"
+                name: "url"
+                widget: "string"
+          - label: "Social Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: string
+              - label: "id"
+                name: "id"
+                widget: string
+              - label: "url"
+                name: "url"
+                widget: string

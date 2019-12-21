@@ -1,0 +1,22 @@
+{{ "<!-- Block press kit -->" | safeHTML }}
+
+<section>
+    <div id="block-presskik" class="grid-container full  block monopoly-schema">
+        <div class="grid-container">
+            <div class="grid-x gid-padding-x text-center align-center">
+                <div class="cell small-12 medium-9 large-8">
+                    <h2>Download Press-kit</h2>
+                </div>
+            </div>
+            <div class="grid-x gid-padding-x text-center align-center">
+                {{ range $.Site.Data.presskits.kit}}
+                <div class="cell">
+                    <a class="button" href="{{.file}}">{{.name}}</a>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ "<!-- Block press kit -->" | safeHTML }}

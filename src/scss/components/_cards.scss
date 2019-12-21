@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  overflow: visible;
+
+  .card-image-overlay {
+    position:absolute;
+    width: 100%;
+    height: 200px;
+    top:0;
+  }
+
+  .card-section {
+    display: block;
+    text-align: center;
+
+    .card-header{
+      position: relative;
+      max-height: rem-calc(200);
+      margin-bottom: rem-calc(20);
+      .logo {
+        position: absolute;
+        width: 100%;
+        padding: rem-calc(0) rem-calc(40);
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+
+    .card-video {
+      position:relative;
+      z-index: 10;
+      background: #28abdd;
+      padding: rem-calc(10) rem-calc(10) rem-calc(10) rem-calc(10);
+
+      .responsive-embed{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  header {
+
+  }
+}
+
+.card-cell {
+  display: flex;
+  height: 100% !important;
+}
+
+.game {
+  &.buy{
+    text-align: center;
+    img {
+      display: inline-block;
+    }
+  }
+}

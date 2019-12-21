@@ -1,0 +1,13 @@
+links:
+  - id: facebook-square
+    type: Facebook
+    url: 'https://www.facebook.com/MarmaladeGameStudio/'
+  - id: twitter-square
+    type: Twitter
+    url: 'https://twitter.com/marmaladegames'
+  - id: instagram
+    type: Instagram
+    url: instagram.com/marmaladegames/
+  - id: youtube-square
+    type: YouTube
+    url: 'https://www.youtube.com/channel/UCumvfXfBRw_KhfKgAREpgnw'

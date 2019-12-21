@@ -1,0 +1,84 @@
+.home {
+  .summary-block {
+    margin-bottom: 0;
+  }
+
+  .about-image{
+    padding: rem-calc(50) rem-calc(0);
+    img{
+      max-width: 350px;
+    }
+  }
+
+  #home-about{
+    p{
+      font-size: rem-calc(30);
+      padding: rem-calc(30) 0;
+    }
+  }
+
+  #footer {
+    background: $monopoly-color;
+  }
+
+  .top-bar.sticky.is-stuck{
+    background: $monopoly-color;
+  }
+
+  .title-bar{
+    background: $monopoly-color;
+  }
+
+  .top-bar{
+    .menu li{
+      a{
+        &:after{
+          background: $monopoly-color;
+        }
+        &:hover {
+          &:after {
+            background: $monopoly-color;
+          }
+        }
+      }
+    }
+  }
+
+  .off-canvas {
+    background: $monopoly-color;
+  }
+
+  .summary-block.monopoly-schema {
+    background: none!important;
+    .grid-container {
+      &:after {
+        display: none!important;
+      }
+    }
+  }
+}
+
+#home-about{
+  .about-image {
+    position: relative;
+
+    &:after {
+      @include pseudo();
+      background: url("/images/monopoly-car.png") no-repeat center center;
+      background-size: contain;
+      max-width: 490px;
+      max-height: 390px;
+      width: 30vw;
+      height: 50vh;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-30%) translateY(50%);
+
+      @include breakpoint(medium only){
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+

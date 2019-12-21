@@ -1,0 +1,32 @@
+{{ $first := .first}}
+{{ $second := .second}}
+{{ $smallColumn := .sc | default 12}}
+<section>
+    <article>
+        <div id={{ .Id }} class="grid-container full block block-image {{ .Class }}">
+            <div class="grid-container">
+
+                {{ with .Content }}
+                <div class="grid-x grid-padding-x grid-margin-y align-center-middle text-center medium-text-left">
+                    <div class="cell small-{{$smallColumn}} {{ if eq $first "2" }} {{end}} medium-5 small-order-{{ $first }} medium-order-{{ $first }} image-area">
+                        <div class="image-wrapper">
+                            <img src="{{.image}}" alt="{{.Id}}">
+                        </div>
+                    </div>
+                    <div class="cell small-{{$smallColumn}} {{if eq $second "2" }} {{end}} medium-6 small-order-{{ $second }}  medium-order-{{ $second }} content {{if isset . "subheading"}}sub{{end}}">
+                            <header>
+                            <h2>{{ .heading}}</h2>
+                            {{if isset . "subheading"}}
+                            <h4>{{.subheading}}</h4>
+                            {{end}}
+                            </header>
+                            <p>{{.text | markdownify}}</p>
+
+                    </div>
+                </div>
+                {{end}}
+
+            </div>
+        </div>
+    </article>
+</section>
