@@ -1,0 +1,94 @@
+############################
+## Basic Info
+############################
+
+custom_navbar= false
+cms_navbar = true
+host_name = ""
+description = "Marmalade Game Studio was founded on a passion and commitment to create great gameplay experiences for mobile and connected devices. We prototype, reflect, and test with target audiences to craft games that people love to play. Headquartered in London, UK with a further studio in Lisbon, Portugal, our goal is to continuously develop compelling high…"
+logo_large="/images/logo-full.png"
+logo_small="/images/logo-icon.png"
+logo_mobile="/images/logo-full.png"
+logo_large_invert="/images/logo-icon.png"
+
+############################
+## Site Features
+############################
+
+# Privacy pack
+#   Show a cookie consent message to visitors
+#   Anonymize IP in Google Analytics (if enabled)
+privacy_pack = false
+
+############################
+## Search
+############################
+[search]
+  # Search provider:
+  #   0: No search engine
+  #   1: Academic (built-in)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
+
+  # Configuration of Algolia search engine.
+  # Paste the values from your Algolia dashboard.
+  [search.algolia]
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false
+
+############################
+## Maps
+############################
+[map]
+  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
+  # and choose a map provider below.
+  #
+  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
+  #   https://developers.google.com/maps/documentation/javascript/get-api-key
+  # To use OpenStreetMap tiles, set `engine` to 2.
+  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
+  #   https://www.mapbox.com/studio/account/tokens
+  #
+  # Map provider:
+  #   0: No map
+  #   1: Google Maps
+  #   2: OpenStreetMap (Mapnik)
+  #   3: OpenStreetMap (Mapbox)
+  engine = 2
+  api_key = ""
+  zoom = 15
+
+############################
+## Marketing
+############################
+[marketing]
+  google_analytics = ""
+  google_tag_manager = ""
+
+############################
+## Privacy
+############################
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false

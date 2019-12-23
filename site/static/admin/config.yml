@@ -9,6 +9,28 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 site_url: https://infallible-franklin-e50f20.netlify.com
 
 collections:
+  - name: "news"
+    label: "News"
+    folder: "news"
+    create: true
+    show_preview_links: true
+    preview_path: "news/{{slug}}"
+    slug: "{{slug}}"
+    preview_path_date_field: "updated_on"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Featured Post", name: "featured_post", widget: "boolean"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "object"
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "games"
     label: "Games"
     label_singular: "Game"
@@ -18,10 +40,8 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Short", name: "short", widget: "markdown", required: false}
-      - {label: "Class", name: "class", widget: "string"}
+      - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number"}
-      - {label: "Show on other list", name: "other", required: false,  widget: "boolean"}
       - {label: "Background", name: "bgImage", widget: "image" , required: false}
       - {label: "overlay", name: "overlay_image", widget: "image"}
       - {label: "Hero Header", name: header, widget: object, fields: [

@@ -11,14 +11,14 @@
             <div class="top-bar-left">
                 <ul class="menu">
                     <li class="menu-logo">
-                        {{if .Site.Params.logo_large}}
-                        <a href="{{ .Site.BaseURL }}" rel="home" class="logo-main"><img src="{{ .Site.Params.logo_large}}" alt="{{ .Site.Title | safeHTML }}"></a>
-                        {{if .Site.Params.logo_large_invert}}
-                        <a href="{{ .Site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ .Site.Params.logo_large_invert}}" alt="{{ .Site.Title | safeHTML }}"></a>
+                        {{if site.Params.logo_large}}
+                        <a href="{{ site.BaseURL }}" rel="home" class="logo-main"><img src="{{ site.Params.logo_large}}" alt="{{ site.Title | safeHTML }}"></a>
+                        {{if site.Params.logo_large_invert}}
+                        <a href="{{ site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ site.Params.logo_large_invert}}" alt="{{ site.Title | safeHTML }}"></a>
                         {{end}}
                         {{else}}
-                        <a href="{{ .Site.BaseURL | absLangURL }}">
-                            {{ .Site.Title | safeHTML }}
+                        <a href="{{ site.BaseURL | absLangURL }}">
+                            {{ site.Title | safeHTML }}
                         </a>
                         {{end}}
                     </li>
@@ -26,13 +26,13 @@
             </div>
             <div class="top-bar-right">
             <ul class="dropdown menu" data-dropdown-menu>
-                {{ if not (.Site.Params.custom_navbar) }}
-                {{ if not (.Site.Params.cms_navbar) }}
-                <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ .Site.BaseURL | absLangURL }}">
+                {{ if not (site.Params.custom_navbar) }}
+                {{ if not (site.Params.cms_navbar) }}
+                <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ site.BaseURL | absLangURL }}">
                     {{ i18n "home" }} </a>
-                    {{ if .Site.Menus.home}}
+                    {{ if site.Menus.home}}
                     <ul class="menu submenu" data-smooth-scroll>
-                        {{ range .Site.Menus.home }}
+                        {{ range site.Menus.home }}
                         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
                         {{end}}
                     </ul>
@@ -40,8 +40,8 @@
                 </li>
                 {{ end }}
                 {{ end }}
-                {{ if .Site.Params.custom_navbar }}
-                    {{ range .Site.Menus.navbar }}
+                {{ if site.Params.custom_navbar }}
+                    {{ range site.Menus.navbar }}
                     <li >
                         <a href="{{.URL}}">
                             {{ .Name }}
@@ -49,15 +49,15 @@
                     </li>
                     {{ end }}
                 {{ else }}
-                    {{ if not (.Site.Params.cms_navbar) }}
-                        {{ range where .Site.Pages "Type" "!=" "post" }}
+                    {{ if not (site.Params.cms_navbar) }}
+                        {{ range where site.Pages "Type" "!=" "post" }}
                         <li><a href="{{ .Permalink }}">
                             {{ .Title | markdownify}}
                         </a></li>
                         {{ end }}
                     {{else}}
 
-                            {{ range $.Site.Data.navigation.items}}
+                            {{ range site.Data.navigation.items}}
                             <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
                                 {{ .name | markdownify}}
                             </a></li>
@@ -84,11 +84,11 @@
         <div class="top-bar-small title-bar  hide-for-large" >
             <div class="grid-x">
                 <div class="auto cell">
-                    {{if .Site.Params.logo_mobile}}
-                    <a href="{{ .Site.BaseURL }}" rel="home" class="logo-main"><img src="{{ .Site.Params.logo_mobile}}" alt="{{ .Site.Title | safeHTML }}"></a>
+                    {{if site.Params.logo_mobile}}
+                    <a href="{{ site.BaseURL }}" rel="home" class="logo-main"><img src="{{ site.Params.logo_mobile}}" alt="{{ site.Title | safeHTML }}"></a>
                     {{else}}
-                    <a href="{{ .Site.BaseURL | absLangURL }}">
-                        {{ .Site.Title | safeHTML }}
+                    <a href="{{ site.BaseURL | absLangURL }}">
+                        {{ site.Title | safeHTML }}
                     </a>
                     {{end}}
                 </div>
@@ -100,22 +100,22 @@
             </div>
         </div>
         <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-            {{if .Site.Params.logo_large_invert}}
+            {{if site.Params.logo_large_invert}}
             <div class="off-canvas-header">
-                <a href="{{ .Site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ .Site.Params.logo_large_invert}}" alt="{{ .Site.Title | safeHTML }}"></a>
+                <a href="{{ site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ site.Params.logo_large_invert}}" alt="{{ site.Title | safeHTML }}"></a>
                 <a href="#"  data-toggle="offCanvas"><img src="/images/menu-close.svg" alt="Open Menu" aria-label="Open Menu"></a>
             </div>
 
             {{end}}
             <!-- Your menu or Off-canvas content goes here -->
             <ul class="menu vertical">
-                {{ if not (.Site.Params.custom_navbar) }}
-                {{ if not (.Site.Params.cms_navbar) }}
-                <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ .Site.BaseURL | absLangURL }}">
+                {{ if not (site.Params.custom_navbar) }}
+                {{ if not (site.Params.cms_navbar) }}
+                <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ site.BaseURL | absLangURL }}">
                     {{ i18n "home" }} </a>
-                    {{ if .Site.Menus.home}}
+                    {{ if site.menus.home}}
                     <ul class="menu submenu" data-smooth-scroll>
-                        {{ range .Site.Menus.home }}
+                        {{ range site.Menus.home }}
                         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
                         {{end}}
                     </ul>
@@ -123,8 +123,8 @@
                 </li>
                 {{ end }}
                 {{ end }}
-                {{ if .Site.Params.custom_navbar }}
-                {{ range .Site.Menus.navbar }}
+                {{ if site.Params.custom_navbar }}
+                {{ range site.Menus.navbar }}
                 <li  class="{{if eq $url .link }}active{{end}}" >
                     <a href="{{.URL}}">
                         {{ .Name }}
@@ -132,15 +132,15 @@
                 </li>
                 {{ end }}
                 {{ else }}
-                {{ if not (.Site.Params.cms_navbar) }}
-                {{ range where .Site.Pages "Type" "!=" "post" }}
+                {{ if not (site.Params.cms_navbar) }}
+                {{ range where site.Pages "Type" "!=" "post" }}
                 <li class="{{if eq $url .Permalink  }}active{{end}}"><a  href="{{ .Permalink }}">
                     {{ .Title | markdownify}}
                 </a></li>
                 {{ end }}
                 {{else}}
 
-                {{ range $.Site.Data.navigation.items}}
+                {{ range site.Data.navigation.items}}
                 <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
                     {{ .name | markdownify}}
                 </a></li>
