@@ -3,12 +3,6 @@
 .button {
   text-transform: uppercase;
   font-weight: 800;
-  @include background-gradient($primary-color, darken($primary-color,10), 'vertical');
-  box-shadow: 0 10px 10px rgba($black, 0.2);
-
-  &.small{
-    padding: 20px 30px;
-  }
 }
 
 .icon-bottom{

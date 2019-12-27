@@ -16,10 +16,10 @@
 
 
         <main>
-
-              {{ block "header" . }}{{ partial "header" . }}{{end}}
-              {{ block "main" . }}{{end}}
-
+            {{ partial "header-section"  (dict "Content" . )}}
+            <div id="section" class="grid-container full"  id="root" >
+                 {{ block "main" . }}{{end}}
+            </div>
         </main>
 
         {{ block "pusher" . }}{{end}}
