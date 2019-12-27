@@ -16,7 +16,7 @@
 @include foundation-accordion;
 @include foundation-accordion-menu;
 @include foundation-badge;
-//@include foundation-breadcrumbs;
+@include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
 @include foundation-card;
@@ -67,6 +67,7 @@
 @import "components/forms";
 @import "components/accordion";
 @import "components/menu";
+@import "components/breadcrumbs";
 @import "components/footer";
 @import "components/article";
 @import "components/cards";
@@ -76,6 +77,7 @@
 @import "components/hero-header";
 @import "components/slider";
 
+@import "layout/section";
 @import "layout/home";
 @import "layout/about";
 @import "layout/games";

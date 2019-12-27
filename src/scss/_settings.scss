@@ -65,7 +65,7 @@ $white: #FFFFFF;
 $blue: #4e638d;
 $green: #bbe3b7;
 $form-color: #A09ABC;
-$text-color: $white;
+$text-color: $black;
 $body-background: $black;
 $body-font-color: $text-color;
 $body-font-family:  futura-pt, sans-serif;
@@ -258,14 +258,14 @@ $badge-font-size: 0.6rem;
 // ---------------
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $black;
-$breadcrumbs-item-color-disabled: $medium-gray;
+$breadcrumbs-item-font-size: rem-calc(14);
+$breadcrumbs-item-color: $white;
+$breadcrumbs-item-color-current: rgba($white, 0.5);
+$breadcrumbs-item-color-disabled: rgba($white, 0.5);
 $breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-separator: true;
-$breadcrumbs-item-separator-item: '/';
+$breadcrumbs-item-separator-item: '|';
 $breadcrumbs-item-separator-item-rtl: '\\';
 $breadcrumbs-item-separator-color: $medium-gray;
 
@@ -813,7 +813,7 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $primary-color;
+$titlebar-background: $black;
 $titlebar-color: $black;
 $titlebar-padding: 0.8rem;
 $titlebar-text-font-weight: bold;
@@ -840,7 +840,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $primary-color;
+$topbar-background: $black;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
