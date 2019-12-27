@@ -30,7 +30,7 @@
   }
 
   &.scroll-down {
-    transform: translateY(-100px);
+    transform: translateY(-150px);
   }
 
   .menu{
@@ -105,7 +105,7 @@
   &.sticky{
     &:not(.is-stuck){
       padding: rem-calc(0) 0.5rem;
-      background-color: transparent;
+      background-color: $black;
       transition: 0.5s all ease-in-out;
 
       .menu{
@@ -182,16 +182,6 @@
 }
 
 
-#languages{
-  margin-left: 30px;
-  margin-right: 20px;
-  font-size: rem-calc(12);
-
-  a{
-    display: inline-block;
-    padding: rem-calc(14) rem-calc(3)
-  }
-}
 
 .top-bar-small{
   position:fixed;

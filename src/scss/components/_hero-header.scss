@@ -128,13 +128,15 @@
 .header {
 
   color: $white;
-  padding-top: rem-calc(160);
+  padding-top: rem-calc(185);
+  padding-bottom: 0;
 
   > div {
     position: relative;
 
     > div {
       position: relative;
+      min-height: 290px;
       z-index: 10;
     }
   }
