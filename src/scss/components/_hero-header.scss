@@ -128,15 +128,22 @@
 .header {
 
   color: $white;
-  padding-top: rem-calc(185);
+  padding-top: rem-calc(61);
   padding-bottom: 0;
+  @include breakpoint(medium) {
+    padding-top: rem-calc(185);
+
+  }
 
   > div {
     position: relative;
 
     > div {
       position: relative;
-      min-height: 290px;
+      min-height: 250px;
+      @include breakpoint(medium) {
+        min-height: 290px;
+      }
       z-index: 10;
     }
   }
