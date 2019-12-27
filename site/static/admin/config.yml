@@ -42,8 +42,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number"}
-      - {label: "Background", name: "bgImage", widget: "image" , required: false}
-      - {label: "overlay", name: "overlay_image", widget: "image"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "object"
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
       - {label: "Hero Header", name: header, widget: object, fields: [
           {label: "Logo", name: "logo", widget: "image", required: true},
           {label: "Image", name: "image", widget: "image", required: false},

@@ -1,7 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -27,10 +26,12 @@ module.exports = {
     },
   },
 
+  externals: {
+    jQuery: "jquery",
+    jqueryvalidation: "jquery-validation"
+  },
+
   module: {
-
-
-
     rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,

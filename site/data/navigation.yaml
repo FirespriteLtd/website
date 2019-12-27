@@ -1,11 +1,13 @@
 items:
-  - link: /games/monopoly
-    name: Monopoly
+  - link: /work
+    name: Our Work
   - link: /games
-    name: Games
-  - link: /about
-    name: About
+    name: Our Games
   - link: /careers
-    name: Careers
+    name: Working for us
+  - link: /news
+    name: News
   - link: /contact
-    name: Contact
+    name: Contact us
+  - link: /support
+    name: Support

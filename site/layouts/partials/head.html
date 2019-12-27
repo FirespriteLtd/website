@@ -18,30 +18,36 @@
     {{ "<!-- FAVICONS -->" | safeHTML }}
     {{ partial "favicons.html" . }}
 
+    {{ "<!-- RSS -->" | safeHTML }}
     {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" href="{{.RelPermalink}}" type="application/rss+xml" title="{{site.Title}}">
     {{ end }}
-
 
     {{if not $.Site.Data.gdpr.osana.active }}
     {{ "<!-- GDPR -->" | safeHTML }}
         {{ partial "cookie-consent.html" . }}
     {{ end }}
 
-
-    {{ "<!-- GOOGLE -->" | safeHTML }}
+    {{ "<!-- SOCIAL -->" | safeHTML }}
     {{ partial "head-custom.html" . }}
-
+    {{ "<!-- GOOGLE -->" | safeHTML }}
     {{ partial "marketing/google-analytics-script.html" . }}
     {{ partial "marketing/google-tag-manager-script.html" . }}
 
+    {{ "<!-- CMS -->" | safeHTML }}
     {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {{ end }}
 
-
-
-
+    {{ "<!-- PACKAGES -->" | safeHTML }}
+    {{/* Load async scripts. */}}
+    {{ range $k, $v := site.Data.assets.js }}{{/* TODO: investigate why `where ... "async" true` does not work. */}}
+        {{ $load := $v.async }}
+        {{ if $load }}
+            {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\" async></script>" (printf $v.url $v.version) $v.sri | safeHTML }}
+        {{end}}
+    {{end}}
+    {{ "<!-- /PACKAGES -->" | safeHTML }}
 </head>
 
 

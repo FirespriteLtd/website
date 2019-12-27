@@ -9,8 +9,8 @@ export default {
     },
     finalize() {
         const rellax = new Rellax('.rellax');
-        //const controller = new ScrollMagic.Controller();
-        //const blocks =[ '#about', '#values', '#stats','#video'];
-        //animations.animBlock(controller, blocks);
+        // const controller = new ScrollMagic.Controller();
+        // const blocks =[ '#about', '#values', '#stats','#video'];
+        // animations.animBlock(controller, blocks);
     },
 };

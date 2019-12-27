@@ -1,55 +1,37 @@
 #footer {
-  background: $primary-color;
   padding-top: rem-calc(95);
   padding-bottom: rem-calc(30);
-  color: $white;
-  text-align: center;
-  font-family: open-sans, sans-serif;
-  font-weight: 300;
 
-  @include breakpoint(small only){
-    padding-top: rem-calc(60);
-  }
-
-  ul{
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto;
-    font-family: open-sans, sans-serif;
-    a{
-      color: $white;
+  .logo{
+    img {
+      max-width: 40px;
     }
   }
 
-  ul{
-    &.menu{
-      justify-content: center;
-    }
-  }
-}
+  .footer-menu{
+    font-size: rem-calc(12);
 
-.registation {
-  text-transform: uppercase;
-  font-size: rem-calc(15);
-  a{
-    color: white;
-    text-decoration: underline;
-    margin-left: rem-calc(5);
+    .menu {
 
-    &:hover{
-      color:$secondary-color;
-    }
-  }
-}
+      @include breakpoint(small only){
+        flex-direction: column;
+        font-size: rem-calc(14);
+      }
 
-.secondary {
-  .menu{
-    ul{
-      display: inline-block;
-    }
-    li:first-child {
-      a{
-        padding-left: 0;
+      @include breakpoint(medium) {
+        justify-content: flex-end;
+      }
+
+      li {
+        a {
+          padding-right: rem-calc(45);
+        }
+
+        &:last-child{
+          a {
+            padding-right: 0;
+          }
+        }
       }
     }
   }

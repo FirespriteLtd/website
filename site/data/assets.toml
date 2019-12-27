@@ -7,10 +7,15 @@
 
 # JavaScript
 
+
 [js.jQuery]
   version = "3.4.1"
   sri = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery/%s/jquery.min.js"
+[js.jQueryValidation]
+  version = "1.19.1"
+  sri = "sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/%s/jquery.validate.min.js"
 [js.isotope]
   version = "3.0.6"
   sri = "sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
@@ -46,11 +51,6 @@
   async = true
 
 # CSS
-
-[css.fontAwesome]
-  version = "5.11.2"
-  sri = "sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/%s/css/all.min.css"
 [css.leaflet]
   version = "1.5.1"
   sri = "sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM="

@@ -39,6 +39,7 @@
     li{
       font-family: $header-font-family;
       font-weight: 700;
+      font-size: rem-calc(12);
       position: relative;
       margin-right: rem-calc(5);
 
@@ -63,6 +64,10 @@
           @extend .box-indicator;
           height: 0;
           transition: 250ms height ease-in-out;
+        }
+
+        &:hover{
+          color: $black;
         }
       }
 

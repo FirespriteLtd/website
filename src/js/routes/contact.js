@@ -1,10 +1,7 @@
 import $ from 'jquery';
-import 'jquery-validation';
+
 export default {
     init() {
-
-
-
     },
     finalize() {
 
@@ -39,7 +36,6 @@ export default {
                 return false;
             }
         });
-
 
         $('.continue').on('click' , () => {
 

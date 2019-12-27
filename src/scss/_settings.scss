@@ -51,7 +51,7 @@ $global-font-size: 18px;
 $global-width: rem-calc(1500);
 $global-lineheight: 1.5;
 $foundation-palette: (
-        primary: #2e3691,
+        primary: #e74f4f,
         secondary: #28abdd,
         success: #91A85F,
         warning: #ffae00,
@@ -65,10 +65,10 @@ $white: #FFFFFF;
 $blue: #4e638d;
 $green: #bbe3b7;
 $form-color: #A09ABC;
-$text-color: #1c1c1c;
-$body-background: transparent;
+$text-color: $white;
+$body-background: $black;
 $body-font-color: $text-color;
-$body-font-family: open-sans, sans-serif;
+$body-font-family:  futura-pt, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: rem-calc(30);
@@ -76,7 +76,7 @@ $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 5px;
-$global-menu-padding: 0.8rem 1rem;
+$global-menu-padding: 0.8rem rem-calc(22);
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -116,7 +116,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: open-sans, sans-serif;
+$header-font-family:  futura-pt-bold, sans-serif;
 $header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -161,8 +161,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $secondary-color;
-$anchor-color-hover: $primary-color;
+$anchor-color: $primary-color;
+$anchor-color-hover: $secondary-color;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

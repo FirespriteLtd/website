@@ -2,7 +2,7 @@ import $ from "jquery";
 
 export default {
   init() {
-    /*
+
     let p_scroll=0;
     if($(window).scrollTop() > 10){
       setTimeout(() => {
@@ -27,7 +27,6 @@ export default {
       p_scroll = $(window).scrollTop();
     })
 
-     */
   },
   finalize() {
   },

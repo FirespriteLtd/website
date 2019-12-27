@@ -2,8 +2,13 @@
 <footer>
     <div id="footer" class="grid-container full">
         <div class="grid-container">
-            <div class="grid-x grid-padding-x grid-margin-y">
-                <div class="cell footer-menu">
+            <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                {{if site.Params.logo_large}}
+                    <div class="cell small-12 medium-shrink logo">
+                        <a href="{{ site.BaseURL }}" rel="home" class="logo-main"><img src="{{ site.Params.logo_large}}" alt="{{ site.Title | safeHTML }}"></a>
+                    </div>
+                {{end}}
+                <div class="cell small-12 medium-auto footer-menu">
                     <ul class="menu" data-smooth-scroll>
 
                         {{ if not (.Site.Params.custom_navbar) }}
@@ -46,19 +51,22 @@
                 </div>
             </div>
         </div>
-       {{ partial "block-social-page" .}}
         <div class="grid-container m-t-60">
-            <div class="grid-x registation">
-                <div class="cell small-12" class="small-12">
-                    {{$.Site.Data.contact.registration | markdownify}}
+            <div class="grid-x align-middle">
+                <div class="cell small-12 medium-6" >
+                    <!--{{$.Site.Data.contact.registration | markdownify}}-->
+                    {{$.Site.Data.contact.legal | markdownify}}
                 </div>
-                <div class="cell small-12" class="small-12">
-                    {{$.Site.Data.contact.legal | markdownify}} -
+                <div class="cell small-12 medium-6">
+                    <ul class="secondary menu">
                     {{ range .Site.Menus.secondary }}
-                        <a href="{{.URL}}">
-                            {{ .Name }}
-                        </a>
+                        <li>
+                            <a href="{{.URL}}">
+                                {{ .Name }}
+                            </a>
+                        </li>
                     {{ end }}
+                    </ul>
                 </div>
             </div>
         </div>

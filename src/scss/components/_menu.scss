@@ -1,6 +1,74 @@
+.menu{
+  li{
+    a{
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white;
+      transition: 0.5s all ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+        transition: 0.5s all ease-in-out;
+      }
+
+      &:visited {
+        transition: 0.5s all ease-in-out;
+      }
+    }
+
+    &:last-child{
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.secondary{
+  &.menu{
+    flex-wrap: nowrap;
+
+    @include breakpoint(small only){
+      li{
+        &:first-child{
+          a{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+      justify-content: flex-end;
+    }
+
+    li {
+      a {
+        text-transform: none;
+        font-weight: normal;
+        color: $primary-color;
+        padding: 0.2rem 0.8rem;
+
+        &:hover {
+          color: $white;
+        }
+
+        &:visited {
+          color: $primary-color;
+        }
+      }
+
+      &:last-child{
+        a{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
 .vertical {
   &.menu {
-    //padding-top: rem-calc(30);
     padding-bottom: rem-calc(10);
     li{
       width: 100%;
@@ -8,19 +76,8 @@
       margin: 0;
 
       a{
-        font-weight: bold;
-        text-transform: uppercase;
         line-height: rem-calc(20);
         vertical-align: middle;
-        transition: 0.5s all ease-in-out;
-
-        &:hover {
-          transition: 0.5s all ease-in-out;
-        }
-
-        &:visited {
-          transition: 0.5s all ease-in-out;
-        }
       }
 
       &:first-child {
@@ -52,33 +109,7 @@
   }
 }
 
-#TableOfContents{
-  ul {
-    @extend .vertical;
-    @extend .menu;
-    li {
-      transition: 0.5s all ease-in-out;
-      &:hover {
-        color: $black!important;
-        transition: 0.5s all ease-in-out;
-      }
 
-      &:visited {
-        color: $primary-color !important;
-      }
-      &:before {
-        display: none;
-      }
-      > ul {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        li:last-child {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-}
 
 .oembed-wrapper {
   .oembed-item-wrapper{
@@ -110,11 +141,6 @@
   }
 }
 
-.footer-menu {
-  .menu .active > a{
-    background: transparent;
-  }
-}
 
 .off-canvas.is-transition-overlap {
   z-index: 999999;
