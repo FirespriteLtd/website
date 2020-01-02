@@ -272,21 +272,21 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: open-sans, sans-serif;
+$button-font-family: $header-font-family;
 $button-padding: rem-calc(26) rem-calc(40);
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: $secondary-color;
-$button-color: $white;
-$button-color-alt: $black;
+$button-background: $black;
+$button-background-hover: $primary-color;
+$button-color: $black;
+$button-color-alt: $primary-color;
 $button-radius: none;
-$button-hollow-border-width: 2px;
+$button-hollow-border-width: 3px;
 $button-sizes: (
         tiny: 0.75rem,
         small: 0.91rem,
-        default: rem-calc(30),
-        large: rem-calc(40),
+        default: rem-calc(16),
+        large: rem-calc(18),
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;

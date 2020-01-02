@@ -5,9 +5,22 @@
         <div class="cell small-12 large-8">
             {{ partial "contact-form" . }}
         </div>
-        <div class="cell small-12 large-4">
+        <div class="cell small-12 large-4 black-aside">
             <aside>
+                <address>
                 {{$.Site.Data.contact.address | markdownify }}
+                </address>
+                {{with $.Site.Data.contact.contacts }}
+                    {{ range . }}
+                <address>
+                    <h6>{{- .name -}}</h6>
+                    {{$url := .content | safeHTML }}
+                    <p>
+                        <a href="{{if eq .type "Email"}}mailto:{{else}}tel:{{end}}{{$url}}">{{.content}}</a>
+                    </p>
+                </address>
+                    {{end}}
+                {{end}}
             </aside>
         </div>
 

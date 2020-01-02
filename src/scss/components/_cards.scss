@@ -43,10 +43,6 @@
       }
     }
   }
-
-  header {
-
-  }
 }
 
 .card-cell {
@@ -59,6 +55,22 @@
     text-align: center;
     img {
       display: inline-block;
+    }
+  }
+}
+
+.black-aside{
+  aside{
+    background: $black;
+    color: $white;
+    padding: rem-calc(40) rem-calc(50);
+
+    h1, h2, h3, h4, h5{
+      color: $primary-color;
+    }
+    h6{
+      color: $white;
+      margin-bottom: rem-calc(10);
     }
   }
 }
