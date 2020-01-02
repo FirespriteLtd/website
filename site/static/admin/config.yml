@@ -11,11 +11,11 @@ site_url: https://infallible-franklin-e50f20.netlify.com
 collections:
   - name: "news"
     label: "News"
-    folder: "news"
     create: true
     show_preview_links: true
     preview_path: "news/{{slug}}"
     slug: "{{slug}}"
+    folder: "site/content/news"
     editor:
       preview: false
     preview_path_date_field: "updated_on"

@@ -1,0 +1,20 @@
+
+{{ define "main" }}
+<section>
+    {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "news")}}
+
+    <div id="news" class="grid-container list p-t-b-30">
+        <h2>Latest News</h2>
+        <div class="grid-x grid-padding-x grid-margin-y">
+            {{ range $index, $content := $paginator.Pages }}
+                {{with $content}}
+                    <div class="cell">
+                        {{ .Render "summary" }}
+                    </div>
+                {{end}}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
