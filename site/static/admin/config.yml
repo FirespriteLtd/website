@@ -187,9 +187,13 @@ collections:
         name: "contact"
         file: "site/data/contact.yaml"
         fields:
-          - label: "Emails"
-            name: "email"
+          - label: "Contacts"
+            name: "contacts"
             widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string }
+              - {label: Type, name: type, widget: select, options: ["Telephone", "Email"]}
+              - {label: Content, name: content, widget: string }
           - label: "Address"
             name: "address"
             widget: "markdown"

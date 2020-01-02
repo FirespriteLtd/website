@@ -60,31 +60,14 @@
         padding-top: rem-calc(25);
         padding-bottom: rem-calc(25);
 
-        &:after {
-          @extend .box-indicator;
-          height: 0;
-          transition: 250ms height ease-in-out;
-        }
-
         &:hover{
-          color: $black;
-        }
-      }
-
-      &:not(.menu-logo) :hover {
-        &:after {
-          @extend .box-indicator;
-          height: rem-calc(5);
-          transition: 250ms height ease-in-out;
+          color: $primary-color;
         }
       }
 
       &.active{
         a{
-          color: $secondary-color;
-        }
-        &:not(.menu-logo) :after {
-          @extend .box-indicator;
+          color: $primary-color;
         }
       }
       .dropdown.menu > li.opens-left > .is-dropdown-submenu{
