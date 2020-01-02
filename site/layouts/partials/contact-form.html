@@ -6,21 +6,36 @@
         <div class="">
             <!-- Name -->
                 <fieldset>
-                    <label for="name">Full Name*</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="name"><span>*</span>Full Name</label>
+                    <input type="text" id="name" name="name">
 
                 </fieldset>
             <!-- Email -->
                 <fieldset>
-                    <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <label for="email"><span>*</span>Email Address</label>
+                    <input type="email" id="email" name="email" >
                 </fieldset>
+            <!-- Company -->
+            <fieldset>
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </fieldset>
+            <!-- Nature of Enquiry -->
+            <fieldset>
+                <label for="nature">Nature of Enquiry </label>
+                <select id="nature" name="nature">
+                    <option value="0"></option>
+                    <option value="1">Press</option>
+                    <option value="2">Business Development</option>
+                    <option value="3">Influencer</option>
+                </select>
+            </fieldset>
         </div>
 
         <!-- Message -->
         <fieldset>
-            <label for="message">Your message</label>
-            <textarea id="message" name="message" placeholder="Your message" rows="8" cols="80"></textarea>
+            <label for="message"><span>*</span>Your message</label>
+            <textarea id="message" name="message" rows="8" cols="80"></textarea>
         </fieldset>
         <p class="hide">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -31,7 +46,7 @@
         </p>
         <!-- Button -->
         <div class="tc">
-            <button type="submit" class="button large">Send message</button>
+            <button type="submit" class="hollow button">Send message</button>
         </div>
     </form>
 
