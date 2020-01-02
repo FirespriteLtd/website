@@ -1,13 +1,16 @@
+twitter:
+  active: false
+  url: ' https://twitter.com/FireSpriteGames'
 links:
-  - id: facebook-square
+  - id: facebook
     type: Facebook
     url: 'https://www.facebook.com/MarmaladeGameStudio/'
-  - id: twitter-square
+  - id: twitter
     type: Twitter
     url: 'https://twitter.com/marmaladegames'
   - id: instagram
     type: Instagram
     url: instagram.com/marmaladegames/
-  - id: youtube-square
+  - id: youtube
     type: YouTube
     url: 'https://www.youtube.com/channel/UCumvfXfBRw_KhfKgAREpgnw'
