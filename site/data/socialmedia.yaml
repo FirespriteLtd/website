@@ -2,7 +2,7 @@ twitter:
   active: false
   url: ' https://twitter.com/FireSpriteGames'
 links:
-  - id: facebook-f
+  - id: fa-facebook-f
     type: Facebook
     url: 'https://www.facebook.com/FirespriteGames/'
   - id: twitter
