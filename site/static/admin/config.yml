@@ -28,7 +28,7 @@ collections:
         name: "featured_image"
         widget: "object"
         fields:
-          - {name: src, label: Image, widget: image}
+          - {name: src, label: Image, widget: image, config: {media_folder: "."}}
           - {name: alt, label: Alt text, widget: string}
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list"}

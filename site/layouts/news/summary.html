@@ -1,18 +1,44 @@
+{{ $item := . }}
 
-<div class="summary">
-  <div class="summary-content">
-  <header>
-    {{if isset .Params "image"}}
-    <div class="image-round">
-      <img src="{{.Params.image}}" alt="{{.Title}}">
+{{/* Get summary. */}}
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+{{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if .Params.abstract }}
+{{ $summary = .Params.abstract | markdownify | emojify }}
+{{ else if $item.Truncated }}
+{{ $summary = $item.Summary }}
+{{ else }}
+{{ $summary = $item.Content }}
+{{ end }}
+<article>
+  <div class="summary">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-4">
+        {{if isset .Params "featured_image"}}
+        {{ $resource := .Params.featured_image.src}}
+        {{ $anchor := $item.Params.featured_image.focal_point | default "Smart" }}
+        <a href="{{ $item.RelPermalink }}">
+          {{ with $resource }}
+          {{ $image := .Fill (printf "434x244 q90 %s" $anchor) }}
+          <img src="{{.Params.featured_image.src}}" alt="{{.Title}}">
+          {{end}}
+        </a>
+        {{end}}
+      </div>
+      <div class="cell small-12 medium-8">
+      <header>
+        <small></small>
+        <a href="{{ $item.RelPermalink }}">
+          <h4> {{.Title}}</h4>
+        </a>
+        {{ with $summary }}
+        <p>{{.}}
+        </p>
+        {{ end }}
+      </header>
+      <a href='{{ .Permalink }}' class="hollow button small">View role</a>
+      </div>
     </div>
-    {{end}}
-    <h4> {{.Title}}</h4>
-    <p class="location">
-      {{.Params.location }}
-    </p>
-  </header>
   </div>
-  <a href='{{ .Permalink }}' class="hollow button small">View role</a>
-</div>
-
+</article>
