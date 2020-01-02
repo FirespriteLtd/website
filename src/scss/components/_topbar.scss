@@ -22,6 +22,7 @@
   .top-bar-container {
     display: flex;
     flex: 1 0 auto;
+    padding: 0;
     align-items: center;
   }
 
@@ -172,6 +173,16 @@
     width: auto;
     height: 100%;
     max-height: rem-calc(40);
+    transition: 0.5s all ease-in-out;
+    @include breakpoint(medium) {
+      max-height: rem-calc(150);
+    }
+  }
+
+  &.is-stuck{
+    .logo-main > img{
+      max-height: rem-calc(40);
+    }
   }
 
 

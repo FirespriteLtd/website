@@ -82,8 +82,8 @@
         </div>
         </div>
     {{end}}
-        <div class="top-bar-small title-bar  {{if not site.Data.navigation.active}} hide-for-large{{end}}" >
-            <div class="grid-x">
+        <div class="top-bar-small title-bar {{if not site.Data.navigation.active}} hide-for-large{{end}}" >
+            <div class="grid-x align-center-middle">
                 <div class="auto cell">
                     {{if site.Params.logo_mobile}}
                     <a href="{{ site.BaseURL }}" rel="home" class="logo-main"><img src="{{ site.Params.logo_mobile}}" alt="{{ site.Title | safeHTML }}"></a>
@@ -101,13 +101,6 @@
             </div>
         </div>
         <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-            {{if site.Params.logo_mobile}}
-            <div class="off-canvas-header">
-                <a href="{{ site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ site.Params.logo_mobile}}" alt="{{ site.Title | safeHTML }}"></a>
-                <a href="#"  data-toggle="offCanvas"><img src="/images/menu-close.svg" alt="Open Menu" aria-label="Open Menu"></a>
-            </div>
-
-            {{end}}
             <div class="grid-container">
                 <div class="grid-x align-center-middle" style="height: 85vh">
                     <div class="cell">

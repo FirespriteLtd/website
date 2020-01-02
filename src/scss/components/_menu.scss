@@ -143,10 +143,6 @@
 }
 
 
-.off-canvas.is-transition-overlap {
-  z-index: 999999;
-}
-
 .off-canvas {
   img{
     width: 30px;
@@ -170,6 +166,10 @@
     align-items: center;
     justify-content: space-between;
     background: $black;
+  }
+
+  .vertical.menu{
+    margin-top:150px;
   }
 
   .vertical.menu li {
