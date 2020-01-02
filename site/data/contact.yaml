@@ -1,12 +1,21 @@
-email:
-  - contactus@marmalademail.com
+contacts:
+  - content: 01234 876 8700
+    name: Telephone
+    type: Telephone
+  - content: pr@firesprite.com
+    name: Press Enquiries
+    type: Email
+  - content: jobs@firesprite.com
+    name: Job Enquiries
+    type: Email
 address: |-
   ### Company Information
+
   ###### Address
+
   Unit 100 – The Vanilla Factory\
   39 Fleet St,\
   Liverpool\
   L1 4AR
-legal: |-
-  © 2019 **Firesprite Games**. All Rights Reserved.
+legal: © 2019 **Firesprite Games**. All Rights Reserved.
 registration: Registered in England no. 03677408
