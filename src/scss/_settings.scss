@@ -52,7 +52,7 @@ $global-width: rem-calc(1500);
 $global-lineheight: 1.5;
 $foundation-palette: (
         primary: #e74f4f,
-        secondary: #28abdd,
+        secondary: #1e1e1e,
         success: #91A85F,
         warning: #ffae00,
         alert: #842c10,
@@ -493,7 +493,7 @@ $offcanvas-sizes: (
 $offcanvas-vertical-sizes: (
         small: 250px,
 );
-$offcanvas-background: $primary-color;
+$offcanvas-background: $secondary-color;
 $offcanvas-shadow: none;
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: none;

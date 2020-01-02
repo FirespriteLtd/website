@@ -124,41 +124,36 @@
   .logo-main{
     img {
       max-width: 360px;
+      transition: 0.5s all ease-in-out;
     }
   }
 
   .logo-invert{
     img {
       max-width: 35px;
+      transition: 0.5s all ease-in-out;
     }
   }
 
   &.sticky {
 
-    .logo-invert{
-      display: block;
-      opacity:1;
-      transition: 0.5s all ease-in-out;
-    }
-    .logo-main{
-      display: none;
-      opacity:0;
-      transition: 0.5s all ease-in-out;
-    }
-
     &:not(.is-stuck) {
       .menu-logo{
-        .logo-invert{
-          display: none;
-          opacity:0;
-          transition: 0.5s all ease-in-out;
-        }
         .logo-main{
           display: block;
           opacity:1;
           transition: 0.5s all ease-in-out;
         }
 
+      }
+    }
+
+    &.is-stuck {
+      .logo-main {
+        img {
+          max-width: 35px;
+          transition: 0.5s all ease-in-out;
+        }
       }
     }
   }
@@ -178,6 +173,8 @@
     height: 100%;
     max-height: rem-calc(40);
   }
+
+
 
 }
 
@@ -205,16 +202,5 @@
     height: 4px;
     width: 100%;
     background-color: $black;
-  }
-
-  .bar-1 {
-    width: 80%;
-  }
-
-  .bar-2 {
-  }
-
-  .bar-3 {
-    width: 50%;
   }
 }

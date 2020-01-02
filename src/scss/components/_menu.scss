@@ -15,8 +15,9 @@
         transition: 0.5s all ease-in-out;
       }
     }
-
-    &:last-child{
+  }
+  &:not(.vertical) {
+    &:last-child {
       a {
         padding-right: 0;
       }
@@ -165,15 +166,20 @@
   .off-canvas-header {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    background: $black;
   }
 
   .vertical.menu li {
-    padding: 15px 30px;
+    @include breakpoint(medium) {
+      padding: 15px 30px;
+    }
     a {
       color: $white;
-      font-size: rem-calc(40);
+      @include breakpoint(medium) {
+        font-size: rem-calc(40);
+      }
 
       &:visited {
         color: $white;

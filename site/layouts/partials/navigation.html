@@ -100,67 +100,77 @@
             </div>
         </div>
         <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-            {{if site.Params.logo_large_invert}}
+            {{if site.Params.logo_mobile}}
             <div class="off-canvas-header">
-                <a href="{{ site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ site.Params.logo_large_invert}}" alt="{{ site.Title | safeHTML }}"></a>
+                <a href="{{ site.BaseURL }}" rel="home" class="logo-invert"><img src="{{ site.Params.logo_mobile}}" alt="{{ site.Title | safeHTML }}"></a>
                 <a href="#"  data-toggle="offCanvas"><img src="/images/menu-close.svg" alt="Open Menu" aria-label="Open Menu"></a>
             </div>
 
             {{end}}
-            <!-- Your menu or Off-canvas content goes here -->
-            <ul class="menu vertical">
-                {{ if not (site.Params.custom_navbar) }}
-                {{ if not (site.Params.cms_navbar) }}
-                <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ site.BaseURL | absLangURL }}">
-                    {{ i18n "home" }} </a>
-                    {{ if site.menus.home}}
-                    <ul class="menu submenu" data-smooth-scroll>
-                        {{ range site.Menus.home }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                        {{end}}
-                    </ul>
-                    {{ end}}
-                </li>
-                {{ end }}
-                {{ end }}
-                {{ if site.Params.custom_navbar }}
-                {{ range site.Menus.navbar }}
-                <li  class="{{if eq $url .link }}active{{end}}" >
-                    <a href="{{.URL}}">
-                        {{ .Name }}
-                    </a>
-                </li>
-                {{ end }}
-                {{ else }}
-                {{ if not (site.Params.cms_navbar) }}
-                {{ range where site.Pages "Type" "!=" "post" }}
-                <li class="{{if eq $url .Permalink  }}active{{end}}"><a  href="{{ .Permalink }}">
-                    {{ .Title | markdownify}}
-                </a></li>
-                {{ end }}
-                {{else}}
+            <div class="grid-container">
+                <div class="grid-x align-center-middle" style="height: 85vh">
+                    <div class="cell">
+                        {{ "<!-- menu  -->" | safeHTML }}
+                        <ul class="menu vertical">
+                            {{ if not (site.Params.custom_navbar) }}
+                            {{ if not (site.Params.cms_navbar) }}
+                            <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ site.BaseURL | absLangURL }}">
+                                {{ i18n "home" }} </a>
+                                {{ if site.menus.home}}
+                                <ul class="menu submenu" data-smooth-scroll>
+                                    {{ range site.Menus.home }}
+                                    <li><a href="{{ .URL }}">{{- .Name -}}</a></li>
+                                    {{end}}
+                                </ul>
+                                {{ end}}
+                            </li>
+                            {{ end }}
+                            {{ end }}
+                            {{ if site.Params.custom_navbar }}
+                            {{ range site.Menus.navbar }}
+                            <li  class="{{if eq $url .link }}active{{end}}" >
+                                <a href="{{.URL}}">
+                                    {{- .Name -}}
+                                </a>
+                            </li>
+                            {{ end }}
+                            {{ else }}
+                            {{ if not (site.Params.cms_navbar) }}
+                            {{ range where site.Pages "Type" "!=" "post" }}
+                            <li class="{{if eq $url .Permalink  }}active{{end}}"><a  href="{{ .Permalink }}">
+                                {{ .Title | markdownify}}
+                            </a></li>
+                            {{ end }}
+                            {{else}}
 
-                {{ range site.Data.navigation.items}}
-                <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
-                    {{ .name | markdownify}}
-                </a></li>
-                {{ end }}
+                            {{ range site.Data.navigation.items}}
+                            <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
+                                {{ .name | markdownify}}
+                            </a></li>
+                            {{ end }}
 
-                {{end}}
-                {{ end }}
-                {{ if .IsTranslated }}
-                <li>
-                    <div id="languages">
+                            {{end}}
+                            {{ end }}
+                            {{ if .IsTranslated }}
+                            <li>
+                                <div id="languages">
 
-                        {{ range $i, $e := .Translations }}
-                        {{ if $i }}|{{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
-                        {{ end}}
+                                    {{ range $i, $e := .Translations }}
+                                    {{ if $i }}|{{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
+                                    {{ end}}
 
+                                </div>
+                            </li>
+                            {{ end }}
+                        </ul>
                     </div>
-                </li>
-                {{ end }}
-            </ul>
-            {{ partial "block-social-page" .}}
+
+                    <div class="cell">
+                        {{ "<!-- social -->" | safeHTML }}
+                        {{ partial "block-social-page" .}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
