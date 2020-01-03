@@ -42,11 +42,11 @@ $(document).foundation();
  =========================================================================== */
 
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faTwitter, faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebookF, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import { faCheck , faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 
-library.add(faCheck, faChevronRight, faTwitter, faFacebook, faInstagram, faYoutube );
+library.add(faCheck, faChevronRight, faTwitter, faFacebookF, faInstagram, faYoutube );
 
 dom.watch();
 /* ===========================================================================
