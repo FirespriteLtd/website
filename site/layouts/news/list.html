@@ -7,11 +7,17 @@
             <div class="grid-x grid-padding-x">
                 <div class="cell small-12 medium-9">
                     <h2>Latest News</h2>
+                    <ul class="menu">
+                        <li><a href="/news">All</a></li>
+                    {{ range $key, $value := index .Site.Taxonomies "news/categories" -}}
+                        <li><a href="{{.Page.RelPermalink}}">{{$key}}</a></li>
+                    {{ end -}}
+                    </ul>
                         {{ range $index, $content := $paginator.Pages }}
                             {{with $content}}
                                 {{ .Render "summary" }}
                             {{end}}
-                        {{ end }}
+                        {{ end -}}
                     <div class="grid-x align-center-middle">
                         <div class="cells shrink">
                             {{ partial "paginator.html" . }}

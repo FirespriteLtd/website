@@ -1,4 +1,17 @@
 .news{
+
+  .menu{
+    margin-bottom: rem-calc(30);
+    li:first-child{
+      a{
+        padding-left: 0;
+      }
+    }
+    a{
+      font-size: rem-calc(12);
+    }
+  }
+
   article {
     h2{
       color: $primary-color;

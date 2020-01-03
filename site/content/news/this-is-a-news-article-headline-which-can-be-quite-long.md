@@ -5,7 +5,7 @@ summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
   duo aliquip moderatius disputationi an.
-categories:
+news/categories:
   - games
 featured_post: false
 featured_image:

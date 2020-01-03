@@ -28,11 +28,11 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 disableKinds = ["section", "games", "careers", "contact", "admin"]
 
 # Taxonomies.
-pluralizeListTitles=true
-preserveTaxonomyNames=true
+#pluralizeListTitles=false
+#preserveTaxonomyNames=true
 [taxonomies]
-  #tag = "tags"
-  category = "/news/categories"
+  tag = "news/tags"
+  category = "news/categories"
   #publication_type = "publication_types"
   #author = "authors"
   year = "/news/year"
@@ -40,8 +40,8 @@ preserveTaxonomyNames=true
 
 [permalinks]
   news = "/news/:year/:month/:slug/"
-  year = "/news/:slug/"
-  month = "/news/:slug/"
+  #year = "/news/:slug/"
+  #month = "/news/:slug/"
 
 
 
