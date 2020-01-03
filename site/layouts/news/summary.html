@@ -34,7 +34,7 @@
       </div>
       <div class="cell small-12 medium-7 summary-content">
       <header>
-        <small></small>
+        <small>{{ partial "functions/get_dates" $item }}</small>
         <a href="{{ $item.RelPermalink }}">
           <h4> {{.Title}}</h4>
         </a>

@@ -107,5 +107,12 @@
 
   .summary-content{
     padding: rem-calc(30);
+    small {
+      font-size: rem-calc(20);
+      padding-bottom: rem-calc(5);
+    }
+    p{
+      margin-bottom: 0;
+    }
   }
 }

@@ -6,6 +6,11 @@
     background-image: url("/images/bg-white.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+  }
 
+  &.b-c-secondary {
+    background-image: url("/images/bg-black.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 }
