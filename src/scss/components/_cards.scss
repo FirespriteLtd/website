@@ -50,15 +50,6 @@
   height: 100% !important;
 }
 
-.game {
-  &.buy{
-    text-align: center;
-    img {
-      display: inline-block;
-    }
-  }
-}
-
 .black-aside{
   aside{
     background: $black;
@@ -71,6 +62,17 @@
     h6{
       color: $white;
       margin-bottom: rem-calc(10);
+    }
+  }
+}
+
+.white-aside{
+  aside{
+    background: $white;
+    padding: rem-calc(40) rem-calc(50);
+
+    h1, h2, h3, h4, h5{
+      color: $black;
     }
   }
 }
