@@ -1,6 +1,6 @@
 ---
-title: This is a news article headline which is long and runs across multiple lines
-date: 2020-01-03T11:14:42.410Z
+title: Another news article headline which is long and runs across multiple lines
+date: 2018-09-26T11:01:37.630Z
 summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
