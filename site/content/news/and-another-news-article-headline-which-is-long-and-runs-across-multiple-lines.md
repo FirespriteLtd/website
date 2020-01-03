@@ -1,5 +1,5 @@
 ---
-title: And another news article headline which is long and runs across multiple lines
+title: News article headline which is long and runs across multiple lines
 date: 2019-11-05T07:03:01.840Z
 summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
