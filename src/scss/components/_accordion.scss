@@ -6,26 +6,6 @@
       font-family: $header-font-family;
       font-weight: 700;
       vertical-align: middle;
-
-      i {
-        display: inline-block;
-        position:relative;
-        width: rem-calc(60);
-        height: rem-calc(60);
-        background-color: $white;
-        color: $primary-color;
-        border-radius: 100%;
-        margin-right: rem-calc(50);
-
-
-        div{
-          display: flex;
-          width: rem-calc(60);
-          height: rem-calc(60);
-          align-items: center;
-          justify-content: center;
-        }
-      }
     }
   }
 }
