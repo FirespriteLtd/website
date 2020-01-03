@@ -1,22 +1,21 @@
 {{define "header" }}
-<div class="grid-container full b-c-secondary block header">
+<div class="grid-container full b-c-primary block header">
     <div class="grid-container">
-        <div class="grid-x grid-padding-x grid-margin-y align-middle">
-            <div class="cell small-12 medium-8">
+        <div class="grid-x grid-padding-x grid-margin-y align-center-middle text-center">
+            <div class="cell">
                 <h1>404</h1>
                 <p>Page not found</p>
             </div>
-        </div>
-        <div class="lightning">
-            <img src="/images/lightning-section.png" >
         </div>
     </div>
 </div>
 {{end}}
 
 {{ define "main" }}
-<div class="grid-container block text-center">
-    <h1>Nothing Here...</h1>
-    <a href="{{ "/" | relURL }}" class="hollow button">Go Home</a>
+<div class="grid-container full b-c-white"  id="root" >
+    <div class="grid-container block text-center">
+        <h1>Nothing Here...</h1>
+        <a href="{{ "/" | relURL }}" class="hollow button">Go Home</a>
+    </div>
 </div>
 {{ end }}

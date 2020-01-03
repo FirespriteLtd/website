@@ -10,10 +10,6 @@ html {
   @include breakpoint(small only){
     font-size: 16px;
   }
-
-  main{
-    //min-height: 100vh;
-  }
 }
 
 *:focus{

@@ -14,9 +14,8 @@
 
       {{ block "navigation" . }}{{ partial "navigation" . }}{{end}}
 
-
         <main>
-            {{ partial "header-section"  (dict "Content" . )}}
+            {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}
             {{ block "main" . }}{{end}}
         </main>
 
