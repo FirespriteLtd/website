@@ -1,4 +1,11 @@
 #root{
   padding-top: rem-calc(90);
   padding-bottom: rem-calc(90);
+
+  &.b-c-white {
+    background-image: url("/images/bg-white.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+  }
 }
