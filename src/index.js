@@ -43,10 +43,10 @@ $(document).foundation();
 
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import { faTwitter, faFacebookF, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
-import { faCheck , faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faCheck , faChevronRight, faChevronLeft , faAngleDoubleRight, faAngleDoubleLeft} from "@fortawesome/free-solid-svg-icons";
 
 
-library.add(faCheck, faChevronRight, faTwitter, faFacebookF, faInstagram, faYoutube );
+library.add(faCheck,faChevronLeft,faChevronRight, faAngleDoubleRight, faAngleDoubleLeft, faTwitter, faFacebookF, faInstagram, faYoutube );
 
 dom.watch();
 /* ===========================================================================

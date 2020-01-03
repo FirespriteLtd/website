@@ -59,7 +59,7 @@ $foundation-palette: (
 );
 $light-gray: #999999;
 $medium-gray: #d8d8d8;
-$dark-gray: #333333;
+$dark-gray: #464646;
 $black: #000000;
 $white: #FFFFFF;
 $blue: #4e638d;
@@ -525,20 +525,20 @@ $orbit-control-zindex: 10;
 // 27. Pagination
 // --------------
 
-$pagination-font-size: rem-calc(14);
+$pagination-font-size: rem-calc(20);
 $pagination-margin-bottom: $global-margin;
 $pagination-item-color: $white;
-$pagination-item-padding: rem-calc(3 10);
+$pagination-item-padding: rem-calc(3 9);
 $pagination-item-spacing: rem-calc(1);
-$pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
+$pagination-radius: 50%;
+$pagination-item-background-hover: $primary-color;
 $pagination-item-background-current: $primary-color;
 $pagination-item-color-current: $white;
 $pagination-item-color-disabled: $medium-gray;
-$pagination-ellipsis-color: $black;
+$pagination-ellipsis-color: $primary-color;
 $pagination-mobile-items: false;
 $pagination-mobile-current-item: false;
-$pagination-arrows: true;
+$pagination-arrows: false;
 
 // 28. Progress Bar
 // ----------------
