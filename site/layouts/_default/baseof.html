@@ -17,9 +17,7 @@
 
         <main>
             {{ partial "header-section"  (dict "Content" . )}}
-            <div id="section" class="grid-container full"  id="root" >
-                 {{ block "main" . }}{{end}}
-            </div>
+            {{ block "main" . }}{{end}}
         </main>
 
         {{ block "pusher" . }}{{end}}

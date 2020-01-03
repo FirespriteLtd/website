@@ -403,6 +403,13 @@
   .b-c-white {
     background-color: $white;
   }
+
+  .b-c-secondary{
+    color: $white;
+    h1, h2, h4, h3, h4, h5, h6{
+      color: $white;
+    }
+  }
 }
 
 // =============================================================================
