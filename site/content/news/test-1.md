@@ -2,7 +2,7 @@
 title: >-
   This is a news article headline which can be long and run across multiple
   lines
-date: 2020-01-02T18:14:42.410Z
+date: 2020-01-03T11:14:42.410Z
 summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
