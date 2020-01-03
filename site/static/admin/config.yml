@@ -24,6 +24,14 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "string"}
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Games", value: "games" }
+          - { label: "Press Release", value: "press" }
+          - { label: "Careers", value: "careers" }
       - {label: "Featured Post", name: "featured_post", widget: "boolean"}
       - label: "Featured Image"
         name: "featured_image"

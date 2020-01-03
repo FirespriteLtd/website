@@ -30,7 +30,7 @@ disableKinds = ["section", "games", "careers", "contact", "admin"]
 # Taxonomies.
 [taxonomies]
   #tag = "tags"
-  #category = "categories"
+  categories = "news/categories"
   #publication_type = "publication_types"
   #author = "authors"
   year = "/news/year"
@@ -40,6 +40,7 @@ disableKinds = ["section", "games", "careers", "contact", "admin"]
   news = "/news/:year/:month/:slug/"
   year = "/news/:slug/"
   month = "/news/:slug/"
+
 
 
 
