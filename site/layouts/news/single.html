@@ -2,9 +2,11 @@
 {{ partial "header-section"  (dict "Content" . )}}
 {{end}}
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<div class="grid-container p-t-b-70">
-  <article >
-    <main>{{- .Content -}}</main>
-  </article>
+<div class="grid-container full b-c-secondary"  id="root" >
+  <div class="grid-container">
+    <article >
+      <main>{{- .Content -}}</main>
+    </article>
+  </div>
 </div>
 {{ end }}
