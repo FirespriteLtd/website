@@ -1,9 +1,0 @@
-<div class="grid-container full b-c-white"  id="root" >
-    {{- $categories := .Site.Taxonomies.categories }}
-    <ul>
-        <li><a href="{{- "categories/" | relURL }}">{{- T "nav_all" }}</a></li>
-        {{- range $categories }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-        {{- end }}
-    </ul>
-</div>

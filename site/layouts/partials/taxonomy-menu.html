@@ -1,0 +1,6 @@
+<ul class="menu">
+    <li><a href="/news">All</a></li>
+    {{ range $key, $value := index .Context.Site.Taxonomies .Tox -}}
+    <li><a href="{{.Page.RelPermalink}}">{{$key}}</a></li>
+    {{ end -}}
+</ul>
