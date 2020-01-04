@@ -2,9 +2,7 @@ import $ from "jquery";
 
 export default {
   init() {
-
     let p_scroll = 0;
-
     setTimeout(() => {
     $(window).scroll(function () {
       if($(window).scrollTop() !== 0) {

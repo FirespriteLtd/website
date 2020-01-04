@@ -1,9 +1,4 @@
 {{ "<!-- navigation - button -->" | safeHTML }}
-<div class="loading">
-    <div class="holder">
-        <div class="loader">Loading...</div>
-    </div>
-</div>
 {{ $url := trim .URL "/"}}
 <header id="header-menu" class="nav sticky-container">
     {{if not site.Data.navigation.active}}

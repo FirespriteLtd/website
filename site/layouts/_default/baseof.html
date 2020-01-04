@@ -7,6 +7,13 @@
 
 {{ partial "old-browser.html" . }}
 
+{{if .Site.Params.preloader }}
+<div class="loading">
+    <div class="holder">
+        <div class="loader">Loading...</div>
+    </div>
+</div>
+{{end}}
 
 <div class="off-canvas-wrapper">
 

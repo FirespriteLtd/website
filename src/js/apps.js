@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $( window ).on('load', function() {
-    //$('.loading').fadeOut('fast');
+        $('.loading').fadeOut('fast');
 });
 
 // import local dependencies

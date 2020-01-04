@@ -28,8 +28,8 @@
         {{ partial "cookie-consent.html" . }}
     {{ end }}
 
-    {{ "<!-- SOCIAL -->" | safeHTML }}
     {{ partial "head-custom.html" . }}
+
     {{ "<!-- GOOGLE -->" | safeHTML }}
     {{ partial "marketing/google-analytics-script.html" . }}
     {{ partial "marketing/google-tag-manager-script.html" . }}

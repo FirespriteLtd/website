@@ -1,15 +1,13 @@
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFuWsMJHC1Hd7C4tn23R4eykqV35xGN80"></script>
-
-<!-- Create <project-root>/layouts/partials/head-custom.html to overwrite this empty template and put custom code into the <head> section. -->
+{{if .Site.Params.preloader }}
+{{ "<!-- Preloader -->" | safeHTML }}
 <style>
     .loading {
         position: fixed;
-        display: none;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
-        background: #42827d;
+        background: #e74f4f;
         z-index: 10000;
     }
     .loading > .holder {
@@ -83,3 +81,4 @@
     }
 
 </style>
+{{end}}
