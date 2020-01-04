@@ -121,14 +121,12 @@
 
 
 .top-bar {
-
   .logo-main{
     img {
       max-width: 360px;
       transition: 0.5s all ease-in-out;
     }
   }
-
   .logo-invert{
     img {
       max-width: 35px;
@@ -136,8 +134,14 @@
     }
   }
 
-  &.sticky {
+  &.top-bar-trans {
+    &:not(.is-stuck) {
+      background-color: transparent;
+      transition: 0.5s all ease-in-out;
+    }
+  }
 
+  &.sticky {
     &:not(.is-stuck) {
       .menu-logo{
         .logo-main{
@@ -176,6 +180,15 @@
     transition: 0.5s all ease-in-out;
     @include breakpoint(medium) {
       max-height: rem-calc(150);
+    }
+  }
+
+  &.title-bar {
+    &.top-bar-trans {
+      &:not(.is-stuck) {
+        background-color: transparent;
+        transition: 0.5s all ease-in-out;
+      }
     }
   }
 

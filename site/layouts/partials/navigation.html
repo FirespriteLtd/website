@@ -1,8 +1,9 @@
 {{ "<!-- navigation - button -->" | safeHTML }}
 {{ $url := trim .URL "/"}}
-<header id="header-menu" class="nav sticky-container">
+{{ $version := .Version }}
+<header id="header-menu" class="nav sticky-container ">
     {{if not site.Data.navigation.active}}
-        <div class="top-bar sticky hide-for-small show-for-large" >
+        <div class="top-bar {{if eq $version "trans"}}top-bar-trans{{end}}  sticky hide-for-small show-for-large" >
         <div class="grid-container top-bar-container">
             <div class="top-bar-left">
                 <ul class="menu">
@@ -77,7 +78,7 @@
         </div>
         </div>
     {{end}}
-        <div class="top-bar-small title-bar {{if not site.Data.navigation.active}} hide-for-large{{end}}" >
+        <div class="top-bar-small title-bar {{if eq $version "trans"}}top-bar-trans{{end}} {{if not site.Data.navigation.active}} hide-for-large{{end}}" >
             <div class="grid-x align-center-middle">
                 <div class="auto cell">
                     {{if site.Params.logo_mobile}}

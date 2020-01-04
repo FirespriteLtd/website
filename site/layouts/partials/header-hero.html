@@ -2,7 +2,7 @@
 {{ $p := .parallax | default true}}
 <div class="master-header">
     <div class="hero-header {{if $p }} rellax {{end}}  container {{if .media.video_active}} video-active {{end}}">
-    <div class="hero-header-inner">
+        <div class="hero-header-inner">
         <div class="contentWrapper">
             <div class="grid-container">
                 <div class="grid-y {{if  $p }} rellax {{end}} align-center" data-rellax-speed="-3">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="imageWrapper">
+        <div class="imageWrapper">
         <img src="/images/header-placeholder.png" alt="hero background">
         {{if not .media.video_active}}
             <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ .media.image }}')" data-rellax-speed="-7"></div>
@@ -95,8 +95,8 @@
         </script>
         {{ end }}
     </div>
+    </div>
 </div>
-</div>
-{{ "<!-- /hero header -->" | safeHTML }}
+
 
 
