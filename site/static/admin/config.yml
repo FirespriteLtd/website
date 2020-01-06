@@ -109,15 +109,8 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Location", name: "location", widget: "select" , options: [
-          {label: "London", value: "london" },
-          {label: "Lisbon", value: "lisbon" },
-      ]}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Hero Header", name: header, widget: object, fields: [
-          {label: "Image", name: "image", widget: "image"},
-          {label: "Logo", name: "logo", widget: "image"}
+      - {label: "email", name: "email", widget: "string"}
       ]}
   - name: "pages"
     label: "Pages"
