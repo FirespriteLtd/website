@@ -8,20 +8,23 @@
                     <h2>Archive for {{ $archYear }}</h2>
                     {{ range where .Site.Pages "Section" "news" }}
                     {{ if eq (.Date.Format "2006") $archYear }}
-                        {{ .Render "summary" }}
+                        {{if (.Params.summary)}}
+                            {{ .Render "summary" }}
+                        {{end}}
                     {{ end }}
                     {{ end }}
                     {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Section" "news")}}
                     <div class="grid-x align-center-middle">
                         <div class="cells shrink">
                             {{with $paginator}}
-                            {{ partial "paginator.html" . }}
+                                {{ partial "paginator.html" . }}
                             {{end}}
                         </div>
                     </div>
                 </div>
                 <div class="cell small-12 medium-3 white-aside">
                     <aside>
+                        {{partial "archive-menu" .}}
                     </aside>
                 </div>
             </div>
