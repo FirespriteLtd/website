@@ -16,16 +16,16 @@ import 'foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min';
 import 'foundation-sites/dist/js/plugins/foundation.offcanvas.min';
 import 'foundation-sites/dist/js/plugins/foundation.responsiveMenu.min';
 import 'foundation-sites/dist/js/plugins/foundation.util.triggers.min';
-//import 'foundation-sites/dist/js/plugins/foundation.util.box.min';
+import 'foundation-sites/dist/js/plugins/foundation.util.box.min';
 import 'foundation-sites/dist/js/plugins/foundation.util.nest.min';
 //import 'foundation-sites/dist/js/plugins/foundation.abide.min';
 import 'foundation-sites/dist/js/plugins/foundation.util.motion.min';
 import 'foundation-sites/dist/js/plugins/foundation.toggler.min';
-//import 'foundation-sites/dist/js/plugins/foundation.drilldown.min';
+import 'foundation-sites/dist/js/plugins/foundation.drilldown.min';
 //import 'foundation-sites/dist/js/plugins/foundation.equalizer.min';
-//import 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min';
+import 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min';
 //import 'foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
-//import 'foundation-sites/dist/js/plugins/foundation.dropdown.min';
+import 'foundation-sites/dist/js/plugins/foundation.dropdown.min';
 import 'foundation-sites/dist/js/plugins/foundation.interchange.min';
 //import 'foundation-sites/dist/js/plugins/foundation.magellan.min';
 import 'foundation-sites/dist/js/plugins/foundation.responsiveToggle.min';
@@ -34,7 +34,8 @@ import 'foundation-sites/dist/js/plugins/foundation.tabs.min';
 //import 'foundation-sites/dist/js/plugins/foundation.tooltip.min';
 //import 'foundation-sites/dist/js/plugins/foundation.util.imageLoader.min';
 
-
+Foundation.addToJquery($);
+$(document).foundation();
 
 /* ===========================================================================
  Fontawsome

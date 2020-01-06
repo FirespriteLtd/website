@@ -1,14 +1,13 @@
 
 {{ "<!-- Single header -->" | safeHTML }}
 {{ $p := .parallax | default true}}
-
-<div class="master-header">
+<div class="master-header single-header">
     <div class="hero-header {{if $p }} rellax {{end}} container">
         <div class="hero-header-inner">
             <div class="contentWrapper">
                 <div class="grid-container">
-                    <div class="grid-y {{if  $p }} rellax {{end}} align-center" data-rellax-speed="-3">
-                        <div class="cell">
+                    <div class="grid-y grid-frame {{if  $p }}rellax{{end}}" data-rellax-speed="-3">
+                        <div class="cell auto cell-block-container">
                             <div class="grid-x align-center-middle">
                                 <div class="cell small-12 medium-10 large-8">
                                     <div class="grid-x align-center-middle text-center">
@@ -18,12 +17,12 @@
                                         <div class="cell small-12">
                                             {{ partial "functions/get_dates" .Content}}
                                         </div>
-                                        <div class="cell small-12">
-                                            {{ partial "breadcrumbs" .Content}}
-                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="cell shrink">
+                            {{ partial "breadcrumbs" .Content}}
                         </div>
                     </div>
                 </div>

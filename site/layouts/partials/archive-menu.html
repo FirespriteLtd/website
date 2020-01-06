@@ -8,7 +8,7 @@
 {{ $current := . }}
 {{ $pages := (where .Site.RegularPages "Type" $type )}}
 
-<ul class="accordion"   role="tablist">
+<ul class="accordion" data-accordion>
     {{ range ($pages.GroupByDate "2006") }}
     {{ if (gt .Key 2000) }}
     {{ range .Pages }}
@@ -22,9 +22,10 @@
 
     {{ $list:= (where .Pages "Type" $type)}}
 
-    <li class="accordion-item {{if eq $current.Params.archy ($.Scratch.Get "year" )}}is-active{{end}}" data-accordion-item> <a href="/news/{{ $.Scratch.Get "year" }}" class="accordion-title">{{ $.Scratch.Get "year" }}({{len $list}})</a>
+    <li class="accordion-item {{if eq $current.Params.archy ($.Scratch.Get "year" )}}is-active{{end}}" data-accordion-item> <a href="#" class="accordion-title">{{ $.Scratch.Get "year" }}({{len $list}})</a>
 
         <div class="accordion-content" data-tab-content>
+
             <ul class="accordion" data-accordion>
                 {{ range ($list.GroupByDate  "Jan" ) }}
                 {{ range .Pages}}
@@ -40,9 +41,9 @@
                 <li class="accordion-item {{if eq $current.Params.archm ($.Scratch.Get "month" )}}is-active{{end}}" data-accordion-item><a href="#" class="accordion-title">{{ $.Scratch.Get "month" }}({{len $listMonth}})</a>
                     <div class="accordion-content" data-tab-content>
                         {{with $listMonth}}
-                        <ul>
+                        <ul class="menu vertical f-c-black">
                             {{range . }}
-                            <li><a href=".RelPermalink">{{.Title}}</a></li>x
+                            <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
                             {{end}}
                         </ul>
                         {{end}}

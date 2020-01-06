@@ -2,9 +2,6 @@ import $ from "jquery";
 
 export default {
   init() {
-
-
-
     let p_scroll = 0;
     setTimeout(() => {
     $(window).scroll(function () {
@@ -47,7 +44,6 @@ export default {
 
   },
   finalize() {
-    Foundation.addToJquery($);
-    $(document).foundation();
+
   },
 };
