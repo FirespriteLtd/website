@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="grid-container full b-c-secondary"  id="root" >
+    <section>
+
+        <div id="news" class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-9">
+                    <h2>Latest News</h2>
+
+
+                    {{ $archYear := .Date.Format "2006" }}
+                    {{ $archMonth := .Date.Format "January" }}
+
+                    {{ range where .Site.Pages "Section" "news" }}
+                    {{ if and (eq (.Date.Format "2006") $archYear) (eq (.Date.Format "January") $archMonth) }}
+                    {{ .Render "summary" }}
+                    {{ end }}
+                    {{ end }}
+                    <div class="grid-x align-center-middle">
+                        <div class="cells shrink">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-3 white-aside">
+                    <aside>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{end}}

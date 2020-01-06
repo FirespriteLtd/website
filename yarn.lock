@@ -2256,11 +2256,6 @@ chardet@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
 
-"charenc@>= 0.0.1":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
-  integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
-
 check-types@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-8.0.3.tgz#3356cca19c889544f2d7a95ed49ce508a0ecf552"
@@ -2451,6 +2446,11 @@ comma-separated-tokens@^1.0.0, comma-separated-tokens@^1.0.1:
 commander@2.17.x:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
+
+commander@^2.14.1:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
 commander@^2.18.0, commander@^2.20.0, commander@~2.20.0:
   version "2.20.1"
@@ -2737,11 +2737,6 @@ cross-spawn@^5.0.1:
     lru-cache "^4.0.1"
     shebang-command "^1.2.0"
     which "^1.2.9"
-
-"crypt@>= 0.0.1":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
-  integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -4133,6 +4128,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
+
 fsevents@^1.2.7:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.9.tgz#3f5ed66583ccd6f400b5a00db6f7e861363e388f"
@@ -5483,9 +5483,10 @@ jpegtran-bin@^4.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
-jquery-validation@^1.17.0:
+jquery-validation@^1.19.0:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/jquery-validation/-/jquery-validation-1.19.1.tgz#a85043467dc2b70d9fff05778646d150e747742f"
+  integrity sha512-QNnrZBqSltWUEJx+shOY5WtfrIb0gWmDjFfQP8rZKqMMSfpRSwEkSqhfHPvDfkObD8Hnv5KHSYI8yg73sVFdqA==
 
 jquery@>=1.10.2, jquery@^3.4.1:
   version "3.4.1"
@@ -5507,7 +5508,7 @@ js-sha256@^0.9.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
-js-yaml@^3.11.0, js-yaml@^3.12.2, js-yaml@^3.13.0, js-yaml@^3.13.1:
+js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.12.2, js-yaml@^3.13.0, js-yaml@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   dependencies:
@@ -5578,15 +5579,6 @@ jsprim@^1.2.2:
     extsprintf "1.3.0"
     json-schema "0.2.3"
     verror "1.10.0"
-
-jwplayer@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/jwplayer/-/jwplayer-1.0.3.tgz#600410316cf803dc4411c1a02875cbcc572cc467"
-  integrity sha1-YAQQMWz4A9xEEcGgKHXLzFcsxGc=
-  dependencies:
-    php2js "^1.0.0"
-    request "^2.67.0"
-    sha1 "^1.1.1"
 
 jwt-decode@^2.1.0, jwt-decode@^2.2.0:
   version "2.2.0"
@@ -7312,6 +7304,14 @@ path-type@^3.0.0:
   dependencies:
     pify "^3.0.0"
 
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
+
 pbf@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/pbf/-/pbf-3.1.0.tgz#f70004badcb281761eabb1e76c92f179f08189e9"
@@ -7336,11 +7336,6 @@ pend@~1.2.0:
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
-
-php2js@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/php2js/-/php2js-1.0.0.tgz#b841dc2c498479d2daeacb5112d94902af11feba"
-  integrity sha1-uEHcLEmEedLa6stREtlJAq8R/ro=
 
 pidtree@^0.3.0:
   version "0.3.0"
@@ -8028,7 +8023,7 @@ process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
 
-process@^0.11.10:
+process@^0.11.1, process@^0.11.10:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
@@ -8801,7 +8796,7 @@ replace-ext@1.0.0, replace-ext@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
 
-request@^2.67.0, request@^2.87.0, request@^2.88.0:
+request@^2.87.0, request@^2.88.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -9190,14 +9185,6 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
-
-sha1@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/sha1/-/sha1-1.1.1.tgz#addaa7a93168f393f19eb2b15091618e2700f848"
-  integrity sha1-rdqnqTFo85PxnrKxUJFhjicA+Eg=
-  dependencies:
-    charenc ">= 0.0.1"
-    crypt ">= 0.0.1"
 
 shallow-clone@^3.0.0:
   version "3.0.1"
@@ -10436,6 +10423,13 @@ util@0.10.3:
   dependencies:
     inherits "2.0.1"
 
+util@^0.10.3:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
+  integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
+  dependencies:
+    inherits "2.0.3"
+
 util@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/util/-/util-0.11.1.tgz#3236733720ec64bb27f6e26f421aaa2e1b588d61"
@@ -10790,6 +10784,14 @@ yallist@^3.0.0, yallist@^3.0.2, yallist@^3.0.3:
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
+
+yaml-front-matter@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/yaml-front-matter/-/yaml-front-matter-4.1.0.tgz#218da823c2539901a441a041fcf7092c48ec1595"
+  integrity sha512-E2NKXUe8Amsf3kyLDK48c2gvnfom0Yj3m7455iVVg+G5UbX66V5iqFSpEUkQ+A3iJCKIz+mvAbkN7BQ+N0wiLA==
+  dependencies:
+    commander "^2.14.1"
+    js-yaml "^3.10.0"
 
 yargs-parser@^11.1.1:
   version "11.1.1"
