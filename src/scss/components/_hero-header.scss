@@ -67,6 +67,15 @@
         }
       }
     }
+
+    .category {
+      p{
+        font-family: $header-font-family;
+        color: $primary-color;
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+      }
+    }
   }
   .imageWrapper{
     position:relative;
