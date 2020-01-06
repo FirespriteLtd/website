@@ -137,6 +137,22 @@ collections:
               {label: "Video", name: "video", widget: string},
               {label: "Video Banner Active", name: "video_active", widget: "boolean"}
             ]}
+      - file: "site/content/careers/_index.md"
+        label: "Working for us"
+        name: "careers"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: "Featured Image"
+            name: "featured_image"
+            widget: "object"
+            fields:
+              - {name: src, label: Image, widget: image}
+              - {name: alt, label: Alt text, widget: string}
+              - {name: title, label: Title, widget: string}
+          - {label: Body, name: body, widget: markdown}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
