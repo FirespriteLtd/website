@@ -6,11 +6,9 @@
                 <div class="cell small-12 medium-9">
                     {{ $archYear := .Date.Format "2006" }}
                     <h2>Archive for {{ $archYear }}</h2>
-                    {{ range where .Site.Pages "Section" "news" }}
+                    {{ range where .Site.RegularPages "Section" "news" }}
                     {{ if eq (.Date.Format "2006") $archYear }}
-                        {{if (.Params.summary)}}
                             {{ .Render "summary" }}
-                        {{end}}
                     {{ end }}
                     {{ end }}
                     {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Section" "news")}}

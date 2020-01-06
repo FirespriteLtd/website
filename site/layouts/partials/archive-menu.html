@@ -1,11 +1,12 @@
 <h4>Archives</h4>
 {{ $type := "news" }}
 {{ $year := "" }}
-{{ $pages := (where .Site.Pages "Type" "news" )}}
 {{ $.Scratch.Set "count" 1 }}
 {{ $.Scratch.Set "monthCount" 1 }}
 {{ $.Scratch.Set "year" "" }}
 {{ $.Scratch.Set "month" "" }}
+
+{{ $pages := (where .Site.RegularPages "Type" $type )}}
 
 <ul class="accordion" data-accordion>
     {{ range ($pages.GroupByDate "2006") }}
