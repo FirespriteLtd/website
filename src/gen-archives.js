@@ -35,6 +35,6 @@ fs.readdirSync(postsPath).forEach(filePath => {
 
 function writeFile(outPath, y, m)
 {
- fs.writeFileSync(outPath, JSON.stringify({date: `${y}-${m}-01 00:00:00`, 'news/archy': `${y}`, 'news/archm': `${m}`}), 'utf8');
+ fs.writeFileSync(outPath, JSON.stringify({title: `${y}` ,date: `${y}-${m}-01 00:00:00`, 'archy': `${y}`, 'archm': `${m}`}), 'utf8');
  console.log('++', outPath);
 }

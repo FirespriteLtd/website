@@ -5,16 +5,16 @@
 {{ $.Scratch.Set "monthCount" 1 }}
 {{ $.Scratch.Set "year" "" }}
 {{ $.Scratch.Set "month" "" }}
-
+{{ $current := . }}
 {{ $pages := (where .Site.RegularPages "Type" $type )}}
 
-<ul class="accordion" data-accordion>
+<ul class="accordion"   role="tablist">
     {{ range ($pages.GroupByDate "2006") }}
     {{ if (gt .Key 2000) }}
     {{ range .Pages }}
-    {{ if (eq ($.Scratch.Get "count") 1) }}
-    {{ $.Scratch.Set "count" 0 }}
-    {{ $.Scratch.Set "year" (.Date.Format "2006") }}
+        {{ if (eq ($.Scratch.Get "count") 1) }}
+        {{ $.Scratch.Set "count" 0 }}
+        {{ $.Scratch.Set "year" (.Date.Format "2006") }}
     {{ end }}
     {{ end }}
 
@@ -22,7 +22,7 @@
 
     {{ $list:= (where .Pages "Type" $type)}}
 
-    <li class="accordion-item" data-accordion-item> <a href="#" class="accordion-title">{{ $.Scratch.Get "year" }}({{len $list}})</a>
+    <li class="accordion-item {{if eq $current.Params.archy ($.Scratch.Get "year" )}}is-active{{end}}" data-accordion-item> <a href="/news/{{ $.Scratch.Get "year" }}" class="accordion-title">{{ $.Scratch.Get "year" }}({{len $list}})</a>
 
         <div class="accordion-content" data-tab-content>
             <ul class="accordion" data-accordion>
@@ -36,7 +36,8 @@
                 {{end}}
                 {{ $.Scratch.Set "monthCount" 1 }}
                 {{ $listMonth:= (where .Pages "Type" $type)}}
-                <li class="accordion-item" data-accordion-item><a href="#" class="accordion-title">{{ $.Scratch.Get "month" }}({{len $listMonth}})</a>
+
+                <li class="accordion-item {{if eq $current.Params.archm ($.Scratch.Get "month" )}}is-active{{end}}" data-accordion-item><a href="#" class="accordion-title">{{ $.Scratch.Get "month" }}({{len $listMonth}})</a>
                     <div class="accordion-content" data-tab-content>
                         {{with $listMonth}}
                         <ul>
