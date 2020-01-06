@@ -1,6 +1,11 @@
+{{$categories := .Context.Param "news/categories" }}
+{{$title := (.Context.Title | urlize )}}
 <ul class="menu m-b-30">
+    {{range $categories}}
+    <li><{{.}}</li>
+    {{end}}
     <li><a href="/news">All</a></li>
     {{ range $key, $value := index .Context.Site.Taxonomies .Tox -}}
-    <li><a href="{{.Page.RelPermalink}}">{{$key}}</a></li>
+    <li class="{{if eq $title $key}}is-active{{end}}"><a href="{{.Page.RelPermalink}}" >{{$key}}</a></li>
     {{ end -}}
 </ul>
