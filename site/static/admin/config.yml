@@ -143,7 +143,6 @@ collections:
             fields:
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
-              - {name: title, label: Title, widget: string}
           - {label: Body, name: body, widget: markdown}
           - label: "Intro"
             name: "intro"
@@ -151,8 +150,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
-              - {label: "About",  name: "about", widget: list
-                fields: [
+              - {label: "About",  name: "about", widget: list, fields: [
                   {label: "Title", name: "title", widget: string},
                   {name: image, label: Image, widget: object, fields: [
                     {name: src, label: Image, widget: image},
