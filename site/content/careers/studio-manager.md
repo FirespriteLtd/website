@@ -1,7 +1,7 @@
 ---
-title: Engineer
-careers/categories: engineering
-position_type: part
+title: Studio Manager
+careers/categories: studio
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Overview

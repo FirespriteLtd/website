@@ -1,7 +1,7 @@
 ---
 title: Art Director
 careers/categories: art
-tag: Art Director
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Overview

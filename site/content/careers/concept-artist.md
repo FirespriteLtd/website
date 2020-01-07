@@ -1,7 +1,7 @@
 ---
 title: Concept Artist
 careers/categories: art
-tag: Concept Artist
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Overview
