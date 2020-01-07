@@ -1,10 +1,6 @@
 ---
-title: Let's make amazing happen
-subtitle: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum
-  tellus. Vitae ultricies leo integer malesuada. Magna etiam tempor orci eu
-  lobortis. Aliquet bibendum enim facilisis gravida neque convallis a cras.
+title: Working for us
+subtitle: Let's make amazing happen
 featured_image:
   alt: Working fo us
   src: /images/uploads/workingforus-hero.jpg
