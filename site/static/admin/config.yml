@@ -120,6 +120,12 @@ collections:
           - { label: "QA", value: "qa" }
           - { label: "Marketing", value: "marketing" }
           - { label: "Studio", value: "studio" }
+      - label: "Position type"
+        name: "position_type"
+        widget: "select"
+        options:
+          - { label: "Part time", value: "part" }
+          - { label: "Full Time", value: "full" }
       - {label: "Job Title", name: "tag", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "email", name: "email", widget: "string"}
