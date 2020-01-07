@@ -109,6 +109,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
       - label: "Categories"
         name: "careers/categories"
         widget: "select"
@@ -126,7 +127,6 @@ collections:
         options:
           - { label: "Part time", value: "part" }
           - { label: "Full Time", value: "full" }
-      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "email", name: "email", widget: "string"}
   - name: "pages"
     label: "Pages"
