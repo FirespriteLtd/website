@@ -192,6 +192,10 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
+              - {name: image, label: Image, widget: object, fields: [
+                  {name: src, label: Image, widget: image},
+                  {name: alt, label: Alt text, widget: string}
+                ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
