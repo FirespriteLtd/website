@@ -1,7 +1,7 @@
 ---
 title: Engineer
 careers/categories: engineering
-tag: Engineer
+position_type: part
 email: jobs@firesprite.com
 ---
 #### Overview
