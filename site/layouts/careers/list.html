@@ -32,12 +32,33 @@
     </div>
 </section>
 <section>
-    <div id="values" class="grid-container full b-c-dark-gray" >
-        second block
+    <div id="values" class="grid-container block full b-c-dark-gray" >
+        {{partial "blocks/block-image-text" (dict "context" .Params.values  "full" "false" )}}
+        {{with .Params.values.values}}
+            {{range $i, $e := . }}
+                <div id="values-list" class="grid-container">
+                    <div class="grid-x align-center text-center">
+                            <div class="cell small-12 medium-6">
+                                <article>
+                                    {{if $i }}
+                                    <i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <path fill="#E74F4F" fill-rule="evenodd" d="M29 0v21h21v7H29v22h-7V28H0v-7h22V0h7z"/>
+                                    </svg></i>
+                                    {{end}}
+                                    <h3>{{$e.title}}</h3>
+                                    <p>{{$e.body}}</p>
+
+
+
+                                </article>
+                            </div>
+                    </div>
+                </div>
+            {{end}}
+        {{end}}
     </div>
 </section>
 <section>
-
         {{partial "blocks/block-image-text" (dict "context" .Params.team "id" "intro" "full" "true")}}
 </section>
 <section>

@@ -1,0 +1,23 @@
+#values-list{
+  h3{
+    font-size: rem-calc(30);
+    line-height: rem-calc(30);
+    margin-bottom: rem-calc(10);
+
+    @include breakpoint(medium){
+      font-size: rem-calc(60);
+      line-height: rem-calc(60);
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  p{
+    margin-bottom: rem-calc(5);
+  }
+
+  i {
+    font-size: rem-calc(60);
+    color: $primary-color;
+  }
+
+}
