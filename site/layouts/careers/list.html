@@ -1,8 +1,32 @@
-
+{{ define "header" }}
+{{ partial "header-single"  (dict "Content" . )}}
+{{end}}
+{{ define "navigation"}}
+{{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
 {{ define "main" }}
 <section>
     <div id="root" class="grid-container full b-c-white" >
-        first block
+        <div class="grid-container">
+            <div class="grid-x text-center">
+                <div class="cell small-12 medium-10 medium-offset-2">
+                    <h2>{{.Params.intro.title}}</h2>
+                    <p>{{.Params.intro.body}}</p>
+                </div>
+            </div>
+        </div>
+        {{with .Params.intro.about}}
+        <div class="grid-container">
+            <div class="grid-x small-up-1 medium-up-2">
+                {{range . }}
+                <div class="cell">
+                    {{.title}}
+                    <p>{{.body}}</p>
+                </div>
+                {{end}}
+            </div>
+        </div>
+        {{end}}
     </div>
 </section>
 <section>
