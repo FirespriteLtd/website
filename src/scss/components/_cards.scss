@@ -14,34 +14,14 @@
     top:0;
   }
 
+  .card-image-wrapper{
+    img{
+      width: 100%;
+    }
+  }
+
   .card-section {
     display: block;
-    text-align: center;
-
-    .card-header{
-      position: relative;
-      max-height: rem-calc(200);
-      margin-bottom: rem-calc(20);
-      .logo {
-        position: absolute;
-        width: 100%;
-        padding: rem-calc(0) rem-calc(40);
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-      }
-    }
-
-    .card-video {
-      position:relative;
-      z-index: 10;
-      background: #28abdd;
-      padding: rem-calc(10) rem-calc(10) rem-calc(10) rem-calc(10);
-
-      .responsive-embed{
-        margin-bottom: 0;
-      }
-    }
   }
 }
 

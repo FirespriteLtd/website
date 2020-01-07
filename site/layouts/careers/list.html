@@ -10,11 +10,20 @@
         {{partial "blocks/block-image-text" (dict "context" .Params.intro "id" "intro" "full" "false" "header" "h1")}}
         {{with .Params.intro.about}}
         <div class="grid-container">
-            <div class="grid-x small-up-1 medium-up-2 align-center">
+            <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-2 align-center">
                 {{range . }}
                 <div class="cell">
-                    {{.title}}
-                    <p>{{.body}}</p>
+                    <div class="card b-c-primary">
+                        {{with .image}}
+                        <div class="card-image-wrapper">
+                            <img src="{{.src}}" alt="{{.alt}}">
+                        </div>
+                        {{end}}
+                        <div class="card-section">
+                            <h3>{{.title}}</h3>
+                            <p>{{.body}}</p>
+                        </div>
+                    </div>
                 </div>
                 {{end}}
             </div>
