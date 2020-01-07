@@ -109,6 +109,18 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Categories"
+        name: "careers/categories"
+        widget: "select"
+        options:
+          - { label: "Art", value: "art" }
+          - { label: "Engineering", value: "engineering" }
+          - { label: "Design", value: "design" }
+          - { label: "Production", value: "production" }
+          - { label: "QA", value: "qa" }
+          - { label: "Marketing", value: "marketing" }
+          - { label: "Studio", value: "studio" }
+      - {label: "Job Title", name: "tag", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "email", name: "email", widget: "string"}
   - name: "pages"
