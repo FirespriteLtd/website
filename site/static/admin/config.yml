@@ -159,6 +159,22 @@ collections:
                   {label: Body, name: body, widget: markdown}
                 ]
               }
+          - label: "Values"
+            name: "values"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Body", name: "body", widget: string}
+              - {label: "Values",  name: "values", widget: list, fields: [
+                  {label: "Title", name: "title", widget: string},
+                  {label: "Body", name: "body", widget: string}
+                ]}
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Body", name: "body", widget: string}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
