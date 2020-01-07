@@ -1,7 +1,7 @@
 ---
 title: Junior Tech Artist
 careers/categories: art
-tag: Junior Tech Artist
+position_type: part
 email: jobs@firesprite.com
 ---
 #### Overview
