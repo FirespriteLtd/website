@@ -37,6 +37,26 @@
       transition: 500ms background-color ease-in-out;
     }
 
+    &.open{
+      h5{
+        color: $primary-color;
+      }
+    }
+
+    a{
+      display:flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span{
+        @extend h5;
+        font-size: rem-calc(14);
+        margin-bottom: 0;
+        transition: 500ms background-color ease-in-out;
+      }
+    }
+
     padding: rem-calc(22 24);
     background-color: $light-gray;
     margin-bottom: rem-calc(10);
