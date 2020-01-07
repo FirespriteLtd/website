@@ -17,6 +17,39 @@ intro:
         alt: Liverpool
         src: /images/uploads/workingforus-about-liverpool.jpg
       title: Liverpool
+    - body: >-
+        At Firesprite, we strive to make each game better than the last one. We
+        push ourselves hard to produce gorgeous artwork, cutting edge technical
+        innovation and thrilling gameplay. The quality of our games is our
+        passion. However, we also have a friendly and open culture, where we all
+        get the right work life balance, including flexible working times when
+        we need them.
+      image:
+        alt: Culture
+        src: /images/uploads/workingforus-about-culture.jpg
+      title: Culture
+    - body: >-
+        Our studio is situated right in the vibrant heart of Liverpool city
+        centre. It’s modern, stylish, and air conditioned, and packed full of
+        the latest cutting-edge technology. All the best cafes, restaurants,
+        bars, and shopping are right on our doorstep, and if you want a change
+        of pace, we are just a stone’s throw from the world-famous Liverpool
+        waterfront.
+      image:
+        alt: Studio
+        src: /images/uploads/workingforus-about-studio.jpg
+      title: Studio
+    - body: >-
+        We are dedicated to constantly improving ourselves as well as each of
+        our games, giving us all the opportunity to be the best we possibly can.
+        Through learning opportunities and mentoring you can level up your
+        technical capabilities, and by taking ownership of your work and helping
+        to review our games, you will have what it takes to consistently create
+        AAA quality games.
+      image:
+        alt: Careers
+        src: /images/uploads/workingforus-about-careers.jpg
+      title: Careers
   title: 'The freedom to innovate, create and excel'
   body: >-
     At Firesprite, we beilieve in giving everyone the freedom to express
