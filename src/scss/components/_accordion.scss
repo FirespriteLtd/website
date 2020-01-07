@@ -35,6 +35,7 @@
     }
 
     &:before{
+      right: 0;
       font-size: rem-calc(40);
       margin-top: - rem-calc(40 / 2);
     }
