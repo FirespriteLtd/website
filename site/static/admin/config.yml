@@ -145,6 +145,22 @@ collections:
               - {name: alt, label: Alt text, widget: string}
               - {name: title, label: Title, widget: string}
           - {label: Body, name: body, widget: markdown}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Body", name: "body", widget: string}
+              - {label: "About",  name: "about", widget: list
+                fields: [
+                  {label: "Title", name: "title", widget: string},
+                  {name: image, label: Image, widget: object, fields: [
+                    {name: src, label: Image, widget: image},
+                    {name: alt, label: Alt text, widget: string}
+                  ]},
+                  {label: Body, name: body, widget: markdown}
+                ]
+              }
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"

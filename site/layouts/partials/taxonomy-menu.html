@@ -1,6 +1,6 @@
 {{$categories := .Context.Param "news/categories" }}
 {{$title := (.Context.Title | urlize )}}
-<ul class="menu m-b-30">
+<ul class="taxonomy menu m-b-30">
     {{range $categories}}
     <li><{{.}}</li>
     {{end}}
