@@ -1,7 +1,7 @@
 ---
 title: Narrative Designer
 careers/categories: design
-tag: Narrative Designer
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Overview
