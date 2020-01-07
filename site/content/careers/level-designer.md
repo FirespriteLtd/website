@@ -1,7 +1,7 @@
 ---
 title: Level Designer
 careers/categories: design
-tag: Level Designer
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Overview
