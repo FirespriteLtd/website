@@ -7,17 +7,10 @@
 {{ define "main" }}
 <section>
     <div id="root" class="grid-container full b-c-white" >
-        <div class="grid-container">
-            <div class="grid-x text-center">
-                <div class="cell small-12 medium-10 medium-offset-2">
-                    <h2>{{.Params.intro.title}}</h2>
-                    <p>{{.Params.intro.body}}</p>
-                </div>
-            </div>
-        </div>
+        {{partial "blocks/block-image-text" (dict "context" .Params.intro "id" "intro" "full" "false" "header" "h1")}}
         {{with .Params.intro.about}}
         <div class="grid-container">
-            <div class="grid-x small-up-1 medium-up-2">
+            <div class="grid-x small-up-1 medium-up-2 align-center">
                 {{range . }}
                 <div class="cell">
                     {{.title}}
@@ -30,19 +23,18 @@
     </div>
 </section>
 <section>
-    <div id="values" class="grid-container full b-c-dark-grey" >
+    <div id="values" class="grid-container full b-c-dark-gray" >
         second block
     </div>
 </section>
 <section>
-    <div id="team" class="grid-container full b-c-dark-grey" >
-        second block
-    </div>
+
+        {{partial "blocks/block-image-text" (dict "context" .Params.team "id" "intro" "full" "true")}}
 </section>
 <section>
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "careers")}}
 
-    <div id="careers" class="grid-container full b-c-white m-t-b-30">
+    <div id="careers" class="grid-container block full b-c-white">
 
         <div class="grid-container m-b-100">
             <h2>Job vacancies</h2>

@@ -1,59 +1,36 @@
-.sub-card {
-  header {
-    h2{
-      margin-bottom: 0;
-    }
-    h4{
-      color: $primary-color;
-    }
-  }
-}
-
-
 .block {
   padding-top: rem-calc(50);
   padding-bottom: rem-calc(50);
 
-
-
-  &.header{
-    h1{
-      color: $white;
-    }
-  }
-
-  @include breakpoint(large){
-    padding-top: rem-calc(100);
-    padding-bottom: rem-calc(100);
-  }
-
-  .section-heading{
-    p{
-      font-size: rem-calc(22);
-      @extend .m-b-50;
+  header{
+    h1, h2{
+      color: $primary-color;
     }
   }
 
   &.block-image {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+
     header{
       h2{
         color: $primary-color;
       }
     }
 
-    .content{
-      &:not(.sub){
-        p{
-          font-size: rem-calc(20);
-          font-family: $header-font-family;
+    color: $white;
 
-          @include breakpoint(small only) {
-            font-size: rem-calc(24);
+    p{
+      margin-bottom: 0;
+    }
+
+    .contentWrapper{
+      > div{
+        height: 100%;
+           .grid-x{
+            height: 100%;
           }
-        }
-      }
-      &.sub {
-        @extend .sub-card;
       }
     }
   }
@@ -126,65 +103,4 @@
   }
 }
 
-.block-icon-list {
-
-  img {
-    margin-bottom: rem-calc(25);
-  }
-
-  li {
-    margin-bottom: rem-calc(50);
-  }
-
-}
-
-#block-contact {
-  background: url('/images/lightning-contact.png') no-repeat center center;
-  background-size: contain;
-  margin-top: $global-margin;
-
-  @include breakpoint(small only){
-    background-size: 160% auto;
-  }
-}
-
-#block-services {
-  .block {
-    padding: rem-calc(50);
-
-    img{
-      margin-bottom: $global-margin;
-    }
-
-    @include breakpoint(large){
-      padding: rem-calc(100);
-    }
-  }
-
-
-
-  .cell:nth-child(1n+0) {
-    .block {
-      background-color: #d3d9e6;
-    }
-  }
-
-  .cell:nth-child(2n+0) {
-    .block {
-      background-color: $white;
-    }
-  }
-
-  .cell:nth-child(3n+0) {
-    .block {
-      background-color: #ddf1db;
-    }
-  }
-
-  .cell:nth-child(4n+0) {
-    .block {
-      background-color: #cde2e1;
-    }
-  }
-}
 
