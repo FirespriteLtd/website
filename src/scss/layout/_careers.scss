@@ -19,5 +19,47 @@
     font-size: rem-calc(60);
     color: $primary-color;
   }
+}
 
+#careers {
+  .accordion-content{
+    padding-left: 0;
+    padding-right: 0;
+    ul{
+      list-style: unset;
+      margin: 0;
+    }
+  }
+  .job-title {
+    h5 {
+      font-size: rem-calc(14);
+      margin-bottom: 0;
+      transition: 500ms background-color ease-in-out;
+    }
+
+    padding: rem-calc(22 24);
+    background-color: $light-gray;
+    margin-bottom: rem-calc(10);
+    transition: 500ms background-color ease-in-out;
+
+    &:before {
+      font-size: rem-calc(40);
+      margin-top: - rem-calc(40 / 2);
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      cursor: pointer;
+      transition: 500ms background-color ease-in-out;
+
+      h5 {
+        color: $white;
+        transition: 500ms color ease-in-out;
+      }
+
+      &:before {
+        color: $white;
+      }
+    }
+  }
 }

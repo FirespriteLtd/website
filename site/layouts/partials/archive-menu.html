@@ -8,7 +8,7 @@
 {{ $current := . }}
 {{ $pages := (where .Site.RegularPages "Type" $type )}}
 
-<ul class="accordion" data-accordion>
+<ul class="archive-menu accordion" data-accordion>
     {{ range ($pages.GroupByDate "2006") }}
     {{ if (gt .Key 2000) }}
     {{ range .Pages }}

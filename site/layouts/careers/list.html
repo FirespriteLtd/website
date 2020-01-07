@@ -68,16 +68,20 @@
 
         <div class="grid-container m-b-100">
             <h2>Job vacancies</h2>
-        </div>
-
-        <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-2 large-up-4 align-center text-center">
-            {{ range $index, $content := $paginator.Pages }}
-                {{with $content}}
-                    <div class="cell">
-                        {{ .Render "summary" }}
+            <ul class="accordion" data-accordion>
+                {{ range $key, $value := index .Site.Taxonomies "careers/categories"}}
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title"><h4>{{$key}}</h4></a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            {{range $value.Pages}}
+                                {{.Render "summary"}}
+                            {{end}}
+                        </ul>
                     </div>
+                </li>
                 {{end}}
-            {{ end }}
+            </ul>
         </div>
     </div>
 </section>

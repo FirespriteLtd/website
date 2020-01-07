@@ -1,23 +1,53 @@
-.accordion {
-  .accordion-content{
-    padding: 1rem 0 1rem 0;
-    .menu {
-      margin-bottom: 0!important;
-      a{
-        padding-left:0;
-        color: black;
+
+.archive-menu {
+  &.accordion {
+    .accordion-content {
+      padding: 1rem 0 1rem 0;
+
+      .menu {
+        margin-bottom: 0 !important;
+
+        a {
+          padding-left: 0;
+          color: black;
+        }
+      }
+    }
+
+    .accordion-item {
+      a {
+        display: flex;
+        align-items: center;
+        font-family: $header-font-family;
+        font-weight: 700;
+        vertical-align: middle;
       }
     }
   }
-  .accordion-item{
-    a{
-      display: flex;
-      align-items: center;
-      font-family: $header-font-family;
-      font-weight: 700;
-      vertical-align: middle;
+}
+
+.accordion {
+  .accordion-title{
+    padding: rem-calc(24 0);
+    h4{
+      font-size: rem-calc(22);
+      margin-bottom: 0;
+    }
+
+    &:before{
+      font-size: rem-calc(40);
+      margin-top: - rem-calc(40 / 2);
+    }
+
+    &:hover{
+
     }
   }
 
-
+  .accordion-item:first-child > :first-child{
+    border-radius: unset;
+  }
+  :last-child:not(.is-active) > .accordion-title{
+    border-radius: unset;
+  }
 }

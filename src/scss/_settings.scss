@@ -57,8 +57,8 @@ $foundation-palette: (
         warning: #ffae00,
         alert: #842c10,
 );
-$light-gray: #999999;
-$medium-gray: #d8d8d8;
+$light-gray: #eeeeee;
+$medium-gray: #999999;
 $dark-gray: #1e1e1e;
 $black: #000000;
 $white: #FFFFFF;
@@ -225,7 +225,7 @@ $accordion-item-background-hover: transparent;
 $accordion-item-padding: 0.3rem 0rem;
 $accordion-content-background: transparent;
 $accordion-content-border: none;
-$accordion-content-color: $white;
+$accordion-content-color: $black;
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu
@@ -279,7 +279,7 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $black;
 $button-background-hover: $primary-color;
-$button-color: $black;
+$button-color: $white;
 $button-color-alt: $primary-color;
 $button-radius: none;
 $button-hollow-border-width: 3px;

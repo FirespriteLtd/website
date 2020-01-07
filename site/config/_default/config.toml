@@ -33,6 +33,7 @@ disableKinds = ["section", "games", "careers", "contact", "admin"]
 [taxonomies]
   tag = "news/tags"
   category = "news/categories"
+  career = "careers/categories"
   #archm = "/news/archm"
   #archy = "/news/archy"
   #publication_type = "publication_types"
