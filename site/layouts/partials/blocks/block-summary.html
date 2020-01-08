@@ -1,0 +1,35 @@
+{{$image := .context.Params.featured_image}}
+{{ $p := .parallax | default true}}
+<article>
+<div id="{{.id}}" class="grid-container block {{if( eq .full "true")}}full{{end}} {{if(isset $image "src")}}block-image{{end}}" >
+
+    {{if( eq .full "true")}}
+    <div class="contentWrapper">
+        <div class="grid-container">
+        {{end}}
+                <div class="grid-x align-center-middle text-center">
+                    <div class="cell small-12 medium-7">
+
+                            <header>
+
+                                <h1>{{.context.Title}}</h1>
+                            </header>
+
+
+                    </div>
+                    <div class="cell small-12 medium-8">
+                        <p>{{.summary}}</p>
+                    </div>
+                </div>
+        {{if( eq .full "true")}}
+        </div>
+    </div>
+    {{end}}
+    {{with $image }}
+    <div class="imageWrapper">
+        <img src="{{ .src }}" alt="{{ .alt }}">
+        <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ .src }}')" data-rellax-speed="-7"></div>
+    </div>
+    {{end}}
+</div>
+</article>

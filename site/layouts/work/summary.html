@@ -12,37 +12,5 @@
 {{ $summary = $item.Content }}
 {{ end }}
 <article>
-    <div class="grid-x summary m-b-50">
-      <div class="cell small-12 medium-5 summary-image">
-        {{if isset .Params "featured_image"}}
-        {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
-        {{ $anchor := $item.Params.featured_image.focal_point | default "Smart" }}
-        <a href="{{ $item.RelPermalink }}">
-          {{if $resource}}
-            {{ with $resource }}
-              {{ $image := .Fill (printf "434x244 q90 %s" $anchor) }}
-              <img src="{{.Params.featured_image.src}}" alt="{{.Params.featured_image.alt}}">
-            {{end}}
-          {{else}}
-          <div class="image-wrapper" style="background-image: url('{{.Params.featured_image.src}}')">
-            <img src="{{.Params.featured_image.src}}" alt="{{.Params.featured_image.alt}}">
-          </div>
-
-          {{end}}
-        </a>
-        {{end}}
-      </div>
-      <div class="cell small-12 medium-7 summary-content">
-      <header>
-        <small>{{ partial "functions/get_dates" $item }}</small>
-        <a href="{{ $item.RelPermalink }}">
-          <h4> {{.Title}}</h4>
-        </a>
-        {{ with $summary }}
-        <p>{{.}}
-        </p>
-        {{ end }}
-      </header>
-      </div>
-    </div>
+  {{partial "blocks/block-summary" (dict "context" $item "summary" $summary  "full" "true" )}}
 </article>
