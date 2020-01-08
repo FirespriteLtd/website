@@ -180,7 +180,7 @@ collections:
             ]}
       - file: "site/content/work/_index.md"
         label: "Our Work Page"
-        name: "careers"
+        name: "work"
         editor:
           preview: false
         fields:
