@@ -6,8 +6,8 @@
   letter-spacing: 2px;
   &.hollow {
     &:hover {
-      border-color: $primary-color;
-      color: $primary-color;
+      border-color: $primary-color!important;
+      color: $primary-color!important;
     }
   }
 }
