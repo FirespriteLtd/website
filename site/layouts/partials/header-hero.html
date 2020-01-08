@@ -1,5 +1,6 @@
 {{ "<!-- hero header -->" | safeHTML }}
 {{ $p := .parallax | default true}}
+{{ $isParent := .Content.IsAncestor .Content.Page}}
 <div class="master-header">
     <div class="hero-header {{if $p }} rellax {{end}}  container {{if .media.video_active}} video-active {{end}}">
         <div class="hero-header-inner">
@@ -11,19 +12,20 @@
                                 <div class="cell small-12 medium-10 large-8">
                                     <div class="grid-x align-center-middle text-center">
                                         <div class="cell small-12">
-                                            {{if .isParent}}
+
+                                            {{if $isParent}}
                                             <h4>{{ .Content.Title | safeHTML}}</h4>
                                             {{end}}
                                         </div>
                                         <div class="cell small-12">
-                                            {{if .isParent}}
+                                            {{if $isParent}}
                                             <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
                                             {{else}}
                                             <h1>{{ .Content.Title | safeHTML}}</h1>
                                             {{end}}
                                         </div>
                                         <div class="cell small-12">
-                                            {{if .isParent}}
+                                            {{if $isParent}}
                                             <p>
                                                 {{- .Content.Content -}}
                                             </p>
