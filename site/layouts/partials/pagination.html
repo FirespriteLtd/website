@@ -1,17 +1,25 @@
-{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-<div>
-    {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
-    <a class="button" href="{{ .Paginator.Prev.URL }}">{{ i18n "paginatorPrevious" }}</a>
-    <a class="button" href="{{ .Paginator.Next.URL }}">{{ i18n "paginatorNext" }}</a>
-    {{ end }}
-    {{ if and (.Paginator.HasPrev) (not .Paginator.HasNext) }}
-    <a class="button" href="{{ .Paginator.Prev.URL }}">{{ i18n "paginatorPrevious" }}</a>
-    <a class="button disabled" href="#" aria-disabled="true">{{ i18n "paginatorNext" }}</a>
-    {{ end }}
-    {{ if and (not .Paginator.HasPrev) (.Paginator.HasNext) }}
-    <a class="button disabled" href="#" aria-disabled="true">{{ i18n "paginatorPrevious" }}</a>
-    <a class="button" href="{{ .Paginator.Next.URL }}">{{ i18n "paginatorNext" }}</a>
-    {{ end }}
-    <hr>
-</div>
-{{ end }}
+{{ with .Next }}
+{{ if isset .Params "featured_image" }}
+{{$image := .Params.featured_image.src}}
+<section>
+    <div id="next-article" class="grid-container full block b-c-dark-gray m-t-100"  onclick="window.location='{{ .RelPermalink }}';" style="background-image: url({{ $image }})">
+        <div class="content grid-container">
+            <div class="grid-x grid-padding-x align-center-middle text-center">
+                <div class="cell small-12 large-4">
+                    <article>
+                        <header>
+                            <h2>
+                                {{ .Title }}
+                            </h2>
+                            <div class="icon-bottom m-t-50">
+                                <a href="{{ .RelPermalink }}" aria-label="View"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </header>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{end}}
+{{end}}
