@@ -18,6 +18,17 @@
   transition: 200ms height ease-in-out;
 }
 
+.badge-wrapper{
+  position:relative;
+  display: inline-block;
+  width: rem-calc(35);
+  > span{
+    position: absolute;
+    top:50%;
+    transform: translateY(-56%);
+  }
+}
+
 .top-bar {
   .top-bar-container {
     display: flex;

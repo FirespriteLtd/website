@@ -8,6 +8,7 @@
 <section>
     <div id="root" class="grid-container full b-c-white" >
         {{partial "blocks/block-image-text" (dict "context" .Params.intro "id" "intro" "full" "false" "header" "h1")}}
+
         {{with .Params.intro.about}}
         <div class="grid-container">
             <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-2 align-center">

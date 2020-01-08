@@ -94,7 +94,9 @@ address{
   min-width: rem-calc(36);
   min-height: rem-calc(36);
   max-height: rem-calc(36);
-  padding: rem-calc(10);
+  padding: rem-calc(12);
   margin-left: 10px;
+  line-height: rem-calc(12);
+  font-family: $header-font-family;
 }
 

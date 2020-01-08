@@ -1,0 +1,8 @@
+{{with .Context}}
+    {{$items:= (len (where .RegularPages "Type" "careers"))}}
+    {{if gt $items 0}}
+        <span class="badge-wrapper">
+            <span class="badge">{{$items}}</span>
+        </span>
+    {{end}}
+{{end}}

@@ -15,7 +15,7 @@
 
   <div class="off-canvas-content" data-off-canvas-content>
 
-      {{ block "navigation" . }}{{ partial "navigation" }}{{end}}
+      {{ block "navigation" . }}{{ partial "navigation" (dict "Context" $ "Version" "")}}{{end}}
 
         <main>
             {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}

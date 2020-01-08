@@ -1,6 +1,7 @@
 {{ "<!-- navigation - button -->" | safeHTML }}
-{{ $url := trim .URL "/"}}
+{{ $url := trim .Context.URL "/"}}
 {{ $version := .Version }}
+
 <header id="header-menu" class="nav sticky-container ">
     {{if not site.Data.navigation.active}}
         <div class="top-bar {{if eq $version "trans"}}top-bar-trans{{end}}  sticky hide-for-small show-for-large" >
@@ -55,8 +56,14 @@
                     {{else}}
 
                             {{ range site.Data.navigation.items}}
+
                             <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
-                                {{ .name | markdownify}}
+                                {{ .name | markdownify}}{{$url}}
+                                {{if eq ( trim .link "/") "careers" }}
+
+                                        {{ partial "functions/get_count"  ( dict "Context" site)}}
+
+                                {{end}}
                             </a></li>
                             {{ end }}
 
