@@ -58,7 +58,7 @@
                             {{ range site.Data.navigation.items}}
 
                             <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
-                                {{ .name | markdownify}}{{$url}}
+                                {{ .name | markdownify}}
                                 {{if eq ( trim .link "/") "careers" }}
 
                                         {{ partial "functions/get_count"  ( dict "Context" site)}}
