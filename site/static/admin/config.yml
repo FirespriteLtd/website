@@ -48,7 +48,7 @@ collections:
     preview_path: "work/{{slug}}"
     editor:
       preview: false
-    folder: "site/content/work"
+    folder: "site/content/work/pages"
     create: true
     preview_path_date_field: "updated_on"
     fields:
