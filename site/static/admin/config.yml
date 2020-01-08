@@ -41,8 +41,8 @@ collections:
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Work"
-    label: "work"
+  - name: "work"
+    label: "Work"
     label_singular: "work"
     editor:
       preview: false
