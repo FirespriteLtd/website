@@ -6,7 +6,7 @@ summary: >-
 weight: 1
 featured_image:
   alt: The Playroom
-  id: 'https://www.youtube.com/watch?v=vv5uI2vlXE8'
+  id: ''
   src: /images/uploads/work-theplayroom.jpg
 ---
 #### Overview
