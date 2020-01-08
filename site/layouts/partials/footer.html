@@ -31,6 +31,9 @@
                         {{ range $.Site.Data.navigation.items}}
                         <li><a href="{{ .link }}">
                             {{ .name | markdownify}}
+                            {{if eq ( trim .link "/") "careers" }}
+                                {{ partial "functions/get_count"  ( dict "Context" site)}}
+                            {{end}}
                         </a></li>
                         {{ end }}
 

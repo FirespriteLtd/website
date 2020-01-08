@@ -60,9 +60,7 @@
                             <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
                                 {{ .name | markdownify}}
                                 {{if eq ( trim .link "/") "careers" }}
-
                                         {{ partial "functions/get_count"  ( dict "Context" site)}}
-
                                 {{end}}
                             </a></li>
                             {{ end }}
@@ -136,6 +134,9 @@
                             {{ range where site.Pages "Type" "!=" "post" }}
                             <li class="{{if eq $url .Permalink  }}active{{end}}"><a  href="{{ .Permalink }}">
                                 {{ .Title | markdownify}}
+                                {{if eq ( trim .link "/") "careers" }}
+                                    {{ partial "functions/get_count"  ( dict "Context" site)}}
+                                {{end}}
                             </a></li>
                             {{ end }}
                             {{else}}
