@@ -44,10 +44,13 @@ collections:
   - name: "work"
     label: "Work"
     label_singular: "work"
+    how_preview_links: true
+    preview_path: "work/{{slug}}"
     editor:
       preview: false
     folder: "site/content/work"
     create: true
+    preview_path_date_field: "updated_on"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
