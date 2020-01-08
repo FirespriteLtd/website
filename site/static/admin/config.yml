@@ -41,7 +41,7 @@ collections:
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "work"
+  - name: "Work"
     label: "work"
     label_singular: "work"
     editor:
@@ -57,6 +57,7 @@ collections:
         widget: "object"
         fields:
           - {name: src, label: Image, widget: image}
+          - {name: id, label: Video, widget: string}
           - {name: alt, label: Alt text, widget: string}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Media", name: "media", widget: "object", fields: [
