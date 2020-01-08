@@ -11,12 +11,19 @@
                                 <div class="cell small-12 medium-10 large-8">
                                     <div class="grid-x align-center-middle text-center">
                                         <div class="cell small-12">
+                                            {{if .isParent}}
                                             <h4>{{ .Content.Title | safeHTML}}</h4>
+                                            {{end}}
                                         </div>
                                         <div class="cell small-12">
+                                            {{if .isParent}}
                                             <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
+                                            {{else}}
+                                            <h1>{{ .Content.Title | safeHTML}}</h1>
+                                            {{end}}
                                         </div>
                                         <div class="cell small-12">
+                                            {{if .isParent}}
                                             <p>
                                                 {{- .Content.Content -}}
                                             </p>
@@ -24,6 +31,10 @@
                                             <a href="#careers"  data-smooth-scroll class="white hollow button m-t-50">Work with us
                                                 {{ partial "functions/get_count"  ( dict "Context" site)}}
                                             </a>
+
+                                            {{end}}
+                                            {{else}}
+                                                {{- .Content.Params.summary -}}
                                             {{end}}
                                         </div>
                                     </div>
