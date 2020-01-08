@@ -178,8 +178,23 @@ collections:
               {label: "Video", name: "video", widget: string},
               {label: "Video Banner Active", name: "video_active", widget: "boolean"}
             ]}
+      - file: "site/content/work/_index.md"
+        label: "Our Work Page"
+        name: "careers"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: "Featured Image"
+            name: "featured_image"
+            widget: "object"
+            fields:
+              - {name: src, label: Image, widget: image}
+              - {name: alt, label: Alt text, widget: string}
+          - {label: Body, name: body, widget: markdown}
       - file: "site/content/careers/_index.md"
-        label: "Working for us"
+        label: "Working for us Page"
         name: "careers"
         editor:
           preview: false

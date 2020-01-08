@@ -6,6 +6,11 @@
   font-weight: 800;
   letter-spacing: 2px;
   &.hollow {
+    &.white{
+      border-color: $white!important;
+      color: $white!important;
+    }
+
     &:hover {
       border-color: $primary-color!important;
       color: $primary-color!important;
