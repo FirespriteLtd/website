@@ -1,6 +1,9 @@
 {{ define "header" }}
 {{ partial "header-hero"  (dict "Content" . )}}
 {{end}}
+{{ define "navigation"}}
+{{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <article>
 <div class="grid-container full b-c-white"  id="root" >
