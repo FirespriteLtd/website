@@ -85,14 +85,19 @@
   position:relative;
   @include maxHeight();
 
+  .breadcrumbs{
+    padding-bottom: rem-calc(50);
+  }
+
   .hero-header-inner{
     max-width: 100%;
     color: $white;
     h1{
       color: $white;
-      span {
-        color: $primary-color;
-      }
+    }
+
+    h4{
+      color: $primary-color;
     }
 
     .hero-header-logo {
@@ -184,10 +189,6 @@
     font-size: rem-calc(18);
     font-family: $body-font-family;
     font-weight: normal;
-  }
-
-  .breadcrumbs{
-    padding-bottom: rem-calc(50);
   }
 }
 

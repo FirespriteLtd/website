@@ -1,7 +1,6 @@
-
 {{ define "main" }}
 <section>
-            {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "games") ".Params.other" "!=" true)}}
+    {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "games") ".Params.other" "!=" true)}}
             {{ range $index, $content := $paginator.Pages }}
 
                 {{with $content}}
@@ -9,7 +8,6 @@
                 {{end}}
 
             {{ end }}
-
 </section>
 {{ end }}
 

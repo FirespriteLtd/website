@@ -3,29 +3,45 @@
 <div class="master-header">
     <div class="hero-header {{if $p }} rellax {{end}}  container {{if .media.video_active}} video-active {{end}}">
         <div class="hero-header-inner">
-        <div class="contentWrapper">
-            <div class="grid-container">
-                <div class="grid-y {{if  $p }} rellax {{end}} align-center" data-rellax-speed="-3">
-                <div class="cell">
-                    <div class="grid-x  grid-padding-x align-center-middle">
-                        <div class="cell small-12">
-                            <h1>{{.title | safeHTML}}</h1>
+            <div class="contentWrapper">
+                <div class="grid-container">
+                    <div class="grid-y grid-frame {{if  $p }}rellax{{end}}" data-rellax-speed="-3">
+                        <div class="cell auto cell-block-container">
+                            <div class="grid-x align-center-middle">
+                                <div class="cell small-12 medium-10 large-8">
+                                    <div class="grid-x align-center-middle text-center">
+                                        <div class="cell small-12">
+                                            <h4>{{ .Content.Title | safeHTML}}</h4>
+                                        </div>
+                                        <div class="cell small-12">
+                                            <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
+                                        </div>
+                                        <div class="cell small-12">
+                                            <p>
+                                                {{- .Content.Content -}}
+                                            </p>
+                                        </div>
+                                        <div class="cell small-12">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-
+                        <div class="cell shrink">
+                            {{ partial "breadcrumbs" .Content}}
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-    </div>
-        <div class="imageWrapper">
-        <img src="/images/header-placeholder.png" alt="hero background">
-        {{if not .media.video_active}}
-            <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ .media.image }}')" data-rellax-speed="-7"></div>
+    <div class="imageWrapper">
+        <img src="{{ .Content.Params.featured_image.src }}" alt="{{ .Content.Params.featured_image.alt }}">
+        {{if not .Content.Params.video_active}}
+            <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ .Content.Params.featured_image.src }}')" data-rellax-speed="-7"></div>
             {{ if .bg_image_mobile }}<div class="mobile"   style="background-image: url('{{ .bg_image_mobile }}')"></div> {{ end }}
         {{ else }}
-            <div  class="video-wrapper video-background" data-video="{{ .media.video }}" style="background-image: url('{{ .media.image }}')">
+            <div  class="video-wrapper video-background" data-video="{{ .media.video }}" style="background-image: url('{{ .Content.Params.featured_image.src}}')">
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer" ></div></div>
             </div>
         <script>
