@@ -5,4 +5,10 @@
 {{ partial "navigation" (dict "Version" "trans") }}
 {{end}}
 {{ define "main" }}
+    {{$list := (where .Pages.ByDate.Reverse "Type"  "work" )}}
+    {{range $indes, $content := $list}}
+        {{with $content}}
+            {{ .Render "summary" }}
+        {{end}}
+    {{end}}
 {{end}}

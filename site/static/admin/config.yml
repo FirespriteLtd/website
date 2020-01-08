@@ -53,6 +53,7 @@ collections:
     preview_path_date_field: "updated_on"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number"}
       - label: "Featured Image"
