@@ -1,6 +1,7 @@
 // Button
 
 .button {
+  position: relative;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
@@ -10,6 +11,13 @@
       color: $primary-color!important;
     }
   }
+
+  .badge-wrapper {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
 }
 
 .icon-bottom{
