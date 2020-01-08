@@ -42,6 +42,38 @@ collections:
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "work"
+    label: "work"
+    label_singular: "work"
+    editor:
+      preview: false
+    folder: "site/content/work"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "summary", widget: "string", required: false}
+      - {label: "Weight", name: "weight", widget: "number"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "object"
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Media", name: "media", widget: "object", fields: [
+          {label: "Screenshots", name: "screenshots",  widget: "list", fields: [
+              {name: src, label: Image, widget: image},
+              {name: alt, label: Alt text, widget: string}
+          ]},
+          {label: "Concept Art", name: "concepts",  widget: "list", fields: [
+            {name: src, label: Image, widget: image},
+            {name: alt, label: Alt text, widget: string}
+          ]},
+          {label: "Videos", name: "videos",  widget: "list", fields: [
+            {name: id, label: Video, widget: image},
+            {name: name, label: name, widget: string}
+          ]},
+      ]}
   - name: "games"
     label: "Games"
     label_singular: "Game"
