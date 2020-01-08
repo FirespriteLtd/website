@@ -1,24 +1,27 @@
-{{with .Params.testimonials }}
-    <div class="grid-container full b-c-secondary" >
-        <div class="grid-container">
-            <ul class="no-bullet testimonial-item">
-                {{ range where . }}
-                <li>
-                    <div class="content">{{.Params.body |  markdownify }}</div>
-                    <div class="profile">
-                        <div class="profile-img">
-                            <img class="image-round" src="{{.Params.image}}" alt="{{.Params.name}}">
+{{ if (isset .Params "testimonials") }}
+test fkljslfajs
+    {{with .Params.testimonials }}
+        <div class="grid-container full b-c-primary" >
+            <div class="grid-container">
+                <ul class="no-bullet testimonial-item">
+                    {{ range where . }}
+                    <li>
+                        <div class="content">{{.Params.body |  markdownify }}</div>
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img class="image-round" src="{{.Params.image}}" alt="{{.Params.name}}">
+                            </div>
+                            <div class="profile-name">
+                                {{.Params.name}}
+                            </div>
+                            <div class="profile-position">
+                                {{.Params.position}} of {{.Params.company}}
+                            </div>
                         </div>
-                        <div class="profile-name">
-                            {{.Params.name}}
-                        </div>
-                        <div class="profile-position">
-                            {{.Params.position}} of {{.Params.company}}
-                        </div>
-                    </div>
-                </li>
-                {{end}}
-            </ul>
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
         </div>
-    </div>
+    {{end}}
 {{end}}
