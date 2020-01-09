@@ -1,0 +1,27 @@
+.tabs-content {
+  border: none;
+}
+
+.tabs{
+  border: none;
+  display: flex;
+  justify-content: center;
+  li{
+
+    &.is-active{
+      a {
+        background: none;
+      }
+    }
+
+    a{
+      font-family: $header-font-family;
+      text-transform: uppercase;
+      background: none;
+
+      &:hover{
+        background: none;
+      }
+    }
+  }
+}

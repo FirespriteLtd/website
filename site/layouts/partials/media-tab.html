@@ -2,9 +2,33 @@
 {{with $media.Params.media}}
 <div class="grid-container full block b-c-secondary">
     <div class="grid-container">
+        <ul class="tabs" data-tabs id="media-tabs">
+
+            <li class="tabs-title is-active"><a href="#screenshots" aria-selected="true">Screenshots</a></li>
+            <li class="tabs-title"><a data-tabs-target="concepts" href="#concepts">Concepts</a></li>
+            <li class="tabs-title"><a data-tabs-target="videos" href="#videos">Videos</a></li>
+        </ul>
+    </div>
+    <div class="grid-container tabs-content" data-tabs-content="media-tabs">
         {{with .screenshots}}
-        <div class="grid-x grid-padding-x small-up-1 medium-up-3">
-            {{range . }}
+            <div class="tabs-panel is-active" id="screenshots">
+                <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+                    {{range . }}
+
+                        <div class="cell">
+                            <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                                <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                            </a>
+                        </div>
+
+                    {{end}}
+                </div>
+            </div>
+        {{end}}
+        {{with .concepts}}
+        <div class="tabs-panel" id="concepts">
+            <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+                {{range . }}
 
                 <div class="cell">
                     <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
@@ -12,7 +36,23 @@
                     </a>
                 </div>
 
-            {{end}}
+                {{end}}
+            </div>
+        </div>
+        {{end}}
+        {{with .videos}}
+        <div class="tabs-panel" id="videos">
+            <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+                {{range . }}
+
+                <div class="cell">
+                    <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                    </a>
+                </div>
+
+                {{end}}
+            </div>
         </div>
         {{end}}
     </div>
