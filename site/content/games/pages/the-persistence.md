@@ -5,7 +5,6 @@ genre: Sci-fi Horror
 players: 4 Players
 ratings: PEGI 18
 platforms:
-  - nintendo switch
   - pc
   - playstation 4
   - xbox one
@@ -47,7 +46,16 @@ media:
       src: /images/uploads/games-thepersistence-screen1.png
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.png
-buy: []
+buy:
+  - title: Amazon
+    platforms:
+      - playstation 4
+    url: >-
+      https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
+  - title: Steam
+    platforms:
+      - pc
+    url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
 ---
 ##### Can you survive?
 
