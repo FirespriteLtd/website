@@ -26,6 +26,15 @@ media:
       name: Video 1
     - id: /images/uploads/work-runsackboyrun-screen1.jpg
       name: video 2
+Testimonials:
+  - alt: Olaf Siebert
+    body: >-
+      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
+      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
+      duo aliquip disputationi an.”
+    name: Olaf Siebert
+    position: King of the world
+    src: /images/uploads/testimonial-img.jpg
 ---
 #### Overview
 
