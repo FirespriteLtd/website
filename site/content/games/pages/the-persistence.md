@@ -1,5 +1,6 @@
 ---
 title: The Persistence
+logo: /images/uploads/games-thepersistence-logo.png
 genre: Sci-fi Horror
 players: 4 Players
 ratings: PEGI 18
@@ -13,6 +14,33 @@ featured_image:
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
 video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
+features:
+  - title: All is not lost
+    body: >-
+      Survival requires you to be stealthy and VR is the perfect match for this.
+      Sneaking around and hiding behind cover; it's second nature in VR to just
+      lean round or peek over cover to gain the advantage.
+  - title: Stealth is your friend
+    body: >-
+      Caught in the inexorable pull of a black hole, and with the crew mutated
+      into horrific & murderous aberrations.
+  - title: You can fight back
+    body: Survival requires you to be stealthy and VR is the perfect match for this.
+  - title: Every life is different
+    body: >-
+      Survival requires you to be stealthy and VR is the perfect match for this.
+      Sneaking around and hiding behind cover it's second nature in VR.
+  - title: Help or hinder?
+    body: >-
+      Survival requires you to be stealthy and VR is the perfect match for this.
+      Sneaking around and hiding behind cover; it's second nature in VR to just
+      lean round or peek over cover to gain the advantage.
+  - title: VR and flatscreen
+    body: >-
+      Caught in the inexorable pull of a black hole, and with the crew mutated
+      into horrific & murderous aberrations.
+media:
+  screenshots: []
 buy: []
 ---
 ##### Can you survive?
