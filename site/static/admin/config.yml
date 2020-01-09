@@ -102,48 +102,27 @@ collections:
         name: "featured_image"
         widget: "object"
         fields:
+          - {label: "Video active", name: "active", widget: "boolean", default: false}
           - {name: src, label: Image, widget: image}
+          - {name: id, label: Video, widget: string, required: false}
           - {name: alt, label: Alt text, widget: string}
-          - {name: title, label: Title, widget: string}
-      - {label: "Hero Header", name: header, widget: object, fields: [
-          {label: "Logo", name: "logo", widget: "image", required: true},
-          {label: "Image", name: "image", widget: "image", required: false},
-          {label: "Video", name: "video", widget: string , required: false},
-          {label: "Video Banner Active", name: "video_active", required: false,  widget: "boolean"}
+      - {label: "Overview", name: "overview", widget: object, fields: [
+          {label: "body", name: "body", widget: "markdown",  required: true}
         ]}
-      - {label: "About", name: "about", widget: object, fields: [
-          {label: "Image", name: "image", widget: "image" , required: false},
-          {label: "Heading", name: "heading", widget: "string" , required: false},
-          {label: "Text", name: "text", widget: "markdown",  required: false}
-        ]}
-      - {label: "Buy", name: "buy", widget: object,  required: false, fields: [
-          {label: "Title", name: "title", widget: "markdown" , required: false},
-          {label: "Alt-Title", name: "alt_title", widget: "markdown", required: false},
-          {label: "Background", name: "bgImage", widget: "image", required: false},
-          {label: "Image", name: "image", widget: "image" , required: false},
-          {label: "Links", name: "links",  widget: "list", fields: [
-              {label: "Type", name: "type", widget: "select", options: [
-                {label: "App Store", value: "apple" },
-                {label: "Google play", value: "google" },
-                {label: "Steam", value: "steam" },
-                {label: "Nintendo Switch", value: "nintendo" }
-              ]},
-              {label: "url", name: "url", widget: string}
-          ]}
-        ]}
-      - {label: "Video", name: "video", widget: string}
-      - {label: "Features", name: "features", widget: "list", fields: [
-            {label: "Title", name: "title", widget: string},
-            {label: "Body", name: "body", widget: string},
-            {label: "Icon", name: "icon", widget: "image"}
-        ]}
-      - {label: "Screenshots", name: "screenshots", widget: "list", fields: [
-          {label: "Screenshot", name: "screenshot", widget: "image"},
-          {label: "Alt Text", name: "alt_text", widget: string}
-        ]}
-      - {label: "Partners", name: "partners", widget: "list", fields: [
-          {label: "Logo", name: "logo", widget: "image"},
-          {label: "Name", name: "name", widget: string}
+      - {label: "Featured Trailer", name: "video", widget: string}
+      - {label: "Media", name: "media", widget: "object", fields: [
+          {label: "Screenshots", name: "screenshots",  widget: "list", fields: [
+          {name: src, label: Image, widget: image},
+          {name: alt, label: Alt text, widget: string}
+          ]},
+          {label: "Concept Art", name: "concepts",  widget: "list", fields: [
+          {name: src, label: Image, widget: image},
+          {name: alt, label: Alt text, widget: string}
+          ]},
+          {label: "Videos", name: "videos",  widget: "list", fields: [
+          {name: id, label: Video, widget: image},
+          {name: name, label: name, widget: string}
+          ]},
         ]}
   - name: "careers"
     label: "Careers"
