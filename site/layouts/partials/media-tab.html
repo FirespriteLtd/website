@@ -1,12 +1,24 @@
 {{$media := .}}
 {{with $media.Params.media}}
 <div class="grid-container full block b-c-secondary">
-    <div class="grid-container">
+    <div class="grid-container text-center">
+        <h2>Media</h2>
         <ul class="tabs" data-tabs id="media-tabs">
-
-            <li class="tabs-title is-active"><a href="#screenshots" aria-selected="true">Screenshots</a></li>
-            <li class="tabs-title"><a data-tabs-target="concepts" href="#concepts">Concepts</a></li>
-            <li class="tabs-title"><a data-tabs-target="videos" href="#videos">Videos</a></li>
+            {{with .screenshots}}
+                {{if ne (len .) 0 }}
+                    <li class="tabs-title"><a href="#screenshots" aria-selected="true">Screenshots</a></li>
+                {{end}}
+            {{end}}
+            {{with .concepts}}
+                {{if ne (len .) 0}}
+                    <li class="tabs-title"><a data-tabs-target="concepts" href="#concepts">Concepts</a></li>
+                {{end}}
+            {{end}}
+            {{with .videos}}
+                {{if ne (len .) 0}}
+                    <li class="tabs-title"><a data-tabs-target="videos" href="#videos">Videos</a></li>
+                {{end}}
+            {{end}}
         </ul>
     </div>
     <div class="grid-container tabs-content" data-tabs-content="media-tabs">
