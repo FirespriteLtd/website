@@ -13,9 +13,9 @@ featured_image:
 media:
   concepts:
     - alt: concept 1
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+      src: /images/uploads/work-runsackboyrun-concept1.jpg
     - alt: concept 2
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+      src: /images/uploads/work-runsackboyrun-concept1.jpg
   screenshots:
     - alt: screen 1
       src: /images/uploads/work-runsackboyrun-screen1.jpg
