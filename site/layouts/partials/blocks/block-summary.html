@@ -2,20 +2,15 @@
 {{ $p := .parallax | default false}}
 <article>
 <div id="{{.id}}" class="grid-container block {{if( eq .full "true")}}full{{end}} {{if(isset $image "src")}}block-image{{end}} block-summary" >
-
     {{if( eq .full "true")}}
     <div class="contentWrapper">
         <div class="grid-container">
         {{end}}
                 <div class="grid-x align-center-middle text-center">
                     <div class="cell small-12 medium-7">
-
                             <header>
-
                                 <h2>{{.context.Title}}</h2>
                             </header>
-
-
                     </div>
                     <div class="cell small-12 medium-8">
                         <p>{{.summary}}</p>

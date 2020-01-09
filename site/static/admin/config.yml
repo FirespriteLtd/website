@@ -139,6 +139,18 @@ collections:
           {name: vendorIcon , label: Vendor Icon, widget: image},
           {name: url , label: Url, widget: image}
         ]}
+  - name: "platforms"
+    label: "Platforms"
+    folder: "site/data/platforms"
+    extension: "yaml"
+    identifier_field: name
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Platform", name: "name", widget: string}
+      - {label: "Value", name: "value", widget: string}
+      - {label: "Icon", name: "icon", widget: image}
   - name: "careers"
     label: "Careers"
     label_singular: "Careers"
@@ -304,13 +316,6 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Link, name: link, widget: string}
-      - label: "Platforms"
-        name: "platforms"
-        file: "site/data/platforms.yaml"
-        fields:
-          - {label: "Platform", name: "name", widget: string}
-          - {label: "Value", name: "value", widget: string}
-          - {label: "Icon", name: "icon", widget: image}
       - label: "GDPR"
         name: "gdpr"
         file: "site/data/gdpr.yaml"
