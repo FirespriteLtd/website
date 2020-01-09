@@ -99,6 +99,14 @@ collections:
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Genre", name: "genre", widget: "string"}
       - {label: "Players", name: "players", widget: "string", required: false}
+      - label: "Platforms"
+        name: "platforms"
+        widget: "relation"
+        multiple: true
+        collection: "platforms"
+        searchFields: ["name"]
+        valueField: "value"
+        displayFields: ["name"]
       - label: "Featured Image"
         name: "featured_image"
         widget: "object"
@@ -107,10 +115,10 @@ collections:
           - {name: src, label: Image, widget: image}
           - {name: id, label: Video, widget: string, required: false}
           - {name: alt, label: Alt text, widget: string}
+      - {label: "Featured Trailer", name: "video", widget: string}
       - {label: "Overview", name: "overview", widget: object, fields: [
           {label: "body", name: "body", widget: "markdown",  required: true}
         ]}
-      - {label: "Featured Trailer", name: "video", widget: string}
       - {label: "Media", name: "media", widget: "object", fields: [
           {label: "Screenshots", name: "screenshots",  widget: "list", fields: [
           {name: src, label: Image, widget: image},
@@ -280,6 +288,13 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Link, name: link, widget: string}
+      - label: "Platforms"
+        name: "platforms"
+        file: "site/data/platforms.yaml"
+        fields:
+          - {label: "Platform", name: "name", widget: string}
+          - {label: "Value", name: "value", widget: string}
+          - {label: "Icon", name: "icon", widget: image}
       - label: "GDPR"
         name: "gdpr"
         file: "site/data/gdpr.yaml"
