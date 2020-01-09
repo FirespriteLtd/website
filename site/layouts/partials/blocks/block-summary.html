@@ -1,7 +1,7 @@
 {{$image := .context.Params.featured_image}}
-{{ $p := .parallax | default true}}
+{{ $p := .parallax | default false}}
 <article>
-<div id="{{.id}}" class="grid-container block block-summary {{if( eq .full "true")}}full{{end}} {{if(isset $image "src")}}block-image{{end}}" >
+<div id="{{.id}}" class="grid-container block {{if( eq .full "true")}}full{{end}} {{if(isset $image "src")}}block-image{{end}} block-summary" >
 
     {{if( eq .full "true")}}
     <div class="contentWrapper">
