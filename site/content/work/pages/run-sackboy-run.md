@@ -6,9 +6,26 @@ summary: >-
   short.
 weight: 2
 featured_image:
+  active: true
   alt: Run! Sackboy! Run!
   id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
   src: /images/uploads/work-runsackboyrun.jpg
+media:
+  concepts:
+    - alt: concept 1
+      src: /images/uploads/work-runsackboyrun-screen1.jpg
+    - alt: concept 2
+      src: /images/uploads/work-runsackboyrun-screen1.jpg
+  screenshots:
+    - alt: screen 1
+      src: /images/uploads/work-runsackboyrun-screen1.jpg
+    - alt: screen 2
+      src: /images/uploads/work-runsackboyrun-screen1.jpg
+  videos:
+    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+      name: Video 1
+    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+      name: video 2
 ---
 #### Overview
 
