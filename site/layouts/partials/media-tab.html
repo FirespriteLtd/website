@@ -1,7 +1,20 @@
+{{$media := .}}
+{{with $media.Params.media}}
 <div class="grid-container full block b-c-secondary">
     <div class="grid-container">
-        <div class="grid-x">
+        {{with .screenshots}}
+        <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+            {{range . }}
 
+                <div class="cell">
+                    <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                    </a>
+                </div>
+
+            {{end}}
         </div>
+        {{end}}
     </div>
 </div>
+{{end}}
