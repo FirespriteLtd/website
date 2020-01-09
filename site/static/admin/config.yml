@@ -134,10 +134,10 @@ collections:
           {name: name, label: name, widget: string}
           ]},
         ]}
-      - {label: "Buy", name: "buy", widget: object,  required: false, fields: [
+      - {label: "Buy", name: "buy", widget: list,  required: false, fields: [
           {label: "Title", name: "title", widget: "string"},
-          {name: vendorIcon , label: Vendor Icon, widget: image},
-          {name: url , label: Url, widget: image}
+          {label: "Platforms", name: "platforms", widget: "relation", multiple: true, collection: "platforms", searchFields: ["name"], valueField: "value", displayFields: ["name"]}
+          {name: url , label: Url, widget: string}
         ]}
   - name: "platforms"
     label: "Platforms"
