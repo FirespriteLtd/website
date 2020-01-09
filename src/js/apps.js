@@ -9,7 +9,7 @@ import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
 import contact from './routes/contact';
-import about from './routes/about';
+import work from './routes/work';
 import games from './routes/games';
 
 /** Populate Router instance with DOM routes */
@@ -19,7 +19,7 @@ const routes = new Router({
     home,
     contact,
     games,
-    about
+    work
 });
 
 // Load Events

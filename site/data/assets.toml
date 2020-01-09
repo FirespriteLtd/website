@@ -49,6 +49,10 @@
   sri = "sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A="
   url = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/%s/lazysizes.min.js"
   async = true
+[js.slick]
+  version = "1.9.0"
+  sri = "sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/%s/slick.min.js"
 
 # CSS
 [css.leaflet]
@@ -67,3 +71,7 @@
   version = "2.10.2"
   sri = "sha256-uL8LUd3zkI/lXvc/Hv/oOu8ld6RJcOZiUY/8c+I+3/o="
   url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch-theme-algolia.min.css"
+[css.slickTheme]
+  version = "1.9.0"
+  sri = "sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/%s/slick-theme.min.css"

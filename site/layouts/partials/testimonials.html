@@ -1,26 +1,28 @@
 {{ if (isset .Params "testimonials") }}
     {{with .Params.testimonials }}
         <div id="testimonial" class="grid-container full b-c-primary" >
+            {{ range  . }}
             <div class="grid-container">
-                <ul class="no-bullet testimonial-item">
-                    {{ range  . }}
-                    <li>
-                        <div class="content">{{.body |  markdownify }}</div>
-                        <div class="profile">
-                            <div class="profile-img">
-                                <img class="image-round" src="{{.src}}" alt="{{.alt}}">
-                            </div>
-                            <div class="profile-name">
-                                {{.name}}
-                            </div>
-                            <div class="profile-position">
-                                {{.position}} of {{.company}}
-                            </div>
-                        </div>
-                    </li>
-                    {{end}}
-                </ul>
+                <div class="grid-x align-center-middle">
+                    <div class="cell small-12 medium-8">
+                        <ul class="no-bullet testimonial-item">
+
+                            <li>
+                                <div class="content">{{.body |  markdownify }}</div>
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img class="image-round" src="{{.src}}" alt="{{.alt}}">
+                                    </div>
+                                    <div class="profile-name">
+                                        {{.name}} - {{.position}} of {{.company}}
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            {{end}}
         </div>
     {{end}}
 {{end}}
