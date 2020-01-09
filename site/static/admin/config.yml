@@ -119,6 +119,10 @@ collections:
           - {name: alt, label: Alt text, widget: string}
       - {label: "Featured Trailer", name: "video", widget: string}
       - {label: "body", name: "body", widget: "markdown",  required: true}
+      - {label: "Features", name: "features",  widget: "list", fields: [
+          {name: title, label: Title, widget: string},
+          {name: body, label: body, widget: markdown}
+        ]},
       - {label: "Media", name: "media", widget: "object", fields: [
           {label: "Screenshots", name: "screenshots",  widget: "list", fields: [
             {name: src, label: Image, widget: image},
