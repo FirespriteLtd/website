@@ -40,7 +40,13 @@ features:
       Caught in the inexorable pull of a black hole, and with the crew mutated
       into horrific & murderous aberrations.
 media:
-  screenshots: []
+  screenshots:
+    - alt: screen 1
+      src: /images/uploads/games-thepersistence-screen1.png
+    - alt: screen 2
+      src: /images/uploads/games-thepersistence-screen1.png
+    - alt: screen 3
+      src: /images/uploads/games-thepersistence-screen1.png
 buy: []
 ---
 ##### Can you survive?
