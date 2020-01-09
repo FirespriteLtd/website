@@ -1,13 +1,14 @@
+{{ define "header" }}
+{{ partial "header-hero"  (dict "Content" . )}}
+{{end}}
+{{ define "navigation"}}
+{{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
 {{ define "main" }}
-<section>
-    {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "games") ".Params.other" "!=" true)}}
-            {{ range $index, $content := $paginator.Pages }}
-
-                {{with $content}}
-                {{ .Render "summary" }}
-                {{end}}
-
-            {{ end }}
-</section>
-{{ end }}
-
+    {{$list := (where .Pages.ByDate.Reverse "Type"  "games" )}}
+    {{range $indes, $content := $list}}
+        {{with $content}}
+            {{ .Render "summary" }}
+        {{end}}
+    {{end}}
+{{end}}

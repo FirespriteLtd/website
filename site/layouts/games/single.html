@@ -1,77 +1,22 @@
 {{ define "header" }}
-  {{ partial "header-hero"  (dict "media" .Params.header "title" .Title "body" .Content)}}
+{{ partial "header-hero"  (dict "Content" . )}}
 {{end}}
-
+{{ define "navigation"}}
+{{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-  {{ partial "block-game-buy" (dict "content" .Params.buy "col" "1" "class" .Params.class "bgImage" .Params.bgImage ) }}
-  {{ partial "block-image"  (dict "Id" "about" "Content" .Params.about "Class" "b-c-white" "first" "1" "second" "2") . }}
-  {{ "<!-- Block Video -->" | safeHTML }}
-  <section>
-    <div id="video" class="grid-container full block" style="background: url('{{.Params.overlay_image}}')">
-      <div class="grid-container">
-        <div class="grid-x">
-          <div class="cell small-12 medium-10 medium-offset-1 ">
-            {{partial "youtube" (dict "media" .Params)}}
-          </div>
-        </div>
+<article>
+<div class="grid-container full b-c-white"  id="root" >
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell small-12 medium-8 medium-offset-2">
+          {{- .Content -}}
       </div>
     </div>
-  </section>
-  {{ "<!-- Block Video -->" | safeHTML }}
-  {{ "<!-- Block Feature -->" | safeHTML }}
-  <section>
-  <div id="features" class="grid-container m-t-b-100 text-center">
-    <h2>Features</h2>
-    <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle text-center m-t-50">
-      {{range .Params.features}}
-        <div class="cell">
-          <img class="icon" src="{{.icon}}" alt="{{.title}}">
-          <h3>{{.title}}</h3>
-          <P>{{.body}}</P>
-        </div>
-      {{end}}
-    </div>
   </div>
-  </section>
-  {{ "<!-- /Block Feature -->" | safeHTML }}
-  {{ "<!-- Block Screenhots -->" | safeHTML }}
-  <div id="screenshots" class="grid-container full block b-c-primary" >
-      <div class="grid-container">
-        <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-2">
-          {{range .Params.screenshots}}
-         <div class="cell">
-           <img src="{{.screenshot}}" alt="{{.alt_text}}">
-         </div>
-          {{end}}
-        </div>
-      </div>
-  </div>
-  {{ "<!-- /Block Screenshots -->" | safeHTML }}
-  {{ "<!-- /Block Partners -->" | safeHTML }}
-  <div id="partners" class="grid-container full block  b-c-white" >
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x align-center-middle" >
+</div>
+</article>
 
-          <div class="cell small-8">
-            <div class="grid-x grid-padding-x small-up-2 align-center-middle" >
-            {{range .Params.partners }}
-              <div class="cell">
-                <img src="{{.logo}}" alt=".name">
-              </div>
-            {{end}}
-            </div>
-          </div>
-          <div class="cell auto">
-            <div class="image-char">
-              <img src="/images/monopoly_char_presenting.png" alt="">
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  {{ "<!-- /Block Partners -->" | safeHTML }}
-{{ partial "block-game-buy" (dict "content" .Params.buy "col" "2" "class" .Params.class "bgImage" .Params.bgImage ) }}
-
-{{partial "newsletter-signup"  .}}
+    {{partial "pagination" . }}
 
 {{ end }}
