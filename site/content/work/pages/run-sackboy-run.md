@@ -21,6 +21,11 @@ media:
       src: /images/uploads/work-runsackboyrun-screen1.jpg
     - alt: screen 2
       src: /images/uploads/work-runsackboyrun-screen1.jpg
+  videos:
+    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+      name: Video 1
+    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+      name: video 2
 ---
 #### Overview
 
