@@ -13,6 +13,7 @@ featured_image:
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
 video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
+buy: []
 ---
 ##### Can you survive?
 
