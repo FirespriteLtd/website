@@ -200,6 +200,21 @@ collections:
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
+      - file: "site/content/games/_index.md"
+        label: "Games"
+        name: "games"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: "Featured Image"
+            name: "featured_image"
+            widget: "object"
+            fields:
+              - {name: src, label: Image, widget: image}
+              - {name: alt, label: Alt text, widget: string}
+          - {label: Body, name: body, widget: markdown}
       - file: "site/content/careers/_index.md"
         label: "Working for us Page"
         name: "careers"
