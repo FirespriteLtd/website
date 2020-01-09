@@ -100,6 +100,7 @@ collections:
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Genre", name: "genre", widget: "string"}
       - {label: "Players", name: "players", widget: "string", required: false}
+      - {label: "Ratings", name: "ratings", widget: "string", required: false}
       - label: "Platforms"
         name: "platforms"
         widget: "relation"
@@ -117,21 +118,19 @@ collections:
           - {name: id, label: Video, widget: string, required: false}
           - {name: alt, label: Alt text, widget: string}
       - {label: "Featured Trailer", name: "video", widget: string}
-      - {label: "Overview", name: "overview", widget: object, fields: [
-          {label: "body", name: "body", widget: "markdown",  required: true}
-        ]}
+      - {label: "body", name: "body", widget: "markdoswn",  required: true}
       - {label: "Media", name: "media", widget: "object", fields: [
           {label: "Screenshots", name: "screenshots",  widget: "list", fields: [
-          {name: src, label: Image, widget: image},
-          {name: alt, label: Alt text, widget: string}
+            {name: src, label: Image, widget: image},
+            {name: alt, label: Alt text, widget: string}
           ]},
           {label: "Concept Art", name: "concepts",  widget: "list", fields: [
-          {name: src, label: Image, widget: image},
-          {name: alt, label: Alt text, widget: string}
+            {name: src, label: Image, widget: image},
+            {name: alt, label: Alt text, widget: string}
           ]},
           {label: "Videos", name: "videos",  widget: "list", fields: [
-          {name: id, label: Video, widget: image},
-          {name: name, label: name, widget: string}
+            {name: id, label: Video, widget: image},
+            {name: name, label: name, widget: string}
           ]},
         ]}
       - {label: "Buy", name: "buy", widget: list,  required: false, fields: [
