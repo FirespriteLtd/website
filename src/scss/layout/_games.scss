@@ -1,6 +1,25 @@
 .games{
+    .overview {
+      h2, h6 {
+        color: $primary-color;
+      }
 
+      h6 {
+        margin-bottom: rem-calc(14);
+      }
+
+    }
 }
+
+.facts-sheet {
+  .platforms{
+    text-transform: capitalize;
+  }
+  .li {
+    margin-bottom: rem-calc(60);
+  }
+}
+
 
 #features{
   h2{
