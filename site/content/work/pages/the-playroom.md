@@ -6,9 +6,18 @@ summary: >-
   short.
 weight: 1
 featured_image:
+  active: false
   alt: The Playroom
   id: 'https://www.youtube.com/watch?v=vv5uI2vlXE8'
   src: /images/uploads/work-theplayroom.jpg
+media:
+  screenshots:
+    - alt: screen 1
+      src: /images/uploads/work-theplayroom-screen1.jpg
+    - alt: screen 2
+      src: /images/uploads/work-theplayroom-screen1.jpg
+    - alt: screen 3
+      src: /images/uploads/work-theplayroom-screen1.jpg
 ---
 #### Overview
 
