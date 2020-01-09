@@ -23,15 +23,16 @@ media:
       src: /images/uploads/work-runsackboyrun-screen1.jpg
   videos:
     - id: /images/uploads/work-runsackboyrun-screen1.jpg
-      name: Video 1
+      name: Launch Trailer
     - id: /images/uploads/work-runsackboyrun-screen1.jpg
-      name: video 2
+      name: Teaser Trailer
 Testimonials:
   - alt: Olaf Siebert
     body: >-
       “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
       delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
       duo aliquip disputationi an.”
+    company: Playstation
     name: Olaf Siebert
     position: King of the world
     src: /images/uploads/testimonial-img.jpg
@@ -40,6 +41,7 @@ Testimonials:
       “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
       delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
       duo aliquip disputationi an.”
+    company: Microsoft
     name: Matt Benson
     position: Director
     src: /images/uploads/testimonial-img.jpg

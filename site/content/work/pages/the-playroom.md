@@ -27,6 +27,14 @@ Testimonials:
     name: Leigh Kirwan
     position: Director
     src: /images/uploads/testimonial-img.jpg
+  - alt: Jimmy Anderson
+    body: >-
+      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
+      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
+      duo aliquip disputationi an.”
+    name: Jimmy Anderson
+    position: Cricketer
+    src: /images/uploads/testimonial-img.jpg
 ---
 #### Overview
 
