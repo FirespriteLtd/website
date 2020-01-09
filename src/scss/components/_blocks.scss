@@ -12,6 +12,19 @@
     }
   }
 
+  &.block-summary{
+    header{
+      h1, h2{
+        color: $white !important;
+      }
+    }
+
+    h2{
+      @extend h1;
+      color: $white;
+    }
+  }
+
   &.block-image {
     position: relative;
     padding-top: 0;
