@@ -34,6 +34,7 @@ Testimonials:
       duo aliquip disputationi an.”
     name: Olaf Siebert
     position: King of the world
+    company: King of the world
     src: /images/uploads/testimonial-img.jpg
 ---
 #### Overview

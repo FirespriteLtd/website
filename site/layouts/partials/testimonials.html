@@ -1,21 +1,20 @@
 {{ if (isset .Params "testimonials") }}
-test fkljslfajs
     {{with .Params.testimonials }}
-        <div class="grid-container full b-c-primary" >
+        <div id="testimonial" class="grid-container full b-c-primary" >
             <div class="grid-container">
                 <ul class="no-bullet testimonial-item">
-                    {{ range where . }}
+                    {{ range  . }}
                     <li>
-                        <div class="content">{{.Params.body |  markdownify }}</div>
+                        <div class="content">{{.body |  markdownify }}</div>
                         <div class="profile">
                             <div class="profile-img">
-                                <img class="image-round" src="{{.Params.image}}" alt="{{.Params.name}}">
+                                <img class="image-round" src="{{.src}}" alt="{{.alt}}">
                             </div>
                             <div class="profile-name">
-                                {{.Params.name}}
+                                {{.name}}
                             </div>
                             <div class="profile-position">
-                                {{.Params.position}} of {{.Params.company}}
+                                {{.position}} of {{.company}}
                             </div>
                         </div>
                     </li>
