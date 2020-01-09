@@ -76,7 +76,7 @@ collections:
             {name: alt, label: Alt text, widget: string}
           ]},
           {label: "Videos", name: "videos",  widget: "list", fields: [
-            {name: id, label: Video, widget: image},
+            {name: id, label: Video, widget: string},
             {name: name, label: name, widget: string}
           ]},
       ]}
@@ -92,12 +92,13 @@ collections:
     label_singular: "Game"
     editor:
       preview: false
-    folder: "site/content/games"
+    folder: "site/content/games/pages"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
-      - {label: "Weight", name: "weight", widget: "number"}
+      - {label: "Genre", name: "genre", widget: "string"}
+      - {label: "Players", name: "players", widget: "string", required: false}
       - label: "Featured Image"
         name: "featured_image"
         widget: "object"
@@ -123,6 +124,11 @@ collections:
           {name: id, label: Video, widget: image},
           {name: name, label: name, widget: string}
           ]},
+        ]}
+      - {label: "Buy", name: "buy", widget: object,  required: false, fields: [
+          {label: "Title", name: "title", widget: "string"},
+          {name: vendorIcon , label: Vendor Icon, widget: image},
+          {name: url , label: Url, widget: image}
         ]}
   - name: "careers"
     label: "Careers"
