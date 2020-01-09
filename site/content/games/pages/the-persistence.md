@@ -39,13 +39,18 @@ features:
       Caught in the inexorable pull of a black hole, and with the crew mutated
       into horrific & murderous aberrations.
 media:
+  concepts:
+    - alt: concept 1
+      src: /images/uploads/games-thepersistence-concept1.jpg
+    - alt: concept 2
+      src: /images/uploads/games-thepersistence-concept1.jpg
   screenshots:
     - alt: screen 1
-      src: /images/uploads/games-thepersistence-screen1.png
+      src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 2
-      src: /images/uploads/games-thepersistence-screen1.png
+      src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 3
-      src: /images/uploads/games-thepersistence-screen1.png
+      src: /images/uploads/games-thepersistence-screen1.jpg
 buy:
   - title: Amazon
     platforms:
