@@ -97,6 +97,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Genre", name: "genre", widget: "string"}
       - {label: "Players", name: "players", widget: "string", required: false}
