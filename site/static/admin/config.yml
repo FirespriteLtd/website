@@ -139,8 +139,8 @@ collections:
           ]},
         ]}
       - {label: "Buy", name: "buy", widget: list,  required: false, fields: [
-          {label: "Title", name: "title", widget: "string"},
           {label: "Platforms", name: "platforms", widget: "relation", multiple: true, collection: "platforms", searchFields: ["name"], valueField: "value", displayFields: ["name"]},
+          {label: "Title", name: "title", widget: "string"},
           {name: url , label: Url, widget: string}
         ]}
   - name: "platforms"
