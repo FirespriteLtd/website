@@ -4,7 +4,7 @@ date: 2020-01-08T16:47:32.389Z
 summary: >-
   This is the brief description for the work project which should be quite
   short.
-weight: 2
+weight: 1
 featured_image:
   active: true
   alt: Run! Sackboy! Run!
@@ -13,9 +13,9 @@ featured_image:
 media:
   concepts:
     - alt: concept 1
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+      src: /images/uploads/work-runsackboyrun-concept1.jpg
     - alt: concept 2
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+      src: /images/uploads/work-runsackboyrun-concept1.jpg
   screenshots:
     - alt: screen 1
       src: /images/uploads/work-runsackboyrun-screen1.jpg
