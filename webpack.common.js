@@ -29,7 +29,8 @@ module.exports = {
   externals: {
     jQuery: "jquery",
     jqueryvalidation: "jquery-validation",
-    slick: "slick-carousel"
+    slick: "slick-carousel",
+    Fluidbox: "fluidbox"
   },
 
   module: {
@@ -53,6 +54,8 @@ module.exports = {
   plugins: [
    new webpack.ProvidePlugin({
      fetch: 'exports-loader?self.fetch!whatwg-fetch/dist/fetch.umd',
+     $: 'jquery',
+     jQuery: 'jquery'
    }),
 
     new AssetsPlugin({

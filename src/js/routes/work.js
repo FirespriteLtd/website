@@ -3,6 +3,7 @@
 import Rellax from 'rellax/rellax.min';
 import 'slick-carousel';
 import $ from 'jquery';
+import 'fluidbox';
 
 export default {
     init() {
@@ -22,6 +23,8 @@ export default {
             fade: true,
             autoplaySpeed: 5000,
         });
+
+        $('.image-fancy').fluidbox();
     },
 };
 

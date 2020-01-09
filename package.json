@@ -76,6 +76,7 @@
     "compression-webpack-plugin": "^3.0.1",
     "cookieconsent": "3",
     "custom-event-polyfill": "^1.0.7",
+    "fluidbox": "^2.0.5",
     "fs": "^0.0.1-security",
     "imagemin-mozjpeg": "^8.0.0",
     "jquery": "^3.4.1",

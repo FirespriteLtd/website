@@ -16,6 +16,10 @@
   version = "1.19.1"
   sri = "sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI="
   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/%s/jquery.validate.min.js"
+[js.jQueryThrottleDebounce]
+  version = "1.1"
+  sri = "sha256-+nuEu243+6BveXk5N+Vbr268G+4FHjUOEcfKaBqfPbc="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/%s/jquery.ba-throttle-debounce.min.js"
 [js.isotope]
   version = "3.0.6"
   sri = "sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
@@ -34,7 +38,7 @@
   url = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.js"
 [js.fluidbox]
   version = "2.0.5"
-  sri = "ssha256-AVBLVWwvNE9uzNP36wynCSm3JIIkjvjXsj/Ol30JzGM="
+  sri = "sha256-AVBLVWwvNE9uzNP36wynCSm3JIIkjvjXsj/Ol30JzGM="
   url = "https://cdnjs.cloudflare.com/ajax/libs/fluidbox/%s/js/jquery.fluidbox.min.js"
 [js.fuse]
   version = "3.2.1"
