@@ -18,6 +18,15 @@ media:
       src: /images/uploads/work-theplayroom-screen1.jpg
     - alt: screen 3
       src: /images/uploads/work-theplayroom-screen1.jpg
+Testimonials:
+  - alt: Leigh Kirwan
+    body: >-
+      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
+      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
+      duo aliquip disputationi an.”
+    name: Leigh Kirwan
+    position: Director
+    src: /images/uploads/testimonial-img.jpg
 ---
 #### Overview
 
