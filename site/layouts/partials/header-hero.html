@@ -20,7 +20,11 @@
                                             {{if $isParent}}
                                             <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
                                             {{else}}
-                                            <h1>{{ .Content.Title | safeHTML}}</h1>
+                                            {{if isset .Content.Params "logo"}}
+                                                <img src="{{.Content.Params.logo}}" alt="{{- .Content.Title -}}">
+                                            {{else}}
+                                                <h1>{{ .Content.Title | safeHTML}}</h1>
+                                            {{end}}
                                             {{end}}
                                         </div>
                                         <div class="cell small-12">
