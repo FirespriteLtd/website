@@ -213,6 +213,8 @@ collections:
             name: "featured_image"
             widget: "object"
             fields:
+              - {label: "Video active", name: "active", widget: "boolean", default: false}
+              - {name: id, label: Video, widget: string, required: false}
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
@@ -228,6 +230,8 @@ collections:
             name: "featured_image"
             widget: "object"
             fields:
+              - {label: "Video active", name: "active", widget: "boolean", default: false}
+              - {name: id, label: Video, widget: string, required: false}
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
@@ -243,6 +247,8 @@ collections:
             name: "featured_image"
             widget: "object"
             fields:
+              - {label: "Video active", name: "active", widget: "boolean", default: false}
+              - {name: id, label: Video, widget: string, required: false}
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
