@@ -3,7 +3,7 @@ title: Welcome to Firesprite
 featured_image:
   active: false
   alt: Lastest game
-  src: /images/uploads/featured.jpg
+  src: /images/uploads/home-hero.jpg
 news_active: true
 twitter_active: false
 ---
