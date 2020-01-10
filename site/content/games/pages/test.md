@@ -1,5 +1,8 @@
 ---
 title: The Persistence 2
+date: 2020-05-14T09:44:40.977Z
+order_status: TBA
+featured: false
 logo: /images/uploads/games-thepersistence-logo.png
 summary: ''
 genre: Sci-fi Horror
