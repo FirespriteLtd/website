@@ -5,6 +5,6 @@ featured_image:
   alt: Lastest game
   src: /images/uploads/featured.jpg
 news_active: true
-twitter_active: true
+twitter_active: false
 ---
 We deliver world-firsts in creativity and technology
