@@ -31,7 +31,7 @@
                                         {{end}}
                                         <div class="cell small-12">
                                             {{if $isParent}}
-                                            <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
+                                                <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
                                             {{else}}
                                             {{if isset .Content.Params "logo"}}
                                                 <img src="{{.Content.Params.logo}}" alt="{{- .Content.Title -}}">
@@ -51,14 +51,11 @@
                                         {{end}}
                                         <div class="cell small-12">
                                             {{if $isParent}}
-                                            <p>
                                                 {{- .Content.Content -}}
-                                            </p>
                                             {{if eq .Content.Section "careers"}}
-                                            <a href="#careers"  data-smooth-scroll class="white hollow button m-t-50">Work with us
-                                                {{ partial "functions/get_count"  ( dict "Context" site)}}
-                                            </a>
-
+                                                <a href="#careers"  data-smooth-scroll class="white hollow button m-t-50">Work with us
+                                                    {{ partial "functions/get_count"  ( dict "Context" site)}}
+                                                </a>
                                             {{end}}
                                             {{else}}
                                                 {{- .Content.Params.summary -}}
@@ -68,9 +65,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cell shrink">
-                            {{ partial "breadcrumbs" .Content}}
-                        </div>
+                        {{if not .ctx.IsHome }}
+                            <div class="cell shrink">
+                                {{ partial "breadcrumbs" .Content}}
+                            </div>
+                        {{end}}
                     </div>
                 </div>
             </div>

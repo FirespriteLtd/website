@@ -412,7 +412,7 @@
     $key: nth($current-color, 1);
     $value: nth($current-color, 2);
     .f-c-#{$key} {
-      color: $value;
+      color: $value !important;
     }
   }
   .f-c-dark-gray {

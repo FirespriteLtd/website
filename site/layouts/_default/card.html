@@ -1,19 +1,17 @@
-
 <div class="card card-button" onclick="window.location='{{ .RelPermalink }}';">
-        {{ with .Params.image }}
+        {{ with .Params.featured_image }}
         <div class="card-image-wrapper">
-            <img src="{{ . }}?nf_resize=fit&w=450&h=253" alt="">
+            <img src="{{ .src }}?nf_resize=fit&w=450&h=253" alt="{{.alt}}">
         </div>
         {{end}}
         <div class="card-section">
             <div>
                     <header>
-                        <h3>{{ with .Params.categories }}<small>{{ . }}</small>{{end}}{{ .Title }}</h3>
+                        <a href=".RelPermalink ">
+                        <h3>{{ with .Params.date }}<small>{{ .Format "2 January 2006"  }}</small>{{end}}{{ .Title }}</h3>
                         {{ with .Params.client }} <div class="sub">{{ . }}</div>{{end}}
+                        </a>
                     </header>
-            </div>
-            <div class="icon-bottom text-right m-t-50">
-                <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }}"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
 </div>

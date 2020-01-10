@@ -1,3 +1,9 @@
+{{ define "header" }}
+    {{ partial "header-hero"  (dict "Content" . "ctx" $)}}
+{{end}}
+{{ define "navigation"}}
+    {{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
 {{ define "main" }}
-
+    {{ partial "blocks/block-latest-news" .}}
 {{ end }}
