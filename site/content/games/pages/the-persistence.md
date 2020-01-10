@@ -1,5 +1,8 @@
 ---
 title: The Persistence
+date: 2018-07-24T09:43:47.559Z
+order_status: Out now
+featured: false
 logo: /images/uploads/games-thepersistence-logo.png
 genre: Sci-fi Horror
 players: 4 Players
