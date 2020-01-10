@@ -16,6 +16,19 @@
                                             <h4>{{ .Content.Title | safeHTML}}</h4>
                                             {{end}}
                                         </div>
+                                        {{with .Content.Params.video}}
+                                        <div class="cell small-12 trailer">
+                                            <button class="button-trailer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <circle cx="35" cy="35" r="33" stroke="#FFF" stroke-width="4"/>
+                                                        <path fill="#E74F4F" d="M47.431 36.675L30.093 47.983A2 2 0 0 1 27 46.308V23.692a2 2 0 0 1 3.093-1.675L47.43 33.325a2 2 0 0 1 0 3.35z"/>
+                                                    </g>
+                                                </svg>
+                                                <span>Watch the trailer</span>
+                                            </button>
+                                        </div>
+                                        {{end}}
                                         <div class="cell small-12">
                                             {{if $isParent}}
                                             <h1>{{ .Content.Params.subtitle | safeHTML}}</h1>
@@ -27,6 +40,15 @@
                                             {{end}}
                                             {{end}}
                                         </div>
+                                        {{if isset .Content.Params "order_status"}}
+                                            {{if eq .Content.Params.order_status "Out now"}}
+                                                {{with .Content.Params.buy}}
+                                                <div class="cell small-12">
+                                                    <button id="buy_now" class="white hollow button">Buy now</button>
+                                                </div>
+                                                {{end}}
+                                            {{end}}
+                                        {{end}}
                                         <div class="cell small-12">
                                             {{if $isParent}}
                                             <p>

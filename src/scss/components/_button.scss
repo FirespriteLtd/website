@@ -1,5 +1,7 @@
 // Button
-
+button{
+  border-radius: unset;
+}
 .button {
   position: relative;
   text-transform: uppercase;
@@ -23,6 +25,17 @@
     right: 10px;
   }
 
+}
+
+.button-trailer{
+  span{
+    display: block;
+    font-family: $header-font-family;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: rem-calc(30);
+  }
 }
 
 .icon-bottom{
