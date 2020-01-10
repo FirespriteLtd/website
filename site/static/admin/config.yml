@@ -202,7 +202,8 @@ collections:
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: "News active", name: "active", widget: "boolean", default: true}
+          - {label: "News active", name: "news_active", widget: "boolean", default: true}
+          - {label: "Twitter feed active", name: "twitter_active", widget: "boolean", default: false}
       - file: "site/content/work/_index.md"
         label: "Our Work Page"
         name: "work"
