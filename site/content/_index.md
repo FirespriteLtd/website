@@ -1,7 +1,7 @@
 ---
 title: Welcome to Firesprite
 featured_image:
-  active: true
+  active: false
   alt: Lastest game
   src: /images/uploads/featured.jpg
 news_active: true
