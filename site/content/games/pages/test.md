@@ -1,11 +1,13 @@
 ---
-title: test
-summary: sfsdfs
-genre: sdfsfs
-players: sfsdfsd
-ratings: sdfsdfs
+title: The Persistence 2
+logo: /images/uploads/games-thepersistence-logo.png
+summary: ''
+genre: Sci-fi Horror
+players: 1 Player
+ratings: PEGI 18
 platforms:
-  - nintendo switch
+  - xbox one
+  - playstation 4
 featured_image:
   active: true
   alt: dsfsdfs
