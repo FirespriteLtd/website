@@ -7,10 +7,7 @@
         <div class="card-section">
             <div>
                     <header>
-                        <a href=".RelPermalink ">
-                        <h3>{{ with .Params.date }}<small>{{ .Format "2 January 2006"  }}</small>{{end}}{{ .Title }}</h3>
-                        {{ with .Params.client }} <div class="sub">{{ . }}</div>{{end}}
-                        </a>
+                        <h4>{{ with .Params.date }}<small>{{ .Format "2 January 2006"  }}</small>{{end}}<a href="{{.RelPermalink}}">{{ .Title }}</a></h4>
                     </header>
             </div>
         </div>
