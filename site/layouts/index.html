@@ -5,5 +5,8 @@
     {{ partial "navigation" (dict "Version" "trans") }}
 {{end}}
 {{ define "main" }}
+    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "work"  )}}
     {{ partial "blocks/block-latest-news" .}}
+    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "games"  )}}
+    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "careers" "Button" "Work with us" )}}
 {{ end }}

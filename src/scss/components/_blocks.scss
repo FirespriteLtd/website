@@ -51,6 +51,19 @@
       }
     }
   }
+
+
+  &.block-section{
+    height: 100vh;
+    h2{
+      @extend h4;
+    }
+    h3{
+      @extend h1;
+      color: $white!important;
+      margin-bottom: rem-calc(50);
+    }
+  }
 }
 
 #block-twitter {
