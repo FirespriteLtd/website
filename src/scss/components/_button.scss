@@ -15,7 +15,8 @@ button{
 
     &:hover {
       border-color: $primary-color!important;
-      color: $primary-color!important;
+      color: $white!important;
+      background-color: $primary-color;
     }
   }
 
