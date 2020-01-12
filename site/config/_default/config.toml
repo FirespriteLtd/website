@@ -34,6 +34,8 @@ disableKinds = ["section", "games", "careers", "contact", "admin"]
   tag = "news/tags"
   category = "news/categories"
   career = "careers/categories"
+  platform = "platforms"
+  game = "games"
   #archm = "/news/archm"
   #archy = "/news/archy"
   #publication_type = "publication_types"
@@ -41,6 +43,7 @@ disableKinds = ["section", "games", "careers", "contact", "admin"]
 
 [permalinks]
   work = "/work/:slug"
+  knowledge = "/support/knowledgebase/:slug"
   news = "/news/:year/:month/:slug/"
   archm = "/news/:year/:month/"
   archy = "/news/:year/"
