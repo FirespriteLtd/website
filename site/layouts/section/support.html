@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    {{ partial "knowledgebase-search" . }}
+    {{ partial "knowledgebase-search" (dict "Context" . "ctx" $) }}
 </div>
 {{"<!-- /Knowledgebase nav -->" | safeHTML}}
 {{ end }}

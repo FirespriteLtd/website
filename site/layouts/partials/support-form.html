@@ -34,40 +34,62 @@
             <!-- Email -->
                 <fieldset>
                     <label for="email"><span>*</span>Email Address</label>
-                    <input type="email" id="email" name="email" >
+                    <input type="email" id="email" name="email" placeholder="me@domain.com" >
                 </fieldset>
-            <!-- Company -->
+            <h3>Attachments</h3>
+            <h6>Configuration and log files</h6>
+            <p>You may add debugging files here if you have them. This could include log files or a database dump or any other file used by your system to log error or event messages or record configuration settings.</p>
+            <p>File types accepted: .cmap, .proj, .log, .dmp, .dat, .arr, .mdmp, .cfg, .txt</p>
+            <p>You can upload up to 3 files here. To add more than one file, browse to the correct folder and then hold down the [shift] or [control] ([command] on Mac) key and select your additional files.</p>
+            <!-- File upload -->
             <fieldset>
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company">
+                <div class="input-group">
+                    <input class="input-group-field" type="text" id="file" name="file" >
+                    <div class="input-group-button">
+                        <label for="fileupload" class="button">Browse ...</label>
+                        <input type="file" id="fileupload" class="show-for-sr">
+                    </div>
+                </div>
             </fieldset>
-            <!-- Nature of Enquiry -->
+            <h6>Screenshot</h6>
+            <p>If possible please provide a screenshot of the problem. Please ensure your file is in one of the following formats: gif, jpg (or jpeg), png. Other file types will not be accepted.</p>
+            <!-- Screenshot upload -->
             <fieldset>
-                <label for="nature">Nature of Enquiry </label>
-                <select id="nature" name="nature">
-                    <option value="0"></option>
-                    <option value="1">Press</option>
-                    <option value="2">Business Development</option>
-                    <option value="3">Influencer</option>
-                </select>
+                <div class="input-group">
+                    <input class="input-group-field" type="text" id="screenshot" name="file" >
+                    <div class="input-group-button">
+                        <label for="screen" class="button">Browse ...</label>
+                        <input type="file" id="screen" class="show-for-sr">
+                    </div>
+                </div>
             </fieldset>
         </div>
-
+        <h6>* Detailed description of the problem</h6>
+        <p>Please provide as much detail as possible</p>
         <!-- Message -->
         <fieldset>
-            <label for="message"><span>*</span>Your message</label>
             <textarea id="message" name="message" rows="8" cols="80"></textarea>
         </fieldset>
         <p class="hide">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
-        <p>
-            The personal data provided by you in the contact form will be processed in order to respond to your inquiry, according to the information included in
-            <a href="/privacy">Privacy Policy</a>.
-        </p>
+        <h3>Legal</h3>
+        <h6>Age verification</h6>
+        <fieldset>
+            <input type="checkbox" id="age-verification"><label for="age-verification">I confirm that I am over the age of 13</label>
+        </fieldset>
+        <h6>Consent</h6>
+        <fieldset>
+            <input type="checkbox" id="consent"><label for="consent">I confirm that I am granting Firesprite the right to use my personal data for the purpose of dealing with my support query. I understand that my personal information is only collected, used and disclosed by Firesprite as permitted by law.</label>
+        </fieldset>
+        <h6>Privacy Policy</h6>
+        <fieldset>
+            <input type="checkbox" id="privacy"><label for="privacy">I confirm that I have read and agree to the <a
+                href="/privacy">Privacy Policy</a></label>
+        </fieldset>
         <!-- Button -->
         <div class="tc">
-            <button type="submit" class="hollow button">Send message</button>
+            <button type="submit" class="hollow button">Send support request</button>
         </div>
     </form>
 
