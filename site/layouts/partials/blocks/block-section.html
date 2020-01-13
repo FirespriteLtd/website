@@ -1,6 +1,7 @@
 {{$label:= .Button}}
+{{$page := (.Page | urlize)}}
 <section>
-<div id="{{.Page}}" class="grid-container full block block-image block-section">
+<div id="{{.Page | urlize }}" class="grid-container full block block-image block-section">
     {{with .Context.Site.GetPage .Page}}
     {{$image := .Params.featured_image}}
     <div class="contentWrapper">
@@ -33,6 +34,13 @@
     <div class="imageWrapper">
         <img src="{{ $image.src }}" alt="{{ $image.alt }}">
         <div class="desktop"  style="background-image: url('{{ $image.src }}')"></div>
+        {{if $.image.active }}
+            {{with $image.id }}
+            <div  class="video-wrapper video-background" data-video="{{ . }}" style="background-image: url('{{ .Content.Params.featured_image.src}}')">
+                <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-{{$page}}" ></div></div>
+            </div>
+            {{end}}
+        {{end}}
     </div>
     {{end}}
 {{end}}

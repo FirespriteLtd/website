@@ -2,6 +2,7 @@ import twitterFetcher from 'twitter-fetcher';
 import $ from 'jquery';
 import 'slick-carousel';
 import Rellax from 'rellax/rellax.min';
+import YTPlayer from 'yt-player';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
@@ -20,9 +21,6 @@ gsap.defaultEase = Expo.easeOut;
 export default {
 
     animHeader() {
-
-
-
         const tl = gsap.timeline({repeat:0, delay: 0.2});
         const heading = $('.hero-header-inner');
         const title = new SplitText($('.hero-header-inner').find('h1'), {type:"words,chars"});
@@ -125,6 +123,24 @@ export default {
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fired
         const rellax = new Rellax('.rellax');
+
+        console.log('home')
+
+        const player = new YTPlayer('#ytplayer-header')
+        player.load('Oxlflrh_Pzw', true);
+        player.setVolume(0);
+
+
+        player.play();
+        player.on('playing', () => {
+            $('.video-foreground').addClass("playing");
+            console.log('Player', player.getDuration()) // => 351.521
+        })
+        player.on('ended', () => {
+            player.play();
+        })
+
+
         /*
         var configProfile = {
             "profile": {"screenName": 'RenaissancePRUK'},

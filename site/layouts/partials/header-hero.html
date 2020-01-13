@@ -76,60 +76,15 @@
         </div>
     <div class="imageWrapper">
         <img src="{{ .Content.Params.featured_image.src }}" alt="{{ .Content.Params.featured_image.alt }}">
-        {{if not .Content.Params.video_active}}
+        {{if not .Content.Params.featured_image.active}}
             <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ .Content.Params.featured_image.src }}')" data-rellax-speed="-7"></div>
             {{ if .bg_image_mobile }}<div class="mobile"   style="background-image: url('{{ .bg_image_mobile }}')"></div> {{ end }}
         {{ else }}
-            <div  class="video-wrapper video-background" data-video="{{ .media.video }}" style="background-image: url('{{ .Content.Params.featured_image.src}}')">
-                <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer" ></div></div>
+            {{with .Content.Params.featured_image}}
+            <div  class="video-wrapper video-background" data-video="{{ .id }}" style="background-image: url('{{ .src }}')">
+                <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-header" ></div></div>
             </div>
-        <script>
-        var tag = document.createElement('script');
-        var videoPlayer = document.getElementById('video-player');
-        tag.src = "https://www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var video = {{ .media.video }};
-        var player;
-
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('ytplayer', {
-                videoId: video,
-                width: '100%',
-                height: '100%',
-                playerVars: {
-                    autohide:1,
-                    autoplay:1,
-                    mute:1,
-                    loop:1,
-                    controls:0,
-                    modestbranding:1,
-                    playsinline:1,
-                    rel:0,
-                    showinfo:0,
-                    wmode:'opaque',
-                    widgetid:1
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                }
-            });
-        }
-        function onPlayerReady(event) {
-
-            player.playVideo()
-            player.mute(); // comment out if you don't want the auto played video muted
-
-            setTimeout(function(){videoPlayer.className += ' playing'}, 500);
-        }
-        function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.ENDED) {
-                player.seekTo(0);
-                player.playVideo();
-            }
-        }
-        </script>
+            {{end}}
         {{ end }}
     </div>
     </div>

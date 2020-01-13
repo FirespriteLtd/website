@@ -15,7 +15,7 @@ featured_image:
   active: false
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
-video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
+video: 'vTr2jMSJZ4g'
 features:
   - title: All is not lost
     body: >-

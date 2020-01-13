@@ -95,7 +95,8 @@
     "slick-carousel": "^1.8.1",
     "to-string-loader": "^1.1.6",
     "twitter-fetcher": "^18.0.2",
-    "yaml-front-matter": "^4.1.0"
+    "yaml-front-matter": "^4.1.0",
+    "yt-player": "^3.4.3"
   },
   "resolutions": {
     "natives": "1.1.6"
