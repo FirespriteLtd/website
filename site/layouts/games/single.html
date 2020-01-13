@@ -17,7 +17,7 @@
                           <h6>Genre</h6>
                           <p>{{.Params.genre}}</p>
                       </li>
-                      {{with .Params.platforms}}
+                      {{with .Param "games/platforms"}}
                       <li>
                           <h6>Platforms</h6>
                               <p class="platforms">{{range $index, $platform := .}}{{if ne $index 0}}, {{end}}{{- $platform -}}{{end}}</p>
