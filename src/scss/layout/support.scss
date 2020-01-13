@@ -1,0 +1,28 @@
+.support{
+  h4{
+    color: $primary-color;
+  }
+
+  h6{
+    color: $black;
+  }
+
+  label{
+    &.checkbox {
+      text-transform: none;
+      font-size: 1rem;
+      margin-left: 0.83333rem;
+      margin-right: 1.66667rem;
+      font-family: $body-font-family;
+      font-weight: normal;
+      line-height: rem-calc(20);
+      margin-bottom: rem-calc(20);
+    }
+
+    &.button{
+      background-color: $medium-gray;
+      font-family: $body-font-family;
+      padding: rem-calc(17 30);
+    }
+  }
+}

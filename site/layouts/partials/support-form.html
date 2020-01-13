@@ -36,7 +36,7 @@
                     <label for="email"><span>*</span>Email Address</label>
                     <input type="email" id="email" name="email" placeholder="me@domain.com" >
                 </fieldset>
-            <h3>Attachments</h3>
+            <h4>Attachments</h4>
             <h6>Configuration and log files</h6>
             <p>You may add debugging files here if you have them. This could include log files or a database dump or any other file used by your system to log error or event messages or record configuration settings.</p>
             <p>File types accepted: .cmap, .proj, .log, .dmp, .dat, .arr, .mdmp, .cfg, .txt</p>
@@ -76,20 +76,23 @@
         <h3>Legal</h3>
         <h6>Age verification</h6>
         <fieldset>
-            <input type="checkbox" id="age-verification"><label for="age-verification">I confirm that I am over the age of 13</label>
+            <input type="checkbox" id="age-verification"><label for="age-verification" class="checkbox">I confirm that I am over the age of 13</label>
         </fieldset>
         <h6>Consent</h6>
         <fieldset>
-            <input type="checkbox" id="consent"><label for="consent">I confirm that I am granting Firesprite the right to use my personal data for the purpose of dealing with my support query. I understand that my personal information is only collected, used and disclosed by Firesprite as permitted by law.</label>
+            <div class="grid-x">
+                <div class="cell shrink"><input type="checkbox" id="consent"></div>
+                <div class="cell auto"><label for="consent"  class="checkbox">I confirm that I am granting Firesprite the right to use my personal data for the purpose of dealing with my support query. I understand that my personal information is only collected, used and disclosed by Firesprite as permitted by law.</label></div>
+            </div>
         </fieldset>
         <h6>Privacy Policy</h6>
         <fieldset>
-            <input type="checkbox" id="privacy"><label for="privacy">I confirm that I have read and agree to the <a
+            <input type="checkbox" id="privacy"><label for="privacy"  class="checkbox">I confirm that I have read and agree to the <a
                 href="/privacy">Privacy Policy</a></label>
         </fieldset>
         <!-- Button -->
         <div class="tc">
-            <button type="submit" class="hollow button">Send support request</button>
+            <button type="submit" class="hollow button m-t-50">Send support request</button>
         </div>
     </form>
 
