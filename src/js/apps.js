@@ -11,6 +11,7 @@ import home from './routes/home';
 import contact from './routes/contact';
 import work from './routes/work';
 import games from './routes/games';
+import support from './routes/support';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -19,7 +20,8 @@ const routes = new Router({
     home,
     contact,
     games,
-    work
+    work,
+    support
 });
 
 // Load Events

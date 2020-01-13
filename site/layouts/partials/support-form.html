@@ -5,6 +5,26 @@
 
     <form  id="support-request" name="support-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
         <div class="">
+            <!-- Game title -->
+            <fieldset>
+                <label for="game"><span>*</span>Game Title</label>
+                <select id="game" name="game">
+                        <option value="" disabled selected>Select Title</option>
+                        {{$content := where .ctx.Site.RegularPages "Type" "games"}}
+                        {{range $content}}
+                        <option value="{{.Title}}">{{.Title}}</option>
+                        {{end}}
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="plaform"><span>*</span>Game Title</label>
+                <select id="plaform" name="plaform">
+                    <option value="" disabled selected>Select Platform</option>
+                    {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
+                    <option value="{{$key}}">{{$key}}</option>
+                    {{end}}
+                </select>
+            </fieldset>
             <!-- Name -->
                 <fieldset>
                     <label for="name"><span>*</span>Full Name</label>
