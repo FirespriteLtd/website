@@ -159,6 +159,33 @@ collections:
       - {label: "Platform", name: "name", widget: string}
       - {label: "Value", name: "value", widget: string}
       - {label: "Icon", name: "icon", widget: image}
+  - name: "knowledge"
+    label: "Knowledge Base"
+    folder: "site/data/knowledge"
+    extension: "json"
+    identifier_field: name
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Platforms"
+        name: "platforms"
+        widget: "relation"
+        multiple: true
+        collection: "platforms"
+        searchFields: ["name"]
+        valueField: "value"
+        displayFields: ["name"]
+      - label: "Game"
+        name: "game"
+        widget: "relation"
+        multiple: true
+        collection: "games"
+        searchFields: ["title"]
+        valueField: "value"
+        displayFields: ["title"]
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "careers"
     label: "Careers"
     label_singular: "Careers"
