@@ -1,7 +1,6 @@
 ---
 title: The Persistence 2
-type: games
-date: 2020-05-14T09:44:40.977Z
+date: 2020-01-01T10:44:40.977Z
 release_date: 2020-09-23T23:00:00.000Z
 order_status: TBA
 featured: false
