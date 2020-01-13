@@ -6,7 +6,7 @@ summary: >-
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
   duo aliquip moderatius disputationi.
 news/categories:
-  - games
+  - game
 featured_post: false
 featured_image:
   alt: test

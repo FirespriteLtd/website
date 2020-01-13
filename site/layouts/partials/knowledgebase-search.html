@@ -3,7 +3,7 @@
         <div class="grid-x grid-padding-x text-center align-center">
             <div class="cell auto">
                 <select name="plaforms" id="platforms">
-                    <option value="" disabled selected>Select Platform</option>
+                    <option value="all" selected>All Platforms</option>
                     {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
                     <option value="{{$key}}">{{$key}}</option>
                     {{end}}
@@ -11,7 +11,7 @@
             </div>
             <div class="cell auto m-b-50">
                 <select name="games" id="games">
-                    <option value="" disabled selected>Select Title</option>
+                    <option value="all" selected>All Games</option>
                     {{$content := where .ctx.Site.RegularPages "Type" "games"}}
                     {{range $content}}
                     <option value="{{.Title}}">{{.Title}}</option>

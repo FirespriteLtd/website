@@ -5,6 +5,7 @@
 {{ partial "navigation" (dict "Version" "trans") }}
 {{end}}
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+
 <article>
     <section>
         <div class="grid-container full b-c-secondary"  id="root" >
@@ -32,6 +33,7 @@
                       <li>
                           <h6>Ratings</h6>
                           <p>{{- . -}}</p>
+
                       </li>
                       {{end}}
                   </ul>
@@ -39,8 +41,10 @@
 
               </div>
               <div class="cell small-12 medium-9">
+
                   <h2>Overview</h2>
                   {{- .Content -}}
+
               </div>
             </div>
           </div>
@@ -70,6 +74,7 @@
     </section>
 
 </article>
+<div class="f-c-white">{{with $section }}{{.Next}}{{end}}</div>
 
     {{partial "pagination" . }}
 

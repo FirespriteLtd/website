@@ -29,7 +29,7 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - { label: "Games", value: "games" }
+          - { label: "Game", value: "game" }
           - { label: "Press Release", value: "press" }
           - { label: "Careers", value: "careers" }
       - {label: "Featured Post", name: "featured_post", widget: "boolean"}
@@ -107,7 +107,7 @@ collections:
       - {label: "Players", name: "players", widget: "string", required: false}
       - {label: "Ratings", name: "ratings", widget: "string", required: false}
       - label: "Platforms"
-        name: "platforms"
+        name: "games/platforms"
         widget: "relation"
         multiple: true
         collection: "platforms"

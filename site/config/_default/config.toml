@@ -25,7 +25,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["section", "careers", "contact", "admin", "games"]
+disableKinds = ["section", "careers", "contact", "admin"]
 
 # Taxonomies.
 #pluralizeListTitles=false
@@ -35,18 +35,20 @@ disableKinds = ["section", "careers", "contact", "admin", "games"]
   category = "news/categories"
   career = "careers/categories"
   platform = "games/platforms"
+
   #archm = "/news/archm"
   #archy = "/news/archy"
   #publication_type = "publication_types"
   #author = "authors"
 
 [permalinks]
-  work = "/work/:slug"
-  games = "/games/:slug"
+
   knowledge = "/support/knowledgebase/:slug"
   news = "/news/:year/:month/:slug/"
   archm = "/news/:year/:month/"
   archy = "/news/:year/"
+  work = "/work/:slug"
+  games = "/games/:slug"
 
 
 
