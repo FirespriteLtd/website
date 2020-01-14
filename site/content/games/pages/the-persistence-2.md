@@ -4,7 +4,7 @@ date: 2018-07-24T09:43:47.559Z
 release_date: 2020-01-14T11:18:14.339Z
 order_status: Out now
 featured: false
-logo: /images/uploads/games-thepersistence2.jpg
+logo: /images/uploads/games-thepersistence-logo.png
 genre: Sci-fi Horror
 players: 4 Players
 ratings: PEGI 18
@@ -15,7 +15,7 @@ games/platforms:
 featured_image:
   active: false
   alt: The Persistence
-  src: /images/uploads/games-thepersistence.jpg
+  src: /images/uploads/games-thepersistence2.jpg
 video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
 features:
   - title: All is not lost
