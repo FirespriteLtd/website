@@ -48,8 +48,8 @@ export default {
         tl.from($('.content-subtitle-animate'),{opacity:0, duration:0.5, y: 100, ease:Expo.easeOut});
     },
     masterVideo() {
-        
-        let player;
+
+        let player = this.createMasterVideo();
 
         const anim = new ScrollMagic.Scene({
             triggerElement: $('.master-header'),
@@ -68,12 +68,11 @@ export default {
 
         anim.on('leave', (event)=> {
             console.log('END')
-            player.destroy();
+            player.pause();
         })
 
         anim.on('enter', (event)=> {
             console.log('ENTER')
-            player = this.createMasterVideo();
             player.play();
         })
 
