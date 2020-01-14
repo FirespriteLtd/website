@@ -11,6 +11,8 @@
     }
   }
 
+
+
   p{
     margin-bottom: rem-calc(5);
   }
@@ -22,6 +24,9 @@
 }
 
 #careers {
+  h2{
+    color: $primary-color!important;
+  }
   .accordion-content{
     padding-left: 0;
     padding-right: 0;
