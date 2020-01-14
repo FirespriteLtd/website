@@ -1,7 +1,7 @@
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 
-import { gsap } from "../bonus/gsap"; // Also works with TweenLite and TimelineLite
+import { TweenMax, TimelineMax, gsap, Expo } from "gsap"; // Also works with TweenLite and TimelineLite
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 gsap.defaultEase = Expo.easeOut;

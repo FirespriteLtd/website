@@ -1,7 +1,25 @@
 import $ from "jquery";
+import { gsap } from "gsap";
+
+const offcanvasAnimation = () => {
+
+  const tween = gsap.fromTo($('.off-canvas ul li'), {x:'100%'},{x:0, duration: .5, ease: "easeInOut", stagger: 0.1})
+  tween.pause();
+
+  $('#offCanvas').on('opened.zf.offCanvas', ()=>{
+    tween.play();
+  })
+
+  $('#offCanvas').on('close.zf.offCanvas', ()=>{
+    tween.reverse();
+  })
+}
 
 export default {
   init() {
+
+    offcanvasAnimation();
+
     let p_scroll = 0;
     setTimeout(() => {
     $(window).scroll(function () {

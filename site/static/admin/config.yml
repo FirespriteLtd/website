@@ -331,6 +331,13 @@ collections:
                   {name: src, label: Image, widget: image},
                   {name: alt, label: Alt text, widget: string}
                 ]}
+          - {label: "Testimonials", name: "Testimonials",  widget: "list", fields: [
+              {name: name, label: Name, widget: string},
+              {name: position, label: Position, widget: string},
+              {name: src, label: Image, widget: image},
+              {name: alt, label: Alt text, widget: string},
+              {name: body, label: Body, widget: markdown}
+            ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"

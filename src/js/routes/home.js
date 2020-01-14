@@ -7,11 +7,11 @@ import YTPlayer from 'yt-player';
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 
-import { gsap } from "../bonus/gsap"; // Also works with TweenLite and TimelineLite
+import { gsap, TweenMax, TimelineMax, Expo } from 'gsap/all';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
-import { SplitText } from "../bonus/SplitText";
+import { SplitText } from 'gsap/SplitText';
 import animations from "../util/animations"
 gsap.registerPlugin(SplitText);
 

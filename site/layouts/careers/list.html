@@ -60,7 +60,8 @@
     </div>
 </section>
 <section>
-        {{partial "blocks/block-image-text" (dict "context" .Params.team "id" "intro" "full" "true")}}
+    {{partial "blocks/block-image-text" (dict "context" .Params.team "id" "intro" "full" "true")}}
+    {{partial "testimonials" . }}
 </section>
 <section>
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "careers")}}
