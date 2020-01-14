@@ -46,8 +46,8 @@
     background-size: cover;
     background-position: center;
     background-color: $black;
-    width: 100%;
-    height: 120%;
+    width: 100vw;
+    height: 100vh;
   }
 
   img{
@@ -82,10 +82,12 @@
 .master-header{
   overflow: hidden;
   position:relative;
+  width: 100%;
 }
 
 .hero-header{
   position:relative;
+  overflow: hidden;
   @include maxHeight();
 
   .breadcrumbs{

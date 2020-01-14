@@ -9046,9 +9046,10 @@ schema-utils@^2.5.0, schema-utils@^2.6.1:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
 
-scrollmagic-plugin-gsap@gpitot/scrollmagic-plugin-gsap:
-  version "1.0.3"
-  resolved "https://codeload.github.com/gpitot/scrollmagic-plugin-gsap/tar.gz/c401f5e1a2be372be61365fc6e6ac8bb85548b71"
+scrollmagic-plugin-gsap@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/scrollmagic-plugin-gsap/-/scrollmagic-plugin-gsap-1.0.4.tgz#793fcee2e9cd7054ac828f930a2e08ef1bc3719e"
+  integrity sha512-OLeo4J6V9wvnRP03/LJkgb5qkHIOzSckWX3hJ+Hh3uPJIfwttxCRRr4+w16WHPCQwZidUA9eEbtKeR7kyjdHVg==
   dependencies:
     "@types/gsap" "^1.20.1"
 
