@@ -98,5 +98,12 @@ Testimonials:
     name: Matt Benson
     position: Marketing & Commercial Director
     src: /images/uploads/testimonial-mattbenson.jpg
+  - alt: James Anderson
+    body: >-
+      "This is another testimonial for the team section written by another
+      different member of the team and can be very long if required."
+    name: James Anderson
+    position: Bowler
+    src: /images/uploads/testimonial-mattbenson.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus. Vitae ultricies leo integer malesuada. Magna etiam tempor orci eu lobortis. Aliquet bibendum enim facilisis gravida neque convallis a cras.
