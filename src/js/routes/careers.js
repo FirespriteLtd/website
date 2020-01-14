@@ -11,15 +11,13 @@ export default {
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fire
         const rellax = new Rellax('.rellax');
-        if($(window).find('#screenshots')) {
-            $('.slick-slider').slick({
-                arrows: false,
-                dots: true,
-                autoplay: true,
-                infinite: true,
-                fade: true,
-                autoplaySpeed: 2500,
-            });
-        }
+        $('#testimonial').slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            infinite: true,
+            fade: true,
+            autoplaySpeed: 5000,
+        });
     },
 };

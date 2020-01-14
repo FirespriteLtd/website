@@ -21,30 +21,65 @@ gsap.defaultEase = Expo.easeOut;
 
 export default {
 
-    animHeader() {
-        const tl = gsap.timeline({repeat:0, delay: 0.2});
-        const heading = $('.hero-header-inner');
-        const title = new SplitText($('.hero-header-inner').find('h1'), {type:"words,chars"});
-        const chars = title.words;
+    createMasterVideo(){
+        const player = new YTPlayer('#ytplayer-header')
+        player.load($('.master-header .video-wrapper').data('video'), true);
+        player.setVolume(0);
 
-        tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
-        tl.from($('.content-subtitle-animate'),{opacity:0, duration:0.5, y: 100, ease:Expo.easeOut});
 
-        const anim = new ScrollMagic.Scene({
-            triggerElement: heading,
-            triggerHook: 0.4
+        player.play();
+        player.on('playing', () => {
+            $('.video-foreground').addClass("playing");
+            console.log('Player', player.getDuration()) // => 351.521
         })
 
-            .addIndicators({
-                name: "Heading Timeline",
-                colorTrigger: "green",
-                colorStart: "red",
-                colorEnd: "black"
-            })
+        player.on('ended', () => {
+            player.play();
+        })
 
-            .setTween(tl)
-            .addTo(controller)
+        return player;
+    },
+    animHeader() {
+        const tl = gsap.timeline({repeat:0, delay: 1.5});
+        const title = new SplitText($('.hero-header-inner').find('h1'), {type:"words,chars"});
+        const chars = title.words;
+        tl.from($('.parent-header'), {opacity:0, scale:2, duration: 0.5, ease:Expo.easeOut}, '-=0.5');
+        tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
+        tl.from($('.content-subtitle-animate'),{opacity:0, duration:0.5, y: 100, ease:Expo.easeOut});
+    },
+    masterVideo() {
+        
+        let player;
 
+        const anim = new ScrollMagic.Scene({
+            triggerElement: $('.master-header'),
+            triggerHook:"onEnter",
+            duration: '100%',
+        })
+
+         .addIndicators({
+             name: "Heading Timeline",
+             colorTrigger: "green",
+             colorStart: "red",
+             colorEnd: "black"
+         })
+
+         .addTo(controller)
+
+        anim.on('leave', (event)=> {
+            console.log('END')
+            player.destroy();
+        })
+
+        anim.on('enter', (event)=> {
+            console.log('ENTER')
+            player = this.createMasterVideo();
+            player.play();
+        })
+
+        anim.on("change update", (event)=>{
+           // console.log("update", event)
+        });
     },
     init() {
         // JavaScript to be fired on all pages
@@ -56,21 +91,13 @@ export default {
 
         console.log('home')
 
-        const player = new YTPlayer('#ytplayer-header')
-        player.load('Oxlflrh_Pzw', true);
-        player.setVolume(0);
 
-
-        player.play();
-        player.on('playing', () => {
-            $('.video-foreground').addClass("playing");
-            console.log('Player', player.getDuration()) // => 351.521
-        })
-        player.on('ended', () => {
-            player.play();
-        })
 
         this.animHeader();
+        setTimeout(()=> {
+            this.masterVideo()
+        }, 500)
+
         /*
         var configProfile = {
             "profile": {"screenName": 'RenaissancePRUK'},

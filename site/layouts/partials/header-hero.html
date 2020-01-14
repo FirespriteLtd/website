@@ -13,7 +13,7 @@
                                     <div class="grid-x align-center-middle text-center">
                                         <div class="cell small-12">
                                             {{if $isParent}}
-                                            <h4>{{ .Content.Title | safeHTML}}</h4>
+                                            <h4 class="parent-header">{{ .Content.Title | safeHTML}}</h4>
                                             {{end}}
                                         </div>
                                         {{with .Content.Params.video}}
