@@ -3,15 +3,13 @@ import $ from 'jquery';
 import 'slick-carousel';
 import Rellax from 'rellax/rellax.min';
 import YTPlayer from 'yt-player';
+import VideoBlock from "../util/videoBlock";
 import { gsap, TweenMax, TweenLite, TimelineMax, Expo } from 'gsap/all';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
-
-
-
 import { SplitText } from 'gsap/SplitText';
 import animations from "../util/animations"
 gsap.registerPlugin(SplitText);
@@ -25,18 +23,14 @@ export default {
         const player = new YTPlayer('#ytplayer-header')
         player.load($('.master-header .video-wrapper').data('video'), true);
         player.setVolume(0);
-
-
         player.play();
         player.on('playing', () => {
             $('.video-foreground').addClass("playing");
             console.log('Player', player.getDuration()) // => 351.521
         })
-
         player.on('ended', () => {
             player.play();
         })
-
         return player;
     },
     animHeader() {
@@ -60,7 +54,7 @@ export default {
          .addIndicators({
              name: "Heading Timeline",
              colorTrigger: "green",
-             colorStart: "red",
+             colorStart: "blue",
              colorEnd: "black"
          })
 
@@ -69,15 +63,11 @@ export default {
         anim.on('leave', (event)=> {
             console.log('END')
             player.pause();
-        })
+        });
 
         anim.on('enter', (event)=> {
             console.log('ENTER')
             player.play();
-        })
-
-        anim.on("change update", (event)=>{
-           // console.log("update", event)
         });
     },
     init() {
@@ -94,8 +84,10 @@ export default {
 
         this.animHeader();
         setTimeout(()=> {
-            this.masterVideo()
-        }, 500)
+            this.masterVideo();
+            new VideoBlock('work', controller);
+            new VideoBlock('games', controller);
+        }, 1000)
 
         /*
         var configProfile = {
