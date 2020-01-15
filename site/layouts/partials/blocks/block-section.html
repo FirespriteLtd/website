@@ -1,7 +1,8 @@
 {{$label:= .Button}}
 {{$page := (.Page | urlize)}}
+<div id="trigger-{{$page}}">
 <section id="section-{{ $page }}">
-<div id="{{ $page }}" class="grid-container full block block-image block-section">
+<div id="block-{{ $page }}" class="grid-container full block block-image block-section">
     {{with .Context.Site.GetPage .Page}}
     {{$image := .Params.featured_image}}
     <div class="contentWrapper">
@@ -45,4 +46,5 @@
 {{end}}
 </div>
 </section>
+</div>
 

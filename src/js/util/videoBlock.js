@@ -24,6 +24,7 @@ class VideoBlock {
         this.player.play();
         if(this.player){
           this.animation(id);
+          this.pin(id);
         }
       }
 
@@ -51,7 +52,6 @@ class VideoBlock {
 
   animation(id){
 
-    console.log('SCENE', this.block);
     const anim = new ScrollMagic.Scene({
       triggerElement: `#section-${id}`,
       triggerHook:"onEnter",
@@ -77,6 +77,25 @@ class VideoBlock {
       console.log('ENTER')
       this.player.play();
     });
+  }
+
+  pin(id){
+    const anim = new ScrollMagic.Scene({
+      triggerElement: `#trigger-${id}`,
+      triggerHook: "onLeave",
+      duration: "100%"
+    })
+
+     .setPin(`#trigger-${id}`)
+
+     .addIndicators({
+       name: `Video Pin ${this.id}`,
+       colorTrigger: "blue",
+       colorStart: "orange",
+       colorEnd: "black"
+     })
+
+     .addTo(this.controller)
   }
 
 }
