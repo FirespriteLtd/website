@@ -169,6 +169,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
       - label: "Platforms"
         name: "platforms"
         widget: "relation"
@@ -185,7 +186,7 @@ collections:
         searchFields: ["title"]
         valueField: "value"
         displayFields: ["title"]
-      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "careers"
     label: "Careers"
     label_singular: "Careers"

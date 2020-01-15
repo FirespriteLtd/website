@@ -11,7 +11,6 @@ import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
-import animations from "../util/animations"
 gsap.registerPlugin(SplitText);
 
 var controller = new ScrollMagic.Controller();

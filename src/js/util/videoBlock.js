@@ -6,6 +6,8 @@ import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import $ from "jquery";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
+import { SplitText } from 'gsap/SplitText';
+gsap.registerPlugin(SplitText);
 
 class VideoBlock {
   constructor(id, controller) {
@@ -87,6 +89,7 @@ class VideoBlock {
     })
 
      .setPin(`#trigger-${id}`)
+     .setTween(this.revealAnim(id))
 
      .addIndicators({
        name: `Video Pin ${this.id}`,
@@ -96,6 +99,20 @@ class VideoBlock {
      })
 
      .addTo(this.controller)
+  }
+
+  revealAnim(id){
+    const header = this.block.find('.header-content');
+    const headerButton = this.block.find('.header-button a');
+    const tl = gsap.timeline({repeat:0, delay: 1.5});
+    const title = new SplitText(header.find('h3'), {type:"words,chars"});
+    const chars = title.words;
+    tl.from(header.find('h2'), {opacity:0, y:'30%', scale:2, duration: 0.5, ease:Expo.easeOut}, '-=0.5');
+    tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
+    tl.from(headerButton, {opacity:0, y: '100%', duration:.5})
+    tl.fromTo(this.block.find('.revealCover'), {x:0}, {x:'100%', duration: 1})
+
+    return tl;
   }
 
 }
