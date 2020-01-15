@@ -23,11 +23,11 @@ class VideoBlock {
       console.log('check', id, this.block.position(), this.block.height())
       if(this.block.find('.video-wrapper').length){
         this.player = this.createVideoPlayer(id);
-        this.player.play();
         if(this.player){
-          this.animation(id);
+          this.videoPlayerActiveSetting(id);
           this.pin(id);
-          this.introAnimation(id)
+          this.headerAnim(id);
+          this.introAnim(id);
         }
       }
 
@@ -39,7 +39,7 @@ class VideoBlock {
     if(this.block.find(playerId)) {
       const player = new YTPlayer(playerId);
       const videoId = $(playerId).data('video');
-      player.load(videoId, true);
+      player.load(videoId, false);
       player.setVolume(0);
       player.on('playing', () => {
         this.block.find('.video-foreground').addClass("playing");
@@ -53,13 +53,12 @@ class VideoBlock {
     }
   }
 
-  animation(id){
+  videoPlayerActiveSetting(id){
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#section-${id}`,
-      triggerHook:"onEnter",
-      duration: '200%',
-      offset: -300
+      triggerHook:0.05,
+      duration: '100%',
     })
 
      .addIndicators({
@@ -73,11 +72,12 @@ class VideoBlock {
 
     anim.on('leave', (event)=> {
       console.log('END')
-      this.player.pause();
+      this.closeAnim(id, this.player.pause);
     });
 
     anim.on('enter', (event)=> {
       console.log('ENTER')
+      this.openAnim(id);
       this.player.play();
     });
   }
@@ -85,12 +85,12 @@ class VideoBlock {
   pin(id){
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
-      triggerHook: "onLeave",
+      triggerHook: 0,
       duration: "100%"
     })
 
      .setPin(`#trigger-${id}`)
-     .setTween(this.revealAnim(id))
+
 
      .addIndicators({
        name: `Video Pin ${this.id}`,
@@ -103,25 +103,15 @@ class VideoBlock {
   }
 
   revealAnim(id){
-    const header = this.block.find('.header-content');
-    const headerButton = this.block.find('.header-button a');
-    const tl = gsap.timeline({repeat:0, delay: 0});
 
-    tl.fromTo(this.block.find('.revealCover'), {x:'-100%'}, {x:'200%', duration: 5})
-    tl.from(headerButton, {opacity:0, y: '100%', duration:1})
-    return tl;
+    const tl = gsap.timeline({repeat:0, delay: 0});
+    tl.fromTo(this.block.find('.revealCover'), {x:'-100%'}, {x:'200%', duration: 0.5, ease: Expo.easeIn})
   }
 
-  introAnimation(id){
-
+  headerAnim(id){
     const header = this.block.find('.header-content');
-    const headerButton = this.block.find('.header-button a');
     const tl = gsap.timeline({repeat:0, delay: 0});
-    const title = new SplitText(header.find('h3'), {type:"words,chars"});
-    const chars = title.words;
-
-    tl.fromTo(header.find('h2'), {alpha: 1, scale:4, y:'-200%', color:'rgba(255, 255,255, 1)'}, {alpha:1,scale:1, y:'0%', duration:5})
-    tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
+    tl.fromTo(header.find('h2'), {alpha: 1, scale:8, y:'-200%', color:'rgba(255, 255,255, 1)'}, {alpha:1,scale:1, y:'0%', duration:5});
 
 
     const anim = new ScrollMagic.Scene({
@@ -129,17 +119,43 @@ class VideoBlock {
       triggerHook: "onEnter",
       duration: "100%",
     })
+     .setTween(tl)
+     .addTo(this.controller)
 
-     .addIndicators({
-       name: `Video Intro ${this.id}`,
-       colorTrigger: "blue",
-       colorStart: "orange",
-       colorEnd: "black"
-     })
+  }
+
+  introAnim(id){
+
+    const header = this.block.find('.header-content');
+    const headerButton = this.block.find('.header-button a');
+    const tl = gsap.timeline({repeat:0, delay: 1});
+    const title = new SplitText(header.find('h3'), {type:"words,chars"});
+    const chars = title.words;
+
+    tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
+
+    tl.from(headerButton, {opacity:0, y: '100%', duration:1})
+
+    const anim = new ScrollMagic.Scene({
+      triggerElement: `#trigger-${id}`,
+      triggerHook: 0.2,
+    })
 
      .setTween(tl)
-
      .addTo(this.controller)
+
+  }
+
+  openAnim(id){
+    const tl = gsap.timeline({repeat:0, delay: 0});
+    tl.fromTo(this.block.find('.revealCover'), {x:0}, {x:'300%', duration: 1.5, ease:Expo.easeIn})
+    return tl;
+  }
+
+  closeAnim(id, callback){
+    const tl = gsap.timeline({repeat:0, delay: 0, onComplete: callback});
+    tl.fromTo(this.block.find('.revealCover'), {x:'300%'}, {x:0, duration: 1.5, ease:Expo.easeIn})
+    return tl;
   }
 
 }

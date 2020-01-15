@@ -85,7 +85,7 @@
       &:before{
         @include pseudo();
         top:-50%;
-        left: -50%;
+        left: -200%;
         background-size: cover;
         background-position: center;
         background-color: $primary-color;
