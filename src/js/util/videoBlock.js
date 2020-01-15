@@ -55,8 +55,8 @@ class VideoBlock {
     const anim = new ScrollMagic.Scene({
       triggerElement: `#section-${id}`,
       triggerHook:"onEnter",
-      duration: '100%',
-      offset: 50
+      duration: '200%',
+      offset: -300
     })
 
      .addIndicators({
