@@ -1,6 +1,6 @@
 {{$label:= .Button}}
 {{$page := (.Page | urlize)}}
-<section>
+<section id="section-{{ $page }}">
 <div id="{{ $page }}" class="grid-container full block block-image block-section">
     {{with .Context.Site.GetPage .Page}}
     {{$image := .Params.featured_image}}

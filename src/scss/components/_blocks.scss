@@ -55,6 +55,8 @@
 
   &.block-section{
     height: 100vh;
+    min-height: 100%;
+    position: relative;
     h2{
       @extend h4;
     }

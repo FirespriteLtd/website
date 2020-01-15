@@ -11,18 +11,23 @@ class VideoBlock {
   constructor(id, controller) {
     this.id = id;
     this.controller = controller
-    this.block = $(`#${id}`);
+    this.block = $(`#section-${id}`);
     this.image = this.block.find('.image');
     $(window).on('load', () => {
       console.log('image-loaded')
     });
+    console.log(this.block.find('.image').height());
 
-    if(this.block.find('.video-wrapper')){
-      this.player = this.createVideoPlayer(id);
-      if(this.player){
-        this.animation();
+      console.log('check', id, this.block.position(), this.block.height())
+      if(this.block.find('.video-wrapper').length){
+        this.player = this.createVideoPlayer(id);
+        this.player.play();
+        if(this.player){
+          this.animation(id);
+        }
       }
-    }
+
+
   }
 
   createVideoPlayer(id){
@@ -44,11 +49,14 @@ class VideoBlock {
     }
   }
 
-  animation(){
-    this.anim = new ScrollMagic.Scene({
-      triggerElement: this.block,
+  animation(id){
+
+    console.log('SCENE', this.block);
+    const anim = new ScrollMagic.Scene({
+      triggerElement: `#section-${id}`,
       triggerHook:"onEnter",
       duration: '100%',
+      offset: 50
     })
 
      .addIndicators({
@@ -60,12 +68,12 @@ class VideoBlock {
 
      .addTo(this.controller)
 
-    this.anim.on('leave', (event)=> {
+    anim.on('leave', (event)=> {
       console.log('END')
       this.player.pause();
     });
 
-    this.anim.on('enter', (event)=> {
+    anim.on('enter', (event)=> {
       console.log('ENTER')
       this.player.play();
     });

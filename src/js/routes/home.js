@@ -85,8 +85,9 @@ export default {
         this.animHeader();
         setTimeout(()=> {
             this.masterVideo();
-            new VideoBlock('work', controller);
-            new VideoBlock('games', controller);
+            const work = new VideoBlock('work', controller);
+            const games = new VideoBlock('games', controller);
+            const careers = new VideoBlock('careers', controller);
         }, 1000)
 
         /*
