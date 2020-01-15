@@ -109,9 +109,9 @@ class VideoBlock {
     const chars = title.words;
     tl.from(header.find('h2'), {opacity:0, y:'30%', scale:2, duration: 0.5, ease:Expo.easeOut}, '-=0.5');
     tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
-    tl.from(headerButton, {opacity:0, y: '100%', duration:.5})
-    tl.fromTo(this.block.find('.revealCover'), {x:'-100%'}, {x:'200%', duration: 5})
 
+    tl.fromTo(this.block.find('.revealCover'), {x:'-100%'}, {x:'200%', duration: 5})
+    tl.from(headerButton, {opacity:0, y: '100%', duration:1})
     return tl;
   }
 

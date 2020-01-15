@@ -32,9 +32,11 @@
         </div>
     </div>
     {{if(isset $image "src")}}
+    {{if $image.active }}
     <div class="revealWrapper">
         <div class="revealCover"></div>
     </div>
+    {{end}}
     <div class="imageWrapper">
 
         <img class="image" src="{{ $image.src }}" alt="{{ $image.alt }}">
