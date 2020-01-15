@@ -49,14 +49,14 @@ export default {
             triggerHook:"onEnter",
             duration: '100%',
         })
-
+/*
          .addIndicators({
              name: "Heading Timeline",
              colorTrigger: "green",
              colorStart: "blue",
              colorEnd: "black"
          })
-
+*/
          .addTo(controller)
 
         anim.on('leave', (event)=> {

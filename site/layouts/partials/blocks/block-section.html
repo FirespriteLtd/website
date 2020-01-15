@@ -20,12 +20,12 @@
                     <div class="cell small-12 medium-8 header-button">
                         {{if ne ( .Type ) "careers"  }}
                             {{if $label}}
-                                <a href="{{.RelPermalink}}" class="white hollow button">{{$label}}</a>
+                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}}</a>
                             {{else}}
-                                <a href="{{.RelPermalink}}" class="white hollow button">See all {{.Title}}</a>
+                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">See all {{.Title}}</a>
                             {{end}}
                         {{else}}
-                                <a href="{{.RelPermalink}}" class="white hollow button">{{$label}} {{ partial "functions/get_count"  ( dict "Context" site)}}</a>
+                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}} {{ partial "functions/get_count"  ( dict "Context" site)}}</a>
                         {{end}}
                     </div>
                 </div>
