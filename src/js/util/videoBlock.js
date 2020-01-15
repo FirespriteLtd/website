@@ -57,7 +57,7 @@ class VideoBlock {
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#section-${id}`,
-      triggerHook:0.05,
+      triggerHook:.3,
       duration: '100%',
     })
 
@@ -134,7 +134,7 @@ class VideoBlock {
 
     tl.from(chars, {opacity:0, scaleY: 0, y:80, duration: 0.8,  ease:Expo.easeOut, stagger: 0.1});
 
-    tl.from(headerButton, {opacity:0, y: '100%', duration:1})
+    tl.from(headerButton, {opacity:0, y: '100%', duration:.5, ease: Expo.easeIn})
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
