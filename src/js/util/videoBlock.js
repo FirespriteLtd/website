@@ -85,13 +85,19 @@ class VideoBlock {
   }
 
   pin(id){
+
+    const header = this.block.find('.contentWrapper');
+    const tl = gsap.timeline({repeat:0, delay: 0});
+    tl.fromTo(header, {y:"30%"}, {y:"-30%" , duration:5})
+
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook: 0,
-      duration: "50%"
+      duration: "80%"
     })
 
      .setPin(`#trigger-${id}`)
+     .setTween(tl)
 
 /*
      .addIndicators({
