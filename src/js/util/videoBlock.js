@@ -59,7 +59,7 @@ class VideoBlock {
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#section-${id}`,
-      triggerHook:.15,
+      triggerHook:.2,
       duration: '50%',
     })
 /*
@@ -88,7 +88,7 @@ class VideoBlock {
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook: 0,
-      duration: "80%"
+      duration: "50%"
     })
 
      .setPin(`#trigger-${id}`)
@@ -113,7 +113,7 @@ class VideoBlock {
   headerAnim(id){
     const header = this.block.find('.header-content');
     const tl = gsap.timeline({repeat:0, delay: 0});
-    tl.fromTo(header.find('h2'), {alpha: 1, scale:8, y:'-200%', color:'rgba(255, 255,255, 1)'}, {alpha:1,scale:1, y:'0%', color:'rgba(255, 255,255, 1)', duration:5});
+    tl.fromTo(header.find('h2'), {alpha: 1, scale:8,y:"-100%", color:'rgba(255, 255,255, 1)'}, {alpha:1,scale:1, y:0, color:'rgba(255, 255,255, 1)', duration:5});
 
 
     const anim = new ScrollMagic.Scene({
