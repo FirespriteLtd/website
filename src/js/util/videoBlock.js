@@ -14,26 +14,19 @@ class VideoBlock {
   constructor(id, controller) {
     this.id = id;
     this.scenes = [];
-    this.controller = controller
+    this.controller = controller;
     this.block = $(`#section-${id}`);
     this.image = this.block.find('.image');
-    $(window).on('load', () => {
-      console.log('image-loaded')
-    });
-    console.log(this.block.find('.image').height());
 
-      console.log('check', id, this.block.position(), this.block.height())
-      if(this.block.find('.video-wrapper').length){
-        this.player = this.createVideoPlayer(id);
-        if(this.player){
-          this.videoPlayerActiveSetting(id);
-          this.pin(id);
-          this.headerAnim(id);
-          this.introAnim(id);
-        }
+    console.log('check', id, this.block.position(), this.block.height())
+    if(this.block.find('.video-wrapper').length){
+      this.player = this.createVideoPlayer(id);
+      if(this.player){
+        this.videoPlayerActiveSetting(id);
+        this.headerAnim(id);
+        this.introAnim(id);
       }
-
-
+    }
   }
 
   createVideoPlayer(id){
@@ -70,14 +63,14 @@ class VideoBlock {
       triggerHook:.2,
       duration: '150%',
     })
-/*
+
      .addIndicators({
        name: `Video Block ${this.id}`,
        colorTrigger: "green",
        colorStart: "red",
        colorEnd: "black"
      })
-*/
+
      .addTo(this.controller)
 
     anim.on('leave', (event)=> {
@@ -184,7 +177,6 @@ class VideoBlock {
   }
 
   openAnim(id){
-
     const header = this.block.find('.header-content');
     const tl = gsap.timeline({repeat:0, delay: 0});
     tl.fromTo(this.block.find('.revealCover'), {x:0}, {x:'300%', duration: 1.5, ease:Expo.easeIn})

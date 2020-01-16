@@ -1,5 +1,12 @@
 .home {
-
+  #container-scroll {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+      #trigger-header, #trigger-news, #trigger-games, #trigger-work, #trigger-careers, footer {
+        scroll-snap-align: start;
+      }
+  }
 }
 
 

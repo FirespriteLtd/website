@@ -1,6 +1,6 @@
 @mixin maxHeight(){
 
-  height: 95vh;
+  height: 100vh;
 
   @include breakpoint(small) {
     min-height: 380px;

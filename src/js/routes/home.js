@@ -4,7 +4,7 @@ import 'slick-carousel';
 import Rellax from 'rellax/rellax.min';
 import YTPlayer from 'yt-player';
 import VideoBlock from "../util/videoBlock";
-import SmoothScrollbar from "smooth-scrollbar";
+import SmoothScrollbar from 'smooth-scrollbar';
 import { gsap, TweenMax, TweenLite, TimelineMax, Expo } from 'gsap/all';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
@@ -13,9 +13,9 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
 gsap.registerPlugin(SplitText);
-
-var controller = new ScrollMagic.Controller({refreshInterval:0});
 gsap.defaultEase = Expo.easeOut;
+
+const controller = new ScrollMagic.Controller({container: '#container-scroll'});
 
 export default {
 
@@ -79,25 +79,20 @@ export default {
 
     },
     finalize() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
         const rellax = new Rellax('.rellax');
 
         let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
-        console.log('home')
-
-
-
+        //SmoothScrollbar.init(document.querySelector('#container-scroll'));
 
         this.animHeader();
+
         setTimeout(()=> {
             const master = this.masterVideo();
             const work = new VideoBlock('work', controller);
             const games = new VideoBlock('games', controller);
             const careers = new VideoBlock('careers', controller);
-
             const scenes = [master,...work.scenes, ...games.scenes, ...careers.scenes];
-
             console.log('scenes', scenes);
 
 

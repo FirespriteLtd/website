@@ -167,6 +167,9 @@
 }
 
 #block-news{
+  display: flex;
+  align-items: center;
+  height: 100vh;
   ul{
     justify-content: center;
   }
