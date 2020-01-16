@@ -1,0 +1,72 @@
+{{ $url := trim .Context.URL "/"}}
+{{ "<!-- navigation - mobile -->" | safeHTML }}
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    <div class="grid-container">
+        <div class="grid-x align-center-middle" style="height: 85vh">
+            <div class="cell">
+                {{ "<!-- menu  -->" | safeHTML }}
+                <ul class="menu vertical">
+                    {{ if not (site.Params.custom_navbar) }}
+                    {{ if not (site.Params.cms_navbar) }}
+                    <li class="{{ if .IsHome }}active{{ end }}"><a href="{{ site.BaseURL | absLangURL }}">
+                        {{ i18n "home" }} </a>
+                        {{ if site.menus.home}}
+                        <ul class="menu submenu" data-smooth-scroll>
+                            {{ range site.Menus.home }}
+                            <li><a href="{{ .URL }}">{{- .Name -}}</a></li>
+                            {{end}}
+                        </ul>
+                        {{ end}}
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                    {{ if site.Params.custom_navbar }}
+                    {{ range site.Menus.navbar }}
+                    <li  class="{{if eq $url .link }}active{{end}}" >
+                        <a href="{{.URL}}">
+                            {{- .Name -}}
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ else }}
+                    {{ if not (site.Params.cms_navbar) }}
+                    {{ range where site.Pages "Type" "!=" "post" }}
+                    <li class="{{if eq $url .Permalink  }}active{{end}}"><a  href="{{ .Permalink }}">
+                        {{- .Title | markdownify -}}
+                        {{if eq ( trim .link "/") "careers" }}
+                        {{ partial "functions/get_count"  ( dict "Context" site)}}
+                        {{end}}
+                    </a></li>
+                    {{ end }}
+                    {{else}}
+
+                    {{ range site.Data.navigation.items}}
+                    <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
+                    {{- .name | markdownify -}}
+                </a></li>
+                    {{ end }}
+
+                    {{end}}
+                    {{ end }}
+                    {{ if .IsTranslated }}
+                    <li>
+                        <div id="languages">
+
+                            {{ range $i, $e := .Translations }}
+                            {{ if $i }}|{{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
+                            {{ end}}
+
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <div class="cell">
+                {{ "<!-- social -->" | safeHTML }}
+                {{ partial "blocks/block-social-page" .}}
+            </div>
+        </div>
+    </div>
+</div>
+{{ "<!-- /navigation - mobile -->" | safeHTML }}

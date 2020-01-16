@@ -4,6 +4,7 @@ import 'slick-carousel';
 import Rellax from 'rellax/rellax.min';
 import YTPlayer from 'yt-player';
 import VideoBlock from "../util/videoBlock";
+import SmoothScrollbar from "smooth-scrollbar";
 import { gsap, TweenMax, TweenLite, TimelineMax, Expo } from 'gsap/all';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
@@ -13,7 +14,7 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
 gsap.registerPlugin(SplitText);
 
-var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller({refreshInterval:0});
 gsap.defaultEase = Expo.easeOut;
 
 export default {
@@ -22,6 +23,7 @@ export default {
         const player = new YTPlayer('#ytplayer-header')
         player.load($('.master-header .video-wrapper').data('video'), true);
         player.setVolume(0);
+        player.seek(20);
         player.play();
         player.on('playing', () => {
             $('.video-foreground').addClass("playing");
@@ -68,25 +70,37 @@ export default {
             console.log('ENTER')
             player.play();
         });
+
+        return anim;
     },
     init() {
         // JavaScript to be fired on all pages
         console.log('home')
+
     },
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fired
         const rellax = new Rellax('.rellax');
 
+        let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
         console.log('home')
+
 
 
 
         this.animHeader();
         setTimeout(()=> {
-            this.masterVideo();
+            const master = this.masterVideo();
             const work = new VideoBlock('work', controller);
             const games = new VideoBlock('games', controller);
             const careers = new VideoBlock('careers', controller);
+
+            const scenes = [master,...work.scenes, ...games.scenes, ...careers.scenes];
+
+            console.log('scenes', scenes);
+
+
         }, 1000)
 
         /*
@@ -101,12 +115,8 @@ export default {
             "lang": 'en'
         };
         twitterFetcher.fetch(configProfile);
-
-
-        //this.animList();
-        //this.animServices();
-        //this.animBlocks();
-
          */
+
+
     },
 };

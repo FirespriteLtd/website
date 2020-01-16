@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.Language.Lang }}">
 {{ block "head" . }}{{ partial "head" . }}{{end}}
 {{ $currentPage := .Parent }}
-<body class="default {{ if .IsHome }}home{{else}}{{ $section := split .Section "/" }}{{range $section}} {{.}}{{end}}{{end}} {{ if .InSection $currentPage}}{{- .Title | urlize -}}{{end}}" data-animation="true">
+<body  class="default {{ if .IsHome }}home{{else}}{{ $section := split .Section "/" }}{{range $section}} {{.}}{{end}}{{end}} {{ if .InSection $currentPage}}{{- .Title | urlize -}}{{end}}" data-animation="true">
 {{ partial "old-browser.html" . }}
 {{if .Site.Params.preloader }}
 <div class="loading">
@@ -11,23 +11,27 @@
     </div>
 </div>
 {{end}}
-<div class="off-canvas-wrapper">
+<div id="canvas-scroll">
+    <div  class="off-canvas-wrapper">
 
-  <div class="off-canvas-content" data-off-canvas-content>
+      <div class="off-canvas-content" data-off-canvas-content>
 
-      {{ block "navigation" . }}{{ partial "navigation" (dict "Context" $ "Version" "")}}{{end}}
+          {{ block "navigation" . }}{{ partial "navigation" (dict "Context" $ "Version" "")}}{{end}}
 
-        <main>
-            {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}
-            {{ block "main" . }}{{end}}
-        </main>
+            <main>
+                {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}
+                {{ block "main" . }}{{end}}
+            </main>
 
-        {{ block "pusher" . }}{{end}}
+            {{ block "pusher" . }}{{end}}
 
-        {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+            {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
-        {{ block "foot" . }}{{ partial "foot" . }}{{end}}
-  </div>
+
+      </div>
+    </div>
 </div>
+{{ block "navigation-mobile" . }}{{ partial "navigation-mobile" (dict "Context" $)}}{{end}}
+{{ block "foot" . }}{{ partial "foot" . }}{{end}}
 </body>
 </html>

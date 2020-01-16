@@ -16,10 +16,18 @@ html {
   outline: none!important;
 }
 
-body {
+body, html {
+  //overflow: hidden;
+
 }
-
-
+/*
+#canvas-scroll{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+*/
 
 // divider
 hr.divider{

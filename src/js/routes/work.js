@@ -4,6 +4,7 @@ import Rellax from 'rellax/rellax.min';
 import 'slick-carousel';
 import $ from 'jquery';
 import 'fluidbox';
+import SmoothScrollbar from "smooth-scrollbar";
 
 export default {
     init() {
