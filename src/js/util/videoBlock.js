@@ -24,9 +24,9 @@ class VideoBlock {
   start(id){
    console.log('START', id)
     if(this.block.find('.video-wrapper').length){
-      //this.player = this.createVideoPlayer(id);
+      this.player = this.createVideoPlayer(id);
       if(this.player){
-       // this.videoPlayerActiveSetting(id);
+       this.videoPlayerActiveSetting(id);
       }
     }
 
