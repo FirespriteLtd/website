@@ -1,47 +1,50 @@
 {{$label:= .Button}}
 {{$page := (.Page | urlize)}}
-<div id="trigger-{{$page}}">
+<div id="trigger-{{$page}}" >
 <section id="section-{{ $page }}">
 <div id="block-{{ $page }}" class="grid-container full block block-image block-section">
     {{with .Context.Site.GetPage .Page}}
     {{$image := .Params.featured_image}}
     <div class="contentWrapper">
         <div class="grid-container">
-
-                <div class="grid-x align-center-middle text-center header">
-                    <div class="cell small-12 medium-7 header-content">
-                            <header>
-                                <h2>{{.Title}}</h2>
-                                <h3>
-                                {{.Params.subtitle}}
-                                </h3>
-                            </header>
-                    </div>
-                    <div class="cell small-12 medium-8 header-button">
-                        {{if ne ( .Type ) "careers"  }}
-                            {{if $label}}
-                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}}</a>
-                            {{else}}
-                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">See all {{.Title}}</a>
-                            {{end}}
-                        {{else}}
-                                <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}} {{ partial "functions/get_count"  ( dict "Context" site)}}</a>
-                        {{end}}
+            <div class="grid-y grid-frame relax" data-rellax-speed="-3">
+                <div class="cell auto cell-block-container">
+                    <div class="grid-x align-center-middle p-t-50">
+                        <div class="cell small-12 medium-7 large-7">
+                            <div class="grid-x align-center-middle text-center" data-rellax-speed="-3">
+                                <div class="cell small-12 header-content">
+                                        <header>
+                                            <h2>{{.Title}}</h2>
+                                            <h3>
+                                            {{.Params.subtitle}}
+                                            </h3>
+                                        </header>
+                                </div>
+                                <div class="cell small-12 medium-8 header-button">
+                                    {{if ne ( .Type ) "careers"  }}
+                                        {{if $label}}
+                                            <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}}</a>
+                                        {{else}}
+                                            <a href="{{.RelPermalink}}" class="white hollow button m-t-30">See all {{.Title}}</a>
+                                        {{end}}
+                                    {{else}}
+                                            <a href="{{.RelPermalink}}" class="white hollow button m-t-30">{{$label}} {{ partial "functions/get_count"  ( dict "Context" site)}}</a>
+                                    {{end}}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
     {{if(isset $image "src")}}
-    {{if $image.active }}
-    <div class="revealWrapper">
-        <div class="revealCover"></div>
-    </div>
-    {{end}}
+
     <div class="imageWrapper">
 
         <img class="image" src="{{ $image.src }}" alt="{{ $image.alt }}">
         {{if $image.active }}
-            <div  class="video-wrapper video-background"  style="background-image: url('{{ $image.src}}')">
+            <div  class="video-wrapper video-background" data-rellax-speed="-7"   style="background-image: url('{{ $image.src}}')" >
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-{{$page}}" data-video="{{ $image.id }}"></div></div>
             </div>
         {{else}}

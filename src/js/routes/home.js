@@ -79,7 +79,7 @@ export default {
 
     },
     finalize() {
-        const rellax = new Rellax('.rellax');
+        const rellax = new Rellax('.rellax', {wrapper:'#container-scroll'});
 
         let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 

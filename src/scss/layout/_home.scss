@@ -5,6 +5,7 @@
     height: 100vh;
       #trigger-header, #trigger-news, #trigger-games, #trigger-work, #trigger-careers, footer {
         scroll-snap-align: start;
+        overflow: hidden;
       }
   }
 }

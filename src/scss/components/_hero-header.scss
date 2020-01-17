@@ -1,19 +1,4 @@
-@mixin maxHeight(){
 
-  height: 100vh;
-
-  @include breakpoint(small) {
-    min-height: 380px;
-  }
-
-  @include breakpoint(medium) {
-    min-height: 490px;
-  }
-
-  @include breakpoint(large) {
-    min-height: 950px;
-  }
-}
 
 .contentWrapper {
   position: absolute;
