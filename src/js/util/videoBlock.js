@@ -90,33 +90,6 @@ class VideoBlock {
     this.scenes.push(anim);
   }
 
-  pin(id){
-
-    const header = this.block.find('.contentWrapper');
-    const tl = gsap.timeline({repeat:0, delay: 0});
-    tl.fromTo(header, {y:"50%"}, {y:"-30%" , duration:5})
-
-    const anim = new ScrollMagic.Scene({
-      triggerElement: `#trigger-${id}`,
-      triggerHook: 0,
-      duration: "100%"
-    })
-
-     .setPin(`#trigger-${id}`)
-     .setTween(tl)
-
-/*
-     .addIndicators({
-       name: `Video Pin ${this.id}`,
-       colorTrigger: "blue",
-       colorStart: "orange",
-       colorEnd: "black"
-     })
-*/
-     .addTo(this.controller)
-
-    this.scenes.push(anim);
-  }
 
   charAnim(id, reverse){
     const header = this.block.find('.header-content');
@@ -138,7 +111,7 @@ class VideoBlock {
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook: 1,
-      offset:20
+      offset:30
     })
      .setTween(tl)
      .addTo(this.controller);
