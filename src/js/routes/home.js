@@ -79,7 +79,7 @@ export default {
 
     },
     finalize() {
-        const rellax = new Rellax('.rellax', {wrapper:'#container-scroll'});
+        //const rellax = new Rellax('.rellax', {wrapper:'#container-scroll'});
 
         let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
@@ -92,12 +92,12 @@ export default {
             const work = new VideoBlock('work', controller);
             const games = new VideoBlock('games', controller);
             const careers = new VideoBlock('careers', controller);
-            const pinScene = ['work','games','news'];
+            const pinScene = ['header','work','games','news'];
 
             for(let i=0;i<pinScene.length;i++) {
 
                 const tl = gsap.timeline({repeat:0});
-                tl.to(`#section-${pinScene[i]}`, {y:'100%', z:10+i, duration: 20, ease: Linear.easeNone})
+                tl.to(`#section-${pinScene[i]}`, {y:'100%', z:0, duration: 20, ease: Linear.easeNone})
 
                 new ScrollMagic.Scene({
                     triggerElement:`#trigger-${pinScene[i]}`,
@@ -105,13 +105,6 @@ export default {
                     duration: '200%'
                 })
                  .setTween(tl)
-                 //.setPin(`#section-${pinScene[i]}`, {pushFollowers: true})
-                 .addIndicators({
-                     colorStart: "rgba(255,255,255,0.5)",
-                     colorEnd: "rgba(255,255,255,0.5)",
-                     colorTrigger : "rgba(255,255,255,1)",
-                     name:pinScene[i]
-                 })
                  .loglevel(3)
                  .addTo(controller);
             }

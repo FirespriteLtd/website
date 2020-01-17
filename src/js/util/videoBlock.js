@@ -45,12 +45,16 @@ class VideoBlock {
         this.block.find('.video-foreground').addClass("playing");
       })
       player.on('ended', () => {
+        console.log('ended', id)
+        player.seek(0);
         player.play();
       })
       player.on('playing', () =>{
+        console.log('playing', id);
         this.openAnim(id);
       })
       player.on('paused', () =>{
+        console.log('paused', id);
       })
       return player;
     } else {
@@ -62,16 +66,17 @@ class VideoBlock {
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
-      triggerHook:0,
-      duration: '100%',
-      offset:-10
+      triggerHook:0.25,
+      duration: '130%',
     })
+/*
      .addIndicators({
        name: `Video Pin ${this.id}`,
        colorTrigger: "blue",
        colorStart: "orange",
        colorEnd: "black"
      })
+*/
      .addTo(this.controller);
 
 
@@ -83,6 +88,7 @@ class VideoBlock {
 
     anim.on('enter', (event)=> {
       console.log('ENTER', id)
+      this.player.seek(0)
       this.player.play();
 
     });
@@ -122,16 +128,16 @@ class VideoBlock {
 
   openAnim(id){
     const tl = gsap.timeline({repeat:0, delay: 0});
-    tl.fromTo(this.video, {alpha:0},{alpha:1, duration: 1.5, ease:Expo.easeIn});
+    tl.to(this.video, {alpha:1, duration: 1, overwrite: 'all', ease:Sine.easeIn});
     return tl;
   }
 
   closeAnim(id){
     const scope = this;
-    const tl = gsap.timeline({repeat:0, delay: 0, onComplete: function () {
+    const tl = gsap.timeline({repeat:0, delay: 0,overwrite: 'all', onComplete: function () {
           scope.player.pause();
       }});
-    tl.to(this.video,{alpha:0, duration: 1.5, ease:Expo.easeIn});
+    tl.to(this.video,{alpha:0, duration: .5});
     return tl;
   }
 
