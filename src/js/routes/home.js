@@ -35,7 +35,7 @@ export default {
         return player;
     },
     animHeader() {
-        const tl = gsap.timeline({repeat:0, delay: 1.5});
+        const tl = gsap.timeline({repeat:0, delay: 0});
         const title = new SplitText($('.hero-header-inner').find('h1'), {type:"words,chars"});
         const chars = title.words;
         tl.from($('.parent-header'), {opacity:0, scale:2, duration: 0.5, ease:Expo.easeOut}, '-=0.5');
