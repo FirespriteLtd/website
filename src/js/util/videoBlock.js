@@ -64,7 +64,7 @@ class VideoBlock {
       triggerElement: `#trigger-${id}`,
       triggerHook:0,
       duration: '100%',
-      offset:1
+      offset:-10
     })
      .addIndicators({
        name: `Video Pin ${this.id}`,
