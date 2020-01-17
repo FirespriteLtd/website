@@ -64,6 +64,7 @@ class VideoBlock {
       triggerElement: `#section-${id}`,
       triggerHook:0,
       duration: '100%',
+      offset:-100
     })
      .addTo(this.controller)
 
@@ -119,19 +120,22 @@ class VideoBlock {
 
   introAnim(id){
     const headerButton = this.block.find('.header-button a');
-    const tl = gsap.timeline({repeat:0, delay: 0});
+    const tl = gsap.timeline({repeat:0, delay: 0.2});
     const header = this.block.find('.header-content');
 
-    tl.fromTo(header.find('h2'), {alpha: 1, scale:8, color:'rgba(255, 255,255, 1)'}, {alpha:1,scale:1,color:'rgba(255, 255,255, 1)', duration:0.5});
+    tl.fromTo(header.find('h2'), {alpha: 0, scale:8}, {alpha:1,scale:1, duration:0.5});
     tl.add(this.charAnim(id, false));
-    tl.from(headerButton, {opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeIn}, "=-0.5");
+    tl.from(headerButton, {opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeOut}, "=-0.5");
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook: 1,
+      offset:20
     })
      .setTween(tl)
-     .addTo(this.controller)
+     .addTo(this.controller);
+
+
 
     this.scenes.push(anim);
 
