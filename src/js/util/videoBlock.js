@@ -61,12 +61,20 @@ class VideoBlock {
   videoPlayerActiveSetting(id){
 
     const anim = new ScrollMagic.Scene({
-      triggerElement: `#section-${id}`,
+      triggerElement: `#trigger-${id}`,
       triggerHook:0,
       duration: '100%',
-      offset:-100
+      offset:1
     })
-     .addTo(this.controller)
+     .addIndicators({
+       name: `Video Pin ${this.id}`,
+       colorTrigger: "blue",
+       colorStart: "orange",
+       colorEnd: "black"
+     })
+     .addTo(this.controller);
+
+
 
     anim.on('leave', (event)=> {
       console.log('END', id)
@@ -134,8 +142,6 @@ class VideoBlock {
     })
      .setTween(tl)
      .addTo(this.controller);
-
-
 
     this.scenes.push(anim);
 

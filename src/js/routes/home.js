@@ -5,7 +5,7 @@ import Rellax from 'rellax/rellax.min';
 import YTPlayer from 'yt-player';
 import VideoBlock from "../util/videoBlock";
 import SmoothScrollbar from 'smooth-scrollbar';
-import { gsap, TweenMax, TweenLite, TimelineMax, Expo } from 'gsap/all';
+import { gsap, TweenMax, TweenLite, TimelineMax, Expo, Linear } from 'gsap/all';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
@@ -92,9 +92,29 @@ export default {
             const work = new VideoBlock('work', controller);
             const games = new VideoBlock('games', controller);
             const careers = new VideoBlock('careers', controller);
-            const scenes = [master,...work.scenes, ...games.scenes, ...careers.scenes];
-            console.log('scenes', scenes);
+            const pinScene = ['work','games','news'];
 
+            for(let i=0;i<pinScene.length;i++) {
+
+                const tl = gsap.timeline({repeat:0});
+                tl.to(`#section-${pinScene[i]}`, {y:'100%', z:10+i, duration: 20, ease: Linear.easeNone})
+
+                new ScrollMagic.Scene({
+                    triggerElement:`#trigger-${pinScene[i]}`,
+                    triggerHook: 0,
+                    duration: '200%'
+                })
+                 .setTween(tl)
+                 //.setPin(`#section-${pinScene[i]}`, {pushFollowers: true})
+                 .addIndicators({
+                     colorStart: "rgba(255,255,255,0.5)",
+                     colorEnd: "rgba(255,255,255,0.5)",
+                     colorTrigger : "rgba(255,255,255,1)",
+                     name:pinScene[i]
+                 })
+                 .loglevel(3)
+                 .addTo(controller);
+            }
 
         }, 1000)
 
