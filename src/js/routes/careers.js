@@ -1,16 +1,23 @@
 import $ from 'jquery'
-import ScrollMagic from "scrollmagic/scrollmagic/minified/ScrollMagic.min";
-import animations from "../util/animations";
-import Rellax from "rellax/rellax.min";
 import 'slick-carousel';
+import SectionParallax from "../util/sectionParallax";
+import HeaderBlock from "../util/headerBlock";
 
 export default {
     init() {
         console.log()
     },
     finalize() {
+
+        const section = new SectionParallax();
+        const controller = section.controller();
+        const master = new HeaderBlock(controller);
+
+        setTimeout(()=> {
+            section.init(['header']);
+        }, 1000);
+
         // JavaScript to be fired on all pages, after page specific JS is fire
-        const rellax = new Rellax('.rellax');
         $('#testimonial').slick({
             arrows: false,
             dots: true,

@@ -12,6 +12,7 @@ import contact from './routes/contact';
 import work from './routes/work';
 import games from './routes/games';
 import support from './routes/support';
+import careers from './routes/careers';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -19,6 +20,7 @@ const routes = new Router({
     common,
     home,
     contact,
+    careers,
     games,
     work,
     support
