@@ -17,17 +17,17 @@ html {
 }
 
 body, html {
-  //overflow: hidden;
-
-}
-/*
-#canvas-scroll{
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
-  position: fixed;
 }
-*/
+
+#container-scroll {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
+    transform:translate3d(0,0,0);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
 
 // divider
 hr.divider{

@@ -40,11 +40,12 @@
     </div>
     {{if(isset $image "src")}}
 
-    <div class="imageWrapper">
+    <div class="imageWrapper" style="background-image: url('{{ $image.src}}')">
 
-        <img class="image" src="{{ $image.src }}" alt="{{ $image.alt }}">
+
         {{if $image.active }}
-            <div  class="video-wrapper video-background" data-rellax-speed="-7"   style="background-image: url('{{ $image.src}}')" >
+
+            <div  class="video-wrapper video-background" >
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-{{$page}}" data-video="{{ $image.id }}"></div></div>
             </div>
         {{else}}

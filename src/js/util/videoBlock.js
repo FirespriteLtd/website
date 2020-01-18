@@ -41,20 +41,16 @@ class VideoBlock {
       player.load(videoId, false);
       player.setVolume(0);
       player.pause();
-      player.on('playing', () => {
-        this.block.find('.video-foreground').addClass("playing");
-      })
       player.on('ended', () => {
-        console.log('ended', id)
+        //console.log('ended', id)
         player.seek(0);
         player.play();
       })
-      player.on('playing', () =>{
-        console.log('playing', id);
-        this.openAnim(id);
-      })
       player.on('paused', () =>{
-        console.log('paused', id);
+        TweenLite.to(this.video,{opacity:0, duration:1, overwrite: true})
+      })
+      player.on('playing', () =>{
+        TweenLite.to(this.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
       })
       return player;
     } else {
@@ -66,31 +62,27 @@ class VideoBlock {
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
-      triggerHook:0.25,
-      duration: '130%',
+      triggerHook:0,
+      duration: '90%',
     })
-/*
+
      .addIndicators({
        name: `Video Pin ${this.id}`,
        colorTrigger: "blue",
        colorStart: "orange",
        colorEnd: "black"
      })
-*/
+
      .addTo(this.controller);
 
-
-
     anim.on('leave', (event)=> {
-      console.log('END', id)
-      this.closeAnim(id)
+      this.player.pause();
     });
 
     anim.on('enter', (event)=> {
       console.log('ENTER', id)
       this.player.seek(0)
       this.player.play();
-
     });
 
     this.scenes.push(anim);
@@ -124,21 +116,6 @@ class VideoBlock {
 
     this.scenes.push(anim);
 
-  }
-
-  openAnim(id){
-    const tl = gsap.timeline({repeat:0, delay: 0});
-    tl.to(this.video, {alpha:1, duration: 1, overwrite: 'all', ease:Sine.easeIn});
-    return tl;
-  }
-
-  closeAnim(id){
-    const scope = this;
-    const tl = gsap.timeline({repeat:0, delay: 0,overwrite: 'all', onComplete: function () {
-          scope.player.pause();
-      }});
-    tl.to(this.video,{alpha:0, duration: .5});
-    return tl;
   }
 
 }

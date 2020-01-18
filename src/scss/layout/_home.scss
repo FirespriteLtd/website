@@ -1,16 +1,8 @@
 .home {
-  #container-scroll {
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    height: 100vh;
-    transform:translate3d(0,0,0);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-      #trigger-header, #trigger-news, #trigger-games, #trigger-work, #trigger-careers, footer {
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-        overflow: hidden;
-      }
+  #trigger-header, #trigger-news, #trigger-games, #trigger-work, #trigger-careers, footer {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow: hidden;
   }
 }
 

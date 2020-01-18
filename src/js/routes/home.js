@@ -5,7 +5,7 @@ import Rellax from 'rellax/rellax.min';
 import YTPlayer from 'yt-player';
 import VideoBlock from "../util/videoBlock";
 import SmoothScrollbar from 'smooth-scrollbar';
-import { gsap, TweenMax, TweenLite, TimelineMax, Expo, Linear } from 'gsap/all';
+import {gsap, TweenMax, TweenLite, TimelineMax, Expo, Linear, Sine} from 'gsap/all';
 
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
@@ -26,11 +26,14 @@ export default {
         player.seek(20);
         player.play();
         player.on('playing', () => {
-            $('.video-foreground').addClass("playing");
+
             console.log('Player', player.getDuration()) // => 351.521
         })
         player.on('ended', () => {
             player.play();
+        })
+        player.on('playing', () =>{
+            TweenLite.to($('.master-header .video-wrapper'), {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
         })
         return player;
     },
@@ -43,31 +46,27 @@ export default {
         tl.from($('.content-subtitle-animate'),{opacity:0, duration:0.5, y: 100, ease:Expo.easeOut});
     },
     masterVideo() {
-
         let player = this.createMasterVideo();
-
         const anim = new ScrollMagic.Scene({
             triggerElement: $('.master-header'),
             triggerHook:"onEnter",
-            duration: '100%',
+            duration: '50%',
         })
-/*
+
          .addIndicators({
              name: "Heading Timeline",
              colorTrigger: "green",
              colorStart: "blue",
              colorEnd: "black"
          })
-*/
+
          .addTo(controller)
 
         anim.on('leave', (event)=> {
-            console.log('END')
             player.pause();
         });
 
         anim.on('enter', (event)=> {
-            console.log('ENTER')
             player.play();
         });
 
@@ -79,10 +78,6 @@ export default {
 
     },
     finalize() {
-        //const rellax = new Rellax('.rellax', {wrapper:'#container-scroll'});
-
-        let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-
         //SmoothScrollbar.init(document.querySelector('#container-scroll'));
 
         this.animHeader();
@@ -97,7 +92,7 @@ export default {
             for(let i=0;i<pinScene.length;i++) {
 
                 const tl = gsap.timeline({repeat:0});
-                tl.to(`#section-${pinScene[i]}`, {y:'100%', z:0, duration: 20, ease: Linear.easeNone})
+                tl.to(`#section-${pinScene[i]}`, {y:'100%', z:0, duration: 20, overwrite:true,  ease: Linear.easeNone})
 
                 new ScrollMagic.Scene({
                     triggerElement:`#trigger-${pinScene[i]}`,
