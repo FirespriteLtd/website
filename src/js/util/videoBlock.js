@@ -22,6 +22,7 @@ class VideoBlock {
   }
 
   start(id){
+    console.log('check', this.block.find('.video-wrapper').length)
     if(this.block.find('.video-wrapper').length){
       this.player = this.createVideoPlayer(id);
       if(this.player){
@@ -32,7 +33,8 @@ class VideoBlock {
   }
 
   createVideoPlayer(id){
-    const playerId = `#ytplayer-${id}`
+    const playerId = `#ytplayer-${id}`;
+
     if(this.block.find(playerId)) {
       const player = new YTPlayer(playerId);
       const videoId = $(playerId).data('video');

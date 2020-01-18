@@ -16,9 +16,14 @@ export default {
 
         const master = new HeaderBlock(controller);
 
+        const sections = []
+         for(let x=0; x < ($('#container-scroll > div').length -1); x++) {
+            sections.push(x);
+         };
+        console.log('Sections', sections.length, sections)
 
         setTimeout(()=> {
-            section.init(['header', "0", "1" , "3"]);
+            section.init(['header', ...sections]);
         }, 1000);
 
         $('#testimonial').slick({

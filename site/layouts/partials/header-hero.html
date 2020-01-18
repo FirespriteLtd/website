@@ -77,8 +77,7 @@
         </div>
     <div class="imageWrapper" style="background-image: url('{{ .Content.Params.featured_image.src }}')">
         {{if not .Content.Params.featured_image.active}}
-            <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "   data-rellax-speed="-7"></div>
-            {{ if .bg_image_mobile }}<div class="mobile"   style="background-image: url('{{ .bg_image_mobile }}')"></div> {{ end }}
+        
         {{ else }}
             {{with .Content.Params.featured_image}}
             <div  class="video-wrapper video-background" data-video="{{ .id }}" style="background-image: url('{{ .src }}')">

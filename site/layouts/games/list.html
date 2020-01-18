@@ -6,9 +6,14 @@
 {{end}}
 {{ define "main" }}
     {{$list := (where .Pages.ByDate.Reverse "Type"  "games" )}}
-    {{range $indes, $content := $list}}
+    {{range $index, $content := $list}}
         {{with $content}}
-            {{ .Render "summary" }}
+        <div id="trigger-{{ $index }}">
+            <div id="section-{{ $index}}">
+                    {{ .Render "summary" }}
+            </div>
+        </div>
         {{end}}
+
     {{end}}
 {{end}}

@@ -18,7 +18,9 @@ class HeaderBlock {
  }
 
  start(){
-  this.videoController();
+  if(this.video.length){
+   this.videoController();
+  }
   this.animHeader();
  }
 
