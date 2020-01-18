@@ -22,14 +22,12 @@ class VideoBlock {
   }
 
   start(id){
-   console.log('START', id)
     if(this.block.find('.video-wrapper').length){
       this.player = this.createVideoPlayer(id);
       if(this.player){
        this.videoPlayerActiveSetting(id);
       }
     }
-
     this.introAnim(id);
   }
 
@@ -65,14 +63,6 @@ class VideoBlock {
       triggerHook:0,
       duration: '90%',
     })
-
-     .addIndicators({
-       name: `Video Pin ${this.id}`,
-       colorTrigger: "blue",
-       colorStart: "orange",
-       colorEnd: "black"
-     })
-
      .addTo(this.controller);
 
     anim.on('leave', (event)=> {

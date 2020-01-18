@@ -1,10 +1,8 @@
-//import animations from "../util/animations"
-//import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-import Rellax from 'rellax/rellax.min';
 import 'slick-carousel';
 import $ from 'jquery';
 import 'fluidbox';
-import SmoothScrollbar from "smooth-scrollbar";
+import HeaderBlock from "../util/headerBlock";
+import SectionParallax from "../util/sectionParallax";
 
 export default {
     init() {
@@ -12,10 +10,17 @@ export default {
         console.log('about')
     },
     finalize() {
-        const rellax = new Rellax('.rellax');
-        // const controller = new ScrollMagic.Controller();
-        // const blocks =[ '#about', '#values', '#stats','#video'];
-        // animations.animBlock(controller, blocks);
+
+        const section = new SectionParallax();
+        const controller = section.controller();
+
+        const master = new HeaderBlock(controller);
+
+
+        setTimeout(()=> {
+            section.init(['header', "0", "1" , "3"]);
+        }, 1000);
+
         $('#testimonial').slick({
             arrows: false,
             dots: true,

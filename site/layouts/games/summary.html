@@ -11,6 +11,8 @@
 {{ else }}
 {{ $summary = $item.Content }}
 {{ end }}
-<article>
-  {{partial "blocks/block-summary" (dict "context" $item  "full" "true" )}}
-</article>
+<div id="trigger-{{ .Title | urlize }}">
+  <article>
+    {{partial "blocks/block-summary" (dict "context" $item  "full" "true" )}}
+  </article>
+</div>
