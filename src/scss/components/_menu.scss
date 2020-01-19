@@ -196,6 +196,13 @@
 
 // social buttons
 .social-menu {
+
+  &.invert{
+    .social-block .icon {
+      color: black!important;
+    }
+  }
+
   ul {
     li {
        .social-block{

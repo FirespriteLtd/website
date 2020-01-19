@@ -1,7 +1,7 @@
 {{ "<!-- hero header -->" | safeHTML }}
 {{ $p := .parallax | default false}}
 {{ $isParent := .Content.IsAncestor .Content.Page}}
-<div id="trigger-header" class="master-header">
+<div id="trigger-header" class="master-header full">
     <section id="section-header">
     <div class="hero-header {{if $p }} rellax {{end}}  container {{if .media.video_active}} video-active {{end}}">
         <div class="hero-header-inner">
