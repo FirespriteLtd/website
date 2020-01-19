@@ -1,0 +1,11 @@
+<div class="side-nav left">
+    <div class="holder">
+        <div class="page-nav">
+            <ul id="sub-nav" class="menu vertical">
+                {{range $index, $content := .Menu}}
+                <li><a href="{{.Permalink}}" data-section="{{$index}}">{{$content.Title}}</a></li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</div>

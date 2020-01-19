@@ -4,10 +4,11 @@ import 'fluidbox';
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import SideBarController from "../util/sideBarController";
+import AnchorNav from "../util/anchor-nav";
 
 export default {
     init() {
-
+        new AnchorNav('#sub-nav');
     },
     finalize() {
 

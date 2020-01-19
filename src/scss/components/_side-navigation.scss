@@ -12,8 +12,8 @@
     height: 100vh;
 
     > div{
-      position: absolute;
-      @include center('both');
+
+      @include center('vertical');
     }
   }
 
@@ -21,7 +21,9 @@
     left: 0;
     .holder{
       > div{
+        //position: fixed;
         left: 10px;
+        width: auto;
       }
     }
   }
@@ -30,8 +32,41 @@
     .holder{
       > div{
         right: 10px;
-        width: 150px;
+        width: auto;
       }
     }
+  }
+}
+
+#sub-nav{
+
+  li{
+    margin-bottom: rem-calc(10);
+    overflow: hidden;
+    &:before{
+      @include pseudo();
+      margin-top: rem-calc(2);
+      width: 4px;
+      height: rem-calc(16);
+      background-color: $white;
+    }
+
+    a{
+      margin-left: -100%;
+      transition: 500ms margin-left ease-in-out;
+    }
+
+    &:hover{
+      a{
+        margin-left: 0;
+        transition: 500ms margin-left ease-in-out;
+      }
+    }
+
+  }
+
+  a{
+    padding: 0 rem-calc(4) 0 rem-calc(10);
+    white-space: nowrap;
   }
 }

@@ -1,16 +1,20 @@
 {{ define "header" }}
-{{ partial "header-hero"  (dict "Content" . )}}
+    {{ partial "header-hero"  (dict "Content" . )}}
 {{end}}
 {{ define "navigation"}}
-{{ partial "navigation" (dict "Version" "trans") }}
+    {{ partial "navigation" (dict "Version" "trans") }}
+{{end}}
+{{ define "sub-navigation"}}
+    {{$list := (where .Pages.ByDate.Reverse "Type"  "work" )}}
+    {{ partial "navigation-sub" (dict "Context" $ "Menu" $list) }}
 {{end}}
 {{ define "main" }}
-    {{$list := (where .Pages.ByDate.Reverse "Type"  "work" )}}
+{{$list := (where .Pages.ByDate.Reverse "Type"  "work" )}}
     {{range $index, $content := $list}}
         {{with $content}}
             <div id="trigger-{{ $index }}">
                 <div id="section-{{ $index }}">
-             {{ .Render "summary" }}
+                    {{ .Render "summary" }}
                 </div>
             </div>
         {{end}}
