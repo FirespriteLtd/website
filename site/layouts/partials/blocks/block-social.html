@@ -1,7 +1,7 @@
 {{$perma := .Permalink | absURL}}
 {{$host := .Site.Params.host_name }}
-<div class="single-social-share">
-    <ul class="no-bullet">
+<div class="social-menu">
+    <ul class="menu vertical">
         {{ range $media := $.Site.Data.socialmedia.links}}
         <li class="">
             <div class="social-block {{$media.type | urlize}}">

@@ -194,3 +194,18 @@
 }
 
 
+// social buttons
+.social-menu {
+  ul {
+    li {
+       .social-block{
+         svg {
+           max-width: rem-calc(30);
+           max-height: rem-calc(30);
+         }
+       }
+    }
+  }
+}
+
+

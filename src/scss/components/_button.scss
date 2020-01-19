@@ -61,51 +61,6 @@ button{
 }
 
 
-// social buttons
-.social {
-  text-align: center;
-  ul {
-    margin: rem-calc(10) 0;
-    text-align: center;
-    display: inline-block;
-    li {
-      width: 100%;
-      max-width: 40px;
-      text-align: center;
-      display: inline-block;
-      margin: rem-calc(5) rem-calc(8);
-      a img {
-        display: block;
-        transition: all 250ms ease;
-      }
-      a {
-        position: relative;
-        border: 2px solid $primary-color;
-        border-radius: 50%;
-        display: block;
-        width: 40px;
-        height: 40px;
-        &:hover {
-          transform: scale(0.9);
-          transition: all 250ms ease;
-          img {
-            transform: translateY(-50%) scale(0.9);
-            transition: all 150ms ease;
-          }
-        }
-        img {
-          @include vertical-center;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          width: 20px;
-          height: 20px;
-        }
-      }
-    }
-  }
-}
-
 // social icon contact
 
 .social-icon{
