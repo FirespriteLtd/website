@@ -1,4 +1,4 @@
-#overlay-popup{
+.overlay-popup{
   display: flex;
   position: fixed;
   justify-content: center;
@@ -34,4 +34,15 @@
 
 }
 
-
+#buy-popup{
+  display: flex;
+  visibility: hidden;
+  background-color: rgba($secondary-color,1);
+  color: $white;
+  h3{
+    color: $primary-color;
+  }
+  h2{
+    color: $white;
+  }
+}

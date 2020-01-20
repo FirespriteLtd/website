@@ -79,3 +79,23 @@
     {{partial "pagination" . }}
 
 {{ end }}
+
+{{define "popup"}}
+<div id="buy-popup" class="overlay-popup">
+    <div class="grid-container text-center">
+        <h3>Buy Now</h3>
+        <h2>{{.Title}}</h2>
+        <p>Choose your platform</p>
+        <div class="grid-x grid-padding-x">
+            {{with .Params.buy}}
+                {{range .}}
+                <div class="cell auto">
+                    {{.platforms}}
+                    <a href="{{.url}}">{{.title}}</a>
+                </div>
+                {{end}}
+            {{end}}
+        </div>
+    </div>
+</div>
+{{end}}

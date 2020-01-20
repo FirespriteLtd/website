@@ -25,7 +25,8 @@ class TrailerHeader {
    createPopup(videoId){
 
     this.popupDiv = document.createElement("div");
-    this.popupDiv.id = "overlay-popup";
+    this.popupDiv.id = "trailer-popup";
+    this.popupDiv.className = "overlay-popup";
     document.body.append(this.popupDiv);
 
     const holder  = document.createElement("div");
@@ -40,13 +41,13 @@ class TrailerHeader {
     video.id ="videoPlayer"
     videoWrapper.append(video);
 
-    gsap.fromTo('#overlay-popup', {x:'100%'}, {x:'0', duration: 1, ease: Power2.easeInOut, onComplete: () => {
+    gsap.fromTo('#trailer-popup', {x:'100%'}, {x:'0', duration: 1, ease: Power2.easeInOut, onComplete: () => {
       this.createVideoPlayer('#videoPlayer', videoId);
      }
     })
 
     this.popupDiv.addEventListener('click', ()=> {
-       gsap.to('#overlay-popup',  {x:'100%', duration: 1, ease: Power2.easeInOut, onComplete: ()=>{
+       gsap.to('#trailer-popup',  {x:'100%', duration: 1, ease: Power2.easeInOut, onComplete: ()=>{
          this.destroy();
         }})
     })
