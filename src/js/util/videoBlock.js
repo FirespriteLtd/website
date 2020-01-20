@@ -47,10 +47,10 @@ class VideoBlock {
         player.play();
       })
       player.on('paused', () =>{
-        TweenLite.to(this.video,{opacity:0, duration:1, overwrite: true})
+        TweenLite.to(this.video,{autoAlpha:0, duration:1, overwrite: true})
       })
       player.on('playing', () =>{
-        TweenLite.to(this.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
+        TweenLite.to(this.video, {autoAlpha:1, duration: 1, overwrite: true, ease:Sine.easeIn});
       })
       return player;
     } else {
