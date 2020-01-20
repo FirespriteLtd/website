@@ -1,6 +1,8 @@
 import AnchorNav from "../util/anchor-nav";
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
+import fluidBox from  "../util/fluid-box-controller"
+import TrailerHeader from "../util/trailerHeader";
 
 export default {
     init() {
@@ -10,6 +12,7 @@ export default {
         // JavaScript to be fired on all pages, after page specific JS is fire
         const section = new SectionParallax();
         const controller = section.controller();
+        const trailer  = new TrailerHeader();
 
         const master = new HeaderBlock(controller);
 
@@ -22,11 +25,6 @@ export default {
             section.init(['header', ...sections]);
         }, 1000);
 
-        $('.image-fancy').on('openstart.fluidbox', () => {
-            setTimeout(()=>{
-                $('.fluidbox__overlay').height(document.getElementById("container-scroll").scrollHeight + $('body').innerHeight());
-            }, 100)
-
-        }).fluidbox();
+        fluidBox.init();
     },
 };
