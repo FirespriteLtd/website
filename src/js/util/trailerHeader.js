@@ -6,7 +6,6 @@ class TrailerHeader {
     this.button = document.getElementById('header-trailer');
     if(this.button) {
       this.video = this.button.dataset.video;
-     console.log('button', this.video)
       this.button.addEventListener('click', () => {this.init()});
     }
    }
@@ -20,7 +19,6 @@ class TrailerHeader {
         videoId = this.video;
       }
       this.createPopup(videoId);
-
     }
    }
 
@@ -30,32 +28,33 @@ class TrailerHeader {
     this.popupDiv.id = "overlay-popup";
     document.body.append(this.popupDiv);
 
+    const holder  = document.createElement("div");
+    holder.id ="videoHolder"
+    this.popupDiv.append(holder);
+
     const videoWrapper  = document.createElement("div");
     videoWrapper.id ="videoWrapper"
-    this.popupDiv.append(videoWrapper);
+    holder.append(videoWrapper);
 
     const video  = document.createElement("div");
     video.id ="videoPlayer"
     videoWrapper.append(video);
 
-    this.createVideoPlayer('#videoPlayer', videoId);
-
-    gsap.fromTo('#overlay-popup', {x:'100%'}, {x:'0', duration: 1, ease: Power2.easeInOut})
+    gsap.fromTo('#overlay-popup', {x:'100%'}, {x:'0', duration: 1, ease: Power2.easeInOut, onComplete: () => {
+      this.createVideoPlayer('#videoPlayer', videoId);
+     }
+    })
 
     this.popupDiv.addEventListener('click', ()=> {
        gsap.to('#overlay-popup',  {x:'100%', duration: 1, ease: Power2.easeInOut, onComplete: ()=>{
          this.destroy();
         }})
     })
-
-
-
    }
 
    createVideoPlayer(container,id){
     this.player = new YTPlayer(container);
     this.player.load(id, true);
-    //gsap.fromTo('#videoWrapper', {y:'20%', opacity:0}, {y:'0', opacity: 1, duration: 0.5, ease: Power2.easeInOut})
    }
 
    destroy(){
