@@ -62,6 +62,12 @@ export default {
 
   },
   finalize() {
-    gsap.fromTo('#loader-overlay', {x:0}, {x:'100%' , duration:1, ease: Power2.easeInOut });
+    const tl = gsap.timeline({repeat:0});
+    tl.fromTo('#loader-overlay', {x:0}, {x:'100%' , duration:1, ease: Power2.easeInOut });
+
+    if(document.getElementById('side-left')){
+      tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
+    }
+    tl.add(tl.fromTo('#side-right', {autoAlpha:0,x:300}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }))
   },
 };
