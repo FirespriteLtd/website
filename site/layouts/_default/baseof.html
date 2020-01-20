@@ -16,14 +16,14 @@
       {{ block "navigation" . }}{{ partial "navigation" (dict "Context" $ "Version" "")}}{{end}}
       {{ block "sub-navigation" . }}{{end}}
       {{ block "social-media" . }}{{partial "social-media" .}}{{end}}
-        <main>
+      <main>
             <div id="container-scroll">
                 {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}
                 {{ block "main" . }}{{end}}
                 {{ block "pusher" . }}{{end}}
                 {{ block "footer" . }}{{ partial "footer" . }}{{end}}
             </div>
-        </main>
+      </main>
   </div>
 </div>
 {{ block "navigation-mobile" . }}{{ partial "navigation-mobile" (dict "Context" $)}}{{end}}

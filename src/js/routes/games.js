@@ -22,6 +22,11 @@ export default {
             section.init(['header', ...sections]);
         }, 1000);
 
-        $('.image-fancy').fluidbox();
+        $('.image-fancy').on('openstart.fluidbox', () => {
+            setTimeout(()=>{
+                $('.fluidbox__overlay').height(document.getElementById("container-scroll").scrollHeight + $('body').innerHeight());
+            }, 100)
+
+        }).fluidbox();
     },
 };

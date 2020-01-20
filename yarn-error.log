@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/olafsiebert/.nvm/versions/node/v10.13.0/bin/node /Users/olafsiebert/.nvm/versions/node/v10.13.0/bin/yarn start
+  /Users/olafsiebert/.nvm/versions/node/v10.13.0/bin/node /Users/olafsiebert/.nvm/versions/node/v10.13.0/bin/yarn add mediumLightbox
 
 PATH: 
   /usr/local/sbin:/Users/olafsiebert/.nvm/versions/node/v10.13.0/bin:/Applications/MAMP/bin/php/php5.6.32/bin:/Library/Frameworks/GDAL.framework/Programs:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin
@@ -14,12 +14,17 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/olafsiebert/html/firesprite/package.json: Unexpected token c in JSON at position 3261
-      at JSON.parse (<anonymous>)
-      at /Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/mediumLightbox: Not found
+      at Request.params.callback [as _callback] (/Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:66947:18)
+      at Request.self.callback (/Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:140665:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:141637:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/Users/olafsiebert/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:141559:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
@@ -102,6 +107,7 @@ npm manifest:
       "custom-event-polyfill": "^1.0.7",
       "fluidbox": "^2.0.5",
       "fs": "^0.0.1-security",
+      "gsap": "./gsap-bonus.tgz",
       "imagemin-mozjpeg": "^8.0.0",
       "jquery": "^3.4.1",
       "jquery-validation": "^1.19.0",
@@ -113,10 +119,11 @@ npm manifest:
       "react-dom": "^16.12.0",
       "rellax": "^1.10.0",
       "scrollmagic": "^2.0.7",
-      "scrollmagic-plugin-gsap": "gpitot/scrollmagic-plugin-gsap",
-      "shufflejs": "^5.2.3",c
+      "scrollmagic-plugin-gsap": "^1.0.4",
+      "shufflejs": "^5.2.3",
       "slate-edit-list": "^0.12.1",
       "slick-carousel": "^1.8.1",
+      "smooth-scrollbar": "^8.5.1",
       "to-string-loader": "^1.1.6",
       "twitter-fetcher": "^18.0.2",
       "yaml-front-matter": "^4.1.0",
@@ -2779,6 +2786,11 @@ Lockfile:
     version "2.6.10"
     resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   
+  core-js@^2.6.9:
+    version "2.6.11"
+    resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
+    integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+  
   core-util-is@1.0.2, core-util-is@~1.0.0:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -4571,6 +4583,10 @@ Lockfile:
       section-matter "^1.0.0"
       strip-bom-string "^1.0.0"
   
+  gsap@./gsap-bonus.tgz:
+    version "3.0.5"
+    resolved "./gsap-bonus.tgz#800f918efed6e6c090300298aaad7f9e69ecfbc7"
+  
   gzip-size@^5.0.0:
     version "5.1.1"
     resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-5.1.1.tgz#cb9bee692f87c0612b232840a873904e4c135274"
@@ -5825,6 +5841,11 @@ Lockfile:
       strip-bom "^3.0.0"
       type-fest "^0.3.0"
   
+  load-script2@^2.0.1:
+    version "2.0.4"
+    resolved "https://registry.yarnpkg.com/load-script2/-/load-script2-2.0.4.tgz#b081952e4ccf4db2adddb7889507e2f0465dbfcf"
+    integrity sha512-WzZ2Df8QvWwGdjcJ7BYqcaojHGBC+Dg3oFsBg8gyz/mGyjCduBKdja+HkRo7BHoqt8sV5oil1Bc6Eyq6e40jfg==
+  
   loader-runner@^2.4.0:
     version "2.4.0"
     resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
@@ -5871,6 +5892,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
     dependencies:
       p-locate "^4.1.0"
+  
+  lodash-es@^4.17.15:
+    version "4.17.15"
+    resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+    integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
   
   lodash._reinterpolate@^3.0.0:
     version "3.0.0"
@@ -9170,9 +9196,10 @@ Lockfile:
       ajv "^6.10.2"
       ajv-keywords "^3.4.1"
   
-  scrollmagic-plugin-gsap@gpitot/scrollmagic-plugin-gsap:
-    version "1.0.3"
-    resolved "https://codeload.github.com/gpitot/scrollmagic-plugin-gsap/tar.gz/c401f5e1a2be372be61365fc6e6ac8bb85548b71"
+  scrollmagic-plugin-gsap@^1.0.4:
+    version "1.0.4"
+    resolved "https://registry.yarnpkg.com/scrollmagic-plugin-gsap/-/scrollmagic-plugin-gsap-1.0.4.tgz#793fcee2e9cd7054ac828f930a2e08ef1bc3719e"
+    integrity sha512-OLeo4J6V9wvnRP03/LJkgb5qkHIOzSckWX3hJ+Hh3uPJIfwttxCRRr4+w16WHPCQwZidUA9eEbtKeR7kyjdHVg==
     dependencies:
       "@types/gsap" "^1.20.1"
   
@@ -9475,6 +9502,15 @@ Lockfile:
   slick-carousel@^1.8.1:
     version "1.8.1"
     resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  
+  smooth-scrollbar@^8.5.1:
+    version "8.5.1"
+    resolved "https://registry.yarnpkg.com/smooth-scrollbar/-/smooth-scrollbar-8.5.1.tgz#826b567deaf6257c17d69e1dbddf72923f4b7c44"
+    integrity sha512-SSL3j6aMq59hCbtwYOnY37qMLAVCBM0MfCuvpaLuhe8a5BuM5GnmBHuGSuxU7zLbF2pOkiyX9SkNBlrrptCHcA==
+    dependencies:
+      core-js "^2.6.9"
+      lodash-es "^4.17.15"
+      tslib "^1.10.0"
   
   snapdragon-node@^2.0.1:
     version "2.1.1"
@@ -11010,6 +11046,13 @@ Lockfile:
     dependencies:
       buffer-crc32 "~0.2.3"
       fd-slicer "~1.1.0"
+  
+  yt-player@^3.4.3:
+    version "3.4.3"
+    resolved "https://registry.yarnpkg.com/yt-player/-/yt-player-3.4.3.tgz#88c0f2fb9a5c7b85a75930dee81bf3aa21480393"
+    integrity sha512-Ke5oM+qW8CR6aaK40mTxBff3hS4DXjyfmFkjg3eoaGt8fWQGyKFOFIpZqzNTR5c7Lu+xAG9SIvxCvbBPhCBbPg==
+    dependencies:
+      load-script2 "^2.0.1"
   
   zen-observable-ts@^0.8.20:
     version "0.8.20"

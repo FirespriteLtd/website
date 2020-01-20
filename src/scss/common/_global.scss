@@ -111,3 +111,8 @@ address{
   font-family: $header-font-family;
 }
 
+
+.fluidbox--closed .fluidbox__ghost{
+  transform: translate(0px, 0px) scale(0, 0);
+}
+
