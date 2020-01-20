@@ -1,8 +1,5 @@
 import $ from "jquery";
 
-$( window ).on('load', function() {
-        $('.loading').fadeOut('fast');
-});
 
 // import local dependencies
 import Router from './util/Router';

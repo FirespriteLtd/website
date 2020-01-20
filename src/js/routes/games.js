@@ -1,4 +1,6 @@
 import AnchorNav from "../util/anchor-nav";
+import HeaderBlock from "../util/headerBlock";
+import SectionParallax from "../util/sectionParallax";
 
 export default {
     init() {

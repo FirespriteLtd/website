@@ -1,6 +1,5 @@
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-const controller = new ScrollMagic.Controller({container: '#container-scroll'});
-import {gsap, Linear, Power2} from 'gsap/all';
+import {gsap, Linear} from 'gsap/all';
 
 class SectionParallax {
 

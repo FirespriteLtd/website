@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { gsap } from "gsap";
+import { gsap, Power2 } from "gsap";
 
 const offcanvasAnimation = () => {
 
@@ -62,6 +62,6 @@ export default {
 
   },
   finalize() {
-
+    gsap.fromTo('#loader-overlay', {x:0}, {x:'100%' , duration:1, ease: Power2.easeInOut });
   },
 };
