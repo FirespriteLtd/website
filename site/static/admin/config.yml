@@ -184,9 +184,9 @@ collections:
         widget: "relation"
         multiple: true
         collection: "games"
-        searchFields: ["title"]
+        searchFields: ["name"]
         valueField: "value"
-        displayFields: ["title"]
+        displayFields: ["name"]
 
   - name: "careers"
     label: "Careers"
