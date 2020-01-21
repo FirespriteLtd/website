@@ -6,8 +6,10 @@
 {{ partial "old-browser.html" . }}
 {{if .Site.Params.preloader }}
 <div id="loader-overlay" class="loading">
-    <div class="holder">
-        <div class="loader"><img src="/images/loading.gif" alt="loading"></div>
+    <div class="container">
+        <div class="holder">
+            <div class="loader"><img src="/images/loading.gif" alt="loading"></div>
+        </div>
     </div>
 </div>
 {{end}}

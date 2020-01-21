@@ -7,10 +7,16 @@
         width: 100vw;
         top: 0;
         left: 0;
-        background: #ff6969;
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100% );
         z-index: 10000;
     }
-    .loading > .holder {
+    .loading > .container {
+        position: relative;
+        background: #ff6969;
+        height: 100vh;
+        width: 100vw;
+    }
+    .loading > .container > .holder {
         position: absolute;
         top: 50%;
         left: 50%;

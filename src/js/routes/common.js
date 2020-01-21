@@ -62,8 +62,18 @@ export default {
 
   },
   finalize() {
+
+    const clipMask = 'polygon(0 0, 100% 0 , 100% 100%, 0 100% )';
+    const element = document.getElementById('loader-overlay');
+
     const tl = gsap.timeline({repeat:0});
-    tl.fromTo('#loader-overlay', {x:0}, {x:'100%' , duration:1, ease: Power2.easeInOut });
+    tl.to('#loader-overlay',  {clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
+      duration:1.5,
+      ease: Power2.easeInOut,
+      onUpdate: (value) => {
+        //element.style.clipPath = value;
+      }
+    });
 
     if(document.getElementById('side-left')){
       tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
