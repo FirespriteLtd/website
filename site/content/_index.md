@@ -6,6 +6,6 @@ featured_image:
   id: w6OCl9WXz2I
   src: /images/uploads/home-hero.jpg
 news_active: true
-twitter_active: false
+twitter_active: true
 ---
 # We deliver **world-firsts** in **creativity** and **technology**

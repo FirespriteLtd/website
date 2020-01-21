@@ -1,0 +1,66 @@
+.modal{
+  position: fixed;
+  display: block;
+  bottom: rem-calc(70);
+  right: rem-calc(70);
+  max-width: 420px;
+  min-width: 250px;
+  background-color: $primary-color;
+  z-index: 100;
+  padding: rem-calc(20);
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem-calc(15);
+  }
+
+  .modal-content{
+
+  }
+
+  &.tweet-container{
+    background-color: #1da1f2;
+    color: $white;
+    button{
+      color: $white;
+      font-size: 16px;
+      vertical-align: text-top;
+    }
+    h6 {
+      margin-bottom: 0;
+      span{
+        margin-right: rem-calc(5);
+      }
+      color: $white;
+    }
+
+    p{
+
+      font-size: rem-calc(12);
+      margin-bottom: rem-calc(12);
+      line-height: rem-calc(11);
+    }
+
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+
+    ul{
+      list-style: none;
+      margin: 0;
+    }
+
+    .interact{
+      margin-top: rem-calc(15);
+
+      font-weight: 700;
+      a{
+        margin-right: rem-calc(10);
+        text-decoration: none;
+      }
+    }
+  }
+}

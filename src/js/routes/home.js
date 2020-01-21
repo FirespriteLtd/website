@@ -2,11 +2,13 @@ import VideoBlock from "../util/videoBlock";
 import HeaderBlock from "../util/headerBlock";
 import SmoothScrollbar from 'smooth-scrollbar';
 import SectionParallax from "../util/sectionParallax";
+import TwitterBlock from "../util/twitterBlock";
 
 export default {
     init() {
         // JavaScript to be fired on all pages
-        console.log('home')
+        console.log('home');
+        new TwitterBlock();
 
     },
     finalize() {
@@ -25,21 +27,6 @@ export default {
             section.init(pinScene)
 
         }, 1000)
-
-        /*
-        var configProfile = {
-            "profile": {"screenName": 'RenaissancePRUK'},
-            "domId": 'tweet-post',
-            "maxTweets": 1,
-            "enableLinks": true,
-            "showUser": false,
-            "showTime": false,
-            "showImages": false,
-            "lang": 'en'
-        };
-        twitterFetcher.fetch(configProfile);
-         */
-
 
     },
 };
