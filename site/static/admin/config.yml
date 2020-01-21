@@ -139,7 +139,8 @@ collections:
           ]},
           {label: "Videos", name: "videos",  widget: "list", fields: [
             {name: id, label: Video, widget: image},
-            {name: name, label: name, widget: string}
+            {name: src, label: Image, widget: image},
+            {name: alt, label: Alt text, widget: string}
           ]},
         ]}
       - {label: "Buy", name: "buy", widget: list,  required: false, fields: [

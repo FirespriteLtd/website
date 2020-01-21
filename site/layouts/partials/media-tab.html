@@ -58,9 +58,9 @@
                 {{range . }}
 
                 <div class="cell">
-                    <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                    <button class="video-button" data-video="{{.id}}">
                         <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
-                    </a>
+                    </button>
                 </div>
 
                 {{end}}
