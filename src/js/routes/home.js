@@ -8,7 +8,7 @@ export default {
     init() {
         // JavaScript to be fired on all pages
         console.log('home');
-        new TwitterBlock();
+
 
     },
     finalize() {
@@ -26,7 +26,11 @@ export default {
             const pinScene = ['header','work','games','news'];
             section.init(pinScene)
 
-        }, 1000)
+        }, 500)
+
+        setTimeout(()=> {
+            new TwitterBlock();
+        },2000)
 
     },
 };

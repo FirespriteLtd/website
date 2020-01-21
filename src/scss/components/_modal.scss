@@ -8,6 +8,11 @@
   background-color: $primary-color;
   z-index: 100;
   padding: rem-calc(20);
+  visibility: hidden;
+
+  &.is-shown{
+    visibility: visible;
+  }
 
   .modal-header {
     display: flex;

@@ -51,10 +51,8 @@ class SideBarController {
   // Scrolling down/up
   if (currentY < this.previousY) {
    if (currentRatio > this.previousRatio && isIntersecting) {
-    console.log('scroll down enter');
     type = 'SDE'
    } else {
-    console.log('scroll down leave');
     type = 'SDL'
    }
   } else if (currentY > this.previousY && isIntersecting) {

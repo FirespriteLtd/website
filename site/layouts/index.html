@@ -14,10 +14,10 @@
 {{ end }}
 {{define "popup"}}
     {{if .Params.twitter_active}}
-    <div class="modal tweet-container">
+    <div id="tweet-modal" class="modal tweet-container">
         <div class="modal-header">
             <h6><span><i class="fab fa-twitter"></i></span>Twitter</h6>
-            <div><button><i class="fas fa-times"></i></button></div>
+            <div><button class="close"><i class="fas fa-times"></i></button></div>
         </div>
         <div id="twitter-feed" class="modal-content" data-feed="firespritegames" data-maxtweets="1">
             <p></p>
