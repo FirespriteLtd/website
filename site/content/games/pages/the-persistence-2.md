@@ -55,6 +55,10 @@ media:
       src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
+  videos:
+    - alt: test
+      id: test
+      src: /images/uploads/games-thepersistence-concept1.jpg
 buy:
   - platforms:
       - playstation 4
