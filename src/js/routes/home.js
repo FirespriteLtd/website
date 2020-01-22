@@ -1,6 +1,6 @@
 import VideoBlock from "../util/videoBlock";
 import HeaderBlock from "../util/headerBlock";
-import SmoothScrollbar from 'smooth-scrollbar';
+
 import SectionParallax from "../util/sectionParallax";
 import TwitterBlock from "../util/twitterBlock";
 
@@ -12,7 +12,7 @@ export default {
 
     },
     finalize() {
-        //SmoothScrollbar.init(document.querySelector('#container-scroll'));
+
 
         const section = new SectionParallax();
         const controller = section.controller();

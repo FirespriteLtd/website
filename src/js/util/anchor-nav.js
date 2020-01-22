@@ -13,7 +13,7 @@ class AnchorNav {
    this.nav.on('click', (e)=>{
       e.preventDefault();
       const section = `#section-${$(e.currentTarget).data('section')}`;
-      gsap.to('#container-scroll', {duration:1, scrollTo: section, ease:  Power2.easeInOut});
+      gsap.to(window, {duration:1, scrollTo: section, ease:  Power2.easeInOut});
    })
 
   }

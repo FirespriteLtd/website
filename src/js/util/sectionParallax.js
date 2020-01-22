@@ -1,27 +1,30 @@
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-import {gsap, Linear, Power4, Back} from 'gsap/all';
+import {gsap, Linear, Power4, Back, Power2} from 'gsap/all';
 import { ScrollToPlugin} from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 class SectionParallax {
 
   constructor() {
-
+   this.previousY = 0;
+   this.previousRatio = 0;
+   this.currentSection = '';
+   this.active = false;
   }
 
   controller() {
+
    this.controller = new ScrollMagic.Controller({refreshInterval:50});
+
    return this.controller;
   }
 
   init(sectionArr){
-
+   this.snapping(sectionArr);
    for(let i=0;i<sectionArr.length;i++) {
 
     const trigger = `#trigger-${sectionArr[i]}`;
     const section = `#section-${sectionArr[i]}`;
-
-    console.log('section', sectionArr[i])
 
     const tl = gsap.timeline({repeat: 0});
     tl.set(section, {z: 0, scaleZ: 1});
@@ -37,37 +40,111 @@ class SectionParallax {
    }
   }
 
-  snapping(trigger, section){
-   new ScrollMagic.Scene({
-    triggerHook: 'onLeave',
-    triggerElement: trigger,
-    offset: -10 // small offset added to prevent overscrolling accidentally triggering
+  snapping(sections){
+
+   const sectionList = sections.map(item => {
+    return `#trigger-${item}`
+   });
+
+   const thresholdArray = steps => Array(steps + 1)
+    .fill(0)
+    .map((_, index) => index / steps || 0);
+
+   let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+     const section = entry.target.id.split('-')[1];
+     console.log('is', this.active)
+
+     if(this.active){
+      return;
+     }
+
+     switch (this.scrollDirection(entry)) {
+      case 'SDE' : {
+
+       console.log('D ENTER SECTION', section)
+
+       this.active = true;
+       if(section !== this.currentSection ) {
+        this.currentSection = section;
+
+        gsap.to(window, {
+         duration:  this.speed(section),
+         scrollTo: `#trigger-${section}`,
+         override: false,
+         autoKill: false,
+         ease: Power4.easeOut,
+         onComplete: () => {
+          this.active = false;
+         }
+        });
+       }
+       break;
+      }
+      case 'SDL' : {
+       break;
+      }
+      case 'SUE' : {
+       console.log('U ENTER SECTION', section)
+       this.active = true;
+       if(section !== this.currentSection ) {
+        this.currentSection = section;
+        gsap.to(window, {
+         duration: this.speed(section),
+         scrollTo: `#trigger-${section}`,
+         override: false, autoKill: false,
+         ease: Power4.easeOut,
+         onComplete: () => {
+          this.active = false;
+         }});
+       }
+       break;
+      }
+      case 'SUL' : {
+       console.log('U ENTER SECTION', section)
+       break
+      }
+     }
+    })
+   }, { rootMargin: '-10% 0px -10% 0px'});
+
+   document.querySelectorAll(sectionList).forEach(block => {
+    observer.observe(block);
    })
-     .on('leave', function () {
-      console.log('is leaving')
-      gsap.to(window, 1, {scrollTo: {y: $(window).height() * (i - 1), autoKill: false}, ease: Power4.easeOut})
-
-     })
-     .addTo(this.controller);  // scene end
-
-
-   new ScrollMagic.Scene({
-    triggerElement: trigger,
-    triggerHook: 'onEnter',
-    offset: 50 // small offset added to prevent overscrolling accidentally triggering
-   })
-    .addTo(this.controller)
-    .on('enter', function () {
-     console.log('is entering')
-     gsap.to(window, 1, {
-      scrollTo: {
-       y: section,
-       autoKill: false
-      }, ease: Back.easeOut.config(1.7)
-     });
-    }); // scene end
   }
 
+ scrollDirection(entry) {
+  const currentY = entry.boundingClientRect.y;
+  const currentRatio = entry.intersectionRatio;
+  const isIntersecting = entry.isIntersecting;
+  let type;
+  if (currentY < this.previousY) {
+   if (currentRatio > this.previousRatio && isIntersecting) {
+    type = 'SDE'
+   } else {
+    type = 'SDL'
+   }
+  } else if (currentY > this.previousY && isIntersecting) {
+   if (currentRatio < this.previousRatio) {
+    type = 'SUL'
+   } else {
+    type = 'SUE'
+   }
+  }
+
+  this.previousY = currentY;
+  this.previousRatio = currentRatio;
+  return type;
+ }
+
+ speed(element){
+   const pos = document.documentElement.scrollTop;
+   const elmPos = document.getElementById('trigger-' + element).getBoundingClientRect();
+
+   console.log('speed',Math.abs(elmPos.top - pos)*1)
+   return Math.max(0.25, (Math.abs(elmPos - pos))/5)
+
+ }
 }
 
 

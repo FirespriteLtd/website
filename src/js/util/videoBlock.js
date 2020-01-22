@@ -81,7 +81,6 @@ class VideoBlock {
     });
 
     anim.on('enter', (event)=> {
-      console.log('ENTER', id)
       this.player.seek(0)
       this.player.play();
     });
