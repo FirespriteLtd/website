@@ -77,7 +77,8 @@ collections:
           ]},
           {label: "Videos", name: "videos",  widget: "list", fields: [
             {name: id, label: Video, widget: string},
-            {name: name, label: name, widget: string}
+            {name: src, label: Image, widget: image},
+            {name: alt, label: Name, widget: string}
           ]},
       ]}
       -  {label: "Testimonials", name: "Testimonials",  widget: "list", fields: [
@@ -138,9 +139,9 @@ collections:
             {name: alt, label: Alt text, widget: string}
           ]},
           {label: "Videos", name: "videos",  widget: "list", fields: [
-            {name: id, label: Video, widget: image},
+            {name: id, label: Video, widget: string},
             {name: src, label: Image, widget: image},
-            {name: alt, label: Alt text, widget: string}
+            {name: alt, label: Name, widget: string}
           ]},
         ]}
       - {label: "Buy", name: "buy", widget: list,  required: false, fields: [
@@ -169,6 +170,14 @@ collections:
     editor:
       preview: false
     fields:
+      - label: "Game"
+        name: "game"
+        widget: "relation"
+        multiple: false
+        collection: "games"
+        searchFields: ["title"]
+        valueField: "value"
+        displayFields: ["title"]
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Platforms"
@@ -179,15 +188,6 @@ collections:
         searchFields: ["name"]
         valueField: "value"
         displayFields: ["name"]
-      - label: "Game"
-        name: "game"
-        widget: "relation"
-        multiple: false
-        collection: "games"
-        searchFields: ["title"]
-        valueField: "value"
-        displayFields: ["title"]
-
   - name: "careers"
     label: "Careers"
     label_singular: "Careers"
