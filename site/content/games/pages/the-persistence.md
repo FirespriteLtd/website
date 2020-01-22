@@ -59,7 +59,7 @@ media:
     - alt: Launch Trailer
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
-    - alt: Launch Trailer
+    - alt: Teaser Trailer
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
 buy:
