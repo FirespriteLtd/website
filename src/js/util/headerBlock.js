@@ -70,7 +70,7 @@ class HeaderBlock {
    console.log('words')
    tl.add(gsap.from(chars, {opacity: 0, scaleY: 0, y: 80, duration: 0.8, ease: Expo.easeOut, stagger: 0.1}));
   }
-  if(!$.trim($('#header-summary').html())) {
+  if($.trim($('#header-summary').html())) {
    console.log('sum', $('#header-summary'))
    tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
   }
