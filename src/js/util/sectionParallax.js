@@ -17,11 +17,12 @@ class SectionParallax {
    for(let i=0;i<sectionArr.length;i++) {
 
     const tl = gsap.timeline({repeat:0});
-    tl.to(`#section-${sectionArr[i]}`, {z:-2000,scale: 3,  force3d: true, duration: 20, overwrite:false,  ease: Linear.easeInOut})
+    tl.set(`#trigger-${sectionArr[i]}`, {z:0, scale:1});
+    tl.fromTo(`#trigger-${sectionArr[i]}`,{z:0, scale:1}, {z:-1000, scale: 2,  duration: 20,  ease: Linear.easeInOut});
 
     new ScrollMagic.Scene({
      triggerElement:`#trigger-${sectionArr[i]}`,
-     triggerHook: 0.5,
+     triggerHook: 0,
      duration: '200%'
     })
      .setTween(tl)

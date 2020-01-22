@@ -28,9 +28,15 @@ body, html {
     overflow-y: scroll;
     height: 100vh;
     transform:translate3d(0,0,0);
-    transform-style: preserve-3d;
+    transform-style: flat;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
     backface-visibility: hidden;
+
+    > div {
+      transform:translate3d(0,0,0);
+      transform-style: flat;
+    }
 }
 
 // divider
