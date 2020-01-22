@@ -1,4 +1,5 @@
 import $ from "jquery";
+import MobileDetect from "mobile-detect";
 import { gsap, Power2 } from "gsap";
 
 const offcanvasAnimation = () => {
@@ -66,14 +67,16 @@ export default {
     const clipMask = 'polygon(0 0, 100% 0 , 100% 100%, 0 100% )';
     const element = document.getElementById('loader-overlay');
 
+    console.log('browser', window.navigator.userAgent);
+
     const tl = gsap.timeline({repeat:0});
-    tl.to('#loader-overlay',  {clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
+    tl.to('#loader-overlay',  {
+      '-webkit-clip-path':'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
+      clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
       duration:1.5,
-      ease: Power2.easeInOut,
-      onUpdate: (value) => {
-        //element.style.clipPath = value;
-      }
+      ease: Power2.easeInOut
     });
+
 
     if(document.getElementById('side-left')){
       tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
