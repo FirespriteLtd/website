@@ -17,39 +17,44 @@ const offcanvasAnimation = () => {
 }
 
 export default {
-  init() {
 
-    offcanvasAnimation();
+  mobileCheck(){
+    const mc = new MobileDetect(window.navigator.userAgent);
+    return mc.match('mobile');
+  },
+  mobile(){
 
+  },
+  desktop() {
     let p_scroll = 0;
     setTimeout(() => {
-    $('#container-scroll').scroll(function () {
-      if($('#container-scroll').scrollTop() !== 0) {
-        if ($('#container-scroll').scrollTop() > 15) {
-          $('.top-bar').addClass('is-stuck');
-          $('.title-bar').addClass('is-stuck');
-        } else {
-          $('.top-bar').removeClass('is-stuck');
-          $('.title-bar').removeClass('is-stuck');
-        }
-        if ($('#container-scroll').scrollTop() > 10) {
-          if ($('#container-scroll').scrollTop() < p_scroll) {
-            $('.top-bar').addClass('scroll-up');
-            $('.top-bar').removeClass('scroll-down');
+      $('#container-scroll').scroll(function () {
+        if($('#container-scroll').scrollTop() !== 0) {
+          if ($('#container-scroll').scrollTop() > 15) {
+            $('.top-bar').addClass('is-stuck');
+            $('.title-bar').addClass('is-stuck');
           } else {
-            $('.top-bar').addClass('scroll-down');
-            $('.top-bar').removeClass('scroll-up');
+            $('.top-bar').removeClass('is-stuck');
+            $('.title-bar').removeClass('is-stuck');
           }
+          if ($('#container-scroll').scrollTop() > 10) {
+            if ($('#container-scroll').scrollTop() < p_scroll) {
+              $('.top-bar').addClass('scroll-up');
+              $('.top-bar').removeClass('scroll-down');
+            } else {
+              $('.top-bar').addClass('scroll-down');
+              $('.top-bar').removeClass('scroll-up');
+            }
+          }
+          else{
+            $('.top-bar').removeClass('is-stuck');
+            $('.title-bar').removeClass('is-stuck');
+            $('.top-bar').removeClass('scroll-up');
+            $('.top-bar').removeClass('scroll-down');
+          }
+          p_scroll = $('#container-scroll').scrollTop();
         }
-        else{
-          $('.top-bar').removeClass('is-stuck');
-          $('.title-bar').removeClass('is-stuck');
-          $('.top-bar').removeClass('scroll-up');
-          $('.top-bar').removeClass('scroll-down');
-        }
-        p_scroll = $('#container-scroll').scrollTop();
-      }
-    })
+      })
     }, 500);
 
     setInterval(() => {
@@ -60,6 +65,19 @@ export default {
         $('.top-bar').removeClass('scroll-down');
       }
     },500);
+
+  },
+  init() {
+
+    offcanvasAnimation();
+
+    if(this.mobileCheck()){
+      this.mobile();
+    } else {
+      this.desktop();
+    }
+
+
 
   },
   finalize() {

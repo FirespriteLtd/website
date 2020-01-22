@@ -1,6 +1,5 @@
 import VideoBlock from "../util/videoBlock";
 import HeaderBlock from "../util/headerBlock";
-
 import SectionParallax from "../util/sectionParallax";
 import TwitterBlock from "../util/twitterBlock";
 
@@ -20,11 +19,10 @@ export default {
 
         setTimeout(()=> {
 
-            const work = new VideoBlock('work', controller);
-            const games = new VideoBlock('games', controller);
-            const careers = new VideoBlock('careers', controller);
-            const pinScene = ['header','work','games','news', 'careers'];
-            section.init(pinScene)
+            new VideoBlock('work', controller);
+            new VideoBlock('games', controller);
+            new VideoBlock('careers', controller);
+            section.init(['header','work','games','news', 'careers'])
 
         }, 500)
 
