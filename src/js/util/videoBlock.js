@@ -73,6 +73,7 @@ class VideoBlock {
       triggerElement: `#trigger-${id}`,
       triggerHook:0,
       duration: '90%',
+      offset: -10
     })
      .addTo(this.controller);
 
