@@ -22,8 +22,8 @@ class SectionParallax {
 
     new ScrollMagic.Scene({
      triggerElement:`#trigger-${sectionArr[i]}`,
-     triggerHook: 0,
-     duration: '200%'
+     triggerHook: 1,
+     duration: '100%'
     })
      .setTween(tl)
      .addTo(this.controller);
