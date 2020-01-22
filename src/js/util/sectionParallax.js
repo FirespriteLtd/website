@@ -55,23 +55,18 @@ class SectionParallax {
      const section = entry.target.id.split('-')[1];
      console.log('is', this.active)
 
-     if(this.active){
-      return;
-     }
-
      switch (this.scrollDirection(entry)) {
       case 'SDE' : {
 
        console.log('D ENTER SECTION', section)
 
-       this.active = true;
+       //this.active = true;
        if(section !== this.currentSection ) {
         this.currentSection = section;
 
         gsap.to(window, {
          duration:  this.speed(section),
          scrollTo: `#trigger-${section}`,
-         override: false,
          autoKill: false,
          ease: Power4.easeOut,
          onComplete: () => {
@@ -92,7 +87,7 @@ class SectionParallax {
         gsap.to(window, {
          duration: this.speed(section),
          scrollTo: `#trigger-${section}`,
-         override: false, autoKill: false,
+         autoKill: false,
          ease: Power4.easeOut,
          onComplete: () => {
           this.active = false;
@@ -106,7 +101,7 @@ class SectionParallax {
       }
      }
     })
-   }, { rootMargin: '-10% 0px -10% 0px'});
+   }, { rootMargin: '-10% 0px -50% 0px'});
 
    document.querySelectorAll(sectionList).forEach(block => {
     observer.observe(block);
@@ -139,10 +134,11 @@ class SectionParallax {
 
  speed(element){
    const pos = document.documentElement.scrollTop;
-   const elmPos = document.getElementById('trigger-' + element).getBoundingClientRect();
-
-   console.log('speed',Math.abs(elmPos.top - pos)*1)
-   return Math.max(0.25, (Math.abs(elmPos - pos))/5)
+   const bodyRect = document.body.getBoundingClientRect(),
+   elemRect = document.getElementById('trigger-'+element).getBoundingClientRect(),
+   offset   = elemRect.top - bodyRect.top;
+   console.log('pos',offset, pos ,'speed',Math.abs(offset - pos)/1000)
+   return Math.abs(offset- pos)/1000;
 
  }
 }
