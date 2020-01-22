@@ -8,7 +8,7 @@ class SectionParallax {
   }
 
   controller() {
-   this.controller = new ScrollMagic.Controller({refreshInterval:200, container: '#container-scroll'});
+   this.controller = new ScrollMagic.Controller({refreshInterval:50, container: '#container-scroll'});
    return this.controller;
   }
 

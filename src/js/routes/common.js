@@ -76,7 +76,7 @@ export default {
       duration:1.5,
       ease: Power2.easeInOut
     });
-
+    tl.set('#loader-overlay', {autoAlpha:0});
 
     if(document.getElementById('side-left')){
       tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
