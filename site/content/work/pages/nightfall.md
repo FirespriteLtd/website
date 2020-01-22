@@ -22,10 +22,10 @@ media:
     - alt: screen 2
       src: /images/uploads/work-runsackboyrun-screen1.jpg
   videos:
-    - alt: Olaf Siebert
+    - alt: Launch Trailer
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
-    - alt: Simona Krivickaite
+    - alt: Teaser Trailer
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
 Testimonials:
