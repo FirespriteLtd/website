@@ -1,6 +1,7 @@
 ---
 title: The Persistence
 date: 2018-07-24T09:43:47.559Z
+release_date: 2020-01-22T10:31:50.101Z
 order_status: Out now
 featured: false
 logo: /images/uploads/games-thepersistence-logo.png
@@ -15,7 +16,7 @@ featured_image:
   active: false
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
-video: 'vTr2jMSJZ4g'
+video: vTr2jMSJZ4g
 features:
   - title: All is not lost
     body: >-
@@ -54,15 +55,22 @@ media:
       src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
+  videos:
+    - alt: Launch Trailer
+      id: KaJXUV5jnTU
+      src: /images/uploads/video-placeholder.jpg
+    - alt: Launch Trailer
+      id: KaJXUV5jnTU
+      src: /images/uploads/video-placeholder.jpg
 buy:
-  - title: Amazon
-    platforms:
+  - platforms:
       - playstation 4
+    title: Amazon
     url: >-
       https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
-  - title: Steam
-    platforms:
+  - platforms:
       - pc
+    title: Steam
     url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
 ---
 ##### Can you survive?
