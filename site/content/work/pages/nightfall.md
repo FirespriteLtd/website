@@ -26,7 +26,7 @@ media:
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
     - alt: Simona Krivickaite
-      id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
+      id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
 Testimonials:
   - alt: Olaf Siebert
