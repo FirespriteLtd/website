@@ -56,10 +56,10 @@ class VideoBlock {
         player.play();
       })
       player.on('paused', () =>{
-        TweenLite.to(this.video,{autoAlpha:0, duration:1, overwrite: true})
+        TweenLite.to(this.video,{autoAlpha:0, duration:0.5, overwrite: true})
       })
       player.on('playing', () =>{
-        TweenLite.to(this.video, {autoAlpha:1, duration: 1, overwrite: true, ease:Sine.easeIn});
+        TweenLite.to(this.video, {autoAlpha:1, duration: 0.5, overwrite: true, ease:Sine.easeIn});
       })
       return player;
     } else {
@@ -109,8 +109,7 @@ class VideoBlock {
 
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
-      triggerHook: 1,
-      offset:30
+      triggerHook: 0.5,
     })
      .setTween(tl)
      .addTo(this.controller);

@@ -17,27 +17,16 @@ html {
 }
 
 body, html {
-  overflow: hidden;
+  //overflow: hidden;
   .off-canvas-content, main{
     overflow: hidden;
   }
 }
 
-#container-scroll {
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    overflow-x: hidden ;
-    height: 100vh;
-    transform:translate3d(0,0,0);
-    transform-style: flat;
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
-    backface-visibility: hidden;
-
-    > div {
-      transform:translate3d(0,0,0);
-      transform-style: flat;
-    }
+#container-scroll{
+  > div {
+    top:0;
+  }
 }
 
 // divider

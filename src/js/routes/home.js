@@ -23,7 +23,7 @@ export default {
             const work = new VideoBlock('work', controller);
             const games = new VideoBlock('games', controller);
             const careers = new VideoBlock('careers', controller);
-            const pinScene = ['header','work','games','news'];
+            const pinScene = ['header','work','games','news', 'careers'];
             section.init(pinScene)
 
         }, 500)
