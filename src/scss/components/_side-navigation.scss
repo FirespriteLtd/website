@@ -48,6 +48,14 @@
       width: 4px;
       height: rem-calc(16);
       background-color: $white;
+      transition: 500ms background-color ease-in-out;
+    }
+
+    &.is-active{
+      &:before{
+      background-color: $black;
+      transition: 500ms background-color ease-in-out;
+      }
     }
 
     a{

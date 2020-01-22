@@ -31,7 +31,7 @@
                     {{ if site.Menus.home}}
                     <ul class="menu submenu" data-smooth-scroll>
                         {{ range site.Menus.home }}
-                        <li><a href="{{ .URL }}">{{- .Name -}}</a></li>
+                        <li {class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .URL }}">{{- .Name -}}</a></li>
                         {{end}}
                     </ul>
                     {{ end}}
@@ -40,7 +40,7 @@
                 {{ end }}
                 {{ if site.Params.custom_navbar }}
                     {{ range site.Menus.navbar }}
-                    <li >
+                    <li class="{{if eq $url ( trim .link "/") }}active{{end}}">
                         <a href="{{.URL}}">
                             {{- .Name -}}
                         </a>
@@ -49,17 +49,15 @@
                 {{ else }}
                     {{ if not (site.Params.cms_navbar) }}
                         {{ range where site.Pages "Type" "!=" "post" }}
-                        <li><a href="{{ .Permalink }}">
+                        <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .Permalink }}">
                             {{- .Title | markdownify -}}
                         </a></li>
                         {{ end }}
                     {{else}}
-
-                            {{ range site.Data.navigation.items}}
-
-                            <li class="{{if eq $url ( trim .link "/") }}active{{end}}"><a href="{{ .link }}">
+                            {{ range $index, $content := site.Data.navigation.items}}
+                            <li class="{{if eq $url ( trim $content.link "/") }}active{{end}}"><a href="{{ $content.link }}">
                                 {{- .name | markdownify -}}
-                                {{if eq ( trim .link "/") "careers" }}
+                                {{if eq ( trim $content.link "/") "careers" }}
                                         {{ partial "functions/get_count"  ( dict "Context" site)}}
                                 {{end}}
                             </a></li>

@@ -21,11 +21,18 @@
 .badge-wrapper{
   position:relative;
   display: inline-block;
-  width: rem-calc(35);
+  width: rem-calc(25);
+  top: -5px;
+  left: -8px;
   > span{
     position: absolute;
     top:50%;
     transform: translateY(-56%);
+    min-width: rem-calc(25);
+    min-height: rem-calc(25);
+    max-height: rem-calc(25);
+    padding: 6px 0;
+
   }
 }
 
@@ -78,7 +85,7 @@
 
       &.active{
         a{
-          color: $primary-color;
+          color: $primary-color!important;
         }
       }
       .dropdown.menu > li.opens-left > .is-dropdown-submenu{

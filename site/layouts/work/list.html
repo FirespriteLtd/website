@@ -2,7 +2,7 @@
     {{ partial "header-hero"  (dict "Content" . )}}
 {{end}}
 {{ define "navigation"}}
-    {{ partial "navigation" (dict "Version" "trans") }}
+    {{ partial "navigation" (dict "Version" "trans" "Context" .) }}
 {{end}}
 {{ define "sub-navigation"}}
     {{$list := (where .Pages.ByDate.Reverse "Type"  "work" )}}

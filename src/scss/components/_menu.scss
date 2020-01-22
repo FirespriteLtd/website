@@ -15,6 +15,7 @@
         transition: 0.5s color ease-in-out;
       }
     }
+
   }
   &:not(.vertical) {
     &:last-child {
@@ -154,10 +155,6 @@
     padding-top: 15px;
     text-align:  center;
     margin: 0 auto;
-
-    li {
-
-    }
   }
 
   .off-canvas-header {
@@ -187,6 +184,12 @@
       }
 
       &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &.active{
+      a{
         color: $primary-color;
       }
     }

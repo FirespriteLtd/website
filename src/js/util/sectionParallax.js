@@ -53,51 +53,22 @@ class SectionParallax {
    let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
      const section = entry.target.id.split('-')[1];
-     console.log('is', this.active)
-
      switch (this.scrollDirection(entry)) {
       case 'SDE' : {
-
-       console.log('D ENTER SECTION', section)
-
        //this.active = true;
        if(section !== this.currentSection ) {
         this.currentSection = section;
-
-        gsap.to(window, {
-         duration:  this.speed(section),
-         scrollTo: `#trigger-${section}`,
-         autoKill: false,
-         ease: Power4.easeOut,
-         onComplete: () => {
-          this.active = false;
-         }
-        });
+        this.sectionAnim(section);
        }
-       break;
-      }
-      case 'SDL' : {
        break;
       }
       case 'SUE' : {
-       console.log('U ENTER SECTION', section)
        this.active = true;
        if(section !== this.currentSection ) {
         this.currentSection = section;
-        gsap.to(window, {
-         duration: this.speed(section),
-         scrollTo: `#trigger-${section}`,
-         autoKill: false,
-         ease: Power4.easeOut,
-         onComplete: () => {
-          this.active = false;
-         }});
+        this.sectionAnim(section);
        }
        break;
-      }
-      case 'SUL' : {
-       console.log('U ENTER SECTION', section)
-       break
       }
      }
     })
@@ -106,6 +77,18 @@ class SectionParallax {
    document.querySelectorAll(sectionList).forEach(block => {
     observer.observe(block);
    })
+  }
+
+  sectionAnim(section){
+   this.navIndicator(section);
+   gsap.to(window, {
+    duration: this.speed(section),
+    scrollTo: `#trigger-${section}`,
+    autoKill: false,
+    ease: Power4.easeOut,
+    onComplete: () => {
+     this.active = false;
+    }});
   }
 
  scrollDirection(entry) {
@@ -137,9 +120,19 @@ class SectionParallax {
    const bodyRect = document.body.getBoundingClientRect(),
    elemRect = document.getElementById('trigger-'+element).getBoundingClientRect(),
    offset   = elemRect.top - bodyRect.top;
-   console.log('pos',offset, pos ,'speed',Math.abs(offset - pos)/800)
    return Math.abs(offset- pos)/800;
+ }
 
+ navIndicator(section){
+   const navigation = document.querySelectorAll('#sub-nav a');
+
+   navigation.forEach(item => {
+     if(item.getAttribute('data-section') === section) {
+      item.parentElement.classList.add('is-active');
+     } else {
+      item.parentElement.classList.remove('is-active');
+     }
+   });
  }
 }
 

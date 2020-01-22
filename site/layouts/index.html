@@ -2,7 +2,7 @@
     {{ partial "header-hero"  (dict "Content" . "ctx" $)}}
 {{end}}
 {{ define "navigation"}}
-    {{ partial "navigation" (dict "Version" "trans") }}
+    {{ partial "navigation" (dict "Version" "trans" "Context" .) }}
 {{end}}
 {{ define "main" }}
     {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "work"  )}}
