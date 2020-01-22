@@ -137,8 +137,8 @@ class SectionParallax {
    const bodyRect = document.body.getBoundingClientRect(),
    elemRect = document.getElementById('trigger-'+element).getBoundingClientRect(),
    offset   = elemRect.top - bodyRect.top;
-   console.log('pos',offset, pos ,'speed',Math.abs(offset - pos)/1000)
-   return Math.abs(offset- pos)/1000;
+   console.log('pos',offset, pos ,'speed',Math.abs(offset - pos)/800)
+   return Math.abs(offset- pos)/800;
 
  }
 }
