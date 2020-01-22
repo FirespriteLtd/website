@@ -173,10 +173,10 @@ collections:
       - label: "Game"
         name: "game"
         widget: "relation"
-        multiple: false
+        multiple: true
         collection: "games"
         searchFields: ["title"]
-        valueField: "value"
+        valueField: "title"
         displayFields: ["title"]
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
