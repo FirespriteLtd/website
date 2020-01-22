@@ -209,10 +209,24 @@
          svg {
            max-width: rem-calc(30);
            max-height: rem-calc(30);
+
+           @include breakpoint(small only){
+             max-width: rem-calc(20);
+             max-height: rem-calc(20);
+           }
          }
        }
     }
+
+    &.menu a{
+      @include breakpoint(small only){
+        padding-right: rem-calc(5px);
+        padding-left: rem-calc(5px);
+      }
+    }
   }
+
+
 }
 
 

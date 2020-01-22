@@ -6,6 +6,7 @@ import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
+import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
 gsap.defaultEase = Expo.easeOut;
 
@@ -19,15 +20,18 @@ class HeaderBlock {
  }
 
  start(){
+  const mc = new MobileDetect(window.navigator.userAgent);
   if(this.video.length){
-   this.videoController();
+   if(!mc.match('mobile')) {
+    this.videoController();
+   }
   }
   this.animHeader();
  }
 
  createVideoPlayer(){
   console.log('Create video')
-  const player = new YTPlayer('#ytplayer-header')
+  const player = new YTPlayer('#ytplayer-header');
   player.load(this.video.data('video'), true);
   player.setVolume(0);
   player.seek(20);
@@ -66,7 +70,7 @@ class HeaderBlock {
    console.log('words')
    tl.add(gsap.from(chars, {opacity: 0, scaleY: 0, y: 80, duration: 0.8, ease: Expo.easeOut, stagger: 0.1}));
   }
-  if($('#header-summary p').length) {
+  if(!$.trim($('#header-summary').html())) {
    console.log('sum', $('#header-summary'))
    tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
   }

@@ -83,6 +83,7 @@
     "jquery": "^3.4.1",
     "jquery-validation": "^1.19.0",
     "mkdirp": "^0.5.1",
+    "mobile-detect": "^1.4.4",
     "netlify-cms": "^2.10.2",
     "netlify-cms-app": "^2.10.1",
     "path": "^0.12.7",
