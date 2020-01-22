@@ -22,9 +22,9 @@ media:
     - alt: screen 2
       src: /images/uploads/work-runsackboyrun-screen1.jpg
   videos:
-    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+    - id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
       name: Launch Trailer
-    - id: /images/uploads/work-runsackboyrun-screen1.jpg
+    - id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
       name: Teaser Trailer
 Testimonials:
   - alt: Olaf Siebert
