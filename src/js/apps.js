@@ -10,6 +10,7 @@ import work from './routes/work';
 import games from './routes/games';
 import support from './routes/support';
 import careers from './routes/careers';
+import news from './routes/news';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -20,6 +21,7 @@ const routes = new Router({
     careers,
     games,
     work,
+    news,
     support
 });
 

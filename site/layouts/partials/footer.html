@@ -4,11 +4,11 @@
         <div class="grid-container">
             <div class="grid-x grid-padding-x grid-margin-y align-middle">
                 {{if site.Params.logo_large}}
-                    <div class="cell small-12 medium-shrink logo">
+                    <div class="cell small-12 large-shrink logo">
                         <a href="{{ site.BaseURL }}" rel="home" class="logo-main"><img src="{{ site.Params.logo_large}}" alt="{{ site.Title | safeHTML }}"></a>
                     </div>
                 {{end}}
-                <div class="cell small-12 medium-auto footer-menu">
+                <div class="cell small-12 large-auto footer-menu">
                     <ul class="menu" data-smooth-scroll>
 
                         {{ if not (.Site.Params.custom_navbar) }}
