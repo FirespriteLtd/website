@@ -27,18 +27,19 @@ export default {
   },
   desktop() {
     let p_scroll = 0;
+    const scrollArea = window;
     setTimeout(() => {
-      $('#container-scroll').scroll(function () {
-        if($('#container-scroll').scrollTop() !== 0) {
-          if ($('#container-scroll').scrollTop() > 15) {
+      $(scrollArea).scroll(function () {
+        if($(scrollArea).scrollTop() !== 0) {
+          if ($(scrollArea).scrollTop() > 15) {
             $('.top-bar').addClass('is-stuck');
             $('.title-bar').addClass('is-stuck');
           } else {
             $('.top-bar').removeClass('is-stuck');
             $('.title-bar').removeClass('is-stuck');
           }
-          if ($('#container-scroll').scrollTop() > 10) {
-            if ($('#container-scroll').scrollTop() < p_scroll) {
+          if ($(scrollArea).scrollTop() > 10) {
+            if ($(scrollArea).scrollTop() < p_scroll) {
               $('.top-bar').addClass('scroll-up');
               $('.top-bar').removeClass('scroll-down');
             } else {
@@ -52,13 +53,13 @@ export default {
             $('.top-bar').removeClass('scroll-up');
             $('.top-bar').removeClass('scroll-down');
           }
-          p_scroll = $('#container-scroll').scrollTop();
+          p_scroll = $(scrollArea).scrollTop();
         }
       })
     }, 500);
 
     setInterval(() => {
-      if($('#container-scroll').scrollTop() === 0) {
+      if($(scrollArea).scrollTop() === 0) {
         $('.top-bar').removeClass('is-stuck');
         $('.title-bar').removeClass('is-stuck');
         $('.top-bar').removeClass('scroll-up');
@@ -74,6 +75,7 @@ export default {
     if(this.mobileCheck()){
       this.mobile();
     } else {
+      console.log('start desktop menu')
       this.desktop();
     }
 
