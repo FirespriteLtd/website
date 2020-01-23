@@ -1,7 +1,4 @@
-import {gsap, Power2} from "gsap/all";
-
 class SideBarController {
-
 
  constructor(sidebar) {
   this.sidebar = $(sidebar);
@@ -15,17 +12,13 @@ class SideBarController {
    .fill(0)
    .map((_, index) => index / steps || 0)
   let observer = new IntersectionObserver((entries, observer) => {
-
    entries.forEach(entry => {
-
     switch (this.scrollDirection(entry)) {
      case 'SDE' : {
-      console.log('invert')
-      $('.social-menu').addClass('invert');
-      break;
+       this.sidebar.addClass('invert');
+       break;
      }
      case 'SDL' : {
-      console.log('normal')
        this.sidebar.removeClass('invert');
        break;
      }
@@ -39,7 +32,7 @@ class SideBarController {
      }
     }
    })
-  }, {rootMargin: '-45% 0px 0% 0px', threshold: thresholdArray(20)});
+  }, {rootMargin: '-30% 0px -50% 0px', threshold: thresholdArray(20)});
   let myDiv = document.getElementById('container-scroll');
   myDiv.querySelectorAll(":scope  .b-c-white").forEach(block => {
    observer.observe(block);
