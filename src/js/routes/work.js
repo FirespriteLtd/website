@@ -4,11 +4,10 @@ import 'fluidbox';
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import SideBarController from "../util/sideBarController";
-import AnchorNav from "../util/anchor-nav";
+
 
 export default {
     init() {
-        new AnchorNav('#sub-nav');
     },
     finalize() {
 
@@ -20,11 +19,10 @@ export default {
          for(let x=0; x < ($('#container-scroll > div').length -1); x++) {
             sections.push(x);
          };
-        console.log('Sections', sections.length, sections)
 
         setTimeout(()=> {
             section.init(['header', ...sections]);
-            const socialMediaNav = new SideBarController('.social-menu');
+            new SideBarController('.social-menu');
         }, 1000);
 
         $('#testimonial').slick({

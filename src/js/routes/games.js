@@ -1,4 +1,3 @@
-import AnchorNav from "../util/anchor-nav";
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import fluidBox from  "../util/fluid-box-controller"
@@ -7,7 +6,6 @@ import Popup from "../util/popup";
 
 export default {
     init() {
-        new AnchorNav('#sub-nav');
         new Popup();
     },
     finalize() {
@@ -15,7 +13,6 @@ export default {
         const section = new SectionParallax();
         const controller = section.controller();
         const trailer  = new VideoPopup();
-
         const master = new HeaderBlock(controller);
 
         const sections = []
@@ -25,7 +22,6 @@ export default {
         setTimeout(()=> {
             section.init(['header', ...sections]);
         }, 1000);
-
         fluidBox.init();
     },
 };

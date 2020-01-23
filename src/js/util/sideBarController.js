@@ -15,29 +15,31 @@ class SideBarController {
    .fill(0)
    .map((_, index) => index / steps || 0)
   let observer = new IntersectionObserver((entries, observer) => {
+
    entries.forEach(entry => {
+
     switch (this.scrollDirection(entry)) {
      case 'SDE' : {
-      this.sidebar.addClass('invert');
+      console.log('invert')
+      $('.social-menu').addClass('invert');
       break;
      }
      case 'SDL' : {
-      console.log('SDL', entry.target);
+      console.log('normal')
        this.sidebar.removeClass('invert');
        break;
      }
      case 'SUE' : {
-      console.log('SUE', entry.target);
       this.sidebar.addClass('invert');
       break;
      }
      case 'SUL' : {
       this.sidebar.removeClass('invert');
-      break
+      break;
      }
     }
    })
-  }, {rootMargin: '-45% 0px -45% 0px', threshold: thresholdArray(20)});
+  }, {rootMargin: '-45% 0px 0% 0px', threshold: thresholdArray(20)});
   let myDiv = document.getElementById('container-scroll');
   myDiv.querySelectorAll(":scope  .b-c-white").forEach(block => {
    observer.observe(block);
@@ -67,6 +69,7 @@ class SideBarController {
 
   this.previousY = currentY;
   this.previousRatio = currentRatio;
+
   return type;
  }
 

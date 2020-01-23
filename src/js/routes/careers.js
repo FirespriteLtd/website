@@ -2,6 +2,7 @@ import $ from 'jquery'
 import 'slick-carousel';
 import SectionParallax from "../util/sectionParallax";
 import HeaderBlock from "../util/headerBlock";
+import SideBarController from "../util/sideBarController";
 
 export default {
     init() {
@@ -15,6 +16,7 @@ export default {
 
         setTimeout(()=> {
             section.init(['header']);
+            new SideBarController('.social-menu');
         }, 1000);
 
         // JavaScript to be fired on all pages, after page specific JS is fire

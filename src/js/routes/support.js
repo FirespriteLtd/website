@@ -1,11 +1,12 @@
 import $ from 'jquery';
 import "jquery-validation"
+import SideBarController from "../util/sideBarController";
 
 export default {
     init() {
     },
     finalize() {
-
+        new SideBarController('.social-menu');
         let error = false;
         $('#thanks').hide();
         $('#sending').hide();
