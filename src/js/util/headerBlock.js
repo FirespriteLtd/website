@@ -72,7 +72,9 @@ class HeaderBlock {
   }
   if($.trim($('#header-summary').html())) {
    console.log('sum', $('#header-summary'))
-   tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
+   if(!$('#header-summary > h1').length) {
+    tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
+   }
   }
   if($('#header-buy').length) {
    console.log('buy')
