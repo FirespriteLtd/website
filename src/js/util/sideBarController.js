@@ -12,6 +12,7 @@ class SideBarController {
    .fill(0)
    .map((_, index) => index / steps || 0)
   let observer = new IntersectionObserver((entries, observer) => {
+   console.log('entry', entries)
    entries.forEach(entry => {
     switch (this.scrollDirection(entry)) {
      case 'SDE' : {
