@@ -1,19 +1,15 @@
-<div class="grid-container">
-    <div class="grid-x align-center m-t-60">
-        <div class="cell footer-social-media">
-            <ul class="no-bullet">
-                {{ $title := .Site.Title}}
-                {{ range $media := $.Site.Data.socialmedia.links}}
-                <li class="">
-                    <div class="social-block {{$media.type | urlize}}">
-                        <a href="{{$media.url}}"
-                           aria-label="{{$media.type}} {{ $title }}">
-                            <i class="icon fab fa-{{$media.id | urlize}}"></i>
-                        </a>
-                    </div>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-    </div>
+<div class="social-menu">
+    <ul class="menu vertical">
+        {{ $title := .Site.Title}}
+        {{ range $media := $.Site.Data.socialmedia.links}}
+        <li class="">
+            <div class="social-icon {{$media.type | urlize}}">
+                <a href="{{$media.url}}"
+                   aria-label="{{$media.type}} {{ $title }}">
+                    <i class="icon {{$media.id}}"></i>
+                </a>
+            </div>
+        </li>
+        {{ end }}
+    </ul>
 </div>

@@ -4,7 +4,7 @@
 
 custom_navbar= false
 cms_navbar = true
-preloader = true
+preloader = false
 host_name = ""
 description = "Marmalade Game Studio was founded on a passion and commitment to create great gameplay experiences for mobile and connected devices. We prototype, reflect, and test with target audiences to craft games that people love to play. Headquartered in London, UK with a further studio in Lisbon, Portugal, our goal is to continuously develop compelling high…"
 logo_large="/images/logo-full.png"

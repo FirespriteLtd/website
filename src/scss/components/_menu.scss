@@ -199,16 +199,15 @@
 
 // social buttons
 .social-menu {
-
   &.invert{
-    .social-block .icon {
+    .social-icon .icon {
       color: black!important;
     }
   }
 
   ul {
     li {
-       .social-block{
+       .social-icon{
          svg {
            max-width: rem-calc(30);
            max-height: rem-calc(30);
@@ -228,8 +227,27 @@
       }
     }
   }
+}
 
+.social-share-menu{
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .share-label {
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    padding: 0 rem-calc(10);
+  }
+
+  .social-block{
+    svg {
+      max-width: rem-calc(30);
+      max-height: rem-calc(30);
+    }
+  }
 }
 
 

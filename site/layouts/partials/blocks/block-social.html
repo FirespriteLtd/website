@@ -1,29 +1,44 @@
 {{$perma := .Permalink | absURL}}
 {{$host := .Site.Params.host_name }}
-<div class="social-menu">
-    <ul class="menu vertical">
+<div class="social-share-menu">
+    <div class="share-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
+            <path fill="#000" fill-rule="nonzero" d="M12.05 9.8c1.494 0 2.7 1.206 2.7 2.7 0 1.494-1.206 2.7-2.7 2.7a2.696 2.696 0 0 1-2.7-2.7 2.4 2.4 0 0 1 .081-.621l-3.942-2.07A2.66 2.66 0 0 1 3.5 10.7 2.696 2.696 0 0 1 .8 8c0-1.494 1.206-2.7 2.7-2.7.792 0 1.494.351 1.989.891l3.942-2.07A2.4 2.4 0 0 1 9.35 3.5c0-1.494 1.206-2.7 2.7-2.7 1.494 0 2.7 1.206 2.7 2.7 0 1.494-1.206 2.7-2.7 2.7a2.692 2.692 0 0 1-1.989-.891l-3.942 2.07a2.4 2.4 0 0 1 0 1.242l3.942 2.07A2.66 2.66 0 0 1 12.05 9.8z"/>
+        </svg>
+    </div>
+    <div class="share-label">
+        Share
+    </div>
+    <div class="share-menu">
+    <ul class="menu">
         {{ range $media := $.Site.Data.socialmedia.links}}
-        <li class="">
-            <div class="social-block {{$media.type | urlize}}">
-            {{if eq $media.type "Facebook" }}
-                {{with $media }}
-                {{$link := "https://www.facebook.com/sharer/sharer.php?u="}}
-                 {{ block "social-link" (dict "content" . "shareLink" $link "perma" $perma "host" $host) }} {{end}}
-                {{end}}
-            {{end}}
-            {{if eq $media.type "Twitter" }}
-                {{$link := "http://twitter.com/share?text=test&url="}}
-                {{with $media }}
-                    {{ block "social-link" (dict "content" . "shareLink" $link "perma" $perma "host" $host)}} {{end}}
-                {{end}}
-            {{end}}
-            </div>
-        </li>
+                <li class="">
+
+                    {{if eq $media.type "Facebook" }}
+                    <div class="social-block social-icon  {{$media.type | urlize}}">
+                        {{with $media }}
+                        {{$link := "https://www.facebook.com/sharer/sharer.php?u="}}
+                         {{ block "social-link" (dict "content" . "shareLink" $link "perma" $perma "host" $host) }} {{end}}
+                        {{end}}
+                    </div>
+                    {{end}}
+                    {{if eq $media.type "Twitter" }}
+                    <div class="social-block social-icon  {{$media.type | urlize}}">
+                        {{$link := "http://twitter.com/share?text=test&url="}}
+                        {{with $media }}
+                            {{ block "social-link" (dict "content" . "shareLink" $link "perma" $perma "host" $host)}} {{end}}
+                        {{end}}
+                    </div>
+                    {{end}}
+
+
+                </li>
         {{ end }}
     </ul>
+    </div>
 </div>
 
 {{define "social-link"}}
 <a href="{{.shareLink}}{{.host}}{{ .perma }}"
-   aria-label="{{.content.type}}" target="_blank"><i class="icon fab fa-{{.content.id | urlize}}"></i></a>
+   aria-label="{{.content.type}}" target="_blank"><i class="icon {{.content.id}}"></i></a>
 {{end}}
