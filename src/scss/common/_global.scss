@@ -96,13 +96,19 @@ address{
 
 .badge{
   font-size: rem-calc(12);
-  min-width: rem-calc(36);
-  min-height: rem-calc(36);
-  max-height: rem-calc(36);
-  padding: rem-calc(12) 0;
+  min-width: rem-calc(25);
+  min-height: rem-calc(25);
+  max-height: rem-calc(25);
   margin-left: 10px;
-  line-height: rem-calc(12);
+  line-height: rem-calc(16);
   font-family: $header-font-family;
+  top:rem-calc(24);
+}
+
+.accordion-title{
+  .badge{
+    position: absolute;
+  }
 }
 
 
