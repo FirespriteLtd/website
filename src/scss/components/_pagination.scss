@@ -9,17 +9,27 @@
     width: rem-calc(50);
     height: rem-calc(50);
     margin-right: rem-calc(5);
+    margin-left: rem-calc(5);
 
     &:not(.current) {
-      background-color: $dark-gray;
+      background-color: #464646;
     }
 
     &:hover {
-      background-color: $primary-color;
+      background-color: $white;
+      color: $secondary-color;
+      a{
+        background-color: $white;
+        color: $secondary-color;
+      }
     }
   }
   li:first-child, li:last-child {
     display: flex;
+  }
+
+  .pagination-next, .pagination-previous, .pagination__item--first,  .pagination__item--last,{
+    font-size: 14px;
   }
 }
 
