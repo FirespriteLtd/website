@@ -210,6 +210,7 @@
   }
 
   ul {
+    text-align: center;
     li {
        .social-icon{
          svg {
@@ -248,8 +249,8 @@
 
   .social-block{
     svg {
-      max-width: rem-calc(30);
-      max-height: rem-calc(30);
+      max-width: rem-calc(25);
+      max-height: rem-calc(25);
     }
   }
 }

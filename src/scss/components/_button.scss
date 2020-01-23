@@ -150,10 +150,9 @@ button{
   }
 
   &:hover{
-    background-color: $secondary-color;
-    .icon-text{
-      color: $white;
-    }
+    background-color: $light-gray!important;
+
+
   }
 
   &.facebook{
