@@ -24,7 +24,7 @@
     <div class="grid-container tabs-content" data-tabs-content="media-tabs">
         {{with .screenshots}}
             <div class="tabs-panel is-active" id="screenshots">
-                <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+                <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
                     {{range . }}
 
                         <div class="cell">
@@ -39,7 +39,7 @@
         {{end}}
         {{with .concepts}}
         <div class="tabs-panel" id="concepts">
-            <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+            <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
                 {{range . }}
 
                 <div class="cell">
@@ -54,7 +54,7 @@
         {{end}}
         {{with .videos}}
         <div class="tabs-panel" id="videos">
-            <div class="grid-x grid-padding-x small-up-1 medium-up-3 align-center-middle">
+            <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
                 {{range . }}
 
                 <div class="cell">
