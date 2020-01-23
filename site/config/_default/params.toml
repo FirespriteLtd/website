@@ -52,6 +52,12 @@ address_format = "en-us"
     show_logo = false
 
 ############################
+## News
+############################
+[news]
+  archive_menu_detail = false
+
+############################
 ## Maps
 ############################
 [map]

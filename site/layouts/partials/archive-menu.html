@@ -7,7 +7,7 @@
 {{ $.Scratch.Set "month" "" }}
 {{ $current := . }}
 {{ $pages := (where .Site.RegularPages "Type" $type )}}
-
+{{ $archiveDetail := .Site.Params.news.archive_menu_detail}}
 <ul class="archive-menu accordion" data-accordion>
     {{ range ($pages.GroupByDate "2006") }}
     {{ if (gt .Key 2000) }}
@@ -32,12 +32,13 @@
                 {{ if (eq ($.Scratch.Get "monthCount") 1) }}
                 {{ $.Scratch.Set "monthCount" 0 }}
                 {{ $.Scratch.Set "month" (.Date.Format "January") }}
+                {{ $.Scratch.Set "monthnum" (.Date.Format "01") }}
 
                 {{end}}
                 {{end}}
                 {{ $.Scratch.Set "monthCount" 1 }}
                 {{ $listMonth:= (where .Pages "Type" $type)}}
-
+                {{if $archiveDetail}}
                 <li class="accordion-item {{if eq $current.Params.archm ($.Scratch.Get "month" )}}is-active{{end}}" data-accordion-item><a href="#" class="accordion-title">{{ $.Scratch.Get "month" }}({{len $listMonth}})</a>
                     <div class="accordion-content" data-tab-content>
                         {{with $listMonth}}
@@ -49,6 +50,12 @@
                         {{end}}
                     </div>
                 </li>
+                {{else}}
+                <li class="{{if eq $current.Params.archm ($.Scratch.Get "month" )}}is-active{{end}}">
+                    {{$month := $.Scratch.Get "monthnum"  }}
+                    <a href="/news/{{$.Scratch.Get "year"}}/{{$month}}" >{{ $.Scratch.Get "month" }}({{len $listMonth}})</a>
+                </li>
+                {{end}}
                 {{end}}
             </ul>
         </div>
