@@ -23,13 +23,6 @@ class VideoPopup {
       bt.addEventListener('click', ()=> {
        this.open(videoId)
       });
-
-      document.addEventListener("click", (e) => {
-       console.log(e.target)
-       if(e.target === document.querySelector('#videoHolder')){
-        this.close('.overlay-popup.is-shown')
-       }
-      });
     }
    }
 
@@ -52,6 +45,10 @@ class VideoPopup {
     video.className ="videoPlayer"
     videoWrapper.append(video);
 
+    this.popupDiv.addEventListener("click", (e) => {
+      this.close('.overlay-popup.is-shown')
+    });
+
    }
 
    open(id){
@@ -63,7 +60,8 @@ class VideoPopup {
    }
 
    close(id){
-    gsap.to(`${id}`,  {x:'100%', duration: 1, ease: Power2.easeInOut, onComplete: ()=>{
+    console.log('closing it')
+    gsap.fromTo(`${id}`,{x:0},  {x:'100%', duration: 1, ease: Power2.easeInOut, onComplete: ()=>{
       this.destroy();
      }})
    }
