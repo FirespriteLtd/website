@@ -23,14 +23,9 @@
     url = "/contact"
     weight = 4
 [[secondary]]
-    identifier = "terms"
-    name = "Terms & Conditions"
-    url = "/terms_conditions"
-    weight = 1
-[[secondary]]
     identifier = "privacy"
     name = "Privacy Policy"
     url = "/privacy"
-    weight = 2
+    weight = 1
 
 
