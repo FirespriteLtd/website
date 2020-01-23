@@ -4,4 +4,12 @@
       color: $primary-color;
     }
   }
+
+  #next-article{
+    h2{
+      @extend h3;
+      color: white;
+      padding: 0 10%;
+    }
+  }
 }
