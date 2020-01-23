@@ -1,86 +1,88 @@
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import {gsap, Linear, Power4, Back, Power2} from 'gsap/all';
-import { ScrollToPlugin} from "gsap/ScrollToPlugin";
+import {ScrollToPlugin} from "gsap/ScrollToPlugin";
+
 gsap.registerPlugin(ScrollToPlugin);
 
 class SectionParallax {
 
-  constructor() {
-   this.previousY = 0;
-   this.previousRatio = 0;
-   this.currentSection = '';
-   this.active = false;
-  }
+ constructor() {
+  this.previousY = 0;
+  this.previousRatio = 0;
+  this.currentSection = '';
+  this.active = true;
+ }
 
-  controller() {
+ controller() {
 
-   this.controller = new ScrollMagic.Controller({refreshInterval:50});
+  this.controller = new ScrollMagic.Controller({refreshInterval: 50});
 
-   return this.controller;
-  }
+  return this.controller;
+ }
 
-  init(sectionArr){
-   this.snapping(sectionArr);
-   for(let i=0;i<sectionArr.length;i++) {
+ init(sectionArr) {
+  this.anchoreNav();
+  this.snapping(sectionArr);
 
-    const trigger = `#trigger-${sectionArr[i]}`;
-    const section = `#section-${sectionArr[i]}`;
+  for (let i = 0; i < sectionArr.length; i++) {
 
-    const tl = gsap.timeline({repeat: 0});
-    tl.set(section, {z: 0, scaleZ: 1});
-    tl.fromTo(section, {y: 0, scaleZ: 1}, {y: '100%', scaleZ: 1, duration: 20, ease: Linear.easeInOut});
+   const trigger = `#trigger-${sectionArr[i]}`;
+   const section = `#section-${sectionArr[i]}`;
 
-    new ScrollMagic.Scene({
-     triggerElement: trigger,
-     triggerHook: 0,
-     duration: '200%'
-    })
-     .setTween(tl)
-     .addTo(this.controller);
-   }
-  }
+   const tl = gsap.timeline({repeat: 0});
+   tl.set(section, {z: 0, scaleZ: 1});
+   tl.fromTo(section, {y: 0, scaleZ: 1}, {y: '100%', scaleZ: 1, duration: 20, ease: Linear.easeInOut});
 
-  snapping(sections){
-
-   const sectionList = sections.map(item => {
-    return `#trigger-${item}`
-   });
-
-   const thresholdArray = steps => Array(steps + 1)
-    .fill(0)
-    .map((_, index) => index / steps || 0);
-
-   let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-     const section = entry.target.id.split('-')[1];
-     switch (this.scrollDirection(entry)) {
-      case 'SDE' : {
-       //this.active = true;
-       if(section !== this.currentSection ) {
-        this.currentSection = section;
-        this.sectionAnim(section);
-       }
-       break;
-      }
-      case 'SUE' : {
-       this.active = true;
-       if(section !== this.currentSection ) {
-        this.currentSection = section;
-        this.sectionAnim(section);
-       }
-       break;
-      }
-     }
-    })
-   }, { rootMargin: '-10% 0px -50% 0px'});
-
-   document.querySelectorAll(sectionList).forEach(block => {
-    observer.observe(block);
+   new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: 0,
+    duration: '200%'
    })
+    .setTween(tl)
+    .addTo(this.controller);
   }
+ }
 
-  sectionAnim(section){
-   this.navIndicator(section);
+ snapping(sections) {
+
+  const sectionList = sections.map(item => {
+   return `#trigger-${item}`
+  });
+
+  const thresholdArray = steps => Array(steps + 1)
+   .fill(0)
+   .map((_, index) => index / steps || 0);
+
+  let observer = new IntersectionObserver((entries, observer) => {
+   entries.forEach(entry => {
+    const section = entry.target.id.split('-')[1];
+    switch (this.scrollDirection(entry)) {
+     case 'SDE' : {
+      if (section !== this.currentSection) {
+       this.currentSection = section;
+       this.sectionAnim(section);
+      }
+      break;
+     }
+     case 'SUE' : {
+      if (section !== this.currentSection) {
+       this.currentSection = section;
+       this.sectionAnim(section);
+      }
+      break;
+     }
+    }
+   })
+  }, {rootMargin: '-10% 0px -50% 0px'});
+
+  document.querySelectorAll(sectionList).forEach(block => {
+   observer.observe(block);
+  })
+ }
+
+ sectionAnim(section) {
+  this.navIndicator(section);
+  if(this.active) {
    gsap.to(window, {
     duration: this.speed(section),
     scrollTo: `#trigger-${section}`,
@@ -88,8 +90,10 @@ class SectionParallax {
     ease: Power4.easeOut,
     onComplete: () => {
      this.active = false;
-    }});
+    }
+   });
   }
+ }
 
  scrollDirection(entry) {
   const currentY = entry.boundingClientRect.y;
@@ -115,24 +119,46 @@ class SectionParallax {
   return type;
  }
 
- speed(element){
-   const pos = document.documentElement.scrollTop;
-   const bodyRect = document.body.getBoundingClientRect(),
-   elemRect = document.getElementById('trigger-'+element).getBoundingClientRect(),
-   offset   = elemRect.top - bodyRect.top;
-   return Math.abs(offset- pos)/800;
+ speed(element) {
+  const pos = document.documentElement.scrollTop;
+  const bodyRect = document.body.getBoundingClientRect(),
+   elemRect = document.getElementById('trigger-' + element).getBoundingClientRect(),
+   offset = elemRect.top - bodyRect.top;
+  return Math.abs(offset - pos) / 800;
  }
 
- navIndicator(section){
-   const navigation = document.querySelectorAll('#sub-nav a');
+ navIndicator(section) {
+  const navigation = document.querySelectorAll('#sub-nav a');
 
-   navigation.forEach(item => {
-     if(item.getAttribute('data-section') === section) {
-      item.parentElement.classList.add('is-active');
-     } else {
-      item.parentElement.classList.remove('is-active');
+  navigation.forEach(item => {
+   if (item.getAttribute('data-section') === section) {
+    item.parentElement.classList.add('is-active');
+   } else {
+    item.parentElement.classList.remove('is-active');
+   }
+  });
+ }
+
+ anchoreNav() {
+  const nav = document.querySelectorAll('#sub-nav a');
+  nav.forEach(item => {
+   const section = `#trigger-${item.getAttribute('data-section')}`;
+   item.addEventListener('click', e => {
+    e.preventDefault();
+    this.active = false;
+    gsap.to(window, {
+     duration: 1,
+     scrollTo: section,
+     overrider: true, autoKill: false,
+     ease: Power2.easeInOut,
+     onComplete: () => {
+      console.log('active', this.active)
+      this.active = true;
      }
-   });
+    });
+   })
+  })
+
  }
 }
 

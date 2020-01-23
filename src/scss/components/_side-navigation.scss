@@ -20,9 +20,11 @@
     left: 0;
     .holder{
       > div{
-        //position: fixed;
-        left: 10px;
+        left: 30px;
         width: auto;
+        @include breakpoint(small only){
+          left: 15px
+        }
       }
     }
   }
@@ -30,7 +32,7 @@
     right:0;
     .holder{
       > div{
-        right: 0;
+        right: 5px;
         width: auto;
       }
     }
@@ -40,30 +42,42 @@
 #sub-nav{
 
   li{
-    margin-bottom: rem-calc(10);
+    margin-bottom: rem-calc(20);
+    height: rem-calc(30);
     overflow: hidden;
     &:before{
       @include pseudo();
       margin-top: rem-calc(2);
-      width: 4px;
-      height: rem-calc(16);
+      width: 5px;
+      height: rem-calc(30);
       background-color: $white;
       transition: 500ms background-color ease-in-out;
     }
 
-    &.is-active{
-      &:before{
+    &.is-active {
+      &:before {
       background-color: $black;
       transition: 500ms background-color ease-in-out;
       }
     }
 
+    &:hover {
+      a{
+        color:  $white;
+      }
+      &:before {
+        background-color: $white;
+        transition: 500ms background-color ease-in-out;
+      }
+    }
+
     a{
+      padding: rem-calc(7 0 7 20);
       margin-left: -100%;
       transition: 500ms margin-left ease-in-out;
     }
 
-    &:hover{
+    &:hover {
       a{
         margin-left: 0;
         transition: 500ms margin-left ease-in-out;

@@ -1,3 +1,5 @@
+import {gsap, Power2} from "gsap/all";
+
 class SideBarController {
 
 
@@ -67,6 +69,8 @@ class SideBarController {
   this.previousRatio = currentRatio;
   return type;
  }
+
+
 
 }
 

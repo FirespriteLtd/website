@@ -5,15 +5,14 @@ gsap.registerPlugin(ScrollToPlugin);
 class AnchorNav {
   constructor(nav) {
     this.nav = $(`${nav} a`);
-    this.init();
+    //this.init();
   }
 
   init(){
-
    this.nav.on('click', (e)=>{
       e.preventDefault();
-      const section = `#section-${$(e.currentTarget).data('section')}`;
-      gsap.to(window, {duration:1, scrollTo: section, ease:  Power2.easeInOut});
+      const section = `#trigger-${$(e.currentTarget).data('section')}`;
+      gsap.to(window, {duration:1, scrollTo: section, overrider: true, autoKill: false, ease:  Power2.easeInOut});
    })
 
   }
