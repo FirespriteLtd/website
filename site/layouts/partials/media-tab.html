@@ -59,7 +59,14 @@
 
                 <div class="cell">
                     <button class="video-button" data-video="{{.id}}">
-                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                        <figure>
+                            <span>
+                                <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                            </span>
+                            <figcaption class="f-c-white">
+                                {{ .alt }}
+                            </figcaption>
+                        </figure>
                     </button>
                 </div>
 
