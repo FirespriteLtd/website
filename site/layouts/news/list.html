@@ -4,7 +4,7 @@
         {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "news")}}
         <div id="news" class="grid-container">
             <div class="grid-x grid-padding-x">
-                <div class="cell small-12 medium-8 large-9">
+                <div class="cell small-12  large-9">
                     <h2>Latest News</h2>
                         {{ "<!-- Taxonomy Menu -->" | safeHTML }}
                         {{partial "taxonomy-menu" (dict "Context" . "Tox" "news/categories") }}
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell small-12 medium-4 large-3 white-aside">
+                <div class="cell small-12  large-3 white-aside">
                     {{ "<!-- Archive Menu -->" | safeHTML }}
                     <aside>
                         {{partial "archive-menu" .}}
