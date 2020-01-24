@@ -88,8 +88,8 @@ class HeaderBlock {
    {
    triggerElement: $('.master-header'),
     triggerHook:0,
-    duration: '90%',
-    offset: -10
+    duration: '30%',
+    offset:-10
   })
 
 
