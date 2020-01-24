@@ -59,7 +59,7 @@ class VideoBlock {
 
       })
       player.on('playing', () =>{
-        gsap.fromTo(this.video,{opacity:0, z:0},  {opacity:1, z:0, duration: 1, overwrite: true, ease:Sine.easeIn});
+        gsap.to(this.video,{opacity:1, z:0, duration: 1, overwrite: true, ease:Sine.easeIn});
       })
       return player;
     } else {
@@ -77,7 +77,7 @@ class VideoBlock {
      .addTo(this.controller);
 
     anim.on('leave', (event)=> {
-      gsap.fromTo(this.video,{opacity:1, z:0},{opacity:0, z:0, duration:0.5, overwrite: true, onComplete: () =>{
+      gsap.to(this.video,{opacity:0, z:0, duration:0.5, overwrite: true, onComplete: () =>{
           this.player.pause();
         }})
 
