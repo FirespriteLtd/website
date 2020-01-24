@@ -1,5 +1,5 @@
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-import {gsap, Linear, Power4, Back, Power2} from 'gsap/all';
+import {gsap, Linear, Power4, Back, Power2, Sine} from 'gsap/all';
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -16,7 +16,7 @@ class SectionParallax {
 
  controller() {
 
-  this.controller = new ScrollMagic.Controller({refreshInterval: 50});
+  this.controller = new ScrollMagic.Controller({refreshInterval: 200});
 
   return this.controller;
  }
@@ -33,7 +33,7 @@ class SectionParallax {
 
    const tl = gsap.timeline({repeat: 0});
    tl.set(section, {z: 0, scaleZ: 1});
-   tl.fromTo(section, {y: 0, scaleZ: 1}, {y: '100%', scaleZ: 1, duration: 20, ease: Linear.easeInOut});
+   tl.fromTo(section, {y: 0, scaleZ: 1}, {y: '100%', scaleZ: 1, duration: 20, ease: Sine.easeInOut});
 
    new ScrollMagic.Scene({
     triggerElement: trigger,

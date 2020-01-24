@@ -40,9 +40,9 @@ class HeaderBlock {
    player.play();
   })
   player.on('playing', () =>{
-   TweenLite.to(this.video,
-    {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
-  })
+   gsap.to(this.video,
+    {opacity:1, duration: .2,z:0, overwrite: true, ease:Sine.easeIn});
+  });
   return player;
  }
 
@@ -88,7 +88,7 @@ class HeaderBlock {
    {
    triggerElement: $('.master-header'),
     triggerHook:0,
-    duration: '10%',
+    duration: '40%',
   })
 
 
@@ -96,7 +96,7 @@ class HeaderBlock {
 
   anim.on('leave', (event)=> {
    gsap.to(this.video,
-    {opacity:0, duration:1, overwrite: true, onComplete: () =>{
+    {opacity:0,z:0, duration:.2, overwrite: true, onComplete: () =>{
       player.pause();
      }})
   });

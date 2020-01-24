@@ -80,7 +80,7 @@
 
         {{ else }}
             {{with .Content.Params.featured_image}}
-            <div  class="video-wrapper video-background" data-video="{{ .id }}" style="background-image: url('{{ .src }}')">
+            <div  class="video-wrapper video-background" data-video="{{ .id }}">
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-header" ></div></div>
             </div>
             {{end}}
