@@ -95,10 +95,8 @@ class HeaderBlock {
    .addTo(this.controller)
 
   anim.on('leave', (event)=> {
-   gsap.to(this.video,
-    {opacity:0,z:0, duration:.2, overwrite: true, onComplete: () =>{
-      player.pause();
-     }})
+   //player.pause();
+
   });
 
   anim.on('enter', (event)=> {

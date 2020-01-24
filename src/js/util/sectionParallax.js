@@ -60,26 +60,22 @@ class SectionParallax {
    entries.forEach(entry => {
     const section = entry.target.id.split('-')[1];
     let current = this.scrollDirection(entry);
-    if (section !== this.currentSection) {
      if (current !== dir) {
       dir = current;
+
       switch (current) {
        case 'SDE' : {
-        this.currentSection = section;
-        this.sectionAnim(section);
-        break;
-       }
-       case 'SUE' : {
-
+        if (section !== this.currentSection) {
          this.currentSection = section;
+         console.log('ENTER', section)
          this.sectionAnim(section);
+        }
         break;
        }
       }
      }
-    }
    })
-  }, {rootMargin: '-60% 0px -30% 0px', threshold:thresholdArray(20)}); //
+  }, {threshold:thresholdArray(100)}); //
 
   document.querySelectorAll(sectionList).forEach(block => {
    observer.observe(block);
@@ -98,7 +94,7 @@ class SectionParallax {
     autoKill: false,
     ease: Power4.easeOut,
     onComplete: () => {
-     scope.active = true;
+     this.active = true;
     }
    });
   }
