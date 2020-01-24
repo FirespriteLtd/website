@@ -10,6 +10,7 @@ class SectionParallax {
   this.previousY = 0;
   this.previousRatio = 0;
   this.currentSection = '';
+  this.direction = '';
   this.active = true;
  }
 
@@ -22,6 +23,7 @@ class SectionParallax {
 
  init(sectionArr) {
   this.anchoreNav();
+  this.sidbarReveal();
   this.snapping(sectionArr);
 
   for (let i = 0; i < sectionArr.length; i++) {
@@ -44,6 +46,7 @@ class SectionParallax {
  }
 
  snapping(sections) {
+  let dir = '';
 
   const sectionList = sections.map(item => {
    return `#trigger-${item}`
@@ -56,40 +59,46 @@ class SectionParallax {
   let observer = new IntersectionObserver((entries, observer) => {
    entries.forEach(entry => {
     const section = entry.target.id.split('-')[1];
-    switch (this.scrollDirection(entry)) {
-     case 'SDE' : {
-      if (section !== this.currentSection) {
-       this.currentSection = section;
-       this.sectionAnim(section);
+    let current = this.scrollDirection(entry);
+    if (section !== this.currentSection) {
+     if (current !== dir) {
+      dir = current;
+      switch (current) {
+       case 'SDE' : {
+        this.currentSection = section;
+        this.sectionAnim(section);
+        break;
+       }
+       case 'SUE' : {
+
+         this.currentSection = section;
+         this.sectionAnim(section);
+        break;
+       }
       }
-      break;
-     }
-     case 'SUE' : {
-      if (section !== this.currentSection) {
-       this.currentSection = section;
-       this.sectionAnim(section);
-      }
-      break;
      }
     }
    })
-  }, {rootMargin: '-10% 0px -50% 0px'});
+  }, {rootMargin: '-60% 0px -30% 0px', threshold:thresholdArray(20)}); //
 
   document.querySelectorAll(sectionList).forEach(block => {
    observer.observe(block);
   })
  }
 
+
  sectionAnim(section) {
   this.navIndicator(section);
+  const scope = this;
   if(this.active) {
+   this.active = false;
    gsap.to(window, {
     duration: this.speed(section),
     scrollTo: `#trigger-${section}`,
     autoKill: false,
     ease: Power4.easeOut,
     onComplete: () => {
-     this.active = false;
+     scope.active = true;
     }
    });
   }
@@ -141,6 +150,7 @@ class SectionParallax {
 
  anchoreNav() {
   const nav = document.querySelectorAll('#sub-nav a');
+
   nav.forEach(item => {
    const section = `#trigger-${item.getAttribute('data-section')}`;
    item.addEventListener('click', e => {
@@ -158,7 +168,50 @@ class SectionParallax {
     });
    })
   })
+ }
 
+ sidbarReveal(){
+  let dir = '';
+  const thresholdArray = steps => Array(steps + 1)
+   .fill(0)
+   .map((_, index) => index / steps || 0);
+  let observer = new IntersectionObserver((entries, observer) => {
+   entries.forEach(entry => {
+      let current = this.scrollDirection(entry);
+      if(current !== dir) {
+       dir = current;
+       switch (current) {
+        case 'SDE' : {
+         this.hideSideNav();
+         break;
+        }
+        case 'SDL' : {
+         this.showSideNav();
+         break;
+        }
+        case 'SUE' : {
+         this.hideSideNav();
+         break;
+        }
+        case 'SUL' : {
+         this.showSideNav();
+         break;
+        }
+       }
+      }
+   })
+  }, {threshold:thresholdArray(20)});
+
+  observer.observe(document.getElementById('footer'));
+
+ }
+
+ hideSideNav(){
+  gsap.to('.side-nav',{autoAlpha:0, duration:.4, overrider:false, ease: Power2.easeInOut});
+ }
+
+ showSideNav(){
+  gsap.to('.side-nav',{autoAlpha:1, duration:.4, override: false,ease: Power2.easeInOut});
  }
 }
 
