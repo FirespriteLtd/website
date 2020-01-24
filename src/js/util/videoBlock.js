@@ -72,7 +72,7 @@ class VideoBlock {
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook:0,
-      duration: '90%',
+      duration: '30%',
       offset: -10
     })
      .addTo(this.controller);
