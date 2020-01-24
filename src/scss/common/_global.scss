@@ -5,8 +5,12 @@
 
 html {
   text-rendering: optimizeLegibility;
+  scroll-snap-type: y proximity;
+  -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
-
+  backface-visibility: hidden;
+  position: relative;
+  overflow-x: hidden;
   @include breakpoint(small only){
     font-size: 16px;
   }
@@ -16,14 +20,22 @@ html {
   outline: none!important;
 }
 
-body, html {
 
+.home, .work, .games {
+  #container-scroll {
+    > div {
+      position: relative;
+      width: 100vw;
+      max-height: 100vh;
+      scroll-snap-align: start;
+      //overflow: hidden;
+    }
+  }
+  #footer {
+    scroll-snap-align: start;
+  }
 }
 
-#container-scroll{
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
 
 // divider
 hr.divider{

@@ -2,11 +2,13 @@ import VideoBlock from "../util/videoBlock";
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import TwitterBlock from "../util/twitterBlock";
+import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
 
 export default {
     init() {
         // JavaScript to be fired on all pages
         console.log('home');
+
 
 
     },
@@ -23,6 +25,8 @@ export default {
             new VideoBlock('games', controller);
             new VideoBlock('careers', controller);
             section.init(['header','work','games','news', 'careers'])
+
+            scrollSnapPolyfill();
 
         }, 500)
 

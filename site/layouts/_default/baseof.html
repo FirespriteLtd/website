@@ -13,8 +13,6 @@
     </div>
 </div>
 {{end}}
-<div  class="off-canvas-wrapper">
-  <div class="off-canvas-content" data-off-canvas-content>
       {{ block "navigation" . }}{{ partial "navigation" (dict "Context" $ "Version" "")}}{{end}}
       {{ block "sub-navigation" . }}{{end}}
       {{ block "social-media" . }}{{partial "social-media" .}}{{end}}
@@ -26,8 +24,8 @@
                 {{ block "footer" . }}{{ partial "footer" . }}{{end}}
             </div>
       </main>
-  </div>
-</div>
+
+
 {{ block "navigation-mobile" . }}{{ partial "navigation-mobile" (dict "Context" $)}}{{end}}
 {{ block "foot" . }}{{ partial "foot" . }}{{end}}
 {{ block "popup" . }}{{end}}
