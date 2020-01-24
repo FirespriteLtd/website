@@ -16,24 +16,54 @@ class SectionParallax {
 
  controller() {
 
-  this.controller = new ScrollMagic.Controller({refreshInterval: 200});
+  this.controller = new ScrollMagic.Controller({refreshInterval: 50});
 
   return this.controller;
  }
 
+
+
  init(sectionArr) {
   this.anchoreNav();
   this.sidbarReveal();
+  this.containerAnim(sectionArr);
+  this.contentAnim(sectionArr);
   //this.snapping(sectionArr);
 
+
+ }
+
+ containerAnim(sectionArr){
   for (let i = 0; i < sectionArr.length; i++) {
 
    const trigger = `#trigger-${sectionArr[i]}`;
    const section = `#section-${sectionArr[i]}`;
 
    const tl = gsap.timeline({repeat: 0});
-   tl.set(section, {z: 0, scaleZ: 1});
-   tl.fromTo(section, {y: 0, scaleZ: 1}, {y: '100%', scaleZ: 1, duration: 20, ease: Sine.easeInOut});
+   const tl2 = gsap.timeline({repeat: 0});
+   tl.fromTo(section, {y: 0, z: 0}, {y: '100%', z: 0, duration: 50, ease: Sine.easeInOut});
+   tl2.fromTo($(section).find('.contentWrapper'), {opacity:1}, {opacity:1, duration: 50, ease: Sine.easeInOut});
+
+
+   new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: 0,
+    duration: '200%'
+   })
+    .setTween(tl)
+    .addTo(this.controller);
+  }
+ }
+
+ contentAnim(sectionArr){
+  for (let i = 0; i < sectionArr.length; i++) {
+
+   const trigger = `#trigger-${sectionArr[i]}`;
+   const section = `#section-${sectionArr[i]}`;
+
+   const tl = gsap.timeline({repeat: 0});
+   tl.fromTo($(section).find('.contentWrapper'), {y:0}, {y:'-200%', duration: 25, ease: Sine.easeInOut});
+
 
    new ScrollMagic.Scene({
     triggerElement: trigger,

@@ -40,9 +40,8 @@ class HeaderBlock {
    player.play();
   })
   player.on('playing', () =>{
-   gsap.to(this.video,
-    {opacity:1, duration: .2,z:0, overwrite: true, ease:Sine.easeIn});
-  });
+   gsap.to(this.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
+  })
   return player;
  }
 
@@ -83,24 +82,27 @@ class HeaderBlock {
  }
 
  videoController() {
-  let player = this.createVideoPlayer();
+  this.player = this.createVideoPlayer();
   const anim = new ScrollMagic.Scene(
    {
    triggerElement: $('.master-header'),
     triggerHook:0,
-    duration: '40%',
+    duration: '10%',
   })
 
 
    .addTo(this.controller)
 
   anim.on('leave', (event)=> {
-   //player.pause();
+   gsap.to(this.video,{opacity:0, duration:2, onComplete: () => {
+     this.player.pause();
+    }})
 
   });
 
   anim.on('enter', (event)=> {
-   player.play();
+   this.player.seek(0)
+   this.player.play();
   });
 
   return anim;
