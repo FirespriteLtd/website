@@ -14,7 +14,7 @@ featured_image:
   active: false
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
-video: vTr2jMSJZ4g
+video: iwMYzJaVzFI
 features:
   - title: All is not lost
     body: >-
@@ -54,11 +54,8 @@ media:
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
   videos:
-    - alt: Launch Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
-    - alt: Teaser Trailer
-      id: KaJXUV5jnTU
+    - alt: Gameplay Trailer
+      id: iwMYzJaVzFI
       src: /images/uploads/video-placeholder.jpg
 buy:
   - platforms:
