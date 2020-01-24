@@ -85,15 +85,14 @@
             <h2>{{.Title}}</h2>
             <p>Choose your platform</p>
             <div class="grid-x grid-padding-x">
-
+                {{range $index, $p := .Site.Data.platforms}}
+                <img src="{{.icon}}" alt="{{.name}}">
+                {{end}}
                 {{with .Param "games/platforms"}}
                     {{range $index, $platform := .}}{{if ne $index 0}}, {{end}}
                         <div class="cell auto">
-                            {{ $c = .}}
-                            {{range $index, $p := .Site.Data.platforms}}
-                            if()
-                            <img src="{{.icon}}" alt="{{.name}}">
-                            {{end}}
+
+
                         </div>
                     {{end}}
                 {{end}}
