@@ -24,7 +24,7 @@ class SectionParallax {
  init(sectionArr) {
   this.anchoreNav();
   this.sidbarReveal();
-  this.snapping(sectionArr);
+  //this.snapping(sectionArr);
 
   for (let i = 0; i < sectionArr.length; i++) {
 
