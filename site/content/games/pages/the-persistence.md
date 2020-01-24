@@ -63,9 +63,24 @@ media:
 buy:
   - platforms:
       - playstation 4
-    title: Amazon
+    title: Playstation Store
     url: >-
-      https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms:
+      - nintendo switch
+    title: Nintendo Store
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms:
+      - pc
+    title: Steam
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms:
+      - xbox one
+    title: Microsoft Store
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
 ---
 ##### Can you survive?
 
