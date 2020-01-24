@@ -5,18 +5,16 @@ release_date: 2020-01-22T10:31:50.101Z
 order_status: Out now
 featured: false
 logo: /images/uploads/games-thepersistence-logo.png
-genre: Sci-fi Horror
-players: 4 Players
-ratings: PEGI 18
+genre: Action Horror
+players: 1 Player
+ratings: PEGI 16
 games/platforms:
-  - pc
   - playstation 4
-  - xbox one
 featured_image:
   active: false
   alt: The Persistence
   src: /images/uploads/games-thepersistence.jpg
-video: vTr2jMSJZ4g
+video: iwMYzJaVzFI
 features:
   - title: All is not lost
     body: >-
@@ -56,22 +54,30 @@ media:
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
   videos:
-    - alt: Launch Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
-    - alt: Teaser Trailer
-      id: KaJXUV5jnTU
+    - alt: Gameplay Trailer
+      id: iwMYzJaVzFI
       src: /images/uploads/video-placeholder.jpg
 buy:
   - platforms:
       - playstation 4
-    title: Amazon
+    title: Playstation Store
     url: >-
-      https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms:
+      - nintendo switch
+    title: Nintendo Store
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
   - platforms:
       - pc
     title: Steam
-    url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms:
+      - xbox one
+    title: Microsoft Store
+    url: >-
+      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
 ---
 ##### Can you survive?
 
