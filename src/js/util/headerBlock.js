@@ -87,8 +87,9 @@ class HeaderBlock {
   const anim = new ScrollMagic.Scene(
    {
    triggerElement: $('.master-header'),
-   triggerHook:"onEnter",
-   duration: '50%',
+    triggerHook:0,
+    duration: '90%',
+    offset: -10
   })
 
 
