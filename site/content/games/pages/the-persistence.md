@@ -5,13 +5,11 @@ release_date: 2020-01-22T10:31:50.101Z
 order_status: Out now
 featured: false
 logo: /images/uploads/games-thepersistence-logo.png
-genre: Sci-fi Horror
-players: 4 Players
-ratings: PEGI 18
+genre: Action Horror
+players: 1 Player
+ratings: PEGI 16
 games/platforms:
-  - pc
   - playstation 4
-  - xbox one
 featured_image:
   active: false
   alt: The Persistence
@@ -68,10 +66,6 @@ buy:
     title: Amazon
     url: >-
       https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
-  - platforms:
-      - pc
-    title: Steam
-    url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
 ---
 ##### Can you survive?
 
