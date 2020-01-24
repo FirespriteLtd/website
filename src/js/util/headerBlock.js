@@ -87,14 +87,14 @@ class HeaderBlock {
    {
    triggerElement: $('.master-header'),
     triggerHook:0,
-    duration: '10%',
+    duration: '5%',
   })
 
 
    .addTo(this.controller)
 
   anim.on('leave', (event)=> {
-   gsap.to(this.video,{opacity:0, duration:2, onComplete: () => {
+   gsap.to(this.video,{opacity:0, duration:1, onComplete: () => {
      this.player.pause();
     }})
 

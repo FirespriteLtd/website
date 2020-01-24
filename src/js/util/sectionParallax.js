@@ -40,9 +40,8 @@ class SectionParallax {
    const section = `#section-${sectionArr[i]}`;
 
    const tl = gsap.timeline({repeat: 0});
-   const tl2 = gsap.timeline({repeat: 0});
-   tl.fromTo(section, {y: 0, z: 0}, {y: '100%', z: 0, duration: 50, ease: Sine.easeInOut});
-   tl2.fromTo($(section).find('.contentWrapper'), {opacity:1}, {opacity:1, duration: 50, ease: Sine.easeInOut});
+   tl.fromTo(section, {y: 0, z: 1}, {y: '100%', z: 1, duration: 10000, ease: Sine.easeInOut});
+
 
 
    new ScrollMagic.Scene({
@@ -62,7 +61,7 @@ class SectionParallax {
    const section = `#section-${sectionArr[i]}`;
 
    const tl = gsap.timeline({repeat: 0});
-   tl.fromTo($(section).find('.contentWrapper'), {y:0}, {y:'-200%', duration: 25, ease: Sine.easeInOut});
+   tl.fromTo($(section).find('.contentWrapper'), {y:0}, {y:'-200%', duration: 500, ease: Sine.easeInOut});
 
 
    new ScrollMagic.Scene({
