@@ -18,6 +18,16 @@
   .li {
     margin-bottom: rem-calc(60);
   }
+  @include breakpoint(small){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(large){
+    display: block;
+  }
 }
 
 
