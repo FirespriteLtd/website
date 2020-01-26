@@ -162,11 +162,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: $black;
-  }
 
-  .vertical.menu{
-    margin-top:150px;
+    .close{
+      padding: rem-calc(10 20);
+      font-size: 30px;
+      button {
+        color: white;
+      }
+    }
+
   }
 
   .vertical.menu li {
@@ -229,6 +233,23 @@
       @include breakpoint(small only){
         padding-right: rem-calc(5px);
         padding-left: rem-calc(5px);
+      }
+    }
+  }
+}
+
+.mobile{
+  .social-menu {
+    .menu.vertical{
+      margin-top: rem-calc(50);
+    }
+
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      a{
+        padding-bottom: 0;
+        padding-top: 0;
       }
     }
   }

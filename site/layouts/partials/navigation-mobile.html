@@ -1,6 +1,10 @@
 {{ $url := trim .Context.URL "/"}}
 {{ "<!-- navigation - mobile -->" | safeHTML }}
-<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+<div class="off-canvas position-right mobile" id="offCanvas" data-off-canvas>
+    <div class="off-canvas-header">
+        <div class="logo"></div>
+        <div class="close" data-close><button><i class="fas fa-times"></i></button></div>
+    </div>
     <div class="grid-container">
         <div class="grid-x align-center-middle" style="height: 85vh">
             <div class="cell">
@@ -64,7 +68,7 @@
 
             <div class="cell">
                 {{ "<!-- social -->" | safeHTML }}
-                {{ partial "blocks/block-social-page" .}}
+                {{ partial "blocks/block-social-page" site}}
             </div>
         </div>
     </div>

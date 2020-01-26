@@ -73,9 +73,8 @@ export default {
     offcanvasAnimation();
 
     if(this.mobileCheck()){
-      this.mobile();
+      this.desktop();
     } else {
-      console.log('start desktop menu')
       this.desktop();
     }
 
