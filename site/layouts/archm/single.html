@@ -4,7 +4,7 @@
 
         <div id="news" class="grid-container">
             <div class="grid-x grid-padding-x">
-                <div class="cell small-12 medium-9">
+                <div class="cell small-12 large-9">
                     {{ $archYear := .Date.Format "2006" }}
                     {{ $archMonth := .Date.Format "January" }}
 
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell small-12 medium-3 white-aside">
+                <div class="cell small-12 large-3 white-aside">
                     <aside>
                         {{partial "archive-menu" .}}
                     </aside>

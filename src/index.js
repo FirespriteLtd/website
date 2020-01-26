@@ -23,7 +23,7 @@ import 'foundation-sites/dist/js/plugins/foundation.util.motion.min';
 import 'foundation-sites/dist/js/plugins/foundation.toggler.min';
 import 'foundation-sites/dist/js/plugins/foundation.drilldown.min';
 //import 'foundation-sites/dist/js/plugins/foundation.equalizer.min';
-import 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min';
+//import 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min';
 //import 'foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
 import 'foundation-sites/dist/js/plugins/foundation.dropdown.min';
 import 'foundation-sites/dist/js/plugins/foundation.interchange.min';

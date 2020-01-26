@@ -23,6 +23,7 @@ class VideoBlock {
   }
 
   start(id){
+
     if(this.mobileCheck()){
       return;
     }
@@ -38,7 +39,7 @@ class VideoBlock {
 
   mobileCheck(){
     const mc = new MobileDetect(window.navigator.userAgent);
-    return mc.match('mobile');
+    return mc.match('mobile|tablet');
   }
 
   createVideoPlayer(id){
