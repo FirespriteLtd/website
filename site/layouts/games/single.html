@@ -85,16 +85,54 @@
             <h2>{{.Title}}</h2>
             <p>Choose your platform</p>
             <div class="grid-x grid-padding-x">
-                {{range $index, $p := .Site.Data.platforms}}
-                <img src="{{.icon}}" alt="{{.name}}">
-                {{end}}
+                {{$buy:= .Params.buy}}
                 {{with .Param "games/platforms"}}
-                    {{range $index, $platform := .}}{{if ne $index 0}}, {{end}}
                         <div class="cell auto">
+                            <div class="buy">
+                                <div class="buy-header">
 
+                                        {{range $index, $platform := .}}
+                                    <div>
+                                                <div class="b-icon">
+                                                {{range $index, $p := site.Data.platforms}}
+                                                    {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                                        <img src="{{$p.icon}}" alt="{{$p.name}}">
+                                                    {{end}}
+                                                {{end}}
+                                                </div>
+                                                <div class="b-header">
+                                                    {{range $index, $p := site.Data.platforms}}
+                                                    {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                                    <h5>{{$p.name}}</h5>
+                                                    {{end}}
+                                                    {{end}}
+                                                </div>
+                                    </div>
+                                        {{end}}
 
+                                </div>
+                                <div class="buy-list">
+                                {{range $index, $platform := .}}
+                                <div>
+                                    <ul class="menu vertical">
+                                            {{range $index, $b:= $buy}}
+                                                {{range .platforms}}
+                                                    {{if eq ( . | urlize ) ($platform | urlize )}}
+                                                    <li>
+
+                                                        <a href="{{$b.url}}">{{$b.title}}</a>
+
+                                                    </li>
+                                                    {{end}}
+                                                {{end}}
+
+                                            {{end}}
+                                    </ul>
+                                </div>
+                                {{end}}
+                                </div>
+                            </div>
                         </div>
-                    {{end}}
                 {{end}}
             </div>
         </div>
