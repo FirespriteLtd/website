@@ -34,9 +34,14 @@ import 'foundation-sites/dist/js/plugins/foundation.tabs.min';
 //import 'foundation-sites/dist/js/plugins/foundation.tooltip.min';
 //import 'foundation-sites/dist/js/plugins/foundation.util.imageLoader.min';
 
+
 Foundation.addToJquery($);
-Foundation.MediaQuery._init();
+
 $(document).foundation();
+$(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+    console.log('triggered');
+});
+
 
 /* ===========================================================================
  Fontawsome

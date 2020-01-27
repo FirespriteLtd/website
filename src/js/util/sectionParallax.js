@@ -28,9 +28,7 @@ class SectionParallax {
   this.sidbarReveal();
   this.containerAnim(sectionArr);
   this.contentAnim(sectionArr);
-  //this.snapping(sectionArr);
-
-
+  this.snapping(sectionArr);
  }
 
  containerAnim(sectionArr){
@@ -96,8 +94,7 @@ class SectionParallax {
        case 'SDE' : {
         if (section !== this.currentSection) {
          this.currentSection = section;
-         console.log('ENTER', section)
-         this.sectionAnim(section);
+         this.navIndicator(section);
         }
         break;
        }
@@ -111,23 +108,6 @@ class SectionParallax {
   })
  }
 
-
- sectionAnim(section) {
-  this.navIndicator(section);
-  const scope = this;
-  if(this.active) {
-   this.active = false;
-   gsap.to(window, {
-    duration: this.speed(section),
-    scrollTo: `#trigger-${section}`,
-    autoKill: false,
-    ease: Power4.easeOut,
-    onComplete: () => {
-     this.active = true;
-    }
-   });
-  }
- }
 
  scrollDirection(entry) {
   const currentY = entry.boundingClientRect.y;
@@ -179,15 +159,19 @@ class SectionParallax {
   nav.forEach(item => {
    const section = `#trigger-${item.getAttribute('data-section')}`;
    item.addEventListener('click', e => {
+
     e.preventDefault();
+    let scroll= document.querySelectorAll('#container-scroll > div');
+    scroll.forEach(item => {item.classList.add('no-snap');})
     this.active = false;
     gsap.to(window, {
-     duration: 1,
+     duration: this.speed(item.getAttribute('data-section')),
      scrollTo: section,
      overrider: true, autoKill: false,
      ease: Power2.easeInOut,
      onComplete: () => {
       console.log('active', this.active)
+      scroll.forEach(item => {item.classList.remove('no-snap');})
       this.active = true;
      }
     });

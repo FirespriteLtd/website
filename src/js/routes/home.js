@@ -4,40 +4,34 @@ import SectionParallax from "../util/sectionParallax";
 import TwitterBlock from "../util/twitterBlock";
 import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
 import $ from "jquery";
-import Foundation from "foundation-sites"
 
 export default {
+    addSlider(){
+        console.log('check',$(window).width())
+        if($(window).width() <= 639){
+            $('.news-slider').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                infinite: true,
+                fade: true,
+                autoplaySpeed: 5000,
+            });
+        } else {
+            // todo: unslick when changing size
+            //$('.news-slider').unslick();
+        }
+    },
     init() {
         // JavaScript to be fired on all pages
-
-
-
-        console.log('home', Foundation.MediaQuery.current);
-
         $(window).on('resize', ()=> {
-            console.log('home', Foundation.MediaQuery.is('small'));
-            if(Foundation.MediaQuery.is('small only')){
-                $('.news-slider').slick({
-                    arrows: false,
-                    dots: true,
-                    autoplay: true,
-                    infinite: true,
-                    fade: true,
-                    autoplaySpeed: 5000,
-                });
-            } else {
-                //$('.news-slider').unslick();
-            }
+            this.addSlider()
         })
+
+        this.addSlider();
 
     },
     finalize() {
-
-        if(Foundation.MediaQuery.is('small only')){
-            console.log('TEST MEDIA')
-        }
-
-
         const section = new SectionParallax();
         const controller = section.controller();
         const master = new HeaderBlock(controller);
@@ -55,12 +49,8 @@ export default {
 
         setTimeout(()=> {
             new TwitterBlock();
+
         },2000);
-
-        $(window).on('resize', function(event) {
-            // newSize is the name of the now-current breakpoint, oldSize is the previous breakpoint
-
-        });
 
     },
 };

@@ -1,42 +1,73 @@
 <div id="trigger-news">
 <section id="section-news">
+
     <div id="block-news" class="grid-container full block bg-decore  b-c-secondary text-center">
+
         <div class="grid-container">
             <h3 class="f-c-primary">Latest News</h3>
 
-            <ul class="tabs taxonomy menu m-b-30" data-tabs id="news-tabs">
-                <li class="tabs-title is-active"><a href="#all">All</a></li>
-                {{ range $key, $value := index .Site.Taxonomies "news/categories" -}}
-                    <li class="tabs-title"><a href="#{{$key}}" data-tabs-target="{{$key}}">{{$key}}</a></li>
-                {{ end -}}
-            </ul>
 
-            <div class="tabs-content" data-tabs-content="news-tabs">
-                <div class="tabs-panel is-active" id="all">
-                    <div class="grid-x grid-padding-x grid-padding  grid-margin-y small-up-1 medium-up-2 large-up-3 text-left news-slider">
-                        {{ range $index, $content := first 3 (where .Site.RegularPages "Type" "news") }}
-                        <div class="cell i-{{$index}}">
-                            {{with $content}}
-                            {{ .Render "card"}}
-                            {{end}}
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-                {{ range $key, $value := index .Site.Taxonomies "news/categories" -}}
-                <div class="tabs-panel" id="{{$key}}">
-                    <div class="grid-x grid-padding-x grid-padding  grid-margin-y small-up-1 medium-up-2 large-up-3 text-left">
-                        {{range  $index , $content := first 3 ($value.Pages)}}
-                            <div class="cell i-{{$index}}">
-                                {{with $content}}
+
+
+
+                <ul class="tabs taxonomy menu m-b-30" data-tabs id="news-tabs">
+                    <li class="tabs-title is-active"><a href="#all">All</a></li>
+                    {{ range $key, $value := index .Site.Taxonomies "news/categories" -}}
+                        <li class="tabs-title"><a href="#{{$key}}" data-tabs-target="{{$key}}">{{$key}}</a></li>
+                    {{ end -}}
+                </ul>
+
+
+
+                <div class="tabs-content" data-tabs-content="news-tabs">
+                    <div class="tabs-panel is-active" id="all">
+                        <div class="hide-for-small-only">
+                            <div  class="grid-x grid-padding-x grid-padding  grid-margin-y small-up-1 medium-up-2 large-up-3 text-left">
+                                {{ range $index, $content := first 3 (where .Site.RegularPages "Type" "news") }}
+                                <div class="cell i-{{$index}}">
+                                    {{with $content}}
                                     {{ .Render "card"}}
+                                    {{end}}
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <div class="show-for-small-only  news-slider">
+                            {{ range $index, $content := first 3 (where .Site.RegularPages "Type" "news") }}
+                            <div class="slider-item">
+                                {{with $content}}
+                                {{ .Render "card"}}
                                 {{end}}
                             </div>
-                        {{end}}
+                            {{end}}
+                        </div>
                     </div>
+                    {{ range $key, $value := index .Site.Taxonomies "news/categories" -}}
+                    <div class="tabs-panel" id="{{$key}}">
+                        <div class="hide-for-small-only">
+                            <div class="grid-x grid-padding-x grid-padding  grid-margin-y small-up-1 medium-up-2 large-up-3 text-left">
+                                {{range  $index , $content := first 3 ($value.Pages)}}
+                                    <div class="cell i-{{$index}}">
+                                        {{with $content}}
+                                            {{ .Render "card"}}
+                                        {{end}}
+                                    </div>
+                                {{end}}
+                            </div>
+                        </div>
+                        <div class="show-for-small-only  news-slider">
+                            {{range  $index , $content := first 3 ($value.Pages)}}
+                            <div class="slider-item">
+                                {{with $content}}
+                                {{ .Render "card"}}
+                                {{end}}
+                            </div>
+                            {{end}}
+                        </div>
+                    </div>
+                    {{ end}}
                 </div>
-                {{ end}}
-            </div>
+
             <div class="grid-container text-center m-t-50">
                 <a href="/news" class="hollow white button large">See All Articles</a>
             </div>

@@ -1,2 +1,24 @@
+.home{
+  .tabs{
+    display: inline-block;
+  }
+  .news-slider{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    img{
+      width: 100%;
 
+    }
+  }
+
+  #block-news{
+    > .grid-container{
+      @include breakpoint(small only){
+        min-width: 100%;
+      }
+    }
+  }
+}
 

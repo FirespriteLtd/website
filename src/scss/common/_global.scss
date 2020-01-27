@@ -29,6 +29,10 @@ html {
       max-height: 100vh;
       scroll-snap-align: start;
       //overflow: hidden;
+
+      &.no-snap{
+        scroll-snap-align: unset;
+      }
     }
   }
   #footer {
