@@ -12,6 +12,13 @@ export default {
         $('#sending').hide();
         $('#error').hide();
 
+        $('input[type=file]').change(function (e) {
+            const f = $(e.target)[0];
+            const n = f.id;
+            console.log($(`#${n}-output`));
+            $(`#${n}-output`)[0].value = f.value;
+        });
+
         $("#support-request").validate({
             rules : {
                 game: 'required',
