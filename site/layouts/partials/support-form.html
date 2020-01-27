@@ -76,7 +76,10 @@
         <h3>Legal</h3>
         <h6>Age verification</h6>
         <fieldset>
-            <input type="checkbox" name="ageverification" id="ageverification" value="0"><label for="ageverification" class="checkbox">I confirm that I am over the age of 13</label>
+            <div class="grid-x">
+                <div class="cell shrink"><input type="checkbox" name="ageverification" id="ageverification" value="0"></div>
+                <div class="cell auto"><label for="ageverification" class="checkbox">I confirm that I am over the age of 13</label></div>
+            </div>
         </fieldset>
         <h6>Consent</h6>
         <fieldset>
@@ -87,8 +90,11 @@
         </fieldset>
         <h6>Privacy Policy</h6>
         <fieldset>
-            <input type="checkbox" id="privacy" name="privacy" value="0"><label for="privacy"  class="checkbox" >I confirm that I have read and agree to the <a
-                href="/privacy">Privacy Policy</a></label>
+            <div class="grid-x">
+                <div class="cell shrink"><input type="checkbox" id="privacy" name="privacy" value="0"></div>
+                <div class="cell auto"><label for="privacy"  class="checkbox" >I confirm that I have read and agree to the <a
+                        href="/privacy">Privacy Policy</a></label></div>
+            </div>
         </fieldset>
         <!-- Button -->
         <div class="tc">
