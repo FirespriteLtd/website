@@ -166,6 +166,13 @@
     margin-bottom: rem-calc(20);
   }
 
+  .tabs-panel{
+    padding: rem-calc(16 45);
+    @include breakpoint(large){
+      padding: 1rem;
+    }
+  }
+
   ul{
     justify-content: center;
   }
