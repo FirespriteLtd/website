@@ -12,19 +12,42 @@ export default {
         $('#sending').hide();
         $('#error').hide();
 
-        $("#contact").validate({
+        $("#support-request").validate({
             rules : {
+                game: 'required',
+                platform: 'required',
                 name: 'required',
-                telephone: 'required',
                 email: {
                     required: true,
                     email: true
+                },
+                debug: {
+                    extension: 'cmap|proj|log|dmp|dat|arr|mdmp|cfg|txt'
+                },
+                screen: {
+                    extension: 'gif|jpg|jpeg|png'
+                },
+                message: {
+                    required: true
+                },
+                ageverification:{
+                    required : true
+                },
+                consent:{
+                    required : true
+                },
+                privacy:{
+                    required : true
                 }
             },
             messages: {
                 name: 'Please enter your full name',
                 email: 'Please enter a valid email address',
-                telephone: 'Please enter your telephone number'
+                ageverification: 'You must be over the age of 13',
+                consent: 'You must consent',
+                privacy: 'You must agree to our privacy policy',
+                message: 'Detail description is required',
+
             },
             submitHandler: function (form) {
 

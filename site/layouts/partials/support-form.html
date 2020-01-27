@@ -17,8 +17,8 @@
                 </select>
             </fieldset>
             <fieldset>
-                <label for="plaform"><span>*</span>Game Title</label>
-                <select id="plaform" name="plaform">
+                <label for="platform"><span>*</span>Game Title</label>
+                <select id="platform" name="platform">
                     <option value="" disabled selected>Select Platform</option>
                     {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
                     <option value="{{$key}}">{{$key}}</option>
@@ -46,8 +46,8 @@
                 <div class="input-group">
                     <input class="input-group-field" type="text" id="file" name="file" >
                     <div class="input-group-button">
-                        <label for="fileupload" class="button">Browse ...</label>
-                        <input type="file" id="fileupload" class="show-for-sr">
+                        <label for="debug" class="button">Browse ...</label>
+                        <input type="file" id="debug" class="show-for-sr" multiple>
                     </div>
                 </div>
             </fieldset>
@@ -76,7 +76,7 @@
         <h3>Legal</h3>
         <h6>Age verification</h6>
         <fieldset>
-            <input type="checkbox" id="age-verification"><label for="age-verification" class="checkbox">I confirm that I am over the age of 13</label>
+            <input type="checkbox" id="ageverification"><label for="ageverification" class="checkbox">I confirm that I am over the age of 13</label>
         </fieldset>
         <h6>Consent</h6>
         <fieldset>
