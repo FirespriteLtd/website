@@ -20,7 +20,16 @@
                       {{with .Param "games/platforms"}}
                       <li>
                           <h6>Platforms</h6>
-                              <p class="platforms">{{range $index, $platform := .}}{{if ne $index 0}}, {{end}}{{- $platform -}}{{end}}</p>
+                              <p class="platforms">
+                                  {{range $index, $platform := .}}
+                                  {{if ne $index 0}}, {{end}}
+                                      {{range $index, $p := site.Data.platforms}}
+                                        {{if eq ($p.value | urlize ) ($platform | urlize )}}
+                                            {{$p.name}}
+                                        {{end}}
+                                      {{end}}
+                                  {{end}}
+                              </p>
                       </li>
                       {{end}}
                       {{with .Params.players}}
@@ -95,14 +104,14 @@
                                 <th>
                                     <div class="b-icon">
                                         {{range $index, $p := site.Data.platforms}}
-                                        {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                        {{if eq ($p.value | urlize ) ($platform | urlize )}}
                                         <img src="{{$p.icon}}" alt="{{$p.name}}">
                                         {{end}}
                                         {{end}}
                                     </div>
                                     <div class="b-header">
                                         {{range $index, $p := site.Data.platforms}}
-                                        {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                        {{if eq ($p.value | urlize ) ($platform | urlize )}}
                                         <h5>{{$p.name}}</h5>
                                         {{end}}
                                         {{end}}

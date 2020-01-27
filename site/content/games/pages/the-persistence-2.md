@@ -9,8 +9,8 @@ genre: Sci-fi Horror
 players: 4 Players
 ratings: PEGI 18
 games/platforms:
-  - pc
-  - playstation 4
+  - pc-steam
+  - ps4
   - xbox one
 featured_image:
   active: false
