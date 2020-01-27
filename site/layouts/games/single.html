@@ -10,7 +10,7 @@
     <section>
         <div class="grid-container full b-c-secondary"  id="root" >
           <div class="grid-container overview">
-            <div class="grid-x">
+            <div class="grid-x grid-padding-x">
               <div class="cell small-12 large-3">
                   <ul class="no-bullet facts-sheet">
                       <li>
@@ -21,14 +21,14 @@
                       <li>
                           <h6>Platforms</h6>
                               <p class="platforms">
-                                  {{range $index, $platform := .}}
-                                  {{if ne $index 0}}, {{end}}
-                                      {{range $index, $p := site.Data.platforms}}
-                                        {{if eq ($p.value | urlize ) ($platform | urlize )}}
-                                            {{$p.name}}
-                                        {{end}}
-                                      {{end}}
-                                  {{end}}
+                                  {{- range $index, $platform := . -}}
+                                  {{if ne $index 0}}{{- "," | safeHTML }} {{end}}
+                                      {{- range $index, $p := site.Data.platforms -}}
+                                        {{- if eq ($p.value | urlize ) ($platform | urlize ) -}}
+                                            {{- $p.name | markdownify -}}
+                                        {{- end -}}
+                                      {{- end -}}
+                                  {{- end -}}
                               </p>
                       </li>
                       {{end}}

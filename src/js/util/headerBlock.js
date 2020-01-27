@@ -6,8 +6,10 @@ import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
+gsap.registerPlugin(CSSRulePlugin);
 gsap.defaultEase = Expo.easeOut;
 
 class HeaderBlock {
@@ -66,8 +68,10 @@ class HeaderBlock {
    tl.add(gsap.from($('.parent-header'), {opacity: 0, scale: 2, duration: 0.5, ease: Expo.easeOut}, '-=0.5'));
   }
   if(chars.length) {
-   console.log('words')
+   const rule  = CSSRulePlugin.getRule('.master-header strong:before');
+   tl.add(gsap.set( rule, {cssRule: {width:0}}));
    tl.add(gsap.from(chars, {opacity: 0, scaleY: 0, y: 80, duration: 0.8, ease: Expo.easeOut, stagger: 0.1}));
+   tl.add(gsap.to( rule,{cssRule: {width: '100%'},duration: 0.5, stagger: 0.5}))
   }
   if($.trim($('#header-summary').html())) {
    console.log('sum', $('#header-summary'))
