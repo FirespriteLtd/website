@@ -156,6 +156,11 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
+  > .grid-container{
+    @include breakpoint(small){
+      min-width: 100%;
+    }
+  }
 
   ul{
     justify-content: center;

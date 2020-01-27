@@ -54,12 +54,7 @@
       transition: 500ms background-color ease-in-out;
     }
 
-    &.is-active {
-      &:before {
-      background-color: $black;
-      transition: 500ms background-color ease-in-out;
-      }
-    }
+
 
     &:hover {
       a{
@@ -84,6 +79,18 @@
       }
     }
 
+    &.is-active {
+
+      a, a:hover {
+        margin-left: -100%;
+        transition: 500ms margin-left ease-in-out;
+      }
+
+      &:before {
+        background-color: $black;
+        transition: 500ms background-color ease-in-out;
+      }
+    }
   }
 
   a{

@@ -13,12 +13,5 @@
     }
   }
 
-  #block-news{
-    > .grid-container{
-      @include breakpoint(small only){
-        min-width: 100%;
-      }
-    }
-  }
 }
 

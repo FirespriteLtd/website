@@ -8,7 +8,7 @@ import $ from "jquery";
 export default {
     addSlider(){
         console.log('check',$(window).width())
-        if($(window).width() <= 639){
+        if($(window).width() <= 768){
             $('.news-slider').slick({
                 arrows: false,
                 dots: true,
