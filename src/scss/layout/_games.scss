@@ -46,28 +46,39 @@
   }
 }
 
-.buy-table{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+table.buy{
 
- >  div{
-   flex: 1;
-   padding: 16px;
+  thead, tbody, tfoot{
+    background: transparent;
+    border: none;
+    tr{
+      background: transparent;
+      border: none;
+    }
   }
 
-  .buy-header, .buy-list{
-    display: flex;
+  td{
+    border: none;
+  }
+
+  th{
+    background: transparent;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
+    border: none;
+    vertical-align: bottom;
+  }
+
+  .b-header, .b-list{
     h5{
       color: $primary-color;
+      margin-top: rem-calc(15);
     }
     img{
       max-height: 50px;
     }
   }
 
-
+  .vertical.menu li a{
+    letter-spacing: rem-calc(2);
+  }
 }

@@ -88,50 +88,52 @@
                 {{$buy:= .Params.buy}}
                 {{with .Param "games/platforms"}}
                         <div class="cell auto">
-                            <div class="buy">
-                                <div class="buy-header">
 
-                                        {{range $index, $platform := .}}
-                                    <div>
-                                                <div class="b-icon">
-                                                {{range $index, $p := site.Data.platforms}}
-                                                    {{if eq ($p.name | urlize ) ($platform | urlize )}}
-                                                        <img src="{{$p.icon}}" alt="{{$p.name}}">
-                                                    {{end}}
-                                                {{end}}
-                                                </div>
-                                                <div class="b-header">
-                                                    {{range $index, $p := site.Data.platforms}}
-                                                    {{if eq ($p.name | urlize ) ($platform | urlize )}}
-                                                    <h5>{{$p.name}}</h5>
-                                                    {{end}}
-                                                    {{end}}
-                                                </div>
-                                    </div>
-                                        {{end}}
-
-                                </div>
-                                <div class="buy-list">
+                            <table class="buy">
+                                <thead>
                                 {{range $index, $platform := .}}
-                                <div>
-                                    <ul class="menu vertical">
+                                <th>
+                                    <div class="b-icon">
+                                        {{range $index, $p := site.Data.platforms}}
+                                        {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                        <img src="{{$p.icon}}" alt="{{$p.name}}">
+                                        {{end}}
+                                        {{end}}
+                                    </div>
+                                    <div class="b-header">
+                                        {{range $index, $p := site.Data.platforms}}
+                                        {{if eq ($p.name | urlize ) ($platform | urlize )}}
+                                        <h5>{{$p.name}}</h5>
+                                        {{end}}
+                                        {{end}}
+                                    </div>
+                                </th>
+                                {{end}}
+                                </thead>
+                                <tbody>
+                                <tr>
+                                {{range $index, $platform := .}}
+                                    <td>
+                                        <ul class="menu vertical">
                                             {{range $index, $b:= $buy}}
-                                                {{range .platforms}}
-                                                    {{if eq ( . | urlize ) ($platform | urlize )}}
-                                                    <li>
+                                            {{range .platforms}}
+                                            {{if eq ( . | urlize ) ($platform | urlize )}}
+                                            <li>
 
-                                                        <a href="{{$b.url}}">{{$b.title}}</a>
+                                                <a href="{{$b.url}}">{{$b.title}}</a>
 
-                                                    </li>
-                                                    {{end}}
-                                                {{end}}
+                                            </li>
+                                            {{end}}
+                                            {{end}}
 
                                             {{end}}
-                                    </ul>
-                                </div>
+                                        </ul>
+                                    </td>
                                 {{end}}
-                                </div>
-                            </div>
+                                </tr>
+                                </tbody>
+
+                            </table>
                         </div>
                 {{end}}
             </div>
