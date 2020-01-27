@@ -12,7 +12,7 @@ export default {
             $('.news-slider').slick({
                 arrows: false,
                 dots: true,
-                autoplay: true,
+                autoplay: false,
                 infinite: true,
                 fade: true,
                 autoplaySpeed: 5000,
@@ -21,6 +21,13 @@ export default {
             // todo: unslick when changing size
             //$('.news-slider').unslick();
         }
+
+        $(window).on('change.zf.tabs', ()=> {
+            console.log('tab change')
+            if($(window).width() <= 768) {
+                $('.news-slider').slick('refresh');
+            }
+        })
     },
     init() {
         // JavaScript to be fired on all pages

@@ -161,6 +161,10 @@
       min-width: 100%;
     }
   }
+  .slick-dots{
+    margin-top: rem-calc(20);
+    margin-bottom: rem-calc(20);
+  }
 
   ul{
     justify-content: center;
