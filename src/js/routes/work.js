@@ -4,6 +4,7 @@ import 'fluidbox';
 import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import SideBarController from "../util/sideBarController";
+import VideoPopup from "../util/videoPopup";
 
 
 export default {
@@ -14,6 +15,7 @@ export default {
         const section = new SectionParallax();
         const controller = section.controller();
         const master = new HeaderBlock(controller);
+        const trailer  = new VideoPopup();
 
         const sections = []
          for(let x=0; x < ($('#container-scroll > div').length -1); x++) {

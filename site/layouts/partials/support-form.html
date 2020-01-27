@@ -17,11 +17,15 @@
                 </select>
             </fieldset>
             <fieldset>
-                <label for="platform"><span>*</span>Game Title</label>
+                <label for="platform"><span>*</span>Platform</label>
                 <select id="platform" name="platform">
                     <option value="" disabled selected>Select Platform</option>
                     {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
-                    <option value="{{$key}}">{{$key}}</option>
+                        {{- range $index, $p := site.Data.platforms -}}
+                            {{- if eq ($p.value | urlize ) ($key | urlize ) -}}
+                                <option value="{{$p.value}}">{{$p.name}}</option>
+                            {{end}}
+                        {{end}}
                     {{end}}
                 </select>
             </fieldset>

@@ -12,7 +12,6 @@ class SideBarController {
    .fill(0)
    .map((_, index) => index / steps || 0)
   let observer = new IntersectionObserver((entries, observer) => {
-   console.log('entry', entries)
    entries.forEach(entry => {
     switch (this.scrollDirection(entry)) {
      case 'SDE' : {
@@ -45,8 +44,6 @@ class SideBarController {
   const currentRatio = entry.intersectionRatio;
   const isIntersecting = entry.isIntersecting;
   let type;
-
-  // Scrolling down/up
   if (currentY < this.previousY) {
    if (currentRatio > this.previousRatio && isIntersecting) {
     type = 'SDE'

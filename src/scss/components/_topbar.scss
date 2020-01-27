@@ -1,7 +1,8 @@
 .sticky-container{
-  position:absolute;
+  position:fixed;
   width:100%;
   z-index:999;
+  transform: translateZ(3px);
 }
 
 .hide-on-load{

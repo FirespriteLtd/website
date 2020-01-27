@@ -5,7 +5,11 @@
                 <select name="plaforms" id="platforms">
                     <option value="all" selected>All Platforms</option>
                     {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
-                    <option value="{{$key}}">{{$key}}</option>
+                    {{- range $index, $p := site.Data.platforms -}}
+                    {{- if eq ($p.value | urlize ) ($key | urlize ) -}}
+                    <option value="{{$p.value}}">{{$p.name}}</option>
+                    {{end}}
+                    {{end}}
                     {{end}}
                 </select>
             </div>

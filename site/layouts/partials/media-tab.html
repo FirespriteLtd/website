@@ -56,20 +56,18 @@
         <div class="tabs-panel" id="videos">
             <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
                 {{range . }}
-
-                <div class="cell">
-                    <button class="video-button" data-video="{{.id}}">
-                        <figure>
-                            <span>
-                                <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
-                            </span>
-                            <figcaption class="f-c-white">
-                                {{ .alt }}
-                            </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
+                    <div class="cell">
+                        <button class="video-button" data-video="{{.id}}">
+                            <figure>
+                                <span>
+                                    <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                                </span>
+                                <figcaption class="f-c-white">
+                                    {{ .alt }}
+                                </figcaption>
+                            </figure>
+                        </button>
+                    </div>
                 {{end}}
             </div>
         </div>
