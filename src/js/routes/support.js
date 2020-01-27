@@ -60,7 +60,6 @@ export default {
             submitHandler: function (form) {
 
                 $('#form').fadeOut(500, () => $('#sending').fadeIn(500, ()=>{
-
                     $.post($(form).attr("action"), $(form).serialize()).then(function(response) {
                         $('#sending').fadeOut(500, () => $('#thanks').fadeIn(500))
                     });
