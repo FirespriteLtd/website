@@ -9,7 +9,7 @@ genre: Action Horror
 players: 1 Player
 ratings: PEGI 16
 games/platforms:
-  - playstation 4
+  - ps4
 featured_image:
   active: false
   alt: The Persistence
