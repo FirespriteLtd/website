@@ -31,7 +31,8 @@ export default {
                     required: true
                 },
                 ageverification:{
-                    required : true
+                    required: true,
+                    maxlength: 2
                 },
                 consent:{
                     required : true
@@ -43,9 +44,9 @@ export default {
             messages: {
                 name: 'Please enter your full name',
                 email: 'Please enter a valid email address',
-                ageverification: 'You must be over the age of 13',
-                consent: 'You must consent',
-                privacy: 'You must agree to our privacy policy',
+                ageverification: { required: 'You must be over the age of 13'},
+                consent: {required: 'You must consent'},
+                privacy: {required: 'You must agree to our privacy policy'},
                 message: 'Detail description is required',
 
             },
@@ -65,7 +66,7 @@ export default {
         $('.continue').on('click' , () => {
 
             if(!error) {
-                $("#contact").reset();
+                $("#support-request").reset();
                 $('#thanks').fadeOut(500, () => $('#form').fadeIn(500))
             } else {
                 $('#error').fadeOut(500, () => $('#form').fadeIn(500))
