@@ -5,6 +5,7 @@
   height: 100vh;
   overflow: visible;
   z-index: 100;
+  transform: translateZ(3px);
 
   .holder{
     position: relative;
