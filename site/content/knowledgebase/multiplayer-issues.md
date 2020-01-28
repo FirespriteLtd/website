@@ -1,5 +1,6 @@
 ---
 title: Multiplayer issues
+outputs: ["json"]
 platforms:
   - nintendo-switch
   - ps4

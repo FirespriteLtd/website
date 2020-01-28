@@ -8,6 +8,6 @@
   "date": "{{ .Date }}",
   "type": "{{ .Type }}",
   "permalink" : "{{ .Permalink }}",
-  "summary" : "{{ .Summary }}",
+  "summary" : {{- .Summary |  jsonify  -}},
   "platforms" : {{- $.Scratch.Get "platforms" | jsonify -}}
 }

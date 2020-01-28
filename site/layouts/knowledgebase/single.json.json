@@ -9,7 +9,7 @@
 "date": "{{ .Date }}",
 "type": "{{ .Type }}",
 "permalink" : "{{ .Permalink }}",
-"body" : "{{- chomp .Content  -}}",
+"body" : {{-  (.Content | markdownify ) | jsonify -}},
 "platforms" : {{- $.Scratch.Get "platforms" | jsonify -}}
 }
 
