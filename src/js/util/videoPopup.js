@@ -51,6 +51,16 @@ class VideoPopup {
 
    }
 
+   landscapeMobile(id){
+    window.addEventListener("orientationchange", function() {
+     const iframe =  document.getElementById(id);
+     if(window.orientation === 90){
+      this.player.playsInline = true;
+     }
+    }, false);
+
+   }
+
    open(id){
     document.getElementById(`trailer-${id}`).classList.add('is-shown');
     gsap.fromTo(`#trailer-${id}`, {x:'100%'}, {x:'0', duration: 1, ease: Power2.easeInOut, onComplete: () => {

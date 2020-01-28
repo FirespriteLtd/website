@@ -46,7 +46,13 @@ class VideoBlock {
     const playerId = `#ytplayer-${id}`;
 
     if(this.block.find(playerId)) {
-      const player = new YTPlayer(playerId);
+      const option = {
+        controls: false,
+        keyboard: false,
+        related: false,
+        autoplay: false
+      };
+      const player = new YTPlayer(playerId, option);
       const videoId = $(playerId).data('video');
       player.load(videoId, false);
       player.setVolume(0);

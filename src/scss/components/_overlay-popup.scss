@@ -17,6 +17,7 @@
   visibility: hidden;
   background-color: rgba($secondary-color, 0.8);
   z-index: 1000;
+  transform: translateZ(4px);
 
   &.is-shown{
     visibility: visible;
