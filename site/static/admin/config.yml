@@ -169,6 +169,7 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Output", name: "output", widget: "hidden", default: "[json]"}
       - label: "Game"
         name: "game"
         widget: "relation"
