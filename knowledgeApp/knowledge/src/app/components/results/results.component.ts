@@ -20,8 +20,8 @@ export class ResultsComponent implements OnInit {
   platforms: any;
   currentPanel:string;
 
-  filterGame: string = '';
-  filterPlatform: string = '';
+  filterGame: string = 'all';
+  filterPlatform: string = 'all';
 
   constructor(private knowledgeService: KnowledgeService) { }
 

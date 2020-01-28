@@ -11,6 +11,7 @@ import { AccordionModule } from 'ngx-foundation';
 import { ResultsDetailComponent } from './components/results/results-detail/results-detail.component';
 import { PlatformsPipe } from './services/platforms.pipe';
 import { GamesPipe } from './services/games.pipe';
+import { GamesbyplatformPipe } from './services/gamesbyplatform.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { GamesPipe } from './services/games.pipe';
     ResultsComponent,
     ResultsDetailComponent,
     PlatformsPipe,
-    GamesPipe
+    GamesPipe,
+    GamesbyplatformPipe
   ],
   imports: [
     BrowserModule,

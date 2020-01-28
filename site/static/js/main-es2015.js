@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>{{filterPlatform}} {{filterGame}}</h2>\n  </div>\n  <div class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n            <div class=\"grid-container\">\n              <h3>{{platform}}</h3>\n              <div class=\"grid-x align-center\">\n                  <div class=\"cell\">\n                    <accordion>\n                      <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterPlatforms:filterPlatform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                        <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                      </accordion-group>\n                    </accordion>\n                  </div>\n              </div>\n            </div>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center m-b-100\">\n    <h2>{{filterPlatform}} {{(filterPlatform === 'all') ? 'Platforms' : ''}} & {{filterGame}} {{(filterGame === 'all') ? 'Games' : ''}}</h2>\n  </div>\n  <div id=\"knowledge-result\" class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n          <ng-template [ngIf]=\"(($entries | async | filterGames:filterGame | filterGamesByPlatform:platform).length > 0)\">\n              <div class=\"grid-container m-b-50\">\n                <h4>{{platform}}</h4>\n                <div class=\"grid-x align-center\">\n                    <div class=\"cell\">\n                      <accordion>\n                        <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterGamesByPlatform:platform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                          <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                        </accordion-group>\n                      </accordion>\n                    </div>\n                </div>\n              </div>\n            </ng-template>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container block full b-c-secondary\" id=\"knowledgebase\">\n  <div class=\"grid-container\">\n    <div class=\"grid-x grid-padding-x align-center text-center\">\n      <div class=\"cell small-12 medium-10 large-8\">\n        <h2 class=\"f-c-primary\">Knowledgebase</h2>\n        At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.\n      </div>\n    </div>\n  </div>\n  <div class=\"grid-container m-t-b-50\">\n    <form name=\"knowledge-search\" [formGroup]=\"searchForm\">\n      <div class=\"grid-x grid-padding-x text-center align-center\">\n        <div class=\"cell auto\">\n          <select name=\"plaforms\" id=\"platforms\"  formControlName=\"platforms\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Platforms</option>\n            <option *ngFor=\"let item of platforms\" [value]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell auto m-b-50\">\n          <select name=\"games\" id=\"games\" formControlName=\"games\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Games</option>\n            <option *ngFor=\"let item of games\" [ngValue]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell small-12\">\n          <button class=\"white hollow button\">Search knowledge base</button>\n        </div>\n      </div>\n    </form>\n  </div>\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container block full b-c-secondary p-b-50\" id=\"knowledgebase\">\n  <div class=\"grid-container\">\n    <div class=\"grid-x grid-padding-x align-center text-center\">\n      <div class=\"cell small-12 medium-10 large-8\">\n        At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.\n      </div>\n    </div>\n  </div>\n  <div class=\"grid-container m-t-50\">\n    <form name=\"knowledge-search\" [formGroup]=\"searchForm\">\n      <div class=\"grid-x grid-padding-x text-center align-center\">\n        <div class=\"cell auto\">\n          <select name=\"plaforms\" id=\"platforms\"  formControlName=\"platforms\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Platforms</option>\n            <option *ngFor=\"let item of platforms\" [value]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell auto\">\n          <select name=\"games\" id=\"games\" formControlName=\"games\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Games</option>\n            <option *ngFor=\"let item of games\" [ngValue]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <!--\n        <div class=\"cell small-12\">\n          <button class=\"white hollow button\">Search knowledge base</button>\n        </div>\n        -->\n      </div>\n    </form>\n  </div>\n\n</div>\n");
 
 /***/ }),
 
@@ -416,6 +416,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/results/results-detail/results-detail.component */ "./src/app/components/results/results-detail/results-detail.component.ts");
 /* harmony import */ var _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/platforms.pipe */ "./src/app/services/platforms.pipe.ts");
 /* harmony import */ var _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/games.pipe */ "./src/app/services/games.pipe.ts");
+/* harmony import */ var _services_gamesbyplatform_pipe__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/gamesbyplatform.pipe */ "./src/app/services/gamesbyplatform.pipe.ts");
+
 
 
 
@@ -439,7 +441,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"],
             _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"],
             _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__["PlatformsPipe"],
-            _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"]
+            _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"],
+            _services_gamesbyplatform_pipe__WEBPACK_IMPORTED_MODULE_13__["GamesbyplatformPipe"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -564,8 +567,8 @@ __webpack_require__.r(__webpack_exports__);
 let ResultsComponent = class ResultsComponent {
     constructor(knowledgeService) {
         this.knowledgeService = knowledgeService;
-        this.filterGame = '';
-        this.filterPlatform = '';
+        this.filterGame = 'all';
+        this.filterPlatform = 'all';
     }
     set search(data) {
         if (data) {
@@ -629,18 +632,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/knowledge.service */ "./src/app/services/knowledge.service.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 
 let SearchUiComponent = class SearchUiComponent {
-    constructor(knowledgeService, formbuilder) {
+    constructor(knowledgeService, formbuilder, router) {
         this.knowledgeService = knowledgeService;
         this.formbuilder = formbuilder;
+        this.router = router;
         this.onSearch = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.searchForm = this.createForm();
     }
     ngOnInit() {
+        this.router.queryParams.subscribe(v => {
+            console.log('router', v);
+            if (v) {
+                if (v.platforms) {
+                    this.searchForm.controls['platforms'].setValue(v.platforms);
+                }
+                if (v.games) {
+                    this.searchForm.controls['games'].setValue(v.games);
+                }
+            }
+        });
         this.knowledgeService.allPlatforms$.subscribe(value => {
             this.platforms = value;
         });
@@ -663,7 +680,8 @@ let SearchUiComponent = class SearchUiComponent {
 };
 SearchUiComponent.ctorParameters = () => [
     { type: src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__["KnowledgeService"] },
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] }
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
@@ -696,7 +714,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let GamesPipe = class GamesPipe {
     transform(value, game) {
-        if (!game) {
+        if (!game || game === 'all') {
             return value.filter(item => (item.game.indexOf('<no value>') !== -1 || (item.game.length === 0)));
         }
         return value.filter(item => item.game.indexOf(game) !== -1);
@@ -707,6 +725,39 @@ GamesPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         name: 'filterGames'
     })
 ], GamesPipe);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/gamesbyplatform.pipe.ts":
+/*!**************************************************!*\
+  !*** ./src/app/services/gamesbyplatform.pipe.ts ***!
+  \**************************************************/
+/*! exports provided: GamesbyplatformPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GamesbyplatformPipe", function() { return GamesbyplatformPipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let GamesbyplatformPipe = class GamesbyplatformPipe {
+    transform(value, platform) {
+        if (!platform) {
+            return value;
+        }
+        console.log('Filter game by platform', value, platform, value.filter(item => item.platforms.includes(platform)));
+        return value.filter(item => item.platforms.includes(platform));
+    }
+};
+GamesbyplatformPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+        name: 'filterGamesByPlatform'
+    })
+], GamesbyplatformPipe);
 
 
 
@@ -781,7 +832,6 @@ let KnowledgeService = class KnowledgeService {
     }
     getDetailContent(id) {
         return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/${id}`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
-            console.log('value', value.data.body);
             return value.data.body;
         }));
     }
@@ -815,11 +865,9 @@ __webpack_require__.r(__webpack_exports__);
 
 let PlatformsPipe = class PlatformsPipe {
     transform(value, platform) {
-        console.log('filter platform', value, platform, (!platform));
-        if (!platform) {
+        if (!platform || platform === 'all') {
             return value;
         }
-        console.log('Filtered:', value.filter(item => item.indexOf(platform) !== -1));
         return value.filter(item => item.indexOf(platform) !== -1);
     }
 };

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { KnowledgeService } from 'src/app/services/knowledge.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-ui',
@@ -17,12 +18,26 @@ export class SearchUiComponent implements OnInit {
 
   constructor(
     private knowledgeService: KnowledgeService,
-    private formbuilder: FormBuilder
+    private formbuilder: FormBuilder,
+    private router: ActivatedRoute
   ) {
       this.searchForm = this.createForm();
   }
 
   ngOnInit() {
+
+    this.router.queryParams.subscribe(v => {
+      console.log('router', v)
+      if(v) {
+        if(v.platforms) {
+          this.searchForm.controls['platforms'].setValue(v.platforms)
+        }
+        if(v.games) {
+          this.searchForm.controls['games'].setValue(v.games)
+        }
+      }
+    })
+
     this.knowledgeService.allPlatforms$.subscribe(value =>
       {
         this.platforms = value;

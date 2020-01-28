@@ -1,0 +1,10 @@
+{{define "baseurl" }}
+<base href="/support/knowledgebase">
+{{end}}
+{{ define "main" }}
+{{"<!-- Knowledgebase nav -->" | safeHTML}}
+
+    {{ partial "knowledgebase-search" (dict "Context" . "ctx" $) }}
+
+{{"<!-- /Knowledgebase nav -->" | safeHTML}}
+{{ end }}

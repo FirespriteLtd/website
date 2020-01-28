@@ -34,3 +34,35 @@
 
   }
 }
+
+#knowledge-result{
+
+  h4{
+    color: $primary-color;
+  }
+
+  .accordion-title{
+    background-color: $light-gray;
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    font-size: rem-calc(14);
+    letter-spacing: rem-calc(2);
+
+    &:before {
+      margin-right: 18px;
+    }
+
+  }
+
+  accordion{
+    > * {
+      &:nth-child(even){
+        .accordion-title{
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

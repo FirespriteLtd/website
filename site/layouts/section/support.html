@@ -20,7 +20,7 @@
 </div>
 {{"<!-- Knowledgebase nav -->" | safeHTML}}
 
-    {{ partial "knowledgebase-search" (dict "Context" . "ctx" $) }}
+    {{ partial "blocks/block-knowledgebase" (dict "Context" . "ctx" $) }}
 
 {{"<!-- /Knowledgebase nav -->" | safeHTML}}
 {{ end }}

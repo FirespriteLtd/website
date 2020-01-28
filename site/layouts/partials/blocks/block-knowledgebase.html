@@ -1,0 +1,36 @@
+<div class="grid-container block full b-c-secondary p-b-50" id="knowledgebase">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x align-center text-center">
+            <div class="cell small-12 medium-10 large-8">
+                <h2 class="f-c-primary">Knowledgebase</h2>
+                At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.
+            </div>
+        </div>
+    </div>
+<div class="grid-container m-t-b-50">
+    <form id="searchform" name="knowledge-search" action="">
+        <div class="grid-x grid-padding-x text-center align-center">
+            <div class="cell auto">
+                <select name="platforms" id="platforms">
+                    <option value="all" selected>All Platforms</option>
+                    {{range $key, $value := index .Context.Site.Taxonomies  "games/platforms" }}
+                    <option value="{{$key}}">{{$key}}</option>
+                    {{end}}
+                </select>
+            </div>
+            <div class="cell auto m-b-50">
+                <select name="games" id="games">
+                    <option value="all" selected>All Games</option>
+                    {{$content := where .ctx.Site.RegularPages "Type" "games"}}
+                    {{range $content}}
+                    <option value="{{.Title}}">{{.Title}}</option>
+                    {{end}}
+                </select>
+            </div>
+            <div class="cell small-12">
+                <button id="search" class="white hollow button">Search knowledge base</button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>

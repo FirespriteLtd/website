@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>{{filterPlatform}} {{filterGame}}</h2>\n  </div>\n  <div class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n            <div class=\"grid-container\">\n              <h3>{{platform}}</h3>\n              <div class=\"grid-x align-center\">\n                  <div class=\"cell\">\n                    <accordion>\n                      <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterPlatforms:filterPlatform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                        <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                      </accordion-group>\n                    </accordion>\n                  </div>\n              </div>\n            </div>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center m-b-100\">\n    <h2>{{filterPlatform}} {{(filterPlatform === 'all') ? 'Platforms' : ''}} & {{filterGame}} {{(filterGame === 'all') ? 'Games' : ''}}</h2>\n  </div>\n  <div id=\"knowledge-result\" class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n          <ng-template [ngIf]=\"(($entries | async | filterGames:filterGame | filterGamesByPlatform:platform).length > 0)\">\n              <div class=\"grid-container m-b-50\">\n                <h4>{{platform}}</h4>\n                <div class=\"grid-x align-center\">\n                    <div class=\"cell\">\n                      <accordion>\n                        <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterGamesByPlatform:platform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                          <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                        </accordion-group>\n                      </accordion>\n                    </div>\n                </div>\n              </div>\n            </ng-template>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"grid-container block full b-c-secondary\" id=\"knowledgebase\">\n  <div class=\"grid-container\">\n    <div class=\"grid-x grid-padding-x align-center text-center\">\n      <div class=\"cell small-12 medium-10 large-8\">\n        <h2 class=\"f-c-primary\">Knowledgebase</h2>\n        At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.\n      </div>\n    </div>\n  </div>\n  <div class=\"grid-container m-t-b-50\">\n    <form name=\"knowledge-search\" [formGroup]=\"searchForm\">\n      <div class=\"grid-x grid-padding-x text-center align-center\">\n        <div class=\"cell auto\">\n          <select name=\"plaforms\" id=\"platforms\"  formControlName=\"platforms\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Platforms</option>\n            <option *ngFor=\"let item of platforms\" [value]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell auto m-b-50\">\n          <select name=\"games\" id=\"games\" formControlName=\"games\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Games</option>\n            <option *ngFor=\"let item of games\" [ngValue]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell small-12\">\n          <button class=\"white hollow button\">Search knowledge base</button>\n        </div>\n      </div>\n    </form>\n  </div>\n\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"grid-container block full b-c-secondary p-b-50\" id=\"knowledgebase\">\n  <div class=\"grid-container\">\n    <div class=\"grid-x grid-padding-x align-center text-center\">\n      <div class=\"cell small-12 medium-10 large-8\">\n        At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.\n      </div>\n    </div>\n  </div>\n  <div class=\"grid-container m-t-50\">\n    <form name=\"knowledge-search\" [formGroup]=\"searchForm\">\n      <div class=\"grid-x grid-padding-x text-center align-center\">\n        <div class=\"cell auto\">\n          <select name=\"plaforms\" id=\"platforms\"  formControlName=\"platforms\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Platforms</option>\n            <option *ngFor=\"let item of platforms\" [value]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <div class=\"cell auto\">\n          <select name=\"games\" id=\"games\" formControlName=\"games\">\n            <option [ngValue]=\"'all'\" selected=\"\">All Games</option>\n            <option *ngFor=\"let item of games\" [ngValue]=\"item\" >{{item}}</option>\n          </select>\n        </div>\n        <!--\n        <div class=\"cell small-12\">\n          <button class=\"white hollow button\">Search knowledge base</button>\n        </div>\n        -->\n      </div>\n    </form>\n  </div>\n\n</div>\n";
     /***/
   },
 
@@ -927,13 +927,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./services/games.pipe */
     "./src/app/services/games.pipe.ts");
+    /* harmony import */
+
+
+    var _services_gamesbyplatform_pipe__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./services/gamesbyplatform.pipe */
+    "./src/app/services/gamesbyplatform.pipe.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_search_ui_search_ui_component__WEBPACK_IMPORTED_MODULE_6__["SearchUiComponent"], _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"], _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"], _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__["PlatformsPipe"], _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_search_ui_search_ui_component__WEBPACK_IMPORTED_MODULE_6__["SearchUiComponent"], _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"], _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"], _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__["PlatformsPipe"], _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"], _services_gamesbyplatform_pipe__WEBPACK_IMPORTED_MODULE_13__["GamesbyplatformPipe"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], ngx_foundation__WEBPACK_IMPORTED_MODULE_9__["AccordionModule"].forRoot()],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -1128,8 +1134,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, ResultsComponent);
 
         this.knowledgeService = knowledgeService;
-        this.filterGame = '';
-        this.filterPlatform = '';
+        this.filterGame = 'all';
+        this.filterPlatform = 'all';
       }
 
       _createClass(ResultsComponent, [{
@@ -1243,15 +1249,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var SearchUiComponent =
     /*#__PURE__*/
     function () {
-      function SearchUiComponent(knowledgeService, formbuilder) {
+      function SearchUiComponent(knowledgeService, formbuilder, router) {
         _classCallCheck(this, SearchUiComponent);
 
         this.knowledgeService = knowledgeService;
         this.formbuilder = formbuilder;
+        this.router = router;
         this.onSearch = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.searchForm = this.createForm();
       }
@@ -1261,6 +1274,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function ngOnInit() {
           var _this4 = this;
 
+          this.router.queryParams.subscribe(function (v) {
+            console.log('router', v);
+
+            if (v) {
+              if (v.platforms) {
+                _this4.searchForm.controls['platforms'].setValue(v.platforms);
+              }
+
+              if (v.games) {
+                _this4.searchForm.controls['games'].setValue(v.games);
+              }
+            }
+          });
           this.knowledgeService.allPlatforms$.subscribe(function (value) {
             _this4.platforms = value;
           });
@@ -1294,6 +1320,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__["KnowledgeService"]
       }, {
         type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]
       }];
     };
 
@@ -1352,7 +1380,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(GamesPipe, [{
         key: "transform",
         value: function transform(value, game) {
-          if (!game) {
+          if (!game || game === 'all') {
             return value.filter(function (item) {
               return item.game.indexOf('<no value>') !== -1 || item.game.length === 0;
             });
@@ -1370,6 +1398,70 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     GamesPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
       name: 'filterGames'
     })], GamesPipe);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/gamesbyplatform.pipe.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/services/gamesbyplatform.pipe.ts ***!
+    \**************************************************/
+
+  /*! exports provided: GamesbyplatformPipe */
+
+  /***/
+  function srcAppServicesGamesbyplatformPipeTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "GamesbyplatformPipe", function () {
+      return GamesbyplatformPipe;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var GamesbyplatformPipe =
+    /*#__PURE__*/
+    function () {
+      function GamesbyplatformPipe() {
+        _classCallCheck(this, GamesbyplatformPipe);
+      }
+
+      _createClass(GamesbyplatformPipe, [{
+        key: "transform",
+        value: function transform(value, platform) {
+          if (!platform) {
+            return value;
+          }
+
+          console.log('Filter game by platform', value, platform, value.filter(function (item) {
+            return item.platforms.includes(platform);
+          }));
+          return value.filter(function (item) {
+            return item.platforms.includes(platform);
+          });
+        }
+      }]);
+
+      return GamesbyplatformPipe;
+    }();
+
+    GamesbyplatformPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+      name: 'filterGamesByPlatform'
+    })], GamesbyplatformPipe);
     /***/
   },
 
@@ -1492,7 +1584,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "getDetailContent",
         value: function getDetailContent(id) {
           return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/").concat(id)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
-            console.log('value', value.data.body);
             return value.data.body;
           }));
         }
@@ -1555,15 +1646,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PlatformsPipe, [{
         key: "transform",
         value: function transform(value, platform) {
-          console.log('filter platform', value, platform, !platform);
-
-          if (!platform) {
+          if (!platform || platform === 'all') {
             return value;
           }
 
-          console.log('Filtered:', value.filter(function (item) {
-            return item.indexOf(platform) !== -1;
-          }));
           return value.filter(function (item) {
             return item.indexOf(platform) !== -1;
           });

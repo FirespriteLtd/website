@@ -7,6 +7,15 @@ export default {
     },
     finalize() {
         new SideBarController('.social-menu');
+
+        $('#search').on('click', (e) => {
+            e.preventDefault();
+            const search = $('#searchform').serialize();
+            console.log(search)
+            window.location.href = `/support/knowledgebase/?${search}`
+        })
+
+
         let error = false;
         $('#thanks').hide();
         $('#sending').hide();
