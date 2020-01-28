@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: "/knowledgebase",
+  apiUrl: "",
   production: true
 };
