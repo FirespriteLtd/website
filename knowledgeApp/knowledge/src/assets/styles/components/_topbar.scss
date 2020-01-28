@@ -1,0 +1,247 @@
+.sticky-container{
+  position:fixed;
+  width:100%;
+  z-index:999;
+  transform: translateZ(3px);
+}
+
+.hide-on-load{
+  display:none;
+}
+
+.box-indicator {
+  @include pseudo();
+  width: 100%;
+  height: rem-calc(5);
+  bottom:- rem-calc(10);
+  left: 0;
+  background: $primary-color;
+  transition: 200ms height ease-in-out;
+}
+
+.badge-wrapper{
+  position:relative;
+  display: inline-block;
+  width: rem-calc(25);
+  top: -5px;
+  left: -8px;
+  > span{
+    position: absolute;
+    top:50%;
+    transform: translateY(-56%);
+    min-width: rem-calc(25);
+    min-height: rem-calc(25);
+    max-height: rem-calc(25);
+    line-height: 18px;
+  }
+}
+
+.top-bar {
+  .top-bar-container {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+  }
+
+  &.scroll-up {
+    transform: translateY(0);
+  }
+
+  &.scroll-down {
+    transform: translateY(-150px);
+  }
+
+  .menu{
+    background-color: transparent;
+
+    li{
+      font-family: $header-font-family;
+      font-weight: 700;
+      font-size: rem-calc(12);
+      position: relative;
+      margin-right: rem-calc(5);
+
+      &:last-child {
+        margin-right: rem-calc(0);
+      }
+
+      @include breakpoint(small){
+        width:100%;
+        display: block;
+      }
+      @include breakpoint(medium){
+        width:auto;
+      }
+
+      a {
+        color: $white;
+        padding-top: rem-calc(25);
+        padding-bottom: rem-calc(25);
+
+        &:hover{
+          color: $primary-color;
+        }
+      }
+
+      &.active{
+        a{
+          color: $primary-color!important;
+        }
+      }
+      .dropdown.menu > li.opens-left > .is-dropdown-submenu{
+        right:auto!important;
+        left:0!important;
+      }
+      .submenu{
+        background: $black;
+        color:white;
+        text-align: left;
+        a{
+          color: white!important;
+        }
+      }
+    }
+  }
+
+  &.sticky{
+    &:not(.is-stuck){
+      padding: rem-calc(0) 0.5rem;
+      background-color: $black;
+      transition: 0.5s all ease-in-out;
+
+      .menu{
+        color:$button-navigation-color;
+        a{
+          @include breakpoint(small){
+            color: $button-navigation-color;
+          }
+          @include breakpoint(medium){
+            color:$button-navigation-color;
+          }
+        }
+        &.active{
+          a{
+            color:$button-navigation-b-c;
+          }
+        }
+      }
+
+    }
+    &.is-stuck{
+      color:$white;
+      padding: 0;
+      background-color: $topbar-background;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+}
+
+
+.top-bar {
+  .logo-main{
+    img {
+      max-height: 140px;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+  .logo-invert{
+    img {
+      max-height: 70px;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+
+  &.top-bar-trans {
+    &:not(.is-stuck) {
+      background-color: transparent;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+
+  &.sticky {
+    &:not(.is-stuck) {
+      .menu-logo{
+        .logo-main{
+          display: block;
+          opacity:1;
+          transition: 0.5s all ease-in-out;
+        }
+
+      }
+    }
+
+    &.is-stuck {
+      .logo-main {
+        img {
+          max-height: 70px;
+          transition: 0.5s max-height ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+
+.top-bar-small{
+  position:fixed;
+  width:100%;
+  z-index: 100;
+  .grid-x{
+    width: 100%;
+  }
+  .logo-main > img{
+    width: auto;
+    height: 100%;
+    max-height: rem-calc(60);
+    transition: 0.5s all ease-in-out;
+    @include breakpoint(medium) {
+      max-height: rem-calc(150);
+    }
+  }
+
+  &.title-bar {
+    &.top-bar-trans {
+      &:not(.is-stuck) {
+        background-color: transparent;
+        transition: 0.5s all ease-in-out;
+      }
+    }
+  }
+
+  &.is-stuck{
+    .logo-main > img{
+      max-height: rem-calc(40);
+    }
+  }
+
+
+
+}
+
+.is-at-bottom {
+  top:10px !important;
+}
+
+.off-canvas{
+  ul.sub{
+    padding-left: rem-calc(20);
+  }
+}
+
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: unset;
+  &:after {
+    display: none;
+  }
+  text-align: right;
+  line-height: 4px;
+  div {
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    background-color: $black;
+  }
+}

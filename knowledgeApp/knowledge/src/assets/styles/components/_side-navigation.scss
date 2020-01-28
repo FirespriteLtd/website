@@ -1,0 +1,101 @@
+.side-nav{
+  position: fixed;
+  top: 0;
+  width:1px;
+  height: 100vh;
+  overflow: visible;
+  z-index: 100;
+  transform: translateZ(3px);
+
+  .holder{
+    position: relative;
+    height: 100vh;
+
+    > div{
+
+      @include center('vertical');
+    }
+  }
+
+  &.left{
+    left: 0;
+    .holder{
+      > div{
+        left: 30px;
+        width: auto;
+        @include breakpoint(small only){
+          left: 15px
+        }
+      }
+    }
+  }
+  &.right{
+    right:0;
+    .holder{
+      > div{
+        right: 5px;
+        width: auto;
+      }
+    }
+  }
+}
+
+#sub-nav{
+
+  li{
+    margin-bottom: rem-calc(20);
+    height: rem-calc(30);
+    overflow: hidden;
+    &:before{
+      @include pseudo();
+      margin-top: rem-calc(2);
+      width: 5px;
+      height: rem-calc(30);
+      background-color: $white;
+      transition: 500ms background-color ease-in-out;
+    }
+
+
+
+    &:hover {
+      a{
+        color:  $white;
+      }
+      &:before {
+        background-color: $white;
+        transition: 500ms background-color ease-in-out;
+      }
+    }
+
+    a{
+      padding: rem-calc(7 0 7 20);
+      margin-left: -100%;
+      transition: 500ms margin-left ease-in-out;
+    }
+
+    &:hover {
+      a{
+        margin-left: 0;
+        transition: 500ms margin-left ease-in-out;
+      }
+    }
+
+    &.is-active {
+
+      a, a:hover {
+        margin-left: -100%;
+        transition: 500ms margin-left ease-in-out;
+      }
+
+      &:before {
+        background-color: $primary-color;
+        transition: 500ms background-color ease-in-out;
+      }
+    }
+  }
+
+  a{
+    padding: 0 rem-calc(4) 0 rem-calc(10);
+    white-space: nowrap;
+  }
+}

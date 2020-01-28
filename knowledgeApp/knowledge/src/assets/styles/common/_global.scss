@@ -1,0 +1,137 @@
+@include bgcolor-list();
+@include fontcolor-list();
+@include padding-list();
+@include margin-list();
+
+html {
+  text-rendering: optimizeLegibility;
+  scroll-snap-type: y proximity;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow-x: hidden;
+  @include breakpoint(small only){
+    font-size: 16px;
+  }
+}
+
+*:focus{
+  outline: none!important;
+}
+
+
+.home, .work, .games {
+  #container-scroll {
+    > div {
+      position: relative;
+      width: 100vw;
+      max-height: 100vh;
+      scroll-snap-align: start;
+      //overflow: hidden;
+
+      &.no-snap{
+        scroll-snap-align: unset;
+      }
+    }
+  }
+  #footer {
+    scroll-snap-align: start;
+  }
+}
+
+
+// divider
+hr.divider{
+  border-top: none;
+  border-bottom: none;
+  margin-bottom: rem-calc(40);
+}
+
+//Image around
+
+.image-round {
+  border-radius: 100%;
+  width: rem-calc(60);
+  height: rem-calc(60);
+  overflow: hidden;
+
+  &.profile {
+    width: rem-calc(60);
+    height: rem-calc(60);
+  }
+}
+
+//
+
+.my-sizer-element {
+  width: 300px;
+}
+
+// OVERLAY
+.overlay,.overlay-primary,.overlay-secondary,.overlay-white{
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  &:before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: .6;
+    z-index: 1;
+  }
+  &.overlay-primary{
+    &:before{
+      background: $primary-color;
+    }
+  }
+  &.overlay-secondary{
+    &:before{
+      background: $secondary-color;
+    }
+  }
+  &.overlay-white{
+    &:before{
+      background: $white;
+    }
+  }
+  .grid-container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+address{
+  font-style: normal;
+}
+
+.badge{
+  font-size: rem-calc(12);
+  min-width: rem-calc(25);
+  min-height: rem-calc(25);
+  max-height: rem-calc(25);
+  margin-left: 10px;
+  line-height: rem-calc(16);
+  font-family: $header-font-family;
+  top:rem-calc(24);
+}
+
+.accordion-title{
+  .badge{
+    position: absolute;
+  }
+}
+
+figcaption{
+  padding: rem-calc(5) 0;
+}
+
+header {
+  small{
+    color: $medium-gray
+  }
+}

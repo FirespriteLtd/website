@@ -1,8 +1,13 @@
+{{- $.Scratch.Add "platforms" slice -}}
+{{- range .Params.platforms -}}
+{{- $.Scratch.Add "platforms" . -}}
+{{end}}
 {
   "title": "{{ .Title }}",
+  "game" : "{{.Params.game}}",
   "date": "{{ .Date }}",
   "type": "{{ .Type }}",
   "permalink" : "{{ .Permalink }}",
   "summary" : "{{ .Summary }}",
-  "platform" : "test"
+  "platforms" : {{- $.Scratch.Get "platforms" | jsonify -}}
 }

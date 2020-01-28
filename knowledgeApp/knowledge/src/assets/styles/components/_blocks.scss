@@ -1,0 +1,183 @@
+
+
+.block {
+
+  &.full {
+    padding-top: rem-calc(100);
+  }
+
+  padding-bottom: rem-calc(100);
+
+  header{
+    h1, h2{
+      color: $primary-color;
+    }
+  }
+
+  &.block-summary{
+    header{
+      h1, h2{
+        color: $white !important;
+      }
+    }
+
+    h2{
+      @extend h1;
+      color: $white;
+    }
+  }
+
+  &.block-image {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    header{
+      h2{
+        color: $primary-color;
+      }
+    }
+
+    color: $white;
+
+    p{
+      margin-bottom: 0;
+    }
+
+    .contentWrapper{
+      > div{
+        height: 100%;
+           .grid-x{
+            height: 100%;
+          }
+      }
+    }
+  }
+
+
+  &.block-section{
+
+    position: relative;
+    @include maxHeight();
+
+    h2{
+      @extend h4;
+    }
+    h3{
+      @extend h1;
+      color: $white!important;
+      margin-bottom: rem-calc(50);
+    }
+
+    .video-wrapper{
+      opacity: 0;
+    }
+
+    .revealWrapper{
+      position:absolute;
+      z-index: 2;
+      width:100%;
+      height: 100%;
+      overflow: hidden;
+      min-height: 100vh;
+      //border: 1px blue solid;
+    }
+  }
+}
+
+#block-twitter {
+  #tweet-post {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  > div {
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(60);
+
+    > div {
+      position: relative;
+      z-index: 11;
+    }
+  }
+
+  .follow {
+    font-family: $header-font-family;
+    font-weight: 700;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    svg{
+      width: 40px;
+      height: 40px;
+      margin-right: rem-calc(20);
+    }
+
+    .bt {
+      @extend button;
+      background: rgba($white, 0.5);
+      color: $white;
+      font-size: rem-calc(10);
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      padding: 12px 15px;
+    }
+  }
+
+  .tweet {
+    font-size: rem-calc(24);
+    font-weight: 700;
+    font-style: italic;
+
+    @include breakpoint(small only){
+      font-size: rem-calc(20);
+    }
+  }
+
+  #tweet-post {
+    .interact{
+      display: none;
+    }
+    .tweet {
+      margin-bottom: 0;
+    }
+    ul {
+      @extend .no-bullet;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#block-news{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  > .grid-container{
+    @include breakpoint(small){
+      min-width: 100%;
+    }
+  }
+  .slick-dots{
+    margin-top: rem-calc(20);
+    margin-bottom: rem-calc(20);
+  }
+
+  .tabs-panel{
+    @include breakpoint(medium) {
+      padding: rem-calc(16 45);
+    }
+    @include breakpoint(large){
+      padding: 1rem;
+    }
+  }
+
+  ul{
+    justify-content: center;
+  }
+}
+
+

@@ -1,0 +1,23 @@
+.home{
+  .tabs{
+    display: inline-block;
+  }
+  .news-slider{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    img{
+      width: 100%;
+
+    }
+  }
+
+  .master-header{
+    .cell-block-container{
+      padding-bottom:rem-calc(100)
+    }
+  }
+
+}
+

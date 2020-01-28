@@ -22,4 +22,36 @@ export class KnowledgeService {
     );
   }
 
+  getAllPlatforms(){
+    return this.http.get(`${environment.apiUrl}/index.json`).pipe(
+      map( (value:any) => {
+        let platforms = [];
+        value.data.items.forEach((i)=>{
+          i.platforms.forEach((p) =>{
+            if(!platforms.includes(p)){
+              platforms.push(p);
+            }
+          })
+        })
+        return platforms;
+      } )
+    );
+  }
+
+
+  getAllGames(){
+    return this.http.get(`${environment.apiUrl}/index.json`).pipe(
+      map( (value:any) => {
+        let platforms = [];
+        value.data.items.forEach((i)=>{
+          console.log('i', i.game)
+          if(!platforms.includes(i.game)){
+            platforms.push(i.game);
+          }
+        })
+        return platforms;
+      } )
+    );
+  }
+
 }

@@ -1,0 +1,84 @@
+.games{
+    .overview {
+      h2, h6 {
+        color: $primary-color;
+      }
+
+      h6 {
+        margin-bottom: rem-calc(14);
+      }
+
+    }
+}
+
+.facts-sheet {
+  .platforms{
+    text-transform: capitalize;
+  }
+  .li {
+    margin-bottom: rem-calc(60);
+  }
+  @include breakpoint(small){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(large){
+    display: block;
+  }
+}
+
+
+#features{
+  h2{
+    color: $black;
+  }
+}
+
+#buy-popup{
+  .overlay-popup-content{
+    min-width: 50%;
+    @include breakpoint(small only){
+      min-width: 100%;
+    }
+  }
+}
+
+table.buy{
+
+  thead, tbody, tfoot{
+    background: transparent;
+    border: none;
+    tr{
+      background: transparent;
+      border: none;
+    }
+  }
+
+  td{
+    border: none;
+  }
+
+  th{
+    background: transparent;
+    text-align: center;
+    border: none;
+    vertical-align: bottom;
+  }
+
+  .b-header, .b-list{
+    h5{
+      color: $primary-color;
+      margin-top: rem-calc(15);
+    }
+    img{
+      max-height: 50px;
+    }
+  }
+
+  .vertical.menu li a{
+    letter-spacing: rem-calc(2);
+  }
+}

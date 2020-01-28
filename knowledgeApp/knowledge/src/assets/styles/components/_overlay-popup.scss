@@ -1,0 +1,66 @@
+.fluidbox__overlay{
+  background-color: rgba($secondary-color, 0.8);
+}
+
+.overlay-popup{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  visibility: hidden;
+  background-color: rgba($secondary-color, 0.8);
+  z-index: 1000;
+  transform: translateZ(4px);
+
+  &.is-shown{
+    visibility: visible;
+  }
+
+  .overlay-popup-content{
+    position: relative;
+    overflow: auto;
+    cursor: default;
+  }
+
+  #videoHolder{
+    position: relative;
+    width: 100vw;
+    padding: 10%;
+  }
+
+  #videoWrapper {
+    background-color: $black;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+#buy-popup{
+  display: flex;
+  background-color: rgba($secondary-color,1);
+  color: $white;
+  h3{
+    color: $primary-color;
+  }
+  h2{
+    color: $white;
+  }
+}

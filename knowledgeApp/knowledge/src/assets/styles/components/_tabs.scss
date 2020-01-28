@@ -1,0 +1,28 @@
+.tabs-content {
+  border: none;
+}
+
+.tabs{
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem-calc(20);
+  li{
+
+    &.is-active{
+      a {
+        background: none;
+      }
+    }
+
+    a{
+      font-family: $header-font-family;
+      text-transform: uppercase;
+      background: none;
+
+      &:hover{
+        background: none;
+      }
+    }
+  }
+}

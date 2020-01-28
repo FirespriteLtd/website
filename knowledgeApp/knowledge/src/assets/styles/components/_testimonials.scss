@@ -1,0 +1,32 @@
+.testimonial-item {
+
+  margin-bottom: 0;
+
+  .content {
+    font-family: $header-font-family;
+    font-weight: 700;
+    font-size: rem-calc(24);
+    text-transform: uppercase;
+    margin-bottom: rem-calc(30);
+  }
+
+  .profile-img {
+    margin-bottom: rem-calc(10);
+    img{
+      border: none;
+    }
+  }
+
+  .profile-name {
+    font-weight: bold;
+  }
+}
+
+
+#testimonial {
+  position: relative;
+  text-align: center;
+  padding: rem-calc(100 0);
+}
+
+

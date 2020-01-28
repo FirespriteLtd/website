@@ -1,0 +1,43 @@
+#footer {
+  transform: translateZ(3px);
+  position: relative;
+  background-color: black;
+  color: white;
+  padding-top: rem-calc(95);
+  padding-bottom: rem-calc(30);
+
+  .logo{
+    img {
+      max-height: rem-calc(100);
+    }
+  }
+
+  .footer-menu{
+    font-size: rem-calc(12);
+
+    .menu {
+
+      @include breakpoint(small){
+        flex-direction: column;
+        font-size: rem-calc(14);
+      }
+
+      @include breakpoint(large) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      li {
+        a {
+          padding-right: rem-calc(45);
+        }
+
+        &:last-child{
+          a {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
