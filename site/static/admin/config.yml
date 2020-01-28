@@ -177,6 +177,7 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        required: false
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Platforms"

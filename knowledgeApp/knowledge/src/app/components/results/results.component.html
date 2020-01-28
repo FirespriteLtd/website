@@ -2,18 +2,24 @@
   <div class="grid-container text-center">
     <h2>Title goes there</h2>
   </div>
-  <ng-template ngFor let-platform [ngForOf]="platforms">
-    <div class="grid-container">
-      <h3>{{platform}}</h3>
-      <div class="grid-x align-center">
-          <div class="cell">
-            <accordion>
-              <accordion-group *ngFor="let item of $entries | async; let i = index"  [heading]="item.title"  (isOpenChange)="openGroup($event, i, platform)">
-                <app-results-detail [id]="item.permalink"  [active]="((platform + '-' + i)=== currentPanel)  ? true: false "></app-results-detail>
-              </accordion-group>
-            </accordion>
-          </div>
+  <div class="grid-container">
+    <div class="grid-x align-center">
+      <div class="cell small-12 medium-9">
+        <ng-template ngFor let-platform [ngForOf]="platforms">
+            <div class="grid-container">
+              <h3>{{platform}}</h3>
+              <div class="grid-x align-center">
+                  <div class="cell">
+                    <accordion>
+                      <accordion-group *ngFor="let item of $entries | async; let i = index"  [heading]="item.title"  (isOpenChange)="openGroup($event, i, platform)">
+                        <app-results-detail [id]="item.permalink"  [active]="((platform + '-' + i)=== currentPanel)  ? true: false "></app-results-detail>
+                      </accordion-group>
+                    </accordion>
+                  </div>
+              </div>
+            </div>
+          </ng-template>
       </div>
     </div>
-  </ng-template>
+  </div>
 </div>
