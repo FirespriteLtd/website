@@ -164,7 +164,7 @@ collections:
   - name: "knowledge"
     label: "Knowledge Base"
     folder: "site/data/knowledge"
-    extension: "json"
+    extension: "yaml"
     identifier_field: name
     create: true
     editor:

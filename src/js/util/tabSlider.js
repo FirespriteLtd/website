@@ -29,7 +29,7 @@ class TabSlider {
     });
    } else {
     // todo: unslick when changing size
-    $(element).slick('unslick');
+    //$(element).slick('unslick');
    }
 
   }
