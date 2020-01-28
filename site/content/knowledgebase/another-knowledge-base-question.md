@@ -1,6 +1,7 @@
 ---
 game:
   - The Persistence 2
+outputs: ["json"]
 title: Another knowledge base question?
 platforms:
   - nintendo-switch
