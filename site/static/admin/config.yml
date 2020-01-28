@@ -163,8 +163,7 @@ collections:
       - {label: "Icon", name: "icon", widget: image}
   - name: "knowledge"
     label: "Knowledge Base"
-    folder: "site/data/knowledge"
-    extension: "yaml"
+    folder: "site/content/knowledgebase"
     identifier_field: name
     create: true
     editor:
