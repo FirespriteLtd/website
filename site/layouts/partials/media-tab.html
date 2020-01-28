@@ -23,7 +23,8 @@
     </div>
     <div class="grid-container tabs-content" data-tabs-content="media-tabs">
         {{with .screenshots}}
-            <div class="tabs-panel is-active" id="screenshots">
+        <div class="tabs-panel is-active" id="screenshots">
+            <div class="show-for-large">
                 <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
                     {{range . }}
 
@@ -35,14 +36,39 @@
 
                     {{end}}
                 </div>
+             </div>
+            <div class="hide-for-large tab-slider">
+                {{range . }}
+
+                <div class="slider-item">
+                    <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                    </a>
+                </div>
+
+                {{end}}
             </div>
+        </div>
         {{end}}
         {{with .concepts}}
         <div class="tabs-panel" id="concepts">
-            <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
+            <div class="show-for-large">
+                <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
+                    {{range . }}
+
+                    <div class="cell">
+                        <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
+                            <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                        </a>
+                    </div>
+
+                    {{end}}
+                </div>
+            </div>
+            <div class="hide-for-large tab-slider">
                 {{range . }}
 
-                <div class="cell">
+                <div class="slider-item">
                     <a class="image-fancy" href="{{ .src }}" title="{{ .alt }}">
                         <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
                     </a>
@@ -54,20 +80,38 @@
         {{end}}
         {{with .videos}}
         <div class="tabs-panel" id="videos">
-            <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
+            <div class="show-for-large">
+                <div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-3 align-center-middle">
+                    {{range . }}
+                        <div class="cell">
+                            <button class="video-button" data-video="{{.id}}">
+                                <figure>
+                                    <span>
+                                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                                    </span>
+                                    <figcaption class="f-c-white">
+                                        {{ .alt }}
+                                    </figcaption>
+                                </figure>
+                            </button>
+                        </div>
+                    {{end}}
+                </div>
+            </div>
+            <div class="hide-for-large tab-slider">
                 {{range . }}
-                    <div class="cell">
-                        <button class="video-button" data-video="{{.id}}">
-                            <figure>
-                                <span>
-                                    <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
-                                </span>
-                                <figcaption class="f-c-white">
-                                    {{ .alt }}
-                                </figcaption>
-                            </figure>
-                        </button>
-                    </div>
+                <div class="slider-item">
+                    <button class="video-button" data-video="{{.id}}">
+                        <figure>
+                                    <span>
+                                        <img src="{{ .src }}" alt="{{ .alt }}" title="{{ .alt }}" />
+                                    </span>
+                            <figcaption class="f-c-white">
+                                {{ .alt }}
+                            </figcaption>
+                        </figure>
+                    </button>
+                </div>
                 {{end}}
             </div>
         </div>
