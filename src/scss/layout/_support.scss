@@ -42,14 +42,36 @@
     color: $primary-color;
   }
 
-  .accordion-title{
+  .panel{
+    @extend .accordion-item;
+    border-radius: unset;
+  }
+
+  :last-child:not(.is-active) > .panel-heading {
+    border-radius: unset;
+  }
+
+  .panel-heading{
+    @extend .accordion-title;
+    border-radius: unset;
     background-color: $light-gray;
-    padding-left: rem-calc(20);
-    padding-right: rem-calc(20);
-    text-transform: uppercase;
-    font-family: $header-font-family;
     font-size: rem-calc(14);
     letter-spacing: rem-calc(2);
+    padding: 1.33333rem rem-calc(20);
+
+    button{
+      text-transform: uppercase;
+      font-family: $header-font-family;
+    }
+
+
+    &:hover{
+      background-color: $light-gray;
+
+      button{
+        color: $primary-color;
+      }
+    }
 
     &:before {
       margin-right: 18px;
@@ -57,11 +79,21 @@
 
   }
 
-  accordion{
-    > * {
+  .panel-collapse {
+    @extend .accordion-content
+  }
+
+  .panel-group{
+
+     border-radius: unset;
+
+    > .panel {
       &:nth-child(even){
-        .accordion-title{
+        .panel-heading{
           background-color: $white;
+          &:hover{
+            background-color: $white;
+          }
         }
       }
     }

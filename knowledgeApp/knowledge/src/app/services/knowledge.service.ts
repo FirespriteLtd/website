@@ -61,7 +61,7 @@ export class KnowledgeService {
   }
 
   getDetailContent(id){
-    return this.http.get(`${environment.apiUrl}/${id}`).pipe(
+    return this.http.get(`${environment.apiUrl}${id}`).pipe(
       map( (value:any) => {
         return value.data.body;
       } )
