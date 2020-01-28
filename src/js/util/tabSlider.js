@@ -24,7 +24,6 @@ class TabSlider {
      dots: true,
      autoplay: false,
      infinite: true,
-     fade: true,
      autoplaySpeed: 5000,
     });
    } else {
