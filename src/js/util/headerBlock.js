@@ -48,7 +48,7 @@ class HeaderBlock {
  }
 
  animHeader() {
-  const tl = gsap.timeline({repeat:0, delay: 2});
+  const tl = gsap.timeline({repeat:0, delay: 1.4});
   let chars = [];
   if($('.hero-header-inner').find('h1').length) {
    const title = new SplitText($('.hero-header-inner').find('h1'), {type: "words,chars"});
