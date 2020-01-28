@@ -1,5 +1,7 @@
 <!doctype html>
+
 <html lang="{{ $.Site.Language.Lang }}">
+{{ block "baseurl" . }}{{end}}
 {{ block "head" . }}{{ partial "head" . }}{{end}}
 {{ $currentPage := .Parent }}
 <body  class="default {{ if .IsHome }}home{{else}}{{ $section := split .Section "/" }}{{range $section}} {{.}}{{end}}{{end}} {{ if .InSection $currentPage}}{{- .Title | urlize -}}{{end}}" data-animation="true">

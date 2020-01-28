@@ -11,9 +11,6 @@ import { take } from 'rxjs/operators';
 })
 export class SearchUiComponent implements OnInit {
 
-  platforms$: Observable<any>;
-  games$: Observable<any>;
-
   searchForm: FormGroup;
   games: Array<any>;
   platforms: Array<any>;
