@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-search-ui></app-search-ui>\n<app-results></app-results>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ng-template [ngIf]=\"data\">\n  <app-search-ui (onSearch)=\"onSearchForm($event)\"></app-search-ui>\n  <app-results [search]=\"search\" ></app-results>\n</ng-template>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>Title goes there</h2>\n  </div>\n  <ng-template ngFor let-platform [ngForOf]=\"platforms\">\n    <div class=\"grid-container\">\n      <h3>{{platform}}</h3>\n      <div class=\"grid-x align-center\">\n          <div class=\"cell\">\n            <accordion>\n              <accordion-group *ngFor=\"let item of $entries | async; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n              </accordion-group>\n            </accordion>\n          </div>\n      </div>\n    </div>\n  </ng-template>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>{{filterPlatform}} {{filterGame}}</h2>\n  </div>\n  <div class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n            <div class=\"grid-container\">\n              <h3>{{platform}}</h3>\n              <div class=\"grid-x align-center\">\n                  <div class=\"cell\">\n                    <accordion>\n                      <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterPlatforms:filterPlatform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                        <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                      </accordion-group>\n                    </accordion>\n                  </div>\n              </div>\n            </div>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -370,8 +370,12 @@ let AppComponent = class AppComponent {
     }
     ngOnInit() {
         this.knowledgeService.getAllItems().subscribe(v => {
-            console.log('my data', v);
+            this.data = v;
         });
+    }
+    onSearchForm(event) {
+        console.log(event);
+        this.search = event;
     }
 };
 AppComponent.ctorParameters = () => [
@@ -410,6 +414,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/results/results.component */ "./src/app/components/results/results.component.ts");
 /* harmony import */ var ngx_foundation__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-foundation */ "./node_modules/ngx-foundation/index.js");
 /* harmony import */ var _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/results/results-detail/results-detail.component */ "./src/app/components/results/results-detail/results-detail.component.ts");
+/* harmony import */ var _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/platforms.pipe */ "./src/app/services/platforms.pipe.ts");
+/* harmony import */ var _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/games.pipe */ "./src/app/services/games.pipe.ts");
+
+
 
 
 
@@ -429,7 +437,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
             _components_search_ui_search_ui_component__WEBPACK_IMPORTED_MODULE_6__["SearchUiComponent"],
             _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"],
-            _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"]
+            _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"],
+            _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__["PlatformsPipe"],
+            _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -548,19 +558,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/knowledge.service */ "./src/app/services/knowledge.service.ts");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-
 
 
 
 let ResultsComponent = class ResultsComponent {
     constructor(knowledgeService) {
         this.knowledgeService = knowledgeService;
+        this.filterGame = '';
+        this.filterPlatform = '';
+    }
+    set search(data) {
+        if (data) {
+            this.filterGame = data.games;
+            this.filterPlatform = data.platforms;
+        }
     }
     ngOnInit() {
-        this.knowledgeService.getAllItems().subscribe();
         this.$entries = this.knowledgeService.allItems$;
-        this.knowledgeService.getAllPlatforms().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1)).subscribe(value => {
+        this.knowledgeService.allPlatforms$.subscribe(value => {
             this.platforms = value;
         });
     }
@@ -572,6 +587,9 @@ let ResultsComponent = class ResultsComponent {
 ResultsComponent.ctorParameters = () => [
     { type: src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__["KnowledgeService"] }
 ];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], ResultsComponent.prototype, "search", null);
 ResultsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-results',
@@ -611,8 +629,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/knowledge.service */ "./src/app/services/knowledge.service.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-
 
 
 
@@ -621,13 +637,14 @@ let SearchUiComponent = class SearchUiComponent {
     constructor(knowledgeService, formbuilder) {
         this.knowledgeService = knowledgeService;
         this.formbuilder = formbuilder;
+        this.onSearch = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.searchForm = this.createForm();
     }
     ngOnInit() {
-        this.knowledgeService.getAllPlatforms().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1)).subscribe(value => {
+        this.knowledgeService.allPlatforms$.subscribe(value => {
             this.platforms = value;
         });
-        this.knowledgeService.getAllGames().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1)).subscribe(value => {
+        this.knowledgeService.allGames$.subscribe(value => {
             this.games = value;
         });
     }
@@ -638,6 +655,9 @@ let SearchUiComponent = class SearchUiComponent {
         });
         form.controls['games'].setValue('all');
         form.controls['platforms'].setValue('all');
+        form.valueChanges.subscribe(v => {
+            this.onSearch.emit(v);
+        });
         return form;
     }
 };
@@ -645,6 +665,9 @@ SearchUiComponent.ctorParameters = () => [
     { type: src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__["KnowledgeService"] },
     { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] }
 ];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], SearchUiComponent.prototype, "onSearch", void 0);
 SearchUiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-search-ui',
@@ -652,6 +675,38 @@ SearchUiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./search-ui.component.scss */ "./src/app/components/search-ui/search-ui.component.scss")).default]
     })
 ], SearchUiComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/games.pipe.ts":
+/*!****************************************!*\
+  !*** ./src/app/services/games.pipe.ts ***!
+  \****************************************/
+/*! exports provided: GamesPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GamesPipe", function() { return GamesPipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let GamesPipe = class GamesPipe {
+    transform(value, game) {
+        if (!game) {
+            return value.filter(item => (item.game.indexOf('<no value>') !== -1 || (item.game.length === 0)));
+        }
+        return value.filter(item => item.game.indexOf(game) !== -1);
+    }
+};
+GamesPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+        name: 'filterGames'
+    })
+], GamesPipe);
 
 
 
@@ -684,14 +739,38 @@ let KnowledgeService = class KnowledgeService {
         this.http = http;
         this.allItems$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
         this.allItems = [];
+        this.allPlatforms$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
+        this.allPlatforms = [];
+        this.allGames$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
+        this.allGames = [];
     }
     getAllItems() {
-        console.log('test', src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"]);
         if (!this.allItems.length) {
             return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/knowledgebase/index.json`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
-                console.log('all items', value);
                 this.allItems = value.data.items;
                 this.allItems$.next(value.data.items);
+                return value;
+            }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
+                let platforms = [];
+                value.data.items.forEach((i) => {
+                    i.platforms.forEach((p) => {
+                        if (!platforms.includes(p)) {
+                            platforms.push(p);
+                        }
+                    });
+                });
+                this.allPlatforms$.next(platforms);
+                return value;
+            }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
+                let games = [];
+                value.data.items.forEach((i) => {
+                    if (i.game !== '<no value>' && i.game.length !== 0) {
+                        if (!games.includes(i.game)) {
+                            games.push(i.game);
+                        }
+                    }
+                });
+                this.allGames$.next(games);
                 return value;
             }));
         }
@@ -699,31 +778,6 @@ let KnowledgeService = class KnowledgeService {
             this.allItems$.next(this.allItems);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(this.allItems);
         }
-    }
-    getAllPlatforms() {
-        return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/knowledgebase/index.json`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
-            let platforms = [];
-            value.data.items.forEach((i) => {
-                i.platforms.forEach((p) => {
-                    if (!platforms.includes(p)) {
-                        platforms.push(p);
-                    }
-                });
-            });
-            return platforms;
-        }));
-    }
-    getAllGames() {
-        return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/knowledgebase/index.json`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
-            let platforms = [];
-            value.data.items.forEach((i) => {
-                console.log('i', i.game);
-                if (!platforms.includes(i.game)) {
-                    platforms.push(i.game);
-                }
-            });
-            return platforms;
-        }));
     }
     getDetailContent(id) {
         return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/${id}`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((value) => {
@@ -740,6 +794,40 @@ KnowledgeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], KnowledgeService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/platforms.pipe.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/platforms.pipe.ts ***!
+  \********************************************/
+/*! exports provided: PlatformsPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlatformsPipe", function() { return PlatformsPipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let PlatformsPipe = class PlatformsPipe {
+    transform(value, platform) {
+        console.log('filter platform', value, platform, (!platform));
+        if (!platform) {
+            return value;
+        }
+        console.log('Filtered:', value.filter(item => item.indexOf(platform) !== -1));
+        return value.filter(item => item.indexOf(platform) !== -1);
+    }
+};
+PlatformsPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+        name: 'filterPlatforms'
+    })
+], PlatformsPipe);
 
 
 

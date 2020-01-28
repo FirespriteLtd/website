@@ -1,3 +1,4 @@
-<app-search-ui></app-search-ui>
-<app-results></app-results>
-
+<ng-template [ngIf]="data">
+  <app-search-ui (onSearch)="onSearchForm($event)"></app-search-ui>
+  <app-results [search]="search" ></app-results>
+</ng-template>

@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResultsComponent } from './components/results/results.component';
 import { AccordionModule } from 'ngx-foundation';
 import { ResultsDetailComponent } from './components/results/results-detail/results-detail.component';
+import { PlatformsPipe } from './services/platforms.pipe';
+import { GamesPipe } from './services/games.pipe';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ResultsDetailComponent } from './components/results/results-detail/resu
     AppComponent,
     SearchUiComponent,
     ResultsComponent,
-    ResultsDetailComponent
+    ResultsDetailComponent,
+    PlatformsPipe,
+    GamesPipe
   ],
   imports: [
     BrowserModule,

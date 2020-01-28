@@ -8,17 +8,20 @@ import { KnowledgeService } from 'src/app/services/knowledge.service';
 })
 export class AppComponent implements OnInit{
   title = 'knowledge';
+  data: any;
+  search: any;
 
   constructor(private knowledgeService: KnowledgeService) {
   }
 
   ngOnInit(): void {
-
     this.knowledgeService.getAllItems().subscribe(v=> {
-      console.log('my data', v);
+      this.data = v;
     })
-
   }
 
-
+  onSearchForm(event){
+    console.log(event);
+    this.search = event;
+  }
 }

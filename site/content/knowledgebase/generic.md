@@ -1,6 +1,6 @@
 ---
 game: ""
-title: "Something wrong with it"
+title: "Generic"
 outputs: ["json"]
 platforms:
   - ps4

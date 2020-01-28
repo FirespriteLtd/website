@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-search-ui></app-search-ui>\n<app-results></app-results>\n\n";
+    __webpack_exports__["default"] = "<ng-template [ngIf]=\"data\">\n  <app-search-ui (onSearch)=\"onSearchForm($event)\"></app-search-ui>\n  <app-results [search]=\"search\" ></app-results>\n</ng-template>\n";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>Title goes there</h2>\n  </div>\n  <ng-template ngFor let-platform [ngForOf]=\"platforms\">\n    <div class=\"grid-container\">\n      <h3>{{platform}}</h3>\n      <div class=\"grid-x align-center\">\n          <div class=\"cell\">\n            <accordion>\n              <accordion-group *ngFor=\"let item of $entries | async; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n              </accordion-group>\n            </accordion>\n          </div>\n      </div>\n    </div>\n  </ng-template>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"grid-container full block b-c-white\">\n  <div class=\"grid-container text-center\">\n    <h2>{{filterPlatform}} {{filterGame}}</h2>\n  </div>\n  <div class=\"grid-container\">\n    <div class=\"grid-x align-center\">\n      <div class=\"cell small-12 medium-9\">\n        <ng-template ngFor let-platform [ngForOf]=\"platforms | filterPlatforms:filterPlatform\">\n            <div class=\"grid-container\">\n              <h3>{{platform}}</h3>\n              <div class=\"grid-x align-center\">\n                  <div class=\"cell\">\n                    <accordion>\n                      <accordion-group *ngFor=\"let item of $entries | async | filterGames:filterGame | filterPlatforms:filterPlatform; let i = index\"  [heading]=\"item.title\"  (isOpenChange)=\"openGroup($event, i, platform)\">\n                        <app-results-detail [id]=\"item.permalink\"  [active]=\"((platform + '-' + i)=== currentPanel)  ? true: false \"></app-results-detail>\n                      </accordion-group>\n                    </accordion>\n                  </div>\n              </div>\n            </div>\n          </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -795,9 +795,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AppComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          var _this = this;
+
           this.knowledgeService.getAllItems().subscribe(function (v) {
-            console.log('my data', v);
+            _this.data = v;
           });
+        }
+      }, {
+        key: "onSearchForm",
+        value: function onSearchForm(event) {
+          console.log(event);
+          this.search = event;
         }
       }]);
 
@@ -907,13 +915,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./components/results/results-detail/results-detail.component */
     "./src/app/components/results/results-detail/results-detail.component.ts");
+    /* harmony import */
+
+
+    var _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./services/platforms.pipe */
+    "./src/app/services/platforms.pipe.ts");
+    /* harmony import */
+
+
+    var _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./services/games.pipe */
+    "./src/app/services/games.pipe.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_search_ui_search_ui_component__WEBPACK_IMPORTED_MODULE_6__["SearchUiComponent"], _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"], _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_search_ui_search_ui_component__WEBPACK_IMPORTED_MODULE_6__["SearchUiComponent"], _components_results_results_component__WEBPACK_IMPORTED_MODULE_8__["ResultsComponent"], _components_results_results_detail_results_detail_component__WEBPACK_IMPORTED_MODULE_10__["ResultsDetailComponent"], _services_platforms_pipe__WEBPACK_IMPORTED_MODULE_11__["PlatformsPipe"], _services_games_pipe__WEBPACK_IMPORTED_MODULE_12__["GamesPipe"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], ngx_foundation__WEBPACK_IMPORTED_MODULE_9__["AccordionModule"].forRoot()],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -1000,11 +1020,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getDetailContent",
         value: function getDetailContent(id) {
-          var _this = this;
+          var _this2 = this;
 
           if (!this._content) {
             this.knowledgeService.getDetailContent(id).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1)).subscribe(function (v) {
-              _this._content = v;
+              _this2._content = v;
             });
           }
         }
@@ -1100,12 +1120,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var src_app_services_knowledge_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! src/app/services/knowledge.service */
     "./src/app/services/knowledge.service.ts");
-    /* harmony import */
-
-
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! rxjs/operators */
-    "./node_modules/rxjs/_esm2015/operators/index.js");
 
     var ResultsComponent =
     /*#__PURE__*/
@@ -1114,17 +1128,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, ResultsComponent);
 
         this.knowledgeService = knowledgeService;
+        this.filterGame = '';
+        this.filterPlatform = '';
       }
 
       _createClass(ResultsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this3 = this;
 
-          this.knowledgeService.getAllItems().subscribe();
           this.$entries = this.knowledgeService.allItems$;
-          this.knowledgeService.getAllPlatforms().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1)).subscribe(function (value) {
-            _this2.platforms = value;
+          this.knowledgeService.allPlatforms$.subscribe(function (value) {
+            _this3.platforms = value;
           });
         }
       }, {
@@ -1132,6 +1147,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function openGroup(event, index, platform) {
           console.log('event', event, index);
           this.currentPanel = "".concat(platform, "-").concat(index);
+        }
+      }, {
+        key: "search",
+        set: function set(data) {
+          if (data) {
+            this.filterGame = data.games;
+            this.filterPlatform = data.platforms;
+          }
         }
       }]);
 
@@ -1144,6 +1167,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }];
     };
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()], ResultsComponent.prototype, "search", null);
     ResultsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-results',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -1219,12 +1243,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
-    /* harmony import */
-
-
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! rxjs/operators */
-    "./node_modules/rxjs/_esm2015/operators/index.js");
 
     var SearchUiComponent =
     /*#__PURE__*/
@@ -1234,30 +1252,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         this.knowledgeService = knowledgeService;
         this.formbuilder = formbuilder;
+        this.onSearch = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.searchForm = this.createForm();
       }
 
       _createClass(SearchUiComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this3 = this;
+          var _this4 = this;
 
-          this.knowledgeService.getAllPlatforms().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1)).subscribe(function (value) {
-            _this3.platforms = value;
+          this.knowledgeService.allPlatforms$.subscribe(function (value) {
+            _this4.platforms = value;
           });
-          this.knowledgeService.getAllGames().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1)).subscribe(function (value) {
-            _this3.games = value;
+          this.knowledgeService.allGames$.subscribe(function (value) {
+            _this4.games = value;
           });
         }
       }, {
         key: "createForm",
         value: function createForm() {
+          var _this5 = this;
+
           var form = this.formbuilder.group({
             platforms: '',
             games: ''
           });
           form.controls['games'].setValue('all');
           form.controls['platforms'].setValue('all');
+          form.valueChanges.subscribe(function (v) {
+            _this5.onSearch.emit(v);
+          });
           return form;
         }
       }]);
@@ -1273,6 +1297,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }];
     };
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()], SearchUiComponent.prototype, "onSearch", void 0);
     SearchUiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-search-ui',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -1282,6 +1307,69 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./search-ui.component.scss */
       "./src/app/components/search-ui/search-ui.component.scss")).default]
     })], SearchUiComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/games.pipe.ts":
+  /*!****************************************!*\
+    !*** ./src/app/services/games.pipe.ts ***!
+    \****************************************/
+
+  /*! exports provided: GamesPipe */
+
+  /***/
+  function srcAppServicesGamesPipeTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "GamesPipe", function () {
+      return GamesPipe;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var GamesPipe =
+    /*#__PURE__*/
+    function () {
+      function GamesPipe() {
+        _classCallCheck(this, GamesPipe);
+      }
+
+      _createClass(GamesPipe, [{
+        key: "transform",
+        value: function transform(value, game) {
+          if (!game) {
+            return value.filter(function (item) {
+              return item.game.indexOf('<no value>') !== -1 || item.game.length === 0;
+            });
+          }
+
+          return value.filter(function (item) {
+            return item.game.indexOf(game) !== -1;
+          });
+        }
+      }]);
+
+      return GamesPipe;
+    }();
+
+    GamesPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+      name: 'filterGames'
+    })], GamesPipe);
     /***/
   },
 
@@ -1350,21 +1438,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.http = http;
         this.allItems$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
         this.allItems = [];
+        this.allPlatforms$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
+        this.allPlatforms = [];
+        this.allGames$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"]([]);
+        this.allGames = [];
       }
 
       _createClass(KnowledgeService, [{
         key: "getAllItems",
         value: function getAllItems() {
-          var _this4 = this;
-
-          console.log('test', src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"]);
+          var _this6 = this;
 
           if (!this.allItems.length) {
             return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/knowledgebase/index.json")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
-              console.log('all items', value);
-              _this4.allItems = value.data.items;
+              _this6.allItems = value.data.items;
 
-              _this4.allItems$.next(value.data.items);
+              _this6.allItems$.next(value.data.items);
+
+              return value;
+            }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
+              var platforms = [];
+              value.data.items.forEach(function (i) {
+                i.platforms.forEach(function (p) {
+                  if (!platforms.includes(p)) {
+                    platforms.push(p);
+                  }
+                });
+              });
+
+              _this6.allPlatforms$.next(platforms);
+
+              return value;
+            }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
+              var games = [];
+              value.data.items.forEach(function (i) {
+                if (i.game !== '<no value>' && i.game.length !== 0) {
+                  if (!games.includes(i.game)) {
+                    games.push(i.game);
+                  }
+                }
+              });
+
+              _this6.allGames$.next(games);
 
               return value;
             }));
@@ -1372,36 +1487,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this.allItems$.next(this.allItems);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(this.allItems);
           }
-        }
-      }, {
-        key: "getAllPlatforms",
-        value: function getAllPlatforms() {
-          return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/knowledgebase/index.json")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
-            var platforms = [];
-            value.data.items.forEach(function (i) {
-              i.platforms.forEach(function (p) {
-                if (!platforms.includes(p)) {
-                  platforms.push(p);
-                }
-              });
-            });
-            return platforms;
-          }));
-        }
-      }, {
-        key: "getAllGames",
-        value: function getAllGames() {
-          return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/knowledgebase/index.json")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
-            var platforms = [];
-            value.data.items.forEach(function (i) {
-              console.log('i', i.game);
-
-              if (!platforms.includes(i.game)) {
-                platforms.push(i.game);
-              }
-            });
-            return platforms;
-          }));
         }
       }, {
         key: "getDetailContent",
@@ -1425,6 +1510,72 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     KnowledgeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], KnowledgeService);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/platforms.pipe.ts":
+  /*!********************************************!*\
+    !*** ./src/app/services/platforms.pipe.ts ***!
+    \********************************************/
+
+  /*! exports provided: PlatformsPipe */
+
+  /***/
+  function srcAppServicesPlatformsPipeTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PlatformsPipe", function () {
+      return PlatformsPipe;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var PlatformsPipe =
+    /*#__PURE__*/
+    function () {
+      function PlatformsPipe() {
+        _classCallCheck(this, PlatformsPipe);
+      }
+
+      _createClass(PlatformsPipe, [{
+        key: "transform",
+        value: function transform(value, platform) {
+          console.log('filter platform', value, platform, !platform);
+
+          if (!platform) {
+            return value;
+          }
+
+          console.log('Filtered:', value.filter(function (item) {
+            return item.indexOf(platform) !== -1;
+          }));
+          return value.filter(function (item) {
+            return item.indexOf(platform) !== -1;
+          });
+        }
+      }]);
+
+      return PlatformsPipe;
+    }();
+
+    PlatformsPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+      name: 'filterPlatforms'
+    })], PlatformsPipe);
     /***/
   },
 
