@@ -262,9 +262,7 @@ collections:
           preview: false
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: problems, name: problems, widget: list}
       - file: "site/content/games/_index.md"
         label: "Games"
         name: "games"
