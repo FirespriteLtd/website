@@ -1,4 +1,4 @@
-# Victor Hugo
+# Firesprite - Website
 
 **A Hugo boilerplate for creating truly epic websites**
 
