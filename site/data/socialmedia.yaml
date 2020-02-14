@@ -7,8 +7,7 @@ links:
     url: 'https://www.facebook.com/FirespriteGames/'
   - id: fab fa-twitter
     type: Twitter
-    url: ' https://twitter.com/FireSpriteGames'
+    url: 'https://twitter.com/FireSpriteGames'
   - id: far fa-envelope
     type: mail
-    url: '/contact'
-
+    url: /contact
