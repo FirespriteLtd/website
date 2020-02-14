@@ -118,6 +118,10 @@
           @include breakpoint(medium){
             color:$button-navigation-color;
           }
+
+          &:hover{
+            color: $primary-color!important;
+          }
         }
         &.active{
           a{

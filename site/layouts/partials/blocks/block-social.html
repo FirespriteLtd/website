@@ -24,7 +24,7 @@
                     {{end}}
                     {{if eq $media.type "Twitter" }}
                     <div class="social-block social-icon  {{$media.type | urlize}}">
-                        {{$link := "http://twitter.com/share?text=test&url="}}
+                        {{$link := "http://twitter.com/share?&url="}}
                         {{with $media }}
                             {{ block "social-link" (dict "content" . "shareLink" $link "perma" $perma "host" $host)}} {{end}}
                         {{end}}

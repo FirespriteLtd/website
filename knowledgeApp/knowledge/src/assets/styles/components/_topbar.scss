@@ -79,7 +79,7 @@
         padding-bottom: rem-calc(25);
 
         &:hover{
-          color: $primary-color;
+          color: $primary-color!important;
         }
       }
 
@@ -114,9 +114,18 @@
         a{
           @include breakpoint(small){
             color: $button-navigation-color;
+            &:hover{
+              color: $button-navigation-b-c;
+            }
           }
           @include breakpoint(medium){
             color:$button-navigation-color;
+            &:hover{
+              color: $button-navigation-b-c;
+            }
+          }
+          &:hover{
+            color: $button-navigation-b-c;
           }
         }
         &.active{

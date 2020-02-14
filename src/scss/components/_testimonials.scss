@@ -8,10 +8,22 @@
     font-size: rem-calc(24);
     text-transform: uppercase;
     margin-bottom: rem-calc(30);
+
+    @include breakpoint(medium){
+      font-size: rem-calc(28);
+    }
+
+    @include breakpoint(medium){
+      font-size: rem-calc(30);
+    }
   }
 
   .profile-img {
     margin-bottom: rem-calc(10);
+    .image-round{
+      width: rem-calc(80);
+      height: rem-calc(80);
+    }
     img{
       border: none;
     }
