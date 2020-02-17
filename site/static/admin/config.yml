@@ -216,7 +216,7 @@ collections:
         widget: "relation"
         collection: "job_type"
         searchFields: ["name"]
-        valueField: ["value"]
+        valueField: "value"
         displayFields: ["name"]
       - label: "Position type"
         name: "position_type"
