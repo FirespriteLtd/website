@@ -213,15 +213,11 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Categories"
         name: "careers/categories"
-        widget: "select"
-        options:
-          - { label: "Art", value: "art" }
-          - { label: "Engineering", value: "engineering" }
-          - { label: "Design", value: "design" }
-          - { label: "Production", value: "production" }
-          - { label: "QA", value: "qa" }
-          - { label: "Marketing", value: "marketing" }
-          - { label: "Studio", value: "studio" }
+        widget: "relation"
+        collection: "job_type"
+        searchFields: ["name"]
+        valueField: ["value"]
+        displayFields: ["name"]
       - label: "Position type"
         name: "position_type"
         widget: "select"
