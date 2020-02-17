@@ -162,6 +162,17 @@ collections:
       - {label: "Platform", name: "name", widget: string}
       - {label: "Value", name: "value", widget: string}
       - {label: "Icon", name: "icon", widget: image}
+  - name: "job_type"
+    label: "Job Types"
+    folder: "site/data/job-types"
+    extension: "yaml"
+    identifier_field: name
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Name", name: "name", widget: string}
+      - {label: "Value", name: "value", widget: string}
   - name: "knowledge"
     label: "Knowledge Base"
     folder: "site/content/knowledgebase"
