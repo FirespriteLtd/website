@@ -1,5 +1,5 @@
 ---
-title: The Persistence
+title: The Persistence VR
 date: 2018-07-24T09:43:47.559Z
 release_date: 2020-01-22T10:31:50.101Z
 order_status: Out now

@@ -1,17 +1,22 @@
 ---
-title: The Persistence 2
+title: The Persistence
 date: 2018-07-24T09:43:47.559Z
 release_date: 2020-01-14T11:18:14.339Z
-order_status: Out now
-featured: false
+order_status: Pre-order
+featured: true
 logo: /images/uploads/games-thepersistence-logo.png
+summary: >-
+  The Persistence launches for PC, XBOX and Nintendo Switch, alongside adding
+  support for non-VR on Playstation 4
 genre: Sci-fi Horror
-players: 4 Players
-ratings: PEGI 18
+players: 1 Player
+ratings: 'PEGI 18, ESRB M'
 games/platforms:
-  - pc-steam
   - ps4
-  - xbox one
+  - mobile
+  - xbox-one
+  - nintendo-switch
+  - pc
 featured_image:
   active: false
   alt: The Persistence
@@ -60,13 +65,11 @@ media:
       id: test
       src: /images/uploads/games-thepersistence-concept1.jpg
 buy:
-  - platforms:
-      - playstation 4
+  - platforms: pc
     title: Amazon
     url: >-
       https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
-  - platforms:
-      - pc
+  - platforms: pc
     title: Steam
     url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
 ---

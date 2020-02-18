@@ -1,11 +1,11 @@
 ---
-title: Welcome to Firesprite
+title: Welcome to Firesprite Games
 featured_image:
   active: true
-  alt: Latest game
-  id: w6OCl9WXz2I
+  alt: Firesprite Games
+  id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
 news_active: true
-twitter_active: true
+twitter_active: false
 ---
-# We deliver **world-firsts** in **creativity** and **technology**
+# game development at the cutting edge.
