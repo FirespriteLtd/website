@@ -434,7 +434,7 @@ collections:
             name: "twitter"
             widget: object
             fields:
-              - label: "On/Off"
+              - label: "Off/On"
                 name: "active"
                 widget: "boolean"
                 default: false
