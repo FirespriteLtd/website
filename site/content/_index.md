@@ -2,10 +2,10 @@
 title: Welcome to Firesprite Games
 featured_image:
   active: true
-  alt: Latest game
+  alt: Firesprite Games
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
 news_active: true
 twitter_active: false
 ---
-# hello kate bierney
+# game development at the cutting edge.
