@@ -1,7 +1,7 @@
 ---
 title: Welcome to Firesprite Games
 featured_image:
-  active: true
+  active: false
   alt: Firesprite Games
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
