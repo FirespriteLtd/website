@@ -271,6 +271,9 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
+          - {label: Request Header, name: request_header, widget: string}
+          - {label: Request body, name: request_body, widget: string}
+          - {label: Request button, name: request_button, widget: string}
       - file: "site/content/games/_index.md"
         label: "Games"
         name: "games"

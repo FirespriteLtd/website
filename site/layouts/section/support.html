@@ -2,25 +2,26 @@
 <base href="/support">
 {{end}}
 {{ define "main" }}
-<div class="grid-container full b-c-white"  id="root" >
-    <div class="grid-container">
-        <div class="block grid-x grid-padding-x grid-margin-y align-center">
-            <div class="cell small-12 medium-10 large-8 text-center">
-                {{- .Content -}}
-            </div>
-        </div>
-        {{"<!-- Form -->" | safeHTML}}
-        <div class="grid-x grid-padding-x grid-margin-y align-center">
-            <div class="cell small-12 medium-10 large-8">
-                {{ partial "support-form" (dict "Context" . "ctx" $) }}
-            </div>
-        </div>
-        {{"<!-- /Form -->" | safeHTML}}
-    </div>
-</div>
+
 {{"<!-- Knowledgebase nav -->" | safeHTML}}
 
-    {{ partial "blocks/block-knowledgebase" (dict "Context" . "ctx" $) }}
+{{ partial "knowledgebase-search" (dict "Context" . "ctx" $) }}
 
 {{"<!-- /Knowledgebase nav -->" | safeHTML}}
+
+{{"<!-- Support  Request -->" | safeHTML}}
+
+<div class="grid-container block full b-c-secondary p-b-50" id="knowledgebase">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x align-center text-center">
+            <div class="cell small-12 medium-10 large-8">
+                <h2 class="f-c-primary">Send us message</h2>
+                <p>At Firesprite, we beilieve in giving everyone the freedom to express themselves and to take ownership of the creation of our games. Your talent and passion will drive the quality of everything we do. Best of all, you will get to work with a dedicated, talented, and fun-loving team in an inclusive and creative environment.?</p>
+                <a href="/support/request" class="hollow button white">Send us a support request</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{"<!-- /Support  Request -->" | safeHTML}}
 {{ end }}
