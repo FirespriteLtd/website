@@ -5,7 +5,7 @@ featured_image:
   alt: Latest game
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
-news_active: false
+news_active: true
 twitter_active: false
 ---
 # cutting-edge game development & design
