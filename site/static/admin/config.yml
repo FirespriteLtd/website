@@ -33,7 +33,6 @@ collections:
           - { label: "Game", value: "game" }
           - { label: "Press Release", value: "press" }
           - { label: "Careers", value: "careers" }
-      - {label: "Featured Post", name: "featured_post", widget: "boolean"}
       - label: "Featured Image"
         name: "featured_image"
         widget: "object"
