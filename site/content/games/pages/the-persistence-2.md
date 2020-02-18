@@ -65,13 +65,11 @@ media:
       id: test
       src: /images/uploads/games-thepersistence-concept1.jpg
 buy:
-  - platforms:
-      - playstation 4
+  - platforms: pc
     title: Amazon
     url: >-
       https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
-  - platforms:
-      - pc
+  - platforms: pc
     title: Steam
     url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
 ---
