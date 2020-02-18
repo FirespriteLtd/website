@@ -1,5 +1,5 @@
 ---
-title: Welcome to Firesprite
+title: Welcome to Firesprite Games
 featured_image:
   active: true
   alt: Latest game
@@ -8,4 +8,4 @@ featured_image:
 news_active: true
 twitter_active: true
 ---
-# We deliver **world-firsts** in **creativity** and **technology**
+# CUTTING-EDGE GAME DEVELOPMENT & DESIGN
