@@ -12,9 +12,11 @@ genre: Sci-fi Horror
 players: 1 Player
 ratings: 'PEGI 18, ESRB M'
 games/platforms:
-  - pc-steam
   - ps4
-  - xbox one
+  - mobile
+  - xbox-one
+  - nintendo-switch
+  - pc
 featured_image:
   active: false
   alt: The Persistence
