@@ -5,9 +5,7 @@ featured_image:
   alt: Latest game
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
-news_active: true
-twitter_active: true
+news_active: false
+twitter_active: false
 ---
 # cutting-edge game development & design
-
-we are firesprite
