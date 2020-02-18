@@ -1,7 +1,7 @@
 ---
 title: News article headline which is long and runs across multiple lines
 date: 2019-11-05T07:03:01.840Z
-draft: true
+draft: false
 summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
