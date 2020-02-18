@@ -5,7 +5,7 @@ featured_image:
   alt: Firesprite Games
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
-news_active: true
-twitter_active: false
+news_active: false
+twitter_active: true
 ---
 # game development at the cutting edge.
