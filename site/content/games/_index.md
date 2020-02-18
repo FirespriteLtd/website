@@ -1,7 +1,6 @@
 ---
 title: Our Games
-slug: games
-subtitle: Complete development from concept to completion
+subtitle: Our own creations
 featured_image:
   active: true
   alt: Our Games
