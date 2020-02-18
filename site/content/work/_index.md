@@ -1,6 +1,6 @@
 ---
 title: Our Work
-subtitle: A trusted partner to achieve your strategic goals
+subtitle: test 1
 featured_image:
   active: true
   alt: Our Work
