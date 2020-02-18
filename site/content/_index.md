@@ -6,6 +6,6 @@ featured_image:
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
 news_active: true
-twitter_active: false
+twitter_active: true
 ---
 # game development at the cutting edge.
