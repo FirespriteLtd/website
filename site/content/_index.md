@@ -8,4 +8,4 @@ featured_image:
 news_active: true
 twitter_active: true
 ---
-# CUTTING-EDGE GAME DEVELOPMENT & DESIGN
+# cutting-edge game development & design
