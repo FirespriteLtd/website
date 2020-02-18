@@ -8,4 +8,4 @@ featured_image:
 news_active: true
 twitter_active: false
 ---
-# cutting-edge game development & design
+# hello kate bierney
