@@ -1,7 +1,7 @@
 ---
 title: The Persistence
 date: 2018-07-24T09:43:47.559Z
-release_date: 2020-01-14T11:18:14.339Z
+release_date: 2020-05-28T10:18:14.339Z
 order_status: Pre-order
 featured: true
 logo: /images/uploads/games-thepersistence-logo.png
