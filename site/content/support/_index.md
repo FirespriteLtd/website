@@ -1,6 +1,6 @@
 ---
 title: Support
-request_header: Still haven't found what you looking for?
+request_header: Still haven't found what you're looking for?
 request_body: Send us a support request if you experience any issue with our products.
 request_button: Send a support request
 ---
