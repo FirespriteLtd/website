@@ -125,7 +125,7 @@
                                     <td>
                                         <ul class="menu vertical">
                                             {{range $index, $b:= $buy}}
-                                            {{range .platforms}}
+                                            {{range site.Data.platforms}}
                                             {{if eq ( . | urlize ) ($platform | urlize )}}
                                             <li>
 
