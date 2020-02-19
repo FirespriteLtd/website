@@ -1,5 +1,5 @@
 twitter:
-  active: false
+  active: true
   url: ' https://twitter.com/FireSpriteGames'
 links:
   - id: fab fa-facebook-f
