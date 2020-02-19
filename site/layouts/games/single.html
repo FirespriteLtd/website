@@ -125,8 +125,9 @@
                                     <td>
                                         <ul class="menu vertical">
                                             {{range $index, $b:= $buy}}
-                                            {{range site.Data.platforms}}
-                                            {{if eq ( . | urlize ) ($platform | urlize )}}
+                                            {{ range $index, $p:= $b.platforms }}
+
+                                            {{if eq ( $p | urlize ) ($platform | urlize )}}
                                             <li>
 
                                                 <a href="{{$b.url}}">{{$b.title}}</a>
