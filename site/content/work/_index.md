@@ -1,6 +1,6 @@
 ---
 title: Our Work
-subtitle: test 1
+subtitle: your strategic partner
 featured_image:
   active: true
   alt: Our Work
