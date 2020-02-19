@@ -7,4 +7,4 @@ featured_image:
   id: 7K4DZySTZuM
   src: /images/uploads/work-hero.jpg
 ---
-We deliver AAA level development services, from ideation through to delivery, tailored for specific needs.
+We deliver AAA level development services, from ideation through to delivery, tailored for specific needs. Please scroll down to view a selection of work we have delivered for clients.
