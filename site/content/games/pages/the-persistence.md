@@ -61,28 +61,23 @@ media:
       id: iwMYzJaVzFI
       src: /images/uploads/video-placeholder.jpg
 buy:
-  - platforms:
-      - ps4
+  - platforms: ps4
     title: Playstation Store
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms:
-      - nintendo switch
+  - platforms: nintendo switch
     title: Nintendo Store
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms:
-      - pc
+  - platforms: pc
     title: Steam
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms:
-      - pc
+  - platforms: pc
     title: Greenman Gaming
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms:
-      - xbox one
+  - platforms: xbox one
     title: Microsoft Store
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
