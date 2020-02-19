@@ -1,9 +1,9 @@
 active: false
 items:
-  - link: /news
-    name: News
   - link: /work
     name: Our Work
+  - link: /news
+    name: News
   - link: /games
     name: Our Games
   - link: /careers
