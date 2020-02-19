@@ -90,7 +90,12 @@
 <div id="buy-popup" class="overlay-popup">
     <div class="overlay-popup-content">
         <div class="grid-container text-center">
+            {{if eq .Params.order_status "Out now"}}
             <h3>Buy Now</h3>
+            {{end}}
+            {{if eq .Params.order_status "Pre-order"}}
+            <h3>Pre-order</h3>
+            {{end}}
             <h2>{{.Title}}</h2>
             <p>Choose your platform</p>
             <div class="grid-x grid-padding-x">
