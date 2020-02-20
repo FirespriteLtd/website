@@ -2,10 +2,9 @@
 output: '[json]'
 game:
   - The Persistence
-  - The Persistence VR
 title: Connecting app
 platforms:
-  - nintendo-switch
+  - pc
 ---
 **User guide/how to connect to the game**
 
