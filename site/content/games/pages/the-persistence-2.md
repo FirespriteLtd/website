@@ -13,7 +13,6 @@ players: 1 Player
 ratings: 'PEGI 18, ESRB M'
 games/platforms:
   - ps4
-  - mobile
   - xbox-one
   - nintendo-switch
   - pc
