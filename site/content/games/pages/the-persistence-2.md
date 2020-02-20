@@ -37,21 +37,21 @@ features:
       teleporting between decks, the layout of the starship will change each
       time. Each and every expedition into The Persistence will be unique with
       different, items and gear to collect & upgrade.
-  - title: 'Enhance, upgrade and augment. '
+  - title: 'Enhance, upgrade and augment'
     body: >-
       The technology of the 26th century allows for genetic augmentation and
       manipulation of dark matter technology. Resequence Zimri’s DNA to improve
       health, toughness and defensive abilities or even harvest crew DNA to
       create cloned bodies of crewmembers to inhabit, each with their own unique
       abilities.
-  - title: 'Explore, evade, fight and gather resources.'
+  - title: 'Explore, evade, fight and gather resources'
     body: >-
       The mutated horde won’t think twice about tearing Zimri limb from limb.
       Use the environment to scope out, stalk and gain the tactical advantage in
       either evading or attempting to take them down.  Explore the decks of the
       ship and gather resources, weapons and suit customizations to aid survival
       in the journey deeper into the dark and terrifying depths.
-  - title: Asymmetric Multiplayer
+  - title: Play with or against your friends
     body: >-
       Connect a phone or tablet running IOS or Android* to the game for up to 4
       players to take control of ‘Solex’ – the ship’s engineering system. Once
@@ -89,6 +89,6 @@ buy:
 ---
 ##### Can you survive?
 
-The Persistence challenges you to survive aboard a doomed deep space colony starship in the year 2521, overrun with horrific & murderous abberations.  
+The Persistence challenges you to survive aboard a doomed deep space colony starship in the year 2521, overrun with horrific & murderous aberrations.  
 
-Explore, evade and fight your way through the depths to bring the ship back to Earth.  Gather resources, upgrade abilities and fabricate an arsenal of weapons in this brutal sci-fi horror experience!
+Stranded, malfunctioning and caught in the inexorable pull of a black hole, “The Persistence” is overrun with a crew mutated into horrific & murderous aberrations. It’s down to you, a clone of security officer Zimri Eder, to make your way deeper in the decks of The Persistence to repair the systems and prevent the ship from being torn apart.  Gather resources, upgrade abilities and fabricate an arsenal of weapons in this brutal sci-fi horror roguelike.
