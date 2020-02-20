@@ -8,7 +8,7 @@ items:
     name: Our Games
   - link: /careers
     name: Working for us
-  - link: /contact
-    name: Contact us
   - link: /support
     name: Support
+  - link: /contact
+    name: Contact us
