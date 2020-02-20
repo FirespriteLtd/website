@@ -3,7 +3,7 @@ game:
   - The Persistence
 title: Connecting the app to the Game
 platforms:
-  - mobile
+  - pc
 ---
 **User guide/how to connect to the game**
 
