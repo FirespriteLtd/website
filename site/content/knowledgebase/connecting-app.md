@@ -5,7 +5,7 @@ game:
   - The Persistence VR
 title: Connecting app
 platforms:
-  - mobile
+  - nintendo-switch
 ---
 **User guide/how to connect to the game**
 
