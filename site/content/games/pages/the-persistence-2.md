@@ -20,7 +20,7 @@ games/platforms:
 featured_image:
   active: false
   alt: The Persistence
-  src: /images/uploads/games-thepersistence2.jpg
+  src: /images/uploads/Pers_2020_Horiz.jpg
 video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
 features:
   - title: All is not lost
