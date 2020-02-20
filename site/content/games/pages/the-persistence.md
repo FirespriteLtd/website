@@ -1,18 +1,15 @@
 ---
 title: The Persistence VR
 date: 2018-07-24T09:43:47.559Z
-release_date: 2020-01-22T10:31:50.101Z
+release_date: 2018-07-24T09:31:50.101Z
 order_status: Out now
-featured: false
+featured: true
 logo: /images/uploads/games-thepersistence-logo.png
 genre: Action Horror
 players: 1 Player
-ratings: PEGI 16
+ratings: 'PEGI 18, ESRB M'
 games/platforms:
   - ps4
-  - nintendo-switch
-  - pc
-  - xbox-one
 featured_image:
   active: false
   alt: The Persistence
@@ -63,22 +60,6 @@ media:
 buy:
   - platforms: ps4
     title: Playstation Store
-    url: >-
-      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms: nintendo switch
-    title: Nintendo Store
-    url: >-
-      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms: pc
-    title: Steam
-    url: >-
-      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms: pc
-    title: Greenman Gaming
-    url: >-
-      https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
-  - platforms: xbox one
-    title: Microsoft Store
     url: >-
       https://store.playstation.com/en-gb/product/EP3393-CUSA07814_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
 ---
