@@ -1,7 +1,6 @@
 ---
 game:
   - The Persistence
-  - The Persistence VR
 title: Connecting the app to the Game
 platforms:
   - mobile
