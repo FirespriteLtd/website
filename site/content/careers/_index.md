@@ -53,7 +53,7 @@ intro:
       title: Careers
   title: 'The freedom to innovate, create and excel'
   body: >-
-    At Firesprite, we beilieve in giving everyone the freedom to express
+    At Firesprite, we believe in giving everyone the freedom to express
     themselves and to take ownership of the creation of our games. Your talent
     and passion will drive the quality of everything we do. Best of all, you
     will get to work with a dedicated, talented, and fun-loving team in an
@@ -106,4 +106,6 @@ Testimonials:
     position: Bowler
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus. Vitae ultricies leo integer malesuada. Magna etiam tempor orci eu lobortis. Aliquet bibendum enim facilisis gravida neque convallis a cras.
+We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
+
+Our core focus is on cutting edge game development on the latest hardware. We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players
