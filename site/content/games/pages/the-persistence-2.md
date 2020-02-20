@@ -19,6 +19,7 @@ games/platforms:
 featured_image:
   active: false
   alt: The Persistence
+  id: Test
   src: /images/uploads/Pers_2020_Horiz.jpg
 video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
 features:
@@ -74,18 +75,8 @@ media:
       src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
-  videos:
-    - alt: test
-      id: test
-      src: /images/uploads/games-thepersistence-concept1.jpg
-buy:
-  - platforms: pc
-    title: Amazon
-    url: >-
-      https://www.amazon.co.uk/Sony-0711719712510-The-Persistence-PSVR/dp/B07DX7XTD8
-  - platforms: pc
-    title: Steam
-    url: 'https://www.playstation.com/en-gb/games/the-persistence-ps4/'
+  videos: []
+buy: []
 ---
 ##### Can you survive?
 
