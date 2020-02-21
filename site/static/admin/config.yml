@@ -176,7 +176,6 @@ collections:
     label: "Knowledge Base"
     folder: "site/content/knowledgebase/pages"
     identifier_field: name
-    format:
     create: true
     editor:
       preview: false
