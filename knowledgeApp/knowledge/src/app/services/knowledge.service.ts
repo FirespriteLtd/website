@@ -44,6 +44,7 @@ export class KnowledgeService {
           let games = [];
           value.data.items.forEach((i)=>{
             if(i.game !== '<no value>' && i.game.length !== 0) {
+              console.log('Game', i.game.length)
               if (!games.includes(i.game)) {
                 games.push(i.game);
               }

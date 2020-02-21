@@ -11,7 +11,7 @@ export class GamesbyplatformPipe implements PipeTransform {
       return value;
     }
 
-    console.log('Filter game by platform', value, platform,  value.filter(item => item.platforms.includes(platform)))
+   // console.log('Filter game by platform', value, platform,  value.filter(item => item.platforms.includes(platform)))
 
     return value.filter(item => item.platforms.includes(platform));
   }
