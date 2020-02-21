@@ -2,7 +2,7 @@
 output:
   - JSON
 game: The Persistence
-title: Hello
+title: Hello tet
 platforms:
   - nintendo-switch
 ---
