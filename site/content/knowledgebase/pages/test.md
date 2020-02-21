@@ -1,5 +1,5 @@
 ---
-output: '[''JSON'']'
+outputs: "json"
 game: The Persistence
 title: Test
 platforms:
