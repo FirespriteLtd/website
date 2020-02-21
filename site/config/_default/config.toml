@@ -26,6 +26,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   quality = 60
   anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
 
+[ouputs]
+    knowledgebase = ['JSON']
+
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["section", "careers", "contact", "admin"]

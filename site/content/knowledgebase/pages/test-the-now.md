@@ -1,6 +1,8 @@
 ---
-output: '[json]'
-game: The Persistence VR
+output: '["JSON"]'
+game: 
+   - The Persistence VR
+   - The Persistence
 title: Test the now
 platforms:
   - mobile
