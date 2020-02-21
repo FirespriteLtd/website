@@ -86,7 +86,12 @@
     padding-bottom: rem-calc(50);
   }
 
-
+  .scroll-pointer{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1;
+  }
 
   .hero-header-inner{
     max-width: 100%;
