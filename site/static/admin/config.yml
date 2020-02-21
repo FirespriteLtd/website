@@ -181,7 +181,10 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Output", name: "outputs", widget: "hidden", default: "[json]"}
+      - label: "Output"
+        name: "outputs"
+        widget: "hidden"
+        default: ["json"]
       - label: "Game"
         name: "game"
         widget: "relation"
@@ -364,7 +367,10 @@ collections:
         editor:
           preview: false
         fields:
-          - {label: "Output", name: "outputs", widget: "hidden", default: "[json]" }
+          - label: "Output"
+            name: "outputs"
+            widget: "hidden"
+            default: ["json"]
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
       - file: "site/content/privacy/_index.md"
