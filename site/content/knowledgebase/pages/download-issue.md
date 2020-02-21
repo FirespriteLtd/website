@@ -1,6 +1,7 @@
 ---
+outputs:
+  - json
 title: Download issue
-outputs: ["json"]
 platforms:
   - nintendo-switch
   - ps4
