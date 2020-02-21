@@ -6,7 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PlatformNamePipe implements PipeTransform {
 
   transform(value: string): any {
-    return value.replace('-', ' ');
+    const s = value.replace('-', ' ');
+    return s.charAt(0).toUpperCase() + s.substring(1);
   }
 
 }
