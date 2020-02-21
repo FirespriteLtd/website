@@ -1,9 +1,9 @@
 ---
-outputs: 
-   - json
+output:
+  - JSON
 game: The Persistence
-title: Test first
+title: Hello tet
 platforms:
   - nintendo-switch
 ---
-hello
+hello worlds
