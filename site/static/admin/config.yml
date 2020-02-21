@@ -180,7 +180,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Output", name: "output", widget: "hidden", default: ["JSON"]}
+      - {label: "Output", name: "output", widget: "hidden", default: "['JSON']"}
       - label: "Game"
         name: "game"
         widget: "relation"
