@@ -45,6 +45,9 @@
   .panel{
     @extend .accordion-item;
     border-radius: unset;
+    .card{
+      margin-bottom: 0;
+    }
   }
 
   :last-child:not(.is-active) > .panel-heading {
@@ -56,11 +59,12 @@
     border-radius: unset;
     background-color: $light-gray;
     font-size: rem-calc(14);
-    letter-spacing: rem-calc(2);
+
     padding: 1.33333rem rem-calc(20);
 
     button{
       text-transform: uppercase;
+      letter-spacing: 0.11111111rem;
       font-family: $header-font-family;
     }
 
@@ -75,6 +79,10 @@
 
     &:before {
       margin-right: 18px;
+      right: 0;
+      font-weight: bold;
+      font-size: 2.22222222rem;
+      margin-top: -1.11111111rem;
     }
 
   }

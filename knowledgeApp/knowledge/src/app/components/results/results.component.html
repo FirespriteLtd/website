@@ -8,7 +8,7 @@
         <ng-template ngFor let-platform [ngForOf]="platforms | filterPlatforms:filterPlatform">
           <ng-template [ngIf]="(($entries | async | filterGames:filterGame | filterGamesByPlatform:platform).length > 0)">
               <div class="grid-container m-b-50">
-                <h4>{{platform}}</h4>
+                <h4>{{platform | platformName}}</h4>
                 <div class="grid-x align-center">
                     <div class="cell">
                       <accordion>

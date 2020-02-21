@@ -12,6 +12,8 @@ import { ResultsDetailComponent } from './components/results/results-detail/resu
 import { PlatformsPipe } from './services/platforms.pipe';
 import { GamesPipe } from './services/games.pipe';
 import { GamesbyplatformPipe } from './services/gamesbyplatform.pipe';
+import { PlatformNamePipe } from './services/platform-name.pipe';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { GamesbyplatformPipe } from './services/gamesbyplatform.pipe';
     ResultsDetailComponent,
     PlatformsPipe,
     GamesPipe,
-    GamesbyplatformPipe
+    GamesbyplatformPipe,
+    PlatformNamePipe
   ],
   imports: [
     BrowserModule,
