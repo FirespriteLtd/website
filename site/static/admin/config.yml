@@ -184,7 +184,7 @@ collections:
       - label: "Game"
         name: "game"
         widget: "relation"
-        multiple: true
+        multiple: false
         collection: "games"
         searchFields: ["title"]
         valueField: "title"
