@@ -180,7 +180,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Output", name: "output", widget: "hidden", default: ["JSON"]}
+      - {label: "Output", name: "output", widget: "hidden", default: '["JSON"]'}
       - label: "Game"
         name: "game"
         widget: "relation"
@@ -363,7 +363,7 @@ collections:
         editor:
           preview: false
         fields:
-          - {label: "Output", name: "output", widget: "hidden", default: ["JSON"]}
+          - {label: "Output", name: "output", widget: "hidden", default: '["JSON"]'}
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
       - file: "site/content/privacy/_index.md"
