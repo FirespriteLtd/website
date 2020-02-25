@@ -32,7 +32,7 @@
     {{if(isset $image "src")}}
     <div class="imageWrapper">
         <img src="{{ $image.src }}" alt="{{ $image.alt }}">
-        <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ $image.src }}')" data-rellax-speed="-7"></div>
+        <div class="desktop {{ if .bg_image_mobile }}hide-for-small{{ end }} {{if $p }} rellax {{end}} "  style="background-image: url('{{ $image.src }}')" {{if $p }} data-rellax-speed="-7"{{end}}></div>
     </div>
     {{end}}
 </div>
