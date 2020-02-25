@@ -9,7 +9,11 @@
     {{if .Params.news_active }}
         {{ partial "blocks/block-latest-news" .}}
     {{end}}
-    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "games"  )}}
+    {{if not .Params.featured_games_active }}
+        {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "games"  )}}
+    {{else}}
+        {{ partial "blocks/block-featured-game-section" . }}
+    {{end}}
     {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "careers" "Button" "Work with us" )}}
 {{ end }}
 {{define "popup"}}

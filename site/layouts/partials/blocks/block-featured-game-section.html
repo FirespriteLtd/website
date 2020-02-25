@@ -1,0 +1,53 @@
+{{$featured := first 1 (where .Site.RegularPages  "Type"  "games" )}}
+
+<div id="trigger-games" >
+<section id="section-games">
+<div id="block-games" class="grid-container full block block-image block-section">
+    {{range $featured }}
+    {{$image := .Params.featured_image}}
+    <div class="contentWrapper">
+        <div class="grid-container">
+            <div class="grid-y grid-frame relax">
+                <div class="cell auto cell-block-container">
+                    <div class="grid-x align-center-middle p-t-50">
+                        <div class="cell small-12 medium-10 large-7">
+                            <div class="grid-x align-center-middle text-center">
+                                <div class="cell small-12 header-content">
+                                        <header>
+                                            <h2>Featured Game</h2>
+                                            <h3>
+                                                {{.Title}}
+                                            </h3>
+                                        </header>
+                                        <p>{{.Summary}}</p>
+                                </div>
+                                <div class="cell small-12 medium-8 header-button">
+                                    <a href="{{.RelPermalink}}" class="white hollow button m-t-80">Find out more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{if(isset $image "src")}}
+
+    <div class="imageWrapper" style="background-image: url('{{ $image.src}}')">
+
+
+        {{if $image.active }}
+
+            <div  class="video-wrapper video-background" >
+                <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-games" data-video="{{ $image.id }}"></div></div>
+            </div>
+        {{else}}
+            <div class="desktop"  style="background-image: url('{{ $image.src }}')"></div>
+        {{end}}
+    </div>
+    {{end}}
+{{end}}
+</div>
+</section>
+</div>
+
