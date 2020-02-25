@@ -5,7 +5,10 @@ featured_image:
   alt: Firesprite Games
   id: LfTSnm5qopg
   src: /images/uploads/home-hero.jpg
-featured_games_active: true
+featured:
+  featured_game_active: true
+  games:
+    - The Persistence
 news_active: true
 twitter_active: true
 ---
