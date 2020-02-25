@@ -245,9 +245,9 @@ collections:
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
           - label: "Featured Game"
-            name: "featured",
+            name: "featured"
             widget: "object"
-            fields: 
+            fields:
               - {label: "Featured active", name: "featured_game_active", widget: "boolean", default: false}
               - label: "Game"
                 name: "games"
