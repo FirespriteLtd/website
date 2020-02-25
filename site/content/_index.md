@@ -8,7 +8,7 @@ featured_image:
 featured:
   featured_game_active: true
   games:
-    - The Persistence
+    - The Persistence VR
 news_active: true
 twitter_active: true
 ---
