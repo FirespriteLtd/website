@@ -9,10 +9,10 @@
     {{if .Params.news_active }}
         {{ partial "blocks/block-latest-news" .}}
     {{end}}
-    {{if not .Params.featured_games_active }}
+    {{if not .Params.featured.featured_game_active }}
         {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "games"  )}}
     {{else}}
-        {{ partial "blocks/block-featured-game-section" . }}
+        {{ partial "blocks/block-featured-game-section" (dict "Context" . "ctx" $ ) }}
     {{end}}
     {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "careers" "Button" "Work with us" )}}
 {{ end }}

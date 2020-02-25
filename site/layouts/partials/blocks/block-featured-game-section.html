@@ -1,9 +1,14 @@
-{{$featured := first 1 (where .Site.RegularPages  "Type"  "games" )}}
-
+{{$games := (where .ctx.Site.RegularPages "Type"  "games")  }}
+{{$context := .Context}}
+{{range $index, $content := $games }}
+    {{range $index, $select:= $context.Params.featured.games}}
+        {{if eq $content.Title $select }}
+            {{$featured := $content}}
 <div id="trigger-games" >
 <section id="section-games">
 <div id="block-games" class="grid-container full block block-image block-section">
-    {{range $featured }}
+
+    {{with $featured }}
     {{$image := .Params.featured_image}}
     <div class="contentWrapper">
         <div class="grid-container">
@@ -48,3 +53,6 @@
 </section>
 </div>
 
+{{end}}
+{{end}}
+{{end}}
