@@ -3,7 +3,7 @@ title: The Persistence VR
 date: 2018-07-24T09:43:47.559Z
 release_date: 2018-07-24T09:31:50.101Z
 order_status: Out now
-featured: true
+featured: false
 logo: /images/uploads/games-thepersistence-logo.png
 genre: Action Horror
 players: 1 Player
