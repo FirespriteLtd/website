@@ -100,7 +100,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Release Date", name: "release_date", widget: "datetime"}
       - {label: "Order Status", name: "order_status", widget: "select", options: ["TBA", "Pre-order" ,"Out now"] }
-      - {label: "Featured", name: "featured", widget: "boolean", default: false}
       - {label: "Logo", name: "logo", widget: "image"}
       - {label: "Summary", name: "summary", widget: "string", required: false}
       - {label: "Genre", name: "genre", widget: "string"}
@@ -245,7 +244,19 @@ collections:
               - {name: src, label: Image, widget: image}
               - {name: alt, label: Alt text, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: "Featured active", name: "featured_game_active", widget: "boolean", default: false}
+          - label: "Featured Game"
+            name: "featured",
+            widget: "object"
+            fields: 
+              - {label: "Featured active", name: "featured_game_active", widget: "boolean", default: false}
+              - label: "Game"
+                name: "games"
+                widget: "relation"
+                multiple: true
+                collection: "games"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title"]
           - {label: "News active", name: "news_active", widget: "boolean", default: true}
           - {label: "Twitter feed active", name: "twitter_active", widget: "boolean", default: false}
       - file: "site/content/work/_index.md"
