@@ -82,6 +82,7 @@
     "fs": "^0.0.1-security",
     "gsap": "./gsap-bonus.tgz",
     "imagemin-mozjpeg": "^8.0.0",
+    "imagesloaded": "^4.1.4",
     "jquery": "^3.4.1",
     "jquery-validation": "^1.19.0",
     "mkdirp": "^0.5.1",

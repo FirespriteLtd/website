@@ -1,4 +1,5 @@
 import $ from "jquery";
+import imagesLoaded from "imagesloaded";
 import MobileDetect from "mobile-detect";
 import { gsap, Power2 } from "gsap";
 
@@ -77,9 +78,6 @@ export default {
     } else {
       this.desktop();
     }
-
-
-
   },
   finalize() {
 
@@ -88,18 +86,20 @@ export default {
 
     console.log('browser', window.navigator.userAgent);
 
-    const tl = gsap.timeline({repeat:0});
-    tl.to('#loader-overlay',  {
-      '-webkit-clip-path':'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
-      clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
-      duration:1.5,
-      ease: Power2.easeInOut
-    });
-    tl.set('#loader-overlay', {autoAlpha:0});
+    new imagesLoaded(document.querySelector('#container-scroll'), () => {
 
-    if(document.getElementById('side-left')){
-      tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
-    }
-    tl.add(tl.fromTo('#side-right', {autoAlpha:0,x:300}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }))
+    const tl = gsap.timeline({repeat:0});
+      tl.to('#loader-overlay',  {
+        '-webkit-clip-path':'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
+        clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
+        duration:1.5,
+        ease: Power2.easeInOut
+      });
+      tl.set('#loader-overlay', {autoAlpha:0});
+      if(document.getElementById('side-left')){
+        tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
+      }
+      tl.add(tl.fromTo('#side-right', {autoAlpha:0,x:300}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }))
+    });
   },
 };

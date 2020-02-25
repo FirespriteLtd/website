@@ -7,11 +7,11 @@
     {{$image := .Params.featured_image}}
     <div class="contentWrapper">
         <div class="grid-container">
-            <div class="grid-y grid-frame relax" data-rellax-speed="-3">
+            <div class="grid-y grid-frame relax">
                 <div class="cell auto cell-block-container">
                     <div class="grid-x align-center-middle p-t-50">
                         <div class="cell small-12 medium-10 large-7">
-                            <div class="grid-x align-center-middle text-center" data-rellax-speed="-3">
+                            <div class="grid-x align-center-middle text-center">
                                 <div class="cell small-12 header-content">
                                         <header>
                                             <h2>{{.Title}}</h2>
@@ -39,12 +39,8 @@
         </div>
     </div>
     {{if(isset $image "src")}}
-
     <div class="imageWrapper" style="background-image: url('{{ $image.src}}')">
-
-
         {{if $image.active }}
-
             <div  class="video-wrapper video-background" >
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-{{$page}}" data-video="{{ $image.id }}"></div></div>
             </div>

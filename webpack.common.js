@@ -29,6 +29,7 @@ module.exports = {
   externals: {
     jQuery: "jquery",
     jqueryvalidation: "jquery-validation",
+    ImagesLoaded: "imagesLoaded",
     slick: "slick-carousel",
     Fluidbox: "fluidbox"
   },

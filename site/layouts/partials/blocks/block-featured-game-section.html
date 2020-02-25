@@ -34,10 +34,7 @@
     {{if(isset $image "src")}}
 
     <div class="imageWrapper" style="background-image: url('{{ $image.src}}')">
-
-
         {{if $image.active }}
-
             <div  class="video-wrapper video-background" >
                 <div id="video-player" class="video-foreground responsive-embed"><div id="ytplayer-games" data-video="{{ $image.id }}"></div></div>
             </div>

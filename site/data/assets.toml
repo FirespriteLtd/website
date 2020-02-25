@@ -20,34 +20,34 @@
   version = "1.1"
   sri = "sha256-+nuEu243+6BveXk5N+Vbr268G+4FHjUOEcfKaBqfPbc="
   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/%s/jquery.ba-throttle-debounce.min.js"
-[js.isotope]
-  version = "3.0.6"
-  sri = "sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/%s/isotope.pkgd.min.js"
+#[js.isotope]
+#  version = "3.0.6"
+#  sri = "sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
+#   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/%s/isotope.pkgd.min.js"
 [js.imagesLoaded]
   version = "4.1.4"
   sri = "sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q="
   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/%s/imagesloaded.pkgd.min.js"
-[js.gmaps]
-  version = "0.4.25"
-  sri = "sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/%s/gmaps.min.js"
-[js.leaflet]
-  version = "1.5.1"
-  sri = "sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.js"
+#[js.gmaps]
+#  version = "0.4.25"
+#  sri = "sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/%s/gmaps.min.js"
+#[js.leaflet]
+#  version = "1.5.1"
+#  sri = "sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.js"
 [js.fluidbox]
   version = "2.0.5"
   sri = "sha256-AVBLVWwvNE9uzNP36wynCSm3JIIkjvjXsj/Ol30JzGM="
   url = "https://cdnjs.cloudflare.com/ajax/libs/fluidbox/%s/js/jquery.fluidbox.min.js"
-[js.fuse]
-  version = "3.2.1"
-  sri = "sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/fuse.js/%s/fuse.min.js"
-[js.instantsearch]
-  version = "2.10.2"
-  sri = "sha256-gFCtPk/sonctyfwYOgjrPoWApQ0rqB6ezBBZ7p32yGc="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch.min.js"
+#[js.fuse]
+#  version = "3.2.1"
+#  sri = "sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/fuse.js/%s/fuse.min.js"
+#[js.instantsearch]
+#  version = "2.10.2"
+#  sri = "sha256-gFCtPk/sonctyfwYOgjrPoWApQ0rqB6ezBBZ7p32yGc="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch.min.js"
 [js.lazysizes]
   version = "5.1.2"
   sri = "sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A="
@@ -59,22 +59,22 @@
   url = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/%s/slick.min.js"
 
 # CSS
-[css.leaflet]
-  version = "1.5.1"
-  sri = "sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.css"
+#[css.leaflet]
+#  version = "1.5.1"
+#  sri = "sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.css"
 [css.fluidbox]
   version = "2.0.5"
   sri = "sha256-5oR7lL1eUeRKAkRd76G2tJ1pNrqsKIOmJZrzOIpq8Gc="
   url = "https://cdnjs.cloudflare.com/ajax/libs/fluidbox/%s/css/fluidbox.min.css"
-[css.instantsearch]
-  version = "2.9.0"
-  sri = "sha256-ZtmLe16p4jS4/2wPwwH6NzJt460SJzgLmhKrYo5yn7g="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch.min.css"
-[css.instantsearchTheme]
-  version = "2.10.2"
-  sri = "sha256-uL8LUd3zkI/lXvc/Hv/oOu8ld6RJcOZiUY/8c+I+3/o="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch-theme-algolia.min.css"
+#[css.instantsearch]
+#  version = "2.9.0"
+#  sri = "sha256-ZtmLe16p4jS4/2wPwwH6NzJt460SJzgLmhKrYo5yn7g="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch.min.css"
+#[css.instantsearchTheme]
+#  version = "2.10.2"
+#  sri = "sha256-uL8LUd3zkI/lXvc/Hv/oOu8ld6RJcOZiUY/8c+I+3/o="
+#  url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch-theme-algolia.min.css"
 [css.slickTheme]
   version = "1.9.0"
   sri = "sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="

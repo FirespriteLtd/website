@@ -1,7 +1,7 @@
 <div class="card card-button" onclick="window.location='{{ .RelPermalink }}';">
         {{ with .Params.featured_image }}
         <div class="card-image-wrapper">
-            <img src="{{ .src }}?nf_resize=fit&w=450&h=253" alt="{{.alt}}">
+            <img src="{{ .src }}?nf_resize=fit&w=450&h=253" alt="{{.alt}}" class="lazyload">
         </div>
         {{end}}
         <div class="card-section">
