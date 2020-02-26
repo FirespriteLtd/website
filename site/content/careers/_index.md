@@ -106,4 +106,4 @@ Testimonials:
 ---
 We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
 
-Our core focus is on cutting edge game development on the latest hardware. We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players.
+We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players.
