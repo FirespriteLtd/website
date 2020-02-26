@@ -1,6 +1,6 @@
 ---
 title: Working for us
-subtitle: Let's make amazing happen
+subtitle: Work at the cutting edge.
 featured_image:
   active: false
   alt: Working for us
@@ -82,11 +82,9 @@ values:
 team:
   title: The Team
   body: >-
-    Our diverse team includes many industry veterans, having worked on numerous
-    AAA games, including Fifa, WipEout, Killzone, Battlefield, Lego, Motorstorm,
-    Resident Evil and Assassins Creed to name but a few. Our team is experienced
-    in collaborations with major platform holders and are experts in working
-    with brand new hardware.
+    Led by a management group with over 80 years of collective experience our
+    diverse workforce includes graduate, entry level and industry veterans who
+    have worked on numerous AAA games on all major hardware platforms.
   image:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
@@ -108,4 +106,4 @@ Testimonials:
 ---
 We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
 
-Our core focus is on cutting edge game development on the latest hardware. We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players
+Our core focus is on cutting edge game development on the latest hardware. We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players.
