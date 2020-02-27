@@ -6,7 +6,7 @@ featured_image:
   id: lxoAV83puXg
   src: /images/uploads/home-hero.jpg
 featured:
-  featured_game_active: true
+  featured_game_active: false
   games:
     - The Persistence VR
 news_active: true
