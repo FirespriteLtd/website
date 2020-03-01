@@ -3,7 +3,6 @@ title: The Persistence
 date: 2018-07-24T09:43:47.559Z
 release_date: 2020-05-28T10:18:14.339Z
 order_status: Pre-order
-featured: true
 logo: /images/uploads/games-thepersistence-logo.png
 summary: >-
   The Persistence launches for PC, XBOX and Nintendo Switch, alongside adding
@@ -76,7 +75,11 @@ media:
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
   videos: []
-buy: []
+buy:
+  - platforms: ps4
+    title: PlayStation®4
+    url: >-
+      https://store.playstation.com/en-us/product/UP3536-CUSA07643_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
 ---
 ##### Can you survive?
 
