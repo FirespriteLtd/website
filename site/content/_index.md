@@ -10,6 +10,6 @@ featured:
   games:
     - The Persistence
 news_active: true
-twitter_active: true
+twitter_active: false
 ---
 # game development at the cutting edge.
