@@ -1,5 +1,5 @@
 ---
-title: Working for us
+title: Join Us
 subtitle: Work at the cutting edge.
 featured_image:
   active: false
