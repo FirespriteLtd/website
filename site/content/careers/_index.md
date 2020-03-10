@@ -8,17 +8,6 @@ featured_image:
 intro:
   about:
     - body: >-
-        Liverpool is a city where you can be yourself. It’s a city of creative
-        types, music lovers, culture addicts and friendly faces. Whether you
-        fancy getting lost in it all at one of our many museums and galleries,
-        going crazy at an exhilarating sporting event or gig, or just strolling
-        along the waterfront and stopping to enjoy some world class food,
-        Liverpool has got it covered.
-      image:
-        alt: Liverpool
-        src: /images/uploads/docks_redevelopment.jpg
-      title: Liverpool
-    - body: >-
         At Firesprite, we strive to make each game better than the last one. We
         push ourselves hard to produce gorgeous artwork, cutting edge technical
         innovation and thrilling gameplay. The quality of our games is our
