@@ -23,12 +23,12 @@
   for = "/images/*"
   [headers.values]
     	cache-control = 'public'
-	max-age=604800,
+	max-age=604800
 [[headers]]
   for = "/images/uploads/*"
   [headers.values]
     	cache-control = 'public'
-	max-age=604800,
+	max-age=604800
 [[headers]]
   for = "/*.css"
   [headers.values]
