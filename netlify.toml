@@ -11,29 +11,18 @@
   command = "npm run build:preview"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-	cache-control = '''
-	max-age=0,
-	no-cache,
-	no-store,
-	must-revalidate'''
-
-[[headers]]
   for = "/images/*"
   [headers.values]
-    	cache-control = 'public'
-	max-age=604800
+    	cache-control = "public, s-max-age=604800"
 [[headers]]
   for = "/images/uploads/*"
   [headers.values]
-    	cache-control = 'public'
-	max-age=604800
+    	cache-control = "public, s-max-age=604800"
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, s-max-age=604800"
+    	cache-control = "public, s-max-age=604800"
 [[headers]]
   for = "/js/*.js"
   [headers.values]
-    Cache-Control = "public, s-max-age=604800"
+    	cache-control = "public, s-max-age=604800"
