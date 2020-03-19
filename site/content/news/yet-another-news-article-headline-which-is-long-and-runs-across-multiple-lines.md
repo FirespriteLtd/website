@@ -1,16 +1,16 @@
 ---
 title: Yet another news article headline which is long and runs across multiple lines
 date: 2016-02-09T12:02:40.846Z
+draft: false
 summary: >-
   Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
   delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
   duo aliquip moderatius disputationi.
 news/categories:
   - game
-featured_post: false
 featured_image:
   alt: test
-  src: /images/uploads/img.jpg
+  src: /images/uploads/news-temp.jpg
   title: test
 tags:
   - test
