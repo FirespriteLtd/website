@@ -13,16 +13,32 @@
 [[headers]]
   for = "/images/*"
   [headers.values]
-    	cache-control = "public, s-max-age=604800"
+    	cache-control = '''
+      max-age=604800,
+      must-revalidate'''
 [[headers]]
   for = "/images/uploads/*"
   [headers.values]
-    	cache-control = "public, s-max-age=604800"
+    	cache-control = '''
+      max-age=604800,
+      must-revalidate'''
 [[headers]]
   for = "/*.css"
   [headers.values]
-    	cache-control = "public, s-max-age=604800"
+    	cache-control = '''
+      max-age=604800,
+      must-revalidate'''
 [[headers]]
   for = "/js/*.js"
   [headers.values]
-    	cache-control = "public, s-max-age=604800"
+    	cache-control = '''
+      max-age=604800,
+      must-revalidate'''
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
