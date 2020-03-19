@@ -19,4 +19,15 @@
 	no-store,
 	must-revalidate'''
 
-
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/js/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
