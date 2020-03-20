@@ -1,7 +1,7 @@
 active: false
 items:
   - link: /work
-    name: Work
+    name: Projects
   - link: /games
     name: Games
   - link: /news
