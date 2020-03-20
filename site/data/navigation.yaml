@@ -2,10 +2,10 @@ active: false
 items:
   - link: /work
     name: Projects
-  - link: /games
-    name: Games
   - link: /news
     name: News
+  - link: /games
+    name: Games
   - link: /careers
     name: Join Us
   - link: /support
