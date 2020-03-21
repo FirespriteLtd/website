@@ -64,7 +64,7 @@ module.exports = {
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
     }),
-
+    /*
     new CopyWebpackPlugin([
       {
         from: "./src/assets/fonts/",
@@ -72,7 +72,7 @@ module.exports = {
         flatten: true
       }
     ]),
-
+    */
     new CopyWebpackPlugin([
       {
         from: "./src/assets/images/",
