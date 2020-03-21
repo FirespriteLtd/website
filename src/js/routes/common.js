@@ -87,8 +87,7 @@ export default {
 
 
     console.log('browser', window.navigator.userAgent);
-
-
+    
     new imagesLoaded(document.querySelector('#container-scroll'), () => {
       const isCached = performance.getEntriesByType("navigation")[0].transferSize === 0;
       console.log('isCached', isCached);
