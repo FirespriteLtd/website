@@ -9,7 +9,7 @@ class Loader {
         console.log('browser', window.navigator.userAgent);
 
         new imagesLoaded(document.querySelector('#container-scroll'), () => {
-            const isCached = performance.getEntriesByType("navigation")[0].transferSize === 0;
+            const isCached = false;
             console.log('isCached', isCached);
             const tl = gsap.timeline({repeat:0});
             if(!isCached) {
