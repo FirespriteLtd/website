@@ -84,7 +84,7 @@ address_format = "en-us"
 ############################
 [marketing]
   google_analytics = ""
-  google_tag_manager = ""
+  google_tag_manager = "UA-2899140-78"
 
 ############################
 ## Privacy
