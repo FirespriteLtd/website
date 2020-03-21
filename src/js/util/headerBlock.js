@@ -32,7 +32,6 @@ class HeaderBlock {
  }
 
  createVideoPlayer(){
-  console.log('Create video')
   const player = new YTPlayer('#ytplayer-header');
   player.load(this.video.data('video'), true);
   player.setPlaybackQuality('highres');
@@ -57,15 +56,12 @@ class HeaderBlock {
   }
 
   if($('#header-trailer').length) {
-   console.log('trailer')
    tl.add(gsap.from('#header-trailer', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}));
   }
   if($('#header-game-logo').length) {
-   console.log('logo')
    tl.add(gsap.from('#header-game-logo', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}), '-=0.2');
   }
   if($('.parent-header').length) {
-   console.log('parent')
    tl.add(gsap.from($('.parent-header'), {opacity: 0, scale: 2, duration: 0.5, ease: Expo.easeOut}, '-=0.5'));
   }
   if(chars.length) {
@@ -75,13 +71,11 @@ class HeaderBlock {
    tl.add(gsap.to( rule,{cssRule: {width: '100%'},duration: 0.5, stagger: 0.5}))
   }
   if($.trim($('#header-summary').html())) {
-   console.log('sum', $('#header-summary'))
    if(!$('#header-summary > h1').length) {
     tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
    }
   }
   if($('#header-buy').length) {
-   console.log('buy')
    tl.add(gsap.from('#header-buy', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}), '-=0.2');
   }
  }

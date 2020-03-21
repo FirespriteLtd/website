@@ -11,7 +11,6 @@ class TwitterBlock {
 
   init(){
     const twitterPage = this.twitterblock.dataset.feed;
-    console.log('INIT TWITTER', twitterPage)
     const configProfile = {
         "profile": {'screenName': twitterPage},
         "domId": 'twitter-feed',
