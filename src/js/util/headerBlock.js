@@ -35,6 +35,7 @@ class HeaderBlock {
   console.log('Create video')
   const player = new YTPlayer('#ytplayer-header');
   player.load(this.video.data('video'), true);
+  player.setPlaybackQuality('highres');
   player.setVolume(0);
   player.seek(20);
   player.play();
