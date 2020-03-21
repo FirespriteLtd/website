@@ -84,17 +84,23 @@ export default {
     const clipMask = 'polygon(0 0, 100% 0 , 100% 100%, 0 100% )';
     const element = document.getElementById('loader-overlay');
 
+
+
     console.log('browser', window.navigator.userAgent);
 
-    new imagesLoaded(document.querySelector('#container-scroll'), () => {
 
+    new imagesLoaded(document.querySelector('#container-scroll'), () => {
+      const isCached = performance.getEntriesByType("navigation")[0].transferSize === 0;
+      console.log('isCached', isCached);
     const tl = gsap.timeline({repeat:0});
-      tl.to('#loader-overlay',  {
-        '-webkit-clip-path':'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )' ,
-        clipPath:'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
-        duration:1.5,
-        ease: Power2.easeInOut
-      });
+      if(!isCached) {
+        tl.to('#loader-overlay', {
+          '-webkit-clip-path': 'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
+          clipPath: 'polygon(100% 0, 100% 0 , 100% 100%, 100% 100% )',
+          duration: 1.5,
+          ease: Power2.easeInOut
+        });
+      }
       tl.set('#loader-overlay', {autoAlpha:0});
       if(document.getElementById('side-left')){
         tl.add(tl.fromTo('#side-left', {autoAlpha:0,x:-150}, {autoAlpha:1, x:0 , duration:0.5, ease: Power2.easeInOut }),'-=1')
