@@ -125,6 +125,7 @@ class HeaderBlock {
        triggerHook:0.5,
        duration: 100,
       })
+      .setTween(tl)
       .addTo(this.controller)
  }
 
