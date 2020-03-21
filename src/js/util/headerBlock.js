@@ -10,6 +10,7 @@ import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(CSSRulePlugin);
+
 gsap.defaultEase = Expo.easeOut;
 
 class HeaderBlock {
@@ -29,6 +30,7 @@ class HeaderBlock {
    }
   }
   this.animHeader();
+  this.scrollpointer();
  }
 
  createVideoPlayer(){
@@ -55,6 +57,8 @@ class HeaderBlock {
    chars = [...title.words];
   }
 
+
+
   if($('#header-trailer').length) {
    tl.add(gsap.from('#header-trailer', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}));
   }
@@ -78,10 +82,13 @@ class HeaderBlock {
   if($('#header-buy').length) {
    tl.add(gsap.from('#header-buy', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}), '-=0.2');
   }
+
+  tl.add(gsap.from('.scroll-pointer', {opacity: 0, duration: 0.5, ease: Expo.easeOut}));
  }
 
  videoController() {
   this.player = this.createVideoPlayer();
+
   const anim = new ScrollMagic.Scene(
    {
    triggerElement: $('.master-header'),
@@ -107,6 +114,22 @@ class HeaderBlock {
   return anim;
  }
 
+ scrollpointer() {
+
+  const tl = gsap.timeline({repeat: 0});
+  tl.to('.scroll-pointer', {opacity: 0, duration: 2, ease: Expo.easeOut}) ;
+
+  const anim = new ScrollMagic.Scene(
+      {
+       triggerElement: $('.scroll-pointer'),
+       triggerHook:0.5,
+       duration: 100,
+      })
+      .addTo(this.controller)
+ }
+
 }
+
+
 
 export default HeaderBlock;

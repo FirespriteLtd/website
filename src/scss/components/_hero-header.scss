@@ -9,6 +9,12 @@
   z-index: 12;
 }
 
+#header-summary{
+  p{
+    font-weight: 700;
+  }
+}
+
 .imageWrapper{
   position:relative;
   z-index: 1;
@@ -88,9 +94,16 @@
 
   .scroll-pointer{
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
     z-index: 1;
+    text-align: center;
+    animation: bounce 2s infinite;
+
+    svg{
+      transform: translateX(-50%);
+    }
   }
 
   .hero-header-inner{
@@ -118,7 +131,6 @@
 
   .contentWrapper{
     .grid-container{
-
       .grid-y{
         @include maxHeight();
       }
