@@ -28,9 +28,7 @@ module.exports = {
 
   externals: {
     "jquery": "jQuery",
-    "jquery.validation": "jquery-validation",
     ImagesLoaded: "imagesLoaded",
-    slick: "slick-carousel",
     Fluidbox: "fluidbox"
   },
 
@@ -57,7 +55,7 @@ module.exports = {
      fetch: 'exports-loader?self.fetch!whatwg-fetch/dist/fetch.umd',
      $: 'jquery',
      jQuery: 'jquery',
-     jqueryValidation: 'jquery-validation'
+     "jquery-validation": 'jquery-validation'
    }),
 
     new AssetsPlugin({
