@@ -40,36 +40,15 @@ intro:
         alt: Careers
         src: /images/uploads/workingforus-about-careers.jpg
       title: Careers
-  title: 'The freedom to innovate, create and excel'
   body: >-
     At Firesprite, we believe in giving everyone the freedom to express
     themselves and to take ownership of the creation of our games. Your talent
     and passion will drive the quality of everything we do. Best of all, you
     will get to work with a dedicated, talented, and fun-loving team in an
     inclusive and creative environment.
-values:
-  title: Our Values
-  body: >-
-    At Firesprite, we beilieve in giving everyone the freedom to express
-    themselves and to take ownership of the creation of our games. Your talent
-    and passion will drive the quality of everything we do. Best of all, you
-    will get to work with a dedicated, talented, and fun-loving team in an
-    inclusive and creative environment.
-  values:
-    - title: Innovation
-      body: We strive to create world’s firsts in our creations
-    - title: Creativity
-      body: We celebrate creativity in every discipline
-    - title: Discretion
-      body: Trust between our teams and especially with our clients
-    - title: Humility
-      body: We don’t believe in being too flashy or excessively showing off
-    - title: Teamwork
-      body: >-
-        We strongly believe in a strong team ethic in an open and honest
-        environment built on trust and collaboration
+  show: false
+  title: 'The freedom to innovate, create and excel'
 team:
-  title: The Team
   body: >-
     Led by a management group with over 80 years of collective experience our
     diverse workforce includes graduate, entry level and industry veterans who
@@ -77,6 +56,8 @@ team:
   image:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
+  show: true
+  title: The Team
 Testimonials:
   - alt: Matt Benson
     body: >-
