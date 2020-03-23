@@ -325,6 +325,7 @@ collections:
             name: "intro"
             widget: "object"
             fields:
+              - {label: "Show", name: "show", widget: boolean, default: true}
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
               - {label: "About",  name: "about", widget: list, fields: [
@@ -336,20 +337,11 @@ collections:
                   {label: Body, name: body, widget: markdown}
                 ]
               }
-          - label: "Values"
-            name: "values"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: string}
-              - {label: "Body", name: "body", widget: string}
-              - {label: "Values",  name: "values", widget: list, fields: [
-                  {label: "Title", name: "title", widget: string},
-                  {label: "Body", name: "body", widget: string}
-                ]}
           - label: "Team"
             name: "team"
             widget: "object"
             fields:
+              - {label: "Show", name: "show", widget: boolean, default: true}
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
               - {name: image, label: Image, widget: object, fields: [
