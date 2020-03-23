@@ -80,6 +80,21 @@ buy:
     title: PlayStation®4
     url: >-
       https://store.playstation.com/en-us/product/UP3536-CUSA07643_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+facebook_pixel:
+  - Active: true
+    script: >-
+      <!-- Facebook Pixel Code --> <script>   !function(f,b,e,v,n,t,s)  
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?  
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};  
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';  
+      n.queue=[];t=b.createElement(e);t.async=!0;  
+      t.src=v;s=b.getElementsByTagName(e)[0];  
+      s.parentNode.insertBefore(t,s)}(window, document,'script',  
+      'https://connect.facebook.net/en_US/fbevents.js');   fbq('init',
+      '240897509943162');   fbq('track', 'PageView'); </script> <noscript><img
+      height="1" width="1" style="display:none"  
+      src="https://www.facebook.com/tr?id=240897509943162&ev=PageView&noscript=1"
+      /></noscript> <!-- End Facebook Pixel Code -->
 ---
 ##### Can you survive?
 
