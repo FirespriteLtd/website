@@ -71,11 +71,15 @@
                                         {{end}}
                                         {{end}}
                                         {{end}}
-                                        <div class="cell small-12">
-
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="scroll-pointer">
+                            <div class="grid-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="60" viewBox="0 0 21 60">
+                                    <path fill="#FFF" fill-rule="evenodd" d="M30.293 50L28.185 47.892 21.784 54.293 21.784 0 18.802 0 18.802 54.293 12.401 47.892 10.293 50 20.293 60z" transform="translate(-10)"/>
+                                </svg>
                             </div>
                         </div>
                         {{if not .ctx.IsHome }}
@@ -85,13 +89,7 @@
                         {{end}}
                     </div>
                 </div>
-                <div class="scroll-pointer">
-                    <div class="grid-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="60" viewBox="0 0 21 60">
-                            <path fill="#FFF" fill-rule="evenodd" d="M30.293 50L28.185 47.892 21.784 54.293 21.784 0 18.802 0 18.802 54.293 12.401 47.892 10.293 50 20.293 60z" transform="translate(-10)"/>
-                        </svg>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="imageWrapper" style="background-image: url('{{ .Content.Params.featured_image.src }}')">

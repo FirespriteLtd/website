@@ -95,6 +95,7 @@
   .scroll-pointer{
     text-align: center;
     animation: bounce 2s infinite;
+    margin-bottom: rem-calc(60);
   }
 
   .hero-header-inner{
@@ -124,7 +125,6 @@
     .grid-container{
       .grid-y{
         @include maxHeight();
-        height: 90vh;
       }
 
       .cell-block-container{
