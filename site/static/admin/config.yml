@@ -147,6 +147,10 @@ collections:
           {label: "Title", name: "title", widget: "string"},
           {name: url , label: Url, widget: string}
         ]}
+      - {label: "Facebook Pixel", name: "facebook_pixel", widget: list,  required: false, fields: [
+        {label: "Script", name: "script", widget: "string"},
+        {name: "Active" , label: active, widget: boolean, default: false}
+      ]}
   - name: "platforms"
     label: "Platforms"
     folder: "site/data/platforms"
