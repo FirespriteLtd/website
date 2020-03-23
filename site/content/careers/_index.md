@@ -28,7 +28,7 @@ intro:
       image:
         alt: Studio
         src: /images/uploads/workingforus-about-studio.jpg
-      title: Who we are
+      title: What we offer
     - body: >-
         We are dedicated to constantly improving ourselves as well as each of
         our games, giving us all the opportunity to be the best we possibly can.
@@ -39,7 +39,7 @@ intro:
       image:
         alt: Careers
         src: /images/uploads/workingforus-about-careers.jpg
-      title: How we do it
+      title: Who we are
   show: true
   title: We create next generation experiences
   body: >-
