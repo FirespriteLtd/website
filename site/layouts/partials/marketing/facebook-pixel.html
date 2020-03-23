@@ -1,0 +1,8 @@
+{{with .Params.facebook_pixel}}
+{{ "<!-- PIXEL TRACKING -->" | safeHTML }}
+    {{range . }}
+        {{if .Active }}
+            {{.script | safeHTML}}
+        {{end}}
+    {{end}}
+{{end}}
