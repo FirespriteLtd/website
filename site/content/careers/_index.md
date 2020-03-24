@@ -17,7 +17,7 @@ intro:
       image:
         alt: Culture
         src: /images/uploads/workingforus-about-culture.jpg
-      title: Culture
+      title: What we do
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
         centre. It’s modern, stylish, and air conditioned, and packed full of
@@ -28,7 +28,7 @@ intro:
       image:
         alt: Studio
         src: /images/uploads/workingforus-about-studio.jpg
-      title: Studio
+      title: What we offer
     - body: >-
         We are dedicated to constantly improving ourselves as well as each of
         our games, giving us all the opportunity to be the best we possibly can.
@@ -39,16 +39,18 @@ intro:
       image:
         alt: Careers
         src: /images/uploads/workingforus-about-careers.jpg
-      title: Careers
+      title: Who we are
+  show: true
+  title: We create next generation experiences
   body: >-
     At Firesprite, we believe in giving everyone the freedom to express
     themselves and to take ownership of the creation of our games. Your talent
     and passion will drive the quality of everything we do. Best of all, you
     will get to work with a dedicated, talented, and fun-loving team in an
     inclusive and creative environment.
-  show: false
-  title: 'The freedom to innovate, create and excel'
 team:
+  show: false
+  title: The Team
   body: >-
     Led by a management group with over 80 years of collective experience our
     diverse workforce includes graduate, entry level and industry veterans who
@@ -56,8 +58,6 @@ team:
   image:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
-  show: true
-  title: The Team
 Testimonials:
   - alt: Matt Benson
     body: >-
@@ -75,5 +75,3 @@ Testimonials:
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
 We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
-
-We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players.
