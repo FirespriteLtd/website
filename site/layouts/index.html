@@ -5,16 +5,31 @@
     {{ partial "navigation" (dict "Version" "trans" "Context" .) }}
 {{end}}
 {{ define "main" }}
-    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "work"  )}}
-    {{if .Params.news_active }}
-        {{ partial "blocks/block-latest-news" .}}
+    {{ $ctPage:= . }}
+    {{with .Params.order}}
+        {{ $cPage:= $ctPage }}
+        {{ range . }}
+            {{if eq .id "news" }}
+                {{if $cPage.Params.news_active }}
+                {{ partial "blocks/block-latest-news" ( dict "Context" $cPage "ctx" $ )}}
+                {{end}}
+            {{end}}
+            {{if eq .id "game" }}
+                {{if not $cPage.Params.featured.featured_game_active }}
+                {{ partial "blocks/block-section" (dict "Context" $cPage "ctx" $ "Page" "games"  )}}
+                {{else}}
+                {{ partial "blocks/block-featured-game-section" (dict "Context" $cPage "ctx" $ ) }}
+                {{end}}
+            {{end}}
+            {{if eq .id "work" }}
+                {{ partial "blocks/block-section" (dict "Context" $cPage "ctx" $ "Page" "work"  )}}
+            {{end}}
+            {{if eq .id "career" }}
+                {{ partial "blocks/block-section" (dict "Context" $cPage "ctx" $ "Page" "careers" "Button" "Work with us" )}}
+            {{end}}
+        {{end}}
     {{end}}
-    {{if not .Params.featured.featured_game_active }}
-        {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "games"  )}}
-    {{else}}
-        {{ partial "blocks/block-featured-game-section" (dict "Context" . "ctx" $ ) }}
-    {{end}}
-    {{ partial "blocks/block-section" (dict "Context" . "ctx" $ "Page" "careers" "Button" "Work with us" )}}
+
 {{ end }}
 {{define "popup"}}
     {{if .Params.twitter_active}}
