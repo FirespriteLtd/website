@@ -11,5 +11,14 @@ featured:
     - The Persistence
 news_active: true
 twitter_active: true
+order:
+  - id: work
+    title: Work Section Block
+  - id: news
+    title: Latest News Section Block
+  - id: game
+    title: Game & Featured Game Section block
+  - id: career
+    title: Career Section Bock
 ---
 # game development at the **cutting edge.**
