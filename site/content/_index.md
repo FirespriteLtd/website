@@ -21,4 +21,4 @@ order:
   - id: career
     title: Career Section Bock
 ---
-# game development at the **cutting edge.**
+# **Game development** at the **cutting edge.**
