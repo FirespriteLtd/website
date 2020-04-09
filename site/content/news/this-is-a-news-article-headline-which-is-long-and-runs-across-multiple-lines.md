@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus 
 
 ![test](/images/uploads/news-body.jpg "test")
 
-Laoreet interdumduis porta mollis posueremetus odio. Donec litora tempus dictum nisi hymenaeos fermentum, integer. Fermentum justo morbi est gravida leo. Suspendisse nisi commodo nisi viverra, adipiscing congue laoreet sem, vehicula sodales eros penatibus eleifend dapibus hymenaeos aenean turpis aliquam luctus at. Fusce sem lacinia donec. Dignissim urna nec vehicula montes euismod.
+Laoreet interdumduis porta fdsfsfs mollis posueremetus odio. Donec litora tempus dictum nisi hymenaeos fermentum, integer. Fermentum justo morbi est gravida leo. Suspendisse nisi commodo nisi viverra, adipiscing congue laoreet sem, vehicula sodales eros penatibus eleifend dapibus hymenaeos aenean turpis aliquam luctus at. Fusce sem lacinia donec. Dignissim urna nec vehicula montes euismod.
 
 
 
