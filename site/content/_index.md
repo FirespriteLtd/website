@@ -4,7 +4,7 @@ featured_image:
   active: true
   alt: Firesprite Games
   id: lxoAV83puXg
-  src: /images/uploads/home-hero.jpg
+  src: /images/uploads/S1.png
 featured:
   featured_game_active: false
   games:
