@@ -4,7 +4,7 @@ featured_image:
   active: true
   alt: Firesprite Games
   id: lxoAV83puXg
-  src: /images/uploads/S1.png
+  src: /images/uploads/landing1.jpg
 featured:
   featured_game_active: false
   games:
