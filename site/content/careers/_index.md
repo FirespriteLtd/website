@@ -4,7 +4,7 @@ subtitle: Work at the cutting edge.
 featured_image:
   active: false
   alt: Working for us
-  src: /images/uploads/workingforus-hero.jpg
+  src: /images/uploads/office.jpg
 intro:
   about:
     - body: >-
