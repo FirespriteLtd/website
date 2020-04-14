@@ -9,7 +9,7 @@ featured_image:
   active: true
   alt: Nightfall
   id: 'https://www.youtube.com/watch?v=kAUZ1H2_fn8'
-  src: /images/uploads/work-nightfall.jpg
+  src: /images/uploads/Halo_JumpOpti.jpg
 media:
   concepts:
     - alt: concept 1
