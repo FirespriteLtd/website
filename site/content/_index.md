@@ -10,7 +10,7 @@ featured:
   games:
     - The Persistence
 news_active: true
-twitter_active: true
+twitter_active: false
 order:
   - id: work
     title: Work Section Block
