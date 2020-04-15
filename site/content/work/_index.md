@@ -1,6 +1,6 @@
 ---
 title: Partner Projects
-subtitle: innovative experiences created with strategic partners
+subtitle: 'innovative experiences, great partnerships.'
 featured_image:
   active: false
   alt: Our Work
