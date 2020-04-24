@@ -28,7 +28,7 @@ intro:
       image:
         alt: What we do
         src: /images/uploads/workingforus-about-culture.jpg
-      title: What we do
+      title: Who we are
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
         centre. It’s modern, stylish, and air conditioned, and packed full of
