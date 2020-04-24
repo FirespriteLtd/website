@@ -14,8 +14,19 @@ intro:
         passion. However, we also have a friendly and open culture, where we all
         get the right work life balance, including flexible working times when
         we need them.
+
+
+
+
+
+
+        At Firesprite, we believe in giving everyone the freedom to express
+        themselves and to take ownership of the creation of our games. Your
+        talent and passion will drive the quality of everything we do. Best of
+        all, you will get to work with a dedicated, talented, and fun-loving
+        team in an inclusive and creative environment.
       image:
-        alt: Culture
+        alt: What we do
         src: /images/uploads/workingforus-about-culture.jpg
       title: What we do
     - body: >-
@@ -43,11 +54,9 @@ intro:
   show: true
   title: We create next generation experiences
   body: >-
-    At Firesprite, we believe in giving everyone the freedom to express
-    themselves and to take ownership of the creation of our games. Your talent
-    and passion will drive the quality of everything we do. Best of all, you
-    will get to work with a dedicated, talented, and fun-loving team in an
-    inclusive and creative environment.
+    Founded in 2012 by a management team with over 100 years of experience in
+    art, business, design and tech, Firesprite has grown to over 130 developers
+    creating amazing experiences on bleeding edge hardware.
 team:
   show: false
   title: The Team
