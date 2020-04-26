@@ -8,25 +8,13 @@ featured_image:
 intro:
   about:
     - body: >-
-        At Firesprite, we strive to make each game better than the last one. We
-        push ourselves hard to produce gorgeous artwork, cutting edge technical
-        innovation and thrilling gameplay. The quality of our games is our
-        passion. However, we also have a friendly and open culture, where we all
-        get the right work life balance, including flexible working times when
-        we need them.
-
-
-
-
-
-
-        At Firesprite, we believe in giving everyone the freedom to express
-        themselves and to take ownership of the creation of our games. Your
-        talent and passion will drive the quality of everything we do. Best of
-        all, you will get to work with a dedicated, talented, and fun-loving
-        team in an inclusive and creative environment.
+        Firesprite Games is comprised of over 130 developers from junior to
+        senior career levels, representing a multitude of countries around the
+        world.  We all share a collective passion for video games and the
+        pursuit of working together to develop amazing experiences for players
+        everywhere.
       image:
-        alt: What we do
+        alt: Who we are
         src: /images/uploads/workingforus-about-culture.jpg
       title: Who we are
     - body: >-
@@ -37,20 +25,20 @@ intro:
         of pace, we are just a stone’s throw from the world-famous Liverpool
         waterfront.
       image:
-        alt: Studio
+        alt: What we do
         src: /images/uploads/workingforus-about-studio.jpg
-      title: What we offer
+      title: What we do
     - body: >-
-        We are dedicated to constantly improving ourselves as well as each of
-        our games, giving us all the opportunity to be the best we possibly can.
-        Through learning opportunities and mentoring you can level up your
-        technical capabilities, and by taking ownership of your work and helping
-        to review our games, you will have what it takes to consistently create
-        AAA quality games.
+        Our studio is situated right in the vibrant heart of Liverpool city
+        centre. It’s modern, stylish, and air conditioned, and packed full of
+        the latest cutting-edge technology. All the best cafes, restaurants,
+        bars, and shopping are right on our doorstep, and if you want a change
+        of pace, we are just a stone’s throw from the world-famous Liverpool
+        waterfront.
       image:
-        alt: Careers
+        alt: What we offer
         src: /images/uploads/workingforus-about-careers.jpg
-      title: Who we are
+      title: What we offer
   show: true
   title: We create next generation experiences
   body: >-
