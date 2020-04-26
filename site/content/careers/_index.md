@@ -54,9 +54,10 @@ intro:
   show: true
   title: We create next generation experiences
   body: >-
-    Founded in 2012 by a management team with over 100 years of experience in
-    art, business, design and tech, Firesprite has grown to over 130 developers
-    creating amazing experiences on bleeding edge hardware.
+    Founded in 2012 by a management team with over 100 years of collective
+    experience in art, business, design and technical disciplines, Firesprite
+    has grown to over 130 developers creating amazing experiences on bleeding
+    edge hardware.
 team:
   show: false
   title: The Team
