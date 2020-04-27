@@ -18,12 +18,10 @@ intro:
         src: /images/uploads/workingforus-about-culture.jpg
       title: Who we are
     - body: >-
-        Our studio is situated right in the vibrant heart of Liverpool city
-        centre. It’s modern, stylish, and air conditioned, and packed full of
-        the latest cutting-edge technology. All the best cafes, restaurants,
-        bars, and shopping are right on our doorstep, and if you want a change
-        of pace, we are just a stone’s throw from the world-famous Liverpool
-        waterfront.
+        Whether it's for our partner clients or for ourselves, we're committed
+        to creating experiences on the latest gaming platforms from PC to
+        Console platforms. We work with a variety of engines and toolchains to
+        create AAA experiences.
       image:
         alt: What we do
         src: /images/uploads/workingforus-about-studio.jpg
@@ -44,8 +42,8 @@ intro:
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines, Firesprite
-    has grown to over 130 developers creating amazing experiences on bleeding
-    edge hardware.
+    has grown to over 130 developers creating amazing experiences using the very
+    latest tools on bleeding edge hardware.
 team:
   show: false
   title: The Team
