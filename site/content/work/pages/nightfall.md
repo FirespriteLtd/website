@@ -12,41 +12,25 @@ featured_image:
   src: /images/uploads/Halo_JumpOpti.jpg
 media:
   concepts:
-    - alt: concept 1
-      src: /images/uploads/work-runsackboyrun-concept1.jpg
-    - alt: concept 2
-      src: /images/uploads/work-runsackboyrun-concept1.jpg
+    - alt: Airfield
+      src: /images/uploads/Nightfall-concept.jpg
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
-    - alt: screen 2
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+    - alt: Preparing for Jump
+      src: /images/uploads/Nightfall-1.jpg
+    - alt: Controlling the Canopy
+      src: /images/uploads/Nightfall-2.jpg
   videos:
     - alt: Launch Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
-    - alt: Teaser Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
-Testimonials:
-  - alt: Olaf Siebert
-    body: >-
-      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
-      duo aliquip disputationi an.”
-    company: Playstation
-    name: Olaf Siebert
-    position: King of the world
-    src: /images/uploads/testimonial-img.jpg
+      id: 'https://www.youtube.com/watch?v=fn5D3dAoXx8'
+      src: /images/uploads/Nightfall-cover-image.jpg
+Testimonials: []
 ---
 #### Overview
 
-Sackboy, the knitted hero from the multi-award winning LittleBigPlanet™ series on PlayStation® lands into the palm of your hand in this brand new endless platformer!
+The United States Air Force (USAF) approached Firesprite Games to create a bespoke piece of content for their forces recruitment program. 
 
-**RUN** as fast as you can through an ever-changing handcrafted world.
+Developed in conjunction with experts from the USAF, Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
 
-**DASH** to **ESCAPE** the **GOO** and the clutches of the grumpy Negativitron!
+In close collaboration, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
 
-##### Another sub-heading
-
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu, duo aliquip moderatius disputationi an. No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+The full range of PSVR features were utilised to capture the full experience of freefall and parachute descent,  including the recreation of an integrated heads up display (Navigometer) to provide telemetry to players about flight pose and heading alongside freefall and canopy controls operated by the PlayStation Move controllers.
