@@ -33,6 +33,6 @@ The United States Air Force (USAF) approached Firesprite Games to create a bespo
 
 Developed in conjunction with experts from the USAF, Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
 
-In close collaboration, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
+In close collaboration with experts from the USAF, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
 
 The full range of PSVR features were utilised to capture the full experience of freefall and parachute descent,  including the recreation of an integrated heads up display (Navigometer) to provide telemetry to players about flight pose and heading alongside freefall and canopy controls operated by the PlayStation Move controllers.
