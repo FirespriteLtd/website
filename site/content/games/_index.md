@@ -1,10 +1,10 @@
 ---
-title: Our Games
-subtitle: Creating innovative experiences for players
+title: Games
+subtitle: world class experiences
 featured_image:
   active: false
-  alt: Our Games
+  alt: Games
   id: ''
   src: /images/uploads/OPM_5_optimised.jpg
 ---
-We love playing games and we love making games! Please scroll down to see our creations.
+We love what we do and the passion and teamwork is reflected in the experiences we create.
