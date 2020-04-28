@@ -2,8 +2,8 @@
 title: Nightfall
 date: 2020-01-10T10:37:20.540Z
 summary: >-
-  This is the brief description for the work project which should be quite
-  short.
+  Developed for the USAF, Nightfall allows players to experience the thrill of a
+  H.A.L.O jump in VR.
 weight: 1
 featured_image:
   active: true
