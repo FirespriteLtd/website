@@ -19,6 +19,8 @@ media:
       src: /images/uploads/Nightfall-1.jpg
     - alt: Controlling the Canopy
       src: /images/uploads/Nightfall-2.jpg
+    - alt: In Freefall
+      src: /images/uploads/Nightfall-screenshot.jpg
   videos:
     - alt: Launch Trailer
       id: 'https://www.youtube.com/watch?v=fn5D3dAoXx8'
