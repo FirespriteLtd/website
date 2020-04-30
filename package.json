@@ -83,7 +83,7 @@
     "gsap": "./gsap-bonus.tgz",
     "imagemin-mozjpeg": "^8.0.0",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-validation": "^1.19.0",
     "mkdirp": "^0.5.1",
     "mobile-detect": "^1.4.4",
