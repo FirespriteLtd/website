@@ -1,6 +1,6 @@
 ---
 title: Join Us
-subtitle: Work at the cutting edge.
+subtitle: Build the future.
 featured_image:
   active: false
   alt: Working for us
@@ -8,30 +8,31 @@ featured_image:
 intro:
   about:
     - body: >-
-        We have developers from all experience levels and backgrounds
-        representing countries around the world.  We all share a collective
-        passion for video games and the pursuit of pulling together to create
-        amazing games.
+        We're a friendly bunch of developers from all experience levels and
+        backgrounds representing countries around the world. We all share a
+        collective passion for video games and the pursuit of pulling together
+        to co-create and collaborate on exciting and challenging projects
+        together!
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
       title: Who we are
     - body: >-
-        Whether it's for our partner clients or for our own projects, we're
-        committed to creating incredible experiences on the latest gaming
-        platforms and technologies using the latest engines and tools to
-        collaborate.
+        We build games and we support content pipelines for games built by
+        established teams from around the world. Whether it's for our partner
+        clients or for our own IP projects, we're committed to creating
+        incredible experiences on Console and PC hardware using the latest
+        engines and tools.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
       title: What we do
     - body: >-
+        We offer a friendly, inclusive environment where teams and team members
+        are supported, encouraged and trusted to manage their time and workflow.
         Our studio is situated right in the vibrant heart of Liverpool city
         centre. It’s modern, stylish, and air conditioned, and packed full of
-        the latest cutting-edge technology. All the best cafes, restaurants,
-        bars, and shopping are right on our doorstep, and if you want a change
-        of pace, we are just a stone’s throw from the world-famous Liverpool
-        waterfront.
+        the latest cutting-edge technology.
       image:
         alt: What we offer
         src: /images/uploads/whatweoffer.jpg
