@@ -1,9 +1,9 @@
 ---
-title: Nightfall
+title: 'Air Force Special Ops: Nightfall'
 date: 2020-01-10T10:37:20.540Z
 summary: >-
-  Developed in conjunction with the USAF, Nightfall allows players to experience
-  the thrill of a H.A.L.O jump in VR!
+  Developed in conjunction with the USAF, AFSO:Nightfall allows players to
+  experience the thrill of a H.A.L.O jump in VR!
 weight: 1
 featured_image:
   active: true
@@ -29,9 +29,9 @@ Testimonials: []
 ---
 #### Overview
 
-The United States Air Force (USAF) approached Firesprite Games to create a bespoke piece of content for their forces recruitment program. 
+The United States Air Force (USAF) worked in conjunction with Sony and Firesprite to create a bespoke piece of content for recruitment and to raise awareness of the special operations that they undertake.
 
-Developed in conjunction with experts from the USAF, Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
+Developed in conjunction with combat controllers from the USAF, Air Force Special Ops: Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
 
 In close collaboration with experts from the USAF, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
 
