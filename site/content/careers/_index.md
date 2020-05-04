@@ -14,7 +14,7 @@ intro:
         amazing games.
       image:
         alt: Who we are
-        src: /images/uploads/workingforus-about-culture.jpg
+        src: /images/uploads/whoweare-optimised.jpg
       title: Who we are
     - body: >-
         Whether it's for our partner clients or for our own projects, we're
@@ -34,7 +34,7 @@ intro:
         waterfront.
       image:
         alt: What we offer
-        src: /images/uploads/workingforus-about-careers.jpg
+        src: /images/uploads/whatweoffer.jpg
       title: What we offer
   show: true
   title: We create next generation experiences
