@@ -8,23 +8,22 @@ featured_image:
 intro:
   about:
     - body: >-
-        Firesprite Games is comprised of over 130 developers from junior to
-        senior career levels, representing a multitude of countries around the
-        world.  We all share a collective passion for video games and the
-        pursuit of working together to develop amazing experiences for players
-        everywhere.
+        We have developers from all experience levels and backgrounds
+        representing countries around the world.  We all share a collective
+        passion for video games and the pursuit of pulling together to create
+        amazing games.
       image:
         alt: Who we are
         src: /images/uploads/workingforus-about-culture.jpg
       title: Who we are
     - body: >-
-        Whether it's for our partner clients or for ourselves, we're committed
-        to creating experiences on the latest gaming platforms from PC to
-        Console platforms. We work with a variety of engines and toolchains to
-        create AAA experiences.
+        Whether it's for our partner clients or for our own projects, we're
+        committed to creating incredible experiences on the latest gaming
+        platforms and technologies using the latest engines and tools to
+        collaborate.
       image:
         alt: What we do
-        src: /images/uploads/workingforus-about-studio.jpg
+        src: /images/uploads/whatwedo-optimised.jpg
       title: What we do
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
