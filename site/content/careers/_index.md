@@ -18,7 +18,7 @@ intro:
         src: /images/uploads/whoweare-optimised.jpg
       title: Who we are
     - body: >-
-        We build games and we support content pipelines *for* games built by
+        We build games and we support content pipelines for games built by
         established development teams from around the world. Whether it's for
         our partner clients or for our internal IP projects, we're all committed
         to creating incredible experiences on Console and PC hardware using the
