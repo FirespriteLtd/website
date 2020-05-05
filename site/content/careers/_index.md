@@ -9,10 +9,10 @@ intro:
   about:
     - body: >-
         We're a friendly bunch of developers from all experience levels and
-        backgrounds representing countries around the world. We all share a
-        collective passion for video games and the pursuit of pulling together
-        to co-create and collaborate on exciting and challenging projects
-        together!
+        backgrounds representing a coalition of people from countries around the
+        world. We are united in our passion for video games and the pursuit of
+        pulling together to co-create and collaborate on exciting and
+        challenging projects.
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
