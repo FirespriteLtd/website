@@ -18,11 +18,11 @@ intro:
         src: /images/uploads/whoweare-optimised.jpg
       title: Who we are
     - body: >-
-        We build games and we support content pipelines for games built by
-        established teams from around the world. Whether it's for our partner
-        clients or for our own IP projects, we're committed to creating
-        incredible experiences on Console and PC hardware using the latest
-        engines and tools.
+        We build games and we support content pipelines *for* games built by
+        established development teams from around the world. Whether it's for
+        our partner clients or for our internal IP projects, we're all committed
+        to creating incredible experiences on Console and PC hardware using the
+        latest engines and tools.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
@@ -43,8 +43,8 @@ intro:
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines, Firesprite
-    has grown to over 130 developers creating amazing experiences using the very
-    latest tools on bleeding edge hardware.
+    has grown in stature over the last few years to over 100 developers creating
+    amazing experiences at the cutting-edge of gaming hardware and technologies.
 team:
   show: false
   title: The Team
