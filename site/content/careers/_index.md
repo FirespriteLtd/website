@@ -9,20 +9,20 @@ intro:
   about:
     - body: >-
         We're a friendly bunch of developers from all experience levels and
-        backgrounds representing a coalition of people from countries around the
-        world. We are united in our passion for video games and the pursuit of
-        pulling together to co-create and collaborate on exciting and
-        challenging projects.
+        backgrounds with a mix of nationalities from many countries. We are
+        united in our passion for video games and the pursuit of pulling
+        together to co-create and collaborate on exciting and challenging
+        projects.
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
       title: Who we are
     - body: >-
         We build games and we support content pipelines for games built by
-        established development teams from around the world. Whether it's for
-        our partner clients or for our internal IP projects, we're all committed
-        to creating incredible experiences on Console and PC hardware using the
-        latest engines and tools.
+        established industry players and teams from around the world. Whether
+        it's for our partner clients or for our internal IP projects, we're all
+        committed to delivering incredible experiences on Console and PC
+        hardware using the latest tools and technologies.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
@@ -42,10 +42,10 @@ intro:
   title: We create next generation experiences
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
-    experience in art, business, design and technical disciplines at established
-    industry giants, Firesprite Games now comprises of over 100 professional
-    developers (we call ourselves 'Sprites'!) creating amazing experiences for
-    players on PC and Console platforms.
+    experience in art, business, design and technical disciplines in the games
+    industry, Firesprite Games now comprises of over 100 professional developers
+    (we call ourselves 'Sprites'!) creating amazing experiences for players on
+    PC and Console platforms.
 team:
   show: false
   title: The Team
