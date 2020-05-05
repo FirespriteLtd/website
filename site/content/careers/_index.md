@@ -30,9 +30,10 @@ intro:
     - body: >-
         We offer a friendly, inclusive environment where teams and team members
         are supported, encouraged and trusted to manage their time and workflow.
-        Our studio is situated right in the vibrant heart of Liverpool city
-        centre. It’s modern, stylish, and air conditioned, and packed full of
-        the latest cutting-edge technology.
+        Social events are also organised by our internal team with Summer and
+        Christmas outings for the whole company. Our studio is situated right in
+        the vibrant heart of Liverpool city centre. It’s modern, stylish, and
+        air conditioned, and packed full of the latest cutting-edge technology.
       image:
         alt: What we offer
         src: /images/uploads/whatweoffer.jpg
