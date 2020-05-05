@@ -42,10 +42,10 @@ intro:
   title: We create next generation experiences
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
-    experience in art, business, design and technical disciplines, Firesprite
-    has grown in stature over the last few years with a team over 100
-    professional developers ('Sprites'!) creating amazing experiences at the
-    cutting-edge of gaming hardware and technologies.
+    experience in art, business, design and technical disciplines for industry
+    giants, Firesprite Games now comprises of over 100 professional developers
+    (we call ourselves 'Sprites'!) creating amazing experiences for players on
+    PC and Console platforms.
 team:
   show: false
   title: The Team
