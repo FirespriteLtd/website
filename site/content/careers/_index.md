@@ -10,9 +10,8 @@ intro:
     - body: >-
         We're a friendly bunch of developers from all experience levels and
         backgrounds with a mix of nationalities from many countries. We are
-        united in our passion for video games and the pursuit of pulling
-        together to co-create and collaborate on exciting and challenging
-        projects.
+        united in our passion for video games and pulling together to co-create
+        and collaborate on exciting and challenging projects.
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
