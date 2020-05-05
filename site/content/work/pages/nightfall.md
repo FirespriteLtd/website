@@ -21,6 +21,8 @@ media:
       src: /images/uploads/Nightfall-2.jpg
     - alt: In Freefall
       src: /images/uploads/Nightfall-screenshot.jpg
+    - alt: Night Jump
+      src: /images/uploads/Nightfall-3.jpg
   videos:
     - alt: Launch Trailer
       id: 'https://www.youtube.com/watch?v=fn5D3dAoXx8'
