@@ -43,8 +43,9 @@ intro:
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines, Firesprite
-    has grown in stature over the last few years to over 100 developers creating
-    amazing experiences at the cutting-edge of gaming hardware and technologies.
+    has grown in stature over the last few years with a team over 100
+    professional developers ('Sprites'!) creating amazing experiences at the
+    cutting-edge of gaming hardware and technologies.
 team:
   show: false
   title: The Team
