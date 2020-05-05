@@ -3,15 +3,16 @@ title: 'Air Force Special Ops: Nightfall'
 date: 2020-05-04T21:45:24.085Z
 release_date: 2017-06-20T21:45:24.128Z
 order_status: Out now
-logo: /images/uploads/airforcenightfalllogo.png
-summary: Lorem ipsum
+logo: /images/uploads/airforcenightfalllogo-noshadowlow.gif
+summary: ''
 genre: VR Simulation
+players: '1'
 games/platforms:
   - ps4
 featured_image:
   active: false
-  alt: Test
-  src: /images/uploads/Halo_JumpOpti.jpg
+  alt: 'Air Force Special Ops : Nightfall'
+  src: /images/uploads/Nightfall-concept.jpg
 video: fn5D3dAoXx8
 features:
   - title: Feature 1
@@ -27,4 +28,6 @@ buy:
       https://store.playstation.com/en-us/product/UP9000-CUSA07936_00-NIGHTFALL0000000
 facebook_pixel: []
 ---
-Lorem Ipsum
+# Overview
+
+Assume the role of an Air Force Special Operations Airman and feel the exhilaration of a H.A.L.O. military free fall in VR – all from a first person perspective.  You’re a Special Ops trainee going to H.A.L.O. jump school – H.A.L.O. stands for High Altitude Low Opening, and it’s a military technique used to evade enemy detection. In jump school you will learn about key equipment used by Spec Ops Airmen and master a series of required skills, such as free fall, parachute control, and landing in day and night training operations.  Complete training, then put your skills to the ultimate test in a simulated combat mission.  We need people who can do this! Let’s see if you’ve got what it takes.  Developed in partnership with United States Air Force
