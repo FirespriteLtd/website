@@ -30,4 +30,8 @@ facebook_pixel: []
 ---
 **Overview**
 
-Assume the role of an Air Force Special Operations Airman and feel the exhilaration of a H.A.L.O. military free fall in VR – all from a first person perspective.  You’re a Special Ops trainee going to H.A.L.O. jump school – H.A.L.O. stands for High Altitude Low Opening, and it’s a military technique used to evade enemy detection. In jump school you will learn about key equipment used by Spec Ops Airmen and master a series of required skills, such as free fall, parachute control, and landing in day and night training operations.  Complete training, then put your skills to the ultimate test in a simulated combat mission.  We need people who can do this! Let’s see if you’ve got what it takes.  Developed in partnership with United States Air Force
+Assume the role of an Air Force Special Operations Airman and feel the exhilaration of a H.A.L.O. military free fall in VR – all from a first person perspective.  You’re a Special Ops trainee going to H.A.L.O. jump school – H.A.L.O. stands for High Altitude Low Opening, and it’s a military technique used to evade enemy detection. In jump school you will learn about key equipment used by Spec Ops Airmen and master a series of required skills, such as free fall, parachute control, and landing in day and night training operations.  
+
+Complete training, then put your skills to the ultimate test in a simulated combat mission.  
+
+The USAF needs people who can do this! Let’s see if you’ve got what it takes.
