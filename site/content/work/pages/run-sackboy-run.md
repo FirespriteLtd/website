@@ -1,7 +1,7 @@
 ---
 title: Run! Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
-summary: A free to play endless runner developed in conjunction with Sony XDEV
+summary: A beloved franchise brought to mobile platforms in conjunction with Sony XDEV
 weight: 1
 featured_image:
   active: true
@@ -15,45 +15,22 @@ media:
     - alt: concept 2
       src: /images/uploads/work-runsackboyrun-concept1.jpg
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
-    - alt: screen 2
-      src: /images/uploads/work-runsackboyrun-screen1.jpg
+    - alt: In motion
+      src: /images/uploads/screenshot1-compressed.jpg
+    - alt: Amazing environments
+      src: /images/uploads/screenshot2-low.jpg
+    - alt: Progression
+      src: /images/uploads/screenshot3-low.jpg
   videos:
     - alt: Launch Trailer
       id: KaJXUV5jnTU
       src: /images/uploads/video-placeholder.jpg
-    - alt: Teaser Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
-Testimonials:
-  - alt: Olaf Siebert
-    body: >-
-      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
-      duo aliquip disputationi an.”
-    company: Playstation
-    name: Olaf Siebert
-    position: King of the world
-    src: /images/uploads/testimonial-img.jpg
-  - alt: Matt Benson
-    body: >-
-      “Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-      delectus iudicabit sea. Mandamus contentiones qui, possit denique usu cu,
-      duo aliquip disputationi an.”
-    company: Microsoft
-    name: Matt Benson
-    position: Director
-    src: /images/uploads/testimonial-img.jpg
+Testimonials: []
 ---
-#### Overview
+#### The Brief
 
-Sackboy, the knitted hero from the multi-award winning LittleBigPlanet™ series on PlayStation® lands into the palm of your hand in this brand new endless platformer!
+Sony XDEV partnered with Firesprite Games to take the much beloved Sackboy, the knitted hero from the award winning LittleBigPlanet™ series and bring him across to Apple and Android devices in a brand new endless platformer.
 
-**RUN** as fast as you can through an ever-changing handcrafted world.
+In taking a much beloved brand and character across to a non-PlayStation® platform for the first time, it was important that the quality and consistency of experience was maintained for both the creators and the players across a wide range of handsets and graphics architectures.
 
-**DASH** to **ESCAPE** the **GOO** and the clutches of the grumpy Negativitron!
-
-##### Another sub-heading
-
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu, duo aliquip moderatius disputationi an. No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+Firesprite Games leveraged its incredible art and technical capabilities to recreate the iconic environments, quirky characters and collectables to the highest fidelity possible, maintaining the strong visual look and charm that the franchise is known for across a variety of handsets.
