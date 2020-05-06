@@ -1,9 +1,7 @@
 ---
 title: Run! Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
-summary: >-
-  This is the brief description for the work project which should be quite
-  short.
+summary: A free to play endless runner developed in conjunction with Sony XDEV
 weight: 1
 featured_image:
   active: true
