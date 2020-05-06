@@ -1,7 +1,9 @@
 ---
 title: Run! Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
-summary: A beloved franchise brought to mobile platforms in conjunction with Sony XDEV
+summary: >-
+  We brought a beloved franchise brought to mobile platforms in conjunction with
+  Sony XDEV
 weight: 1
 featured_image:
   active: true
