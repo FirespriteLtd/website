@@ -1,6 +1,6 @@
 ---
 title: Partner Projects
-subtitle: 'Great partners, creative collaboration.'
+subtitle: 'Creative collaborations, lasting partnerships'
 featured_image:
   active: false
   alt: Our Work
