@@ -7,6 +7,7 @@ logo: /images/uploads/airforcenightfalllogo-300px.png
 summary: ''
 genre: VR Simulation
 players: '1'
+ratings: ESRB 10+
 games/platforms:
   - ps4
 featured_image:
@@ -15,7 +16,7 @@ featured_image:
   src: /images/uploads/Nightfall-concept.jpg
 video: fn5D3dAoXx8
 features:
-  - title: Feature 1
+  - title: Be a Special Operations Airman
     body: test4
 media:
   screenshots:
