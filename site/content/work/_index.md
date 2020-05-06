@@ -1,10 +1,10 @@
 ---
 title: Partner Projects
-subtitle: 'creative experiences, lasting partnerships'
+subtitle: 'Great partners, creative collaboration.'
 featured_image:
   active: false
   alt: Our Work
   id: lxoAV83puXg
   src: /images/uploads/the-playroom-screen-06-us-ps4-05aug14.jpg
 ---
-We deliver AAA level development services, from ideation through to delivery, tailored for specific needs.
+We offer AAA level development services, from ideation through to delivery. Check out some of our work.
