@@ -21,22 +21,25 @@ features:
       Developed in conjunction with USAF combat controllers, get a first hand
       look at the training undertaken and equipment used by Special Ops Airmen
       in preparation for being combat ready.
-  - title: Experience multiple career fields
+  - title: Multiple career fields
     body: >-
       Four career fields are available for players to train and specialise in; 
       Combat control, Pararescue, Special Operations Weather and Tactical air
       control party, with multiple scenarios for each field which increase with
       difficulty.
-  - title: Head into combat
+  - title: Deploy into combat
     body: >-
       Complete your training and put your skills to the ultimate test in a
-      simulated combat mission. Have you got what it takes?
+      simulated combat mission, deploying into a theatre of war. Have you got
+      what it takes?
 media:
   screenshots:
     - alt: test
       src: /images/uploads/Nightfall-2.jpg
     - alt: Night Mission
       src: /images/uploads/Nightfall-3.jpg
+    - alt: Getting ready to jump
+      src: /images/uploads/Nightfall-1.jpg
 buy:
   - platforms: ps4
     title: USAF Airforce
