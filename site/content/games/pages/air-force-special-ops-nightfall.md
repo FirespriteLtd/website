@@ -35,6 +35,8 @@ media:
   screenshots:
     - alt: test
       src: /images/uploads/Nightfall-2.jpg
+    - alt: Night Mission
+      src: /images/uploads/Nightfall-3.jpg
 buy:
   - platforms: ps4
     title: USAF Airforce
