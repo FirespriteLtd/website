@@ -9,11 +9,7 @@ featured_image:
   id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
   src: /images/uploads/work-runsackboyrun.jpg
 media:
-  concepts:
-    - alt: concept 1
-      src: /images/uploads/work-runsackboyrun-concept1.jpg
-    - alt: concept 2
-      src: /images/uploads/work-runsackboyrun-concept1.jpg
+  concepts: []
   screenshots:
     - alt: In motion
       src: /images/uploads/screenshot1-compressed.jpg
