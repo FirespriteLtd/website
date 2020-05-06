@@ -27,6 +27,10 @@ features:
       Combat control, Pararescue, Special Operations Weather and Tactical air
       control party, with multiple scenarios for each field which increase with
       difficulty.
+  - title: Head into combat
+    body: >-
+      Complete your training and put your skills to the ultimate test in a
+      simulated combat mission. Have you got what it takes?
 media:
   screenshots:
     - alt: test
