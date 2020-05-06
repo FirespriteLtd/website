@@ -2,7 +2,7 @@
 title: 'Air Force Special Ops: Nightfall'
 date: 2020-01-10T10:37:20.540Z
 summary: >-
-  Developed in conjunction with the USAF, AFSO:Nightfall allows players to
+  Developed in partnership with the Sony and the USAF to allow players to
   experience the thrill of a H.A.L.O jump in VR!
 weight: 1
 featured_image:
