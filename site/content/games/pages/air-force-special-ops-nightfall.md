@@ -16,8 +16,17 @@ featured_image:
   src: /images/uploads/Nightfall-concept.jpg
 video: fn5D3dAoXx8
 features:
-  - title: Be a Special Operations Airman
-    body: test4
+  - title: Head to Jump School
+    body: >-
+      Developed in conjunction with USAF combat controllers, get a first hand
+      look at the training undertaken and equipment used by Special Ops Airmen
+      in preparation for being combat ready.
+  - title: Experience multiple career fields
+    body: >-
+      Four career fields are available for players to train and specialise in; 
+      Combat control, Pararescue, Special Operations Weather and Tactical air
+      control party, with multiple scenarios for each field which increase with
+      difficulty.
 media:
   screenshots:
     - alt: test
