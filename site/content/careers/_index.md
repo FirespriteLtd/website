@@ -43,8 +43,9 @@ intro:
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines in the games
     industry, Firesprite Games now comprises of over 100 professional developers
-    (we call ourselves 'Sprites'!) creating amazing experiences for players on
-    PC and Console platforms.
+    (we call ourselves 'Sprites'!) developing incredible experiences on PC and
+    Console platforms.Proudly Northern, we are based in the city of Liverpool in
+    the United Kindgom.
 team:
   show: false
   title: The Team
