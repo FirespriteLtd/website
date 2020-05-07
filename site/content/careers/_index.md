@@ -44,8 +44,8 @@ intro:
     experience in art, business, design and technical disciplines in the games
     industry, Firesprite Games now comprises of over 100 professional developers
     (we call ourselves 'Sprites'!) developing incredible experiences on PC and
-    Console platforms.Proudly Northern, we are based in the city of Liverpool in
-    the United Kindgom.
+    Console platforms. We are in based in the north of the United Kingdom, in
+    the glorious city of Liverpool, home to The Beatles, Football and much more.
 team:
   show: false
   title: The Team
