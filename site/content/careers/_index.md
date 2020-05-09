@@ -30,22 +30,32 @@ intro:
         We offer a friendly, inclusive environment where teams and team members
         are supported, encouraged and trusted to manage their time and workflow.
         Social events are also organised by our internal team with Summer and
-        Christmas outings for the whole company. Our studio is situated right in
-        the vibrant heart of Liverpool city centre. It’s modern, stylish, and
-        air conditioned, and packed full of the latest cutting-edge technology.
+        Christmas outings for the whole company.
       image:
         alt: What we offer
         src: /images/uploads/whatweoffer.jpg
       title: What we offer
+    - body: >-
+        Our studio is situated right in the vibrant heart of Liverpool city
+        centre. It’s modern, stylish, and air conditioned, and packed full of
+        the latest cutting-edge technology. All the best cafes, restaurants,
+        bars, and shopping are right on our doorstep, and if you want a change
+        of pace, we are just a stone’s throw from the world-famous Liverpool
+        waterfront.
+      image:
+        alt: Liverpool
+        src: /images/uploads/liverpool2.jpg
+      title: Where we are located
   show: true
   title: We create next generation experiences
   body: >-
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines in the games
-    industry, Firesprite Games now comprises of over 100 professional developers
-    (we call ourselves 'Sprites'!) developing incredible experiences on PC and
-    Console platforms. We are in based in the north of the United Kingdom, in
-    the glorious city of Liverpool, home to The Beatles, Football and much more.
+    industry, Firesprite Games now comprises of over 130 professional developers
+    (we call ourselves 'Sprites'!) developing incredible experiences for future
+    facing hardware platforms. We are in based in the north of the United
+    Kingdom, in the glorious city of Liverpool, home to The Beatles, Football
+    and much more.
 team:
   show: false
   title: The Team
