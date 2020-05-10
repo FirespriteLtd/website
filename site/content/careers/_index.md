@@ -80,4 +80,4 @@ Testimonials:
     position: Bowler
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
-Founded in 2012 by a management team with over 100 years of collective experience in art, business, design and technical disciplines in the games industry, with over 130 professional developers (we call ourselves 'Sprites'!) focussed on creating incredible experiences PC, current generation and future generation Console platforms.
+Founded in 2012 by a management team with over 100 years of collective experience in art, business, design and technical disciplines in the games industry, with over 130 professional developers (we call ourselves 'Sprites'!) focussed on creating incredible games for PC, current generation and future generation Console platforms.
