@@ -2,8 +2,8 @@
 title: Run! Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
 summary: >-
-  We brought a beloved franchise brought to mobile platforms in conjunction with
-  Sony XDEV
+  Sony XDEV approach Firesprite about bringing a beloved franchise brought to
+  mobile platforms
 weight: 1
 featured_image:
   active: true
@@ -27,7 +27,9 @@ Testimonials: []
 ---
 #### The Brief
 
-Sony XDEV partnered with Firesprite Games to take the much beloved Sackboy, the knitted hero from the award winning LittleBigPlanet™ series and bring him across to Apple and Android devices in a brand new endless platformer.
+Sony XDEV approached Firesprite Games to take the much beloved Sackboy, the knitted hero from the award winning LittleBigPlanet™ series and bring him and his new adventure across to Apple and Android devices in a brand new endless platformer. 
+
+#### How we delivered
 
 In taking a much beloved brand and character across to a non-PlayStation® platform for the first time, it was important that the quality and consistency of experience was maintained for both the creators and the players across a wide range of handsets and graphics architectures.
 
