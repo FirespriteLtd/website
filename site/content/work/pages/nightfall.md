@@ -31,11 +31,11 @@ Testimonials: []
 ---
 #### The Brief
 
-The United States Air Force (USAF) worked in conjunction with Sony and Firesprite to create a bespoke VR experience for recruitment and to raise awareness of the special operations that they undertake.
+The United States Air Force (USAF) approached Sony and Firesprite to create a bespoke experience for recruitment and to capture the training, preparation and experience of the special operations that they undertake with high altitude freefall operations.
 
 #### How we delivered
 
-Developed in conjunction with combat controllers from the USAF, Air Force Special Ops: Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
+Developed in close conjunction with combat controllers from the USAF, Air Force Special Ops: Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
 
 In close collaboration with experts from the USAF, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
 
