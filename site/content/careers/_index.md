@@ -81,4 +81,4 @@ Testimonials:
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games for cutting edge hardware. 
 
-Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to over 130 professional developers (we call ourselves 'Sprites'!), working with latest PC and Console gaming technologies.
+Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working with the latest PC and Console gaming technologies.
