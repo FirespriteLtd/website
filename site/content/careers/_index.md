@@ -12,7 +12,7 @@ intro:
         levels and backgrounds with a mix of nationalities from many countries. 
         What unites all Sprites is our passion for games and closely
         collaborating, learning and improving across a variety of exciting and
-        challenging development projects.
+        challenging production projects.
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
@@ -52,10 +52,10 @@ intro:
     Founded in 2012 by a management team with over 100 years of collective
     experience in art, business, design and technical disciplines in the games
     industry, Firesprite Games now comprises of over 130 professional developers
-    (we call ourselves 'Sprites'!) developing incredible experiences for future
-    facing hardware platforms. We are in based in the north of the United
-    Kingdom, in the glorious city of Liverpool, home to The Beatles, Football
-    and much more.
+    (we call ourselves 'Sprites'!) developing incredible experiences for PC,
+    current and future generation consoles. We are in based in the north of the
+    United Kingdom, in the glorious city of Liverpool, home to The Beatles,
+    Football and much more.
 team:
   show: false
   title: The Team
