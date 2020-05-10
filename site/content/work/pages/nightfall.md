@@ -29,7 +29,7 @@ media:
       src: /images/uploads/Nightfall-cover-image.jpg
 Testimonials: []
 ---
-#### Overview
+#### The Brief
 
 The United States Air Force (USAF) worked in conjunction with Sony and Firesprite to create a bespoke VR experience for recruitment and to raise awareness of the special operations that they undertake.
 
