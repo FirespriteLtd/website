@@ -40,8 +40,7 @@ intro:
         centre, close to all major transport links. It’s modern, stylish, and
         air conditioned, and packed full of the latest cutting-edge technology.
         All the best cafes, restaurants, bars, and shopping are right on our
-        doorstep, and if you want a change of pace, we are just a stone’s throw
-        from the world-famous Liverpool waterfront.
+        doorstep.
       image:
         alt: Liverpool
         src: /images/uploads/liverpool2.jpg
