@@ -15,7 +15,7 @@ intro:
         challenging production projects.
       image:
         alt: Who we are
-        src: /images/uploads/whoweare-optimised.jpg
+        src: /images/uploads/whatweoffer.jpg
       title: Who we are
     - body: >-
         We build games from concept to completion. Whether it's our own IP or
@@ -33,7 +33,7 @@ intro:
         Christmas outings for the whole company.
       image:
         alt: What we offer
-        src: /images/uploads/whatweoffer.jpg
+        src: /images/uploads/whoweare-optimised.jpg
       title: What we offer
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
