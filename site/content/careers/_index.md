@@ -9,10 +9,10 @@ intro:
   about:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
-        levels and backgrounds with a mix of nationalities from many countries. 
-        What unites all Sprites is our passion for games and closely
-        collaborating, learning and improving across a variety of exciting and
-        challenging production
+        levels and backgrounds with a mix of nationalities from many countries.
+        We are all united in our passion for video games and we work as a team
+        to create and collaborate on varied, exciting and challenging
+        productions.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
@@ -37,11 +37,11 @@ intro:
       title: What we offer
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
-        centre. It’s modern, stylish, and air conditioned, and packed full of
-        the latest cutting-edge technology. All the best cafes, restaurants,
-        bars, and shopping are right on our doorstep, and if you want a change
-        of pace, we are just a stone’s throw from the world-famous Liverpool
-        waterfront.
+        centre, close to all major transport links. It’s modern, stylish, and
+        air conditioned, and packed full of the latest cutting-edge technology.
+        All the best cafes, restaurants, bars, and shopping are right on our
+        doorstep, and if you want a change of pace, we are just a stone’s throw
+        from the world-famous Liverpool waterfront.
       image:
         alt: Liverpool
         src: /images/uploads/liverpool2.jpg
@@ -49,7 +49,7 @@ intro:
   show: true
   title: Build the future.
   body: >-
-    We're ambitious, forward facing studio based in the heart of the game
+    We're an ambitious, future facing studio based in the heart of the game
     development scene in Liverpool, UK. We have a strong focus on culture here
     at Firesprite, built around the core values of being brave, entrepreneurial,
     professional, inclusive and responsive in our mission to become one of the
@@ -80,4 +80,4 @@ Testimonials:
     position: Bowler
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
-Founded in 2012 by a management team with over 100 years of collective experience in art, business, design and technical disciplines in the games industry, with over 130 professional developers (we call ourselves 'Sprites'!) creating incredible experiences for PC, current and future Console technologies.
+Founded in 2012 by a management team with over 100 years of collective experience in art, business, design and technical disciplines in the games industry, with over 130 professional developers (we call ourselves 'Sprites'!) focussed on creating incredible experiences PC, current generation and future generation Console platforms.
