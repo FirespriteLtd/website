@@ -12,7 +12,7 @@ intro:
         levels and backgrounds with a mix of nationalities from many countries. 
         What unites all Sprites is our passion for games and closely
         collaborating, learning and improving across a variety of exciting and
-        challenging production projects.
+        challenging production
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
@@ -49,10 +49,11 @@ intro:
   show: true
   title: Build the future.
   body: >-
-    We have a strong focus on culture here at Firesprite, built around the core
-    values of being brave, entrepreneurial, professional, inclusive and
-    responsive in our mission to become one of the best and brightest places to
-    work in the games industry.
+    We're ambitious, forward facing studio based in the heart of the game
+    development scene in Liverpool, UK. We have a strong focus on culture here
+    at Firesprite, built around the core values of being brave, entrepreneurial,
+    professional, inclusive and responsive in our mission to become one of the
+    best and brightest places to work in the games industry. 
 team:
   show: false
   title: The Team
