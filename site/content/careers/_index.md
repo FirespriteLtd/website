@@ -9,9 +9,10 @@ intro:
   about:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
-        levels and backgrounds with a mix of nationalities from many countries.
-        We are united in our passion for video games and we work as a team to
-        collaborate on exciting and challenging production projects.
+        levels and backgrounds with a mix of nationalities from many countries. 
+        What unites all Sprites is our passion for games and closely
+        collaborating, learning and improving across a variety of exciting and
+        challenging development projects.
       image:
         alt: Who we are
         src: /images/uploads/whoweare-optimised.jpg
