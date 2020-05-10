@@ -1,6 +1,6 @@
 ---
 title: Join Us
-subtitle: We create next generation experiences.
+subtitle: The next generation starts here.
 featured_image:
   active: false
   alt: Working for us
