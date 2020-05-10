@@ -51,8 +51,8 @@ intro:
   body: >-
     We're an ambitious, future facing studio based in the heart of the game
     development scene in Liverpool, UK. We have a strong focus on culture here
-    at Firesprite, built around the core values of being brave, entrepreneurial,
-    professional, inclusive and responsive in our mission to become one of the
+    at Firesprite, built around the core values of being Brave, Entrepreneurial,
+    Professional, Inclusive and Responsive in our mission to become one of the
     best and brightest places to work in the games industry. 
 team:
   show: false
