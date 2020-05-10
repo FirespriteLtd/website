@@ -45,7 +45,7 @@ intro:
       image:
         alt: Liverpool
         src: /images/uploads/liverpool2.jpg
-      title: Where we are located
+      title: Where we are
   show: true
   title: We create next generation experiences
   body: >-
