@@ -10,18 +10,18 @@ intro:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
         levels and backgrounds with a mix of nationalities from many countries.
-        We are all united in our passion for video games and we work as a team
-        to create and collaborate on varied, exciting and challenging
-        productions.
+        We were founded by industry veterans with the vision to build a studio
+        staffed with excited, passionate developers who want to collaborate
+        across varied, exciting and challenging game projects.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
       title: Who we are
     - body: >-
-        We build games from concept to completion. Whether it's our own IP or
-        working with partners to deliver new games in existing universes, the
-        Firesprite family is devoted to delivering incredible experiences on
-        Console and PC hardware with cutting edge tools and technology.
+        We build games from concept to completion, whether its the creation of
+        our own IP or working closely with strategic partners to deliver new
+        games in existing universes. Our teams across Design, Engineering, Art,
+        Production and QA utilise the latest technologies and tools to deliver.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
@@ -81,4 +81,4 @@ Testimonials:
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games for cutting edge hardware. 
 
-Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working with the latest PC and Console gaming technologies.
+Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working on PC, Current and Next Generation Consoles.
