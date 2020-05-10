@@ -1,6 +1,6 @@
 ---
 title: Join Us
-subtitle: Build the future.
+subtitle: We create next generation experiences.
 featured_image:
   active: false
   alt: Working for us
@@ -47,15 +47,12 @@ intro:
         src: /images/uploads/liverpool2.jpg
       title: Where we are
   show: true
-  title: We create next generation experiences
+  title: Build the future.
   body: >-
-    Founded in 2012 by a management team with over 100 years of collective
-    experience in art, business, design and technical disciplines in the games
-    industry, Firesprite Games now comprises of over 130 professional developers
-    (we call ourselves 'Sprites'!) developing incredible experiences for PC,
-    current and future generation consoles. We are in based in the north of the
-    United Kingdom, in the glorious city of Liverpool, home to The Beatles,
-    Football and much more.
+    We have a strong focus on culture here at Firesprite, built around the core
+    values of being brave, entrepreneurial, professional, inclusive and
+    responsive in our mission to become one of the best and brightest places to
+    work in the games industry.
 team:
   show: false
   title: The Team
@@ -82,4 +79,4 @@ Testimonials:
     position: Bowler
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
-We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
+Founded in 2012 by a management team with over 100 years of collective experience in art, business, design and technical disciplines in the games industry, with over 130 professional developers (we call ourselves 'Sprites'!) creating incredible experiences for PC, current and future Console technologies.
