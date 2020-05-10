@@ -2,8 +2,8 @@
 title: 'Air Force Special Ops: Nightfall'
 date: 2020-01-10T10:37:20.540Z
 summary: >-
-  Developed in partnership with the Sony and the USAF to allow players to
-  experience the thrill of a H.A.L.O jump in VR!
+  SIE and the USAF approached Firesprite to immerse players in the training and
+  tactics involved in Freefall operations
 weight: 1
 featured_image:
   active: true
@@ -31,7 +31,7 @@ Testimonials: []
 ---
 #### Overview
 
-The United States Air Force (USAF) worked in conjunction with Sony and Firesprite to create a bespoke piece of content for recruitment and to raise awareness of the special operations that they undertake.
+The United States Air Force (USAF) worked in conjunction with Sony and Firesprite to create a bespoke VR experience for recruitment and to raise awareness of the special operations that they undertake.
 
 Developed in conjunction with combat controllers from the USAF, Air Force Special Ops: Nightfall utilises PlayStation VR to create an immersive, thrilling and interactive insight into the training and techniques employed in a "High Altitude Low Opening" (H.A.L.O) jump.
 
