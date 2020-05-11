@@ -9,10 +9,10 @@ intro:
   about:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
-        levels and diverse backgrounds. We were founded by industry veterans who
-        wanted to build a studio staffed with excited, passionate creators who
-        love to collaborate across varied, inspiring and challenging production
-        projects.
+        levels and diverse backgrounds. We were founded by industry veterans
+        that wanted to build a studio staffed with excited, passionate creators
+        who love to collaborate across varied, inspiring and challenging
+        production projects.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
