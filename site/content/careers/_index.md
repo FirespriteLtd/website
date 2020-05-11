@@ -28,10 +28,12 @@ intro:
         src: /images/uploads/whatwedo-optimised.jpg
       title: What we do
     - body: >-
-        We offer a friendly, inclusive environment where teams and team members
-        are supported, encouraged and trusted to manage their time and workflow.
-        Social events are also organised by our internal team with Summer and
-        Christmas outings for the whole company.
+        We offer a competitive salary and a friendly, inclusive environment
+        where teams and team members are supported and encouraged to express
+        their creativity but also trusted to manage their workflow and
+        responsibilities. We arrange beers on a Friday for the team to kick back
+        and bi-annual big social outings at Christmas and Summer are also
+        organised for all staff to attend.
       image:
         alt: What we offer
         src: /images/uploads/whoweare-optimised.jpg
