@@ -9,10 +9,10 @@ intro:
   about:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
-        levels and backgrounds with a mix of nationalities from many countries.
-        We were founded by industry veterans with the vision to build a studio
-        staffed with excited, passionate creators who love to collaborate across
-        varied, exciting and challenging game projects.
+        levels and diverse backgrounds. We were founded by industry veterans who
+        wanted to build a studio staffed with excited, passionate creators who
+        love to collaborate across varied, inspiring and challenging game
+        projects.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
@@ -21,9 +21,8 @@ intro:
         We build games from concept to completion, whether its the creation of
         our own IP or working closely with strategic partners to deliver new
         games in existing universes. Our talented teams across Design,
-        Engineering, Art, Production and QA disciplines utilise the latest
-        technologies and tools to create amazing experiences for players
-        everywhere.
+        Engineering, Art, Production and QA utilise the latest technologies and
+        tools to create amazing experiences for players everywhere.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
