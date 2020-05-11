@@ -18,11 +18,11 @@ intro:
         src: /images/uploads/whatweoffer.jpg
       title: Who we are
     - body: >-
-        We build games from concept to completion, whether its the creation of
-        our own IP or working closely with strategic partners to deliver new
-        games in existing universes. Our talented teams across Design,
-        Engineering, Art, Production and QA utilise the latest technologies and
-        tools to create amazing experiences for players everywhere.
+        We build games from concept to completion, whether creating our own IP
+        or working closely with strategic partners to deliver new games in
+        existing universes. Our talented teams across Design, Engineering, Art,
+        Production and QA utilise the latest technologies and tools to create
+        amazing experiences for players everywhere.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
