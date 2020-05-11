@@ -80,6 +80,6 @@ Testimonials:
     position: Bowler
     src: /images/uploads/testimonial-mattbenson.jpg
 ---
-Firesprite Games was founded in 2012 with the goal of creating incredible games for cutting edge hardware. 
+Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
 Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working across PC, Current and Next Generation Consoles.
