@@ -11,8 +11,8 @@ intro:
         We're a professional, friendly bunch of developers from all experience
         levels and backgrounds with a mix of nationalities from many countries.
         We were founded by industry veterans with the vision to build a studio
-        staffed with excited, passionate developers who love to collaborate
-        across varied, exciting and challenging game projects.
+        staffed with excited, passionate creators who love to collaborate across
+        varied, exciting and challenging game projects.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
