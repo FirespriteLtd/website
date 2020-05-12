@@ -10,9 +10,9 @@ intro:
     - body: >-
         We're a professional, friendly bunch of developers from all experience
         levels and diverse backgrounds. We were founded by industry veterans
-        that wanted to build a studio staffed with excited, passionate creators
-        who love to collaborate across varied, inspiring and challenging
-        production projects.
+        that wanted to build a world class studio staffed with excited,
+        passionate creators who love to collaborate across varied, inspiring and
+        challenging games.
       image:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
@@ -31,8 +31,8 @@ intro:
         We offer a competitive salary and a friendly, inclusive environment
         where teams and team members are supported and encouraged to express
         their creativity but also trusted to manage their workflow and
-        responsibilities. We arrange beers on a Friday for the team to kick back
-        and bi-annual big social outings at Christmas and Summer are also
+        responsibilities. We arrange drinks on a Friday for the team to kick
+        back and bi-annual big social outings at Christmas and Summer are also
         organised for all staff to attend.
       image:
         alt: What we offer
@@ -40,9 +40,9 @@ intro:
       title: What we offer
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
-        centre, close to all major transport links. It’s modern, stylish, and
-        air conditioned, and packed full of the latest cutting-edge technology.
-        All the best cafes, restaurants, bars, and shopping are right on our
+        centre, close to all major transport links. It’s modern, stylish, air
+        conditioned and packed full of the latest cutting-edge technology. All
+        the best cafes, restaurants, bars, and shopping are right on our
         doorstep.
       image:
         alt: Liverpool
