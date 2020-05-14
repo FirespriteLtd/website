@@ -1,10 +1,8 @@
 ---
 title: The Playroom VR
 date: 2020-01-10T10:34:36.541Z
-summary: >-
-  This is the brief description for the work project which should be quite
-  short.
-weight: 1
+summary: Firesprite partnered with Sony Japan Studio to bring the fun to the VR Party!
+weight: 0
 featured_image:
   active: true
   alt: The Playroom VR
