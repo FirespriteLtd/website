@@ -2,8 +2,8 @@
 title: Run! Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
 summary: >-
-  Sony XDEV approach Firesprite about bringing a beloved franchise brought to
-  mobile platforms
+  We brought a beloved franchise brought to mobile platforms in partnership with
+  Sony
 weight: 1
 featured_image:
   active: true
