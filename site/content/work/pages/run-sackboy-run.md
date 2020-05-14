@@ -19,10 +19,7 @@ media:
       src: /images/uploads/screenshot2-low.jpg
     - alt: Progression
       src: /images/uploads/screenshot3-low.jpg
-  videos:
-    - alt: Launch Trailer
-      id: KaJXUV5jnTU
-      src: /images/uploads/video-placeholder.jpg
+  videos: []
 Testimonials: []
 ---
 #### The Brief
