@@ -2,7 +2,7 @@
 title: The Playroom VR
 date: 2020-01-10T10:34:36.541Z
 summary: Firesprite partnered with Sony Japan Studio to bring the fun to the VR Party!
-weight: 0
+weight: 2
 featured_image:
   active: true
   alt: The Playroom VR
