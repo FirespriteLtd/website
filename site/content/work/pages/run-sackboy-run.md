@@ -6,9 +6,9 @@ summary: >-
   Sony
 weight: 1
 featured_image:
-  active: false
+  active: true
   alt: Run! Sackboy! Run!
-  id: KaJXUV5jnTU
+  id: ''
   src: /images/uploads/runsackboyrun-compressed.jpg
 media:
   concepts: []
@@ -20,8 +20,8 @@ media:
     - alt: Progression
       src: /images/uploads/screenshot3-low.jpg
   videos:
-    - alt: Run! SackBoy Run! Launch Trailer
-      id: KaJXUV5jnTU
+    - alt: Launch Trailer
+      id: WoMwv79D1rngWXcEpL3l
       src: /images/uploads/runsackboyrun-compressed.jpg
 Testimonials: []
 ---
@@ -33,10 +33,10 @@ Sony XDEV approached Firesprite Games to take the much beloved Sackboy, the knit
 
 In taking a much beloved brand and character across to a non-PlayStation® platform for the first time, it was important that the quality and consistency of experience was maintained for both the creators and the players across a wide range of handsets and graphics architectures.
 
-Firesprite Games leveraged its incredible art and technical capabilities to recreate the iconic environments, quirky characters and collectables to the highest fidelity possible, maintaining the strong visual look and charm that the franchise is known for across a variety of handsets, even low end devices.
+Firesprite Games leveraged its incredible art and technical capabilities to recreate the iconic environments, quirky characters and collectables to the highest fidelity possible, maintaining the strong visual look and charm that the franchise is known for across a variety of handsets, maintaining the aesethetic even on low-end devices with weaker graphics hardware.
 
 Developed on a F2P business model with IAP, the game shipped with a variety of in-game unlockables and Leaderboards for players to compete and challenge eachother.
 
 #### The Result
 
-Run! Sackboy! Run! has since enjoyed over 10 million installs on devices since its launch and a huge praise from customers and the press alike.
+Run! Sackboy! Run! has since enjoyed over 10 million installs on devices since its launch and a huge praise from customers and the media alike, with a extremely positive rating of 4.5 stars on the Google Play Store and 4.1 starts on the Apple App Store.
