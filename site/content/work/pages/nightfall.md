@@ -39,4 +39,6 @@ Developed in close conjunction with combat controllers from the USAF, Air Force 
 
 In close collaboration with experts from the USAF, Firesprite Games recreated the Military Freefall School in VR, giving players an introduction to the H.A.L.O jump techniques and the ability to learn the skills required for Jumping, Freefall, Canopy Control, Landing & Night operations, culminating in players testing their mettle in a simulated combat op.
 
+#### The Result
+
 The full range of PSVR features were utilised to capture the full experience of freefall and parachute descent,  including the recreation of an integrated heads up display (Navigometer) to provide telemetry to players about flight pose and heading alongside freefall and canopy controls operated by the PlayStation Move controllers.
