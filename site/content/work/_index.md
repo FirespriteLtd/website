@@ -1,6 +1,6 @@
 ---
 title: Partner Projects
-subtitle: 'Creative Partnerships, Strong Relationships.'
+subtitle: 'Strategic partnerships, great relationships.'
 featured_image:
   active: false
   alt: Our Work
