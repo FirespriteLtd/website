@@ -4,7 +4,7 @@ date: 2020-01-08T16:47:32.389Z
 summary: >-
   We brought a beloved franchise to mobile platforms in partnership with Sony
   Entertainment Europe
-weight: 1
+weight: 2
 featured_image:
   active: true
   alt: Run! Sackboy! Run!
