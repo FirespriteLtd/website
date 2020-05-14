@@ -9,7 +9,7 @@ featured_image:
   active: true
   alt: Run! Sackboy! Run!
   id: 'https://www.youtube.com/watch?v=KaJXUV5jnTU'
-  src: /images/uploads/work-runsackboyrun.jpg
+  src: /images/uploads/runsackboyrun-compressed.jpg
 media:
   concepts: []
   screenshots:
