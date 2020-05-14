@@ -4,7 +4,7 @@ date: 2020-01-10T10:37:20.540Z
 summary: >-
   SIE and the USAF approached Firesprite to immerse players in the training and
   tactics involved in Freefall operations
-weight: 1
+weight: 2
 featured_image:
   active: true
   alt: Nightfall
