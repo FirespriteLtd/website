@@ -6,7 +6,7 @@ summary: >-
   Sony
 weight: 1
 featured_image:
-  active: true
+  active: false
   alt: Run! Sackboy! Run!
   id: KaJXUV5jnTU
   src: /images/uploads/runsackboyrun-compressed.jpg
@@ -19,7 +19,10 @@ media:
       src: /images/uploads/screenshot2-low.jpg
     - alt: Progression
       src: /images/uploads/screenshot3-low.jpg
-  videos: []
+  videos:
+    - alt: Run! SackBoy Run! Launch Trailer
+      id: KaJXUV5jnTU
+      src: /images/uploads/runsackboyrun-compressed.jpg
 Testimonials: []
 ---
 #### The Brief
