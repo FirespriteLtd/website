@@ -1,36 +1,47 @@
 ---
-title: Concept Artist
-careers/categories: art
+title: Senior Programmer
+careers/categories: engineering
 position_type: full
 email: jobs@firesprite.com
 ---
-#### Overview
+#### Duration
 
-I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine. I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine.
+Permanent
 
-#### Your role
+#### Salary
 
-I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine.
+Competitive, dependent on experience.
 
-#### Requirements
+#### The Role
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money. Why not do it all for free? Investment Assets Properties have ready several locations around the world to take your free listings for any luxury property you have.Choosing The Best Audio Player Software For Your Computer
+We are seeking a Senior or Principal gameplay programmer to form a core part of a small but experienced team on a new and incredibly exciting project. It’s a chance to get in at the early stages of a game and contribute to the shape and direction we take. You will be responsible for authoring core game mechanics and making gameplay feel solid, robust and satisfying. You're likely to have a hand in a broad range of disciplines, from core player interactions to AI, animation state machines, UI and physics, as well having responsibility for stitching everything together into a cohesive, polished whole. You'll work very closely with the whole of the team, especially with designers and the game director, to iterate, evolve and polish gameplay elements to the highest quality possible. 
 
-* Burning Desire Golden Key Or Red Herring
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
+You will get to work with a dedicated and talented team that has delivered some amazing quality titles. Come and join our successful, stable and expanding studio and create a game that’s guaranteed to be massive hit across the globe!
 
-#### Personal Skills
+#### Key Responsibilities
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money. Why not do it all for free? Investment Assets Properties have ready several locations around the world to take your free listings for any luxury property you have.
+* Prototype, implement, iterate and polish new and existing gameplay mechanics and associated systems
+* Produce robust, efficient, clear and maintainable code, while striving to reduce technical debt across the game
+* Investigate and evaluate third party tools, libraries and frameworks
+* Respond to design feedback to help meet the creative vision of the game
+* Provide constructive input to and feedback on designs during initial design, prototyping, iteration and polish stages
+* Be a point of contact for designers, artists and other coders with regards to the systems you create and maintain
+* Take responsibility for, and ownership of, the thornier elements of shipping a game, such as debugging awkward crashes, profiling and optimising code, and performing diligent testing of changes.
 
-* Choosing The Best Audio Player Software For Your Computer
-* Burning Desire Golden Key Or Red Herring
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
+#### Role Requirements
 
-#### Interested?
+* Strong knowledge of, and experience working in, C++
+* Confidence working with 3D maths (vectors, matrices, linear algebra)
+* General software engineering knowledge (OOP, design patterns, API development)
+* Experience profiling and optimising CPU performance of Realtime systems
+* Experience debugging issues in large and complex codebases
+* An intuition for, and interest in, 'game feel'
+* A willingness and desire to learn, adapt and work outside of your comfort zone
+* Approachable, with a proactive attitude towards cross-discipline communication
+* At least five years of experience in a similar role, ideally with at least two shipped titles
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money.
+#### Additional or desirable skills
+
+* Console development experience would be advantageous
+
+##### Job Code: PSP01
