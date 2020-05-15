@@ -1,36 +1,51 @@
 ---
-title: Level Designer
-careers/categories: design
+title: Network Programmer- Ref PNO01
+careers/categories: engineering
 position_type: full
 email: jobs@firesprite.com
 ---
-#### Overview
+#### Duration
 
-I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine. I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine.
+Permanent
 
-#### Your role
+#### Salary
 
-I was born and raised in the heart of the Deep South. From as far back as I can remember I remember long summer afternoons spent drinking iced tea and shelling peas and butterbeans on my grandmother’s porch. I have moved on from my roots and have made my way into other regions of the world. One thing, however, that has remained constant in my life is my deep and abiding love for southern cooking and cuisine.
+Competitive based on experience
 
-#### Requirements
+#### The Role
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money. Why not do it all for free? Investment Assets Properties have ready several locations around the world to take your free listings for any luxury property you have.Choosing The Best Audio Player Software For Your Computer
+We are seeking an experienced Network Programmer to form a core part of a small but experienced team on an incredibly exciting project. As one of our Network Programmers you will be responsible for implementation and maintenance of client-side networking.
 
-* Burning Desire Golden Key Or Red Herring
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
+You will get to work with a dedicated and talented team that has delivered some amazing quality titles. Come and join our successful, stable and expanding studio and create a game that’s guaranteed to be massive hit across the globe!
 
-#### Personal Skills
+##### Key Responsibilities
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money. Why not do it all for free? Investment Assets Properties have ready several locations around the world to take your free listings for any luxury property you have.
+* Deliver high quality networking of gameplay systems and network heavy gameplay systems using appropriate levels of abstraction
+* Identify and debug networking problems quickly and efficiently
+* Help define the technical direction and develop innovative solutions for difficult networking problems
+* Use appropriate data structures and algorithms to maximize efficiency (for both development time and runtime performance
 
-* Choosing The Best Audio Player Software For Your Computer
-* Burning Desire Golden Key Or Red Herring
-* Discover Little Known Secrets For Successful Living
-* Do You Think Motivational Thoughts
+##### Role Requirements
 
-#### Interested?
+* Strong C++ programming and debugging skills
+* Expert in networking concepts and able to use networking primitives with minimal support
+* Good algorithm and data structure skills (including time & space complexity and real-world vs theoretical performance of basic data structures)
+* Awareness of multithreading concepts and able to use multithreading primitives with guidance
+* Capable of reading and understanding game code
+* Self-motivated and driven to creatively solve problems
+* Able to plan their work with some assistance
+* Strong problem-solving and analytical skills
+* Experience debugging issues in large and complex codebase
+* A willingness and desire to learn, adapt and work outside of your comfort zone
+* Approachable, with a proactive attitude towards cross discipline communication
+* Have shipped at least 1 game in a similar role
+* Minimum of 3 years in a similar role
 
-Forget Ebay and other forms of advertising for your property that costs you hard earned money.
+**Additional or desired skills:**
+
+* Current console experience
+* Working knowledge of Agile development
+
+
+
+##### **JOB CODE:**PNO01
