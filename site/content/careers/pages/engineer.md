@@ -1,7 +1,7 @@
 ---
 title: Render Programmer
 careers/categories: engineering
-position_type: part
+position_type: full
 email: jobs@firesprite.com
 ---
 #### Duration
