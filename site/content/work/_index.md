@@ -7,4 +7,4 @@ featured_image:
   id: lxoAV83puXg
   src: /images/uploads/the-playroom-screen-06-us-ps4-05aug14.jpg
 ---
-We offer AAA quality development services from ideation to delivery.  Learn more about what we can offer.
+We create strategic content for partners, from ideation to delivery. Learn more about what we have done and what we could do for you! Get in touch.
