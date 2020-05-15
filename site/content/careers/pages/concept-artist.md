@@ -18,7 +18,7 @@ We are seeking a Senior or Principal gameplay programmer to form a core part of 
 
 You will get to work with a dedicated and talented team that has delivered some amazing quality titles. Come and join our successful, stable and expanding studio and create a game that’s guaranteed to be massive hit across the globe!
 
-#### Key Responsibilities
+##### Key Responsibilities
 
 * Prototype, implement, iterate and polish new and existing gameplay mechanics and associated systems
 * Produce robust, efficient, clear and maintainable code, while striving to reduce technical debt across the game
@@ -28,7 +28,7 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Be a point of contact for designers, artists and other coders with regards to the systems you create and maintain
 * Take responsibility for, and ownership of, the thornier elements of shipping a game, such as debugging awkward crashes, profiling and optimising code, and performing diligent testing of changes.
 
-#### Role Requirements
+##### Role Requirements
 
 * Strong knowledge of, and experience working in, C++
 * Confidence working with 3D maths (vectors, matrices, linear algebra)
@@ -40,7 +40,7 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Approachable, with a proactive attitude towards cross-discipline communication
 * At least five years of experience in a similar role, ideally with at least two shipped titles
 
-#### Additional or desirable skills
+##### Additional or desirable skills
 
 * Console development experience would be advantageous
 
