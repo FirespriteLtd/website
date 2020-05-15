@@ -12,12 +12,18 @@ featured_image:
   src: /images/uploads/work-theplayroom.jpg
 media:
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/work-theplayroom-screen1.jpg
-    - alt: screen 2
-      src: /images/uploads/work-theplayroom-screen1.jpg
-    - alt: screen 3
-      src: /images/uploads/work-theplayroom-screen1.jpg
+    - alt: Playroom Screenshot 1
+      src: /images/uploads/Playroom1-compressed.jpg
+    - alt: Playroom Screenshot 2
+      src: /images/uploads/Playroom2-compressed.jpg
+    - alt: Playroom Screenshot 3
+      src: /images/uploads/Playroom3-compressed.jpg
+    - alt: Playroom Screenshot 4
+      src: /images/uploads/Playroom4-compressed.jpg
+  videos:
+    - alt: THE PLAYROOM Trailer
+      id: vv5uI2vlXE8
+      src: /images/uploads/Playroom3-compressed.jpg
 Testimonials: []
 ---
 #### The brief
