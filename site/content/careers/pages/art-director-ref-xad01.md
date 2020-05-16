@@ -4,11 +4,11 @@ careers/categories: art
 position_type: full
 email: jobs@firesprite.com
 ---
-### Duration
+#### Duration
 
 Permanent or Contract
 
-### Salary
+#### Salary
 
 Competitive, dependent on experience.
 
@@ -18,7 +18,7 @@ We are seeking an experienced Art Director! As Firesprite expands again, we’re
 
 As well as brilliant projects you will get to work with a dedicated and talented team that has delivered some amazing quality titles. Come and join our successful, stable, and expanding studio, and help us create amazing experiences (and have a little fun along the way!)
 
-**Responsibilities:**
+##### **Responsibilities:**
 
 * To set and maintain an exciting and engaging vision for a new IP
 * Either create or brief concept art that supports the IP
@@ -28,14 +28,14 @@ As well as brilliant projects you will get to work with a dedicated and talented
 * Maintain and develop the artistic vision for the game throughout development
 * Review and critique artwork communicating this back to art leads or artist for a given piece of work
 
-**Skills:**
+##### **Skills:**
 
 * Friendly and approachable personality
 * Energetic and positive attitude with strong leadership skills
 * Outstanding communication skills both written and verbal
 * The ability to create an artistic vision from scratch across multiple styles and genres
 
-**Experience requirements:**
+##### **Experience requirements:**
 
 * Must be proven in this role with at least one AAA title completed from initial concept to final product
 * Must have been at least lead level on projects for 5+ years
