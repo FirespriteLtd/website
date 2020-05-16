@@ -1,5 +1,5 @@
 ---
-title: Mid-Senior Development Manager -Ref CSDM01
+title: Mid-Senior Development Manager - Ref CSDM01
 careers/categories: production
 position_type: full
 email: jobs@firesprite.com
