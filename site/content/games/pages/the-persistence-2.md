@@ -66,14 +66,14 @@ features:
       rendering effects for PC, PlayStation 4. PlayStation 4 Pro, XBOX One X and
       PC VR headsets.
 media:
-  concepts: []
+  concepts:
+    - alt: Concept art
+      src: /images/uploads/messroom 01.jpg
+    - alt: Concept art
+      src: /images/uploads/The_Persistence_10.jpg
   screenshots:
     - alt: The Persistence
       src: /images/uploads/The Persistence -Screenshot 1.jpg
-    - alt: The Persistence
-      src: /images/uploads/The Persistence Screenshot 2.jpg
-    - alt: The Persistence
-      src: /images/uploads/The Persistence Screenshot 3.jpg
     - alt: The Persistence
       src: /images/uploads/The Persistence - Screenshot 4.jpg
     - alt: The Persistence
