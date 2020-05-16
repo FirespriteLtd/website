@@ -13,7 +13,7 @@ featured_image:
   active: false
   alt: Run Sackboy! Run!
   src: /images/uploads/RSR-hero-no-logo.jpg
-video: kZYy5E7VYz
+video: kZYy5E7VYzs
 features:
   - title: Boost to Victory!
     body: >-
