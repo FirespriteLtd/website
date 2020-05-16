@@ -9,7 +9,7 @@ featured_image:
   active: true
   alt: Nightfall
   id: 'https://www.youtube.com/watch?v=kAUZ1H2_fn8'
-  src: /images/uploads/Halo_JumpOpti.jpg
+  src: /images/uploads/Nightfall-concept.jpg
 media:
   concepts:
     - alt: Airfield
