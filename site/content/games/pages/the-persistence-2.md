@@ -4,9 +4,7 @@ date: 2018-07-24T09:43:47.559Z
 release_date: 2020-05-28T10:18:14.339Z
 order_status: Pre-order
 logo: /images/uploads/The_Persistence_Logo_Shadowed.png
-summary: >-
-  The Persistence launches for PC, XBOX and Nintendo Switch, alongside adding
-  support for non-VR on Playstation 4
+summary: ''
 genre: Sci-fi Horror
 players: 1 Player
 ratings: 'PEGI 18, ESRB M'
@@ -70,12 +68,18 @@ features:
 media:
   concepts: []
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/games-thepersistence-screen1.jpg
-    - alt: screen 2
-      src: /images/uploads/games-thepersistence-screen1.jpg
-    - alt: screen 3
-      src: /images/uploads/games-thepersistence-screen1.jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence -Screenshot 1.jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence Screenshot 2.jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence Screenshot 3.jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence - Screenshot 4.jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence - Screenshot 5 .jpg
+    - alt: The Persistence
+      src: /images/uploads/The Persistence - Screenshot 6.jpg
   videos:
     - alt: The Persistence Date Announcement
       id: IsOCywxNZwg
