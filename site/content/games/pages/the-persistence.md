@@ -45,8 +45,10 @@ media:
     - alt: concept 4
       src: /images/uploads/PersistencenVR concept art 4.jpg
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/games-thepersistence-screen1.jpg
+    - alt: Screenshot 1
+      src: /images/uploads/persistencevr-screenshot1.jpg
+    - alt: Screenshot 2
+      src: /images/uploads/persistencevr-screenshot2.jpg
   videos:
     - alt: Gameplay Trailer
       id: iwMYzJaVzFI
