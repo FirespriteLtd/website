@@ -18,9 +18,9 @@ games/platforms:
 featured_image:
   active: false
   alt: The Persistence
-  id: Test
+  id: ''
   src: /images/uploads/Pers_2020_Horiz.jpg
-video: 'https://www.youtube.com/watch?v=vTr2jMSJZ4g'
+video: FeEyDhtwMcs
 features:
   - title: Death is just the beginning
     body: >-
@@ -62,11 +62,7 @@ features:
 
       \*Feature not available for XBOX Platform. Data charges may apply
 media:
-  concepts:
-    - alt: concept 1
-      src: /images/uploads/games-thepersistence-concept1.jpg
-    - alt: concept 2
-      src: /images/uploads/games-thepersistence-concept1.jpg
+  concepts: []
   screenshots:
     - alt: screen 1
       src: /images/uploads/games-thepersistence-screen1.jpg
@@ -74,7 +70,10 @@ media:
       src: /images/uploads/games-thepersistence-screen1.jpg
     - alt: screen 3
       src: /images/uploads/games-thepersistence-screen1.jpg
-  videos: []
+  videos:
+    - alt: The Persistence Date Announcement
+      id: IsOCywxNZwg
+      src: /images/uploads/OPM_5_optimised.jpg
 buy:
   - platforms: ps4
     title: PlayStation®4
