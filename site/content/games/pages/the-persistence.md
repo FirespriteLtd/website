@@ -38,6 +38,12 @@ media:
   concepts:
     - alt: concept 1
       src: /images/uploads/Persistence VR Concept art 1.jpg
+    - alt: concept 2
+      src: /images/uploads/Persistence VR Concept art 2.jpg
+    - alt: concept 3
+      src: /images/uploads/Persistence VR Concept art 3.jpg
+    - alt: concept 4
+      src: /images/uploads/PersistencenVR concept art 4.jpg
   screenshots:
     - alt: screen 1
       src: /images/uploads/games-thepersistence-screen1.jpg
