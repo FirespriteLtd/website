@@ -6,11 +6,11 @@ email: jobs@firesprite.com
 ---
 #### Duration
 
-Permanent
+Permanent.
 
 #### Salary
 
-Competitive based on experience
+We offer a very competitive package, which is dependent on experience.
 
 #### The Role
 
@@ -42,5 +42,7 @@ You will get to work with a dedicated and talented team that has delivered some 
 ##### Additional or Desirable Skills
 
 * Console development would be advantageous
+
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
 
 ##### Job Code: FSP01
