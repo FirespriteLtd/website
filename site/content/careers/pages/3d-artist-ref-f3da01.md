@@ -1,5 +1,5 @@
 ---
-title: 3D Artist - REF F3DA01
+title: 3D Artist - Ref F3DA01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
