@@ -6,11 +6,11 @@ email: jobs@firesprite.com
 ---
 #### Duration
 
-Permanent or Contract
+Permanent or Contract.
 
 #### Salary
 
-Competitive dependent on experience
+We offer a very competitive package, which is dependent on experience.
 
 #### The Role
 
@@ -48,5 +48,7 @@ It is a chance to get in at the early stages of a growing studio working on mult
 * Knowledge of common Software Design Patterns
 * Experience with Automation (Automated Testing Pipelines)
 * Proficient in Agile Project Management (Scrum Master)
+
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
 
 ##### **JOB CODE:TBC**
