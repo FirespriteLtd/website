@@ -61,6 +61,12 @@ features:
 
 
       \*Feature not available for XBOX Platform. Data charges may apply
+  - title: Optimised for both VR and Non-VR Platforms
+    body: >-
+      The Persistence comes to new platforms, heightening the terror to a new
+      fidelity with enhanced environments, post-processing, lighting and
+      rendering effects for PC, PlayStation 4. PlayStation 4 Pro, XBOX One X and
+      PC VR headsets.
 media:
   concepts: []
   screenshots:
