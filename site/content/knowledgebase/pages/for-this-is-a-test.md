@@ -8,6 +8,7 @@ platforms:
   - ps4
   - nintendo-switch
   - xbox-one
+  - mobile
 ---
 If you are encountering an issue with the android version of the Persistence companion application not saving progress, please follow these steps on your Android device:
 
