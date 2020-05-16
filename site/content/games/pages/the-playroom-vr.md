@@ -5,13 +5,14 @@ release_date: 2020-05-16T10:58:36.047Z
 order_status: Out now
 logo: /images/uploads/playroomvrlogo2.png
 genre: VR
-players: 1-4
+players: 1-5
+ratings: 'PEGI 3+,  ESRB  "E"'
 games/platforms:
   - ps4
 featured_image:
   active: false
-  alt: Test
-  src: /images/uploads/work-theplayroom.jpg
+  alt: The Playroom
+  src: /images/uploads/Playroom-VR-Hero-Compressed.jpg
 video: kAUZ1H2_fn8
 media:
   concepts:
