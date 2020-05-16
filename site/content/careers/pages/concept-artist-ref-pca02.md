@@ -44,4 +44,6 @@ As a Concept Artist you will work closely with the Lead Artist, Art Director and
 * Ability to create schematic and orthogonal view Knowledge of 3D software to create block outs of concepts
 * Support for the art team if required
 
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
+
 ##### JOB CODE: PCA02
