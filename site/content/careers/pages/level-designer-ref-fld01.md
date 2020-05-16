@@ -50,4 +50,6 @@ You will get to work with a dedicated and talented team that has delivered some 
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
 
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
+
 ##### **JOB CODE:**FLD01
