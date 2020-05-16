@@ -5,6 +5,7 @@ release_date: 2020-05-16T10:58:36.047Z
 order_status: Out now
 logo: /images/uploads/playroomvrlogo2.png
 genre: VR
+players: 1-4
 games/platforms:
   - ps4
 featured_image:
@@ -12,10 +13,25 @@ featured_image:
   alt: Test
   src: /images/uploads/work-theplayroom.jpg
 video: kAUZ1H2_fn8
+media:
+  concepts:
+    - alt: THE PLAYROOM VR
+      src: >-
+        /images/uploads/THE-PLAYROOM-VR-Family-Shot-Key-Visual-FINAL-compressor.jpg
+  screenshots:
+    - alt: THE PLAYROOM VR
+      src: /images/uploads/PlayroomVRScreens09.jpg
+    - alt: THE PLAYROOM VR
+      src: /images/uploads/PlayroomVRscreen10.jpg
+    - alt: THE PLAYROOM VR
+      src: /images/uploads/the-playroom-vr-screen-01-compressedjpg.jpg
+  videos: []
 facebook_pixel: []
 ---
 ### Your virtual reality toybox
 
-There are plenty of fantastic mini-games just moments away in THE PLAYROOM VR – but you also have space to kick back and chill in a virtual bedroom, too. This is the home of the loveable VR Bots, who are playing games, socialising and even working out.
+Get ready for an innovative and social spin on virtual reality gaming. Available as a free download from PlayStation Store for all PS VR owners, THE PLAYROOM VR includes six games that are sure to leave a colossal impact on any party.
 
-Don’t forget to check out the high-tech vending machine. Complete any of the mini-games and you earn coins to play the machine and win toys, which you can then use to decorate the bedroom any way you see fit. Have a little fun and get into THE PLAYROOM VR spirit!
+Grab your PlayStation VR headset while up to four friends join in with a DUALSHOCK 4 wireless controller each. Then enjoy a variety of action-packed mini-games which has you diving into everything from a hilarious cat and mouse chase to clearing a haunted house of its ghastly ghosts.
+
+Whether you’re working co-operatively or competitively, the adorable interactive VR Bots are on hand to make sure you have a blast.
