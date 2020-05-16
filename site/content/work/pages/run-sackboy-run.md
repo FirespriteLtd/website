@@ -1,5 +1,5 @@
 ---
-title: Run! Sackboy! Run!
+title: Run Sackboy! Run!
 date: 2020-01-08T16:47:32.389Z
 summary: >-
   Firesprite brought a beloved franchise to mobile platforms in partnership with
@@ -7,7 +7,7 @@ summary: >-
 weight: 2
 featured_image:
   active: true
-  alt: Run! Sackboy! Run!
+  alt: Run Sackboy! Run!
   id: ''
   src: /images/uploads/RSR-hero-no-logo.jpg
 media:
@@ -31,7 +31,7 @@ Sony XDEV approached Firesprite Games to take the much beloved Sackboy, the knit
 
 #### How we delivered
 
-In taking a much beloved brand and character across to a non-PlayStation® platform for the first time, it was important that the quality and consistency of experience was maintained for both the creators and the players across a wide range of handsets and graphics architectures.
+In taking a much beloved brand and character across to a non-PlayStation® platform for the first time, it was important that the quality and consistency of experience was maintained for both the IP holders and their fanbase across a wide range of handsets and graphics architectures.
 
 Firesprite Games leveraged its incredible art and technical capabilities to recreate the iconic environments, quirky characters and collectables to the highest fidelity possible, maintaining the strong visual look and charm that the franchise is known for across a variety of handsets, maintaining the aesethetic even on low-end devices with weaker graphics hardware.
 
