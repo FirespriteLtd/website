@@ -2,7 +2,7 @@
 outputs:
   - json
 game: The Persistence
-title: Why won't the Persistence Connect to my XBOX One
+title: Why won't the Persistence Companion App Connect to my XBOX One
 platforms:
   - xbox-one
 ---
