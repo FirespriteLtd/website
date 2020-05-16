@@ -1,34 +1,19 @@
 ---
-title: Yet another news article headline which is long and runs across multiple lines
-date: 2016-02-09T12:02:40.846Z
+title: MCV Speaks to Firesprite about bringing The Persistence to Non-VR platforms
+date: 2016-04-13T11:02:40.846Z
 draft: false
 summary: >-
-  Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-  delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
-  duo aliquip moderatius disputationi.
+  “As optimistic developers, we thought this would be really easy” – Firesprite
+  on adapting VR title The Persistence for the flatscreen.
 news/categories:
   - game
 featured_image:
-  alt: test
+  alt: Firesprite Games Speaks to MCV
   src: /images/uploads/news-temp.jpg
-  title: test
+  title: Firesprite Games Speaks to MCV
 tags:
-  - test
+  - ''
 ---
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu, duo aliquip moderatius disputationi an. No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+Firesprite Games Graeme Ankers speaks to MCV about bringing The Persistence to Non-VR platforms in anticipation of the release later on in the Summer and the challenges involved.
 
-
-
-##### Another sub-heading
-
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,duo aliquip [moderatiusdisputationi an](www.test.com). No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
-
-![test](/images/uploads/news-body.jpg "test")
-
-Laoreet interdumduis porta mollis posueremetus odio. Donec litora tempus dictum nisi hymenaeos fermentum, integer. Fermentum justo morbi est gravida leo. Suspendisse nisi commodo nisi viverra, adipiscing congue laoreet sem, vehicula sodales eros penatibus eleifend dapibus hymenaeos aenean turpis aliquam luctus at. Fusce sem lacinia donec. Dignissim urna nec vehicula montes euismod.
-
-
-
-##### This is a title using H5
-
-Hac nascetur vestibulum lectus taciti maecenas. Netus mattis. Id, praesent habitant suscipit suspendisse. Sit cras erat, eleifend. Fermentum natoque morbi cum nullam quis maecenas tempus, hendrerit molestie dui ac sapien bibendum quam bibendum curabitur laoreet taciti gravida aliquam Nostra. In phasellus quis mi torquent pellentesque consequat eros.
+You can read the whole entire interview [here](https://www.mcvuk.com/business-news/as-optimistic-developers-we-thought-this-would-be-really-easy-firesprite-on-adapting-vr-title-the-persistence-for-the-flatscreen/).
