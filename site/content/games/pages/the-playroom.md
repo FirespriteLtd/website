@@ -14,19 +14,21 @@ featured_image:
   src: /images/uploads/work-theplayroom.jpg
 video: vv5uI2vlXE8
 features:
+  - title: Make new friends!
+    body: >-
+      Reveal the AR Bots that live inside your DUALSHOCK 4 wireless controller.
+      Use the touchpad to flick them onto your screen and then see how they
+      react to your on-camera actions. Wave to them or kick and swat them across
+      the room.
+  - title: Go head to head!
+    body: >-
+      Challenge an opponent in Air Hockey and marvel as the holographic
+      playfield is projected between your controllers, allowing you to stretch,
+      twist and bend it to get the upper hand.
   - title: Summon Asobi
     body: >-
-      Rub the touch pad like a magic lamp to rouse Asobi, an interactive flying
-      robot who comes out to play in your living room.
-  - title: Play Air Hockey
-    body: >-
-      Challenge an opponent and marvel as the holographic playfield is projected
-      between your controllers, allowing you to stretch, twist and bend it to
-      get the upper hand.
-  - title: Meet the AR Bots
-    body: >-
-      Lots of little AR Bots live inside your controller. Discover amazing ways
-      to interact with them and laugh along as they fool around!
+      Rub the touch pad like a magic lamp to summon the smart, cheeky robot
+      named ASOBI and have fun together in your own living room.
 media:
   screenshots:
     - alt: 'THE PLAYROOM '
@@ -43,4 +45,8 @@ media:
       src: /images/uploads/work-theplayroom-screen1.jpg
 facebook_pixel: []
 ---
-Pre-installed on every PlayStation®4, THE PLAYROOM is available straight out of the box. Get your PlayStation®Camera and DUALSHOCK®4 wireless controller ready and enter a world of ground-breaking augmented reality gaming experiences anyone can enjoy!
+## This is your playroom
+
+Pre-installed on every PlayStation®4, THE PLAYROOM is available straight out of the box. 
+
+Combining the Playstation Camera with the unique features of the DUALSHOCK 4 wireless controller, THE PLAYROOM is chock full of augmented reality fun. Ignite your imagination with a variety of different and engaging experiences!
