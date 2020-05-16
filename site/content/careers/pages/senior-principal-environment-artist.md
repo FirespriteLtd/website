@@ -6,11 +6,11 @@ email: jobs@firesprite.com
 ---
 #### Duration
 
-Permanent
+Permanent.
 
 #### Salary
 
-Competitive, dependent on experience.
+We offer a very competitive package, which is dependent on experience.
 
 #### The Role
 
@@ -50,5 +50,7 @@ As a Senior / Principal Environment Artist you will work closely with the Lead A
 * Knowledge of Unreal engine
 * Experience with outsource studios
 * Illustrative / Concept art / Matte painting skills
+
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
 
 ##### JOB CODE: CSA01
