@@ -36,25 +36,15 @@ features:
       any of the ship’s internal security defenses.
 media:
   concepts:
-    - alt: concept 1
+    - alt: Concept Art
       src: /images/uploads/Persistence VR Concept art 1.jpg
-    - alt: concept 2
-      src: /images/uploads/Persistence VR Concept art 2.jpg
-    - alt: concept 3
-      src: /images/uploads/Persistence VR Concept art 3.jpg
-    - alt: concept 4
-      src: /images/uploads/PersistencenVR concept art 4.jpg
   screenshots:
     - alt: Screenshot 1
       src: /images/uploads/persistencevr-screenshot1.jpg
-    - alt: Screenshot 2
-      src: /images/uploads/persistencevr-screenshot2.jpg
     - alt: Screenshot 3
       src: /images/uploads/persistencevr-screenshot3.jpg
     - alt: Screenshot 4
       src: /images/uploads/persistencevr-screenshot4.jpg
-    - alt: Screenshot 5
-      src: /images/uploads/persistencevr-screenshot5.jpg
     - alt: Screenshot 6
       src: /images/uploads/persistencevr-screenshot6.jpg
   videos:
