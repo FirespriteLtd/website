@@ -1,5 +1,5 @@
 ---
-title: Run! Sackboy! Run!
+title: Run Sackboy! Run!
 date: 2020-05-16T12:30:11.034Z
 release_date: 2020-05-16T12:30:11.054Z
 order_status: Out now
