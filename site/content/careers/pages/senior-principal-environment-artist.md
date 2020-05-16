@@ -1,5 +1,5 @@
 ---
-title: Senior Principal Environment Artist - REF CSA01
+title: Senior Principal Environment Artist - Ref CSA01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
