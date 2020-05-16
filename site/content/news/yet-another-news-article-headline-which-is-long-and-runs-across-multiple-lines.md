@@ -1,6 +1,6 @@
 ---
 title: MCV Speaks to Firesprite about bringing The Persistence to Non-VR platforms
-date: 2016-04-13T11:02:40.846Z
+date: 2019-04-17T11:02:40.846Z
 draft: false
 summary: >-
   “As optimistic developers, we thought this would be really easy” said our MD,
