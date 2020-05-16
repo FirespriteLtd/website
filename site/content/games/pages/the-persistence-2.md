@@ -17,7 +17,7 @@ featured_image:
   active: false
   alt: The Persistence
   id: ''
-  src: /images/uploads/Pers_2020_Horiz.jpg
+  src: /images/uploads/PersistenceKeyart.jpg
 video: FeEyDhtwMcs
 features:
   - title: Death is just the beginning
