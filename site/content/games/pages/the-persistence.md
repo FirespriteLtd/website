@@ -49,6 +49,14 @@ media:
       src: /images/uploads/persistencevr-screenshot1.jpg
     - alt: Screenshot 2
       src: /images/uploads/persistencevr-screenshot2.jpg
+    - alt: Screenshot 3
+      src: /images/uploads/persistencevr-screenshot3.jpg
+    - alt: Screenshot 4
+      src: /images/uploads/persistencevr-screenshot4.jpg
+    - alt: Screenshot 5
+      src: /images/uploads/persistencevr-screenshot5.jpg
+    - alt: Screenshot 6
+      src: /images/uploads/persistencevr-screenshot6.jpg
   videos:
     - alt: Gameplay Trailer
       id: iwMYzJaVzFI
