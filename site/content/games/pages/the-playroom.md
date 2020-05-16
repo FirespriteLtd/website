@@ -27,10 +27,6 @@ features:
     body: >-
       Lots of little AR Bots live inside your controller. Discover amazing ways
       to interact with them and laugh along as they fool around!
-  - title: Free Game Add-ons
-    body: >-
-      Look out for additional content for THE PLAYROOM on PlayStation®Store –
-      including TOYMAKER, which you can download at no extra cost.
 media:
   screenshots:
     - alt: 'THE PLAYROOM '
