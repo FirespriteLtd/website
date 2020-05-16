@@ -14,4 +14,8 @@ featured_image:
 video: kAUZ1H2_fn8
 facebook_pixel: []
 ---
-Test
+### Your virtual reality toybox
+
+There are plenty of fantastic mini-games just moments away in THE PLAYROOM VR – but you also have space to kick back and chill in a virtual bedroom, too. This is the home of the loveable VR Bots, who are playing games, socialising and even working out.
+
+Don’t forget to check out the high-tech vending machine. Complete any of the mini-games and you earn coins to play the machine and win toys, which you can then use to decorate the bedroom any way you see fit. Have a little fun and get into THE PLAYROOM VR spirit!
