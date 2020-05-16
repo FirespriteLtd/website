@@ -3,7 +3,7 @@ title: Run Sackboy! Run!
 date: 2020-05-16T12:30:11.034Z
 release_date: 2020-05-16T12:30:11.054Z
 order_status: Out now
-logo: /images/uploads/Run_Sackboy!_Run!flatlogo.png
+logo: /images/uploads/Run_Sackboy!_Run!flatlogo4x.png
 genre: Endless Runner
 players: '1'
 ratings: 'PEGI 3+, ESRB "E"'
