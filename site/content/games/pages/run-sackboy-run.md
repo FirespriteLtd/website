@@ -46,10 +46,4 @@ facebook_pixel: []
 
 Sackboy, the knitted hero from the multi-award winning LittleBigPlanet™ series on PlayStation® lands into the palm of your hand in this brand new endless platformer!\
 \
-Get ready to run like the wind in a blistering adventure with the nasty Negativitron nipping at your heels.
-
-* Iconic worlds and characters from the LittleBigPlanet™ games
-* Exclusive costumes to customise your Sackboy
-* Collect Stickers to unlock Prizes.
-* Power Ups and Upgrades including the all-new Glider.
-* Challenge and compete with your friends
+Get ready to run like the wind in a blistering adventure with the nasty Negativitron nipping at your heels, featuring iconic worlds and characters from the LittleBigPlanet™ games!
