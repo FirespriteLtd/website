@@ -37,7 +37,7 @@ features:
 media:
   concepts:
     - alt: concept 1
-      src: /images/uploads/games-thepersistence-concept1.jpg
+      src: /images/uploads/Persistence VR Concept art 1.jpg
   screenshots:
     - alt: screen 1
       src: /images/uploads/games-thepersistence-screen1.jpg
