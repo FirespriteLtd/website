@@ -13,7 +13,7 @@ games/platforms:
 featured_image:
   active: false
   alt: 'Air Force Special Ops : Nightfall'
-  src: /images/uploads/Nightfall-concept.jpg
+  src: /images/uploads/Halo_JumpOpti.jpg
 video: fn5D3dAoXx8
 features:
   - title: Head to Jump School
