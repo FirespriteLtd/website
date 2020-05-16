@@ -1,5 +1,5 @@
 ---
-title: UI Artist - REF CUI01
+title: UI Artist - Ref CUI01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
