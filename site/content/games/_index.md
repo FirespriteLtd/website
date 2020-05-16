@@ -7,4 +7,4 @@ featured_image:
   id: ''
   src: /images/uploads/OPM_5_optimised.jpg
 ---
-We make games and we play games. We love what we do. Check out some of our creations.
+Whether crafted for partners or our own creations, we love what we do. Check them out.
