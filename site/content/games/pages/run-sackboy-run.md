@@ -48,14 +48,8 @@ Sackboy, the knitted hero from the multi-award winning LittleBigPlanet™ series
 \
 Get ready to run like the wind in a blistering adventure with the nasty Negativitron nipping at your heels.
 
-### Power-up and upgrade!
-
-Whilst running across LittleBigPlanet, your Sackboy can utilise special Power-ups to aid them in their escape of the Negativitron and collect bonus goodies!
-
-*The Magnet*- The nifty little device will pull all nearby Bubbles and Prize Bubbles towards you as you run.
-
-*The Jetpack*- Grab this and jet off to a secret route that's just chock full of bonus bubbles to collect.
-
-*The Glider* - Hit a Bounce Pad with the glider equipped and glide high above the ground to avoid danger and collect bubbles.
-
-You can even spend your hard-earned Bubbles to give each of these Power-ups a permanent Upgrade!
+* Iconic worlds and characters from the LittleBigPlanet™ games
+* Exclusive costumes to customise your Sackboy
+* Collect Stickers to unlock Prizes.
+* Power Ups and Upgrades including the all-new Glider.
+* Challenge and compete with your friends
