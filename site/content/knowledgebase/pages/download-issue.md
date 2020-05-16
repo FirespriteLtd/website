@@ -8,6 +8,7 @@ platforms:
   - ps4
   - xbox-one
   - pc
+  - mobile
 ---
 The Persistence Companion app can only connect to The Persistence over a local network connection.
 
