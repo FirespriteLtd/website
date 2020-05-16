@@ -9,7 +9,7 @@ featured_image:
   active: true
   alt: Run! Sackboy! Run!
   id: ''
-  src: /images/uploads/runsackboyrun-compressed.jpg
+  src: /images/uploads/RSR-hero-no-logo.jpg
 media:
   concepts: []
   screenshots:
