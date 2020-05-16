@@ -3,7 +3,7 @@ title: The Persistence
 date: 2018-07-24T09:43:47.559Z
 release_date: 2020-05-28T10:18:14.339Z
 order_status: Pre-order
-logo: /images/uploads/games-thepersistence-logo.png
+logo: /images/uploads/The_Persistence_Logo_Shadowed.png
 summary: >-
   The Persistence launches for PC, XBOX and Nintendo Switch, alongside adding
   support for non-VR on Playstation 4
