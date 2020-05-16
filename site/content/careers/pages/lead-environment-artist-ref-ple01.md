@@ -1,5 +1,5 @@
 ---
-title: Lead Environment Artist - REF PLE01
+title: Lead Environment Artist - Ref PLE01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
