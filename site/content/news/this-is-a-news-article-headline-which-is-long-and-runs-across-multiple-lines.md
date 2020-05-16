@@ -10,7 +10,7 @@ news/categories:
   - press
 featured_image:
   alt: The Persistence date confirmation
-  src: /images/uploads/PersistenceDateAnnounce.jpg
+  src: /images/uploads/PersistenceKeyart.jpg
   title: The Persistence Date Confimation
 tags:
   - The Persistence
