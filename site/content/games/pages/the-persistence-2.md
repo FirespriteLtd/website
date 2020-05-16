@@ -91,10 +91,12 @@ buy:
       https://store.playstation.com/en-us/product/UP3536-CUSA07643_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
 facebook_pixel: []
 ---
-##### Can you survive?
+#### Can you survive?
 
 The Persistence challenges you to survive aboard a doomed deep space colony starship in the year 2521, overrun with horrific & murderous aberrations.  
 
 Stranded, malfunctioning and caught in the inexorable pull of a black hole, “The Persistence” is overrun with a crew mutated into horrific & murderous aberrations. It’s down to you, a clone of security officer Zimri Eder, to make your way deeper in the decks of The Persistence to repair the systems and prevent the ship from being torn apart.  Gather resources, upgrade abilities and fabricate an arsenal of weapons in this brutal sci-fi horror roguelike.
+
+#### Arriving on new platforms!
 
 Originally exclusive for PlayStation VR, The Persistence comes to new platforms including XBOX One, Nintendo Switch and PC.
