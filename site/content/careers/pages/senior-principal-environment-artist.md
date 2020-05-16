@@ -16,7 +16,7 @@ Competitive, dependent on experience.
 
 We are seeking someone who can work both in realism and in a stylistic way.
 
-As a Senior / Principal Environment Artist you will work closely with the Lead Artist, Animators and Art Director, as well as production to create a variety of Environment assets, sets and organics based on concept to suit the existing game style
+As a Senior / Principal Environment Artist you will work closely with the Lead Artist, Animators and Art Director, as well as production to create a variety of Environment assets, sets and organics based on concept to suit the existing game style.
 
 ##### **Key responsibilities:**
 
@@ -50,3 +50,5 @@ As a Senior / Principal Environment Artist you will work closely with the Lead A
 * Knowledge of Unreal engine
 * Experience with outsource studios
 * Illustrative / Concept art / Matte painting skills
+
+##### JOB CODE: CSA01
