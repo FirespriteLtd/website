@@ -1,0 +1,45 @@
+---
+title: UI Artist - REF CUI01
+careers/categories: art
+position_type: full
+email: jobs@firesprite.com
+---
+#### Duration
+
+Permanent
+
+#### Salary
+
+Competitive dependent on experience
+
+#### The Role
+
+We're looking for an experienced UI Artist to work on a huge, globally recognised IP, on an exciting multiplayer shooter project which is in the later stages of production development. 
+
+You will get to work with a dedicated and talented team that has delivered some amazing quality titles. Come and join our successful, stable, and expanding studio and create a game that’s guaranteed to be massive hit across the globe!
+
+This is an extremely dynamic project, collaborating with a very high-profile client, utilising their assets and pipelines to deliver an original multiplayer experience as part of their wider IP proposition.
+
+##### **Key responsibilities:**
+
+* Collaborate with project AD, GD to define the key design pillars for the title
+* Communication your vision through moodboards to begin with, ending with motion graphics or storyboards clearly illustrating your vision for the design work
+* Help to deliver the graphic design work in a game ready state
+* Working with Dev Managers to ensure a realistic time estimates are given
+* You’ll be responsible for the entire package, from initial high-level concepts/moodboard to final design
+* To be able to take an existing aesthetic, understand the principles behind it and work within its confines
+
+##### **Role requirements:**
+
+* At least one AAA game shipped
+* A good level of technical expertise
+* Excellent knowledge of Adobe CC apps
+* A deep understanding of what makes successful design in the context of computer games
+* Highly self-motivated with excellent communication skills
+* Must have a passion and understanding of what makes AAA games animation great
+
+##### **Additional or desired skills:**
+
+* UX skills an advantage
+
+##### **JOB CODE: CUI01**
