@@ -1,7 +1,7 @@
 ---
 title: The Persistence confirmed for release on May 21st 2020
 date: 2019-04-23T11:01:12.892Z
-draft: true
+draft: false
 summary: >-
   Critically acclaimed PlayStation®VR hit confirmed for digital release on
   PlayStation® 4, Xbox One, Nintendo Switch and PC platforms, with physical
