@@ -3,8 +3,8 @@ title: MCV Speaks to Firesprite about bringing The Persistence to Non-VR platfor
 date: 2016-04-13T11:02:40.846Z
 draft: false
 summary: >-
-  “As optimistic developers, we thought this would be really easy” – Firesprite
-  on adapting VR title The Persistence for the flatscreen.
+  “As optimistic developers, we thought this would be really easy” said our MD,
+  Graeme Ankers on adapting The Persistence for non-VR platforms.
 news/categories:
   - game
 featured_image:
