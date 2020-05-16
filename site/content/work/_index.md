@@ -7,4 +7,4 @@ featured_image:
   id: lxoAV83puXg
   src: /images/uploads/the-playroom-screen-06-us-ps4-05aug14.jpg
 ---
-We create strategic content for partners, from ideation to delivery. Learn more about what we have done and what we could do for you! Get in touch.
+We create strategic content for partners, from ideation to delivery. Learn more about what we have co-created and what we could do for you!
