@@ -1,5 +1,5 @@
 ---
-title: The Persistence confirmed for release on May 21st 2020
+title: The Persistence confirmed for multiplatform release on May 21st 2020
 date: 2019-04-23T11:01:12.892Z
 draft: false
 summary: >-
