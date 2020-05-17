@@ -40,11 +40,7 @@ media:
       src: /images/uploads/Nightfall-3.jpg
     - alt: Getting ready to jump
       src: /images/uploads/Nightfall-1.jpg
-buy:
-  - platforms: ps4
-    title: USAF Airforce
-    url: >-
-      https://store.playstation.com/en-us/product/UP9000-CUSA07936_00-NIGHTFALL0000000
+buy: []
 facebook_pixel: []
 ---
 ### **Have you got what it takes?**
