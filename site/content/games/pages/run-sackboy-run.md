@@ -47,3 +47,5 @@ facebook_pixel: []
 Sackboy, the knitted hero from the multi-award winning LittleBigPlanet™ series on PlayStation® lands into the palm of your hand in this brand new endless platformer!\
 \
 Get ready to run like the wind in a blistering adventure with the nasty Negativitron nipping at your heels, featuring iconic worlds and characters from the LittleBigPlanet™ games!
+
+Run! Sackboy! Run! since launch has enjoyed over 15 million installs on devices and gathered praise from customers and the media alike. It has a rating of 4.5 stars on the Google Play Store and 4.1 starts on the App Store.
