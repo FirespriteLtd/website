@@ -66,21 +66,7 @@ team:
   image:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
-Testimonials:
-  - alt: Matt Benson
-    body: >-
-      "This is a testimonial for the team section written by any member of the
-      team and can be very long if required."
-    name: Matt Benson
-    position: Marketing & Commercial Director
-    src: /images/uploads/testimonial-mattbenson.jpg
-  - alt: James Anderson
-    body: >-
-      "This is another testimonial for the team section written by another
-      different member of the team and can be very long if required."
-    name: James Anderson
-    position: Bowler
-    src: /images/uploads/testimonial-mattbenson.jpg
+Testimonials: []
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
