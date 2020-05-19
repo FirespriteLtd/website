@@ -4,8 +4,6 @@ items:
     name: News
   - link: /games
     name: Games
-  - link: /work
-    name: Case Studies
   - link: /careers
     name: Join Us
   - link: /support
