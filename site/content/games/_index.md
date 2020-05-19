@@ -7,4 +7,4 @@ featured_image:
   id: ''
   src: /images/uploads/OPM_5_optimised.jpg
 ---
-Whether crafted for partners or our own creations, we love what we do. Check them out.
+Whether crafted for partners or our own creations, we love what we do.
