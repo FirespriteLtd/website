@@ -16,8 +16,6 @@ order:
     title: Latest News Section Block
   - id: game
     title: Game & Featured Game Section block
-  - id: work
-    title: Work Section Block
   - id: career
     title: Career Section Bock
 ---
