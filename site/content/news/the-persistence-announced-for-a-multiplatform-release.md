@@ -24,6 +24,4 @@ Marking the release this summer, Games Publisher Perp Games will publish physica
 
 ![packshots](/images/uploads/persisteneceboxart.jpg "The Persistence Packshots")
 
-Check out our launch trailer here 
-
-<https://www.youtube.com/watch?v=7tteNQBH-uE>
+Check out our launch trailer here: <https://www.youtube.com/watch?v=7tteNQBH-uE>
