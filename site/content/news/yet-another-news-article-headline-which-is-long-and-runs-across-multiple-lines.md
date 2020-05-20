@@ -12,7 +12,7 @@ featured_image:
 tags:
   - ''
 ---
-## “As optimistic developers, we thought this would be really easy” said our MD, Graeme Ankers on adapting The Persistence for non-VR platforms.
+### “As optimistic developers, we thought this would be really easy” said our MD, Graeme Ankers on adapting The Persistence for non-VR platforms.
 
 Firesprite Games Graeme Ankers speaks to MCV about bringing The Persistence to Non-VR platforms in anticipation of the release later on in the Summer and the challenges involved.
 
