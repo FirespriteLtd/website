@@ -1,6 +1,6 @@
 ---
 title: Firesprite speaks about its culture and foundations
-date: 2020-05-17T21:07:03.666Z
+date: 2020-03-28T22:07:03.666Z
 draft: false
 summary: >-
   We talk to Gamesjobsdirect about our heritage, founding culture and what makes
