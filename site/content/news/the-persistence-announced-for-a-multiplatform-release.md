@@ -14,7 +14,7 @@ featured_image:
 ---
 **Liverpool, UK - Monday 9th March, 2020.** Cutting-edge independent developer Firesprite Games is excited to announce that critically acclaimed sci-fi horror experience ***The Persistence*** is heading to PlayStation®4, Xbox One, Nintendo Switch, and PC this summer.
 
-![The Persistence](/images/uploads/The Persistence -Screenshot 1.jpg "The Persistence")
+![The Persistence](/images/uploads/landing1.jpg "The Persistence")
 
 \
 \
