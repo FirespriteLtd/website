@@ -1,7 +1,7 @@
 ---
 title: The Persistence Announced for a multiplatform release!
 date: 2020-03-09T14:00:00.000Z
-draft: true
+draft: false
 summary: >-
   Firesprite announces critically acclaimed title comes to PlayStation® 4, Xbox
   One, Nintendo Switch and PC platforms.
