@@ -40,6 +40,10 @@ media:
       src: /images/uploads/screenshot2-low.jpg
     - alt: Run Sackboy! Run!
       src: /images/uploads/screenshot3-low.jpg
+    - alt: Run Sackboy! Run!
+      src: /images/uploads/screenshot6.jpg
+    - alt: Run Sackboy! Run!
+      src: /images/uploads/screenshot7.jpg
 facebook_pixel: []
 ---
 #### RUN as fast as you can through an ever-changing handcrafted world!
