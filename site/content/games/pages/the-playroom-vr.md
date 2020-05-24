@@ -21,11 +21,7 @@ media:
         /images/uploads/THE-PLAYROOM-VR-Family-Shot-Key-Visual-FINAL-compressor.jpg
   screenshots:
     - alt: THE PLAYROOM VR
-      src: /images/uploads/PlayroomVRScreens09.jpg
-    - alt: THE PLAYROOM VR
       src: /images/uploads/PlayroomVRscreen10.jpg
-    - alt: THE PLAYROOM VR
-      src: /images/uploads/the-playroom-vr-screen-01-compressedjpg.jpg
     - alt: PLAYROOM VR
       src: /images/uploads/the-playroom-vr-screen-27-ps4-us-13sep16-compressed.jpg
   videos: []
