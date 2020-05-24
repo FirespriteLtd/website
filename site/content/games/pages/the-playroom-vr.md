@@ -3,7 +3,7 @@ title: THE PLAYROOM VR
 date: 2020-05-16T10:58:36.033Z
 release_date: 2020-05-16T10:58:36.047Z
 order_status: Out now
-logo: /images/uploads/playroomvrlogo2.png
+logo: /images/uploads/PlayroomVR.png
 genre: VR
 players: 1-5
 ratings: 'PEGI 3+,  ESRB  "E"'
