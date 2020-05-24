@@ -46,7 +46,7 @@ intro:
         doorstep.
       image:
         alt: Liverpool
-        src: /images/uploads/liverpool2.jpg
+        src: /images/uploads/liverpool-compressed.jpg
       title: Where we are
   show: true
   title: Build the future.
