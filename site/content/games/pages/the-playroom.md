@@ -17,14 +17,8 @@ video: vv5uI2vlXE8
 features: []
 media:
   screenshots:
-    - alt: 'THE PLAYROOM '
-      src: /images/uploads/Playroom1-compressed.jpg
     - alt: THE PLAYROOM
       src: /images/uploads/Playroom2-compressed.jpg
-    - alt: THE PLAYROOM
-      src: /images/uploads/Playroom3-compressed.jpg
-    - alt: THE PLAYROOM
-      src: /images/uploads/PlayroomVRScreens09.jpg
   videos:
     - alt: THE PLAYROOM Launch Trailer
       id: vv5uI2vlXE8
