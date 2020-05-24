@@ -15,10 +15,7 @@ featured_image:
   src: /images/uploads/Playroom-VR-Hero-Compressed.jpg
 video: kAUZ1H2_fn8
 media:
-  concepts:
-    - alt: THE PLAYROOM VR
-      src: >-
-        /images/uploads/THE-PLAYROOM-VR-Family-Shot-Key-Visual-FINAL-compressor.jpg
+  concepts: []
   screenshots:
     - alt: THE PLAYROOM VR
       src: /images/uploads/PlayroomVRscreen10.jpg
