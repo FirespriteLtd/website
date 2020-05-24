@@ -19,6 +19,10 @@ media:
   screenshots:
     - alt: THE PLAYROOM
       src: /images/uploads/Playroom2-compressed.jpg
+    - alt: The Playroom
+      src: /images/uploads/playroom6.jpg
+    - alt: The PlayRoom
+      src: /images/uploads/playroom7.jpg
   videos:
     - alt: THE PLAYROOM Launch Trailer
       id: vv5uI2vlXE8
