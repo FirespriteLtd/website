@@ -2,7 +2,7 @@
 title: MCV Speaks to Firesprite about bringing The Persistence to Non-VR platforms
 date: 2019-04-17T11:02:40.846Z
 draft: false
-summary: ''
+summary: Games industry publication MCV speaks to Firesprite Games MD Graeme Ankers .
 news/categories:
   - game
 featured_image:
