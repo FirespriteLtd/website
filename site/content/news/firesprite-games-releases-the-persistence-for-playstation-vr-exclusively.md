@@ -1,5 +1,5 @@
 ---
-title: Firesprite Games releases The Persistence for PlayStation VR exclusively
+title: Firesprite Games releases The Persistence for PlayStation VR
 date: 2018-07-24T21:05:46.992Z
 draft: false
 news/categories:
