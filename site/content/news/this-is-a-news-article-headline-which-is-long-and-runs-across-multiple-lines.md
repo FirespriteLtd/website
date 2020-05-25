@@ -5,7 +5,7 @@ draft: false
 summary: >-
   Critically acclaimed PlayStation®VR hit confirmed for digital release on
   PlayStation® 4, Xbox One, Nintendo Switch and PC platforms, with physical
-  retail release later in the Summer
+  retail release later in the Summer.
 news/categories:
   - press
 featured_image:
