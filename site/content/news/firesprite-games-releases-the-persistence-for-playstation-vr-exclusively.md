@@ -2,7 +2,9 @@
 title: Firesprite Games releases The Persistence for PlayStation VR
 date: 2018-07-24T14:05:46.992Z
 draft: false
-summary: Test
+summary: >-
+  Firesprite Games first title, a Procedurally generated sci-fi horror VR
+  roguelike launches today exclusively for PlayStation VR
 news/categories:
   - game
 featured_image:
