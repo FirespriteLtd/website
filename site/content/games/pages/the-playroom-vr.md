@@ -23,6 +23,8 @@ media:
       src: /images/uploads/the-playroom-vr-screen-27-ps4-us-13sep16-compressed.jpg
     - alt: The Playroom VR
       src: /images/uploads/Playroom6-compressed.jpg
+    - alt: The Playroom VR
+      src: /images/uploads/playroomvr-screen9.jpg
   videos: []
 facebook_pixel: []
 ---
