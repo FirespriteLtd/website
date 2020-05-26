@@ -10,6 +10,6 @@ news/categories:
 featured_image:
   alt: Aarvark Swift
   src: /images/uploads/aardvarkswift-podcast.jpg
-  title: Test
+  title: Aardvark Swift
 ---
 test
