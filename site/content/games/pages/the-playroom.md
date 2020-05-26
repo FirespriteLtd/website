@@ -24,9 +24,9 @@ media:
     - alt: The PlayRoom
       src: /images/uploads/playroom7.jpg
     - alt: The Playroom
-      src: /images/uploads/Playroom4-compressed.jpg
-    - alt: The Playroom
       src: /images/uploads/playroomscreen8.jpg
+    - alt: The Playroom
+      src: /images/uploads/Playroomscreen9.jpg
   videos:
     - alt: THE PLAYROOM Launch Trailer
       id: vv5uI2vlXE8
