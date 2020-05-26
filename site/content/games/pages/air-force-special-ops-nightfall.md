@@ -40,6 +40,10 @@ media:
       src: /images/uploads/Nightfall-3.jpg
     - alt: Getting ready to jump
       src: /images/uploads/Nightfall-1.jpg
+    - alt: Briefing
+      src: /images/uploads/Nighfall-AFN_Compressed.jpg
+    - alt: Freefall
+      src: /images/uploads/Nightfall-S4Compressed.jpg
 buy: []
 facebook_pixel: []
 ---
