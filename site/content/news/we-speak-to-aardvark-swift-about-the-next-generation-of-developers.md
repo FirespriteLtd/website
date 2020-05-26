@@ -10,4 +10,4 @@ featured_image:
   src: /images/uploads/aardvarkswift-podcast.jpg
   title: Aardvark Swift
 ---
-### Senior Development Manager Rich Wood, speaks about our culture and our approach in graduate recruitment and training.
+Senior Development Manager Rich Wood, speaks about our culture and our approach in graduate recruitment and training.
