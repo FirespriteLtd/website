@@ -12,7 +12,7 @@ featured_image:
 tags:
   - The Persistence
 ---
-###### Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date.  
+**Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date.**  
 
 We will be bringing The Persistence to Xbox One, Nintendo Switch and PC on May 21st, 2020. The existing PlayStation®4 edition will also receive a free update, bringing non-VR support for existing players and opening the game up to wider audience.
 
