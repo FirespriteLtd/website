@@ -1,10 +1,10 @@
 ---
-title: The Persistence Announced for a multiplatform release!
+title: The Persistence Announced for a multiplatform release this Summer.
 date: 2020-03-09T14:00:00.000Z
 draft: false
 summary: >-
-  Firesprite announces critically acclaimed title comes to PlayStation® 4, Xbox
-  One, Nintendo Switch and PC platforms.
+  Our critically acclaimed PSVR title comes to new platforms with Non-VR
+  support.
 news/categories:
   - game
 featured_image:
@@ -12,6 +12,10 @@ featured_image:
   src: /images/uploads/PersistenceKeyart.jpg
   title: The Persistence
 ---
+
+
+
+
 **Liverpool, UK - Monday 9th March, 2020.** Cutting-edge independent developer Firesprite Games is excited to announce that critically acclaimed sci-fi horror experience ***The Persistence*** is heading to PlayStation®4, Xbox One, Nintendo Switch, and PC this summer.
 
 ![The Persistence](/images/uploads/landing1.jpg "The Persistence")
