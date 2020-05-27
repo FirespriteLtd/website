@@ -2,9 +2,7 @@
 title: Firesprite speak about graduate recruitment and training
 date: 2019-11-13T17:39:22.234Z
 draft: false
-summary: >-
-  We speak to Aardvark Swift on how we approach the next generation of
-  developers
+summary: We speak to Aardvark Swift about our next generation of developers
 news/categories:
   - careers
 featured_image:
