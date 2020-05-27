@@ -85,7 +85,7 @@ The legal bases we may rely on include:
 
 For further details on when we collect personal information, what we collect as well as how we use it, please read the following sections:
 
-```
+```html
 <table>
 <thead>
   <tr>
