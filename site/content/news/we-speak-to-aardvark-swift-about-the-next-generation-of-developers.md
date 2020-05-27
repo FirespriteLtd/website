@@ -12,6 +12,8 @@ featured_image:
 ---
 Senior Development Manager Richard Wood, speaks about our culture and our approach in graduate recruitment and training.
 
+
+
 In the the debut podcast from Aardvark Swift, Richard Wood gives an insight into life at Firesprite and how we progress our graduate recruitments internally.
 
 ![Rich Wood](/images/uploads/Richard-Wood-2-768x553.jpg "Rich Wood")
