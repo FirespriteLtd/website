@@ -2,7 +2,7 @@
 title: The Persistence multiplatform release date confirmed
 date: 2020-04-23T11:01:12.892Z
 draft: false
-summary: 'Firesprite confirms May 21st 2020 debut for Nintendo Switch, PC and XBOX.'
+summary: 'Firesprite confirms debut on Nintendo Switch, PC and XBOX.'
 news/categories:
   - press
 featured_image:
@@ -12,7 +12,9 @@ featured_image:
 tags:
   - The Persistence
 ---
-Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date.  We will be bringing The Persistence to Xbox One, Nintendo Switch and PC on May 21st, 2020. The existing PlayStation®4 edition will also receive a free update, bringing non-VR support for existing players and opening the game up to wider audience.
+###### Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date.  
+
+We will be bringing The Persistence to Xbox One, Nintendo Switch and PC on May 21st, 2020. The existing PlayStation®4 edition will also receive a free update, bringing non-VR support for existing players and opening the game up to wider audience.
 
 Our publishing partner Perp Games will also be bringing the title to retail for a physical release later on this Summer. *Watch this space.*
 
@@ -20,7 +22,7 @@ Our publishing partner Perp Games will also be bringing the title to retail for 
 
 ##### **Press Release as follows:**
 
-> Liverpool, UK - Thursday, 23rd April 2020 -Inventive independent developer Firesprite Games is excited to reveal that critically acclaimed sci-fi horror experience *The Persistence* will launch on PlayStation®4, Xbox One, Nintendo Switch, and PC on Thursday, May 21st, 2020.\
+> Liverpool, UK - Thursday, 23rd April 2020 -Inventive independent developer Firesprite Games is excited to reveal that critically acclaimed sci-fi horror experience *The Persistence* will launch on *PlayStation®4*, *XBOX One*, *Nintendo Switch*, and *PC* on Thursday, May 21st, 2020.\
 > \
 > Having made waves on PSVR in 2018,*The Persistence* offers players an intentionally savage take on survival-horror that integrates an innovative rogue-like design into the genre, with its release on console and PC marking the first time it’s hit the 4K flat screen and Firesprite’s debut on both Nintendo and Microsoft platforms.\
 > \
