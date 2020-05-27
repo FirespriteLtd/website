@@ -12,7 +12,7 @@ featured_image:
   src: /images/uploads/games-thepersistence.jpg
   title: The Persistence
 ---
-#### The Persistence is available now for digital download and in retail stores tomorrow.
+#### The Persistence is available via digital download now and on disc in retail stores tomorrow.
 
 We're so excited to announce that The Persistence is out now on the PlayStation Store for immediate download with the physical edition available in the US and Europe from tomorrow. \
 \
