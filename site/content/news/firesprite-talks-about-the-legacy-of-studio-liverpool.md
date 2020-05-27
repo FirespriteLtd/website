@@ -18,6 +18,6 @@ Recently Graeme sat down with gaming publication The Sixth Axis to talk about th
 
 ![Firesprite Games Studio](/images/uploads/studioimage.jpg "Firesprite Games Studio")
 
-Graeme said, “What we did at Studio Liverpool was deliver defining experiences on new consoles. That’s a fine art because you’re developing toward something that isn’t a fixed platform, something that doesn’t even exist, so you’ve got to come up with a whole mindset that allows you to sort of hit the moving target as it goes through.”
+Talking more about the challenges in development for bleeding edge hardware, Graeme said, “What we did at Studio Liverpool was deliver defining experiences on new consoles. That’s a fine art because you’re developing toward something that isn’t a fixed platform, something that doesn’t even exist, so you’ve got to come up with a whole mindset that allows you to sort of hit the moving target as it goes through.”
 
 You can read [the whole interview over at The Sixth Axis.](https://www.thesixthaxis.com/2018/07/23/how-firesprite-are-keeping-studio-liverpools-spirit-alive/)
