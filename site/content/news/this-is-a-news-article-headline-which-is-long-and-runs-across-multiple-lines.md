@@ -14,8 +14,6 @@ featured_image:
 tags:
   - The Persistence
 ---
-> **Last month we announced we were bringing The Persistence to new platforms this Summer. Today we are pleased to confirm the release date!**
-
 After the announcement last month about bringing our beloved debut IP to new platforms, today we have confirmed that The Persistence will be available for digital purchase on May 21st, 2020 for Xbox One, Nintendo Switch and PC  platforms. The existing PlayStation®4 edition will also receive a free update, bringing non-VR support for existing players and opening the game up to wider audience.
 
 Due to the ongoing COVID-19 situation our publishing partner Perp Games release the physical version of the game later on this Summer and we will confirm the release date in due course. *Watch this space!*
