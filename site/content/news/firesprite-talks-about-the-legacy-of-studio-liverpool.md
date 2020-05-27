@@ -9,7 +9,7 @@ news/categories:
   - game
 featured_image:
   alt: Firesprite Games
-  src: /images/uploads/firesprite-logo.jpg
+  src: /images/uploads/office.jpg
   title: Firesprite Games
 ---
 #### Firesprite Games MD, Graeme Ankers discusses the roots of the studio from the Sony Studio Liverpool days.
