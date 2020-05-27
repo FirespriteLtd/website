@@ -139,13 +139,13 @@ We have appropriate security measures in place to prevent personal information f
 
 We also have procedures in place to deal with any suspected data security breach. We will notify you and any applicable regulator of a suspected data security breach where we are legally required to do so.
 
-[If you want detailed information from Get Safe Online on how to protect your information and your computers and devices against fraud, identity theft, viruses and many other online problems, please visit [www.getsafeonline.org.](http://www.getsafeonline.org) Get Safe Online is supported by HM Government and leading businesses.]
+[If you want detailed information from Get Safe Online on how to protect your information and your computers and devices against fraud, identity theft, viruses and many other online problems, please visit [www.getsafeonline.org.](http://www.getsafeonline.org) Get Safe Online is supported by HM Government and leading businesses.
 
 #### HOW TO COMPLAIN
 
 We hope that we can resolve any query or concern you raise about our use of your information.
 
-The *General Data Protection Regulation* also gives you the right to lodge a complaint with a supervisory authority, in particular in the European Union (or European Economic Area) state where you work, normally live or where any alleged infringement of data protection laws occurred. The supervisory authority in the UK is the Information Commissioner who may be contacted at<https://ico.org.uk/concerns/>
+The *General Data Protection Regulation* also gives you the right to lodge a complaint with a supervisory authority, in particular in the European Union (or European Economic Area) state where you work, normally live or where any alleged infringement of data protection laws occurred. The supervisory authority in the UK is the Information Commissioner who may be contacted at <https://ico.org.uk/concerns/>
 
 #### CHANGES TO THIS WEBSITE PRIVACY POLICY
 
