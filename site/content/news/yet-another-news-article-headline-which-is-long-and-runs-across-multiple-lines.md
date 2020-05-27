@@ -12,7 +12,7 @@ featured_image:
 tags:
   - ''
 ---
-####  Firesprite Games MD Graeme Ankers about the challenges and opportunities.
+####  Firesprite Games MD Graeme Ankers discusses the challenges and opportunities.
 
 ![MD Graeme Ankers](/images/uploads/mcv-vr-article.jpg "MD Graeme Ankers")
 
