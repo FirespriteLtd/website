@@ -2,7 +2,7 @@
 title: Firesprite speak about collaboration and bringing through fresh talent
 date: 2019-11-13T17:39:22.234Z
 draft: false
-summary: We speak to Aardvark Swift about the next generation of developers.
+summary: We speak to Aardvark Swift bringing the next generation of developers through.
 news/categories:
   - careers
 featured_image:
@@ -18,8 +18,8 @@ In the the debut podcast from Aardvark Swift, Richard Wood gives an insight into
 
 
 
-Amongst discussing other areas such as the Rich recently sat down with Abbie to discuss our approach to teamwork and how we train graduates in particular When graduates join the studio, they’re put into a team of 100 per cent other graduates:
+Alongside discussing how management and game teams pull together across the various projects,  Rich recently sat down with Abbie to elaborate on our graduate recruitment and training. When graduates join the studio, they’re put into a team of 100 per cent other graduates:
 
-*“Engineers and producers to art and UI. They work together on services and platforms that have real-world deliveries and release schedules.”* explains Wood, *“They go through the full process, from ideation, development and release and that way they get the experience of what it’s like to work in a studio.” It works to develop their confidence and means they’re able to get feedback from both internal sources and real-world clients.*
+*“They work together on services and platforms that have real-world deliveries and release schedules.”* explains Wood, *“They go through the full process, from ideation, development and release and that way they get the experience of what it’s like to work in a studio.” It works to develop their confidence and means they’re able to get feedback from both internal sources and real-world clients.*
 
-You can hear the rest of the interview [here at the ASwift website.](https://aswift.com/2020/01/debut-aardvark-swift-podcast-1-richard-wood-firesprite-games/)
+You can hear the rest of the interview [here at the ASwift podcast.](https://aswift.com/2020/01/debut-aardvark-swift-podcast-1-richard-wood-firesprite-games/)
