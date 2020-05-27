@@ -2,9 +2,7 @@
 title: The Persistence multiplatform release date confirmed
 date: 2020-04-23T11:01:12.892Z
 draft: false
-summary: >-
-  Firesprite confirms May 21st 2020 debut for Nintendo Switch, PC and XBOX
-  platforms.
+summary: 'Firesprite confirms May 21st 2020 debut for Nintendo Switch, PC and XBOX.'
 news/categories:
   - press
 featured_image:
