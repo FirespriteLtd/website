@@ -12,7 +12,7 @@ featured_image:
 tags:
   - ''
 ---
-#### Games industry publication MCV speaks to Firesprite Games MD Graeme Ankers about the challenges and opportunities in bringing our title The Persistence to non-VR platforms.
+####  Firesprite Games MD Graeme Ankers about the challenges and opportunities.
 
 ![MD Graeme Ankers](/images/uploads/mcv-vr-article.jpg "MD Graeme Ankers")
 
