@@ -37,9 +37,7 @@ We collect, use and are responsible for certain personal information about you. 
 
 This privacy policy relates to your use of our website, www.firesprite.com only.
 
-Throughout our website we may link to other websites owned and operated by certain third parties to make additional services available to you e.g. Twitter, facebook, Instagram and YouTube. These other third party websites may also gather information about you in accordance with their own separate privacy policies. For privacy information relating to these other third party websites, please consult their privacy policies as appropriate.
-
-
+Throughout our website we may link to other websites owned and operated by certain third parties to make additional services available to you e.g. Twitter, Facebook, Instagram and YouTube. These other third party websites may also gather information about you in accordance with their own separate privacy policies. For privacy information relating to these other third party websites, please consult their privacy policies as appropriate.
 
 #### OUR COLLECTION AND USE OF YOUR PERSONAL INFORMATION
 
@@ -122,8 +120,6 @@ We require you to provide your name and email address to enable us to provide in
 
 We will not transfer your personal data outside of the EEA.
 
-
-
 #### GAMES
 
 No personal data will be accessed, transmitted or collected by us when you use our on-line products nor will any gameplay information be received us when you use our on-line products and games.
@@ -132,7 +128,7 @@ No personal data will be accessed, transmitted or collected by us when you use o
 
 #### YOUR RIGHTS
 
-Under the*General Data Protection Regulation*you have a number of important rights free of charge. In summary, those include rights to:
+Under the *General Data Protection Regulation* you have a number of important rights free of charge. In summary, those include rights to:
 
 * fair processing of information and transparency over how we use your use personal information
 * access to your personal information and to certain other supplementary information that this Privacy Notice is already designed to address
@@ -144,11 +140,11 @@ Under the*General Data Protection Regulation*you have a number of important righ
 * object in certain other situations to our continued processing of your personal information
 * otherwise restrict our processing of your personal information in certain circumstances
 
-For further information on each of those rights, including the circumstances in which they apply, see the*Guidance from the UK Information Commissioner’s Office (ICO) on individuals rights under the General Data Protection Regulation*.
+For further information on each of those rights, including the circumstances in which they apply, see the *Guidance from the UK Information Commissioner’s Office (ICO) on individuals rights under the General Data Protection Regulation*.
 
 If you would like to exercise any of those rights, please:
 
-* email us at[privacy@firesprite.com](mailto:privacy@firesprite.com)
+* email us at [privacy@firesprite.com](mailto:privacy@firesprite.com)
 * let us have enough information to identify you.
 * let us have proof of your identity and address (a copy of your driving licence or passport and a recent utility or credit card bill), and
 * let us know the information to which your request relates including any account or reference numbers, if you have them
@@ -161,7 +157,7 @@ We have appropriate security measures in place to prevent personal information f
 
 We also have procedures in place to deal with any suspected data security breach. We will notify you and any applicable regulator of a suspected data security breach where we are legally required to do so.
 
-[If you want detailed information from Get Safe Online on how to protect your information and your computers and devices against fraud, identity theft, viruses and many other online problems, please visit[www.getsafeonline.org](http://www.getsafeonline.org/). Get Safe Online is supported by HM Government and leading businesses.]
+[If you want detailed information from Get Safe Online on how to protect your information and your computers and devices against fraud, identity theft, viruses and many other online problems, please visit [www.getsafeonline.org.](http://www.getsafeonline.org) Get Safe Online is supported by HM Government and leading businesses.]
 
 
 
@@ -169,7 +165,7 @@ We also have procedures in place to deal with any suspected data security breach
 
 We hope that we can resolve any query or concern you raise about our use of your information.
 
-The*General Data Protection Regulation*also gives you the right to lodge a complaint with a supervisory authority, in particular in the European Union (or European Economic Area) state where you work, normally live or where any alleged infringement of data protection laws occurred. The supervisory authority in the UK is the Information Commissioner who may be contacted at<https://ico.org.uk/concerns/>
+The *General Data Protection Regulation* also gives you the right to lodge a complaint with a supervisory authority, in particular in the European Union (or European Economic Area) state where you work, normally live or where any alleged infringement of data protection laws occurred. The supervisory authority in the UK is the Information Commissioner who may be contacted at<https://ico.org.uk/concerns/>
 
 
 
@@ -185,6 +181,4 @@ We may change this website privacy policy from time to time, when we do we will 
 
 Please contact us if you have any questions about this privacy notice or the information we hold about you.
 
-If you wish to contact us please send an email to[privacy@firesprite.com](mailto:privacy@firesprite.com)
-
-<!--EndFragment-->
+If you wish to contact us please send an email to [privacy@firesprite.com](mailto:privacy@firesprite.com)
