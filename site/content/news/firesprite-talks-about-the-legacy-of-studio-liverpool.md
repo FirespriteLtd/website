@@ -12,7 +12,7 @@ featured_image:
   src: /images/uploads/firesprite-logo.jpg
   title: Firesprite Games
 ---
-#### Firesprite Games MD, Graeme Ankers talks about the roots of the studio from the Sony Studio Liverpool days.
+#### Firesprite Games MD, Graeme Ankers discusses the roots of the studio from the Sony Studio Liverpool days.
 
 Recently Graeme sat down with gaming publication The Sixth Axis to talk about the formation of the studio after the closure of Studio Liverpool and the philosophies we have held onto that kept Studio Liverpool at the forefront of game development.
 
