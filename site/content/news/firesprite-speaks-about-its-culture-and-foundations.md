@@ -14,8 +14,8 @@ featured_image:
 
 ![Firesprite Games](/images/uploads/office.jpg "Firesprite Games")
 
-Culture is massively important to us here at Firesprite so we jumped at the chance to talk about with *GamesJobsDirect* in their debut podcast series, where they shine a spotlight on the studios behind the projects, talking about culture, what it's like to work in these places in the day to day.
+Culture is massively important to us here at Firesprite so we jumped at the chance to talk about with *GamesJobsDirect* in their debut podcast series, where they shine a spotlight on development studios and the people behind the projects, to talk about their culture and the day to day workings. 
 
-Graeme provides an insight into the history of the North-West's development scene and provides an insight into the founding years and goals for the business right through to present day, along with talking about our future ambitions.
+Graeme recounts the history of the North-West's game development scene and how this shaped the founding of Firesprite and the growth in the past few years to the present day along with talking about our ambitions for the future!
 
 You can [listen to the full recording here at gamesjobsdirect.](https://www.gamesjobsdirect.com/blog/read/games-jobs-direct-podcast/44)
