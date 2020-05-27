@@ -20,7 +20,7 @@ Our publishing partner Perp Games will also be bringing the title to retail for 
 
 ![The Persistence](/images/uploads/PersistenceDateAnnounce.jpg "The Persistence")
 
-Press Release as follows:
+#### **Press Release as follows:**
 
 > Liverpool, UK - Thursday, 23rd April 2020 -Inventive independent developer Firesprite Games is excited to reveal that critically acclaimed sci-fi horror experience *The Persistence* will launch on PlayStation®4, Xbox One, Nintendo Switch, and PC on Thursday, May 21st, 2020.\
 > \
