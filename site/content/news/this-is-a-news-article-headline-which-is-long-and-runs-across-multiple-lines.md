@@ -3,8 +3,8 @@ title: The Persistence multiplatform release date confirmed
 date: 2020-04-23T11:01:12.892Z
 draft: false
 summary: >-
-  Firesprite confirms availability for The Persistence on Nintendo Switch, PC
-  and XBOX.
+  Firesprite confirms availability of The Persistence on Nintendo Switch, PC and
+  XBOX.
 news/categories:
   - press
 featured_image:
