@@ -1,7 +1,7 @@
 ---
 title: Firesprite Games releases The Persistence across multiple platforms
 date: 2020-05-21T08:00:52.661Z
-draft: true
+draft: false
 summary: Our debut IP comes to new platforms via digital download today!
 news/categories:
   - game
