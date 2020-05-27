@@ -2,10 +2,7 @@
 title: The Persistence confirmed for multiplatform release on May 21st 2020
 date: 2019-04-23T11:01:12.892Z
 draft: false
-summary: >-
-  Critically acclaimed PlayStation®VR hit confirmed for digital release on
-  PlayStation® 4, Xbox One, Nintendo Switch and PC platforms, with physical
-  retail release later in the Summer.
+summary: ''
 news/categories:
   - press
 featured_image:
@@ -15,6 +12,8 @@ featured_image:
 tags:
   - The Persistence
 ---
+Critically acclaimed PlayStation®VR hit confirmed for digital release on PlayStation® 4, Xbox One, Nintendo Switch and PC platforms, with physical retail release later in the Summer! Press release as follows:
+
 **Liverpool, UK - Thursday, 23rd April 2020 -**Inventive independent developer Firesprite Games is excited to reveal that critically acclaimed sci-fi horror experience ***The Persistence*** will launch on PlayStation®4, Xbox One, Nintendo Switch, and PC on Thursday, May 21st, 2020.\
 \
 Having made waves on PSVR in 2018,***The Persistence*** offers players an intentionally savage take on survival-horror that integrates an innovative rogue-like design into the genre, with its release on console and PC marking the first time it’s hit the 4K flat screen and Firesprite’s debut on both Nintendo and Microsoft platforms.\
