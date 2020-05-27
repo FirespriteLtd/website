@@ -14,9 +14,11 @@ featured_image:
 tags:
   - The Persistence
 ---
-Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date for the title as we bring to new platforms including Xbox One, Nintendo Switch and PC. The existing PlayStation version will also receive a free update 
+Following the announcement that The Persistence would be launching over in the coming months, we are pleased to finally confirm a release date for the title as we bring to new platforms including Xbox One, Nintendo Switch and PC. The existing PlayStation®4 version will also receive a free update, bringing non-VR support to the game.
 
-Our publishing partner Perp Games will also be bringing the title to retail for a physical release later on this Summer. Watch this space!
+Our publishing partner Perp Games will also be bringing the title to retail for a physical release later on this Summer. *Watch this space.*
+
+![The Persistence](/images/uploads/PersistenceDateAnnounce.jpg "The Persistence")
 
 Press Release as follows:
 
