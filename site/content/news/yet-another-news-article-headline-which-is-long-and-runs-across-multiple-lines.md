@@ -14,9 +14,11 @@ tags:
 ---
 ####  Firesprite Games MD Graeme Ankers discusses the challenges and opportunities.
 
+Recently our MD, Graeme sat down with trade industry publication MCV to discuss the process of bringing The Persistence from a VR to a non-VR medium.
+
 ![MD Graeme Ankers](/images/uploads/mcv-vr-article.jpg "MD Graeme Ankers")
 
-Recently our MD, Graeme sat down with MCV to discuss the process of bringing The Persistence from a VR to a non-VR medium, outlining our initial thoughts (that it was going to be easy...spoiler: it wasn't!) and the process:
+Alongside diving deeper into the process of translating the game into non-VR, Graeme outlined the initial considerations in the early stages and the assumption that it was going to be easier than originally thought (spoiler: it wasn't): 
 
 *"Going from VR to non-VR, the whole design language of the game is very different. Even how you treat a user interface, or taking account for where the player is sat in the experience is very different. So we’re changing that language completely moving to a flat screen version of the game, so there’s challenges around that, because you’re redesigning that system.”*
 
