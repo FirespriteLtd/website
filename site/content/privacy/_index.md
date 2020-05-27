@@ -86,20 +86,21 @@ The legal bases we may rely on include:
 For further details on when we collect personal information, what we collect as well as how we use it, please read the following sections:
 
 ```
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-0lax"></th>
+    <th><span style="font-weight:bold">When information is collected</span><br></th>
+    <th>What information we ask for</th>
+    <th>How and why we use your information</th>
   </tr>
 </thead>
+<tbody>
+  <tr>
+    <td>When you contact us by email or complete our online forms</td>
+    <td>Contact details: your name and email address</td>
+    <td><span style="font-weight:400;font-style:normal">We ask for this:</span><br><span style="font-weight:400;font-style:normal">-to respond to your enquiries</span><br><span style="font-weight:400;font-style:normal">-to provide you with information relating our business</span><br><span style="font-weight:400;font-style:normal">-to support our recruitment processes</span><br><span style="font-weight:400;font-style:normal">-We rely on consent and legitimate interests (as appropriate) as the lawful basis for collecting and using your personal information</span><br><span style="font-weight:400;font-style:normal">-Our legitimate interests relate to our commercial interests including the promotion and growth of our business.</span><br><span style="font-weight:400;font-style:normal">We will keep this information for as long as necessary for the relevant processing purpose.</span><br></td>
+  </tr>
+</tbody>
 </table>
 ```
 
