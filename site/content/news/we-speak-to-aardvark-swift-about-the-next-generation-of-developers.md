@@ -1,8 +1,8 @@
 ---
-title: Firesprite speak about collaboration and bringing through fresh talent
+title: Firesprite speak about graduate recruitment and training
 date: 2019-11-13T17:39:22.234Z
 draft: false
-summary: We speak to Aardvark Swift bringing the next generation of developers through.
+summary: We speak to Aardvark Swift bringing the next generation of developers.
 news/categories:
   - careers
 featured_image:
