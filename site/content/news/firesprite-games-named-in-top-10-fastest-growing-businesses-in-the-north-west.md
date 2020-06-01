@@ -2,7 +2,7 @@
 title: Firesprite Games named in top 10 fastest growing businesses in the North
 date: 2020-05-29T16:09:47.815Z
 draft: false
-summary: GP Bullhound's awards celebrate North Tech businesses.
+summary: GP Bullhound's awards celebrate Northern UK based Tech businesses.
 news/categories:
   - press
 featured_image:
