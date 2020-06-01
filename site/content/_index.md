@@ -3,7 +3,7 @@ title: Welcome to Firesprite Games
 featured_image:
   active: true
   alt: Firesprite Games
-  id: st3p4biKEzQ
+  id: OkVkDj8XK_A
   src: /images/uploads/landing1.jpg
 featured:
   featured_game_active: false
