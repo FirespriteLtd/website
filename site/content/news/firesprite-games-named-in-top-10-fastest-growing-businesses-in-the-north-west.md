@@ -16,6 +16,8 @@ tags:
 
 As the 2020 Northern Tech Awards were not able to take place as planned on 26 March in Leeds due to concerns over COVID-19, GP Bullhound held a live virtual event on 27 May, highlighting and celebrating the digital economy of the North of England and Scotland. The event gathered hundreds of entrepreneurs, investors and business leaders from the global tech community.
 
+![Northern Tech Awards](/images/uploads/Tech awards inline.jpg "Northern Tech Awards")
+
 In the Top 100 Fastest Growing businesses, we're proud to be placed at 7th in the list.
 
 You can [read more about the Northern Tech Awards here.](https://www.gpbullhound.com/events/northern-tech-awards/)
