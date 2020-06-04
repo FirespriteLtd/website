@@ -7,7 +7,7 @@ news/categories:
   - game
 featured_image:
   alt: Firesprite Games Speaks to MCV
-  src: /images/uploads/news-temp.jpg
+  src: /images/uploads/The Persistence -Screenshot 1.jpg
   title: Firesprite Games Speaks to MCV
 tags:
   - ''
