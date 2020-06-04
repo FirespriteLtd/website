@@ -51,14 +51,14 @@ features:
       in the journey deeper into the dark and terrifying depths.
   - title: Play with or against your friends
     body: >-
-      Connect a phone or tablet running IOS or Android* to the game for up to 4
+      Connect a phone or tablet running IOS or Android to the game for up to 4
       players to take control of ‘Solex’ – the ship’s engineering system. Once
       connected, they will be able to take control of the ship’s systems in
       realtime, including abilities to lure creatures, open doors and disable
       any of the ship’s internal security defenses.
 
 
-      \*Feature not available for XBOX Platform. Data charges may apply
+      Feature not available for XBOX Platform. Data charges may apply
   - title: Optimised for both VR and Non-VR Platforms
     body: >-
       The Persistence comes to new platforms, heightening the terror to a new
@@ -89,6 +89,16 @@ buy:
     title: PlayStation®4
     url: >-
       https://store.playstation.com/en-us/product/UP3536-CUSA07643_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
+  - platforms: nintendo-switch
+    title: Nintendo Switch
+    url: 'https://www.nintendo.com/games/detail/the-persistence-switch/'
+  - platforms: xbox-one
+    title: XBOX One
+    url: >-
+      https://www.microsoft.com/en-us/p/the-persistence/9nhnmgc1vw16?activetab=pivot:overviewtab
+  - platforms: pc
+    title: Steam
+    url: 'https://store.steampowered.com/app/1140100/The_Persistence/'
 facebook_pixel: []
 ---
 #### Can you survive?
