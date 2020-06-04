@@ -58,7 +58,7 @@ features:
       any of the ship’s internal security defenses.
 
 
-      Feature not available for XBOX Platform. Data charges may apply
+      * (Feature not available for XBOX Platform. Data charges may apply)
   - title: Optimised for both VR and Non-VR Platforms
     body: >-
       The Persistence comes to new platforms, heightening the terror to a new
