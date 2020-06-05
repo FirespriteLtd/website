@@ -1,7 +1,9 @@
 {{- $.Scratch.Add "platforms" slice -}}
+
 {{- range .Params.platforms -}}
 {{- $.Scratch.Add "platforms" . -}}
 {{end}}
+
 {
   "title": "{{ .Title }}",
   "game" : "{{.Params.game}}",
@@ -9,5 +11,15 @@
   "type": "{{ .Type }}",
   "permalink" : "{{ .Permalink }}",
   "summary" : {{- .Summary |  jsonify  -}},
-  "platforms" : {{- $.Scratch.Get "platforms" | jsonify -}}
+  "platforms" : {{- $.Scratch.Get "platforms" | jsonify -}},
+  "platformValue" : [
+    {{- range $index, $platform := .Params.platforms -}}
+    {{if ne $index 0}}{{- "," | safeHTML }} {{end}}
+    {{- range $index, $p := site.Data.platforms -}}
+    {{- if eq ($p.value | urlize ) ($platform | urlize ) -}}
+    { "name": "{{- $p.name -}}", "value": "{{- $p.value -}}"}
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}
+  ]
 }

@@ -209,7 +209,7 @@ collections:
         collection: "platforms"
         searchFields: ["name"]
         valueField: "value"
-        displayFields: ["name"]
+        displayFields: ["name" , "value"]
   - name: "careers"
     label: "Careers"
     label_singular: "Careers"

@@ -60,7 +60,13 @@ export class SearchUiComponent implements OnInit {
     form.controls['platforms'].setValue('all');
 
     form.valueChanges.subscribe(v => {
-        this.onSearch.emit(v);
+      const filter = {platforms: {name: 'all', value: 'all'}, games: v.games};
+      this.platforms.forEach(d => {
+        if(d.value === v.platforms){
+          filter.platforms = d;
+        }
+      })
+      this.onSearch.emit(filter);
     })
 
     return form;

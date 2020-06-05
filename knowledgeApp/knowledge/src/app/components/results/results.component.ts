@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 export class ResultsComponent implements OnInit {
 
   @Input() set search(data){
+    console.log('SEARCH', data)
     if(data) {
       this.filterGame = data.games;
       this.filterPlatform = data.platforms;
@@ -21,7 +22,7 @@ export class ResultsComponent implements OnInit {
   currentPanel:string;
 
   filterGame: string = 'all';
-  filterPlatform: string = 'all';
+  filterPlatform: any = {name: 'all', value: 'all'};
 
   constructor(private knowledgeService: KnowledgeService) { }
 

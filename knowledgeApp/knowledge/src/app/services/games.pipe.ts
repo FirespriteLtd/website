@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class GamesPipe implements PipeTransform {
 
   transform(value: any, game: any): any {
+
     if(!game || game === 'all'){
       return value.filter(item => (item.game.indexOf('<no value>') !== -1 || (item.game.length === 0)) );
     }

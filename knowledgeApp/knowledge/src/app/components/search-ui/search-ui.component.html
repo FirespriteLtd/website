@@ -5,7 +5,7 @@
         <div class="cell auto">
           <select name="plaforms" id="platforms"  formControlName="platforms">
             <option [ngValue]="'all'" selected="">All Platforms</option>
-            <option *ngFor="let item of platforms" [value]="item" >{{item | platformName}}</option>
+            <option *ngFor="let item of platforms" [value]="item.value" >{{item.name | platformName}}</option>
           </select>
         </div>
         <div class="cell auto">

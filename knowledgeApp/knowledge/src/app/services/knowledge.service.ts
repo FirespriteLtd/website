@@ -31,8 +31,14 @@ export class KnowledgeService {
         map( (value:any) => {
           let platforms = [];
           value.data.items.forEach((i)=>{
-            i.platforms.forEach((p) =>{
-              if(!platforms.includes(p)){
+            i.platformValue.forEach((p) =>{
+              let found = false;
+              platforms.forEach((d) => {
+                if(d.name === p.name){
+                  found = true;
+                }
+              })
+              if(!found) {
                 platforms.push(p);
               }
             })

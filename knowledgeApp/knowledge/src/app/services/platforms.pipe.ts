@@ -5,12 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PlatformsPipe implements PipeTransform {
 
-  transform(value: any[], platform:string): any {
-
-    if(!platform || platform === 'all'){
+  transform(value: any[], platform:any): any {
+    console.log(value)
+    if(!platform.value || platform.value === 'all'){
       return value;
     }
-    return value.filter(item => item.indexOf(platform) !== -1);
+    return value.filter(item => item.value.indexOf(platform.value) !== -1);
   }
 
 }
