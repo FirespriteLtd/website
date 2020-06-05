@@ -17,6 +17,10 @@ collections:
     slug: "{{slug}}"
     folder: "site/content/news"
     sortableFields: ['title', 'date']
+    view_filters:
+      - label: 'Post Date'
+        field: date
+        patten: '2020'
     editor:
       preview: false
     preview_path_date_field: "updated_on"
