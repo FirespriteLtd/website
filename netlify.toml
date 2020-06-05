@@ -10,6 +10,7 @@
 [context.deploy-preview]
   command = "npm run build:preview"
 
+
 [[headers]]
   for = "/images/*"
   [headers.values]
@@ -38,5 +39,7 @@
     no-cache,
     no-store,
     must-revalidate'''
+[[plugins]]
+  package = "netlify-plugin-amp-server-side-rendering"
 
 
