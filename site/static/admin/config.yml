@@ -16,6 +16,7 @@ collections:
     preview_path: "news/{{slug}}"
     slug: "{{slug}}"
     folder: "site/content/news"
+    sortableFields: ['title', 'date']
     editor:
       preview: false
     preview_path_date_field: "updated_on"
@@ -94,6 +95,7 @@ collections:
     editor:
       preview: false
     folder: "site/content/games/pages"
+    sortableFields: ['title', 'date', 'release_date']
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
