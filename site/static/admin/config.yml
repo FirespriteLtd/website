@@ -7,6 +7,7 @@ media_folder: "site/static/images/uploads" # Media files will be stored in the r
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 # publish_mode: editorial_workflow
 site_url: https://determined-keller-77949e.netlify.com
+publish_mode: editorial_workflow
 
 collections:
   - name: "news"
@@ -46,7 +47,6 @@ collections:
   - name: "work"
     label: "Work"
     label_singular: "work"
-    publish_mode: editorial_workflow
     how_preview_links: true
     preview_path: "work/{{slug}}"
     editor:
@@ -94,7 +94,6 @@ collections:
   - name: "games"
     label: "Games"
     label_singular: "Game"
-    publish_mode: editorial_workflow
     editor:
       preview: false
     folder: "site/content/games/pages"
