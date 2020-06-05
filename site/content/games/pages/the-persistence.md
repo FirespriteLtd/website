@@ -1,6 +1,6 @@
 ---
 title: The Persistence VR
-date: 2018-07-24T09:43:47.559Z
+date: 2018-07-24T09:31:00.000Z
 release_date: 2018-07-24T09:31:50.101Z
 order_status: Out now
 logo: /images/uploads/The_Persistence_Logo_Shadowed.png
