@@ -340,7 +340,7 @@ collections:
             fields:
               - {label: "Show", name: "show", widget: boolean, default: true}
               - {label: "Title", name: "title", widget: string}
-              - {label: "Body", name: "body", widget: string}
+              - {label: "Body", name: "body", widget: markdown}
               - {label: "About",  name: "about", widget: list, fields: [
                   {label: "Title", name: "title", widget: string},
                   {name: image, label: Image, widget: object, fields: [
