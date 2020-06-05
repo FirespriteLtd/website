@@ -96,7 +96,6 @@ collections:
     editor:
       preview: false
     folder: "site/content/games/pages"
-    sortableFields: ['title', 'date', 'release_date']
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -154,6 +153,8 @@ collections:
         {label: "Script", name: "script", widget: "string"},
         {name: "Active" , label: active, widget: boolean, default: false}
       ]}
+    summary: '{{title}}  {{day}}-{{month}}-{{year}}'  
+    sortableFields: ['date', 'title','release_date']  
   - name: "platforms"
     label: "Platforms"
     folder: "site/data/platforms"
