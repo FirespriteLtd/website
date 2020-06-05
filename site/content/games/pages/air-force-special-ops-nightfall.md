@@ -1,6 +1,6 @@
 ---
 title: 'Air Force Special Ops: Nightfall'
-date: 2020-05-04T21:45:24.085Z
+date: 2017-06-20T21:45:00.000Z
 release_date: 2017-06-20T21:45:24.128Z
 order_status: Out now
 logo: /images/uploads/airforcenightfalllogo-white.png
