@@ -1,34 +1,38 @@
 ---
-title: This is a news article headline which is long and runs across multiple lines
-date: 2019-05-22T11:01:12.892Z
+title: The Persistence multiplatform release date confirmed
+date: 2020-04-23T11:01:12.892Z
+draft: false
 summary: >-
-  Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-  delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
-  duo aliquip moderatius disputationi.
+  Firesprite confirms availability of The Persistence on Nintendo Switch, PC and
+  XBOX.
 news/categories:
   - press
-featured_post: false
 featured_image:
-  alt: test
-  src: /images/uploads/img.jpg
-  title: test
+  alt: The Persistence date confirmed
+  src: /images/uploads/PersistenceBlackHole.jpg
+  title: The Persistence date confirmed
 tags:
-  - test
+  - The Persistence
 ---
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu, duo aliquip moderatius disputationi an. No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+##### Last month we announced we were bringing The Persistence to new platforms this Summer. Today we are pleased to confirm the release date!
 
+After the announcement last month about bringing our beloved debut IP to new platforms, today we have confirmed that The Persistence will be available for digital purchase on May 21st, 2020 for Xbox One, Nintendo Switch and PC  platforms. The existing PlayStation®4 edition will also receive a free update, bringing non-VR support for existing players and opening the game up to wider audience.
 
+Due to the ongoing COVID-19 situation our publishing partner Perp Games announced that they will release the physical version of the game later on this Summer. *Watch this space!*
 
-##### Another sub-heading
+![The Persistence](/images/uploads/PersistenceDateAnnounce.jpg "The Persistence")
 
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,duo aliquip [moderatiusdisputationi an](www.test.com). No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+##### **Press Release as follows:**
 
-![test](/images/uploads/news-body.jpg "test")
+**Liverpool, UK - Thursday, 23rd April 2020** 
 
-Laoreet interdumduis porta fdsfsfs mollis posueremetus odio. Donec litora tempus dictum nisi hymenaeos fermentum, integer. Fermentum justo morbi est gravida leo. Suspendisse nisi commodo nisi viverra, adipiscing congue laoreet sem, vehicula sodales eros penatibus eleifend dapibus hymenaeos aenean turpis aliquam luctus at. Fusce sem lacinia donec. Dignissim urna nec vehicula montes euismod.
-
-
-
-##### This is a title using H5
-
-Hac nascetur vestibulum lectus taciti maecenas. Netus mattis. Id, praesent habitant suscipit suspendisse. Sit cras erat, eleifend. Fermentum natoque morbi cum nullam quis maecenas tempus, hendrerit molestie dui ac sapien bibendum quam bibendum curabitur laoreet taciti gravida aliquam Nostra. In phasellus quis mi torquent pellentesque consequat eros.
+Inventive independent developer Firesprite Games is excited to reveal that critically acclaimed sci-fi horror experience *The Persistence* will launch on *PlayStation®4, XBOX One*, *Nintendo Switch*, and *PC* on Thursday, May 21st, 2020.\
+\
+Having made waves on PSVR in 2018,*The Persistence* offers players an intentionally savage take on survival-horror that integrates an innovative rogue-like design into the genre, with its release on console and PC marking the first time it’s hit the 4K flat screen and Firesprite’s debut on both Nintendo and Microsoft platforms.\
+\
+*“When we made the move to bring The Persistence to new platforms, our key focus was to ensure that the particularly brutal nature of gameplay made the leap to non-VR,”* says Graeme Ankers, MD and founder of Firesprite Games. *“As a result, The Persistence keeps players on edge from beginning to end, and with a procedurally generated environment forming around them, no two playthroughs are ever identical, meaning you will never find safety in the same spot.”* \
+As part of the new release, Firesprite Games is also pleased to confirm that gamers who already own the PlayStation®VR version will also receive these features via an update on PlayStation®4 for no extra cost.\
+\
+In addition, players who pre-purchase The Persistence on Nintendo Switch (between Thursday, April 23rd and Wednesday, May 20th) and Xbox One (between Thursday, April 30th and Wednesday, May 20th) will receive a 10 percent discount.\
+\
+Games Publisher Perp Games will publish physical editions across retail on the three console platforms. The release will be as near as possible to the digital release taking into account the effect of COVID 19 on global retail.

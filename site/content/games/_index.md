@@ -1,10 +1,10 @@
 ---
-title: Our Games
-subtitle: Creating innovative experiences for players
+title: Games
+subtitle: Great games made by passionate people
 featured_image:
   active: false
-  alt: Our Games
+  alt: Games
   id: ''
-  src: /images/uploads/games-hero.jpg
+  src: /images/uploads/OPM_5_optimised.jpg
 ---
-We love playing games and we love making games! Please scroll down to see our creations.
+Whether crafted for partners or for ourselves, we love what we do.

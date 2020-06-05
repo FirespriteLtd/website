@@ -3,7 +3,6 @@ import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import TwitterBlock from "../util/twitterBlock";
 import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
-import $ from "jquery";
 import TabSlider from "../util/tabSlider";
 
 export default {

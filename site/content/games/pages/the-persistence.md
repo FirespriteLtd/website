@@ -1,10 +1,9 @@
 ---
 title: The Persistence VR
-date: 2018-07-24T09:43:47.559Z
+date: 2018-07-24T09:31:00.000Z
 release_date: 2018-07-24T09:31:50.101Z
 order_status: Out now
-featured: false
-logo: /images/uploads/games-thepersistence-logo.png
+logo: /images/uploads/The_Persistence_Logo_Shadowed.png
 genre: Action Horror
 players: 1 Player
 ratings: 'PEGI 18, ESRB M'
@@ -16,43 +15,40 @@ featured_image:
   src: /images/uploads/games-thepersistence.jpg
 video: iwMYzJaVzFI
 features:
-  - title: All is not lost
+  - title: VR and Stealth - a perfect match
     body: >-
-      Survival requires you to be stealthy and VR is the perfect match for this.
-      Sneaking around and hiding behind cover; it's second nature in VR to just
-      lean round or peek over cover to gain the advantage.
-  - title: Stealth is your friend
+      The heart-pounding thrills of a stealth game are raised to new levels by
+      the immersive presence of VR. Sneaking around, hiding behind cover – feel
+      the adrenalin pumping as you lean out of safety to see the terrifying
+      dangers that stalk you in the dark.
+  - title: Different every life
     body: >-
-      Caught in the inexorable pull of a black hole, and with the crew mutated
-      into horrific & murderous aberrations.
-  - title: You can fight back
-    body: Survival requires you to be stealthy and VR is the perfect match for this.
-  - title: Every life is different
+      The Persistence's macrostructure is malfunctioning, rearranging the deck
+      modules into random configurations. Procedurally generated decks mean that
+      no two games of *The Persistence* will play the same – and every time you
+      awaken in another clone host, a new challenge awaits you on the next deck.
+  - title: Connect to a friend
     body: >-
-      Survival requires you to be stealthy and VR is the perfect match for this.
-      Sneaking around and hiding behind cover it's second nature in VR.
-  - title: Help or hinder?
-    body: >-
-      Survival requires you to be stealthy and VR is the perfect match for this.
-      Sneaking around and hiding behind cover; it's second nature in VR to just
-      lean round or peek over cover to gain the advantage.
-  - title: VR and flatscreen
-    body: >-
-      Caught in the inexorable pull of a black hole, and with the crew mutated
-      into horrific & murderous aberrations.
+      Connect a phone or tablet running IOS or Android* to the game for up to 2
+      players to take control of ‘Solex’ – the ship’s engineering system. Once
+      connected, they will be able to take control of the ship’s systems in
+      realtime, including abilities to lure creatures, open doors and disable
+      any of the ship’s internal security defenses.
 media:
   concepts:
-    - alt: concept 1
-      src: /images/uploads/games-thepersistence-concept1.jpg
-    - alt: concept 2
-      src: /images/uploads/games-thepersistence-concept1.jpg
+    - alt: Concept Art
+      src: /images/uploads/Persistence VR Concept art 1.jpg
+    - alt: concept art
+      src: /images/uploads/PersistencenVR concept art 4.jpg
   screenshots:
-    - alt: screen 1
-      src: /images/uploads/games-thepersistence-screen1.jpg
-    - alt: screen 2
-      src: /images/uploads/games-thepersistence-screen1.jpg
-    - alt: screen 3
-      src: /images/uploads/games-thepersistence-screen1.jpg
+    - alt: Screenshot 1
+      src: /images/uploads/persistencevr-screenshot1.jpg
+    - alt: Screenshot 3
+      src: /images/uploads/persistencevr-screenshot3.jpg
+    - alt: Screenshot 4
+      src: /images/uploads/persistencevr-screenshot4.jpg
+    - alt: Screenshot 6
+      src: /images/uploads/persistencevr-screenshot6.jpg
   videos:
     - alt: Gameplay Trailer
       id: iwMYzJaVzFI
@@ -65,18 +61,6 @@ buy:
 ---
 ##### Can you survive?
 
-Caught in the inexorable pull of a black hole, and with the crew mutated into horrific & murderous aberrations, it’s down to you, a clone of security office Zimri Eder, to save the ship and make the jump back to earth. Every time you die, you print a new (and potentially improved) clone of yourself. There’s a slim chance you could still escape, and take back your life, if only you can survive the horrors onboard and repair the ship’s devastated systems.
+The Persistence is a brutal VR sci-fi-stealth, horror, roguelike featuring dozens of upgradable gear & weapons that may just be enough to keep you alive long enough to survive.
 
-A brutal VR sci-fi-stealth, horror, roguelike featuring dozens of upgradable gear & weapons that may just be enough to keep you alive long enough to survive.
-
-
-
-##### Death is not the end
-
-The Persistence is procedurally generated. Every time you die and a new clone of Zimri is printed, the layout of the ship has changed. Every life will play out differently, with different enemies to face, items to find and power-ups to collect.
-
-Survival requires you to be stealthy and VR is the perfect match for this. Sneaking around and hiding behind cover; it's second nature in VR to just lean round or peek over cover to gain the advantage.
-
-Your friends can also help by connecting to the game with their phone or tablet and hacking into the ship's computer. Once in the ship's system, players get to control doors, freeze or distract enemies, disable traps and find hidden items to scavenge for the VR player. Be aware though, sometimes the tablet player gets rewarded if you die, do you trust your friends?
-
-The Persistence is a procedurally generated VR sci-fi-stealth, horror game, exclusively for PlayStation®VR.
+Caught in the inexorable pull of a black hole, and with the crew mutated into horrific & murderous aberrations, it’s down to you, a clone of security office Zimri Eder, to save the ship and make the jump back to earth. Every time you die, you print a new (and potentially improved) clone of yourself. There’s a slim chance you could still escape, and take back your life, if only you can survive the horrors onboard and repair the ship’s devastated systems

@@ -27,10 +27,8 @@ module.exports = {
   },
 
   externals: {
-    jQuery: "jquery",
-    jqueryvalidation: "jquery-validation",
+    "jquery": "jQuery",
     ImagesLoaded: "imagesLoaded",
-    slick: "slick-carousel",
     Fluidbox: "fluidbox"
   },
 
@@ -56,7 +54,8 @@ module.exports = {
    new webpack.ProvidePlugin({
      fetch: 'exports-loader?self.fetch!whatwg-fetch/dist/fetch.umd',
      $: 'jquery',
-     jQuery: 'jquery'
+     jQuery: 'jquery',
+     "jquery-validation": 'jquery-validation'
    }),
 
     new AssetsPlugin({
@@ -64,7 +63,7 @@ module.exports = {
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
     }),
-
+    /*
     new CopyWebpackPlugin([
       {
         from: "./src/assets/fonts/",
@@ -72,7 +71,7 @@ module.exports = {
         flatten: true
       }
     ]),
-
+    */
     new CopyWebpackPlugin([
       {
         from: "./src/assets/images/",

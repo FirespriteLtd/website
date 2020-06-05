@@ -1,34 +1,25 @@
 ---
-title: Yet another news article headline which is long and runs across multiple lines
-date: 2016-02-09T12:02:40.846Z
-summary: >-
-  Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum
-  delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,
-  duo aliquip moderatius disputationi.
+title: Firesprite speaks about bringing The Persistence to Non-VR platforms
+date: 2019-04-17T11:02:40.846Z
+draft: false
+summary: '“As optimistic developers, we thought this would be really easy”, we said.'
 news/categories:
   - game
-featured_post: false
 featured_image:
-  alt: test
-  src: /images/uploads/img.jpg
-  title: test
+  alt: Firesprite Games Speaks to MCV
+  src: /images/uploads/The Persistence -Screenshot 1.jpg
+  title: Firesprite Games Speaks to MCV
 tags:
-  - test
+  - ''
 ---
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu, duo aliquip moderatius disputationi an. No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+####  Firesprite Games MD Graeme Ankers discusses the challenges and opportunities.
 
+Recently our MD, Graeme sat down with trade industry publication MCV to discuss the process of bringing The Persistence from a VR to a non-VR medium.
 
+![MD Graeme Ankers](/images/uploads/mcv-vr-article.jpg "MD Graeme Ankers")
 
-##### Another sub-heading
+Alongside diving deeper into the process of translating the game into non-VR, Graeme outlined the initial considerations in the early stages and the assumption that it was going to be easier than originally thought (spoiler: it wasn't): 
 
-Lorem ipsum dolor sit amet, ut sale utamur elaboraret duo, no mentitum delectus iudicabit sea. Ei mandamus contentiones qui, possit denique usu cu,duo aliquip [moderatiusdisputationi an](www.test.com). No mundi aliquid nam. Has enim inimicus reprehendunt in, his te ullum instructior, option volutpat tractatos eam an. Sit eu assum incorrupte, qui ludus expetenda dissentiunt cu.
+*"Going from VR to non-VR, the whole design language of the game is very different. Even how you treat a user interface, or taking account for where the player is sat in the experience is very different. So we’re changing that language completely moving to a flat screen version of the game, so there’s challenges around that, because you’re redesigning that system.”*
 
-![test](/images/uploads/news-body.jpg "test")
-
-Laoreet interdumduis porta mollis posueremetus odio. Donec litora tempus dictum nisi hymenaeos fermentum, integer. Fermentum justo morbi est gravida leo. Suspendisse nisi commodo nisi viverra, adipiscing congue laoreet sem, vehicula sodales eros penatibus eleifend dapibus hymenaeos aenean turpis aliquam luctus at. Fusce sem lacinia donec. Dignissim urna nec vehicula montes euismod.
-
-
-
-##### This is a title using H5
-
-Hac nascetur vestibulum lectus taciti maecenas. Netus mattis. Id, praesent habitant suscipit suspendisse. Sit cras erat, eleifend. Fermentum natoque morbi cum nullam quis maecenas tempus, hendrerit molestie dui ac sapien bibendum quam bibendum curabitur laoreet taciti gravida aliquam Nostra. In phasellus quis mi torquent pellentesque consequat eros.
+You can read the whole entire interview [here over at MCV](https://www.mcvuk.com/business-news/as-optimistic-developers-we-thought-this-would-be-really-easy-firesprite-on-adapting-vr-title-the-persistence-for-the-flatscreen/).

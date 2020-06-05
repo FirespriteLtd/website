@@ -10,6 +10,7 @@ import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(CSSRulePlugin);
+
 gsap.defaultEase = Expo.easeOut;
 
 class HeaderBlock {
@@ -29,12 +30,13 @@ class HeaderBlock {
    }
   }
   this.animHeader();
+  this.scrollpointer();
  }
 
  createVideoPlayer(){
-  console.log('Create video')
   const player = new YTPlayer('#ytplayer-header');
   player.load(this.video.data('video'), true);
+  player.setPlaybackQuality('highres');
   player.setVolume(0);
   player.seek(20);
   player.play();
@@ -55,16 +57,15 @@ class HeaderBlock {
    chars = [...title.words];
   }
 
+
+
   if($('#header-trailer').length) {
-   console.log('trailer')
    tl.add(gsap.from('#header-trailer', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}));
   }
   if($('#header-game-logo').length) {
-   console.log('logo')
    tl.add(gsap.from('#header-game-logo', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}), '-=0.2');
   }
   if($('.parent-header').length) {
-   console.log('parent')
    tl.add(gsap.from($('.parent-header'), {opacity: 0, scale: 2, duration: 0.5, ease: Expo.easeOut}, '-=0.5'));
   }
   if(chars.length) {
@@ -74,19 +75,20 @@ class HeaderBlock {
    tl.add(gsap.to( rule,{cssRule: {width: '100%'},duration: 0.5, stagger: 0.5}))
   }
   if($.trim($('#header-summary').html())) {
-   console.log('sum', $('#header-summary'))
    if(!$('#header-summary > h1').length) {
     tl.add(gsap.from('#header-summary', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}));
    }
   }
   if($('#header-buy').length) {
-   console.log('buy')
    tl.add(gsap.from('#header-buy', {opacity: 0, duration: 0.5, y: 100, ease: Expo.easeOut}), '-=0.2');
   }
+
+  tl.add(gsap.from('.scroll-pointer', {opacity: 0, duration: 0.5, ease: Expo.easeOut}));
  }
 
  videoController() {
   this.player = this.createVideoPlayer();
+
   const anim = new ScrollMagic.Scene(
    {
    triggerElement: $('.master-header'),
@@ -112,6 +114,23 @@ class HeaderBlock {
   return anim;
  }
 
+ scrollpointer() {
+
+  const tl = gsap.timeline({repeat: 0});
+  tl.to('.scroll-pointer', {opacity: 0, duration: 2, ease: Expo.easeOut}) ;
+
+  const anim = new ScrollMagic.Scene(
+      {
+       triggerElement: $('.scroll-pointer'),
+       triggerHook:0.5,
+       duration: 100,
+      })
+      .setTween(tl)
+      .addTo(this.controller)
+ }
+
 }
+
+
 
 export default HeaderBlock;

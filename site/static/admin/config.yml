@@ -41,6 +41,8 @@ collections:
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+    summary: '{{title}}  {{day}}-{{month}}-{{year}}'  
+    sortableFields: ['title', 'date']
   - name: "work"
     label: "Work"
     label_singular: "work"
@@ -147,6 +149,12 @@ collections:
           {label: "Title", name: "title", widget: "string"},
           {name: url , label: Url, widget: string}
         ]}
+      - {label: "Facebook Pixel", name: "facebook_pixel", widget: list,  required: false, fields: [
+        {label: "Script", name: "script", widget: "string"},
+        {name: "Active" , label: active, widget: boolean, default: false}
+      ]}
+    summary: '{{title}}  {{day}}-{{month}}-{{year}}'  
+    sortableFields: ['date', 'title','release_date']  
   - name: "platforms"
     label: "Platforms"
     folder: "site/data/platforms"
@@ -259,6 +267,10 @@ collections:
                 displayFields: ["title"]
           - {label: "News active", name: "news_active", widget: "boolean", default: true}
           - {label: "Twitter feed active", name: "twitter_active", widget: "boolean", default: false}
+          - {label: "Block Order", name: "order", widget: list,  required: false, fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "id", name: "id", widget: "string"},
+              ]}
       - file: "site/content/work/_index.md"
         label: "Our Work Page"
         name: "work"
@@ -325,6 +337,7 @@ collections:
             name: "intro"
             widget: "object"
             fields:
+              - {label: "Show", name: "show", widget: boolean, default: true}
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
               - {label: "About",  name: "about", widget: list, fields: [
@@ -336,20 +349,11 @@ collections:
                   {label: Body, name: body, widget: markdown}
                 ]
               }
-          - label: "Values"
-            name: "values"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: string}
-              - {label: "Body", name: "body", widget: string}
-              - {label: "Values",  name: "values", widget: list, fields: [
-                  {label: "Title", name: "title", widget: string},
-                  {label: "Body", name: "body", widget: string}
-                ]}
           - label: "Team"
             name: "team"
             widget: "object"
             fields:
+              - {label: "Show", name: "show", widget: boolean, default: true}
               - {label: "Title", name: "title", widget: string}
               - {label: "Body", name: "body", widget: string}
               - {name: image, label: Image, widget: object, fields: [

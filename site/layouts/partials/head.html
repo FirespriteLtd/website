@@ -51,7 +51,7 @@
 
     {{ "<!-- CMS -->" | safeHTML }}
     {{ if .IsHome }}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
     {{ end }}
 
     {{ "<!-- PACKAGES -->" | safeHTML }}
@@ -63,6 +63,8 @@
         {{end}}
     {{end}}
     {{ "<!-- /PACKAGES -->" | safeHTML }}
+
+    {{ partial "marketing/facebook-pixel.html" . }}
 </head>
 
 

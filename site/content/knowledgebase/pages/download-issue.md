@@ -1,37 +1,19 @@
 ---
 outputs:
   - json
-title: Download issue
+game: The Persistence
+title: Why won't the Persistence Companion App Connect to my game?
 platforms:
   - nintendo-switch
   - ps4
   - xbox-one
   - pc
+  - mobile
 ---
-Published:10th April 2018Platform:Android,
+The Persistence Companion app can only connect to The Persistence over a local network connection.
 
-If you are experiencing an issue downloading from the Google Play Store, it might be that there is an issue with your internet connection. If you are receiving an error code or the game download is not completing, the issue is likely with your connection to the Google Play Store or the Store itself.
+The mobile device being used to connect to The Persistence needs to be wirelessly connected to the same Wi-Fi router as the platform that the game is being played on. 
 
-To resolve issues such as this, please find Googles official troubleshooting steps on the page linked below:
+The Persistence app uses Multicast to find the main game. Please ensure you have Multicast enabled on both your internet router and mobile device.  Unless this is enabled, the app will not connect.
 
-<https://support.google.com/googleplay/troubleshooter/4592924>
-
-If you have the game installed and you are encountering an issue downloading resources, it may be that there is a communication issue with Googles’ service.
-
-To resolve this issue, please attempt the steps below;
-
-1. Open your device **Settings**
-2. Select **Date and Time**
-3. Please make sure that you have **Automatic Date and Time** ticked
-
-If this was not already enabled, please enable it and re-attempt to download the game.
-
-If this was already the case and the issue is persisting, please attempt turning it off and setting the date back by 1 day.
-
-4. Once you have done this, please attempt to re-install the game from the Store.
-
-Should your problem persist at this point, it’s probably the case that there is an issue with Googles Licencing service or with your Google account
-
-To pursue further support with issue such as this, we would like to recommend contacting Google Play Support directly, via the link below:
-
-<https://support.google.com/googleplay/>
+**Unfortunately due to compatibility issues, The Persistence Asymmetric Multiplayer Companion App is not compatible with the XBOX One platform.**

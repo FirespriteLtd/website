@@ -1,10 +1,10 @@
 ---
-title: Our Work
-subtitle: your strategic partner
+title: Case Studies
+subtitle: 'Strategic partnerships, great relationships.'
 featured_image:
   active: false
   alt: Our Work
   id: lxoAV83puXg
-  src: /images/uploads/work-hero.jpg
+  src: /images/uploads/the-playroom-screen-06-us-ps4-05aug14.jpg
 ---
-We deliver AAA level development services, from ideation through to delivery, tailored for specific needs. Please scroll down to view a selection of work we have delivered for clients.
+We create strategic content for partners, from ideation to delivery. Learn more about what we have co-created and what we could do for you!

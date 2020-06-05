@@ -1,7 +1,6 @@
 import YTPlayer from 'yt-player';
 import MobileDetect from 'mobile-detect';
-import { gsap, TweenMax, TweenLite, TimelineMax, Expo, Sine } from 'gsap/all';
-
+import { gsap, TweenMax, TimelineMax, Expo, Sine } from 'gsap/all';
 import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
@@ -54,11 +53,11 @@ class VideoBlock {
       };
       const player = new YTPlayer(playerId, option);
       const videoId = $(playerId).data('video');
+
       player.load(videoId, false);
       player.setVolume(0);
       player.pause();
       player.on('ended', () => {
-        //console.log('ended', id)
         player.seek(0);
         player.play();
       })

@@ -5,8 +5,10 @@
 {{ partial "navigation" (dict "Version" "trans" "Context" .) }}
 {{end}}
 {{ define "main" }}
+{{if .Params.intro.show }}
 <section>
     <div id="root" class="grid-container full b-c-white" >
+
         {{partial "blocks/block-image-text" (dict "context" .Params.intro "id" "intro" "full" "false" "header" "h1")}}
 
         {{with .Params.intro.about}}
@@ -32,11 +34,13 @@
         {{end}}
     </div>
 </section>
-
+{{end}}
+{{if .Params.team.show }}
 <section>
     {{partial "blocks/block-image-text" (dict "context" .Params.team "id" "intro" "full" "true")}}
     {{partial "testimonials" . }}
 </section>
+{{end}}
 <section>
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "careers")}}
 
@@ -46,7 +50,7 @@
             <div class="grid-x align-center">
                 <div class="cell small-12 medium-8">
                     <h2>Job vacancies</h2>
-                    <p>If you think Firesprite sounds like the right place for you, then check out our available opportunities. If you don’t see something that matches your skills, don’t worry, just use the open application - our door is always open for superstars!</p>
+                    <p>If you think Firesprite sounds like the right place for you, then check out our available opportunities. We will consider remote working on a case by case basis if the role permits and if you have a right to work in the UK. If you don’t see something that matches your skills, don’t worry, just use the open application - our door is always open for superstars!</p>
                     <ul class="accordion" data-accordion>
                         {{ range $key, $value := index .Site.Taxonomies "careers/categories"}}
                         <li class="accordion-item" data-accordion-item>
@@ -58,7 +62,7 @@
                                     {{end}}
                                     <li>
                                         <div class="job-title open">
-                                            <a href='mailto:jobs@biffnewmedia.com?subject={{$key}}'><h5>Open application</h5></a>
+                                            <a href='mailto:jobs@firesprite.com?subject={{$key}}'><h5>Open application</h5></a>
                                         </div>
                                     </li>
                                 </ul>

@@ -1,85 +1,63 @@
 ---
 title: Join Us
-subtitle: Work at the cutting edge.
+subtitle: The next generation starts here.
 featured_image:
   active: false
   alt: Working for us
-  src: /images/uploads/workingforus-hero.jpg
+  src: /images/uploads/workforus.jpg
 intro:
   about:
     - body: >-
-        Liverpool is a city where you can be yourself. It’s a city of creative
-        types, music lovers, culture addicts and friendly faces. Whether you
-        fancy getting lost in it all at one of our many museums and galleries,
-        going crazy at an exhilarating sporting event or gig, or just strolling
-        along the waterfront and stopping to enjoy some world class food,
-        Liverpool has got it covered.
+        We're a professional, friendly bunch of developers from all experience
+        levels and diverse backgrounds. We were founded by industry veterans
+        that wanted to build a world class studio staffed with excited,
+        passionate creators who love to collaborate across varied, inspiring and
+        challenging games.
       image:
-        alt: Liverpool
-        src: /images/uploads/docks_redevelopment.jpg
-      title: Liverpool
+        alt: Who we are
+        src: /images/uploads/whatweoffer.jpg
+      title: Who we are
     - body: >-
-        At Firesprite, we strive to make each game better than the last one. We
-        push ourselves hard to produce gorgeous artwork, cutting edge technical
-        innovation and thrilling gameplay. The quality of our games is our
-        passion. However, we also have a friendly and open culture, where we all
-        get the right work life balance, including flexible working times when
-        we need them.
+        We build games from concept to completion, whether creating our own IP
+        or working closely with strategic partners to deliver new games in
+        existing universes. Our talented teams across Design, Engineering, Art,
+        Production and QA utilise the latest technologies and tools to create
+        amazing experiences for players everywhere.
       image:
-        alt: Culture
-        src: /images/uploads/workingforus-about-culture.jpg
-      title: Culture
+        alt: What we do
+        src: /images/uploads/whatwedo-optimised.jpg
+      title: What we do
+    - body: >-
+        We offer a competitive salary and a friendly, inclusive environment
+        where teams and team members are supported and encouraged to express
+        their creativity but also trusted to manage their workflow and
+        responsibilities. We arrange drinks on a Friday for the team to kick
+        back and bi-annual big social outings at Christmas and Summer are also
+        organised for all staff to attend.
+      image:
+        alt: What we offer
+        src: /images/uploads/whoweare-optimised.jpg
+      title: What we offer
     - body: >-
         Our studio is situated right in the vibrant heart of Liverpool city
-        centre. It’s modern, stylish, and air conditioned, and packed full of
-        the latest cutting-edge technology. All the best cafes, restaurants,
-        bars, and shopping are right on our doorstep, and if you want a change
-        of pace, we are just a stone’s throw from the world-famous Liverpool
-        waterfront.
+        centre, close to all major transport links. It’s modern, stylish, air
+        conditioned and packed full of the latest cutting-edge technology. All
+        the best cafes, restaurants, bars, and shopping are right on our
+        doorstep.
       image:
-        alt: Studio
-        src: /images/uploads/workingforus-about-studio.jpg
-      title: Studio
-    - body: >-
-        We are dedicated to constantly improving ourselves as well as each of
-        our games, giving us all the opportunity to be the best we possibly can.
-        Through learning opportunities and mentoring you can level up your
-        technical capabilities, and by taking ownership of your work and helping
-        to review our games, you will have what it takes to consistently create
-        AAA quality games.
-      image:
-        alt: Careers
-        src: /images/uploads/workingforus-about-careers.jpg
-      title: Careers
-  title: 'The freedom to innovate, create and excel'
+        alt: Liverpool
+        src: /images/uploads/liverpool-compressed.jpg
+      title: Where we are
+  show: true
+  title: Build the future.
   body: >-
-    At Firesprite, we believe in giving everyone the freedom to express
-    themselves and to take ownership of the creation of our games. Your talent
-    and passion will drive the quality of everything we do. Best of all, you
-    will get to work with a dedicated, talented, and fun-loving team in an
-    inclusive and creative environment.
-values:
-  title: Our Values
-  body: >-
-    At Firesprite, we beilieve in giving everyone the freedom to express
-    themselves and to take ownership of the creation of our games. Your talent
-    and passion will drive the quality of everything we do. Best of all, you
-    will get to work with a dedicated, talented, and fun-loving team in an
-    inclusive and creative environment.
-  values:
-    - title: Innovation
-      body: We strive to create world’s firsts in our creations
-    - title: Creativity
-      body: We celebrate creativity in every discipline
-    - title: Discretion
-      body: Trust between our teams and especially with our clients
-    - title: Humility
-      body: We don’t believe in being too flashy or excessively showing off
-    - title: Teamwork
-      body: >-
-        We strongly believe in a strong team ethic in an open and honest
-        environment built on trust and collaboration
+    We're an ambitious, future facing studio based in the heart of the game
+    development scene in Liverpool, UK. We have a strong focus on culture here
+    at Firesprite, built around the core values of being Brave, Entrepreneurial,
+    Professional, Inclusive and Responsive in our mission to become one of the
+    best and brightest places to work in the games industry. 
 team:
+  show: false
   title: The Team
   body: >-
     Led by a management group with over 80 years of collective experience our
@@ -88,22 +66,8 @@ team:
   image:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
-Testimonials:
-  - alt: Matt Benson
-    body: >-
-      "This is a testimonial for the team section written by any member of the
-      team and can be very long if required."
-    name: Matt Benson
-    position: Marketing & Commercial Director
-    src: /images/uploads/testimonial-mattbenson.jpg
-  - alt: James Anderson
-    body: >-
-      "This is another testimonial for the team section written by another
-      different member of the team and can be very long if required."
-    name: James Anderson
-    position: Bowler
-    src: /images/uploads/testimonial-mattbenson.jpg
+Testimonials: []
 ---
-We have a strong focus on culture here at Firesprite, built around the core values of being brave, entrepreneurial, professional, inclusive and responsive in our mission to become one of the best and brightest places to work in the games industry.
+Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
-We think deeply about the end player experience and we're passionate about how we best combine the disciplines of design, art and code to deliver experiences that surprise and delight players.
+Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working across PC, Current and Next Generation Consoles.
