@@ -16,11 +16,6 @@ collections:
     preview_path: "news/{{slug}}"
     slug: "{{slug}}"
     folder: "site/content/news"
-    sortableFields: ['title', 'date']
-    view_filters:
-      - label: 'Post Date'
-        field: date
-        patten: '2020'
     editor:
       preview: false
     preview_path_date_field: "updated_on"
@@ -46,6 +41,8 @@ collections:
           - {name: title, label: Title, widget: string}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+    summary: '{{title}}  {{day}}-{{month}}-{{year}}'  
+    sortableFields: ['title', 'date']
   - name: "work"
     label: "Work"
     label_singular: "work"
