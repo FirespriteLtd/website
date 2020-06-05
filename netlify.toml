@@ -39,7 +39,6 @@
     no-cache,
     no-store,
     must-revalidate'''
-[[plugins]]
-  package = "netlify-plugin-amp-server-side-rendering"
+
 
 
