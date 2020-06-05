@@ -7,8 +7,7 @@ featured_image:
   src: /images/uploads/workforus.jpg
 intro:
   about:
-    - body: >-
-        We're a professional, friendly bunch of developers from all experience
+    - body: We're a professional, friendly bunch of developers from all experience
         levels and diverse backgrounds. We were founded by industry veterans
         that wanted to build a world class studio staffed with excited,
         passionate creators who love to collaborate across varied, inspiring and
@@ -17,20 +16,18 @@ intro:
         alt: Who we are
         src: /images/uploads/whatweoffer.jpg
       title: Who we are
-    - body: >-
-        We build games from concept to completion, whether creating our own IP
-        or working closely with strategic partners to deliver new games in
-        existing universes. Our talented teams across Design, Engineering, Art,
+    - body: We build games from concept to completion, whether creating our own IP or
+        working closely with strategic partners to deliver new games in existing
+        universes. Our talented teams across Design, Engineering, Art,
         Production and QA utilise the latest technologies and tools to create
         amazing experiences for players everywhere.
       image:
         alt: What we do
         src: /images/uploads/whatwedo-optimised.jpg
       title: What we do
-    - body: >-
-        We offer a competitive salary and a friendly, inclusive environment
-        where teams and team members are supported and encouraged to express
-        their creativity but also trusted to manage their workflow and
+    - body: We offer a competitive salary and a friendly, inclusive environment where
+        teams and team members are supported and encouraged to express their
+        creativity but also trusted to manage their workflow and
         responsibilities. We arrange drinks on a Friday for the team to kick
         back and bi-annual big social outings at Christmas and Summer are also
         organised for all staff to attend.
@@ -38,8 +35,7 @@ intro:
         alt: What we offer
         src: /images/uploads/whoweare-optimised.jpg
       title: What we offer
-    - body: >-
-        Our studio is situated right in the vibrant heart of Liverpool city
+    - body: Our studio is situated right in the vibrant heart of Liverpool city
         centre, close to all major transport links. It’s modern, stylish, air
         conditioned and packed full of the latest cutting-edge technology. All
         the best cafes, restaurants, bars, and shopping are right on our
@@ -50,17 +46,15 @@ intro:
       title: Where we are
   show: true
   title: Build the future.
-  body: >-
-    We're an ambitious, future facing studio based in the heart of the game
+  body: "**We're an ambitious, future facing studio based in the heart of the game
     development scene in Liverpool, UK. We have a strong focus on culture here
     at Firesprite, built around the core values of being Brave, Entrepreneurial,
     Professional, Inclusive and Responsive in our mission to become one of the
-    best and brightest places to work in the games industry. 
+    best and brightest places to work in the games industry.**"
 team:
   show: false
   title: The Team
-  body: >-
-    Led by a management group with over 80 years of collective experience our
+  body: Led by a management group with over 80 years of collective experience our
     diverse workforce includes graduate, entry level and industry veterans who
     have worked on numerous AAA games on all major hardware platforms.
   image:
