@@ -60,7 +60,7 @@ export default {
 
         const header = popup.querySelector('.overlay-header')
         const content = popup.querySelector('.content')
-        header.append(job.title);
+        header.innerHTML = job.title;
         content.innerHTML = `${job.content}<a href="mailto:${job.email}?subject=${job.title}" class="hollow button m-t-30">Apply</a>`;
         popup.classList.add('is-shown');
         gsap.fromTo(popup, { y: '100%'}, {y: '0', duration: 1, ease: Power2.easeInOut})
