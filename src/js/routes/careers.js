@@ -54,10 +54,7 @@ export default {
                 job = v;
             }
         })
-
-        console.log('job', job);
         const popup = document.querySelector('.overlay-popup')
-
         const header = popup.querySelector('.overlay-header')
         const content = popup.querySelector('.content')
         header.innerHTML = job.title;
@@ -67,7 +64,6 @@ export default {
     },
 
     close () {
-        console.log('TEST')
         const popup = document.querySelector('.overlay-popup')
         gsap.to(popup , {y: '100%', duration: 1, ease: Power2.easeInOut, onComplete:()=>{
                 popup.classList.remove('is-shown');
