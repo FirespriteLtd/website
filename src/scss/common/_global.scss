@@ -20,6 +20,10 @@ html {
   outline: none!important;
 }
 
+body{
+  overflow: hidden;
+}
+
 
 .home, .work, .games {
   #container-scroll {

@@ -37,6 +37,11 @@ class VideoPopup {
     holder.id ="videoHolder"
     this.popupDiv.append(holder);
 
+    const closeButton = document.createElement("div");
+    closeButton.classList.add('close-button')
+    closeButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"><g fill="none" fill-rule="evenodd"><path stroke="#FFF" stroke-width="4" d="M2 2H68V68H2z"/><path id="x" fill="#FFF" d="M49 25.023L45.977 22 36 31.977 26.023 22 23 25.023 32.977 35 23 44.977 26.023 48 36 38.023 45.977 48 49 44.977 39.023 35z"/></g></svg>`
+    holder.append(closeButton);
+
     const videoWrapper  = document.createElement("div");
     videoWrapper.id ="videoWrapper"
     holder.append(videoWrapper);
@@ -83,7 +88,8 @@ class VideoPopup {
 
    destroy(){
     this.player.destroy();
-    document.body.removeChild(this.popupDiv);
+    this.player = null;
+
    }
 }
 
