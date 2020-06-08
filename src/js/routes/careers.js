@@ -40,7 +40,6 @@ export default {
         }
 
         this.buttonClose.addEventListener('click', (e) => {
-            console.log('click')
             this.close();
         });
     }

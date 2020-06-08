@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/firesprite.iml" filepath="$PROJECT_DIR$/.idea/firesprite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../netlify-functions-example/.idea/netlify-functions-example.iml" filepath="$PROJECT_DIR$/../netlify-functions-example/.idea/netlify-functions-example.iml" />
     </modules>
   </component>
 </project>
