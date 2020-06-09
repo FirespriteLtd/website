@@ -1,6 +1,6 @@
 ---
 title: THE PLAYROOM VR
-date: 2020-05-16T10:58:36.033Z
+date: 2016-10-10T10:58:36.033Z
 release_date: 2016-10-10T10:58:36.047Z
 order_status: Out now
 logo: /images/uploads/PlayroomVR-logo.png
