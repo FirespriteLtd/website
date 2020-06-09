@@ -1,5 +1,6 @@
 ---
-title: Animator- Ref FAN01
+title: Animator
+ref: FAN01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
