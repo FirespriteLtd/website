@@ -160,6 +160,9 @@
     @include breakpoint(small){
       min-width: 100%;
     }
+    @include breakpoint(medium){
+      min-width: unset;
+    }
   }
   .slick-dots{
     margin-top: rem-calc(20);
