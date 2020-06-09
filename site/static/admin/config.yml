@@ -219,6 +219,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Reference", name: "ref", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Categories"
         name: "careers/categories"
