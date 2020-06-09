@@ -368,7 +368,7 @@ collections:
               {name: alt, label: Alt text, widget: string},
               {name: body, label: Body, widget: markdown}
             ]}
-            - {label: "job_listing", name: "job_listing", widget: markdown}
+          - {label: "job_listing", name: "job_listing", widget: markdown}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
