@@ -58,6 +58,7 @@
         @extend h5;
         font-size: rem-calc(14);
         margin-bottom: 0;
+        white-space: nowrap;
         transition: 500ms background-color ease-in-out;
       }
     }
