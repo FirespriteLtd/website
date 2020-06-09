@@ -1,5 +1,6 @@
 ---
-title: Animator- Ref FAN01
+title: Animator
+ref: FAN01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -45,6 +46,4 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Unreal Engine experience is preferred but not essential
 * Console development experience would be advantageous
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### JOB CODE: FAN01
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Reference or hit the apply button below.

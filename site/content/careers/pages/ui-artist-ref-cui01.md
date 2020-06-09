@@ -1,5 +1,6 @@
 ---
-title: UI Artist - Ref CUI01
+title: UI Artist
+ref: CUI01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -43,5 +44,3 @@ This is an extremely dynamic project, collaborating with a very high-profile cli
 * UX skills an advantage
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to [jobs@firesprite.com](mailto:jobs@firesprite.com) with the Job Code or hit the apply button below.
-
-##### **JOB CODE: CUI01**

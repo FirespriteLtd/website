@@ -1,5 +1,6 @@
 ---
-title: Lead Systems Designer - Ref PLSD01
+title: Lead Systems Designer
+ref: PLSD01
 careers/categories: design
 position_type: full
 email: jobs@firesprite.com
@@ -51,6 +52,4 @@ You will get to work with a dedicated and talented team that is totally focused 
 
 * Experience in a range of design roles
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
-
-##### JOB CODE: PLSD01
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Reference or hit the apply button below.
