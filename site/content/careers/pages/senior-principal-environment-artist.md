@@ -1,5 +1,6 @@
 ---
-title: Senior Principal Environment Artist - Ref CSA01
+title: Senior Principal Environment Artist
+ref: Ref CSA01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -52,5 +53,3 @@ As a Senior / Principal Environment Artist you will work closely with the Lead A
 * Illustrative / Concept art / Matte painting skills
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### JOB CODE: CSA01
