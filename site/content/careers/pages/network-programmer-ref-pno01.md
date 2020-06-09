@@ -1,5 +1,6 @@
 ---
-title: Network Programmer- REF PNO01
+title: Network Programmer
+ref: PNO01
 careers/categories: engineering
 position_type: full
 email: jobs@firesprite.com
@@ -47,5 +48,3 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Working knowledge of Agile development
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### **JOB CODE:**PNO01
