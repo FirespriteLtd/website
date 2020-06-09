@@ -49,7 +49,7 @@
             <div class="grid-x align-center">
                 <div class="cell small-12 medium-8">
                     <h2>Job vacancies</h2>
-                    {{.Params.job_listing}}
+                    {{.Params.job_listing | markdownify }}
                     <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true" data-update-history="true">
                         {{ range $key, $value := index .Site.Taxonomies "careers/categories"}}
                         <li class="accordion-item" data-accordion-item>
