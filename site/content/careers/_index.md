@@ -61,14 +61,13 @@ team:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
 Testimonials: []
-job_listing: If you think Firesprite sounds like the right place for you, then
-  check out our available opportunities. We will consider remote working on a
-  case by case basis if the role permits and if you have a right to work in the
-  UK. If you don’t see something that matches your skills, shoot us an email
-  with your CV and showreel to
-  [jobs@firesprite.com](mailto:jobs@firesprite.com). Our door is always open for
-  superstars! Want to be appraised of the latest jobs? [Sign up
-  here.](http://www.google.com)
+job_listing: >-
+  If you think Firesprite sounds like the right place for you, then check out
+  our available opportunities. We will consider remote working on a case by case
+  basis if the role permits and if you have a right to work in the UK. 
+
+
+  If you don’t see something that matches your skills, shoot us an email with your CV and any applicable portfolio material to [jobs@firesprite.com](mailto:jobs@firesprite.com). Our door is always open for superstars!
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
