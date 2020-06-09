@@ -1,5 +1,6 @@
 ---
-title: Development Manager - Ref FDM01
+title: "Development Manager "
+ref: FDM01
 careers/categories: production
 position_type: full
 email: jobs@firesprite.com
