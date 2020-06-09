@@ -45,4 +45,4 @@ As well as brilliant projects you will get to work with a dedicated and talented
 * Excellent and demonstrable art skills with a thorough understanding of the fundamental principles of art
 * A passion for games and an understanding of the gaming market
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Reference number or hit the apply button below.
