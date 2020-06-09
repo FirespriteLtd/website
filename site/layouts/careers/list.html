@@ -50,7 +50,7 @@
                 <div class="cell small-12 medium-8">
                     <h2>Job vacancies</h2>
                     {{.Params.job_listing}}
-                    <ul class="accordion" data-accordion data-multi-expand="false" data-update-history="true">
+                    <ul class="accordion" data-accordion data-multi-expand="true" data-update-history="true">
                         {{ range $key, $value := index .Site.Taxonomies "careers/categories"}}
                         <li class="accordion-item" data-accordion-item>
                             <a href="#" class="accordion-title"><h4>{{$key}}<span class="badge">{{len $value.Pages}}</span></h4></a>

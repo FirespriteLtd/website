@@ -58,9 +58,12 @@ export default {
                 job = v;
             }
         })
-        const popup = document.querySelector('.overlay-popup')
-        const header = popup.querySelector('.overlay-header')
-        const content = popup.querySelector('.content')
+        const popup = document.querySelector('.overlay-popup');
+        const header = popup.querySelector('.overlay-header');
+        const content = popup.querySelector('.content');
+        const scoll = popup.querySelector('.overlay-content-body');
+        scoll.scrollTop = 0;
+
         header.innerHTML = job.title;
         content.innerHTML = `${job.content}<div class="job-ref"><b>Job Reference: ${job.ref}</b></div><a href="mailto:${job.email}?subject=${job.title} - ${job.ref}" class="hollow button m-t-30">Apply</a>`;
         popup.classList.add('is-shown');
