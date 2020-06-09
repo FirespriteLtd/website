@@ -1,5 +1,6 @@
 ---
-title: Game Director - Ref PGD01
+title: Game Director
+ref: PGD01
 careers/categories: production
 position_type: full
 email: jobs@firesprite.com
@@ -50,6 +51,4 @@ You will get to work with a dedicated, talented, and fun team in a relaxed atmos
 
 * Have shipped at least one game in a similar role
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to[jobs@firesprite.com](mailto:jobs@firesprite.com)
-
-##### **JOB CODE:**PGD01
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
