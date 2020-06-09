@@ -51,4 +51,4 @@ You will get to work with a dedicated, talented, and fun team in a relaxed atmos
 
 * Have shipped at least one game in a similar role
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Reference or hit the apply button below.
