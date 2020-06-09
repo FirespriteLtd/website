@@ -350,6 +350,7 @@ collections:
                   {label: Body, name: body, widget: markdown}
                 ]
               }
+              - {label: "job_listing", name: 'job_listing', widget: markdown}
           - label: "Team"
             name: "team"
             widget: "object"
