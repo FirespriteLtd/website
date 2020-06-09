@@ -1,5 +1,6 @@
 ---
-title: Concept Artist - Ref PCA02
+title: Concept Artist
+ref: PCA02
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -45,5 +46,3 @@ As a Concept Artist you will work closely with the Lead Artist, Art Director and
 * Support for the art team if required
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### JOB CODE: PCA02
