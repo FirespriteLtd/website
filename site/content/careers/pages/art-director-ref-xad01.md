@@ -1,5 +1,6 @@
 ---
-title: Art Director - Ref XAD01
+title: Art Director
+ref: XAD01
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -45,5 +46,3 @@ As well as brilliant projects you will get to work with a dedicated and talented
 * A passion for games and an understanding of the gaming market
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### JOB CODE: XAD01
