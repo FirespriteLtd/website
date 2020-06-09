@@ -1,5 +1,6 @@
 ---
-title: Technical Art Director - Ref TBC
+title: Technical Art Director
+ref: TBC
 careers/categories: art
 position_type: full
 email: jobs@firesprite.com
@@ -50,5 +51,3 @@ It is a chance to get in at the early stages of a growing studio working on mult
 * Proficient in Agile Project Management (Scrum Master)
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Code or hit the apply button below.
-
-##### **JOB CODE:TBC**
