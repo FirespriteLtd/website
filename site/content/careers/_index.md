@@ -61,6 +61,11 @@ team:
     alt: The Team
     src: /images/uploads/workingforus-theteam.jpg
 Testimonials: []
+job_listing: If you think Firesprite sounds like the right place for you, then
+  check out our available opportunities. We will consider remote working on a
+  case by case basis if the role permits and if you have a right to work in the
+  UK. If you don’t see something that matches your skills, don’t worry, just use
+  the open application - our door is always open for superstars!
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
