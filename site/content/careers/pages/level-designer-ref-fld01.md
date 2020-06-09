@@ -49,4 +49,4 @@ You will get to work with a dedicated and talented team that has delivered some 
 * UE4 experience is a distinct advantage, but not essential
 * Console development experience would be advantageous
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to jobs@firesprite.com with the Job Reference or hit the apply button below.
