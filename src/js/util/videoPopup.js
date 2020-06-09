@@ -46,9 +46,15 @@ class VideoPopup {
     videoWrapper.id ="videoWrapper"
     holder.append(videoWrapper);
 
+    const videoScale  = document.createElement("div");
+    videoScale.classList.add("responsive-embed")
+    videoScale.classList.add("widescreen")
+
+    videoWrapper.append(videoScale);
+
     const video  = document.createElement("div");
     video.className ="videoPlayer"
-    videoWrapper.append(video);
+    videoScale.append(video);
 
     this.popupDiv.addEventListener("click", (e) => {
       this.close('.overlay-popup.is-shown')
