@@ -1,5 +1,6 @@
 ---
-title: Mid-Senior Development Manager - Ref CSDM01
+title: Mid-Senior Development Manager
+ref: CSDM01
 careers/categories: production
 position_type: full
 email: jobs@firesprite.com
@@ -55,5 +56,3 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Knowledge of Microsoft Teams for communication
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
-
-##### **JOB CODE:**CSDM01
