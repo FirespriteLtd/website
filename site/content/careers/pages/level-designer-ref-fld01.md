@@ -1,5 +1,6 @@
 ---
-title: Level Designer - Ref FLD01
+title: Level Designer
+ref: FLD01
 careers/categories: design
 position_type: full
 email: jobs@firesprite.com
@@ -49,5 +50,3 @@ You will get to work with a dedicated and talented team that has delivered some 
 * Console development experience would be advantageous
 
 If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio, to [jobs@firesprite.com](mailto:jobs@firesprite.com)
-
-##### **JOB CODE:**FLD01
