@@ -5,7 +5,10 @@
       <div class="cell small-12 medium-8 medium-offset-2">
         <article>
           {{- .Content -}}
-          <a href="mailto:{{.Params.email | safeHTML}}?subject={{.Title}}" class="hollow button m-t-30">Apply</a>
+          <div class="job-reference">
+            Job Reference: {{ .Params.ref }}
+          </div>
+          <a href="mailto:{{.Params.email | safeHTML}}?subject={{.Title}} - Ref{{.Params.ref}}" class="hollow button m-t-30">Apply</a>
         </article>
       </div>
     </div>

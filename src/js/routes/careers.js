@@ -47,7 +47,12 @@ export default {
     open ($id) {
         console.log($id)
         const jobs = window.jobData;
-        let job;
+        let job = {
+            content: null,
+            ref: null,
+            email: null,
+            title: null,
+        };
         jobs.forEach((v) => {
             if($id === v.id){
                 job = v;
@@ -57,7 +62,7 @@ export default {
         const header = popup.querySelector('.overlay-header')
         const content = popup.querySelector('.content')
         header.innerHTML = job.title;
-        content.innerHTML = `${job.content}<a href="mailto:${job.email}?subject=${job.title}" class="hollow button m-t-30">Apply</a>`;
+        content.innerHTML = `${job.content}<div class="job-ref"><b>Job Reference: ${job.ref}</b></div><a href="mailto:${job.email}?subject=${job.title} - ${job.ref}" class="hollow button m-t-30">Apply</a>`;
         popup.classList.add('is-shown');
         gsap.fromTo(popup, { y: '100%'}, {y: '0', duration: 1, ease: Power2.easeInOut})
     },

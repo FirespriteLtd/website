@@ -85,6 +85,7 @@
                       id: '{{$key}}-{{$index}}',
                       title: '{{ $element.Title }}',
                       category: '{{$key}}',
+                      ref: '{{$element.Params.ref}}',
                       email: '{{$element.Params.email}}',
                       position: '{{$element.Params.position_type}}',
                       content: {{- .Content  | markdownify -}}
