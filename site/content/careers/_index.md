@@ -67,7 +67,8 @@ job_listing: If you think Firesprite sounds like the right place for you, then
   UK. If you don’t see something that matches your skills, shoot us an email
   with your CV and showreel to
   [jobs@firesprite.com](mailto:jobs@firesprite.com). Our door is always open for
-  superstars!
+  superstars! Want to be appraised of the latest jobs? [Sign up
+  here.](http://www.google.com)
 ---
 Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware. 
 
