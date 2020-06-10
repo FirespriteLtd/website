@@ -206,6 +206,7 @@ collections:
         name: "platforms"
         widget: "relation"
         multiple: true
+        required: false
         collection: "platforms"
         searchFields: ["name"]
         valueField: "value"
