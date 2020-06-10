@@ -57,6 +57,8 @@ class VideoBlock {
       player.load(videoId, false);
       player.setVolume(0);
       player.pause();
+      /// here you can set quality of the player's stream
+      player.setPlaybackQuality('hd1080')
       player.on('ended', () => {
         player.seek(0);
         player.play();
