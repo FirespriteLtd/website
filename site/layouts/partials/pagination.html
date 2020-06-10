@@ -2,7 +2,7 @@
 {{ if isset .Params "featured_image" }}
 {{$image := .Params.featured_image.src}}
 <section>
-    <div id="next-article" class="grid-container full block b-c-dark-gray"  onclick="window.location='{{ .RelPermalink }}';" >
+    <div id="next-article" class="grid-container full block b-c-dark-gray"  onclick="window.location={{ .RelPermalink | safeHTML }};" >
         <div class="content grid-container">
             <div class="grid-x grid-padding-x align-center-middle text-center">
                 <div class="cell small-12">
