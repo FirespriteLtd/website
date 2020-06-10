@@ -34,7 +34,7 @@ You will get to work with a dedicated and talented team that has delivered some 
 ##### **Role requirements:**
 
 * Minimum of 3 years in a level design role
-* Shipped at least 1 game in a similar role/li>
+* Shipped at least 1 game in a similar role
 * Exceptional creativity and design skills
 * Modelling capabilities with Maya / 3DSMax
 * Good knowledge of industry standard packages (MS Office, Hansoft/Jira, Perforce etc)
