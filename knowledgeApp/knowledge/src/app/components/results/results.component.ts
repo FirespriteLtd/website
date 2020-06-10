@@ -30,7 +30,7 @@ export class ResultsComponent implements OnInit {
     this.$entries =  this.knowledgeService.allItems$;
     this.knowledgeService.allPlatforms$.subscribe(value =>
       {
-        this.platforms = value;
+        this.platforms = [this.filterPlatform, ...value];
       }
     );
   }

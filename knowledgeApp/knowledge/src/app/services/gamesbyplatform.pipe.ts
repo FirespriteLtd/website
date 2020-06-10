@@ -6,12 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class GamesbyplatformPipe implements PipeTransform {
 
   transform(value: any, platform): any {
-
-    if(!platform){
+    if(!platform || platform === 'all'){
       return value;
     }
-
-   // console.log('Filter game by platform', value, platform,  value.filter(item => item.platforms.includes(platform)))
 
     return value.filter(item => item.platforms.includes(platform));
   }

@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PlatformsPipe implements PipeTransform {
 
   transform(value: any[], platform:any): any {
-    console.log(value)
+
     if(!platform.value || platform.value === 'all'){
       return value;
     }

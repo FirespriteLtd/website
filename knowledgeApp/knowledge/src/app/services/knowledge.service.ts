@@ -26,6 +26,7 @@ export class KnowledgeService {
         map((value: any) => {
           this.allItems = value.data.items;
           this.allItems$.next(value.data.items);
+          console.log('All Items', this.allItems);
           return value;
         }),
         map( (value:any) => {
@@ -44,13 +45,14 @@ export class KnowledgeService {
             })
           })
           this.allPlatforms$.next(platforms);
+          console.log('All platforms', platforms);
           return value;
         }),
         map( (value:any) => {
           let games = [];
           value.data.items.forEach((i)=>{
             if(i.game !== '<no value>' && i.game.length !== 0) {
-              console.log('Game', i.game.length)
+              console.log('Game', i.game)
               if (!games.includes(i.game)) {
                 games.push(i.game);
               }
