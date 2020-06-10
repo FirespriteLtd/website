@@ -84,7 +84,7 @@ buy:
     title: PSN Store
     url: https://store.playstation.com/en-us/product/UP3536-CUSA07643_00-FRONTIER25202048?smcid=pdc%3Agb-en%3Aweb-pdc-games-the-persistence-ps4%3Aleadproductinfo-buy-on-playstation-store%3Athe-persistence%3AEP3393-CUSA07814_00-FRONTIER25202048
   - platforms: nintendo-switch
-    title: Nintendo Switch Store
+    title: Nintendo eShop
     url: https://www.nintendo.com/games/detail/the-persistence-switch/
   - platforms: xbox-one
     title: XBOX One Store
