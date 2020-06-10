@@ -51,6 +51,7 @@
     a{
       display:flex;
       width: 100%;
+      padding: rem-calc(22 24);
       flex-direction: row;
       justify-content: space-between;
 
@@ -63,7 +64,7 @@
       }
     }
 
-    padding: rem-calc(22 24);
+
     background-color: $light-gray;
     margin-bottom: rem-calc(10);
     transition: 500ms background-color ease-in-out;
