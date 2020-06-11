@@ -22,3 +22,5 @@ Another common solution to instability on the Xbox One is power cycling.
 For instructions on how to perform this action, please follow the link below:
 
 <https://support.xbox.com/en-GB/xbox-one/system/power-cycle-console>
+
+If the problem persists, please submit a Support Request.
