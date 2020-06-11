@@ -21,4 +21,6 @@ To delete your cloud save data, please follow the same steps as above, but repla
 
 4. Select **Saved data in online storage**
 
+***Warning:*** Clearing Application Save data may result in the loss of any progress.
+
 Should the issue continue after deleting your personal data, we would like to recommend that you please perform a full re-installation of the game and attempt to launch it.
