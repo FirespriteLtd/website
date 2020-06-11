@@ -5,7 +5,7 @@ title: Crash Issues
 platforms:
   - ps4
 ---
-Crashes are often the result of damaged or corrupt local data.
+Crashes can be the result of damaged or corrupt local data.
 
 To resolve issues of this nature, we would like to recommend that you please follow the steps below:
 
