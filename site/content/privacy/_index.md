@@ -73,24 +73,24 @@ The legal bases we may rely on include:
 
 For further details on when we collect personal information, what we collect as well as how we use it, please read the following sections:
 
-> ###### When Information is collected:
->
-> When you contact us by email or complete our online forms
->
-> ###### What information we ask for:
->
-> Contact details: your name and email address
->
-> ###### How and why we use your information:
->
-> * We ask for this: to respond to your enquiries
-> * to provide you with information relating our business
-> * to support our recruitment processes
-> * We rely on consent and legitimate interests (as appropriate) as the lawful basis for collecting and using your personal information
->
-> Our legitimate interests relate to our commercial interests including the promotion and growth of our business.
->
-> We will keep this information for as long as necessary for the relevant processing purpose.
+###### When Information is collected:
+
+When you contact us by email or complete our online forms
+
+###### What information we ask for:
+
+Contact details: your name and email address
+
+###### How and why we use your information:
+
+* We ask for this: to respond to your enquiries
+* to provide you with information relating our business
+* to support our recruitment processes
+* We rely on consent and legitimate interests (as appropriate) as the lawful basis for collecting and using your personal information
+
+Our legitimate interests relate to our commercial interests including the promotion and growth of our business.
+
+We will keep this information for as long as necessary for the relevant processing purpose.
 
 #### WHO WE SHARE YOUR PERSONAL INFORMATION WITH
 
@@ -132,6 +132,16 @@ If you would like to exercise any of those rights, please:
 * let us have enough information to identify you.
 * let us have proof of your identity and address (a copy of your driving licence or passport and a recent utility or credit card bill), and
 * let us know the information to which your request relates including any account or reference numbers, if you have them
+
+#### **HOW WE USE COOKIES**
+
+If you browse our website we will collect personal information via cookies. We use both essential and non-essential cookies on our website which collect information from you such as your browsing patterns and information about the device you are using. We may use this information to inform our marketing and future business strategies.
+
+Cookies allow web applications to respond to you as an individual. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. The actual cookies contain hashed data, so you don’t have to worry about someone gleaning any of your details by reading the cookie data. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may however prevent you from taking full advantage of the website.
+
+When we collect information about you from our website using essential cookies, we will use your personal information on the basis that it is in our legitimate interests to do so. We have considered our legitimate interests carefully and have balanced our legitimate interests against your rights under data protection law. We consider that this use is proportionate because the website will not work without them.
+
+​Where we collect information about you from our website using non-essential cookies, for example to analyse web traffic; to provide a great experience for your visit to our website; to identify if you are a registered member on our site; to monitor and analyse the performance, operation and effectiveness of our website; or to recognise you if you have visited our website before, we will use your personal information on the basis that you have given us your consent. You can, of course, withdraw your consent at any time by deleting our cookies or by managing your browser’s cookie preferences. For further details on how to manage your preferences please see aboutcookies.org or www.allaboutcookies.org. 
 
 #### KEEPING YOUR PERSONAL INFORMATION SECURE
 
