@@ -1,7 +1,7 @@
 ---
 title: Game Director
 ref: PGD01
-careers/categories: production
+careers/categories: design
 position_type: full
 email: jobs@firesprite.com
 ---
