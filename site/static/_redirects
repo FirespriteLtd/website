@@ -3,7 +3,7 @@
 
 # Redirect Support pages from old apps
 /support.php /support
-
+/privacy.php /privacy
 # Optional: Redirect default Netlify subdomain to primary domain
 # https://determined-leakey-316eb1.netlify.com/* https://www.marmaladegamestudio.com/:splat 301!
 # http://determined-leakey-316eb1.netlify.com/* http://www.marmaladegamestudio.com/:splat 301!
