@@ -1,5 +1,5 @@
 ---
-title: Mid-Senior Development Manager
+title: Senior Development Manager
 ref: CSDM01
 careers/categories: production
 position_type: full
