@@ -12,7 +12,7 @@ featured_image:
 tags:
   - Graduates
 ---
-#### *"Gone are the incubation periods, graduate programmers are now learning by doing".*
+#### "Gone are the incubation periods, graduate programmers are now learning by doing"
 
 Kate Birney talks to MCV, reiterating our approach to Graduate Recruitment & Training and providing more detail on how our graduates integrate into Firesprite 
 
