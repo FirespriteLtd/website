@@ -1,8 +1,8 @@
 ---
-title: Firesprite Games speaks about culture and foundations
+title: Firesprite speaks about culture and foundations
 date: 2020-03-28T22:07:03.666Z
 draft: false
-summary: 'We talk about heritage, founding culture and what makes the business tick.'
+summary: We talk about heritage, founding culture and what makes the business tick.
 news/categories:
   - careers
 featured_image:
