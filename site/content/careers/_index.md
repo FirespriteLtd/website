@@ -70,4 +70,4 @@ job_listing: >-
 
   If you don’t see something that matches your skills, shoot us an email with your CV and any applicable portfolio material to [jobs@firesprite.com](mailto:jobs@firesprite.com). Our door is always open for superstars!
 ---
-Firesprite Games was founded in 2012 with the goal of creating incredible games on cutting edge hardware.  Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working across PC, Current and Next Generation Consoles.
+Firesprite was founded in 2012 with the goal of creating incredible games on cutting edge hardware.  Led by a management team with over 100 years of collective experience in art, business, design and technical disciplines, we have expanded to a team of over 130 people (we call ourselves 'Sprites'!), working across PC, Current and Next Generation Consoles.
