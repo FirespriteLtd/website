@@ -1,10 +1,9 @@
 ---
-title: Firesprite Games releases The Persistence for PlayStation VR
+title: Firesprite releases The Persistence for PlayStation VR
 date: 2018-07-24T14:05:46.992Z
 draft: false
-summary: >-
-  Our debut sci-fi survival horror roguelike launches today, exclusively for
-  PlayStation VR!
+summary: Our debut sci-fi survival horror roguelike launches today, exclusively
+  for PlayStation VR!
 news/categories:
   - game
 featured_image:
@@ -16,7 +15,7 @@ featured_image:
 
 We're so excited to announce that The Persistence is out now on the PlayStation Store for immediate download with the physical edition available in the US and Europe from tomorrow. \
 \
-In case you haven’t heard of it, The Persistence is the debut title from Firesprite Games. It's a procedurally generated sci-fi horror game, exclusively made for PlayStation®VR.
+In case you haven’t heard of it, The Persistence is the debut title from Firesprite. It's a procedurally generated sci-fi horror game, exclusively made for PlayStation®VR.
 
 ![Screenshot](/images/uploads/games-thepersistence-screen1.jpg "The Persistence Screenshot")
 
