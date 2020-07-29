@@ -2,17 +2,17 @@
 title: Firesprite speaks about bringing The Persistence to Non-VR platforms
 date: 2019-04-17T11:02:40.846Z
 draft: false
-summary: '“As optimistic developers, we thought this would be really easy”, we said.'
+summary: “As optimistic developers, we thought this would be really easy”, we said.
 news/categories:
   - game
 featured_image:
-  alt: Firesprite Games Speaks to MCV
+  alt: Firesprite Speaks to MCV
   src: /images/uploads/The Persistence -Screenshot 1.jpg
-  title: Firesprite Games Speaks to MCV
+  title: Firesprite Speaks to MCV
 tags:
-  - ''
+  - ""
 ---
-####  Firesprite Games MD Graeme Ankers discusses the challenges and opportunities.
+#### Firesprite MD Graeme Ankers discusses the challenges and opportunities.
 
 Recently our MD, Graeme sat down with trade industry publication MCV to discuss the process of bringing The Persistence from a VR to a non-VR medium.
 
