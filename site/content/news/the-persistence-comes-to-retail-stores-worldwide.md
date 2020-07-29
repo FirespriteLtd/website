@@ -25,16 +25,16 @@ North America - Nintendo Switch™,  PlayStation 4 and XBOX One - 4th September 
 
 ###### London, UK - Wednesday, 29th July 2020
 
-Publisher Perp Games and Independent Developer Firesprite Games are excited to confirm the physical release dates for critically acclaimed sci-fi horror experienceThe Persistence.
+Publisher Perp Games and Independent Developer Firesprite are excited to confirm the physical release dates for critically acclaimed sci-fi horror experience The Persistence.
 
-First out of the gate is the Nintendo Switch release forEuropean/PAL territoriesonly, launchingthisFriday 31st July. PlayStation 4 and XBOX One platform versions will launch a little later onSeptember 4th.
+First out of the gate is the Nintendo Switch release for European/PAL territories only, launching this Friday 31st July. PlayStation 4 and XBOX One platform versions will launch a little later on September 4th.
 
 The North American release for Nintendo Switch, Playstation 4 and XBOX One platforms hits on September 29th.
 
 The Persistence offers a brutal take on survival-horror that integrates an innovative rogue-like design into the genre and players are tasked with surviving aboard a doomed deep space colony starship in the year 2521. Said ship is overrun with horrific and murderous aberrations that make their presence known as players explore, evade and fight their way through the depths of an ever-changing labyrinth to bring the ship back to Earth.
 
-“Firesprite has created such an atmospheric, intense, and massively enjoyable game inThe Persistenceand we are absolutely delighted to have the opportunity to bring it to new audiences across all formats,”addsRob Edwards, Managing Director of Perp Games.
+“Firesprite has created such an atmospheric, intense, and massively enjoyable game in The Persistence and we are absolutely delighted to have the opportunity to bring it to new audiences across all formats,”adds Rob Edwards, Managing Director of Perp Games.
 
-“We’re excited about bringing the game to physical formats in partnership with Perp Games,”saidGraeme Ankers, MD and Co-founder of Firesprite Games.“The Persistenceis a totally unique survival-horror experience and we’re looking forward to seeing it hit retail shelves..”
+“We’re excited about bringing the game to physical formats in partnership with Perp Games,”said Graeme Ankers, MD and Co-founder of Firesprite.“The Persistence is a totally unique survival-horror experience and we’re looking forward to seeing it hit retail shelves..”
 
 [You can watch the accolade trailer here](https://www.youtube.com/watch?v=o__gooKDVZg&feature=youtu.be).
