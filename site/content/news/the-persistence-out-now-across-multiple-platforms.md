@@ -1,9 +1,8 @@
 ---
-title: Firesprite Games releases The Persistence across multiple platforms
+title: Firesprite releases The Persistence across multiple platforms
 date: 2020-05-21T08:00:52.661Z
 draft: false
-summary: >-
-  Our critically acclaimed PSVR title comes to new platforms via digital
+summary: Our critically acclaimed PSVR title comes to new platforms via digital
   download today!
 news/categories:
   - game
@@ -24,7 +23,7 @@ Games Publisher Perp Games will publish physical editions across retail on the t
 
 ![The Persistence](/images/uploads/persisteneceboxart.jpg "The Persistence")
 
-Our MD, Graeme Ankers and co-founder of Firesprite Games said in a press statement:
+Our MD, Graeme Ankers and co-founder of Firesprite said in a press statement:
 
 *“It’s really exciting to see The Persistence reach out to new gamers today across multiple formats. For those who played the PSVR version in 2018, we think this new console and PC release will offer a new way to play, and for those coming to The Persistence fresh, expect scares from beginning to end and pulse-racing play aplenty. The game’s procedurally generated environment means no two playthroughs are ever identical and you’ll never find safety in the same spot."*
 
