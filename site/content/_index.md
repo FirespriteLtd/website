@@ -1,5 +1,5 @@
 ---
-title: Welcome to Firesprite Games
+title: Welcome to Firesprite
 featured_image:
   active: true
   alt: Firesprite Games
