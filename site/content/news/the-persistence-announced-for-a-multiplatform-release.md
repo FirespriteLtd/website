@@ -30,7 +30,7 @@ The Persistence offers players a brutal take on survival-horror that integrates 
 
 In The Persistence, players are tasked with surviving on board a doomed deep space colony starship in the year 2521. Said ship is overrun with horrific and murderous aberrations that make their presence known as players explore, evade and fight their way through the depths of an ever-changing labyrinth to bring the ship back to Earth.
 
-By taking the original VR release and adding support for flatscreen play, this fresh version of The Persistence heightens the tension thanks to enhanced environments and post-processing effects, all working seamlessly with tailored UI and controls. Firesprite Games is also pleased to announce that gamers who already own the PlayStation®VR version will also receive these features via an update on PlayStation®4 for no extra cost.
+By taking the original VR release and adding support for flatscreen play, this fresh version of The Persistence heightens the tension thanks to enhanced environments and post-processing effects, all working seamlessly with tailored UI and controls. Firesprite is also pleased to announce that gamers who already own the PlayStation®VR version will also receive these features via an update on PlayStation®4 for no extra cost.
 
 *“We’re excited and very much looking forward to bringing this game and universe we have created to new platforms for players,*” said Graeme Ankers, MD and Co-founder of Firesprite. *“The Persistence is a survival-horror experience designed to keep players on edge from start to finish, and with a procedurally generated environment forming around them, no two playthroughs are ever identical, meaning you will never find safety or security in the same place.”*
 
