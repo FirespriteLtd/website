@@ -12,7 +12,7 @@ featured_image:
 tags:
   - ""
 ---
-##### Northern Tech Awards places Firesprite Games at Number 7 in the rankings
+##### Northern Tech Awards places Firesprite at Number 7 in the rankings
 
 As the 2020 Northern Tech Awards were not able to take place as planned on 26 March in Leeds due to concerns over COVID-19, GP Bullhound held a live virtual event on 27 May, highlighting and celebrating the digital economy of the North of England and Scotland. The event gathered hundreds of entrepreneurs, investors and business leaders from the global tech community.
 
