@@ -2,8 +2,8 @@
 title: The Persistence comes to retail stores in Europe and North America
 date: 2020-07-29T13:04:35.229Z
 draft: false
-summary: Firesprite and Perp Games announce the confirmed release dates for
-  physical retail release.
+summary: Firesprite and Perp Games announce the confirmed release dates for the
+  physical retail launch.
 news/categories:
   - game
 featured_image:
