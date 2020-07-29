@@ -2,17 +2,16 @@
 title: Firesprite talks about philosophy and the legacy of Studio Liverpool
 date: 2018-07-23T08:00:49.563Z
 draft: false
-summary: >-
-  We sat down with the Sixth Axis to talk about our origins and what the future
-  holds.
+summary: We sat down with the Sixth Axis to talk about our origins and what the
+  future holds.
 news/categories:
   - game
 featured_image:
-  alt: Firesprite Games
+  alt: Firesprite
   src: /images/uploads/office.jpg
-  title: Firesprite Games
+  title: Firesprite
 ---
-#### Firesprite Games MD, Graeme Ankers discusses the roots of the studio from the Sony Studio Liverpool days.
+#### Firesprite MD, Graeme Ankers discusses the roots of the studio from the Sony Studio Liverpool days.
 
 Recently Graeme sat down with gaming publication The Sixth Axis to talk about the formation of the studio after the closure of Studio Liverpool and the philosophies we have held onto that kept Studio Liverpool at the forefront of game development.
 
