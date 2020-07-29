@@ -11,7 +11,7 @@ featured_image:
   alt: The Persistence hits stores
   title: "The Persistence "
 ---
-#### AFTER THE DIGITAL RELEASE IN MAY, WE'RE EXCITED TO CONFIRM THE AVAILABILITY OF THE PERSISTENCE FOR NINTENDO SWITCH, PLAYSTATION 4 AND XBOX ONE IN RETAIL STORES!
+#### AFTER THE DIGITAL RELEASE IN MAY, WE ARE EXCITED TO CONFIRM THE AVAILABILITY OF THE PERSISTENCE FOR NINTENDO SWITCH, PLAYSTATION 4 AND XBOX ONE IN RETAIL STORES!
 
 As we announced prior that the physical version of The Persistence would be delayed into Summer, we are excited to announce that is finally coming!  In partnership with our publisher, Perp Games it will be a staggered launch between Europe and North America with the following dates confirmed:
 
@@ -22,8 +22,6 @@ North America - Nintendo Switch™,  PlayStation 4 and XBOX One - 4th September 
 ![The Persistence](/images/uploads/peristencephysical.jpg "The Persistence")
 
 #### PRESS RELEASE AS FOLLOWS:
-
-
 
 ###### London, UK - Wednesday, 29th July 2020
 
