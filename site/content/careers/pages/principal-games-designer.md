@@ -45,3 +45,5 @@ We're looking for a Senior or Principal Game Designer to own and important areas
 You are a self-driven and creative Designer who doesn’t ever settle for second best, you have a track record of delivering exceptional quality in the features you own. You colleagues consider you a safe pair of hands, knowing that when they ask you to own a feature that you will deliver world class results.
 
 You are technically minded enough to work in editor to make ideas a reality and you evangelise the player experience to other members of cross discipline development teams.
+
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to [jobs@firesprite.com](mailto:jobs@firesprite.com) with the Job Reference or hit the apply button below.
