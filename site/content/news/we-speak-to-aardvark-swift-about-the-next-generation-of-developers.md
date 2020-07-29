@@ -10,13 +10,11 @@ featured_image:
   src: /images/uploads/aardvarkswift-podcast.jpg
   title: Aardvark Swift
 ---
-##### Firesprite Games Senior Development Manager Richard Wood, speaks about our approach.
+##### Firesprite Senior Development Manager Richard Wood, speaks about our approach.
 
 In the the debut podcast from Aardvark Swift, Richard Wood gives an insight into life at Firesprite and how we progress our graduate recruitments internally to become the next generation developers of tomorrow.
 
 ![Rich Wood](/images/uploads/Richard-Wood-2-768x553.jpg "Rich Wood")
-
-
 
 Alongside discussing how management and game teams pull together across the various projects,  Rich recently sat down with Abbie to elaborate on our graduate recruitment and training. When graduates join the studio, they’re put into a team of 100 per cent other graduates:
 
