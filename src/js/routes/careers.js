@@ -31,17 +31,19 @@ export default {
         });
 
         this.buttons = document.querySelectorAll('[data-job]');
-        this.buttonClose = document.querySelector('.overlay-close');
-        for (const bt of this.buttons) {
-            bt.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.open(bt.dataset.job)
+        if(this.buttons.length) {
+            this.buttonClose = document.querySelector('.overlay-close');
+            for (const bt of this.buttons) {
+                bt.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.open(bt.dataset.job)
+                });
+            }
+
+            this.buttonClose.addEventListener('click', (e) => {
+                this.close();
             });
         }
-
-        this.buttonClose.addEventListener('click', (e) => {
-            this.close();
-        });
     }
     ,
     open ($id) {
