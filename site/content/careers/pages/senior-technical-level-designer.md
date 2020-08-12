@@ -5,8 +5,6 @@ careers/categories: design
 position_type: full
 email: jobs@firesprite.com
 ---
-
-
 #### DURATION
 
 Permanent
@@ -17,11 +15,11 @@ We offer a very competitive package, which is dependent on experience.
 
 #### THE ROLE
 
-We are looking for a Senior Technical Level Designer to lead a small team helping deliver unique game modes for a Sci-Fi MMO. This is a great opportunity for an ambitious individual looking for their next challenge.
+We are looking for a Senior Technical Level Designer to lead a small team on a huge, globally recognised IP, on an exciting multiplayer shooter project which is in the later stages of production development.
 
-Your responsibilities will include leading the team to help craft and deliver unique experiences in an existing Sci-Fi world. 
+This is a great opportunity for an ambitious individual looking for their next challenge.
 
-You will look for areas in the lore of the game to turn into exciting multiplayer arenas and modes. There is also the opportunity to help shape and add to the lore of the game as new scenarios are created.
+This is an extremely dynamic project, collaborating with a very high-profile client, utilising their assets and pipelines to deliver an original multiplayer experience as part of their wider IP proposition.
 
 The team is already established, and you will be joining the team at an exciting time as they set the direction for further content delivery.
 
@@ -35,8 +33,6 @@ The team is already established, and you will be joining the team at an exciting
 * Reviewing the junior staff’s work and mentoring them
 * Helping plan content for future updates
 * Mix of hands-on in-editor and leadership
-
-
 
 ##### **ROLE REQUIREMENTS:**
 
@@ -54,8 +50,6 @@ The team is already established, and you will be joining the team at an exciting
 ##### **ADDITIONAL OR DESIRED SKILLS:**
 
 * Experience in a range of design roles
-
-
 
 **ABOUT YOU:**
 
