@@ -19,7 +19,7 @@ We offer a very competitive package, which is dependent on experience.
 
 #### THE ROLE
 
-We're looking for a Senior or Principal Game Designer to own and important areas of an all-new Action Adventure project adapted for VR, from one of the most original and successful multimillion selling console IP titles in the last 10 years. This is an exceptionally exciting project, partnering with the IP holder to create a whole new chapter in the exciting and highly original universe they have established, utilising the full immersive capabilities in VR to build a new narrative for fans and newcomers alike.
+We're looking for a Senior or Principal Game Designer to own important areas of an all-new Action Adventure project adapted for VR, from one of the most original and successful multimillion selling console IP titles in the last 10 years. This is an exceptionally exciting project, partnering with the IP holder to create a whole new chapter in the exciting and highly original universe they have established, utilising the full immersive capabilities in VR to build a new narrative for fans and newcomers alike.
 
 ##### **KEY RESPONSIBILITIES:**
 
