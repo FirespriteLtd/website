@@ -1,5 +1,5 @@
 ---
-title: Technical Lever Designer
+title: Technical Level Designer
 ref: "PN-TLD-01 "
 careers/categories: design
 position_type: full
