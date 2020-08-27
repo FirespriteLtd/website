@@ -1,7 +1,7 @@
 ---
 title: Senior Technical Level Designer
 ref: CL-STLD-01
-careers/categories: engineering
+careers/categories: design
 position_type: full
 email: jobs@firesprite.com
 ---
