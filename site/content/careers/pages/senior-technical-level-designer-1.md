@@ -59,4 +59,4 @@ The team is already established, and you will be joining the team at an exciting
 
 You've worked in a Senior Design role for at least 2 years, with at least one released title at this level. You're a proven multiplayer level designer, creating scenarios that draw players into worlds you create and you have a passion for the technical side of development. You're also a natural communicator, very technically minded and able to inspire those around you. You can easily switch between hands on development and leadership roles, having mentored other members of staff in the past.
 
-If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to[jobs@firesprite.com](mailto:jobs@firesprite.com)with the Job Reference or hit the apply button below.
+If you believe you have the right skills and experience for a role on an exciting new project, please email your C.V. and supporting portfolio to [jobs@firesprite.com](mailto:jobs@firesprite.com) with the Job Reference or hit the apply button below.
