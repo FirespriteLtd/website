@@ -2,19 +2,20 @@
 title: Firesprite makes the top 100 fastest growing tech sector UK businesses
 date: 2020-09-07T12:00:21.214Z
 draft: false
-summary: Sunday Times Tech Track celebrates private sector growth.
+summary: Annual Sunday Times Tech Track highlights fastest growing technology
+  businesses in the UK.
 news/categories:
   - press
 featured_image:
-  src: /images/uploads/firesprite_100topbusiness.png
+  src: /images/uploads/news_header_techtrack.png
   alt: Firesprite Tech Track
   title: Firesprite Tech Track
 ---
-#### Firesprite places at #42 in the rankings
+#### Firesprite places at #42 in the rankings in one of eight tech companies in the region.
 
-Following the top 10 placement of Firesprite in the GP Bullhound Northern Tech awards, we're proud to have been placed at number 42 in the prestigious Sunday Times Tech Track 100 business this year.  
+![Sunday Times Tech Track](/images/uploads/news_mainbody_techtrack100.jpg "Sunday Times Tech Track")
 
-Press Release as follows:
+Following the top 10 placement of Firesprite in the GP Bullhound Northern Tech awards, we're proud to have been placed at number 42 in the prestigious Sunday Times Tech Track 100 edition for 2020! Press Release as follows:
 
 > **Liverpool, UK – Monday 07th September** 
 >
