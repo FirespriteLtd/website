@@ -1,5 +1,5 @@
 ---
-title: Firesprite makes the top 100 fastest growing tech sector UK businesses
+title: Firesprite makes the top 100 fastest growing tech businesses in the UK
 date: 2020-09-07T12:00:21.214Z
 draft: false
 summary: Annual Sunday Times Tech Track highlights fastest growing technology
