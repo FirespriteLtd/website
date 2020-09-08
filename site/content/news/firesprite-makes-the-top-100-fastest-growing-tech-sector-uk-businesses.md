@@ -10,7 +10,7 @@ featured_image:
   alt: Firesprite Tech Track
   title: Firesprite Tech Track
 ---
-##### Firesprite places at #42 in the rankings
+#### Firesprite places at #42 in the rankings
 
 Following the top 10 placement of Firesprite in the GP Bullhound Northern Tech awards, we're proud to have been placed at number 42 in the prestigious Sunday Times Tech Track 100 business this year.  
 
