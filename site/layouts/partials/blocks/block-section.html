@@ -1,6 +1,6 @@
 {{$label:= .Button}}
 {{$page := (.Page | urlize)}}
-<div id="trigger-{{$page}}" >
+<div id="trigger-{{$page}}" class="trigger" >
 <section id="section-{{ $page }}">
 <div id="block-{{ $page }}" class="grid-container full block block-image block-section">
     {{with .Context.Site.GetPage .Page}}

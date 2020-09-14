@@ -4,6 +4,7 @@ import fluidBox from  "../util/fluid-box-controller"
 import VideoPopup from "../util/videoPopup";
 import Popup from "../util/popup";
 import TabSlider from "../util/tabSlider";
+import SectionScrollTriggerParallax from "../util/sectionScrollTriggerParallax";
 
 export default {
     init() {
@@ -11,7 +12,7 @@ export default {
     },
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fire
-        const section = new SectionParallax();
+        const section = new SectionScrollTriggerParallax();
         const controller = section.controller();
         const trailer  = new VideoPopup();
         const master = new HeaderBlock(controller);
@@ -22,7 +23,7 @@ export default {
             sections.push(x);
         };
         setTimeout(()=> {
-            section.init(['header', ...sections]);
+            section.init();
         }, 1000);
         fluidBox.init();
     },
