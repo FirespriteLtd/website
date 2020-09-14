@@ -27,8 +27,8 @@ class SectionParallax {
   this.anchoreNav();
   this.sidbarReveal();
   this.containerAnim(sectionArr);
-  this.contentAnim(sectionArr);
-  this.snapping(sectionArr);
+  //this.contentAnim(sectionArr);
+  //this.snapping(sectionArr);
  }
 
  containerAnim(sectionArr){
