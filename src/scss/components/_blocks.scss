@@ -4,7 +4,6 @@
 
   &.full {
     padding-top: rem-calc(100);
-    overflow: hidden;
   }
 
   padding-bottom: rem-calc(100);
@@ -184,5 +183,14 @@
     margin-bottom: 0;
   }
 }
+
+.games {
+  .block {
+    .full {
+      overflow: unset;
+    }
+  }
+}
+
 
 
