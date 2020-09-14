@@ -113,7 +113,7 @@ class HeaderBlock {
     },
     onLeave: () => {
      console.log('LEAVE')
-     gsap.to(scope.video,{opacity:0, duration:1, onComplete: () => {
+     gsap.to(scope.video,{opacity:0, duration:.3, onComplete: () => {
        console.log('PAUSE')
        scope.player.pause();
       }})
