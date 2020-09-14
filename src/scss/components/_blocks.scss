@@ -4,6 +4,7 @@
 
   &.full {
     padding-top: rem-calc(100);
+    overflow: hidden;
   }
 
   padding-bottom: rem-calc(100);
@@ -160,6 +161,9 @@
     @include breakpoint(small){
       min-width: 100%;
     }
+    @include breakpoint(medium){
+      min-width: unset;
+    }
   }
   .slick-dots{
     margin-top: rem-calc(20);
@@ -177,7 +181,17 @@
 
   ul{
     justify-content: center;
+    margin-bottom: 0;
   }
 }
+
+.games {
+  .block {
+    .full {
+      overflow: unset;
+    }
+  }
+}
+
 
 
