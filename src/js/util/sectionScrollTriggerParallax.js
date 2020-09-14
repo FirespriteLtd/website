@@ -2,7 +2,7 @@ import {gsap} from 'gsap';
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollMagic from "scrollmagic/scrollmagic/minified/ScrollMagic.min";
-import {Sine} from "gsap/all";
+
 
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -50,7 +50,7 @@ class SectionScrollTriggerParallax {
       pinSpacing: false,
       markers: true
      },
-     y: (i, target) => -2000 * .5,
+     y: (i, target) => -2000 * .7,
      ease: "none"
     })
    }

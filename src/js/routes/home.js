@@ -12,15 +12,15 @@ export default {
        new TabSlider('.news-slider');
     },
     finalize() {
-        //const section = new SectionParallax();
-        //const controller = section.controller();
-        //const master = new HeaderBlock(controller);
         const section = new SectionScrollTriggerParallax()
+        const controller = section.controller();
+
+
 
         setTimeout(()=> {
-
+            const master = new HeaderBlock(controller);
             //new VideoBlock('work', controller);
-           // new VideoBlock('games', controller);
+           //new VideoBlock('games', controller);
            // new VideoBlock('careers', controller);
             section.init();
 

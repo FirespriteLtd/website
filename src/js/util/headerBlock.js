@@ -7,9 +7,11 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(CSSRulePlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.defaultEase = Expo.easeOut;
 
@@ -35,16 +37,20 @@ class HeaderBlock {
 
  createVideoPlayer(){
   const player = new YTPlayer('#ytplayer-header');
-  player.load(this.video.data('video'), true);
+  const scope = this;
+  console.log('PLAYER START')
+  player.load(scope.video.data('video'), true);
   player.setPlaybackQuality('highres');
   player.setVolume(0);
   player.seek(20);
   player.play();
   player.on('ended', () => {
+   console.log('IS PLAYING')
    player.play();
   })
   player.on('playing', () =>{
-   gsap.to(this.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
+   console.log('IS PLAYING')
+   gsap.to(scope.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
   })
   return player;
  }
@@ -87,31 +93,31 @@ class HeaderBlock {
  }
 
  videoController() {
+  const scope = this;
   this.player = this.createVideoPlayer();
-
-  const anim = new ScrollMagic.Scene(
-   {
-   triggerElement: $('.master-header'),
-    triggerHook:0,
-    duration: '5%',
+  this.player.addListener('ready', ()=> {
+   console.log('PLAYER READY')
   })
-
-
-   .addTo(this.controller)
-
-  anim.on('leave', (event)=> {
-   gsap.to(this.video,{opacity:0, duration:1, onComplete: () => {
-     this.player.pause();
-    }})
-
+  ScrollTrigger.create({
+   trigger: $('.master-header'),
+   start: "-10px top",
+   onEnter: () => {
+     console.log('ENTER')
+    scope.player.seek(0)
+    scope.player.play();
+   },
+   onEnterBack: () => {
+    console.log('ENTER BACK')
+    scope.player.play();
+   },
+   onLeave: () => {
+    console.log('LEAVE')
+    gsap.to(scope.video,{opacity:0, duration:1, onComplete: () => {
+      scope.player.pause();
+     }})
+   }
   });
-
-  anim.on('enter', (event)=> {
-   this.player.seek(0)
-   this.player.play();
-  });
-
-  return anim;
+  return null;
  }
 
  scrollpointer() {
