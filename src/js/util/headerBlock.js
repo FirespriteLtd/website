@@ -95,28 +95,32 @@ class HeaderBlock {
  videoController() {
   const scope = this;
   this.player = this.createVideoPlayer();
-  this.player.addListener('ready', ()=> {
+  this.player.on('buffering', ()=> {
    console.log('PLAYER READY')
-  })
-  ScrollTrigger.create({
-   trigger: $('.master-header'),
-   start: "-10px top",
-   onEnter: () => {
+   ScrollTrigger.create({
+    trigger: $('.master-header'),
+    start: "-10px top",
+    end: "bottom center",
+    markers: true,
+    onEnter: () => {
      console.log('ENTER')
-    scope.player.seek(0)
-    scope.player.play();
-   },
-   onEnterBack: () => {
-    console.log('ENTER BACK')
-    scope.player.play();
-   },
-   onLeave: () => {
-    console.log('LEAVE')
-    gsap.to(scope.video,{opacity:0, duration:1, onComplete: () => {
-      scope.player.pause();
-     }})
-   }
-  });
+     scope.player.seek(0)
+     scope.player.play();
+    },
+    onEnterBack: () => {
+     console.log('ENTER BACK')
+     scope.player.play();
+    },
+    onLeave: () => {
+     console.log('LEAVE')
+     gsap.to(scope.video,{opacity:0, duration:1, onComplete: () => {
+       console.log('PAUSE')
+       scope.player.pause();
+      }})
+    }
+   });
+  })
+
   return null;
  }
 

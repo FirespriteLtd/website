@@ -34,8 +34,7 @@ class SectionScrollTriggerParallax {
      anticipatePin: true,
      pinSpacing: false,
      end: "+=2000",
-     scrub: true,
-     markers: true
+     scrub: true
     }
 
    });
@@ -47,8 +46,7 @@ class SectionScrollTriggerParallax {
       start: "top top",
       end: "+=" + (2000 + window.innerHeight / 2 - 50),
       scrub: true,
-      pinSpacing: false,
-      markers: true
+      pinSpacing: false
      },
      y: (i, target) => -2000 * .7,
      ease: "none"
