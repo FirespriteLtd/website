@@ -7,10 +7,10 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import $ from "jquery";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
-//import { ScrollTrigger} from "gsap/types/scroll-trigger";
+
 
 gsap.registerPlugin(SplitText);
-//gsap.registerPlugin(ScrollTrigger)
+
 
 class VideoBlock {
 
