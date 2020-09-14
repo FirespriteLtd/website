@@ -53,10 +53,11 @@ class SectionScrollTriggerParallax {
     })
    }
    }
+   /*
     ScrollTrigger.create({
      trigger: elem,
      snap: 1 / (gsap.utils.toArray('.trigger').length  ) // snap whole page to the closest section!
-    });
+    });*/
   })
 
   }, 500);
