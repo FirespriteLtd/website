@@ -103,7 +103,7 @@ class HeaderBlock {
      trigger: $('.master-header'),
      start: "-10px top",
      end: "bottom center",
-     markers: true,
+     scroller: ".smooth-scroll",
      onEnter: () => {
       console.log('ENTER')
       scope.player.seek(0)
@@ -136,6 +136,7 @@ class HeaderBlock {
       {
        triggerElement: $('.scroll-pointer'),
        triggerHook:0.5,
+
        duration: 100,
       })
       .setTween(tl)

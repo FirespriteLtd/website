@@ -55,7 +55,8 @@ module.exports = {
      fetch: 'exports-loader?self.fetch!whatwg-fetch/dist/fetch.umd',
      $: 'jquery',
      jQuery: 'jquery',
-     "jquery-validation": 'jquery-validation'
+     "jquery-validation": 'jquery-validation',
+     fluidBox: "fluidbox"
    }),
 
     new AssetsPlugin({

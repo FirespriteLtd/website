@@ -3,7 +3,6 @@ import HeaderBlock from "../util/headerBlock";
 import SectionParallax from "../util/sectionParallax";
 import SectionScrollTriggerParallax from "../util/sectionScrollTriggerParallax";
 import TwitterBlock from "../util/twitterBlock";
-import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
 import TabSlider from "../util/tabSlider";
 
 export default {
@@ -20,11 +19,12 @@ export default {
         setTimeout(()=> {
             const master = new HeaderBlock(controller);
             //new VideoBlock('work', controller);
-           //new VideoBlock('games', controller);
-           // new VideoBlock('careers', controller);
-            section.init();
 
-            scrollSnapPolyfill();
+           // new VideoBlock('careers', controller);
+            section.init([  new VideoBlock('games', controller)]);
+
+
+
 
         }, 500)
 

@@ -85,6 +85,7 @@
     "imagesloaded": "^4.1.4",
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.2",
+    "locomotive-scroll": "^3.6.1",
     "mkdirp": "^0.5.5",
     "mobile-detect": "^1.4.4",
     "netlify-cms": "^2.10.57",

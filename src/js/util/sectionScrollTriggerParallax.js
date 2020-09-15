@@ -2,7 +2,7 @@ import {gsap} from 'gsap';
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollMagic from "scrollmagic/scrollmagic/minified/ScrollMagic.min";
-
+import LocomotiveScroll from "locomotive-scroll"
 
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -15,23 +15,44 @@ class SectionScrollTriggerParallax {
  }
 
  controller() {
-
   this.controller = new ScrollMagic.Controller({refreshInterval: 50});
-
   return this.controller;
  }
 
- init(){
+ init(addScrolls){
+
   setTimeout(()=>{
+
+   const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true
+   });
+
+   locoScroll.on("scroll", ScrollTrigger.update);
+
+   ScrollTrigger.scrollerProxy(".smooth-scroll", {
+    scrollTop(value) {
+     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+    getBoundingClientRect() {
+     return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+    },
+    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+   });
+
+
    gsap.utils.toArray('.trigger').forEach( (elem, i) => {
    if((gsap.utils.toArray('.trigger').length -1) !== i){
    gsap.to(elem, {
     scrollTrigger: {
      trigger: elem,
-     pin: elem,
+     pin: true,
+     start: "top top",
+     scroller: ".smooth-scroll",
      anticipatePin: true,
      pinSpacing: false,
-     end: (i + 1) * innerHeight,
+     end: "+=100%",
      scrub: true,
      snap: {
       snapTo: 1,
@@ -48,10 +69,9 @@ class SectionScrollTriggerParallax {
       scrollTrigger: {
        trigger: elem,
        start: "top top",
+       scroller: ".smooth-scroll",
        end: "+=" + (i + 1) * innerHeight,
        scrub: true,
-       pinSpacing: false,
-       marker: true
       },
       y: (i, target) => - (i + 1) * innerHeight / 3,
       ease: "none"
@@ -65,8 +85,8 @@ class SectionScrollTriggerParallax {
       start: "top top",
       end: "+=" + innerHeight * 2,
       scrub: true,
-      pinSpacing: false,
-      marker: true
+      scroller: ".smooth-scroll",
+      marker: false
      },
      y: (i, target) => - innerHeight / 2,
      ease: "none"
@@ -75,11 +95,18 @@ class SectionScrollTriggerParallax {
    }
   })
 
+   if(addScrolls.length){
+    addScrolls.forEach(v => {
+      v.start();
+    })
+   }
+
+   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+   ScrollTrigger.refresh();
+
   }, 500);
-
-
-
-
 
  }
 

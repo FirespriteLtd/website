@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="{{ $.Site.Language.Lang }}">
+<html lang="{{ $.Site.Language.Lang }}" >
 {{ block "baseurl" . }}{{end}}
 {{ block "head" . }}{{ partial "head" . }}{{end}}
 {{ $currentPage := .Parent }}
@@ -19,7 +19,7 @@
       {{ block "sub-navigation" . }}{{end}}
       {{ block "social-media" . }}{{partial "social-media" .}}{{end}}
       <main>
-            <div id="container-scroll">
+            <div id="container-scroll" class="smooth-scroll">
                 {{ block "header" . }}{{ partial "header-section"  (dict "Content" . )}}{{end}}
                 {{ block "main" . }}{{end}}
                 {{ block "pusher" . }}{{end}}

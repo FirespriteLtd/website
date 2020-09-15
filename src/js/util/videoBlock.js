@@ -7,10 +7,10 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import $ from "jquery";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import { SplitText } from 'gsap/SplitText';
-
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(SplitText);
-
+gsap.registerPlugin(ScrollTrigger);
 
 class VideoBlock {
 
@@ -21,22 +21,22 @@ class VideoBlock {
     this.block = $(`#section-${id}`);
     this.image = this.block.find('.image');
     this.video = this.block.find('.video-wrapper');
-    this.start(id);
+    //this.start(id);
   }
 
-  start(id){
+  start(){
 
     if(this.mobileCheck()){
       return;
     }
 
     if(this.block.find('.video-wrapper').length){
-      this.player = this.createVideoPlayer(id);
+      this.player = this.createVideoPlayer(this.id);
       if(this.player){
-       this.videoPlayerActiveSetting(id);
+       this.videoPlayerActiveSetting(this.id);
       }
     }
-    this.introAnim(id);
+    this.introAnim(this.id);
   }
 
   mobileCheck(){
@@ -120,6 +120,18 @@ class VideoBlock {
     tl.add(this.charAnim(id, false));
     tl.from([header.find('p'), headerButton], {opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeOut}, "=-0.5");
 
+    ScrollTrigger.create( {
+      trigger: `#trigger-${id}`,
+      start: "-=100% top",
+      end: "bottom 80%",
+      scroller: ".smooth-scroll",
+      animation: tl,
+      scrub: true,
+      marker: true
+     }
+    )
+
+    /*
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook: 0.5,
@@ -128,7 +140,7 @@ class VideoBlock {
      .addTo(this.controller);
 
     this.scenes.push(anim);
-
+*/
   }
 
 }
