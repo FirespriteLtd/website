@@ -16,13 +16,9 @@ export default {
         const trailer  = new VideoPopup();
         new TabSlider('.tab-slider');
 
-        const sections = []
-        for(let x=0; x < ($('#container-scroll > div').length -1); x++) {
-            sections.push(x);
-        };
         setTimeout(()=> {
             section.init([new HeaderBlock()]);
-        }, 1000);
+        }, 250);
         fluidBox.init();
     },
 };

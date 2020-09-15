@@ -43,7 +43,8 @@ class SectionScrollTriggerParallax {
 
 
    gsap.utils.toArray('.trigger').forEach( (elem, i) => {
-   if((gsap.utils.toArray('.trigger').length -1) !== i){
+
+   if((gsap.utils.toArray('.trigger').length -1 ) !== i){
    gsap.to(elem, {
     scrollTrigger: {
      trigger: elem,
@@ -92,6 +93,28 @@ class SectionScrollTriggerParallax {
      ease: "none"
     })
    }
+   } else {
+     if(gsap.utils.toArray('.trigger').length === 1 ){
+      console.log('init header')
+      gsap.to(elem, {
+       //scale: 0.5,
+       rotateX: 45,
+       opacity: .4,
+       ease: "none",
+       transformOrigin: 'bottom bottom',
+       transformStyle:"preserve-3d",
+
+       scrollTrigger: {
+        trigger: elem,
+        start: "top top",
+        scroller: ".smooth-scroll",
+        end: "bottom top",
+        //pin: true,
+        scrub: true
+       }
+
+      });
+     }
    }
   })
 

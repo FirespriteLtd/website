@@ -29,6 +29,8 @@ class HeaderBlock {
    if(!mc.match('mobile')) {
     this.videoController();
    }
+  } else {
+
   }
   this.animHeader();
   this.scrollpointer();
@@ -61,8 +63,6 @@ class HeaderBlock {
    const title = new SplitText($('.hero-header-inner').find('h1'), {type: "words,chars"});
    chars = [...title.words];
   }
-
-
 
   if($('#header-trailer').length) {
    tl.add(gsap.from('#header-trailer', {opacity: 0, duration: 0.5, scale:0.8, ease: Expo.easeOut}));
@@ -125,6 +125,8 @@ class HeaderBlock {
 
   return null;
  }
+
+
 
  scrollpointer() {
 

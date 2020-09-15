@@ -1,5 +1,15 @@
 .games{
+
+  #container-scroll{
+    perspective:800px;
+  }
+
+  #root.b-c-secondary {
+    position: relative;
+  }
     .overview {
+      transform: translateZ(1px);
+
       h2, h6 {
         color: $primary-color;
       }
