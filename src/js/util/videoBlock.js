@@ -17,6 +17,7 @@ class VideoBlock {
   constructor(id, controller) {
     this.id = id;
     this.scenes = [];
+    this.ready = false;
     this.controller = controller;
     this.block = $(`#section-${id}`);
     this.image = this.block.find('.image');
@@ -31,10 +32,7 @@ class VideoBlock {
     }
 
     if(this.block.find('.video-wrapper').length){
-      this.player = this.createVideoPlayer(this.id);
-      if(this.player){
-       this.videoPlayerActiveSetting(this.id);
-      }
+      this.player = this.createVideoPlayer();
     }
     this.introAnim(this.id);
   }
@@ -44,8 +42,8 @@ class VideoBlock {
     return mc.match('mobile|tablet');
   }
 
-  createVideoPlayer(id){
-    const playerId = `#ytplayer-${id}`;
+  createVideoPlayer(){
+    const playerId = `#ytplayer-${this.id}`;
 
     if(this.block.find(playerId)) {
       const option = {
@@ -72,14 +70,46 @@ class VideoBlock {
       player.on('playing', () =>{
         gsap.to(this.video,{opacity:1, z:0, duration: 1, overwrite: true, ease:Sine.easeIn});
       })
-      return player;
+
+      this.player = player;
+      this.videoPlayerActiveSetting(player);
+
     } else {
       return null;
     }
   }
 
-  videoPlayerActiveSetting(id){
+  videoPlayerActiveSetting(player){
+    const scope = this;
+    console.log('VIDEO BLOCL PLAYER READY', scope.id)
+      if(!scope.ready) {
+        ScrollTrigger.create({
+          trigger: `#trigger-${scope.id}`,
+          start: "-10px top",
+          end: "bottom center",
+          scroller: ".smooth-scroll",
+          onEnter: () => {
+            console.log('ENTER')
+            player.seek(0)
+            player.play();
+          },
+          onEnterBack: () => {
+            console.log('ENTER BACK')
+            player.play();
+          },
+          onLeave: () => {
+            console.log('LEAVE')
+            player.pause();
 
+          }
+
+        });
+        scope.ready = true;
+      }
+
+
+    return null;
+    /*
     const anim = new ScrollMagic.Scene({
       triggerElement: `#trigger-${id}`,
       triggerHook:0,
@@ -99,7 +129,9 @@ class VideoBlock {
       this.player.play();
     });
 
-    this.scenes.push(anim);
+    //this.scenes.push(anim);
+
+     */
   }
 
 
@@ -131,16 +163,6 @@ class VideoBlock {
      }
     )
 
-    /*
-    const anim = new ScrollMagic.Scene({
-      triggerElement: `#trigger-${id}`,
-      triggerHook: 0.5,
-    })
-     .setTween(tl)
-     .addTo(this.controller);
-
-    this.scenes.push(anim);
-*/
   }
 
 }

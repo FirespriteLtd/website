@@ -21,7 +21,6 @@ class HeaderBlock {
    this.video = $('.master-header .video-wrapper');
    this.ready = false;
    this.controller = controller;
-   this.start();
  }
 
  start(){

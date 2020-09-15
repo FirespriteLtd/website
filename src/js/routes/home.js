@@ -1,6 +1,5 @@
 import VideoBlock from "../util/videoBlock";
 import HeaderBlock from "../util/headerBlock";
-import SectionParallax from "../util/sectionParallax";
 import SectionScrollTriggerParallax from "../util/sectionScrollTriggerParallax";
 import TwitterBlock from "../util/twitterBlock";
 import TabSlider from "../util/tabSlider";
@@ -12,21 +11,8 @@ export default {
     },
     finalize() {
         const section = new SectionScrollTriggerParallax()
-        const controller = section.controller();
+        section.init([ new HeaderBlock() , new VideoBlock('games'),new VideoBlock('careers')]);
 
-
-
-        setTimeout(()=> {
-            const master = new HeaderBlock(controller);
-            //new VideoBlock('work', controller);
-
-           // new VideoBlock('careers', controller);
-            section.init([  new VideoBlock('games', controller)]);
-
-
-
-
-        }, 500)
 
         setTimeout(()=> {
             new TwitterBlock();
