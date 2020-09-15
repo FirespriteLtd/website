@@ -25,9 +25,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   will-change: transform, opacity;
-  transform: translateZ(0);
-
-
 
   &:after {
     @include pseudo();

@@ -26,38 +26,53 @@ class SectionScrollTriggerParallax {
    gsap.utils.toArray('.trigger').forEach( (elem, i) => {
    if((gsap.utils.toArray('.trigger').length -1) !== i){
    gsap.to(elem, {
-    y: (i, target) => -2000 * target.dataset.speed,
-    ease: "none",
     scrollTrigger: {
      trigger: elem,
      pin: elem,
      anticipatePin: true,
      pinSpacing: false,
-     end: "+=2000",
-     scrub: true
+     end: (i + 1) * innerHeight,
+     scrub: true,
+     snap: {
+      snapTo: 1,
+      duration: {min: 0.2, max: .8},
+      delay: 0.2,
+      ease: "power1.inOut"
+     }
     }
 
    });
 
-   if($(elem).find('.block-section')) {
-    gsap.to($(elem).find('.block-section'), {
+    if($(elem).find('.imageWrapper')) {
+     gsap.to($(elem).find('.imageWrapper'), {
+      scrollTrigger: {
+       trigger: elem,
+       start: "top top",
+       end: "+=" + (i + 1) * innerHeight,
+       scrub: true,
+       pinSpacing: false,
+       marker: true
+      },
+      y: (i, target) => - (i + 1) * innerHeight / 3,
+      ease: "none"
+     })
+    }
+
+   if($(elem).find('.block-anim')) {
+    gsap.to($(elem).find('.block-anim'), {
      scrollTrigger: {
       trigger: elem,
       start: "top top",
-      end: "+=" + (2000 + window.innerHeight / 2 - 50),
+      end: "+=" + innerHeight * 2,
       scrub: true,
-      pinSpacing: false
+      pinSpacing: false,
+      marker: true
      },
-     y: (i, target) => -2000 * .7,
+     y: (i, target) => - innerHeight / 2,
      ease: "none"
     })
    }
    }
-   /*
-    ScrollTrigger.create({
-     trigger: elem,
-     snap: 1 / (gsap.utils.toArray('.trigger').length  ) // snap whole page to the closest section!
-    });*/
   })
 
   }, 500);
