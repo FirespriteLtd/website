@@ -13,9 +13,7 @@ export default {
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fire
         const section = new SectionScrollTriggerParallax();
-        const controller = section.controller();
         const trailer  = new VideoPopup();
-        const master = new HeaderBlock(controller);
         new TabSlider('.tab-slider');
 
         const sections = []
@@ -23,7 +21,7 @@ export default {
             sections.push(x);
         };
         setTimeout(()=> {
-            section.init();
+            section.init([new HeaderBlock()]);
         }, 1000);
         fluidBox.init();
     },
