@@ -64,49 +64,44 @@ export default {
 
   },
   init() {
-
-    offcanvasAnimation();
-
-
+    //offcanvasAnimation();
   },
   finalize() {
 
     this.loader = new Loader()
-    this.loader.start();
+    const images = this.loader.start();
+    $('#container-scroll').imagesLoaded().done(() => {
+      setTimeout(() => {
+        window.locoScroll = new LocomotiveScroll({
+          el: document.querySelector(".smooth-scroll"),
+          smooth: true,
+          multiplier: 2,
+          getSpeed: true,
+          getDirection: true,
+          // scrollFromAnywhere: true
+        });
+
+        window.locoScroll.on('call', (e) => {
+          console.log('call' ,e);
+        })
 
 
+        window.locoScroll.on('scroll', (e) => {
+          if(isNaN(e.speed)){
+            console.log('scroller' ,e);
+          }
+        })
 
-    window.locoScroll = new LocomotiveScroll({
-      el: document.querySelector(".smooth-scroll"),
-      smooth: true,
-      multiplier: 2,
-      getSpeed: true,
-      getDirection: true,
-      scrollFromAnywhere: true
-    });
+        window.locoScroll.update();
 
+      }, 100);
 
-    window.locoScroll.on('call', (e) => {
-      console.log('call' ,e);
     })
-
-
-    window.locoScroll.on('scroll', (e) => {
-
-      if(isNaN(e.speed)){
-        console.log('scroller' ,e);
-
-      }
-    })
-
-    window.locoScroll.update();
-
-
 
     if(this.mobileCheck()){
-      this.desktop();
+      //this.desktop();
     } else {
-      this.desktop();
+      //this.desktop();
     }
 
   },

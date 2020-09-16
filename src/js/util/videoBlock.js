@@ -88,16 +88,13 @@ class VideoBlock {
           end: "bottom center",
           scroller: ".smooth-scroll",
           onEnter: () => {
-            console.log('ENTER')
             player.seek(0)
             player.play();
           },
           onEnterBack: () => {
-            console.log('ENTER BACK')
             player.play();
           },
           onLeave: () => {
-            console.log('LEAVE')
             player.pause();
 
           }

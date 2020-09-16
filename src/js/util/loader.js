@@ -6,8 +6,6 @@ class Loader {
         const clipMask = 'polygon(0 0, 100% 0 , 100% 100%, 0 100% )';
         const element = document.getElementById('loader-overlay');
 
-        console.log('browser', window.navigator.userAgent);
-
         new imagesLoaded(document.querySelector('#container-scroll'), () => {
             const isCached = false;
             console.log('isCached', isCached);

@@ -36,7 +36,12 @@
   }
 }
 
+.off-canvas{
+  //display: none;
+}
+
 .off-canvas.is-open{
+  display: block;
   transform: translate3d(0, 0, 4px);
 
 }

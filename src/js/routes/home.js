@@ -10,8 +10,8 @@ export default {
        new TabSlider('.news-slider');
     },
     finalize() {
-        const section = new SectionScrollTriggerParallax()
-        section.init([ new HeaderBlock() , new VideoBlock('games'),new VideoBlock('careers')]);
+       const section = new SectionScrollTriggerParallax()
+       section.init([ new HeaderBlock() , new VideoBlock('games'),new VideoBlock('careers')]);
 
 
         setTimeout(()=> {
