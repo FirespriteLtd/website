@@ -2,7 +2,7 @@
 title: Games
 subtitle: Great games made by passionate people.
 featured_image:
-  active: true
+  active: false
   alt: Games
   id: "lxoAV83puXg"
   src: /images/uploads/OPM_5_optimised.jpg
