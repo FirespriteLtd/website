@@ -2,6 +2,7 @@ import $ from "jquery";
 import MobileDetect from "mobile-detect";
 import { gsap } from "gsap";
 import Loader from "../util/loader";
+import LocomotiveScroll from "locomotive-scroll";
 
 const offcanvasAnimation = () => {
 
@@ -66,18 +67,47 @@ export default {
 
     offcanvasAnimation();
 
-    if(this.mobileCheck()){
-      this.desktop();
-    } else {
-      this.desktop();
-    }
+
   },
   finalize() {
 
     this.loader = new Loader()
     this.loader.start();
 
+
+
+    window.locoScroll = new LocomotiveScroll({
+      el: document.querySelector(".smooth-scroll"),
+      smooth: true,
+      multiplier: 2,
+      getSpeed: true,
+      getDirection: true,
+      scrollFromAnywhere: true
+    });
+
+
+    window.locoScroll.on('call', (e) => {
+      console.log('call' ,e);
+    })
+
+
+    window.locoScroll.on('scroll', (e) => {
+
+      if(isNaN(e.speed)){
+        console.log('scroller' ,e);
+
+      }
+    })
+
     window.locoScroll.update();
+
+
+
+    if(this.mobileCheck()){
+      this.desktop();
+    } else {
+      this.desktop();
+    }
 
   },
 };

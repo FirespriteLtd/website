@@ -22,7 +22,6 @@ class VideoBlock {
     this.block = $(`#section-${id}`);
     this.image = this.block.find('.image');
     this.video = this.block.find('.video-wrapper');
-    //this.start(id);
   }
 
   start(){
@@ -61,6 +60,7 @@ class VideoBlock {
       /// here you can set quality of the player's stream
       /// player.setPlaybackQuality('hd1080')
       player.on('ended', () => {
+        console.log('REPLAY')
         player.seek(0);
         player.play();
       })
@@ -81,7 +81,6 @@ class VideoBlock {
 
   videoPlayerActiveSetting(player){
     const scope = this;
-    console.log('VIDEO BLOCL PLAYER READY', scope.id)
       if(!scope.ready) {
         ScrollTrigger.create({
           trigger: `#trigger-${scope.id}`,
@@ -109,29 +108,6 @@ class VideoBlock {
 
 
     return null;
-    /*
-    const anim = new ScrollMagic.Scene({
-      triggerElement: `#trigger-${id}`,
-      triggerHook:0,
-      duration: '50%',
-    })
-     .addTo(this.controller);
-
-    anim.on('leave', (event)=> {
-      gsap.to(this.video,{opacity:0, z:0, duration:0.5, overwrite: true, onComplete: () =>{
-          this.player.pause();
-        }})
-
-    });
-
-    anim.on('enter', (event)=> {
-      this.player.seek(0)
-      this.player.play();
-    });
-
-    //this.scenes.push(anim);
-
-     */
   }
 
 
@@ -144,22 +120,25 @@ class VideoBlock {
   }
 
   introAnim(id){
-    const headerButton = this.block.find('.header-button a');
+    const headerButton = this.block.find('.header-button');
     const tl = gsap.timeline({repeat:0, delay: 0.2});
     const header = this.block.find('.header-content');
 
+    console.log('BUTTON', headerButton)
+
     tl.fromTo([header.find('h2')], {alpha: 0, scale:8}, {alpha:1,scale:1, duration:0.5});
     tl.add(this.charAnim(id, false));
-    tl.from([header.find('p'), headerButton], {opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeOut}, "=-0.5");
+    tl.from( header.find('p') ,{opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeOut}, "=-0.5");
+    tl.from( headerButton, {opacity:0, y: '100%' , rotateX:.9, duration:.5, ease: Sine.easeOut}, "=-1");
 
     ScrollTrigger.create( {
       trigger: `#trigger-${id}`,
-      start: "-=100% top",
+      start: "top 70%",
       end: "bottom 80%",
       scroller: ".smooth-scroll",
       animation: tl,
       scrub: true,
-      marker: true
+      markers: false
      }
     )
 

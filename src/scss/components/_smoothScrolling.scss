@@ -21,6 +21,7 @@ html.has-scroll-dragging {
   top: 0;
   width: 11px;
   height: 100%;
+  z-index: 9999;
   transform-origin: center right;
   transition: transform 0.3s, opacity 0.3s;
   opacity: 0; }

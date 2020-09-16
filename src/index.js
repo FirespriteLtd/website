@@ -4,7 +4,6 @@ import "./scss/app.scss";
  Foundation
  =========================================================================== */
 import $ from 'jquery';
-import 'custom-event-polyfill';
 
 import Foundation from 'foundation-sites/dist/js/foundation.min';
 /* Foundation Imports */
@@ -58,18 +57,8 @@ dom.watch();
 /* ===========================================================================
  Packages
  =========================================================================== */
-import LocomotiveScroll from "locomotive-scroll";
-window.locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".smooth-scroll"),
-    smooth: true,
-    multiplier: 2,
-    getSpeed: true,
-    getDirection: true
-});
 
-window.addEventListener('load', () => {
-    window.locoScroll.update();
-})
+
 
 
 /* ===========================================================================
