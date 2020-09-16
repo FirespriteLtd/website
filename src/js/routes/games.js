@@ -17,6 +17,16 @@ export default {
         const controls =  new SectionScrollControls();
         new TabSlider('.tab-slider');
 
+        const sections = []
+
+        for(let x=0; x < ($('#container-scroll > div').length -1); x++) {
+            sections.push(x);
+        };
+
+        console.log('SECTION', sections)
+
+        controls.navIndicator(sections);
+
         setTimeout(()=> {
             section.init([master]);
             controls.init();

@@ -1,6 +1,6 @@
 import $ from "jquery";
 import MobileDetect from "mobile-detect";
-import { gsap, Power2 } from "gsap";
+import { gsap } from "gsap";
 import Loader from "../util/loader";
 
 const offcanvasAnimation = () => {

@@ -14,7 +14,8 @@ class SectionScrollControls {
   this.sidebarReveal();
  }
 
- scrollDirection(entry) {
+ scrollDir(entry) {
+
   const currentY = entry.boundingClientRect.y;
   const currentRatio = entry.intersectionRatio;
   const isIntersecting = entry.isIntersecting;
@@ -46,7 +47,7 @@ class SectionScrollControls {
   return Math.abs(offset - pos) / 800;
  }
 
- navIndicator(section) {
+ navSettings(section) {
   const navigation = document.querySelectorAll('#sub-nav a');
 
   navigation.forEach(item => {
@@ -56,6 +57,32 @@ class SectionScrollControls {
     item.parentElement.classList.remove('is-active');
    }
   });
+ }
+
+ navIndicator(sections) {
+  let dir = '';
+
+  const sectionList = sections.map(item => {
+   return `#trigger-${item}`
+  });
+
+  console.log('SECTION', sectionList)
+
+  const thresholdArray = steps => Array(steps + 1)
+   .fill(0)
+   .map((_, index) => index / steps || 0);
+
+  let observer = new IntersectionObserver((entries, observer) => {
+   entries.forEach(entry => {
+    if(entry.isIntersecting){
+     this.navSettings(entry.target.id.split('-')[1]);
+    }
+   })
+  }, {threshold: [0, 0.25, 0.5, 0.75, 1]}); //
+
+  document.querySelectorAll(sectionList).forEach(block => {
+   observer.observe(block);
+  })
  }
 
  anchorNav() {
@@ -88,7 +115,7 @@ class SectionScrollControls {
    .map((_, index) => index / steps || 0);
   let observer = new IntersectionObserver((entries, observer) => {
    entries.forEach(entry => {
-      let current = this.scrollDirection(entry);
+      let current = this.scrollDir(entry);
       if(current !== dir) {
        dir = current;
        switch (current) {
