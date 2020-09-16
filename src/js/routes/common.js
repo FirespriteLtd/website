@@ -1,5 +1,4 @@
 import $ from "jquery";
-import imagesLoaded from "imagesloaded";
 import MobileDetect from "mobile-detect";
 import { gsap, Power2 } from "gsap";
 import Loader from "../util/loader";
@@ -29,19 +28,18 @@ export default {
   },
   desktop() {
     let p_scroll = 0;
-    const scrollArea = window;
-    setTimeout(() => {
-      $(scrollArea).scroll(function () {
-        if($(scrollArea).scrollTop() !== 0) {
-          if ($(scrollArea).scrollTop() > 15) {
+    window.locoScroll.on('scroll', d => {
+      if(d){
+        if(d.scroll.y !== 0) {
+          if (d.scroll.y > 15) {
             $('.top-bar').addClass('is-stuck');
             $('.title-bar').addClass('is-stuck');
           } else {
             $('.top-bar').removeClass('is-stuck');
             $('.title-bar').removeClass('is-stuck');
           }
-          if ($(scrollArea).scrollTop() > 10) {
-            if ($(scrollArea).scrollTop() < p_scroll) {
+          if (d.scroll.y > 10) {
+            if (d.scroll.y < p_scroll) {
               $('.top-bar').addClass('scroll-up');
               $('.top-bar').removeClass('scroll-down');
             } else {
@@ -55,19 +53,10 @@ export default {
             $('.top-bar').removeClass('scroll-up');
             $('.top-bar').removeClass('scroll-down');
           }
-          p_scroll = $(scrollArea).scrollTop();
+          p_scroll = d.scroll.y;
         }
-      })
-    }, 500);
-
-    setInterval(() => {
-      if($(scrollArea).scrollTop() === 0) {
-        $('.top-bar').removeClass('is-stuck');
-        $('.title-bar').removeClass('is-stuck');
-        $('.top-bar').removeClass('scroll-up');
-        $('.top-bar').removeClass('scroll-down');
       }
-    },500);
+    })
 
   },
   init() {
@@ -84,6 +73,8 @@ export default {
 
     this.loader = new Loader()
     this.loader.start();
+
+    window.locoScroll.update();
 
   },
 };

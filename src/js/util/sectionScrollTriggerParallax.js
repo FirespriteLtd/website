@@ -23,16 +23,13 @@ class SectionScrollTriggerParallax {
 
   setTimeout(()=>{
 
-   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".smooth-scroll"),
-    smooth: true
-   });
 
-   locoScroll.on("scroll", ScrollTrigger.update);
+
+   window.locoScroll.on("scroll", ScrollTrigger.update);
 
    ScrollTrigger.scrollerProxy(".smooth-scroll", {
     scrollTop(value) {
-     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+     return arguments.length ? window.locoScroll.scrollTo(value, 0, 0) : window.locoScroll.scroll.instance.scroll.y;
     }, // we don't have to define a scrollLeft because we're only scrolling vertically.
     getBoundingClientRect() {
      return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
@@ -95,25 +92,38 @@ class SectionScrollTriggerParallax {
    }
    } else {
      if(gsap.utils.toArray('.trigger').length === 1 ){
-      console.log('init header')
-      gsap.to(elem, {
-       //scale: 0.5,
-       rotateX: 45,
-       opacity: .4,
-       ease: "none",
-       transformOrigin: 'bottom bottom',
-       transformStyle:"preserve-3d",
 
-       scrollTrigger: {
-        trigger: elem,
-        start: "top top",
-        scroller: ".smooth-scroll",
-        end: "bottom top",
-        //pin: true,
-        scrub: true
-       }
+       gsap.to(elem, {
+        ease: "none",
+        transformOrigin: 'bottom bottom',
+        transformStyle:"preserve-3d",
+        scrollTrigger: {
+         trigger: elem,
+         start: "top top",
+         scroller: ".smooth-scroll",
+         end: "bottom top",
+         pin: true,
+         anticipatePin: true,
+         pinSpacing: false,
+         scrub: true
+        }
+       });
 
-      });
+
+      if($(elem).find('.hero-header')) {
+       gsap.to($(elem).find('.contentWrapper'), {
+        scrollTrigger: {
+         trigger: elem,
+         start: "top top",
+         end: "+=" + innerHeight * 2,
+         scrub: true,
+         scroller: ".smooth-scroll",
+         marker: false
+        },
+        y: (i, target) => - innerHeight * 2.5,
+        ease: "none"
+       })
+      }
      }
    }
   })
@@ -124,9 +134,7 @@ class SectionScrollTriggerParallax {
     })
    }
 
-   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+   ScrollTrigger.addEventListener("refresh", () => window.locoScroll.update());
    ScrollTrigger.refresh();
 
   }, 250);

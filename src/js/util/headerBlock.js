@@ -12,7 +12,6 @@ import MobileDetect from "mobile-detect";
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(CSSRulePlugin);
 gsap.registerPlugin(ScrollTrigger);
-
 gsap.defaultEase = Expo.easeOut;
 
 class HeaderBlock {

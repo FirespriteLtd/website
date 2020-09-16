@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import 'slick-carousel';
-import SectionParallax from "../util/sectionParallax";
+import SectionParallax from "../util/sectionScrollTriggerParallax";
 import HeaderBlock from "../util/headerBlock";
 import SideBarController from "../util/sideBarController";
 import {gsap, Power2} from "gsap/all";
@@ -12,11 +12,9 @@ export default {
     finalize() {
 
         const section = new SectionParallax();
-        const controller = section.controller();
-        const master = new HeaderBlock(controller);
 
         setTimeout(() => {
-            section.init(['header']);
+            section.init([new HeaderBlock()]);
             new SideBarController('.social-menu');
         }, 1000);
 

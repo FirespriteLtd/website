@@ -1,6 +1,8 @@
 #root{
   padding-top: rem-calc(90);
   padding-bottom: rem-calc(90);
+  position: relative;
+  z-index: 99;
 
   &.b-c-white {
     background-image: url("/images/bg-white.svg");

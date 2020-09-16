@@ -58,8 +58,16 @@ dom.watch();
 /* ===========================================================================
  Packages
  =========================================================================== */
+import LocomotiveScroll from "locomotive-scroll";
 
+window.locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true
+});
 
+window.addEventListener('load', () => {
+    window.locoScroll.update();
+})
 
 
 /* ===========================================================================
@@ -78,6 +86,7 @@ if (window.netlifyIdentity) {
 
 // DOCUMENT READY
 import "./js/apps";
+
 
 
 
