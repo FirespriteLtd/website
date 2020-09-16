@@ -4,7 +4,8 @@ import VideoPopup from "../util/videoPopup";
 import Popup from "../util/popup";
 import TabSlider from "../util/tabSlider";
 import SectionScrollTriggerParallax from "../util/sectionScrollTriggerParallax";
-import SectionScrollControls from "../util/SectionScrollControls"
+import SectionScrollControls from "../util/sectionScrollControls";
+
 
 export default {
     init() {
