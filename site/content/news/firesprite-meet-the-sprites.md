@@ -10,7 +10,9 @@ featured_image:
   alt: Meet the sprites
   title: Meet the sprites
 ---
-In this interview series, we speak to some of the staff here to provide an insight into life at Firesprite from a variety of disciplines within the studio. First up is one of our HR staff, Kate. 
+In this interview series, we speak to some of the staff here to provide an insight into life at Firesprite from a variety of disciplines within the studio. 
+
+First up is a member of our HR staff, Kate. 
 
 ![Katherine Birney](/images/uploads/kate.png "Katherine Birney")
 
