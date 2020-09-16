@@ -2,7 +2,7 @@ import 'slick-carousel';
 import $ from 'jquery';
 import 'fluidbox';
 import HeaderBlock from "../util/headerBlock";
-import SectionParallax from "../util/sectionParallax";
+import SectionScrollControlls from "../util/sectionScrollControls";
 import SideBarController from "../util/sideBarController";
 import VideoPopup from "../util/videoPopup";
 
@@ -12,7 +12,7 @@ export default {
     },
     finalize() {
 
-        const section = new SectionParallax();
+        const section = new SectionScrollControlls();
         const controller = section.controller();
         const master = new HeaderBlock(controller);
         const trailer  = new VideoPopup();

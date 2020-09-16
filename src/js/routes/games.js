@@ -4,6 +4,7 @@ import VideoPopup from "../util/videoPopup";
 import Popup from "../util/popup";
 import TabSlider from "../util/tabSlider";
 import SectionScrollTriggerParallax from "../util/sectionScrollTriggerParallax";
+import SectionScrollControls from "../util/SectionScrollControls"
 
 export default {
     init() {
@@ -12,10 +13,14 @@ export default {
     finalize() {
         const section = new SectionScrollTriggerParallax();
         const trailer  = new VideoPopup();
+        const master = new HeaderBlock();
+        const controls =  new SectionScrollControls();
         new TabSlider('.tab-slider');
 
         setTimeout(()=> {
-            section.init([new HeaderBlock()]);
+            section.init([master]);
+            controls.init();
+
         }, 250);
         fluidBox.init();
     },

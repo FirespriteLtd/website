@@ -20,6 +20,7 @@ class HeaderBlock {
    this.video = $('.master-header .video-wrapper');
    this.ready = false;
    this.controller = controller;
+   this.header = this.animHeader();
  }
 
  start(){
@@ -28,10 +29,8 @@ class HeaderBlock {
    if(!mc.match('mobile')) {
     this.videoController();
    }
-  } else {
-
   }
-  this.animHeader();
+  this.header.play();
   this.scrollpointer();
  }
 
@@ -45,18 +44,16 @@ class HeaderBlock {
   player.seek(20);
   player.play();
   player.on('ended', () => {
-   console.log('IS PLAYING')
    player.play();
   })
   player.on('playing', () =>{
-   console.log('IS PLAYING')
    gsap.to(scope.video, {opacity:1, duration: 1, overwrite: true, ease:Sine.easeIn});
   })
   return player;
  }
 
  animHeader() {
-  const tl = gsap.timeline({repeat:0, delay: 1.4});
+  const tl = gsap.timeline({repeat:0, delay: 0, paused: true});
   let chars = [];
   if($('.hero-header-inner').find('h1').length) {
    const title = new SplitText($('.hero-header-inner').find('h1'), {type: "words,chars"});
@@ -88,6 +85,8 @@ class HeaderBlock {
   }
 
   tl.add(gsap.from('.scroll-pointer', {opacity: 0, duration: 0.5, ease: Expo.easeOut}));
+
+  return tl;
  }
 
  videoController() {

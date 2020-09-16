@@ -29,7 +29,9 @@ export default {
   desktop() {
     let p_scroll = 0;
     window.locoScroll.on('scroll', d => {
+
       if(d){
+        if(Math.round(p_scroll) !==  Math.round(d.scroll.y)){
         if(d.scroll.y !== 0) {
           if (d.scroll.y > 15) {
             $('.top-bar').addClass('is-stuck');
@@ -55,6 +57,7 @@ export default {
           }
           p_scroll = d.scroll.y;
         }
+        };
       }
     })
 

@@ -62,7 +62,7 @@ import LocomotiveScroll from "locomotive-scroll";
 
 window.locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
-    smooth: true
+    smooth: true,
 });
 
 window.addEventListener('load', () => {

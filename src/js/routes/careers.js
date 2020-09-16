@@ -12,13 +12,13 @@ export default {
     finalize() {
 
         const section = new SectionParallax();
+        const master = new HeaderBlock();
 
         setTimeout(() => {
-            section.init([new HeaderBlock()]);
+            section.init([master]);
             new SideBarController('.social-menu');
-        }, 1000);
+        }, 100);
 
-        // JavaScript to be fired on all pages, after page specific JS is fire
         $('#testimonial').slick({
             arrows: false,
             dots: true,
