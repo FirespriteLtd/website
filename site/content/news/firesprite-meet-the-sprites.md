@@ -12,7 +12,7 @@ featured_image:
 ---
 In this interview series, we speak to some of the staff here to provide an insight into life at Firesprite from a variety of disciplines within the studio. First up is one of our HR staff, Kate. 
 
-![Katherine Birney](/images/uploads/copy-of-katherine-birney-1.jpg "Katherine Birney")
+![Katherine Birney](/images/uploads/kate.png "Katherine Birney")
 
 **What is your name and job title?**
 
