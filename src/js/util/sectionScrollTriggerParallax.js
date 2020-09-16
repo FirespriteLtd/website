@@ -2,8 +2,6 @@ import {gsap} from 'gsap';
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollMagic from "scrollmagic/scrollmagic/minified/ScrollMagic.min";
-import LocomotiveScroll from "locomotive-scroll"
-
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -22,8 +20,6 @@ class SectionScrollTriggerParallax {
  init(addScrolls){
 
   setTimeout(()=>{
-
-
 
    window.locoScroll.on("scroll", ScrollTrigger.update);
 
