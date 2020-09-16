@@ -59,11 +59,12 @@ dom.watch();
  Packages
  =========================================================================== */
 import LocomotiveScroll from "locomotive-scroll";
-
 window.locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    multiplier: 2
+    multiplier: 2,
+    getSpeed: true,
+    getDirection: true
 });
 
 window.addEventListener('load', () => {

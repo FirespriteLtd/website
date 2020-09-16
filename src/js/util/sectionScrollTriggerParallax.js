@@ -129,6 +129,8 @@ class SectionScrollTriggerParallax {
     })
    }
 
+   window.locoScroll.update();
+
    ScrollTrigger.addEventListener("refresh", () => window.locoScroll.update());
    ScrollTrigger.refresh();
 
