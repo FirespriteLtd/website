@@ -14,7 +14,7 @@ In this interview series, we speak to some of the staff here to provide an insig
 
 First up is a member of our HR staff, Kate. 
 
-![Katherine Birney](/images/uploads/kate.png "Katherine Birney")
+![Katherine Birney](/images/uploads/news_interviews_kate.png "Katherine Birney")
 
 **What is your name and job title?**
 
