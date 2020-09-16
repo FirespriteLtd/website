@@ -6,7 +6,7 @@ summary: We speak to Recruiter, Katherine Birney about life at Firesprite
 news/categories:
   - game
 featured_image:
-  src: /images/uploads/firesprite-logo.jpg
+  src: /images/uploads/news-meet-the-sprites.jpg
   alt: Meet the sprites
   title: Meet the sprites
 ---
