@@ -5,9 +5,13 @@ careers/categories: art
 position_type: full
 email: jobs@firesprite.com
 ---
+#### Location
+
+Liverpool, UK with Remote / Flexible working considered.
+
 #### Duration
 
-Permanent.
+Permanent
 
 #### Salary
 
@@ -15,9 +19,13 @@ We offer a very competitive package, which is dependent on experience.
 
 #### The Role
 
-We are seeking someone who can work both in realism and in a stylistic way.
+We are looking for a Senior / Principal Environment Artist to lead a small team on a huge, globally recognised IP, on an exciting multiplayer shooter project which is in the later stages of production development.
 
-As a Senior / Principal Environment Artist you will work closely with the Lead Artist, Animators and Art Director, as well as production to create a variety of Environment assets, sets and organics based on concept to suit the existing game style.
+This is an extremely dynamic project, collaborating with a very high-profile client, utilising their assets and pipelines to deliver an original multiplayer experience as part of their wider IP proposition.
+
+The team is already established, and you will be joining the team at an exciting time as they set the direction for further content delivery.
+
+As a Senior / Principal Environment Artist you will work closely with the Lead Artist, Animators and Art Director, as well as Production to create a variety of Environment assets, sets and organics based on concept to suit the existing game style.
 
 ##### **Key responsibilities:**
 
