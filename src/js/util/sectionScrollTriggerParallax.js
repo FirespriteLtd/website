@@ -44,7 +44,7 @@ class SectionScrollTriggerParallax {
      start: "top top",
      scroller: ".smooth-scroll",
      anticipatePin: true,
-    // pinSpacing: true,
+     pinSpacing: true,
      end: "+=100%",
      scrub: true,
      snap: {
