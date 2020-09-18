@@ -1,5 +1,5 @@
 ---
-title: "Interview Series - Meet the Sprites #1"
+title: "Interview Series - Meet the Sprites 1"
 date: 2020-09-16T12:13:51.056Z
 draft: false
 summary: We speak to Recruiter, Katherine Birney about life at Firesprite
