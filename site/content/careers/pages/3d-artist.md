@@ -7,6 +7,10 @@ email: jobs@firesprite.com
 ---
 #### Duration
 
+Liverpool, UK with Remote / Flexible working considered.
+
+#### Duration
+
 Permanent
 
 #### Salary
